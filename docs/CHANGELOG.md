@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-01] chore: set Cloudflare Web Analytics token in index.html
 [2026-04-01] chore: add CNAME (val26.leide.se), rewrite commit.sh for project structure, add deploy.sh
 [2026-04-01] docs: add Sprint 0.5 infrastructure tasks to ROADMAP.md
 [2026-04-01] docs: update ROADMAP.md with full sprint plan (sprint 0–3 + backlog)
