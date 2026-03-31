@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./commit.sh \"chore: set stack to Vanilla HTML/CSS/JS, GitHub Pages, Cloudflare; init project\")",
+      "Bash(gh issue:*)",
+      "Bash(where gh:*)",
+      "Bash(winget list:*)",
+      "Bash(chmod +x commit.sh deploy.sh)",
+      "Bash(bash commit.sh)",
+      "Bash(bash commit.sh \"chore: Sprint 0.5 infrastructure — CNAME, commit.sh, deploy.sh\")"
+    ]
+  }
+}
