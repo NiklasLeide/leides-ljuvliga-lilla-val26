@@ -6,54 +6,27 @@
 
 ## How to run this project
 
-```bash
-# 1. Navigate to project
-cd /mnt/c/Users/nikla/projects/leides-ljuvliga-lilla-val26
+Static site — no build step, no server needed.
 
-# 2. Activate environment (if applicable)
-# source ~/venv-leides-ljuvliga-lilla-val26/bin/activate   ← Python venv
-# nvm use 18                        ← Node version
-
-# 3. Set up environment variables
-cp .env.example .env
-# Edit .env and fill in real values
-
-# 4. Install dependencies
-# pip install -r requirements.txt   ← Python
-# npm install                        ← Node
-
-# 5. Start the app
-# [fill in your start command]
-```
+1. Open `index.html` directly in a browser.
+2. Hosted on GitHub Pages via the `master` branch.
+3. DNS/CDN handled by Cloudflare.
 
 ## Environment variables needed
-| Variable | Where to get it | Required? |
-|----------|----------------|-----------|
-| `API_KEY` | [service dashboard] | Yes |
+None — fully static, no secrets.
 
 ## Dependencies and versions
-| Tool/Library | Version | Notes |
-|-------------|---------|-------|
-| Python/Node | [version] | |
+None — Vanilla HTML/CSS/JS only.
 
 ## Data file locations
-<!-- Where does this app store its data? -->
-- _Fill in: e.g., %APPDATA%/com.myapp/data.json, ~/.config/myapp/, sqlite.db_
+- Party stance data: `data/*.json`
 
 ## Known environment quirks
-<!-- Things that will bite you when setting up fresh -->
-- [Fill in as you discover them]
+- No local server needed — open index.html directly.
+- GitHub Pages serves from the `master` branch root.
 
 ## How to update dependencies safely
-```bash
-# Python:
-pip list --outdated
-pip install --upgrade [package]  # upgrade one at a time, test after each
-
-# Node:
-npm outdated
-npm update [package]
-```
+No dependencies to update.
 
 ## Last parked
 <!-- Updated automatically by /project:parkhere -->

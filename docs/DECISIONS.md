@@ -20,8 +20,8 @@ Record of key decisions made during the project. **Newest first.**
 
 ### DEC-001: Initial Stack Choice
 **Date:** 2026-03-31
-**Decision:** React 19, TypeScript, Vite, Tailwind CSS, Tauri
-**Reasoning:** [Fill in — why this stack for this project?]
-**Alternatives considered:** [Fill in — what did you rule out and why?]
+**Decision:** Vanilla HTML/CSS/JS, JSON data files, GitHub Pages, Cloudflare
+**Reasoning:** The site is a static information resource — no user accounts, no dynamic backend, no build complexity needed. Keeping it vanilla maximises longevity, minimises maintenance, and makes it trivially hostable on GitHub Pages with Cloudflare for CDN/DNS.
+**Alternatives considered:** React/Vite — rejected as unnecessary complexity for a read-only reference site. A framework would add build tooling, dependencies, and churn without any functional benefit.
 
 ---

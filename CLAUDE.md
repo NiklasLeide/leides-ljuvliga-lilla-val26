@@ -2,7 +2,7 @@
 
 Neutral kunskapstjänst som sammanställer riksdagspartiernas ståndpunkter i sakfrågor. Inför valet 2026.
 
-**Stack:** TBD ⚠️ — resolve this in first session
+**Stack:** Vanilla HTML/CSS/JS, JSON data, GitHub Pages, Cloudflare
 **Started:** 2026-03-31
 **GitHub:** github.com/niklasleide/leides-ljuvliga-lilla-val26
 
@@ -16,8 +16,8 @@ These files ARE Claude's memory between sessions. Keep them accurate.
 
 ## Commands
 ```bash
-# ⚠️ NOT YET FILLED IN — first task is to define these
-# Run /project:init to fill in stack, run, test, and dev commands
+# Open index.html directly in browser — no local server needed
+# No test command — no test framework in use
 ./commit.sh "message"       # ALWAYS use this to commit — never bare git commit
 ```
 
