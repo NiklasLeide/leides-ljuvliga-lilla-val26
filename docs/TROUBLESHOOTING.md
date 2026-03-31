@@ -57,8 +57,11 @@ or git hooks that check documentation is updated before pushing.
 **Solution:** `sudo npm install -g <package>`
 
 ---
-## React 19 / App
+## commit.sh
 
-_Add issues here as you encounter them._
+### commit.sh silently stages nothing on Windows
+**Symptom:** `./commit.sh` exits with "no changes added to commit" even though files are modified.
+**Cause:** Shell glob patterns like `*.md` in commit.sh don't expand on Windows bash when run from the native Windows filesystem.
+**Solution:** Stage files explicitly before running, or use `git add <file> ... && git commit -m "..." && git push` directly.
 
 ---
