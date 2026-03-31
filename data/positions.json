@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "parties": {
+    "S":  { "name": "Socialdemokraterna", "abbr": "S",  "color": "#ED1B34" },
+    "M":  { "name": "Moderaterna",        "abbr": "M",  "color": "#52BDEC" },
+    "SD": { "name": "Sverigedemokraterna","abbr": "SD", "color": "#DDCF00" },
+    "V":  { "name": "Vänsterpartiet",     "abbr": "V",  "color": "#AF1D22" },
+    "C":  { "name": "Centerpartiet",      "abbr": "C",  "color": "#009933" },
+    "KD": { "name": "Kristdemokraterna",  "abbr": "KD", "color": "#231977" },
+    "L":  { "name": "Liberalerna",        "abbr": "L",  "color": "#006AB3" },
+    "MP": { "name": "Miljöpartiet",       "abbr": "MP", "color": "#53A12B" }
+  },
+  "areas": [
+    {
+      "id": "skola",
+      "name": "Skola",
+      "color": "#4A7FC1",
+      "topics": [
+        {
+          "id": "friskolor",
+          "name": "Fristående skolor",
+          "description": "Partiernas syn på fristående skolors rätt att etablera sig och verka.",
+          "scale": { "low": "Strikt reglering", "high": "Fri etableringsrätt" },
+          "positions": {
+            "V":  { "position": 8,  "group": "vänster",  "summary": "Vill avveckla vinstdrivna fristående skolor och föra tillbaka dem i offentlig regi.", "source": "Vänsterpartiets skolpolitiska program 2023", "unclear": false },
+            "MP": { "position": 22, "group": "vänster",  "summary": "Vill skärpa tillståndsregler och begränsa nyetablering i redan välförsörjda områden.", "source": "Miljöpartiets valmanifest 2022", "unclear": false },
+            "S":  { "position": 30, "group": "vänster",  "summary": "Vill stärka tillsyn och begränsa vinstuttag, men avvecklar inte befintliga friskolor.", "source": "Socialdemokraternas skolpolitik 2023", "unclear": false },
+            "SD": { "position": 52, "group": "mitten",   "summary": "Accepterar fristående skolor men vill sätta tydliga kvalitetskrav och begränsa utländskt ägande.", "source": "Sverigedemokraternas principprogram", "unclear": false },
+            "KD": { "position": 74, "group": "höger",    "summary": "Förespråkar valfrihet och stöder fristående skolor som ett komplement till kommunala.", "source": "Kristdemokraternas skolpolitik 2023", "unclear": false },
+            "C":  { "position": 80, "group": "höger",    "summary": "Starkt för valfrihet — fristående skolor är en central del av ett fritt samhälle.", "source": "Centerpartiets valmanifest 2022", "unclear": false },
+            "L":  { "position": 85, "group": "höger",    "summary": "Liberalerna ser fristående skolor som avgörande för mångfald och individens rätt att välja.", "source": "Liberalernas skolpolitik 2023", "unclear": false },
+            "M":  { "position": 88, "group": "höger",    "summary": "Moderaterna värnar skolval och fristående skolor och motsätter sig vinstförbud.", "source": "Moderaternas skolpolitiska program 2023", "unclear": false }
+          }
+        },
+        {
+          "id": "vinstuttag",
+          "name": "Vinstuttag i välfärden",
+          "description": "Ska fristående skolor tillåtas ta ut vinst till ägarna?",
+          "scale": { "low": "Förbjud vinstuttag", "high": "Fri marknad" },
+          "positions": {
+            "V":  { "position": 3,  "group": "vänster", "summary": "Kategoriskt nej till vinst i skolan — all överskott ska återinvesteras i verksamheten.", "source": "Vänsterpartiets skolpolitiska program 2023", "unclear": false },
+            "MP": { "position": 12, "group": "vänster", "summary": "Vill förbjuda vinstuttag ur skattefinansierade skolor.", "source": "Miljöpartiets valmanifest 2022", "unclear": false },
+            "S":  { "position": 20, "group": "vänster", "summary": "Driver hårt för att begränsa vinstuttag, men har ännu inte genomfört lagstiftning.", "source": "Socialdemokraternas skolpolitik 2023", "unclear": false },
+            "SD": { "position": 42, "group": "mitten",  "summary": "Skeptiska till stora vinstuttag men har inte drivit frågan aktivt i riksdagen.", "source": "Sverigedemokraternas principprogram", "unclear": true },
+            "KD": { "position": 70, "group": "höger",   "summary": "Anser att vinstmöjligheten är nödvändig för att attrahera investerare till skolan.", "source": "Kristdemokraternas skolpolitik 2023", "unclear": false },
+            "C":  { "position": 80, "group": "höger",   "summary": "Vinst är ett tecken på framgång och kvalitet — ska inte förbjudas.", "source": "Centerpartiets valmanifest 2022", "unclear": false },
+            "L":  { "position": 82, "group": "höger",   "summary": "Motsätter sig vinstförbud — fokus bör ligga på kvalitetskontroll, inte ägandeform.", "source": "Liberalernas skolpolitik 2023", "unclear": false },
+            "M":  { "position": 88, "group": "höger",   "summary": "Vinst driver kvalitet och mångfald — vinstförbud leder till att aktörer lämnar marknaden.", "source": "Moderaternas skolpolitiska program 2023", "unclear": false }
+          }
+        },
+        {
+          "id": "nationella-prov",
+          "name": "Nationella prov",
+          "description": "Hur många och hur viktiga ska de nationella proven vara?",
+          "scale": { "low": "Färre / avskaffa", "high": "Fler / stärk dem" },
+          "positions": {
+            "V":  { "position": 18, "group": "vänster", "summary": "Vill minska antalet nationella prov — skapar stress och tar tid från undervisning.", "source": "Vänsterpartiets skolpolitiska program 2023", "unclear": false },
+            "MP": { "position": 25, "group": "vänster", "summary": "Kritiska till nuvarande provtryck, vill se mer läraromdöme och färre standardiserade tester.", "source": "Miljöpartiets valmanifest 2022", "unclear": false },
+            "C":  { "position": 50, "group": "mitten",  "summary": "Accepterar nationella prov men betonar att de inte ska styra undervisningen.", "source": "Centerpartiets valmanifest 2022", "unclear": true },
+            "S":  { "position": 55, "group": "mitten",  "summary": "Stöder nationella prov som verktyg för likvärdig bedömning, vill se digitalisering.", "source": "Socialdemokraternas skolpolitik 2023", "unclear": false },
+            "KD": { "position": 65, "group": "höger",   "summary": "Nationella prov ger viktig information om elevernas kunskaper och säkerställer likvärdighet.", "source": "Kristdemokraternas skolpolitik 2023", "unclear": false },
+            "L":  { "position": 72, "group": "höger",   "summary": "Prov är nödvändiga för att mäta kunskaper — vill stärka proven och externbedömningen.", "source": "Liberalernas skolpolitik 2023", "unclear": false },
+            "SD": { "position": 75, "group": "höger",   "summary": "Fler och tydligare prov ger bättre struktur och disciplin i skolan.", "source": "Sverigedemokraternas principprogram", "unclear": false },
+            "M":  { "position": 80, "group": "höger",   "summary": "Vill ha fler nationella prov och stärkt externrättning för att säkerställa kunskapsmätning.", "source": "Moderaternas skolpolitiska program 2023", "unclear": false }
+          }
+        },
+        {
+          "id": "tidiga-betyg",
+          "name": "Betyg från tidig ålder",
+          "description": "Från vilken årskurs ska eleverna få betyg?",
+          "scale": { "low": "Sen betygssättning", "high": "Tidiga betyg" },
+          "positions": {
+            "V":  { "position": 10, "group": "vänster", "summary": "Mot tidiga betyg — betyg i tidig ålder skapar stress och gynnar inte lärandet.", "source": "Vänsterpartiets skolpolitiska program 2023", "unclear": false },
+            "MP": { "position": 18, "group": "vänster", "summary": "Vill avskaffa betyg i åk 6 och återgå till omdömen — betyg för tidigt skadar motivationen.", "source": "Miljöpartiets valmanifest 2022", "unclear": false },
+            "S":  { "position": 40, "group": "mitten",  "summary": "Stöder nuvarande system med betyg från åk 6, öppen för diskussion kring åk 4.", "source": "Socialdemokraternas skolpolitik 2023", "unclear": true },
+            "C":  { "position": 52, "group": "mitten",  "summary": "Accepterar betyg från åk 6, tveksam till ännu tidigare.", "source": "Centerpartiets valmanifest 2022", "unclear": true },
+            "L":  { "position": 65, "group": "höger",   "summary": "Positiv till betyg från åk 4 — tidig återkoppling hjälper elever och föräldrar.", "source": "Liberalernas skolpolitik 2023", "unclear": false },
+            "KD": { "position": 72, "group": "höger",   "summary": "Vill ha betyg från åk 4 — tydliga betyg tidigt skapar motivation och rättar till kunskapsluckor.", "source": "Kristdemokraternas skolpolitik 2023", "unclear": false },
+            "SD": { "position": 78, "group": "höger",   "summary": "Förespråkar tidiga betyg — tydlig kunskapsbedömning redan i lågstadiet.", "source": "Sverigedemokraternas principprogram", "unclear": false },
+            "M":  { "position": 82, "group": "höger",   "summary": "Driver betyg från åk 4 — anser att tidig bedömning leder till tidigare insatser.", "source": "Moderaternas skolpolitiska program 2023", "unclear": false }
+          }
+        },
+        {
+          "id": "statlig-styrning",
+          "name": "Statlig styrning av skolan",
+          "description": "Ska skolan styras mer centralt av staten eller förbli kommunal?",
+          "scale": { "low": "Kommunalt ansvar", "high": "Statligt ansvar" },
+          "positions": {
+            "C":  { "position": 15, "group": "höger",   "summary": "Starkt för kommunalt självstyre — staten ska inte detaljstyra skolan.", "source": "Centerpartiets valmanifest 2022", "unclear": false },
+            "M":  { "position": 40, "group": "höger",   "summary": "Vill ha tydligare nationella kunskapskrav men är skeptisk till fullständig förstatligande.", "source": "Moderaternas skolpolitiska program 2023", "unclear": true },
+            "L":  { "position": 55, "group": "höger",   "summary": "Öppen för ökat statligt ansvar för att säkerställa likvärdighet.", "source": "Liberalernas skolpolitik 2023", "unclear": false },
+            "KD": { "position": 58, "group": "höger",   "summary": "Vill se tydligare statliga krav men kommunalt genomförande.", "source": "Kristdemokraternas skolpolitik 2023", "unclear": false },
+            "SD": { "position": 65, "group": "höger",   "summary": "Vill stärka statens roll för att skapa ordning och likvärdighet i hela landet.", "source": "Sverigedemokraternas principprogram", "unclear": false },
+            "MP": { "position": 60, "group": "vänster", "summary": "Vill ha mer statlig styrning för att minska segregation och klyftor.", "source": "Miljöpartiets valmanifest 2022", "unclear": false },
+            "S":  { "position": 72, "group": "vänster", "summary": "Driver förstatligande av skolan — staten ska ta ett samlat ansvar för likvärdighet.", "source": "Socialdemokraternas skolpolitik 2023", "unclear": false },
+            "V":  { "position": 78, "group": "vänster", "summary": "Vill förstatliga skolan fullt ut för att garantera likvärdig utbildning för alla.", "source": "Vänsterpartiets skolpolitiska program 2023", "unclear": false }
+          }
+        }
+      ]
+    }
+  ]
+}

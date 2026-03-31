@@ -1,0 +1,278 @@
+/* ===================================================
+   Design tokens
+   =================================================== */
+:root {
+  --font-body:  'DM Sans', sans-serif;
+  --font-serif: 'Source Serif 4', serif;
+
+  --color-bg:      #F8F7F2;
+  --color-surface: #FFFFFF;
+  --color-border:  #E2DDD5;
+  --color-text:    #1C1B18;
+  --color-muted:   #706C63;
+  --color-track:   #DDD9D0;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+
+  --dot: 28px;
+  --dot-font: 10px;
+}
+
+/* ===================================================
+   Reset
+   =================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===================================================
+   Header
+   =================================================== */
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+}
+
+header h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-top: var(--space-xs);
+}
+
+/* ===================================================
+   View tabs  (Spektrum / Kluster)
+   =================================================== */
+.tab-nav {
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  padding: 0 var(--space-lg);
+  display: flex;
+  gap: 2px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tab {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-muted);
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.tab:hover:not(:disabled) { color: var(--color-text); }
+.tab.active { color: var(--color-text); border-bottom-color: var(--color-text); }
+.tab:disabled { cursor: default; opacity: 0.45; }
+
+.badge-soon {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: var(--color-border);
+  color: var(--color-muted);
+  padding: 2px 5px;
+  border-radius: var(--radius-sm);
+}
+
+/* ===================================================
+   Views
+   =================================================== */
+.view { display: none; }
+.view.active { display: block; }
+
+/* ===================================================
+   Area nav  (topic-area pills)
+   =================================================== */
+#area-nav {
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  padding: 0 var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.area-btn {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 100px;
+  padding: 5px var(--space-md);
+  cursor: pointer;
+  color: var(--color-text);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.area-btn:hover { border-color: var(--area-color, var(--color-text)); }
+.area-btn.active {
+  background: var(--area-color, #333);
+  border-color: var(--area-color, #333);
+  color: #fff;
+}
+
+/* ===================================================
+   Spectrum
+   =================================================== */
+#spectrum-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.topic-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.topic-name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+/* Scale */
+.scale-wrap {
+  position: relative;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+  user-select: none;
+}
+
+.scale-body {
+  position: relative;
+  margin: 0 calc(var(--dot) / 2);
+}
+
+.scale-track {
+  height: 3px;
+  background: var(--color-track);
+  border-radius: 100px;
+  position: absolute;
+  top: calc(var(--dot) / 2);
+  left: 0;
+  right: 0;
+}
+
+.scale-dots {
+  position: relative;
+}
+
+/* Party dot */
+.party-dot {
+  position: absolute;
+  width: var(--dot);
+  height: var(--dot);
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.6);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: var(--dot-font);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  transition: transform 0.1s, box-shadow 0.1s;
+  outline: none;
+  z-index: 1;
+}
+.party-dot:hover,
+.party-dot:focus {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+.party-dot.unclear {
+  opacity: 0.55;
+  border-style: dashed;
+}
+
+/* ===================================================
+   Tooltip
+   =================================================== */
+.tooltip {
+  position: absolute;
+  z-index: 100;
+  background: var(--color-text);
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  max-width: 260px;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.tooltip[hidden] { display: none; }
+
+.tooltip-party {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* ===================================================
+   Cluster placeholder
+   =================================================== */
+.placeholder-view {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+/* ===================================================
+   Mobile  ≤ 480px
+   =================================================== */
+@media (max-width: 480px) {
+  header { padding: var(--space-lg) var(--space-md); }
+  .tab-nav, #area-nav, #spectrum-container { padding-left: var(--space-md); padding-right: var(--space-md); }
+  .topic-card { padding: var(--space-md); }
+  .tooltip { max-width: 200px; font-size: 0.75rem; }
+}

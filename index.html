@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partiernas ståndpunkter — Val 2026</title>
+  <meta name="description" content="Neutral sammanställning av riksdagspartiernas ståndpunkter i sakfrågor inför valet 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Partiernas ståndpunkter</h1>
+    <p class="subtitle">Neutral sammanställning inför valet 2026 — <em>placeholder-data</em></p>
+  </header>
+
+  <nav class="tab-nav" aria-label="Vyer">
+    <button class="tab active" data-view="spectrum">Spektrum</button>
+    <button class="tab" data-view="cluster" disabled>
+      Kluster <span class="badge-soon">snart</span>
+    </button>
+  </nav>
+
+  <main>
+    <div id="view-spectrum" class="view active">
+      <div id="area-nav" role="group" aria-label="Välj ämnesområde"></div>
+      <div id="spectrum-container"></div>
+    </div>
+
+    <div id="view-cluster" class="view">
+      <div class="placeholder-view">Klustervyn är under uppbyggnad.</div>
+    </div>
+  </main>
+
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+
+  <script src="app.js"></script>
+
+  <!-- Cloudflare Web Analytics — replace token before going live -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "REPLACE_WITH_CF_TOKEN"}'></script>
+
+</body>
+</html>
