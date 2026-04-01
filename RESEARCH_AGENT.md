@@ -68,7 +68,7 @@ Vad som ska samlas per parti och sakfråga:
 - Sammanfattning (1-2 meningar, neutralt formulerat)
 - Position på skalan 0-100 (med motivering)
 - Grupptillhörighet (vilka andra partier har liknande position)
-- Specifik källa (URL + dokumenttyp)
+- Specifik källa — ALLTID med klickbar URL. Format: dokumenttitel + URL. Exempel: "Partiprogram 2025, https://www.vansterpartiet.se/var-politik/skolan/". Ståndpunkter utan verifierbar URL accepteras inte.
 - Osäkerhetsbedömning: tydlig / delvis oklar / oklar
 
 ### 3. Faktakontroll — tvivla på allt
