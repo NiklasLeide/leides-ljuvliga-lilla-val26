@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-01] feat: verified positions for tidiga-betyg — 8 parties, 3 groups (Senare betyg/Betyg från åk 6/Tidiga kunskapskontroller), sources 2010–2026
 [2026-04-01] feat: verified positions for nationella-prov — 8 parties, 3 groups (Stärk lärarprofessionen/Likvärdig bedömning/Centralt rättade prov), sources 2021–2026
 [2026-04-01] feat: verified positions for vinstuttag — 8 parties, 3 groups (Förbjud/Villkorad/Värna), sources 2021–2026
 [2026-04-01] feat: verified positions for friskolor — 8 parties, 5 descriptive groups, sources from 2025–2026
