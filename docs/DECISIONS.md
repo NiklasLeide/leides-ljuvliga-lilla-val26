@@ -18,6 +18,14 @@ Record of key decisions made during the project. **Newest first.**
 
 ---
 
+### DEC-006: Design language aligned to leides-ljuvliga-lilla-reformkarta
+**Date:** 2026-04-01
+**Decision:** Adopt the reformkarta design system as the visual foundation: dark full-width header with `header-badge` eyebrow, CSS tokens `--ink`/`--bg`/`--card`/`--border`/`--muted`, Source Serif 4 (headings) + DM Sans (body), `#f7f6f3` page background, `border-bottom` tab indicator pattern, centered footer.
+**Reasoning:** Consistent design language across Niklas Leide's kunskapsytor signals a coherent product family. Reusing proven patterns avoids re-solving solved problems and keeps visual decisions stable across sprints.
+**Alternatives considered:** Designing from scratch — rejected, the reformkarta system is already tested across desktop and mobile and covers all components this project needs.
+
+---
+
 ### DEC-005: Unclear positions shown as faded dashed dots
 **Date:** 2026-04-01
 **Decision:** Parties with unclear/unknown positions get `unclear: true` in JSON and render as 50%-opacity dashed-border dots.

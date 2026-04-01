@@ -12,7 +12,8 @@
       "Bash(curl:*)",
       "Bash(gh api:*)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(bash commit.sh \"Apply reformkartan design language\")"
+      "Bash(bash commit.sh \"Apply reformkartan design language\")",
+      "Bash(bash commit.sh \"docs: log DEC-006 design language decision\")"
     ]
   }
 }
