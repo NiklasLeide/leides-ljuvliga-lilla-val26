@@ -14,7 +14,8 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(bash commit.sh \"Apply reformkartan design language\")",
       "Bash(bash commit.sh \"docs: log DEC-006 design language decision\")",
-      "Bash(bash commit.sh \"docs: close Sprint 0 + 0.5, open Sprint 1 in PROJECT_STATUS\")"
+      "Bash(bash commit.sh \"docs: close Sprint 0 + 0.5, open Sprint 1 in PROJECT_STATUS\")",
+      "Bash(./commit.sh Add cluster view with animated groupings:*)"
     ]
   }
 }

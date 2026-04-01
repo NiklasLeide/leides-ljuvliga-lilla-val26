@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-01] feat: add kluster.html — cluster view with SVG party circles, topic selector buttons, and animated groupings by vänster/mitten/höger
 [2026-04-01] docs: PROJECT_STATUS.md — close Sprint 0 + 0.5, open Sprint 1
 [2026-04-01] docs: log DEC-006 — design language aligned to reformkarta
 [2026-04-01] feat: apply reformkartan design language — dark header with header-badge, aligned CSS tokens (--ink/--bg/--card/--border/--muted), full-width tab nav, footer, extended font weights
