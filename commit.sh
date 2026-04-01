@@ -16,7 +16,7 @@ fi
 
 # Auto-stage all project files
 git add docs/ data/ .claude/ 2>/dev/null || true
-git add index.html style.css app.js CNAME 2>/dev/null || true
+git add *.html style.css app.js CNAME 2>/dev/null || true
 git add *.json *.sh *.md 2>/dev/null || true
 
 # Show what's staged

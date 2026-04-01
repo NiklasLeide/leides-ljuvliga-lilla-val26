@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klustervy — Val 2026</title>
+  <meta name="description" content="Neutral sammanställning av riksdagspartiernas ståndpunkter i sakfrågor inför valet 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Cluster-specific ────────────────────────────── */
+    #cluster-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg) var(--space-xl);
+    }
+
+    .cluster-topic-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      align-items: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .cluster-area-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      width: 100%;
+    }
+
+    .cluster-topic-btn {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 5px var(--space-md);
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      background: var(--card);
+      cursor: pointer;
+      color: var(--ink);
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .cluster-topic-btn:hover { border-color: #aaa; }
+    .cluster-topic-btn.active {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: #fff;
+    }
+
+    .cluster-svg {
+      display: block;
+      width: 100%;
+      overflow: visible;
+    }
+
+    .party-node {
+      transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .party-node-label {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 700;
+      fill: #fff;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .cluster-group-label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 600;
+      fill: var(--muted);
+      transition: opacity 0.35s;
+      pointer-events: none;
+      text-transform: capitalize;
+    }
+
+    .cluster-hint {
+      font-family: var(--font-body);
+      font-size: 12px;
+      fill: var(--muted);
+      pointer-events: none;
+      transition: opacity 0.35s;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-badge">Kunskapsyta · 2026 · Privatprojekt av Niklas Leide</div>
+      <h1>Partiernas ståndpunkter</h1>
+      <p>Neutral sammanställning inför valet 2026 — placeholder-data</p>
+    </div>
+  </header>
+
+  <nav class="tab-nav" aria-label="Vyer">
+    <button class="tab" data-view="spectrum">Spektrum</button>
+    <button class="tab active" data-view="cluster">Kluster</button>
+  </nav>
+
+  <main>
+    <div id="cluster-container"></div>
+  </main>
+
+  <footer>
+    Partipositioner baserade på partiprogram, valmanifest och riksdagsmotioner<br>
+    Kontrollera mot originaldokumenten. Dela gärna.<br>
+    © 2026 Niklas Leide
+  </footer>
+
+  <script>
+  'use strict';
+
+  /* ===================================================
+     Constants
+     =================================================== */
+  const SVG_W    = 800;
+  const SVG_H    = 340;
+  const R        = 26;
+  const SPACING  = R * 2 + 12;  // 64px between circle centres
+
+  const GROUP_X  = { vänster: 150, mitten: 400, höger: 650 };
+  const GROUP_Y  = 185;
+
+  /* ===================================================
+     Layout helpers
+     =================================================== */
+  // Default: 8 parties in a 4 × 2 grid, centred in SVG
+  function defaultPositions(abbrs) {
+    const cols = 4;
+    const totalRows = Math.ceil(abbrs.length / cols);
+    return abbrs.map((abbr, i) => ({
+      abbr,
+      x: SVG_W / 2 + (i % cols - (cols - 1) / 2) * SPACING,
+      y: SVG_H / 2 + (Math.floor(i / cols) - (totalRows - 1) / 2) * SPACING,
+    }));
+  }
+
+  // Within-group: rows of up to 3, centred on group anchor
+  function groupLayout(n) {
+    if (n === 0) return [];
+    const cols    = n <= 3 ? n : Math.ceil(n / 2);
+    const rows    = Math.ceil(n / cols);
+    return Array.from({ length: n }, (_, i) => {
+      const row    = Math.floor(i / cols);
+      const col    = i % cols;
+      const rowLen = (row === rows - 1 && n % cols !== 0) ? n % cols : cols;
+      return {
+        dx: (col - (rowLen - 1) / 2) * SPACING,
+        dy: (row - (rows - 1) / 2) * SPACING,
+      };
+    });
+  }
+
+  /* ===================================================
+     State
+     =================================================== */
+  let svgEl, data, activeTopic = null;
+
+  /* ===================================================
+     Bootstrap
+     =================================================== */
+  async function init() {
+    try {
+      const res = await fetch('data/positions.json');
+      if (!res.ok) throw new Error(res.status);
+      data = await res.json();
+      renderTopicNav();
+      renderSVG();
+      setupTabNav();
+    } catch (e) {
+      document.getElementById('cluster-container').innerHTML =
+        '<p style="padding:16px;color:#c00">Kunde inte ladda data: ' + e.message + '</p>';
+    }
+  }
+
+  /* ===================================================
+     Topic nav
+     =================================================== */
+  function renderTopicNav() {
+    const container = document.getElementById('cluster-container');
+    const nav = document.createElement('div');
+    nav.className = 'cluster-topic-nav';
+
+    data.areas.forEach(area => {
+      const label = document.createElement('div');
+      label.className = 'cluster-area-label';
+      label.textContent = area.name;
+      nav.appendChild(label);
+
+      area.topics.forEach(topic => {
+        const btn = document.createElement('button');
+        btn.className = 'cluster-topic-btn';
+        btn.textContent = topic.name;
+        btn.dataset.topicId = topic.id;
+        btn.addEventListener('click', () => selectTopic(topic, btn));
+        nav.appendChild(btn);
+      });
+    });
+
+    container.appendChild(nav);
+  }
+
+  /* ===================================================
+     SVG — initial render
+     =================================================== */
+  function renderSVG() {
+    const container = document.getElementById('cluster-container');
+
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', `0 0 ${SVG_W} ${SVG_H}`);
+    svg.setAttribute('class', 'cluster-svg');
+    svg.setAttribute('aria-hidden', 'true');
+    svgEl = svg;
+
+    // Group labels (hidden until a topic is selected)
+    Object.entries(GROUP_X).forEach(([group, gx]) => {
+      const t = svgText(gx, 28, group.charAt(0).toUpperCase() + group.slice(1), 'cluster-group-label middle');
+      t.setAttribute('data-group', group);
+      t.style.opacity = '0';
+      svg.appendChild(t);
+    });
+
+    // Hint
+    const hint = svgText(SVG_W / 2, SVG_H - 14,
+      'Välj en fråga ovan för att se partiernas grupperingar', 'cluster-hint middle');
+    hint.setAttribute('data-hint', '');
+    svg.appendChild(hint);
+
+    // Party nodes
+    const abbrs = Object.keys(data.parties);
+    defaultPositions(abbrs).forEach(({ abbr, x, y }) => {
+      const party = data.parties[abbr];
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'party-node');
+      g.setAttribute('data-abbr', abbr);
+      g.style.transform = `translate(${x}px, ${y}px)`;
+
+      const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('r', R);
+      circle.setAttribute('fill', party.color);
+
+      const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('dy', '0.35em');
+      label.setAttribute('class', 'party-node-label');
+      label.textContent = abbr;
+
+      g.appendChild(circle);
+      g.appendChild(label);
+      svg.appendChild(g);
+    });
+
+    container.appendChild(svg);
+  }
+
+  /* ===================================================
+     Select / deselect topic
+     =================================================== */
+  function selectTopic(topic, clickedBtn) {
+    // Toggle off
+    if (activeTopic === topic.id) {
+      activeTopic = null;
+      document.querySelectorAll('.cluster-topic-btn').forEach(b => b.classList.remove('active'));
+      resetToDefault();
+      return;
+    }
+
+    activeTopic = topic.id;
+    document.querySelectorAll('.cluster-topic-btn').forEach(b => b.classList.remove('active'));
+    clickedBtn.classList.add('active');
+
+    // Build group buckets, sorted by position within each group
+    const groups = { vänster: [], mitten: [], höger: [] };
+    Object.entries(topic.positions).forEach(([abbr, pos]) => {
+      if (groups[pos.group]) groups[pos.group].push({ abbr, position: pos.position });
+    });
+    Object.values(groups).forEach(arr => arr.sort((a, b) => a.position - b.position));
+
+    // Move each party node to its group position
+    Object.entries(groups).forEach(([group, members]) => {
+      const offsets = groupLayout(members.length);
+      members.forEach(({ abbr }, i) => {
+        moveNode(abbr, GROUP_X[group] + offsets[i].dx, GROUP_Y + offsets[i].dy);
+      });
+    });
+
+    svgEl.querySelectorAll('.cluster-group-label').forEach(l => l.style.opacity = '1');
+    svgEl.querySelector('[data-hint]').style.opacity = '0';
+  }
+
+  function resetToDefault() {
+    defaultPositions(Object.keys(data.parties)).forEach(({ abbr, x, y }) => moveNode(abbr, x, y));
+    svgEl.querySelectorAll('.cluster-group-label').forEach(l => l.style.opacity = '0');
+    svgEl.querySelector('[data-hint]').style.opacity = '1';
+  }
+
+  function moveNode(abbr, x, y) {
+    const node = svgEl.querySelector(`[data-abbr="${abbr}"]`);
+    if (node) node.style.transform = `translate(${x}px, ${y}px)`;
+  }
+
+  /* ===================================================
+     Tab nav — Spektrum navigates back to index.html
+     =================================================== */
+  function setupTabNav() {
+    document.querySelector('.tab[data-view="spectrum"]')
+      .addEventListener('click', () => { location.href = 'index.html'; });
+  }
+
+  /* ===================================================
+     SVG helper
+     =================================================== */
+  function svgText(x, y, content, classes) {
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    t.setAttribute('x', x);
+    t.setAttribute('y', y);
+    classes.split(' ').forEach(c => {
+      if (c === 'middle') t.setAttribute('text-anchor', 'middle');
+      else t.setAttribute('class', c);
+    });
+    t.textContent = content;
+    return t;
+  }
+
+  init();
+  </script>
+
+</body>
+</html>
