@@ -1,24 +1,32 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
 > **Last updated:** 2026-04-01
-> **Current sprint:** Sprint 1 – Cluster view
+> **Current sprint:** Sprint 2 – Real content
 > **Sprint dates:** 2026-04-01 → TBD
 
 ---
 
-## Current Sprint: Sprint 1 – Cluster view
+## Current Sprint: Sprint 2 – Real content
 
-| #   | Task                                              | Status      | Notes |
-|-----|---------------------------------------------------|-------------|-------|
-| 1.1 | Build cluster view with animated groupings        | ⬜ Todo     |       |
-| 1.2 | Tab navigation between spectrum and cluster       | ⬜ Todo     |       |
-| 1.3 | Detail panel on click (party card with source)    | ⬜ Todo     |       |
+| #   | Task                                                        | Status  | Notes |
+|-----|-------------------------------------------------------------|---------|-------|
+| 2.1 | Research and fill in actual party positions for school topics | ⬜ Todo |       |
+| 2.2 | Methodology page ("Om metoden")                             | ⬜ Todo |       |
+| 2.3 | Source links and citation for every position                | ⬜ Todo |       |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
 ---
 
 ## Completed Sprints
+
+### Sprint 1 – Cluster view ✅
+
+| #   | Task                                              | Notes                                                              |
+|-----|---------------------------------------------------|--------------------------------------------------------------------|
+| 1.1 | Build cluster view with animated groupings        | kluster.html + kluster.js — SVG circles animate to vänster/mitten/höger |
+| 1.2 | Tab navigation between spectrum and cluster       | Activated Kluster tab in index.html, navigates to kluster.html     |
+| 1.3 | Detail panel on click (party card with source)    | Slides in from right (desktop), stacks below (mobile)             |
 
 ### Sprint 0 – Setup ✅
 | #   | Task                                              | Notes                                            |
@@ -48,8 +56,10 @@ Open `index.html` directly in browser — no server needed.
 - Spektrum-vy med 5 skolfrågor
 - 8 partier positionerade på horisontella skalor
 - Hover visar partiets ståndpunkt
+- Kluster-vy med animerade grupperingar (vänster/mitten/höger)
+- Detaljpanel vid klick på parti — sammanfattning, källa, metodnotering
+- Fliknavigering mellan Spektrum och Kluster
 - Mobilvänlig layout (375px+)
-- Fliknavigering förberedd för kluster-vy
 - Reformkarta design language (mörk header, DM Sans + Source Serif 4)
 
 ---
@@ -61,11 +71,6 @@ Open `index.html` directly in browser — no server needed.
 ---
 
 ## Sprint Backlog
-
-### Sprint 2 — Real content
-- [ ] 2.1 Research and fill in actual party positions for school topics
-- [ ] 2.2 Methodology page ("Om metoden")
-- [ ] 2.3 Source links and citation for every position
 
 ### Sprint 3 — Expand
 - [ ] 3.1 Add more policy areas beyond school

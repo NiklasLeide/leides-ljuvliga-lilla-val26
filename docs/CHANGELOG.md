@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-01] docs: PROJECT_STATUS.md — close Sprint 1, open Sprint 2
 [2026-04-01] feat: activate Kluster tab in index.html — navigates to kluster.html
 [2026-04-01] feat: kluster detail panel — click a party circle to show name, stance, source, methodology note, and unclear badge; panel slides in on desktop, stacks on mobile
 [2026-04-01] refactor: extract kluster.js from kluster.html (file was >300 lines)
