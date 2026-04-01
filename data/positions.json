@@ -22,14 +22,14 @@
           "description": "Partiernas syn på fristående skolors rätt att etablera sig och verka.",
           "scale": { "low": "Strikt reglering", "high": "Fri etableringsrätt" },
           "positions": {
-            "V":  { "position": 8,  "group": "vänster",  "summary": "Vill avveckla vinstdrivna fristående skolor och föra tillbaka dem i offentlig regi.", "source": "Vänsterpartiets skolpolitiska program 2023", "unclear": false },
-            "MP": { "position": 22, "group": "vänster",  "summary": "Vill skärpa tillståndsregler och begränsa nyetablering i redan välförsörjda områden.", "source": "Miljöpartiets valmanifest 2022", "unclear": false },
-            "S":  { "position": 30, "group": "vänster",  "summary": "Vill stärka tillsyn och begränsa vinstuttag, men avvecklar inte befintliga friskolor.", "source": "Socialdemokraternas skolpolitik 2023", "unclear": false },
-            "SD": { "position": 52, "group": "mitten",   "summary": "Accepterar fristående skolor men vill sätta tydliga kvalitetskrav och begränsa utländskt ägande.", "source": "Sverigedemokraternas principprogram", "unclear": false },
-            "KD": { "position": 74, "group": "höger",    "summary": "Förespråkar valfrihet och stöder fristående skolor som ett komplement till kommunala.", "source": "Kristdemokraternas skolpolitik 2023", "unclear": false },
-            "C":  { "position": 80, "group": "höger",    "summary": "Starkt för valfrihet — fristående skolor är en central del av ett fritt samhälle.", "source": "Centerpartiets valmanifest 2022", "unclear": false },
-            "L":  { "position": 85, "group": "höger",    "summary": "Liberalerna ser fristående skolor som avgörande för mångfald och individens rätt att välja.", "source": "Liberalernas skolpolitik 2023", "unclear": false },
-            "M":  { "position": 88, "group": "höger",    "summary": "Moderaterna värnar skolval och fristående skolor och motsätter sig vinstförbud.", "source": "Moderaternas skolpolitiska program 2023", "unclear": false }
+            "V":  { "position": 5,  "group": "Avskaffa",        "summary": "Vinstförbud för all skolverksamhet. Vill avskaffa det fria skolvalet och införa statligt huvudmannaskap.", "source": "vansterpartiet.se, Motion 2024/25:2973", "unclear": false },
+            "S":  { "position": 18, "group": "Begränsa starkt", "summary": "Vill förbjuda vinstuttag i skolan. Skattepengar ska stanna i skolan. Kommunalt veto vid nyetablering.", "source": "Vi Lärares valenkät sept 2025", "unclear": false },
+            "MP": { "position": 22, "group": "Begränsa starkt", "summary": "Etableringsstopp för vinstdrivande aktiebolagsskolor. Överskott ska återinvesteras i verksamheten.", "source": "Vi Lärares valenkät sept 2025", "unclear": false },
+            "L":  { "position": 30, "group": "Begränsa starkt", "summary": "Vill fasa ut aktiebolag som driftsform för friskolor. Ny associationsform utan vinstsyfte. Stor kursändring klubbad på landsmöte nov 2025.", "source": "liberalerna.se okt 2025, L landsmöte nov 2025", "unclear": false },
+            "SD": { "position": 55, "group": "Skärpa krav",     "summary": "Varken vinstförbud eller vinstbegränsning. Vill skärpa tillståndskrav och kvalitetskontroll.", "source": "Vi Lärares valenkät sept 2025", "unclear": true },
+            "KD": { "position": 72, "group": "Värna valfrihet", "summary": "Friskolorna en viktig del av skolsystemet. Inget vinsttak men vill ha kvalitetskrav och begränsad kötid.", "source": "kd.se, Vi Lärares valenkät sept 2025", "unclear": false },
+            "M":  { "position": 78, "group": "Värna valfrihet", "summary": "Värnar friskolereformen och det fria skolvalet. Villkorar vinstutdelning till kvalitetskrav via Skolinspektionen.", "source": "moderaterna.se jan 2026", "unclear": false },
+            "C":  { "position": 88, "group": "Stark valfrihet", "summary": "Stark valfrihet. Friskolor utan kvalitetsbrister ska kunna fortsätta. Inga vinstbegränsningar.", "source": "Vi Lärares valenkät sept 2025", "unclear": false }
           }
         },
         {

@@ -8,8 +8,8 @@ const SVG_H   = 340;
 const R       = 26;
 const SPACING = R * 2 + 12;  // 64px between circle centres
 
-const GROUP_X = { vänster: 150, mitten: 400, höger: 650 };
-const GROUP_Y = 185;
+const GROUP_MARGIN = 110;  // px from SVG edge to outermost group centre
+const GROUP_Y      = 185;
 
 /* ===================================================
    Layout helpers
@@ -109,13 +109,10 @@ function renderSVG() {
   svg.setAttribute('aria-hidden', 'true');
   svgEl = svg;
 
-  // Group labels (hidden until topic selected)
-  Object.entries(GROUP_X).forEach(([group, gx]) => {
-    const t = mkSvgText(gx, 28, group.charAt(0).toUpperCase() + group.slice(1), 'cluster-group-label');
-    t.setAttribute('data-group', group);
-    t.style.opacity = '0';
-    svg.appendChild(t);
-  });
+  // Container for dynamic group labels (populated per topic in selectTopic)
+  const labelsG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  labelsG.setAttribute('data-group-labels', '');
+  svg.appendChild(labelsG);
 
   // Hint
   const hint = mkSvgText(SVG_W / 2, SVG_H - 14,
@@ -175,27 +172,49 @@ function selectTopic(topic, clickedBtn) {
   document.querySelectorAll('.cluster-topic-btn').forEach(b => b.classList.remove('active'));
   clickedBtn.classList.add('active');
 
-  const groups = { vänster: [], mitten: [], höger: [] };
+  // Derive groups dynamically — any string value in pos.group is valid
+  const groupMap = new Map();
   Object.entries(topic.positions).forEach(([abbr, pos]) => {
-    if (groups[pos.group]) groups[pos.group].push({ abbr, position: pos.position });
+    if (!groupMap.has(pos.group)) groupMap.set(pos.group, []);
+    groupMap.get(pos.group).push({ abbr, position: pos.position });
   });
-  Object.values(groups).forEach(arr => arr.sort((a, b) => a.position - b.position));
+  groupMap.forEach(members => members.sort((a, b) => a.position - b.position));
 
-  Object.entries(groups).forEach(([group, members]) => {
+  // Order groups left-to-right by average member position
+  const groups = [...groupMap.entries()]
+    .map(([name, members]) => ({
+      name, members,
+      avg: members.reduce((s, m) => s + m.position, 0) / members.length,
+    }))
+    .sort((a, b) => a.avg - b.avg);
+
+  // Spread groups evenly across SVG width
+  const step = groups.length > 1 ? (SVG_W - 2 * GROUP_MARGIN) / (groups.length - 1) : 0;
+  const groupX = Object.fromEntries(
+    groups.map((g, i) => [g.name, groups.length === 1 ? SVG_W / 2 : GROUP_MARGIN + i * step])
+  );
+
+  groups.forEach(({ name, members }) => {
     const offsets = groupLayout(members.length);
     members.forEach(({ abbr }, i) =>
-      moveNode(abbr, GROUP_X[group] + offsets[i].dx, GROUP_Y + offsets[i].dy));
+      moveNode(abbr, groupX[name] + offsets[i].dx, GROUP_Y + offsets[i].dy));
   });
 
-  svgEl.querySelectorAll('.cluster-group-label').forEach(l => l.style.opacity = '1');
+  renderGroupLabels(groups, groupX);
   svgEl.querySelector('[data-hint]').style.opacity = '0';
   if (selectedParty) showPanel(selectedParty);  // refresh panel with new topic
 }
 
 function resetToDefault() {
   defaultPositions(Object.keys(data.parties)).forEach(({ abbr, x, y }) => moveNode(abbr, x, y));
-  svgEl.querySelectorAll('.cluster-group-label').forEach(l => l.style.opacity = '0');
+  svgEl.querySelector('[data-group-labels]').innerHTML = '';
   svgEl.querySelector('[data-hint]').style.opacity = '1';
+}
+
+function renderGroupLabels(groups, groupX) {
+  const container = svgEl.querySelector('[data-group-labels]');
+  container.innerHTML = '';
+  groups.forEach(({ name }) => container.appendChild(mkSvgText(groupX[name], 28, name, 'cluster-group-label')));
 }
 
 function moveNode(abbr, x, y) {

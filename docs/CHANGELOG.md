@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-01] feat: verified positions for friskolor — 8 parties, 5 descriptive groups, sources from 2025–2026
+[2026-04-01] refactor: kluster.js — dynamic group layout, supports any number of named groups (not hardcoded vänster/mitten/höger)
 [2026-04-01] docs: add RESEARCH_AGENT.md — research workflow, source hierarchy, neutrality rules, role split
 [2026-04-01] docs: PROJECT_STATUS.md — close Sprint 1, open Sprint 2
 [2026-04-01] feat: activate Kluster tab in index.html — navigates to kluster.html
