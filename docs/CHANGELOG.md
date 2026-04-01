@@ -8,6 +8,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 [2026-04-01] feat: kluster detail panel — click a party circle to show name, stance, source, methodology note, and unclear badge; panel slides in on desktop, stacks on mobile
 [2026-04-01] refactor: extract kluster.js from kluster.html (file was >300 lines)
 [2026-04-01] feat: add kluster.html — cluster view with SVG party circles, topic selector buttons, and animated groupings by vänster/mitten/höger
+[2026-04-01] chore: commit.sh — broaden JS staging from app.js to *.js
 [2026-04-01] chore: commit.sh — broaden HTML staging from index.html to *.html
 [2026-04-01] docs: PROJECT_STATUS.md — close Sprint 0 + 0.5, open Sprint 1
 [2026-04-01] docs: log DEC-006 — design language aligned to reformkarta
