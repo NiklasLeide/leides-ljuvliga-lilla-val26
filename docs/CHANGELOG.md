@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-01] feat: apply reformkartan design language — dark header with header-badge, aligned CSS tokens (--ink/--bg/--card/--border/--muted), full-width tab nav, footer, extended font weights
 [2026-04-01] chore: set Cloudflare Web Analytics token in index.html
 [2026-04-01] chore: add CNAME (val26.leide.se), rewrite commit.sh for project structure, add deploy.sh
 [2026-04-01] docs: add Sprint 0.5 infrastructure tasks to ROADMAP.md

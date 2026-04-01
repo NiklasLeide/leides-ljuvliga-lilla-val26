@@ -8,7 +8,11 @@
       "Bash(chmod +x commit.sh deploy.sh)",
       "Bash(bash commit.sh)",
       "Bash(bash commit.sh \"chore: Sprint 0.5 infrastructure — CNAME, commit.sh, deploy.sh\")",
-      "Bash(bash commit.sh \"chore: set Cloudflare Web Analytics token\")"
+      "Bash(bash commit.sh \"chore: set Cloudflare Web Analytics token\")",
+      "Bash(curl:*)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(bash commit.sh \"Apply reformkartan design language\")"
     ]
   }
 }
