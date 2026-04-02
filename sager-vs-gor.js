@@ -129,16 +129,14 @@ function renderCards() {
 }
 
 function findEntry(partyId, topicId, areaId) {
-  return votingData.entries.find(
-    e => e.partyId === partyId && e.topicId === topicId && e.areaId === areaId
-  ) || null;
+  return votingData.data?.[areaId]?.[topicId]?.[partyId] || null;
 }
 
 /* ===================================================
    Card builders
    =================================================== */
 function buildCard(entry, headerContent) {
-  const { says, promises, voted, match } = entry;
+  const { says, promises, promises_source, promises_url, voted, voted_source, voted_url, match } = entry;
   return `
     <div class="svs-card">
       <div class="svs-card-header">
@@ -148,16 +146,16 @@ function buildCard(entry, headerContent) {
       <div class="svs-rows">
         <div class="svs-row">
           <span class="svs-row-label svs-label-sager">Säger</span>
-          <span class="svs-row-text">${esc(says.summary)} ${srcLink(says)}</span>
+          <span class="svs-row-text">${rowText(says)}</span>
         </div>
         <div class="svs-row">
           <span class="svs-row-label svs-label-lovar">Lovar</span>
-          <span class="svs-row-text">${esc(promises.summary)} ${srcLink(promises)}</span>
+          <span class="svs-row-text">${rowText(promises, promises_source, promises_url)}</span>
         </div>
         <div class="svs-row-divider"></div>
         <div class="svs-row">
           <span class="svs-row-label svs-label-rostat">Röstat</span>
-          <span class="svs-row-text">${esc(voted.summary)} ${srcLink(voted)}</span>
+          <span class="svs-row-text">${rowText(voted, voted_source, voted_url)}</span>
         </div>
       </div>
     </div>`;
@@ -185,9 +183,12 @@ function matchBadge(match) {
   return `<span class="svs-match-badge ${cls}">${label}</span>`;
 }
 
-function srcLink(field) {
-  if (!field?.sourceUrl) return '';
-  return `<a class="svs-src-link" href="${field.sourceUrl}" target="_blank" rel="noopener noreferrer">${esc(field.source || 'Källa')}</a>`;
+function rowText(text, source, url) {
+  const t = esc(text);
+  const link = (source && url)
+    ? ` <a class="svs-src-link" href="${url}" target="_blank" rel="noopener noreferrer">${esc(source)}</a>`
+    : '';
+  return t ? t + link : `<span class="svs-row-empty">—</span>`;
 }
 
 /* ===================================================

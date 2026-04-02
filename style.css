@@ -588,6 +588,7 @@ header p {
   margin: var(--space-xs) 0;
 }
 
+.svs-row-empty { color: var(--muted); font-style: italic; }
 .svs-src-link { font-size: 0.75rem; color: var(--muted); text-decoration: underline; }
 .svs-src-link:hover { color: var(--ink); }
 

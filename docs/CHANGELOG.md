@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] data: voting.json v2 — school area complete (6 topics, 48 party entries); restructured to nested data[area][topic][party]; sager-vs-gor.js updated to match new schema
 [2026-04-02] docs: RESEARCH_AGENT.md — section 5 now includes instructions for per-area analysis summary (2–3 neutral sentences on dividing lines, displayed as site intro context)
 [2026-04-02] feat: area analysis text — "analysis" field on each area in positions.json, rendered as muted intro paragraph above content in spectrum and cluster views; placeholder text for all 3 areas
 [2026-04-02] data: add migration area with 5 topics (asylpolitik, arbetskraftsinvandring, medborgarskap, integration, uppehallstillstand) — 40 verified positions with source URLs
