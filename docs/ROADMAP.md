@@ -52,20 +52,20 @@
 
 ---
 
-## Sprint 5 — GAL-TAN scale
+## Sprint 5 — "Says vs does" view
 
-- [ ] 5.1 New view: GAL-TAN chart with party positions over time
-- [ ] 5.2 Data from Chapel Hill Expert Survey + own assessment
-- [ ] 5.3 Show movement since 2018 and 2022 elections
-- [ ] 5.4 UI polish pass
+- [ ] 5.1 New view comparing stated positions (party programs) with voting records (riksdagen.se)
+- [ ] 5.2 Riksdag voting data integration
+- [ ] 5.3 UI polish pass
 
 ---
 
-## Sprint 6 — "Says vs does" view
+## Sprint 6 — GAL-TAN scale
 
-- [ ] 6.1 New view comparing stated positions (party programs) with voting records (riksdagen.se)
-- [ ] 6.2 Riksdag voting data integration
-- [ ] 6.3 UI polish pass
+- [ ] 6.1 New view: GAL-TAN chart with party positions over time
+- [ ] 6.2 Data from Chapel Hill Expert Survey + own assessment
+- [ ] 6.3 Show movement since 2018 and 2022 elections
+- [ ] 6.4 UI polish pass
 
 ---
 
