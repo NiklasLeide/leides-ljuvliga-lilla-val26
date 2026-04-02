@@ -297,6 +297,8 @@ function hidePanel() {
 function setupTabNav() {
   document.querySelector('.tab[data-view="spectrum"]')
     .addEventListener('click', () => { location.href = 'index.html'; });
+  document.querySelector('.tab[data-view="metod"]')
+    .addEventListener('click', () => { location.href = 'metod.html'; });
 }
 
 /* ===================================================

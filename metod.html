@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om metoden — Val 2026</title>
+  <meta name="description" content="Hur partipositioner samlas in, bedöms och placeras på skalan i den här sammanställningen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .metod-body {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+    }
+
+    .metod-body h2 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: var(--space-xl);
+      margin-bottom: var(--space-sm);
+    }
+
+    .metod-body h2:first-child {
+      margin-top: 0;
+    }
+
+    .metod-body p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: var(--ink);
+      margin-bottom: var(--space-md);
+    }
+
+    .metod-body ul {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      padding-left: 1.25rem;
+      margin-bottom: var(--space-md);
+    }
+
+    .metod-body li {
+      margin-bottom: var(--space-xs);
+    }
+
+    .metod-body strong {
+      font-weight: 600;
+    }
+
+    .metod-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: var(--space-xl) 0;
+    }
+
+    .unclear-demo {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin: var(--space-sm) 0 var(--space-md);
+    }
+
+    .unclear-demo .dot-example {
+      width: var(--dot);
+      height: var(--dot);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--dot-font);
+      font-weight: 700;
+      color: #fff;
+      border: 2px solid transparent;
+      flex-shrink: 0;
+    }
+
+    .unclear-demo .dot-example.unclear {
+      opacity: 0.55;
+      border-style: dashed;
+      border-color: currentColor;
+    }
+
+    .unclear-demo span {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .neutral-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: var(--space-md) var(--space-lg);
+      margin-top: var(--space-md);
+    }
+
+    .neutral-box p {
+      margin-bottom: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    @media (max-width: 480px) {
+      .metod-body {
+        padding: var(--space-lg) var(--space-md);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-badge">Kunskapsyta · 2026 · Privatprojekt av Niklas Leide</div>
+      <h1>Partiernas ståndpunkter</h1>
+      <p>Neutral sammanställning inför valet 2026</p>
+    </div>
+  </header>
+
+  <nav class="tab-nav" aria-label="Vyer">
+    <button class="tab" data-view="spectrum">Spektrum</button>
+    <button class="tab" data-view="cluster">Kluster</button>
+    <button class="tab active" data-view="metod">Om metoden</button>
+  </nav>
+
+  <main>
+    <article class="metod-body">
+
+      <h2>Datakällor</h2>
+      <p>
+        Varje partiposition är hämtad direkt från officiella källor. Prioriteringsordning:
+      </p>
+      <ul>
+        <li><strong>Partiprogram och valmanifest</strong> — den auktoritativa beskrivningen av partiets samlade ståndpunkt</li>
+        <li><strong>Riksdagsmotioner</strong> — konkreta förslag som partiet lagt fram i riksdagen, sökbara på riksdagen.se</li>
+        <li><strong>Propositioner och utskottsbetänkanden</strong> — för regeringspartier, vad de faktiskt genomfört</li>
+        <li><strong>Pressmeddelanden och officiella partisidor</strong> — aktuella ställningstaganden som inte hunnit in i partiprogram</li>
+        <li><strong>Partiledardebatter och enkätsvar</strong> — som komplement när ovanstående saknas, med lägre källvikt</li>
+      </ul>
+      <p>
+        Varje position har en <strong>källhänvisning med klickbar URL</strong>. Ståndpunkter utan verifierbar källa läggs inte in.
+      </p>
+
+      <hr class="metod-divider">
+
+      <h2>Positionering på 0–100-skalan</h2>
+      <p>
+        Varje sakfråga har en skala med tydligt definierade ytterligheter — till exempel
+        <em>"Förbjud vinstuttag" (0) ↔ "Fri vinstutdelning" (100)</em>.
+        Partiets position på skalan bestäms av vad partiet faktiskt driver, inte av hur
+        partiet beskriver sig självt.
+      </p>
+      <p>
+        Skalornas ytterligheter är konstruerade för att spegla det reella spridningen
+        bland riksdagspartierna — inte en hypotetisk ytterlighetsdebatt. Ett parti som
+        hamnar vid 5 eller 95 driver frågan konsekvent åt det hållet; ett parti vid
+        50 har en mittenposition eller är internt splittrat.
+      </p>
+
+      <hr class="metod-divider">
+
+      <h2>Grupperingslogik</h2>
+      <p>
+        Partier med liknande positioner samlas i namngivna grupper — exempelvis
+        <em>"Förbjud vinstuttag"</em>, <em>"Villkorad vinst"</em> eller <em>"Värna valfrihet"</em>.
+        Grupper speglar meningsfull politisk samling, inte partifamiljer eller blockgränser.
+        Ett parti kan stå ensamt i sin grupp om positionen är genuint unik.
+      </p>
+      <p>
+        Gruppnamnen är beskrivande, inte värderande. Att hamna i gruppen
+        "Värna valfrihet" innebär inte att andra grupper är emot valfrihet —
+        det är den label som bäst sammanfattar vad partiet betonar i frågan.
+      </p>
+
+      <hr class="metod-divider">
+
+      <h2>Oklara positioner</h2>
+      <p>
+        Om ett partis position är otydlig, internt splittrad eller saknar
+        tillräcklig källdokumentation markeras det med <strong>oklar ståndpunkt</strong>.
+        Det syns visuellt som en halvtransparent, streckad punkt på skalan:
+      </p>
+      <div class="unclear-demo">
+        <span class="dot-example unclear" style="background:#009933; color:#009933">C</span>
+        <span>Oklar ståndpunkt — placeringen är ett provisoriskt estimat</span>
+      </div>
+      <p>
+        En oklar position är bättre än ingen position alls — frånvaro på skalan
+        vore också missvisande. Men den ska läsas med reservation.
+      </p>
+
+      <hr class="metod-divider">
+
+      <h2>Neutralitet</h2>
+      <div class="neutral-box">
+        <p>
+          Det här är ett privatprojekt av Niklas Leide, inte en journalistisk redaktion.
+          Ambitionen är att redovisa partiernas faktiska ståndpunkter så exakt som möjligt —
+          utan att dölja oenighet, sopa konflikter under mattan eller styra läsaren mot
+          ett visst utfall. Alla positioner är verifierbara via källlänkarna.
+          Hittar du fel eller missvisande framställning: kontakta mig.
+        </p>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    Partipositioner baserade på partiprogram, valmanifest och riksdagsmotioner<br>
+    Kontrollera mot originaldokumenten. Dela gärna.<br>
+    © 2026 Niklas Leide
+  </footer>
+
+  <script>
+    document.querySelector('.tab[data-view="spectrum"]')
+      .addEventListener('click', () => { location.href = 'index.html'; });
+    document.querySelector('.tab[data-view="cluster"]')
+      .addEventListener('click', () => { location.href = 'kluster.html'; });
+  </script>
+
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "9d66c8f5b9da46078ca71ab819946f62"}'></script>
+
+</body>
+</html>

@@ -11,7 +11,7 @@
 | #   | Task                                                        | Status  | Notes |
 |-----|-------------------------------------------------------------|---------|-------|
 | 2.1 | Research and fill in actual party positions for school topics | ✅ Done | 4 topics verified (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning); friskolor done prev session |
-| 2.2 | Methodology page ("Om metoden")                             | ⬜ Todo |       |
+| 2.2 | Methodology page ("Om metoden")                             | ✅ Done | metod.html — sources, scale, groups, unclear, neutrality. Tab nav on all pages. |
 | 2.3 | Source links and citation for every position                | 🔄 In Progress | 4/5 topics have URLs (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning). friskolor still has plain-text sources only. |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused

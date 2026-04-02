@@ -213,6 +213,7 @@ function setupViewTabs() {
   document.querySelectorAll('.tab[data-view]').forEach(tab => {
     tab.addEventListener('click', () => {
       if (tab.dataset.view === 'cluster') { location.href = 'kluster.html'; return; }
+      if (tab.dataset.view === 'metod')   { location.href = 'metod.html';   return; }
       document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
       tab.classList.add('active');
