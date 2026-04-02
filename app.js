@@ -2,6 +2,7 @@
 
 let data = null;
 let activeArea = null;
+let selectedDot = null;
 const tooltip = document.getElementById('tooltip');
 
 /* ===================================================
@@ -63,13 +64,15 @@ function renderSpectrum() {
     const dotsHeight = rowCount * 28 + 4;
 
     const dots = rows.map(item => {
-      const { party, position, summary, unclear, row } = item;
+      const { id, party, position, summary, unclear, row } = item;
       const top = row * 28;
       const safeSum = summary.replace(/"/g, '&quot;');
       return `<button class="party-dot${unclear ? ' unclear' : ''}"
         style="background:${party.color};left:${position}%;top:${top}px"
         data-name="${party.name}"
         data-summary="${safeSum}"
+        data-abbr="${id}"
+        data-topic="${topic.id}"
         aria-label="${party.name}: ${summary}">${party.abbr}</button>`;
     }).join('');
 
@@ -94,6 +97,7 @@ function renderSpectrum() {
     dot.addEventListener('mouseleave', hideTooltip);
     dot.addEventListener('focus', onDotEnter);
     dot.addEventListener('blur', hideTooltip);
+    dot.addEventListener('click', onDotClick);
   });
 }
 
@@ -114,6 +118,65 @@ function assignRows(sorted, threshold) {
     result[i].row = row;
   }
   return result;
+}
+
+/* ===================================================
+   Source link formatter
+   =================================================== */
+function formatSource(text) {
+  const escaped = text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  return escaped.replace(/https?:\/\/[^\s,)]+/g, url =>
+    `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
+}
+
+/* ===================================================
+   Detail panel (click)
+   =================================================== */
+function onDotClick(e) {
+  const dot = e.currentTarget;
+  const abbr    = dot.dataset.abbr;
+  const topicId = dot.dataset.topic;
+  const area    = data.areas.find(a => a.id === activeArea);
+  const topic   = area.topics.find(t => t.id === topicId);
+  const pos     = topic.positions[abbr];
+  const party   = data.parties[abbr];
+
+  if (selectedDot === dot && document.getElementById('detail-panel').classList.contains('visible')) {
+    hidePanel();
+    return;
+  }
+  selectedDot = dot;
+
+  const panel = document.getElementById('detail-panel');
+  let html = `<div class="panel-header">
+    <span class="panel-dot" style="background:${party.color}"></span>
+    <span class="panel-name">${party.name}</span>
+    <button class="panel-close" aria-label="Stäng">×</button>
+  </div>`;
+  if (pos.unclear) html += `<div class="panel-unclear">Oklar ståndpunkt</div>`;
+  html += `<p class="panel-topic-label">${topic.name}</p>
+           <p class="panel-summary">${pos.summary}</p>
+           <p class="panel-source">Källa: ${formatSource(pos.source)}</p>
+           <p class="panel-method">Baserat på partiprogram, valmanifest och riksdagsmotioner — kontrollera mot originaldokumenten.</p>`;
+
+  panel.innerHTML = html;
+  panel.querySelector('.panel-close').addEventListener('click', hidePanel);
+
+  if (!panel.classList.contains('visible')) {
+    panel.style.display = 'block';
+    panel.offsetHeight;
+    panel.classList.add('visible');
+  }
+}
+
+function hidePanel() {
+  const panel = document.getElementById('detail-panel');
+  panel.classList.remove('visible');
+  panel.addEventListener('transitionend', () => { panel.style.display = 'none'; }, { once: true });
+  selectedDot = null;
 }
 
 /* ===================================================

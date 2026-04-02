@@ -270,6 +270,85 @@ header p {
 }
 
 /* ===================================================
+   Detail panel (spectrum view)
+   =================================================== */
+#detail-panel {
+  display: none;
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  width: 280px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  z-index: 200;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.22s, transform 0.22s;
+}
+#detail-panel.visible { opacity: 1; transform: translateY(0); }
+
+.panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: var(--space-md); }
+.panel-dot { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; }
+.panel-name { font-family: var(--font-serif); font-size: 1rem; font-weight: 600; flex: 1; }
+.panel-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--muted);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+}
+.panel-close:hover { color: var(--ink); background: var(--border); }
+.panel-unclear {
+  display: inline-block;
+  font-size: 0.63rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 2px 8px;
+  margin-bottom: var(--space-sm);
+}
+.panel-topic-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: var(--space-xs);
+}
+.panel-summary { font-size: 0.85rem; line-height: 1.5; margin-bottom: var(--space-md); }
+.panel-source { font-size: 0.72rem; color: var(--muted); line-height: 1.5; margin-bottom: var(--space-md); }
+.panel-source a { color: var(--muted); text-decoration: underline; }
+.panel-source a:hover { color: var(--ink); }
+.panel-method {
+  font-size: 0.66rem;
+  color: var(--muted);
+  line-height: 1.4;
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-sm);
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  #detail-panel {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-bottom: none;
+  }
+}
+
+/* ===================================================
    Cluster placeholder
    =================================================== */
 .placeholder-view {

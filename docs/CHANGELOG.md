@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-01] feat: clickable source links in detail panels — URLs in source strings render as <a> tags; spectrum view gets click-to-open detail panel
 [2026-04-01] docs: RESEARCH_AGENT.md — require verifiable URL for every source; positions without URL not accepted
 [2026-04-01] feat: verified positions for statlig-styrning — 8 parties, 4 groups (Kommunalt/Delat/Ökad statlig/Statligt huvudmannaskap), sources 2015–2025
 [2026-04-01] feat: verified positions for tidiga-betyg — 8 parties, 3 groups (Senare betyg/Betyg från åk 6/Tidiga kunskapskontroller), sources 2010–2026

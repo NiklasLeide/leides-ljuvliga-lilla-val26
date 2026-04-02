@@ -1,6 +1,18 @@
 'use strict';
 
 /* ===================================================
+   Source link formatter
+   =================================================== */
+function formatSource(text) {
+  const escaped = text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  return escaped.replace(/https?:\/\/[^\s,)]+/g, url =>
+    `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
+}
+
+/* ===================================================
    Constants
    =================================================== */
 const SVG_W   = 800;
@@ -251,7 +263,7 @@ function showPanel(abbr) {
     if (pos.unclear) html += `<div class="panel-unclear">Oklar ståndpunkt</div>`;
     html += `<p class="panel-topic-label">${topicName}</p>
              <p class="panel-summary">${pos.summary}</p>
-             <p class="panel-source">Källa: ${pos.source}</p>`;
+             <p class="panel-source">Källa: ${formatSource(pos.source)}</p>`;
   } else {
     html += `<p class="panel-no-topic">Välj en fråga ovan för att se ${party.name}s ståndpunkt.</p>`;
   }
