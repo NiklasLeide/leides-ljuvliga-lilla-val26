@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] feat: Säger vs gör view (sager-vs-gor.html + sager-vs-gor.js) — per-fråga/per-parti toggle, promise cards with Säger/Lovar/Röstat rows + match badges; placeholder data for friskolor + nationella-prov; new tab in all page navs
 [2026-04-02] fix: header + tab-nav fixed at top — .top-bar wrapper on all pages, body flex-column overflow:hidden, main flex:1, each column overflow-y:auto; app.js scroll listener moved from window to .app-center
 [2026-04-02] feat: three-column layout for spectrum and cluster views — sticky left nav, sticky right panel, cluster group zones with animation
 [2026-04-02] feat: add school topic digitalisering-skolan — 8 parties, 3 groups (Digital strategi behövs/Balanserad hållning/Begränsa skärmar), 2 unclear

@@ -247,8 +247,9 @@ function placeTooltip(dot) {
 function setupViewTabs() {
   document.querySelectorAll('.tab[data-view]').forEach(tab => {
     tab.addEventListener('click', () => {
-      if (tab.dataset.view === 'cluster') { location.href = 'kluster.html'; return; }
-      if (tab.dataset.view === 'metod')   { location.href = 'metod.html';   return; }
+      if (tab.dataset.view === 'cluster')      { location.href = 'kluster.html';      return; }
+      if (tab.dataset.view === 'sager-vs-gor') { location.href = 'sager-vs-gor.html'; return; }
+      if (tab.dataset.view === 'metod')        { location.href = 'metod.html';         return; }
     });
   });
 }

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "partyId": "S",
+      "topicId": "friskolor",
+      "areaId": "skola",
+      "says": {
+        "summary": "Vill förbjuda vinstuttag i skolan och införa kommunalt veto vid nyetablering.",
+        "source": "S om friskolor",
+        "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor"
+      },
+      "promises": {
+        "summary": "Kongressbeslut 2021: vinstförbud i välfärden som prioriterad reform om S återtar regeringsmakten.",
+        "source": "S kongresskommuniké 2021",
+        "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor"
+      },
+      "voted": {
+        "summary": "Lade fram egna motioner om fullständigt vinstförbud (2025/26:1808). Röstade mot Tidöavtalet som otillräckligt.",
+        "source": "Motion 2025/26:1808",
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/forbud-mot-vinstuttag-i-skolan_hd021808/"
+      },
+      "match": "stammer"
+    },
+    {
+      "partyId": "V",
+      "topicId": "friskolor",
+      "areaId": "skola",
+      "says": {
+        "summary": "Vill avskaffa det fria skolvalet och friskolesystemet. Vinstförbud för all skolverksamhet.",
+        "source": "V:s skolpolitik",
+        "sourceUrl": "https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/"
+      },
+      "promises": {
+        "summary": "Genomförandeplan 2022: vinstförbud fullt infört 2026, statligt huvudmannaskap på sikt.",
+        "source": "V:s genomförandeplan 2022",
+        "sourceUrl": "https://www.vansterpartiet.se/wp-content/uploads/2022/07/genomforandeplan-skolan-v-220704.pdf"
+      },
+      "voted": {
+        "summary": "Röstade konsekvent för vinstförbud i alla relevanta voteringer. Lade egna motioner (Motion HD02973).",
+        "source": "Motion HD02973",
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/skolan-ska-inte-vara-en-marknad_hd02973/"
+      },
+      "match": "stammer"
+    },
+    {
+      "partyId": "M",
+      "topicId": "friskolor",
+      "areaId": "skola",
+      "says": {
+        "summary": "Värnar friskolereformen och det fria skolvalet. Vinstutdelning villkoras av kvalitetskrav.",
+        "source": "Tidöavtalets utredningsdirektiv",
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/tillaggsdirektiv-till-utredningen-om-vinst-i_hbb1109/"
+      },
+      "promises": {
+        "summary": "Tidöavtalet 2022: utredning om begränsat vinststopp vid nystart, ägarbyte och kvalitetsbrister.",
+        "source": "Tidöavtalet 2022",
+        "sourceUrl": "https://www.regeringen.se/contentassets/b13f174db69d40bfa29bbc2e899df9c0/tidoavtalet.pdf"
+      },
+      "voted": {
+        "summary": "Röstade för Tidöavtalets utredningsdirektiv om begränsat vinststopp. Avvisade S:s motioner om fullständigt vinstförbud.",
+        "source": "Riksdagsvotering — vinstutredning",
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/tillaggsdirektiv-till-utredningen-om-vinst-i_hbb1109/"
+      },
+      "match": "delvis"
+    },
+    {
+      "partyId": "SD",
+      "topicId": "friskolor",
+      "areaId": "skola",
+      "says": {
+        "summary": "Avvisar vinstförbud och generell vinstbegränsning. Fokus på skärpta kvalitetskrav och ägarprövning.",
+        "source": "Vi Lärares partienkät sept 2025",
+        "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/"
+      },
+      "promises": {
+        "summary": "Inga konkreta löften om vinstbegränsning. Accepterade Tidöavtalets begränsade vinststopp i koalitionsförhandlingarna.",
+        "source": "Tidöavtalet 2022",
+        "sourceUrl": "https://www.regeringen.se/contentassets/b13f174db69d40bfa29bbc2e899df9c0/tidoavtalet.pdf"
+      },
+      "voted": {
+        "summary": "Röstade för Tidöavtalets utredningsdirektiv inklusive begränsat vinststopp — trots marknadsvänlig retorik.",
+        "source": "Riksdagsvotering — vinstutredning",
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/kommittedirektiv/tillaggsdirektiv-till-utredningen-om-vinst-i_hbb1109/"
+      },
+      "match": "delvis"
+    },
+    {
+      "partyId": "S",
+      "topicId": "nationella-prov",
+      "areaId": "skola",
+      "says": {
+        "summary": "Nationella prov viktiga för likvärdighet men vill minska lärarnas administrativa börda.",
+        "source": "S om nationella prov",
+        "sourceUrl": "https://www.socialdemokraterna.se/var-politik/a-till-o/nationella-prov"
+      },
+      "promises": {
+        "summary": "Januariavtalet 2019: stödde principen om centralt rättade nationella prov.",
+        "source": "Riksdagen — skriftlig fråga om omrättning",
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/omrattning-nationella-prov_h8122823/"
+      },
+      "voted": {
+        "summary": "Under S-regeringen minskades antalet obligatoriska prov. I opposition: röstade inte för nuvarande centralrättningsmodell.",
+        "source": "Riksdagen — skriftlig fråga om omrättning",
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/omrattning-nationella-prov_h8122823/"
+      },
+      "match": "delvis"
+    },
+    {
+      "partyId": "M",
+      "topicId": "nationella-prov",
+      "areaId": "skola",
+      "says": {
+        "summary": "Vill ha centralt rättade nationella slutprov som stärker likvärdighet och rättssäkerhet.",
+        "source": "Vi Lärares partienkät sept 2025",
+        "sourceUrl": "https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/"
+      },
+      "promises": {
+        "summary": "Tidöavtalet: centralt rättade nationella prov ska införas för alla elever.",
+        "source": "Tidöavtalet 2022",
+        "sourceUrl": "https://www.regeringen.se/contentassets/b13f174db69d40bfa29bbc2e899df9c0/tidoavtalet.pdf"
+      },
+      "voted": {
+        "summary": "Röstade för och drev igenom reformen med centralt rättade nationella slutprov som träder i kraft 2026.",
+        "source": "Prop. 2024/25:xxx — ny betygsskala",
+        "sourceUrl": "https://www.gymnasium.se/nyheter/inspiration/sa-tycker-riksdagspartierna-om-skolan-14095"
+      },
+      "match": "stammer"
+    }
+  ]
+}

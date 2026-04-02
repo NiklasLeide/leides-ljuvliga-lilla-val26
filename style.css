@@ -438,6 +438,154 @@ header p {
 }
 
 /* ===================================================
+   Säger vs gör
+   =================================================== */
+.svs-mode-toggle {
+  display: flex;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+.svs-mode-btn {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+  padding: 5px var(--space-sm);
+  cursor: pointer;
+  color: var(--muted);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.svs-mode-btn:hover { color: var(--ink); border-color: #bbb; }
+.svs-mode-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+.svs-party-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: var(--space-xs) 0;
+}
+.svs-party-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.svs-party-btn:hover { transform: scale(1.1); box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.svs-party-btn.active { border-color: rgba(0,0,0,0.4); border-width: 3px; }
+
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.svs-hint {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: var(--space-lg) 0;
+}
+
+.svs-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+.svs-card-stub { opacity: 0.55; }
+
+.svs-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+.svs-card-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+.svs-card-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.svs-card-title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.svs-card-area-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.svs-match-badge {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 99px;
+  flex-shrink: 0;
+}
+.badge-stammer     { background: #d4f7dc; color: #1a7a3a; }
+.badge-delvis      { background: #fff3cd; color: #8a5700; }
+.badge-avviker     { background: #fde8e8; color: #9b1c1c; }
+.badge-ej-granskat { background: var(--border); color: var(--muted); }
+
+.svs-rows { display: flex; flex-direction: column; gap: var(--space-sm); }
+
+.svs-row { display: flex; gap: var(--space-sm); align-items: baseline; }
+
+.svs-row-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  line-height: 1.6;
+}
+.svs-label-sager  { background: #dbeafe; color: #1e40af; }
+.svs-label-lovar  { background: #ede9fe; color: #5b21b6; }
+.svs-label-rostat { background: #ccfbf1; color: #0f766e; }
+
+.svs-row-text { font-size: 0.83rem; line-height: 1.5; color: var(--ink); }
+
+.svs-row-divider {
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-xs) 0;
+}
+
+.svs-src-link { font-size: 0.75rem; color: var(--muted); text-decoration: underline; }
+.svs-src-link:hover { color: var(--ink); }
+
+.svs-stub-text { font-size: 0.82rem; color: var(--muted); font-style: italic; }
+
+/* ===================================================
    Footer
    =================================================== */
 footer {
@@ -523,4 +671,9 @@ footer {
   }
 
   .tooltip { max-width: 200px; font-size: 0.75rem; }
+
+  /* Säger vs gör — mobile */
+  .svs-row { flex-direction: column; gap: 2px; }
+  .svs-row-label { align-self: flex-start; }
+  .svs-card-title { font-size: 0.88rem; }
 }

@@ -335,6 +335,8 @@ function hidePanel() {
 function setupTabNav() {
   document.querySelector('.tab[data-view="spectrum"]')
     .addEventListener('click', () => { location.href = 'index.html'; });
+  document.querySelector('.tab[data-view="sager-vs-gor"]')
+    .addEventListener('click', () => { location.href = 'sager-vs-gor.html'; });
   document.querySelector('.tab[data-view="metod"]')
     .addEventListener('click', () => { location.href = 'metod.html'; });
 }
