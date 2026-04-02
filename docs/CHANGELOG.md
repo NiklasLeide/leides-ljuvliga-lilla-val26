@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] feat: area analysis text — "analysis" field on each area in positions.json, rendered as muted intro paragraph above content in spectrum and cluster views; placeholder text for all 3 areas
 [2026-04-02] data: add migration area with 5 topics (asylpolitik, arbetskraftsinvandring, medborgarskap, integration, uppehallstillstand) — 40 verified positions with source URLs
 [2026-04-02] docs: RESEARCH_AGENT.md — add "Säger vs gör — datainsamling" section (says/promises/voted fields, match ratings, riksdag voting sources, Claude Code prompt format)
 [2026-04-02] feat: add "Öppen källkod på GitHub" to privacy notice on metod.html and footer one-liner on all pages

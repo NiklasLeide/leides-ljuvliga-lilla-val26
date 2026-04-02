@@ -79,7 +79,17 @@ function scrollToTopic(id, btn) {
 /* ===================================================
    Spectrum view
    =================================================== */
+function renderAreaAnalysis() {
+  const area = data.areas.find(a => a.id === activeArea);
+  const el = document.getElementById('area-analysis');
+  if (!el) return;
+  el.innerHTML = area.analysis
+    ? `<p class="area-analysis">${area.analysis}</p>`
+    : '';
+}
+
 function renderSpectrum() {
+  renderAreaAnalysis();
   const area = data.areas.find(a => a.id === activeArea);
   const container = document.getElementById('spectrum-container');
 

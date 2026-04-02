@@ -41,6 +41,15 @@ let svgEl, data, activeTopic = null, selectedParty = null, activeArea = null;
 /* ===================================================
    Bootstrap
    =================================================== */
+function renderAreaAnalysis() {
+  const area = data.areas.find(a => a.id === activeArea);
+  const el = document.getElementById('area-analysis');
+  if (!el) return;
+  el.innerHTML = area.analysis
+    ? `<p class="area-analysis">${area.analysis}</p>`
+    : '';
+}
+
 async function init() {
   try {
     const res = await fetch('data/positions.json');
@@ -49,6 +58,7 @@ async function init() {
     activeArea = data.areas[0].id;
     renderLeftNav();
     renderSVG();
+    renderAreaAnalysis();
     setupTabNav();
   } catch (e) {
     document.getElementById('cluster-center').innerHTML =
@@ -76,6 +86,7 @@ function renderLeftNav() {
       activeTopic = null;
       resetToDefault();
       hidePanel();
+      renderAreaAnalysis();
       renderLeftNav();
     });
     areaTabs.appendChild(btn);

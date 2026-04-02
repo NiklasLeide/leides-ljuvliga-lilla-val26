@@ -15,6 +15,7 @@
       "id": "skola",
       "name": "Skola",
       "color": "#4A7FC1",
+      "analysis": "PLACEHOLDER — awaiting analysis text",
       "topics": [
         {
           "id": "friskolor",
@@ -118,6 +119,7 @@
       "id": "ekonomi",
       "name": "Ekonomi",
       "color": "#C17A2D",
+      "analysis": "PLACEHOLDER — awaiting analysis text",
       "topics": [
         {
           "id": "skatt-arbete",
@@ -237,6 +239,7 @@
       "id": "migration",
       "name": "Migration",
       "color": "#8B5CF6",
+      "analysis": "PLACEHOLDER — awaiting analysis text",
       "topics": [
         {
           "id": "asylpolitik",

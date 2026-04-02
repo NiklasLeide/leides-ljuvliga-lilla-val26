@@ -225,6 +225,14 @@ header p {
 /* ===================================================
    Spectrum
    =================================================== */
+.area-analysis {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 640px;
+  margin-bottom: var(--space-md);
+}
+
 #spectrum-container {
   display: flex;
   flex-direction: column;
