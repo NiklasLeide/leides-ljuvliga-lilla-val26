@@ -127,6 +127,19 @@ S  → pos: 22  | grupp: Begränsa | "Vinstbegränsning, kommunalt veto vid etab
 ...
 ```
 
+För varje **område** (area), skriv också en kort analyssummering på 2–3 meningar som lyfter fram de viktigaste skiljelinjerna och anmärkningsvärda positionerna. Den visas på sajten som inledande kontext ovanför frågorna. Regler:
+- Beskriv aldrig vad som är rätt eller fel — bara var partierna är överens, oeniga, och vad som sticker ut
+- Namnge gärna specifika partier om deras position är särskilt avvikande eller intressant
+- Håll det faktabaserat och neutralt, som en kortfattad guide till vad besökaren strax ska se
+
+Exempel:
+```
+Skolfrågor är ett av valrörelsens mest polariserade områden. Blockgränsen är tydlig:
+V, MP och S vill begränsa eller förbjuda vinstuttag i skolan, medan M, SD och KD värnar
+friskolereformen. L bröt med högerblocket på landsmötet 2025 och vill avveckla
+aktiebolagsformen — en ovanlig position som placerar partiet mitt i ett annars tydligt mönster.
+```
+
 ### 6. Granskning — Niklas godkänner
 
 **Ingen data läggs in i positions.json utan Niklas godkännande.**
