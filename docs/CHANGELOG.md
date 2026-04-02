@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] docs: ROADMAP.md — add sprints 5 (GAL-TAN), 6 (says vs does), 7 (polling trends); standing UI polish rule
 [2026-04-02] data: added clickable source URLs for all 4 school topics (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning) — 32 source fields updated with verifiable URLs
 [2026-04-01] feat: clickable source links in detail panels — URLs in source strings render as <a> tags; spectrum view gets click-to-open detail panel
 [2026-04-01] docs: RESEARCH_AGENT.md — require verifiable URL for every source; positions without URL not accepted

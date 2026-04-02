@@ -48,9 +48,42 @@
 
 ---
 
+## Sprint 4 — (TBD)
+
+---
+
+## Sprint 5 — GAL-TAN scale
+
+- [ ] 5.1 New view: GAL-TAN chart with party positions over time
+- [ ] 5.2 Data from Chapel Hill Expert Survey + own assessment
+- [ ] 5.3 Show movement since 2018 and 2022 elections
+- [ ] 5.4 UI polish pass
+
+---
+
+## Sprint 6 — "Says vs does" view
+
+- [ ] 6.1 New view comparing stated positions (party programs) with voting records (riksdagen.se)
+- [ ] 6.2 Riksdag voting data integration
+- [ ] 6.3 UI polish pass
+
+---
+
+## Sprint 7 — Polling trends
+
+- [ ] 7.1 Aggregate polling data from major Swedish institutes
+- [ ] 7.2 Weighted analysis showing trends
+- [ ] 7.3 Connect to GAL-TAN movement (if applicable)
+- [ ] 7.4 UI polish pass
+
+---
+
+> **Standing rule:** Every sprint includes a UI polish pass.
+
+---
+
 ## Backlog / v2
 
-- [ ] Verify positions against riksdag voting data ("says vs does")
 - [ ] SOM/CMP data validation
 
 ---
