@@ -4,16 +4,16 @@
 
 ---
 
-## Sprint 0 — Setup (current)
+## Sprint 0 — Setup ✅
 
 - [x] 0.1 Create GitHub issue for spectrum view MVP *(manuellt — gh CLI saknas)*
 - [x] 0.2 Log architectural decisions in DECISIONS.md
 - [x] 0.3 Build spectrum view with placeholder data
-- [ ] 0.4 Test desktop + 375px mobile
+- [x] 0.4 Test desktop + 375px mobile *(manuellt verifierat av Niklas)*
 
 ---
 
-## Sprint 0.5 — Infrastructure
+## Sprint 0.5 — Infrastructure ✅
 
 - [x] 0.5.1 Add CNAME file (val26.leide.se)
 - [x] 0.5.2 Create commit.sh (same pattern as reformkartan)
@@ -25,19 +25,19 @@
 
 ---
 
-## Sprint 1 — Cluster view
+## Sprint 1 — Cluster view ✅
 
-- [ ] 1.1 Build cluster view with animated groupings
-- [ ] 1.2 Tab navigation between spectrum and cluster
-- [ ] 1.3 Detail panel on click (party card with source)
+- [x] 1.1 Build cluster view with animated groupings *(kluster.html + kluster.js, dynamic groups)*
+- [x] 1.2 Tab navigation between spectrum and cluster *(navigates to kluster.html)*
+- [x] 1.3 Detail panel on click (party card with source) *(slides in desktop, stacks mobile)*
 
 ---
 
 ## Sprint 2 — Real content
 
-- [x] 2.1 Research and fill in actual party positions for school topics
+- [x] 2.1 Research and fill in actual party positions for school topics *(5/5 topics)*
 - [ ] 2.2 Methodology page ("Om metoden")
-- [x] 2.3 Source links and citation for every position
+- [ ] 2.3 Source links and citation for every position *(4/5 done — friskolor still needs URLs)*
 
 ---
 

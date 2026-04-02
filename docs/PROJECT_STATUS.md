@@ -12,7 +12,7 @@
 |-----|-------------------------------------------------------------|---------|-------|
 | 2.1 | Research and fill in actual party positions for school topics | ✅ Done | 4 topics verified (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning); friskolor done prev session |
 | 2.2 | Methodology page ("Om metoden")                             | ⬜ Todo |       |
-| 2.3 | Source links and citation for every position                | ✅ Done | All 4 topics have verifiable URLs; detail panels render clickable links |
+| 2.3 | Source links and citation for every position                | 🔄 In Progress | 4/5 topics have URLs (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning). friskolor still has plain-text sources only. |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
@@ -24,9 +24,9 @@
 
 | #   | Task                                              | Notes                                                              |
 |-----|---------------------------------------------------|--------------------------------------------------------------------|
-| 1.1 | Build cluster view with animated groupings        | kluster.html + kluster.js — SVG circles animate to vänster/mitten/höger |
+| 1.1 | Build cluster view with animated groupings        | kluster.html + kluster.js — SVG circles, dynamic groups per topic  |
 | 1.2 | Tab navigation between spectrum and cluster       | Activated Kluster tab in index.html, navigates to kluster.html     |
-| 1.3 | Detail panel on click (party card with source)    | Slides in from right (desktop), stacks below (mobile)             |
+| 1.3 | Detail panel on click (party card with source)    | Slides in from right (desktop), stacks below (mobile); clickable source links |
 
 ### Sprint 0 – Setup ✅
 | #   | Task                                              | Notes                                            |
@@ -53,7 +53,8 @@
 
 Open `index.html` directly in browser — no server needed.
 
-- Spektrum-vy med 5 skolfrågor — alla med verifierade partipositioner och klickbara källlänkar
+- Site live at https://val26.leide.se
+- Spektrum-vy med 5 skolfrågor — alla med verifierade partipositioner; 4/5 med klickbara källlänkar (friskolor saknar URLs)
 - 8 partier positionerade på horisontella skalor
 - Hover visar partiets ståndpunkt (tooltip)
 - Klick på parti-dot öppnar detaljpanel med sammanfattning + klickbara källlänkar
@@ -77,9 +78,19 @@ None.
 - [ ] 3.1 Add more policy areas beyond school
 - [ ] 3.2 Polish, SEO, public launch before election Sept 2026
 
+### Sprint 4 — TBD
+
+### Sprint 5 — GAL-TAN scale
+### Sprint 6 — "Says vs does" view
+### Sprint 7 — Polling trends
+
+*(See ROADMAP.md for full task breakdowns)*
+
 ---
 
 ## Key Metrics
 - Renderas korrekt i Chrome/Firefox/Safari på desktop och 375px mobil
 - Alla 8 partier synliga i alla 5 ämnen
 - Hover-tooltip visar korrekt partinamn och sammanfattning
+- Klick på parti-dot öppnar detaljpanel med klickbara källlänkar (4/5 topics)
+- Kluster-vy visar dynamiska grupper med korrekt antal partier per grupp
