@@ -124,12 +124,19 @@ function assignRows(sorted, threshold) {
    Source link formatter
    =================================================== */
 function formatSource(text) {
-  const escaped = text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-  return escaped.replace(/https?:\/\/[^\s,)]+/g, url =>
-    `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
+  return text.split(' · ').map(entry => {
+    const withDesc = entry.match(/^(.*?),\s*(https?:\/\/\S+)$/);
+    if (withDesc) {
+      const title = withDesc[1].trim()
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return `<a href="${withDesc[2]}" target="_blank" rel="noopener noreferrer">${title}</a>`;
+    }
+    const bareUrl = entry.match(/^(https?:\/\/\S+)$/);
+    if (bareUrl) {
+      return `<a href="${bareUrl[1]}" target="_blank" rel="noopener noreferrer">${bareUrl[1]}</a>`;
+    }
+    return entry.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }).join(' · ');
 }
 
 /* ===================================================
