@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] feat: add ekonomi area with 3 topics (skatt-arbete, valfard-finansiering, arbetsmarknad) — 24 verified positions with source URLs
 [2026-04-02] fix: metod.html — "kontakta mig" links to LinkedIn instead of mailto, opens in new tab
 [2026-04-02] fix: formatSource() — render description text as link instead of raw URL; format "Title, URL" → <a>Title</a> in both app.js and kluster.js
 [2026-04-02] feat: metod.html — add Valrörelseuttspel section explaining verification of campaign statements
