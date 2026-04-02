@@ -6,6 +6,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 ---
 
 [2026-04-02] data: voting.json — added ekonomi area (7 topics, 56 party entries: skatt-arbete, valfard-finansiering, arbetsmarknad, bostader, eu-ekonomi, pension, infrastruktur)
+[2026-04-02] data: voting.json skola — replace ej-granskat with reservation data from UbU7/UbU8; add inväntar-votering for Tidöpartier on nationella-prov/tidiga-betyg (Prop. 2025/26:197 lagd ej omröstad), SD statlig-styrning; stammer for V/C/digitalisering-skolan + C/vinstuttag
+[2026-04-02] feat: sager-vs-gor — add inväntar-votering match badge (light blue); add .badge-invantar to style.css
 [2026-04-02] data: voting.json v2 — school area complete (6 topics, 48 party entries); restructured to nested data[area][topic][party]; sager-vs-gor.js updated to match new schema
 [2026-04-02] docs: RESEARCH_AGENT.md — section 5 now includes instructions for per-area analysis summary (2–3 neutral sentences on dividing lines, displayed as site intro context)
 [2026-04-02] feat: area analysis text — "analysis" field on each area in positions.json, rendered as muted intro paragraph above content in spectrum and cluster views; placeholder text for all 3 areas

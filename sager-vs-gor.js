@@ -174,10 +174,11 @@ function buildStub(headerContent) {
 
 function matchBadge(match) {
   const map = {
-    stammer:        ['Stämmer',    'badge-stammer'],
-    delvis:         ['Delvis',     'badge-delvis'],
-    avviker:        ['Avviker',    'badge-avviker'],
-    'ej-granskat':  ['Ej granskat','badge-ej-granskat'],
+    stammer:             ['Stämmer',          'badge-stammer'],
+    delvis:              ['Delvis',            'badge-delvis'],
+    avviker:             ['Avviker',           'badge-avviker'],
+    'ej-granskat':       ['Ej granskat',       'badge-ej-granskat'],
+    'inväntar-votering': ['Inväntar votering', 'badge-invantar'],
   };
   const [label, cls] = map[match] || map['ej-granskat'];
   return `<span class="svs-match-badge ${cls}">${label}</span>`;

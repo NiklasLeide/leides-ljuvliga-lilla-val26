@@ -561,6 +561,7 @@ header p {
 .badge-delvis      { background: #fff3cd; color: #8a5700; }
 .badge-avviker     { background: #fde8e8; color: #9b1c1c; }
 .badge-ej-granskat { background: var(--border); color: var(--muted); }
+.badge-invantar    { background: #e0f2fe; color: #075985; }
 
 .svs-rows { display: flex; flex-direction: column; gap: var(--space-sm); }
 
