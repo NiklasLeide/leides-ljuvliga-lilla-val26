@@ -55,3 +55,4 @@ Never say "done" until all 5 are complete.
 - Burns tokens on planning when task is already scoped — just execute
 - Creates giant files (>300 lines) — propose a split before implementing
 - Drifts from visual specs over multiple sprints — use design tokens file as code
+- Commits without verifying execution — after any code change, trace the full execution path before committing. If you can't run it in a browser, read through the code as if you were the browser.
