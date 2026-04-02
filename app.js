@@ -17,7 +17,7 @@ async function init() {
     renderLeftNav();
     renderSpectrum();
     setupViewTabs();
-    window.addEventListener('scroll', hideTooltip, { passive: true });
+    document.querySelector('.app-center')?.addEventListener('scroll', hideTooltip, { passive: true });
   } catch (e) {
     document.getElementById('spectrum-container').innerHTML =
       '<p style="padding:16px;color:#c00">Kunde inte ladda data: ' + e.message + '</p>';

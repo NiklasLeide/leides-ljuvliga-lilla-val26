@@ -31,12 +31,26 @@
    =================================================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html { height: 100%; }
+
 body {
   font-family: var(--font-body);
   background: var(--bg);
   color: var(--ink);
-  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Top bar — header + tab-nav grouped so they never scroll */
+.top-bar { flex-shrink: 0; }
+
+main {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
 }
 
 /* ===================================================
@@ -123,15 +137,12 @@ header p {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .app-left {
   width: 210px;
   flex-shrink: 0;
-  position: sticky;
-  top: var(--space-lg);
-  align-self: flex-start;
-  max-height: calc(100vh - var(--space-xl));
   overflow-y: auto;
   padding: var(--space-lg) var(--space-md) var(--space-xl) var(--space-lg);
   border-right: 1px solid var(--border);
@@ -140,15 +151,14 @@ header p {
 .app-center {
   flex: 1;
   min-width: 0;
+  overflow-y: auto;
   padding: var(--space-lg);
 }
 
 .app-right {
   width: 268px;
   flex-shrink: 0;
-  position: sticky;
-  top: var(--space-lg);
-  align-self: flex-start;
+  overflow-y: auto;
   padding: var(--space-lg) var(--space-lg) var(--space-xl) var(--space-md);
   border-left: 1px solid var(--border);
 }
@@ -431,6 +441,7 @@ header p {
    Footer
    =================================================== */
 footer {
+  flex-shrink: 0;
   text-align: center;
   padding: 1.5rem 0 2rem;
   font-size: 0.62rem;
@@ -444,16 +455,21 @@ footer {
    Mobile  ≤ 480px
    =================================================== */
 @media (max-width: 480px) {
+  /* Reset full-height flex model — normal page scroll on mobile */
+  html { height: auto; }
+  body { height: auto; overflow: auto; display: block; }
+  .top-bar { position: sticky; top: 0; z-index: 50; }
+  main { overflow: visible; }
+
   header { padding: var(--space-lg) var(--space-md); }
 
   .app-layout {
     flex-direction: column;
+    height: auto;
   }
 
   .app-left {
     width: 100%;
-    position: static;
-    max-height: none;
     overflow-y: visible;
     padding: var(--space-md) var(--space-md) var(--space-sm);
     border-right: none;
@@ -461,12 +477,13 @@ footer {
   }
 
   .app-center {
+    overflow-y: visible;
     padding: var(--space-md);
   }
 
   .app-right {
     width: 100%;
-    position: static;
+    overflow-y: visible;
     padding: var(--space-md) var(--space-md) var(--space-xl);
     border-left: none;
     border-top: 1px solid var(--border);
