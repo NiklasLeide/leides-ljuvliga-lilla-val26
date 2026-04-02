@@ -9,141 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    #cluster-container {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 0 var(--space-lg) var(--space-xl);
-    }
-    .cluster-topic-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-sm);
-      align-items: center;
-      margin-bottom: var(--space-lg);
-    }
-    .cluster-area-label {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      width: 100%;
-    }
-    .cluster-topic-btn {
-      font-family: var(--font-body);
-      font-size: 0.82rem;
-      font-weight: 500;
-      padding: 5px var(--space-md);
-      border: 1.5px solid var(--border);
-      border-radius: 100px;
-      background: var(--card);
-      cursor: pointer;
-      color: var(--ink);
-      transition: background 0.15s, border-color 0.15s, color 0.15s;
-    }
-    .cluster-topic-btn:hover { border-color: #aaa; }
-    .cluster-topic-btn.active { background: var(--ink); border-color: var(--ink); color: #fff; }
-
-    /* Layout: SVG + side panel */
-    .cluster-layout { display: flex; gap: var(--space-lg); align-items: flex-start; }
-    .cluster-svg-area { flex: 1; min-width: 0; }
-    .cluster-svg { display: block; width: 100%; overflow: visible; }
-
-    /* Party nodes */
-    .party-node { transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; }
-    .party-node circle { transition: stroke-width 0.15s; }
-    .party-node.selected circle { stroke: rgba(0,0,0,0.35); stroke-width: 3; }
-    .party-node-label {
-      font-family: var(--font-body);
-      font-size: 10px;
-      font-weight: 700;
-      fill: #fff;
-      pointer-events: none;
-      user-select: none;
-    }
-    .cluster-group-label {
-      font-family: var(--font-body);
-      font-size: 13px;
-      font-weight: 600;
-      fill: var(--ink);
-      transition: opacity 0.35s;
-      pointer-events: none;
-    }
-    .cluster-hint { font-family: var(--font-body); font-size: 12px; fill: var(--muted); pointer-events: none; transition: opacity 0.35s; }
-
-    /* Detail panel */
-    #detail-panel {
-      display: none;
-      width: 264px;
-      flex-shrink: 0;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: var(--space-lg);
-      position: sticky;
-      top: var(--space-lg);
-      opacity: 0;
-      transform: translateX(10px);
-      transition: opacity 0.22s, transform 0.22s;
-    }
-    #detail-panel.visible { opacity: 1; transform: translateX(0); }
-
-    .panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: var(--space-md); }
-    .panel-dot { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; }
-    .panel-name { font-family: var(--font-serif); font-size: 1rem; font-weight: 600; flex: 1; }
-    .panel-close {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 1.1rem;
-      color: var(--muted);
-      padding: 2px 6px;
-      border-radius: var(--radius-sm);
-      line-height: 1;
-    }
-    .panel-close:hover { color: var(--ink); background: var(--border); }
-    .panel-unclear {
-      display: inline-block;
-      font-size: 0.63rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #9a6700;
-      background: #fff3cd;
-      border: 1px solid #f0d080;
-      border-radius: var(--radius-sm);
-      padding: 2px 7px;
-      margin-bottom: var(--space-sm);
-    }
-    .panel-topic-label {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: var(--space-xs);
-    }
-    .panel-summary { font-size: 0.85rem; line-height: 1.5; margin-bottom: var(--space-md); }
-    .panel-source { font-size: 0.72rem; color: var(--muted); line-height: 1.5; margin-bottom: var(--space-md); }
-    .panel-source a { color: var(--muted); text-decoration: underline; }
-    .panel-source a:hover { color: var(--ink); }
-    .panel-no-topic { font-size: 0.85rem; color: var(--muted); line-height: 1.5; margin-bottom: var(--space-md); }
-    .panel-method {
-      font-size: 0.66rem;
-      color: var(--muted);
-      line-height: 1.45;
-      border-top: 1px solid var(--border);
-      padding-top: var(--space-sm);
-    }
-
-    @media (max-width: 480px) {
-      #cluster-container { padding-left: var(--space-md); padding-right: var(--space-md); }
-      .cluster-layout { flex-direction: column; }
-      #detail-panel { width: 100%; position: static; transform: translateY(10px); }
-      #detail-panel.visible { transform: translateY(0); }
-    }
-  </style>
 </head>
 <body>
 
@@ -151,7 +16,7 @@
     <div class="header-inner">
       <div class="header-badge">Kunskapsyta · 2026 · Privatprojekt av Niklas Leide</div>
       <h1>Partiernas ståndpunkter</h1>
-      <p>Neutral sammanställning inför valet 2026 — placeholder-data</p>
+      <p>Neutral sammanställning inför valet 2026</p>
     </div>
   </header>
 
@@ -162,7 +27,17 @@
   </nav>
 
   <main>
-    <div id="cluster-container"></div>
+    <div class="app-layout">
+      <aside class="app-left">
+        <div id="left-nav"></div>
+      </aside>
+      <div class="app-center">
+        <div id="cluster-center"></div>
+      </div>
+      <aside class="app-right">
+        <div id="detail-panel" aria-live="polite"></div>
+      </aside>
+    </div>
   </main>
 
   <footer>

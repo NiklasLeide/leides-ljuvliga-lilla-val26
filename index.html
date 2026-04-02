@@ -16,7 +16,7 @@
     <div class="header-inner">
       <div class="header-badge">Kunskapsyta · 2026 · Privatprojekt av Niklas Leide</div>
       <h1>Partiernas ståndpunkter</h1>
-      <p>Neutral sammanställning inför valet 2026 — placeholder-data</p>
+      <p>Neutral sammanställning inför valet 2026</p>
     </div>
   </header>
 
@@ -27,13 +27,16 @@
   </nav>
 
   <main>
-    <div id="view-spectrum" class="view active">
-      <div id="area-nav" role="group" aria-label="Välj ämnesområde"></div>
-      <div id="spectrum-container"></div>
-    </div>
-
-    <div id="view-cluster" class="view">
-      <div class="placeholder-view">Klustervyn är under uppbyggnad.</div>
+    <div class="app-layout">
+      <aside class="app-left">
+        <div id="left-nav"></div>
+      </aside>
+      <div class="app-center">
+        <div id="spectrum-container"></div>
+      </div>
+      <aside class="app-right">
+        <div id="detail-panel" aria-live="polite"></div>
+      </aside>
     </div>
   </main>
 
@@ -43,7 +46,6 @@
     © 2026 Niklas Leide
   </footer>
 
-  <div id="detail-panel" aria-live="polite"></div>
   <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
 
   <script src="app.js"></script>

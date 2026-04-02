@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] feat: three-column layout for spectrum and cluster views — sticky left nav, sticky right panel, cluster group zones with animation
 [2026-04-02] feat: add school topic digitalisering-skolan — 8 parties, 3 groups (Digital strategi behövs/Balanserad hållning/Begränsa skärmar), 2 unclear
 [2026-04-02] fix: vinstuttag — swap M→85 and SD→82 to reflect M's longer-held position
 [2026-04-02] feat: add 4 more economics topics (bostader, eu-ekonomi, pension, infrastruktur) — 32 verified positions with source URLs

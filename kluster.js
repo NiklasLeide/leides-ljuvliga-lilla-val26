@@ -22,48 +22,21 @@ function formatSource(text) {
 /* ===================================================
    Constants
    =================================================== */
-const SVG_W   = 800;
-const SVG_H   = 340;
-const R       = 26;
-const SPACING = R * 2 + 12;  // 64px between circle centres
+const SVG_W      = 560;
+const SVG_H_DEF  = 280;   // default height when no topic is selected
+const R          = 26;
+const SPACING    = R * 2 + 12;  // 64px between circle centres
 
-const GROUP_MARGIN = 110;  // px from SVG edge to outermost group centre
-const GROUP_Y      = 185;
-
-/* ===================================================
-   Layout helpers
-   =================================================== */
-// Default: 8 parties in a 4 × 2 grid, centred in SVG
-function defaultPositions(abbrs) {
-  const cols = 4;
-  const totalRows = Math.ceil(abbrs.length / cols);
-  return abbrs.map((abbr, i) => ({
-    abbr,
-    x: SVG_W / 2 + (i % cols - (cols - 1) / 2) * SPACING,
-    y: SVG_H / 2 + (Math.floor(i / cols) - (totalRows - 1) / 2) * SPACING,
-  }));
-}
-
-// Within-group: rows of up to 3, centred on group anchor
-function groupLayout(n) {
-  if (n === 0) return [];
-  const cols = n <= 3 ? n : Math.ceil(n / 2);
-  const rows = Math.ceil(n / cols);
-  return Array.from({ length: n }, (_, i) => {
-    const row    = Math.floor(i / cols);
-    const col    = i % cols;
-    const rowLen = (row === rows - 1 && n % cols !== 0) ? n % cols : cols;
-    return {
-      dx: (col - (rowLen - 1) / 2) * SPACING,
-      dy: (row - (rows - 1) / 2) * SPACING,
-    };
-  });
-}
+// Zone layout constants
+const ZONE_HPAD    = 24;   // horizontal padding of zone rect from SVG edge
+const ZONE_VPAD    = 14;   // vertical padding inside zone rect (above/below circles)
+const ZONE_LABEL_H = 26;   // height reserved for the group label text
+const ZONE_GAP     = 16;   // vertical gap between stacked zone rects
 
 /* ===================================================
    State
    =================================================== */
-let svgEl, data, activeTopic = null, selectedParty = null;
+let svgEl, data, activeTopic = null, selectedParty = null, activeArea = null;
 
 /* ===================================================
    Bootstrap
@@ -73,73 +46,87 @@ async function init() {
     const res = await fetch('data/positions.json');
     if (!res.ok) throw new Error(res.status);
     data = await res.json();
-    renderTopicNav();
+    activeArea = data.areas[0].id;
+    renderLeftNav();
     renderSVG();
     setupTabNav();
   } catch (e) {
-    document.getElementById('cluster-container').innerHTML =
+    document.getElementById('cluster-center').innerHTML =
       '<p style="padding:16px;color:#c00">Kunde inte ladda data: ' + e.message + '</p>';
   }
 }
 
 /* ===================================================
-   Topic nav
+   Left navigation
    =================================================== */
-function renderTopicNav() {
-  const container = document.getElementById('cluster-container');
-  const nav = document.createElement('div');
-  nav.className = 'cluster-topic-nav';
+function renderLeftNav() {
+  const nav = document.getElementById('left-nav');
+  nav.innerHTML = '';
 
+  // Area tabs
+  const areaTabs = document.createElement('div');
+  areaTabs.className = 'left-area-tabs';
   data.areas.forEach(area => {
-    const label = document.createElement('div');
-    label.className = 'cluster-area-label';
-    label.textContent = area.name;
-    nav.appendChild(label);
-
-    area.topics.forEach(topic => {
-      const btn = document.createElement('button');
-      btn.className = 'cluster-topic-btn';
-      btn.textContent = topic.name;
-      btn.dataset.topicId = topic.id;
-      btn.addEventListener('click', () => selectTopic(topic, btn));
-      nav.appendChild(btn);
+    const btn = document.createElement('button');
+    btn.className = 'left-area-btn' + (area.id === activeArea ? ' active' : '');
+    btn.textContent = area.name;
+    btn.addEventListener('click', () => {
+      if (area.id === activeArea) return;
+      activeArea = area.id;
+      activeTopic = null;
+      resetToDefault();
+      hidePanel();
+      renderLeftNav();
     });
+    areaTabs.appendChild(btn);
   });
+  nav.appendChild(areaTabs);
 
-  container.appendChild(nav);
+  // Divider
+  const divider = document.createElement('div');
+  divider.className = 'left-nav-divider';
+  nav.appendChild(divider);
+
+  // Topic list for current area
+  const topicList = document.createElement('div');
+  topicList.className = 'left-topic-list';
+  const area = data.areas.find(a => a.id === activeArea);
+  area.topics.forEach(topic => {
+    const btn = document.createElement('button');
+    btn.className = 'left-topic-btn' + (activeTopic === topic.id ? ' active' : '');
+    btn.textContent = topic.name;
+    btn.dataset.topicId = topic.id;
+    btn.addEventListener('click', () => selectTopic(topic, btn));
+    topicList.appendChild(btn);
+  });
+  nav.appendChild(topicList);
 }
 
 /* ===================================================
    SVG — initial render
    =================================================== */
 function renderSVG() {
-  const container = document.getElementById('cluster-container');
-
-  // Layout wrapper
-  const layout = document.createElement('div');
-  layout.className = 'cluster-layout';
-
-  const svgArea = document.createElement('div');
-  svgArea.className = 'cluster-svg-area';
+  const center = document.getElementById('cluster-center');
+  center.innerHTML = '';
 
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svg.setAttribute('viewBox', `0 0 ${SVG_W} ${SVG_H}`);
+  svg.setAttribute('viewBox', `0 0 ${SVG_W} ${SVG_H_DEF}`);
   svg.setAttribute('class', 'cluster-svg');
   svg.setAttribute('aria-hidden', 'true');
   svgEl = svg;
 
-  // Container for dynamic group labels (populated per topic in selectTopic)
-  const labelsG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-  labelsG.setAttribute('data-group-labels', '');
-  svg.appendChild(labelsG);
+  // Layer 1: zone backgrounds (rendered below party nodes)
+  const zonesG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  zonesG.setAttribute('data-zones', '');
+  svg.appendChild(zonesG);
 
-  // Hint
-  const hint = mkSvgText(SVG_W / 2, SVG_H - 14,
-    'Välj en fråga ovan för att se partiernas grupperingar', 'cluster-hint');
+  // Hint text
+  const hint = mkSvgText(SVG_W / 2, SVG_H_DEF - 20,
+    'Välj en fråga till vänster för att se partiernas grupperingar', 'cluster-hint');
   hint.setAttribute('data-hint', '');
   svg.appendChild(hint);
 
-  // Party nodes
+  // Party nodes (rendered above zones)
   defaultPositions(Object.keys(data.parties)).forEach(({ abbr, x, y }) => {
     const party = data.parties[abbr];
     const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
@@ -163,16 +150,20 @@ function renderSVG() {
     svg.appendChild(g);
   });
 
-  svgArea.appendChild(svg);
+  center.appendChild(svg);
+}
 
-  // Detail panel (empty shell; JS populates on click)
-  const panel = document.createElement('div');
-  panel.id = 'detail-panel';
-  panel.setAttribute('aria-live', 'polite');
-
-  layout.appendChild(svgArea);
-  layout.appendChild(panel);
-  container.appendChild(layout);
+/* ===================================================
+   Layout helper — default 4×2 grid
+   =================================================== */
+function defaultPositions(abbrs) {
+  const cols = 4;
+  const totalRows = Math.ceil(abbrs.length / cols);
+  return abbrs.map((abbr, i) => ({
+    abbr,
+    x: SVG_W / 2 + (i % cols - (cols - 1) / 2) * SPACING,
+    y: SVG_H_DEF / 2 + (Math.floor(i / cols) - (totalRows - 1) / 2) * SPACING,
+  }));
 }
 
 /* ===================================================
@@ -181,25 +172,24 @@ function renderSVG() {
 function selectTopic(topic, clickedBtn) {
   if (activeTopic === topic.id) {
     activeTopic = null;
-    document.querySelectorAll('.cluster-topic-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.left-topic-btn').forEach(b => b.classList.remove('active'));
     resetToDefault();
-    if (selectedParty) showPanel(selectedParty);  // refresh panel without topic
+    if (selectedParty) showPanel(selectedParty);
     return;
   }
 
   activeTopic = topic.id;
-  document.querySelectorAll('.cluster-topic-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.left-topic-btn').forEach(b => b.classList.remove('active'));
   clickedBtn.classList.add('active');
 
-  // Derive groups dynamically — any string value in pos.group is valid
+  // Build and sort groups by average member position
   const groupMap = new Map();
   Object.entries(topic.positions).forEach(([abbr, pos]) => {
     if (!groupMap.has(pos.group)) groupMap.set(pos.group, []);
-    groupMap.get(pos.group).push({ abbr, position: pos.position });
+    groupMap.get(pos.group).push({ abbr, position: pos.position, unclear: pos.unclear });
   });
   groupMap.forEach(members => members.sort((a, b) => a.position - b.position));
 
-  // Order groups left-to-right by average member position
   const groups = [...groupMap.entries()]
     .map(([name, members]) => ({
       name, members,
@@ -207,33 +197,74 @@ function selectTopic(topic, clickedBtn) {
     }))
     .sort((a, b) => a.avg - b.avg);
 
-  // Spread groups evenly across SVG width
-  const step = groups.length > 1 ? (SVG_W - 2 * GROUP_MARGIN) / (groups.length - 1) : 0;
-  const groupX = Object.fromEntries(
-    groups.map((g, i) => [g.name, groups.length === 1 ? SVG_W / 2 : GROUP_MARGIN + i * step])
-  );
+  applyGroupLayout(groups);
+
+  svgEl.querySelector('[data-hint]').style.opacity = '0';
+  if (selectedParty) showPanel(selectedParty);
+}
+
+/* ===================================================
+   Group layout — vertical zones with animated party nodes
+   =================================================== */
+function applyGroupLayout(groups) {
+  const zonesG = svgEl.querySelector('[data-zones]');
+  zonesG.innerHTML = '';
+
+  let y = ZONE_GAP;
 
   groups.forEach(({ name, members }) => {
-    const offsets = groupLayout(members.length);
-    members.forEach(({ abbr }, i) =>
-      moveNode(abbr, groupX[name] + offsets[i].dx, GROUP_Y + offsets[i].dy));
+    const n = members.length;
+    const cols = n <= 3 ? n : Math.min(n, 4);
+    const rows = Math.ceil(n / cols);
+    const innerH = rows * (R * 2) + (rows - 1) * (SPACING - R * 2);
+    const zoneH  = ZONE_VPAD + ZONE_LABEL_H + innerH + ZONE_VPAD;
+
+    // Zone background rect
+    const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('x', ZONE_HPAD);
+    rect.setAttribute('y', y);
+    rect.setAttribute('width', SVG_W - 2 * ZONE_HPAD);
+    rect.setAttribute('height', zoneH);
+    rect.setAttribute('rx', '12');
+    rect.setAttribute('ry', '12');
+    rect.setAttribute('fill', 'rgba(0,0,0,0.035)');
+    zonesG.appendChild(rect);
+
+    // Zone label (left-aligned, inside zone)
+    const labelEl = mkSvgText(ZONE_HPAD + 14, y + ZONE_VPAD + 15, name, 'cluster-group-label');
+    labelEl.setAttribute('text-anchor', 'start');
+    zonesG.appendChild(labelEl);
+
+    // Animate party nodes into zone
+    members.forEach((member, i) => {
+      const row = Math.floor(i / cols);
+      const col = i % cols;
+      const rowCount = (row === rows - 1 && n % cols !== 0) ? n % cols : cols;
+      const cx = SVG_W / 2 + (col - (rowCount - 1) / 2) * SPACING;
+      const cy = y + ZONE_VPAD + ZONE_LABEL_H + row * SPACING + R;
+      moveNode(member.abbr, cx, cy);
+
+      // Update unclear visual state via CSS class
+      const node = svgEl.querySelector(`[data-abbr="${member.abbr}"]`);
+      if (node) node.classList.toggle('unclear', !!member.unclear);
+    });
+
+    y += zoneH + ZONE_GAP;
   });
 
-  renderGroupLabels(groups, groupX);
-  svgEl.querySelector('[data-hint]').style.opacity = '0';
-  if (selectedParty) showPanel(selectedParty);  // refresh panel with new topic
+  // Expand SVG viewBox to fit all zones
+  svgEl.setAttribute('viewBox', `0 0 ${SVG_W} ${y}`);
 }
 
 function resetToDefault() {
-  defaultPositions(Object.keys(data.parties)).forEach(({ abbr, x, y }) => moveNode(abbr, x, y));
-  svgEl.querySelector('[data-group-labels]').innerHTML = '';
+  defaultPositions(Object.keys(data.parties)).forEach(({ abbr, x, y }) => {
+    moveNode(abbr, x, y);
+    const node = svgEl.querySelector(`[data-abbr="${abbr}"]`);
+    if (node) node.classList.remove('unclear');
+  });
+  svgEl.querySelector('[data-zones]').innerHTML = '';
+  svgEl.setAttribute('viewBox', `0 0 ${SVG_W} ${SVG_H_DEF}`);
   svgEl.querySelector('[data-hint]').style.opacity = '1';
-}
-
-function renderGroupLabels(groups, groupX) {
-  const container = svgEl.querySelector('[data-group-labels]');
-  container.innerHTML = '';
-  groups.forEach(({ name }) => container.appendChild(mkSvgText(groupX[name], 28, name, 'cluster-group-label')));
 }
 
 function moveNode(abbr, x, y) {
@@ -246,18 +277,18 @@ function moveNode(abbr, x, y) {
    =================================================== */
 function getActivePosition(abbr) {
   if (!activeTopic) return null;
-  for (const area of data.areas) {
-    const topic = area.topics.find(t => t.id === activeTopic);
-    if (topic && topic.positions[abbr]) return { pos: topic.positions[abbr], topicName: topic.name };
-  }
+  const area = data.areas.find(a => a.id === activeArea);
+  if (!area) return null;
+  const topic = area.topics.find(t => t.id === activeTopic);
+  if (topic && topic.positions[abbr]) return { pos: topic.positions[abbr], topicName: topic.name };
   return null;
 }
 
 function showPanel(abbr) {
   selectedParty = abbr;
-  const panel   = document.getElementById('detail-panel');
-  const party   = data.parties[abbr];
-  const hit     = getActivePosition(abbr);
+  const panel = document.getElementById('detail-panel');
+  const party = data.parties[abbr];
+  const hit   = getActivePosition(abbr);
 
   let html = `<div class="panel-header">
     <span class="panel-dot" style="background:${party.color}"></span>
@@ -272,7 +303,7 @@ function showPanel(abbr) {
              <p class="panel-summary">${pos.summary}</p>
              <p class="panel-source">Källa: ${formatSource(pos.source)}</p>`;
   } else {
-    html += `<p class="panel-no-topic">Välj en fråga ovan för att se ${party.name}s ståndpunkt.</p>`;
+    html += `<p class="panel-no-topic">Välj en fråga till vänster för att se ${party.name}s ståndpunkt.</p>`;
   }
 
   html += `<p class="panel-method">Baserat på partiprogram, valmanifest och riksdagsmotioner — kontrollera mot originaldokumenten.</p>`;
@@ -282,7 +313,7 @@ function showPanel(abbr) {
 
   if (!panel.classList.contains('visible')) {
     panel.style.display = 'block';
-    panel.offsetHeight;  // force reflow so transition fires
+    panel.offsetHeight;  // force reflow
     panel.classList.add('visible');
   }
 

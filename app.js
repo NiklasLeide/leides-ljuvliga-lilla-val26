@@ -14,7 +14,7 @@ async function init() {
     if (!res.ok) throw new Error(res.status);
     data = await res.json();
     activeArea = data.areas[0].id;
-    renderAreaNav();
+    renderLeftNav();
     renderSpectrum();
     setupViewTabs();
     window.addEventListener('scroll', hideTooltip, { passive: true });
@@ -25,26 +25,55 @@ async function init() {
 }
 
 /* ===================================================
-   Area nav
+   Left navigation
    =================================================== */
-function renderAreaNav() {
-  const nav = document.getElementById('area-nav');
-  nav.innerHTML = data.areas.map(area => `
-    <button class="area-btn ${area.id === activeArea ? 'active' : ''}"
-            data-area="${area.id}"
-            style="--area-color: ${area.color}">
-      ${area.name}
-    </button>
-  `).join('');
+function renderLeftNav() {
+  const nav = document.getElementById('left-nav');
+  nav.innerHTML = '';
 
-  nav.querySelectorAll('.area-btn').forEach(btn => {
+  // Area tabs
+  const areaTabs = document.createElement('div');
+  areaTabs.className = 'left-area-tabs';
+  data.areas.forEach(area => {
+    const btn = document.createElement('button');
+    btn.className = 'left-area-btn' + (area.id === activeArea ? ' active' : '');
+    btn.textContent = area.name;
     btn.addEventListener('click', () => {
-      activeArea = btn.dataset.area;
-      nav.querySelectorAll('.area-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      if (area.id === activeArea) return;
+      activeArea = area.id;
+      renderLeftNav();
       renderSpectrum();
+      hidePanel();
     });
+    areaTabs.appendChild(btn);
   });
+  nav.appendChild(areaTabs);
+
+  // Divider
+  const divider = document.createElement('div');
+  divider.className = 'left-nav-divider';
+  nav.appendChild(divider);
+
+  // Topic list
+  const topicList = document.createElement('div');
+  topicList.className = 'left-topic-list';
+  const area = data.areas.find(a => a.id === activeArea);
+  area.topics.forEach(topic => {
+    const btn = document.createElement('button');
+    btn.className = 'left-topic-btn';
+    btn.textContent = topic.name;
+    btn.dataset.topicId = topic.id;
+    btn.addEventListener('click', () => scrollToTopic(topic.id, btn));
+    topicList.appendChild(btn);
+  });
+  nav.appendChild(topicList);
+}
+
+function scrollToTopic(id, btn) {
+  const card = document.getElementById('topic-' + id);
+  if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.querySelectorAll('.left-topic-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
 }
 
 /* ===================================================
@@ -77,7 +106,7 @@ function renderSpectrum() {
     }).join('');
 
     return `
-      <div class="topic-card">
+      <div class="topic-card" id="topic-${topic.id}">
         <span class="topic-name">${topic.name}</span>
         <div class="scale-wrap">
           <div class="scale-labels">
@@ -206,7 +235,6 @@ function placeTooltip(dot) {
   let left = r.left + r.width / 2 + window.scrollX;
   let top  = r.top  + window.scrollY - 8;
 
-  // Keep within viewport
   left = Math.max(8, Math.min(left, window.innerWidth - tw - 8));
   tooltip.style.left = left + 'px';
   tooltip.style.top  = top  + 'px';
@@ -214,17 +242,13 @@ function placeTooltip(dot) {
 }
 
 /* ===================================================
-   View tab switching (Spektrum / Kluster)
+   View tab switching
    =================================================== */
 function setupViewTabs() {
   document.querySelectorAll('.tab[data-view]').forEach(tab => {
     tab.addEventListener('click', () => {
       if (tab.dataset.view === 'cluster') { location.href = 'kluster.html'; return; }
       if (tab.dataset.view === 'metod')   { location.href = 'metod.html';   return; }
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-      tab.classList.add('active');
-      document.getElementById('view-' + tab.dataset.view).classList.add('active');
     });
   });
 }
