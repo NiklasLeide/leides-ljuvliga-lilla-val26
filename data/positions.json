@@ -322,6 +322,110 @@
           }
         }
       ]
+    },
+    {
+      "id": "forsvar",
+      "name": "Försvar & säkerhet",
+      "color": "#475569",
+      "analysis": "Försvarsfrågorna präglas av historiskt bred enighet sedan Rysslands invasion av Ukraina 2022. Alla åtta riksdagspartier står bakom Ukrainastödet — Sverige har skickat 21 stödpaket till ett värde av över 100 miljarder kronor utan en enda reservation. En parlamentarisk överenskommelse från juni 2025 sätter målet till 3,5 procent av BNP till militärt försvar senast 2030. De tydligaste skiljelinjerna finns i Nato-frågan, där V och MP röstade emot medlemskapet 2023 och V konsekvent reserverar sig mot kärnvapenövningar och delegering av militära beslut till regeringen. SD har gjort den största resan — från neutralitetslinje till att vara en av de mest uttalade Nato-förespråkarna.",
+      "topics": [
+        {
+          "id": "nato",
+          "name": "Nato",
+          "description": "Hur starkt ska Sverige engagera sig i Nato?",
+          "scale": { "low": "Begränsa deltagande", "high": "Maximalt engagemang" },
+          "positions": {
+            "V":  { "position": 15, "group": "Kritiska",     "summary": "Accepterar medlemskapet men röstade emot. Reserverar sig konsekvent mot kärnvapenövningar och delegering av militära beslut till regeringen. Vill att insatser bemannas av anställd personal, inte värnpliktiga.", "source": "Prop. 2022/23:74, bet. 2025/26:UFöU1-2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/svenskt-bidrag-till-natos-avskrackning-och-forsvar_hd01uf%C3%B6u2/", "unclear": false },
+            "MP": { "position": 22, "group": "Kritiska",     "summary": "Röstade emot Nato-medlemskapet. Accepterar nu medlemskapet men reserverar sig mot delar av beslutsordningen. Vill ha starkare parlamentarisk kontroll.", "source": "Prop. 2022/23:74, bet. 2025/26:UFöU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-tydlig-beslutsordning-for-deltagande-i-natos_hd01uf%C3%B6u1/", "unclear": false },
+            "S":  { "position": 72, "group": "Stöder fullt", "summary": "Stöder Nato-medlemskapet fullt ut. Ansökte om medlemskap som regeringsparti 2022. Vill ha stark parlamentarisk insyn.", "source": "Prop. 2022/23:74, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-tydlig-beslutsordning-for-deltagande-i-natos_hd01uf%C3%B6u1/", "unclear": false },
+            "C":  { "position": 78, "group": "Stöder fullt", "summary": "Drev tidigt på för Nato-medlemskap. Stöder fullt engagemang.", "source": "Prop. 2022/23:74", "unclear": false },
+            "L":  { "position": 82, "group": "Stöder fullt", "summary": "Historiskt starkaste Nato-förespråkaren. Stöder fullt engagemang inklusive kärnvapendelning.", "source": "Prop. 2022/23:74", "unclear": false },
+            "KD": { "position": 85, "group": "Stöder fullt", "summary": "Stöder fullt Nato-engagemang. Betonar avskräckning och artikel 5.", "source": "Prop. 2022/23:74, bet. 2025/26:UFöU1", "unclear": false },
+            "M":  { "position": 88, "group": "Stöder fullt", "summary": "Tog Sverige in i Nato som regeringsparti. Stöder maximalt engagemang inklusive avskräckning.", "source": "Prop. 2022/23:74, bet. 2025/26:UFöU1-2", "unclear": false },
+            "SD": { "position": 85, "group": "Stöder fullt", "summary": "Gjorde stor sväng från neutralitetslinje till stark Nato-förespråkare. Stöder fullt engagemang, betonar nationell kontroll. Stöder avskräckning inklusive icke-konventionell.", "source": "Prop. 2022/23:74, bet. 2025/26:UFöU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-tydlig-beslutsordning-for-deltagande-i-natos_hd01uf%C3%B6u1/", "unclear": false }
+          }
+        },
+        {
+          "id": "forsvarsbudget",
+          "name": "Försvarsbudget",
+          "description": "Hur snabbt och hur mycket ska Sverige rusta upp?",
+          "scale": { "low": "Begränsa ökningen", "high": "Maximal upprustning" },
+          "positions": {
+            "V":  { "position": 55, "group": "Stöder med reservationer", "summary": "Stöder ökade anslag men vill prioritera civilförsvaret. Deltog i parlamentarisk överenskommelse juni 2025 om 3.5% BNP.", "source": "Parlamentarisk överenskommelse juni 2025, bet. 2024/25:FöU2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/", "unclear": false },
+            "MP": { "position": 52, "group": "Stöder med reservationer", "summary": "Stöder upprustning men betonar klimathänsyn och civilförsvar. Deltog i parlamentarisk överenskommelse.", "source": "Parlamentarisk överenskommelse, bet. 2024/25:FöU2", "unclear": false },
+            "S":  { "position": 75, "group": "Snabb upprustning",        "summary": "Vill nå 3.5% av BNP snabbt. Betonar personalförsörjning och värnplikt — mål 12 000 värnpliktiga/år till 2030, 20 000 på sikt.", "source": "Parlamentarisk överenskommelse, Motion 2024/25:3023, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/", "unclear": false },
+            "C":  { "position": 72, "group": "Snabb upprustning",        "summary": "Stöder snabb upprustning. Betonar civilförsvar, glesbygd och försörjningsberedskap.", "source": "Parlamentarisk överenskommelse, bet. 2024/25:FöU2", "unclear": false },
+            "L":  { "position": 82, "group": "Maximal upprustning",      "summary": "Stöder maximal upprustning som regeringsparti.", "source": "Parlamentarisk överenskommelse", "unclear": false },
+            "KD": { "position": 88, "group": "Maximal upprustning",      "summary": "Stöder maximal upprustning. Betonar materielförsörjning och Nato-förmågemål.", "source": "Prop. 2025/26:1 utg.omr. 6, parlamentarisk överenskommelse", "unclear": false },
+            "M":  { "position": 90, "group": "Maximal upprustning",      "summary": "Driver som regeringsparti upprustningen. 3.5% BNP senast 2030. Historiskt stora försvarsanslag.", "source": "Prop. 2025/26:1 utg.omr. 6, parlamentarisk överenskommelse, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/budgetpropositionen-for-2026-utgiftsomrade-6_hd031d8/", "unclear": false },
+            "SD": { "position": 88, "group": "Maximal upprustning",      "summary": "Driver på för snabb upprustning. Vill se intensivutbildning av värnpliktiga. Prioriterar svensk försvarsindustri.", "source": "Parlamentarisk överenskommelse, bet. 2023/24:FöU6, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/forsvarspolitik-och-totalforsvar_hb01f%C3%B6u6/", "unclear": false }
+          }
+        },
+        {
+          "id": "varnplikt",
+          "name": "Värnplikt",
+          "description": "Hur bred och djup ska totalförsvarsplikten vara?",
+          "scale": { "low": "Begränsad värnplikt", "high": "Bred totalförsvarsplikt" },
+          "positions": {
+            "V":  { "position": 60, "group": "Stöder värnplikt + civilplikt", "summary": "Stöder värnplikt och civilplikt. Var tidigt ute med motion om modern civilplikt. Emot att värnpliktiga används i internationella insatser.", "source": "Motion 2020/21:175 (V), bet. 2024/25:FöU2", "unclear": false },
+            "MP": { "position": 55, "group": "Stöder värnplikt + civilplikt", "summary": "Stöder värnplikt och civilplikt. Betonar jämställdhet i försvaret.", "source": "bet. 2024/25:FöU2", "unclear": false },
+            "S":  { "position": 80, "group": "Bred värnplikt",              "summary": "Vill öka till 12 000 värnpliktiga/år till 2030, 20 000 på sikt. Krigsorganisation minst 115 000 personer.", "source": "Motion 2024/25:3023 (S), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/", "unclear": false },
+            "C":  { "position": 70, "group": "Bred värnplikt",              "summary": "Stöder bred värnplikt. Vill bredda civilplikten till gröna näringarna. Vapenfri tjänst ska finnas.", "source": "Motion 2024/25:2953 (C), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/personalfragor_hc01f%C3%B6u6/", "unclear": false },
+            "L":  { "position": 75, "group": "Bred värnplikt",              "summary": "Stöder utökad värnplikt.", "source": "bet. 2024/25:FöU2", "unclear": false },
+            "KD": { "position": 78, "group": "Bred värnplikt",              "summary": "Stöder utökad värnplikt. Vill utreda obligatoriskt tjänstgöringsår.", "source": "Motion 2024/25:296 (KD)", "unclear": false },
+            "M":  { "position": 82, "group": "Bred värnplikt",              "summary": "Stöder utökad värnplikt. Betonar kvalitet i utbildning och fyllda förband.", "source": "Prop. 2024/25:34, bet. 2024/25:FöU2", "unclear": false },
+            "SD": { "position": 85, "group": "Bred värnplikt",              "summary": "Vill se intensivutbildning av fler värnpliktiga under kortare tid. Driver frågan om lokalförsvar.", "source": "bet. 2023/24:FöU6, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/forsvarspolitik-och-totalforsvar_hb01f%C3%B6u6/", "unclear": false }
+          }
+        },
+        {
+          "id": "forsvarsindustri",
+          "name": "Försvarsindustri",
+          "description": "Ska Sverige prioritera inhemsk försvarsindustri eller internationellt samarbete?",
+          "scale": { "low": "Internationellt samarbete", "high": "Svensk industri först" },
+          "positions": {
+            "MP": { "position": 25, "group": "Restriktiv vapenexport", "summary": "Mest restriktiva partiet gällande vapenexport. Vill begränsa export till auktoritära regimer.", "source": "MP partiprogram", "unclear": false },
+            "V":  { "position": 30, "group": "Restriktiv vapenexport", "summary": "Stöder svensk försvarsindustri men vill ha striktare vapenexportregler. Emot export till länder som kränker mänskliga rättigheter.", "source": "V partiprogram", "unclear": false },
+            "C":  { "position": 58, "group": "Balanserad",             "summary": "Stöder internationellt samarbete och svensk försvarsindustri i balans.", "source": "bet. 2024/25:FöU2", "unclear": false },
+            "S":  { "position": 62, "group": "Balanserad",             "summary": "Stöder svensk försvarsindustri. Betonar JAS-uppföljare med svensk-nordisk design. Vill fylla på materiallagren.", "source": "bet. 2024/25:FöU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-6-forsvar-och-samhallets_hc01f%C3%B6u1/", "unclear": false },
+            "L":  { "position": 65, "group": "Balanserad",             "summary": "Stöder internationellt samarbete inom Nato och EU. Vill stärka europeisk försvarsindustri.", "source": "bet. 2024/25:FöU2", "unclear": false },
+            "KD": { "position": 72, "group": "Stärk svensk industri", "summary": "Stöder svensk försvarsindustri och Nato-samarbete.", "source": "bet. 2024/25:FöU2", "unclear": false },
+            "M":  { "position": 75, "group": "Stärk svensk industri", "summary": "Vill ha ny materielförsörjningsstrategi. Stöder svensk försvarsindustri men med internationellt samarbete.", "source": "bet. 2021/22:FöU6", "unclear": false },
+            "SD": { "position": 88, "group": "Svensk industri först", "summary": "Starkast förespråkare av svensk försvarsindustri. Vill att nyanskaffning i första hand riktas till svensk industri. Värnar artikel 346 (EU-fördraget).", "source": "Motion 2022/23:948 (SD), bet. 2022/23:FöU6, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/forsvarspolitik-och-totalforsvar_ha01f%C3%B6u6/", "unclear": false }
+          }
+        },
+        {
+          "id": "civil-beredskap",
+          "name": "Civil beredskap",
+          "description": "Hur brett ska det civila försvaret och samhällsberedskapen vara?",
+          "scale": { "low": "Begränsade satsningar", "high": "Bred totalförsvarsberedskap" },
+          "positions": {
+            "V":  { "position": 65, "group": "Stärk civilförsvaret", "summary": "Betonar civilförsvar och civilplikt. Tidig förespråkare av modern civilplikt.", "source": "Motion 2020/21:175 (V), bet. 2024/25:FöU2", "unclear": false },
+            "MP": { "position": 70, "group": "Stärk civilförsvaret", "summary": "Betonar klimatanpassning av beredskap, försörjningstrygghet och psykologiskt försvar.", "source": "bet. 2024/25:FöU2", "unclear": false },
+            "S":  { "position": 75, "group": "Stärk civilförsvaret", "summary": "Betonar civil beredskap parallellt med militär upprustning. Vill att både militärt och civilt försvar stärks.", "source": "bet. 2024/25:FöU2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/", "unclear": false },
+            "C":  { "position": 78, "group": "Stärk civilförsvaret", "summary": "Betonar försörjningsberedskap i hela Sverige, glesbygd och gröna näringarna. Civilplikt för lantbruk.", "source": "Motion 2024/25:2953 (C)", "unclear": false },
+            "L":  { "position": 75, "group": "Bred beredskap",       "summary": "Stöder bred beredskap som regeringsparti.", "source": "Prop. 2024/25:34", "unclear": false },
+            "KD": { "position": 78, "group": "Bred beredskap",       "summary": "Stöder bred beredskap. Betonar individens egenberedskap.", "source": "Prop. 2024/25:34", "unclear": false },
+            "M":  { "position": 80, "group": "Bred beredskap",       "summary": "Driver som regeringsparti bred totalförsvarsberedskap. Prop. 2024/25:34 med stora civilförsvarsanslag.", "source": "Prop. 2024/25:34, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/totalforsvaret-2025-2030_hc0334/", "unclear": false },
+            "SD": { "position": 80, "group": "Bred beredskap",       "summary": "Stöder bred totalförsvarsberedskap. Betonar försörjningstrygghet och energiberedskap.", "source": "Prop. 2024/25:34", "unclear": false }
+          }
+        },
+        {
+          "id": "ukraina",
+          "name": "Ukrainastöd",
+          "description": "Hur omfattande ska Sveriges militära och civila stöd till Ukraina vara?",
+          "scale": { "low": "Begränsa stödet", "high": "Maximera stödet" },
+          "positions": {
+            "V":  { "position": 88, "group": "Maximera stödet", "summary": "Stöder militärt stöd och vill tredubbla det till 1% av BNP (75 mdr/år). Har röstat för alla 21 stödpaket.", "source": "bet. 2024/25:FiU29, FiU31, 2025/26:FiU8, FiU46, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/extra-andringsbudget-for-2025-stod-till-ukraina_hc01fiu29/", "unclear": false },
+            "MP": { "position": 82, "group": "Maximera stödet", "summary": "Stöder omfattande stöd. Betonar humanitärt och återuppbyggnadsstöd. Har röstat för alla paket.", "source": "FiU29, FiU31, FiU8, FiU46", "unclear": false },
+            "S":  { "position": 85, "group": "Maximera stödet", "summary": "Stöder omfattande militärt och civilt stöd. Har röstat för alla 21 paket. Vill att Sverige ska gå före i EU.", "source": "bet. 2024/25:FiU29, FiU31, 2025/26:FiU8, FiU46, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/extra-andringsbudget-for-2026-stod-till-ukraina_hd01fiu46/", "unclear": false },
+            "C":  { "position": 85, "group": "Maximera stödet", "summary": "Stöder omfattande stöd. Har röstat för alla paket.", "source": "FiU29, FiU31, FiU8, FiU46", "unclear": false },
+            "L":  { "position": 88, "group": "Maximera stödet", "summary": "Stöder omfattande stöd som regeringsparti.", "source": "Alla extra ändringsbudgetar", "unclear": false },
+            "KD": { "position": 88, "group": "Maximera stödet", "summary": "Stöder omfattande stöd som regeringsparti.", "source": "Alla extra ändringsbudgetar", "unclear": false },
+            "M":  { "position": 92, "group": "Maximera stödet", "summary": "Driver som regeringsparti det största militära stödet i svensk historia. 21 paket, 103+ mdr kr totalt. 40 mdr/år 2026-2027.", "source": "Prop. 2025/26:1 utg.omr. 6, alla extra ändringsbudgetar, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/budgetpropositionen-for-2026-utgiftsomrade-6_hd031d8/", "unclear": false },
+            "SD": { "position": 90, "group": "Maximera stödet", "summary": "Stark förespråkare av militärt stöd. Överenskommelse med regeringen om 40 mdr/år. Betonar att 75% av stödet nu är nytillverkad svensk materiel.", "source": "bet. 2025/26:FiU8, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/extra-andringsbudget-for-2025-forsvarsmateriel_hd01fiu8/", "unclear": false }
+          }
+        }
+      ]
     }
   ]
 }
