@@ -12,7 +12,7 @@
 |-----|-------------------------------------------------------------|---------|-------|
 | 2.1 | Research and fill in actual party positions for school topics | ✅ Done | 4 topics verified (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning); friskolor done prev session |
 | 2.2 | Methodology page ("Om metoden")                             | ✅ Done | metod.html — sources, scale, groups, unclear, neutrality. Tab nav on all pages. |
-| 2.3 | Source links and citation for every position                | 🔄 In Progress | 4/5 topics have URLs (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning). friskolor still has plain-text sources only. |
+| 2.3 | Source links and citation for every position                | ✅ Done | All 5 topics have verifiable URLs. friskolor completed last. |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
@@ -54,7 +54,7 @@
 Open `index.html` directly in browser — no server needed.
 
 - Site live at https://val26.leide.se
-- Spektrum-vy med 5 skolfrågor — alla med verifierade partipositioner; 4/5 med klickbara källlänkar (friskolor saknar URLs)
+- Spektrum-vy med 5 skolfrågor — alla med verifierade partipositioner och klickbara källlänkar
 - 8 partier positionerade på horisontella skalor
 - Hover visar partiets ståndpunkt (tooltip)
 - Klick på parti-dot öppnar detaljpanel med sammanfattning + klickbara källlänkar
@@ -92,5 +92,5 @@ None.
 - Renderas korrekt i Chrome/Firefox/Safari på desktop och 375px mobil
 - Alla 8 partier synliga i alla 5 ämnen
 - Hover-tooltip visar korrekt partinamn och sammanfattning
-- Klick på parti-dot öppnar detaljpanel med klickbara källlänkar (4/5 topics)
+- Klick på parti-dot öppnar detaljpanel med klickbara källlänkar (alla 5 topics)
 - Kluster-vy visar dynamiska grupper med korrekt antal partier per grupp

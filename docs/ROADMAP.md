@@ -37,7 +37,7 @@
 
 - [x] 2.1 Research and fill in actual party positions for school topics *(5/5 topics)*
 - [x] 2.2 Methodology page ("Om metoden") *(metod.html, tab nav on all pages)*
-- [ ] 2.3 Source links and citation for every position *(4/5 done — friskolor still needs URLs)*
+- [x] 2.3 Source links and citation for every position *(5/5 topics complete)*
 
 ---
 
