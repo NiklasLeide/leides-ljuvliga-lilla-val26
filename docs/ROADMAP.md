@@ -35,9 +35,9 @@
 
 ## Sprint 2 — Real content
 
-- [ ] 2.1 Research and fill in actual party positions for school topics
+- [x] 2.1 Research and fill in actual party positions for school topics
 - [ ] 2.2 Methodology page ("Om metoden")
-- [ ] 2.3 Source links and citation for every position
+- [x] 2.3 Source links and citation for every position
 
 ---
 

@@ -1,6 +1,6 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
-> **Last updated:** 2026-04-01
+> **Last updated:** 2026-04-02
 > **Current sprint:** Sprint 2 – Real content
 > **Sprint dates:** 2026-04-01 → TBD
 
@@ -10,9 +10,9 @@
 
 | #   | Task                                                        | Status  | Notes |
 |-----|-------------------------------------------------------------|---------|-------|
-| 2.1 | Research and fill in actual party positions for school topics | ⬜ Todo |       |
+| 2.1 | Research and fill in actual party positions for school topics | ✅ Done | 4 topics verified (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning); friskolor done prev session |
 | 2.2 | Methodology page ("Om metoden")                             | ⬜ Todo |       |
-| 2.3 | Source links and citation for every position                | ⬜ Todo |       |
+| 2.3 | Source links and citation for every position                | ✅ Done | All 4 topics have verifiable URLs; detail panels render clickable links |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
@@ -53,11 +53,12 @@
 
 Open `index.html` directly in browser — no server needed.
 
-- Spektrum-vy med 5 skolfrågor
+- Spektrum-vy med 5 skolfrågor — alla med verifierade partipositioner och klickbara källlänkar
 - 8 partier positionerade på horisontella skalor
-- Hover visar partiets ståndpunkt
-- Kluster-vy med animerade grupperingar (vänster/mitten/höger)
-- Detaljpanel vid klick på parti — sammanfattning, källa, metodnotering
+- Hover visar partiets ståndpunkt (tooltip)
+- Klick på parti-dot öppnar detaljpanel med sammanfattning + klickbara källlänkar
+- Kluster-vy med animerade grupperingar (dynamiska grupper per fråga)
+- Detaljpanel vid klick på parti i kluster — sammanfattning, klickbar källa, metodnotering
 - Fliknavigering mellan Spektrum och Kluster
 - Mobilvänlig layout (375px+)
 - Reformkarta design language (mörk header, DM Sans + Source Serif 4)
