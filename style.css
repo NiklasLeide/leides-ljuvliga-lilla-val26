@@ -598,6 +598,8 @@ footer {
   margin-top: 1rem;
   border-top: 1px solid var(--border);
 }
+footer a { color: #ccc; text-decoration: underline; }
+footer a:hover { color: var(--ink); }
 
 /* ===================================================
    Mobile  ≤ 480px
