@@ -15,13 +15,13 @@
 
 ## Sprint 0.5 — Infrastructure
 
-- [ ] 0.5.1 Add CNAME file (val26.leide.se)
-- [ ] 0.5.2 Create commit.sh (same pattern as reformkartan)
-- [ ] 0.5.3 Create deploy.sh (same pattern as reformkartan)
-- [ ] 0.5.4 Enable GitHub Pages on repo *(manual — Niklas)*
-- [ ] 0.5.5 Configure Cloudflare DNS CNAME *(manual — Cloudflare dashboard)*
-- [ ] 0.5.6 Add Cloudflare Web Analytics with separate site tag *(manual — Niklas)*
-- [ ] 0.5.7 Verify site is live at val26.leide.se
+- [x] 0.5.1 Add CNAME file (val26.leide.se)
+- [x] 0.5.2 Create commit.sh (same pattern as reformkartan)
+- [x] 0.5.3 Create deploy.sh (same pattern as reformkartan)
+- [x] 0.5.4 Enable GitHub Pages on repo *(manual — Niklas)*
+- [x] 0.5.5 Configure Cloudflare DNS CNAME *(manual — Cloudflare dashboard)*
+- [x] 0.5.6 Add Cloudflare Web Analytics with separate site tag *(manual — Niklas)*
+- [x] 0.5.7 Verify site is live at val26.leide.se
 
 ---
 

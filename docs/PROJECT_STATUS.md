@@ -42,10 +42,10 @@
 | 0.5.1 | Add CNAME file (val26.leide.se)                         | ✅                                 |
 | 0.5.2 | Create commit.sh                                        | ✅                                 |
 | 0.5.3 | Create deploy.sh                                        | ✅                                 |
-| 0.5.4 | Enable GitHub Pages on repo                             | Manual — Niklas                    |
-| 0.5.5 | Configure Cloudflare DNS CNAME                          | Manual — Niklas                    |
-| 0.5.6 | Add Cloudflare Web Analytics (token: set in index.html) | Manual — Niklas                    |
-| 0.5.7 | Verify site is live at val26.leide.se                   | Pending 0.5.4–0.5.6                |
+| 0.5.4 | Enable GitHub Pages on repo                             | ✅ Manual — Niklas                 |
+| 0.5.5 | Configure Cloudflare DNS CNAME                          | ✅ Manual — Niklas                 |
+| 0.5.6 | Add Cloudflare Web Analytics (token: set in index.html) | ✅ Manual — Niklas                 |
+| 0.5.7 | Verify site is live at val26.leide.se                   | ✅ Live at val26.leide.se          |
 
 ---
 
@@ -67,7 +67,7 @@ Open `index.html` directly in browser — no server needed.
 
 ## Blockers
 
-- 0.5.4–0.5.7 pending manual steps (GitHub Pages, Cloudflare DNS, verify live)
+None.
 
 ---
 
