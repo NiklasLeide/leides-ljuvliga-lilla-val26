@@ -6,6 +6,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 ---
 
 [2026-04-02] data: voting.json — added ekonomi area (7 topics, 56 party entries: skatt-arbete, valfard-finansiering, arbetsmarknad, bostader, eu-ekonomi, pension, infrastruktur)
+[2026-04-02] data: positions.json — add area summaries for skola, ekonomi, migration; verify forsvar summary; all 4 areas complete
 [2026-04-02] data: forsvar area — add Försvar & säkerhet with 6 topics (nato, forsvarsbudget, varnplikt, forsvarsindustri, civil-beredskap, ukraina) to positions.json and voting.json; 96 total entries, zero ej-granskat
 [2026-04-02] data: voting.json migration — add migration area (5 topics, 40 party entries): asylpolitik, arbetskraftsinvandring, medborgarskap, integration, uppehallstillstand; zero ej-granskat entries
 [2026-04-02] data: voting.json ekonomi — replaced ej-granskat with EU-nämnds- och utskottsdata: MP/arbetsmarknad (AU10 res. 4), S+C/eu-ekonomi (EU-nämnden protokoll 29), KD/eu-ekonomi (FaktaPM FPM33); zero ej-granskat remaining

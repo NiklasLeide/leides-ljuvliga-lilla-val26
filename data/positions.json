@@ -15,7 +15,7 @@
       "id": "skola",
       "name": "Skola",
       "color": "#4A7FC1",
-      "analysis": "PLACEHOLDER — awaiting analysis text",
+      "analysis": "Skolfrågor är ett av valrörelsens mest polariserade områden. V, MP och S vill begränsa eller förbjuda vinstuttag i skolan, medan M, SD och KD värnar friskolereformen. L bröt med högerblocket på landsmötet 2025 och vill fasa ut vinstintresset — en ovanlig position som placerar partiet mitt i ett annars tydligt mönster. I digitaliseringsfrågan har regeringen drivit en kraftig sväng mot analoga läromedel och mobilförbud, medan MP ensamt kräver en samlad digitaliseringsstrategi. I frågan om statligt huvudmannaskap samlas V, SD och L — tre ideologiskt vitt skilda partier — kring förstatligande.",
       "topics": [
         {
           "id": "friskolor",
@@ -119,7 +119,7 @@
       "id": "ekonomi",
       "name": "Ekonomi",
       "color": "#C17A2D",
-      "analysis": "PLACEHOLDER — awaiting analysis text",
+      "analysis": "Ekonomiska frågor följer i stort den klassiska vänster–höger-skalan: V, S och MP vill höja skatter för att stärka välfärden, medan M, KD, SD och L prioriterar skattesänkningar och effektivisering. C hamnar ofta i en mellanposition. Två undantag bryter mönstret: i EU-frågan samlas V och SD i EU-skepticism medan L ensamt vill fördjupa integrationen, och i infrastrukturfrågan var det SD — inte M — som drev stoppet av nya stambanor som första Tidöåtgärd. Pensionsfrågan präglas av ovanligt bred samsyn genom Pensionsgruppen, men V och SD reserverade sig gemensamt mot höjda pensionsåldrar.",
       "topics": [
         {
           "id": "skatt-arbete",
@@ -239,7 +239,7 @@
       "id": "migration",
       "name": "Migration",
       "color": "#8B5CF6",
-      "analysis": "PLACEHOLDER — awaiting analysis text",
+      "analysis": "Migration är den fråga där avstånden mellan partierna är störst. V och MP vill ge permanenta uppehållstillstånd direkt och öka kvotflyktingmottagandet till 5 000 per år, medan SD vill avskaffa permanenta uppehållstillstånd helt och minimera asylmottagningen. S undviker tydliga ställningstaganden i flera delfrågor och deltog inte i Asylrättsforum 2025. C sticker ut i arbetskraftsinvandring — enda partiet som vill ta bort lönekravet helt — medan övriga partier accepterar eller vill höja det. L intar konsekvent en mer moderat position än M, KD och SD inom Tidösamarbetet, särskilt i frågan om uppehållstillstånd.",
       "topics": [
         {
           "id": "asylpolitik",
