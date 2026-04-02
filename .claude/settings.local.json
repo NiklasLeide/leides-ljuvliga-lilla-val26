@@ -21,7 +21,8 @@
       "Bash(git commit -m ':*)",
       "Bash(git push:*)",
       "Bash(python3 -c ':*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(python:*)"
     ]
   }
 }
