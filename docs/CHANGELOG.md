@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] docs: RESEARCH_AGENT.md — expand Primärkällor with valmanifest, medieutspel, partiledarutfrågningar; add valrörelse-utspel caveat under Särskild vaksamhet
 [2026-04-02] docs: swap sprint order — "Says vs does" promoted to Sprint 5, GAL-TAN moved to Sprint 6 (stronger voter USP)
 [2026-04-02] fix: kluster group labels — remove text-transform:capitalize (was rendering "Vänster/Mitten/Höger"), increase font-size to 13px, darken fill to --ink
 [2026-04-02] fix: spectrum dot size 28→32px, font 10→12px — abbreviation text now clearly readable at a glance

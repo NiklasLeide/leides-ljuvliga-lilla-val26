@@ -37,9 +37,12 @@ Sök information från dessa källor, i prioritetsordning:
 
 **Primärkällor (vad partiet officiellt säger):**
 - Partiernas officiella program och valplattformar
+- Valmanifest och valplattformar (publiceras inför valet)
 - Riksdagsmotioner (från respektive partigrupp)
 - Reservationer i utskottsbetänkanden
 - Partiledardebatter och riksdagsprotokoll
+- Partiernas utspel i media (debattartiklar, presskonferenser, intervjuer) — men alltid verifierat mot minst en annan källa
+- Partiledarutfrågningar (SVT, TV4)
 
 **Sekundärkällor (vad partiet faktiskt gör):**
 - Voteringsresultat på riksdagen.se
@@ -83,6 +86,7 @@ Varje ståndpunkt ska kontrolleras:
 - Partier i regering kan ha kompromissat bort sin egen linje — notera skillnaden mellan partiprogram och faktisk regeringspolitik
 - Oppositionspartier kan ha mer extrema motioner än vad de realistiskt skulle genomföra
 - "Otydlig" är en helt acceptabel bedömning — tvinga aldrig en placering
+- Valrörelse-utspel kan vara taktiska positioner som skiljer sig från partiets faktiska politik. Verifiera alltid mot riksdagsmotioner eller voteringsdata där möjligt. Notera om en position enbart bygger på ett medieutspel.
 
 Om en uppgift inte kan verifieras: markera som `unclear: true` och beskriv varför.
 
