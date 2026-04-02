@@ -190,6 +190,91 @@ Partiståndpunkter ändras, särskilt inför val. Bevakningsprocess:
 
 ---
 
+## Säger vs gör — datainsamling
+
+Vyn "Säger vs gör" kräver tre datapunkter per parti × sakfråga. Dessa lagras i `data/voting.json`.
+
+### De tre fälten
+
+**`says` — Vad partiet säger (officiell position)**
+Redan täckt av den befintliga processen. Hämtas från samma primärkällor som positions.json. Sammanfattning på 1–2 meningar i neutralt språk.
+
+**`promises` — Konkreta löften**
+En specifik utfästelse från valmanifest, debatter eller intervjuer. Måste vara ett konkret åtagande — inte en generell hållning.
+- Exempel på godkänt: "Tidöavtalet: centralt rättade nationella prov ska införas."
+- Exempel på inte godkänt: "Partiet vill förbättra skolan." (för allmänt)
+- Om inget konkret löfte finns: lämna fältet tomt och sätt `match: "ej-granskat"`.
+
+**`voted` — Riksdagsvotering**
+Hur partiet röstat på relevanta propositioner eller utskottsbetänkanden. Krav:
+- Inkludera proposition- eller betänkandenummer (t.ex. `bet. 2024/25:UbU8`)
+- Inkludera datum för voteringen
+- Inkludera direkt URL till voteringen på riksdagen.se
+- Beskriv utfallet: "Röstade för", "Röstade mot", "Lade ned sina röster"
+- Källa: riksdagen.se/sv/voteringar eller via utskottsbetänkandets sida
+
+**Viktigt: Lämna fält tomma hellre än att uppfinna data.** Om `promises` eller `voted` saknas: markera entry som `match: "ej-granskat"` och lämna summary-fälten tomma. Lägg aldrig in gissningar som fakta.
+
+---
+
+### Match-bedömning
+
+Agenten ska föreslå ett av fyra utfall för varje party × topic-kombination:
+
+| Värde | Betydelse |
+|-------|-----------|
+| `stammer` | Säger, lovar och röstar konsekvent i samma riktning |
+| `delvis` | Viss diskrepans — t.ex. röstade för en svagare kompromiss än partiet officiellt förespråkar |
+| `avviker` | Tydlig konflikt — partiet säger en sak men röstar för motsatsen |
+| `ej-granskat` | `promises` eller `voted` saknas — kan inte bedömas ännu |
+
+**Format för föreslagen bedömning (presenteras för Niklas innan data läggs in):**
+
+```
+Parti: M | Sakfråga: friskolor
+Säger:  Värnar friskolereformen, avvisar generell vinstbegränsning
+Lovar:  Tidöavtalet: begränsat vinststopp vid nystart/ägarbyte
+Röstat: Röstade för utredningsdirektivet (2024-09-19), bet. 2024/25:KU1
+Match-förslag: delvis
+Motivering: M:s officiella linje avvisar vinstbegränsning, men Tidöavtalet
+            innehöll ett begränsat vinststopp som M drev igenom — viss
+            diskrepans mellan retorik och faktiskt genomfört beslut.
+```
+
+**Ingen match-bedömning läggs in i voting.json utan Niklas godkännande.**
+
+---
+
+### Källor för voteringsdata
+
+Sök i denna ordning:
+1. **riksdagen.se/sv/voteringar** — sök på proposition- eller betänkandenummer
+2. **Utskottsbetänkandets sida** — innehåller oftast direkt länk till omröstningsresultat
+3. **riksdagen.se/sv/dokument-och-lagar** — sök på sakfrågan + betänkande
+
+URL-format att inkludera:
+- Till voteringen: `https://www.riksdagen.se/sv/voteringar/?bet=2024/25:UbU8&punkt=1`
+- Till betänkandet: `https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/...`
+
+---
+
+### Uppdatering av voting.json — Claude Code-prompt
+
+När data är godkänd av Niklas, ta fram en prompt i detta format:
+
+```
+Update data/voting.json — add/update entries for topic "friskolor", area "skola":
+
+M: says "...", promises "...", promises_source "Tidöavtalet", promises_url "...",
+   voted "...", voted_source "bet. 2024/25:KU1", voted_url "...", match "delvis"
+
+[etc för övriga partier]
+
+Do not change any other entries. Update CHANGELOG.md and commit.
+```
+
+---
+
 ## Rollfördelning
 
 | Vem | Gör vad |

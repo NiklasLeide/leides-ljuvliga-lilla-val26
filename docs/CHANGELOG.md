@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] docs: RESEARCH_AGENT.md — add "Säger vs gör — datainsamling" section (says/promises/voted fields, match ratings, riksdag voting sources, Claude Code prompt format)
 [2026-04-02] feat: add "Öppen källkod på GitHub" to privacy notice on metod.html and footer one-liner on all pages
 [2026-04-02] feat: privacy notice — Integritet section on metod.html#integritet; footer one-liner "Ingen personlig data samlas in" with anchor link on all pages
 [2026-04-02] feat: Säger vs gör view (sager-vs-gor.html + sager-vs-gor.js) — per-fråga/per-parti toggle, promise cards with Säger/Lovar/Röstat rows + match badges; placeholder data for friskolor + nationella-prov; new tab in all page navs
