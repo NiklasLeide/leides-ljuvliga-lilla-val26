@@ -33,7 +33,7 @@
 
 ---
 
-## Sprint 2 — Real content
+## Sprint 2 — Real content ✅
 
 - [x] 2.1 Research and fill in actual party positions for school topics *(5/5 topics)*
 - [x] 2.2 Methodology page ("Om metoden") *(metod.html, tab nav on all pages)*

@@ -1,24 +1,31 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
 > **Last updated:** 2026-04-02
-> **Current sprint:** Sprint 2 – Real content
-> **Sprint dates:** 2026-04-01 → TBD
+> **Current sprint:** Sprint 3 – Expand
+> **Sprint dates:** 2026-04-02 → TBD
 
 ---
 
-## Current Sprint: Sprint 2 – Real content
+## Current Sprint: Sprint 3 – Expand
 
-| #   | Task                                                        | Status  | Notes |
-|-----|-------------------------------------------------------------|---------|-------|
-| 2.1 | Research and fill in actual party positions for school topics | ✅ Done | 4 topics verified (vinstuttag, nationella-prov, tidiga-betyg, statlig-styrning); friskolor done prev session |
-| 2.2 | Methodology page ("Om metoden")                             | ✅ Done | metod.html — sources, scale, groups, unclear, neutrality. Tab nav on all pages. |
-| 2.3 | Source links and citation for every position                | ✅ Done | All 5 topics have verifiable URLs. friskolor completed last. |
+| #   | Task                                          | Status  | Notes |
+|-----|-----------------------------------------------|---------|-------|
+| 3.1 | Add more policy areas beyond school           | ⬜ Todo |       |
+| 3.2 | Polish, SEO, public launch before Sept 2026   | ⬜ Todo |       |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
 ---
 
 ## Completed Sprints
+
+### Sprint 2 – Real content ✅
+
+| #   | Task                                                        | Notes |
+|-----|-------------------------------------------------------------|-------|
+| 2.1 | Research and fill in actual party positions for school topics | 5/5 school topics, 8 parties each, verified sources |
+| 2.2 | Methodology page ("Om metoden")                             | metod.html — sources, scale, groups, unclear positions, neutrality |
+| 2.3 | Source links and citation for every position                | All 40 source fields have verifiable https:// URLs; clickable in detail panels |
 
 ### Sprint 1 – Cluster view ✅
 
@@ -74,12 +81,7 @@ None.
 
 ## Sprint Backlog
 
-### Sprint 3 — Expand
-- [ ] 3.1 Add more policy areas beyond school
-- [ ] 3.2 Polish, SEO, public launch before election Sept 2026
-
 ### Sprint 4 — TBD
-
 ### Sprint 5 — GAL-TAN scale
 ### Sprint 6 — "Says vs does" view
 ### Sprint 7 — Polling trends

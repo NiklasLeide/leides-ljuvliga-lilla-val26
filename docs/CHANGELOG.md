@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] docs: close Sprint 2, open Sprint 3 in PROJECT_STATUS and ROADMAP
 [2026-04-02] data: friskolor source URLs added — all 8 parties now have verifiable https:// sources (5/5 topics complete)
 [2026-04-02] feat: metod.html — methodology page explaining sources, scale, groups, unclear positions, neutrality
 [2026-04-02] feat: add "Om metoden" tab to all pages (index.html, kluster.html); wire navigation in app.js and kluster.js
