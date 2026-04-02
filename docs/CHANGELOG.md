@@ -6,6 +6,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 ---
 
 [2026-04-02] data: voting.json — added ekonomi area (7 topics, 56 party entries: skatt-arbete, valfard-finansiering, arbetsmarknad, bostader, eu-ekonomi, pension, infrastruktur)
+[2026-04-02] data: voting.json migration — add migration area (5 topics, 40 party entries): asylpolitik, arbetskraftsinvandring, medborgarskap, integration, uppehallstillstand; zero ej-granskat entries
 [2026-04-02] data: voting.json ekonomi — replaced ej-granskat with EU-nämnds- och utskottsdata: MP/arbetsmarknad (AU10 res. 4), S+C/eu-ekonomi (EU-nämnden protokoll 29), KD/eu-ekonomi (FaktaPM FPM33); zero ej-granskat remaining
 [2026-04-02] data: voting.json skola — replace ej-granskat with reservation data from UbU7/UbU8; add inväntar-votering for Tidöpartier on nationella-prov/tidiga-betyg (Prop. 2025/26:197 lagd ej omröstad), SD statlig-styrning; stammer for V/C/digitalisering-skolan + C/vinstuttag
 [2026-04-02] feat: sager-vs-gor — add inväntar-votering match badge (light blue); add .badge-invantar to style.css
