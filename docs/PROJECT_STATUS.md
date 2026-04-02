@@ -10,7 +10,7 @@
 
 | #   | Task                                          | Status  | Notes |
 |-----|-----------------------------------------------|---------|-------|
-| 3.1 | Add more policy areas beyond school           | ⬜ Todo |       |
+| 3.1 | Add more policy areas beyond school           | ✅ Done | 4 areas: skola, ekonomi, migration, forsvar. Full positions + voting data, zero ej-granskat. |
 | 3.2 | Polish, SEO, public launch before Sept 2026   | ⬜ Todo |       |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
@@ -61,13 +61,17 @@
 Open `index.html` directly in browser — no server needed.
 
 - Site live at https://val26.leide.se
-- Spektrum-vy med 5 skolfrågor — alla med verifierade partipositioner och klickbara källlänkar
-- 8 partier positionerade på horisontella skalor
-- Hover visar partiets ståndpunkt (tooltip)
-- Klick på parti-dot öppnar detaljpanel med sammanfattning + klickbara källlänkar
-- Kluster-vy med animerade grupperingar (dynamiska grupper per fråga)
-- Detaljpanel vid klick på parti i kluster — sammanfattning, klickbar källa, metodnotering
-- Fliknavigering mellan Spektrum och Kluster
+- **4 politikområden:** skola (6 ämnen), ekonomi (7), migration (5), försvar (6) — totalt 24 ämnen, 192 partipositioner
+- **Säger vs gör-vy** (sager-vs-gor.html) — jämför partiernas löften med riksdagsvoteringar, per fråga och per parti
+- **voting.json** med full täckning: 4 areas × alla topics × 8 partier = 184 entries, noll ej-granskat
+- **Match-badges:** stammer (grön), delvis (gul), avviker (röd), inväntar-votering (blå), ej-granskat (grå)
+- **Analystext** för alla 4 areas — visas som intro ovan innehållet i spektrum- och klustervyerna
+- Spektrum-vy med horisontella skalor, hover-tooltip, klickbar detaljpanel med källlänkar
+- Kluster-vy med animerade grupperingar, dynamiska grupper per fråga
+- Fliknavigering mellan Spektrum, Kluster, Säger vs gör, Om metoden
+- Sticky header + tre-kolumnslayout med scroll per kolumn
+- Integritetssida (metod.html#integritet) + footer-länk på alla sidor
+- Öppen källkod på GitHub — länk i integritetssektionen
 - Mobilvänlig layout (375px+)
 - Reformkarta design language (mörk header, DM Sans + Source Serif 4)
 
@@ -92,7 +96,8 @@ None.
 
 ## Key Metrics
 - Renderas korrekt i Chrome/Firefox/Safari på desktop och 375px mobil
-- Alla 8 partier synliga i alla 5 ämnen
+- Alla 8 partier synliga i alla 24 ämnen (4 areas)
 - Hover-tooltip visar korrekt partinamn och sammanfattning
-- Klick på parti-dot öppnar detaljpanel med klickbara källlänkar (alla 5 topics)
+- Klick på parti-dot öppnar detaljpanel med klickbara källlänkar
 - Kluster-vy visar dynamiska grupper med korrekt antal partier per grupp
+- voting.json: 184 entries, 0 ej-granskat, match-fördelning synlig i Säger vs gör

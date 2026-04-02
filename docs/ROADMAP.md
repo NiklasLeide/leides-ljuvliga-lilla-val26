@@ -43,7 +43,7 @@
 
 ## Sprint 3 — Expand
 
-- [ ] 3.1 Add more policy areas beyond school
+- [x] 3.1 Add more policy areas beyond school *(ekonomi 7 ämnen, migration 5 ämnen, försvar 6 ämnen — full positions + voting data)*
 - [ ] 3.2 Polish, SEO, public launch before election Sept 2026
 
 ---
@@ -52,11 +52,11 @@
 
 ---
 
-## Sprint 5 — "Says vs does" view
+## Sprint 5 — "Says vs does" view ✅
 
-- [ ] 5.1 New view comparing stated positions (party programs) with voting records (riksdagen.se)
-- [ ] 5.2 Riksdag voting data integration
-- [ ] 5.3 UI polish pass
+- [x] 5.1 New view comparing stated positions (party programs) with voting records (riksdagen.se) *(sager-vs-gor.html + sager-vs-gor.js)*
+- [x] 5.2 Riksdag voting data integration *(voting.json, 4 areas × 24 topics × 8 parties, zero ej-granskat)*
+- [x] 5.3 UI polish pass *(match badges, inväntar-votering, per-fråga + per-parti toggle)*
 
 ---
 
