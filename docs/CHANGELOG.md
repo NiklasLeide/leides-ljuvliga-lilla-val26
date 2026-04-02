@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] fix: kluster group labels — remove text-transform:capitalize (was rendering "Vänster/Mitten/Höger"), increase font-size to 13px, darken fill to --ink
+[2026-04-02] fix: spectrum dot size 28→32px, font 10→12px — abbreviation text now clearly readable at a glance
 [2026-04-02] docs: close Sprint 2, open Sprint 3 in PROJECT_STATUS and ROADMAP
 [2026-04-02] data: friskolor source URLs added — all 8 parties now have verifiable https:// sources (5/5 topics complete)
 [2026-04-02] feat: metod.html — methodology page explaining sources, scale, groups, unclear positions, neutrality
