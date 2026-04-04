@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-02] data: add klimat area — 6 topics (karnkraft, fossila-branslen, klimatmal, fornybart, elpriser, klimatanpassning), 96 total entries across positions.json + voting.json; one delvis (S/karnkraft); zero ej-granskat
 [2026-04-02] data: voting.json — added ekonomi area (7 topics, 56 party entries: skatt-arbete, valfard-finansiering, arbetsmarknad, bostader, eu-ekonomi, pension, infrastruktur)
 [2026-04-02] docs: session update — mark 3.1 and Sprint 5 done; update What's Working Now with 4 areas + Säger vs gör; update metrics
 [2026-04-02] data: positions.json — add area summaries for skola, ekonomi, migration; verify forsvar summary; all 4 areas complete

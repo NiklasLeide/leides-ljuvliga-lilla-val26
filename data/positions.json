@@ -426,6 +426,110 @@
           }
         }
       ]
+    },
+    {
+      "id": "klimat",
+      "name": "Klimat & energi",
+      "color": "#16A34A",
+      "analysis": "Klimat- och energipolitiken är valrörelsens mest polariserade område efter migration. Kärnkraftsfrågan delar riksdagen mitt itu: Prop. 2024/25:150 om statligt stöd till ny kärnkraft antogs med bara 154 mot 151 röster — S, V, C och MP röstade gemensamt emot. MP har lovat att riva upp planerna om de får inflytande, medan S säger sig stödja kärnkraft men ifrågasätts av högerblocket givet nedläggningen av Ringhals 1 och 2. I klimatpolitiken missar Sverige samtliga klimatmål till 2030 och 2040 med nuvarande politik enligt regeringens egen redovisning — oppositionen anklagar Tidöpartierna för att ha ökat utsläppen genom sänkt reduktionsplikt. SD har inga egna reservationer i energibetänkandet NU13 och förklarar att energifrågorna var ett av de områden där Tidöpartierna fattade tycke för varandra först. C sticker ut genom att kräva en bred energiöverenskommelse och kritiserar M för att ha vägrat — partipolitiska poänger framför långsiktig elförsörjning.",
+      "topics": [
+        {
+          "id": "karnkraft",
+          "name": "Kärnkraft",
+          "description": "Ska Sverige bygga ny kärnkraft med statligt stöd?",
+          "scale": { "low": "Avveckla", "high": "Maximal utbyggnad" },
+          "positions": {
+            "MP": { "position": 5,  "group": "Avveckla",    "summary": "Starkast motståndare till kärnkraft. Har lovat riva upp planerna för ny kärnkraft om de får inflytande. Röstade emot Prop. 150. Vill avslå alla kärnkraftsbemyndiganden i budget 2026.", "source": "Motion 2025/26:3507, Prop. 2024/25:150, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/utgiftsomrade-21-energi_hd023507/", "unclear": false },
+            "V":  { "position": 8,  "group": "Avveckla",    "summary": "Emot ny kärnkraft. Röstade emot Prop. 2024/25:150 om statligt stöd. Kritiserar kostnaderna — bemyndiganden på 840 mdr kr. Vill satsa på förnybart.", "source": "Prop. 2024/25:150, Motion 2025/26:2797, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/energipolitik-for-mer-och-fornybar-el-till-rimliga_hd022797/", "unclear": false },
+            "C":  { "position": 40, "group": "Ambivalent",  "summary": "Röstade emot Prop. 150. Kritiserar M för att ha vägrat energiöverenskommelse. Vill ha teknikneutral energipolitik men prioriterar förnybart i närtid.", "source": "Prop. 2024/25:150, bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/energipolitik_hd01nu13/", "unclear": false },
+            "S":  { "position": 45, "group": "Ambivalent",  "summary": "Säger sig stödja kärnkraft men röstade emot Prop. 150 om statligt stöd. Medverkade till nedläggning av Ringhals 1 och 2. Vill ha bred energiöverenskommelse. Ifrågasätts av M och SD om trovärdighet.", "source": "Prop. 2024/25:150, bet. 2025/26:NU13 res. 1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/energipolitik_hd01nu13/", "unclear": false },
+            "L":  { "position": 82, "group": "Bygg nytt",   "summary": "Stöder ny kärnkraft som regeringsparti. Röstade för Prop. 150.", "source": "Prop. 2024/25:150", "unclear": false },
+            "KD": { "position": 88, "group": "Bygg nytt",   "summary": "Starkt stöd för ny kärnkraft. Betonar kärnkraften som klimatverktyg och basen för elsystemet.", "source": "Prop. 2024/25:150, bet. 2025/26:MJU1", "unclear": false },
+            "SD": { "position": 90, "group": "Bygg nytt",   "summary": "Starkt stöd för kärnkraft. Inga reservationer i NU13. Energifrågorna var ett av de områden där Tidöpartierna fattade tycke för varandra först.", "source": "bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/energipolitik_hd01nu13/", "unclear": false },
+            "M":  { "position": 92, "group": "Bygg nytt",   "summary": "Driver kärnkraftsprogrammet som regeringsparti. Prop. 150: statliga lån och differenskontrakt för 5 000 MW. Bemyndiganden på 840 mdr kr i budget 2026.", "source": "Prop. 2024/25:150, Prop. 2025/26:1, https://www.regeringen.se/regeringens-politik/karnkraftsfinansiering/", "unclear": false }
+          }
+        },
+        {
+          "id": "fossila-branslen",
+          "name": "Fossila bränslen",
+          "description": "Hur snabbt ska Sverige fasa ut fossila drivmedel och höja krav på transportsektorn?",
+          "scale": { "low": "Sänk krav, billigare drivmedel", "high": "Snabb utfasning" },
+          "positions": {
+            "SD": { "position": 15, "group": "Sänk krav",           "summary": "Drivande bakom sänkt reduktionsplikt. Vill sänka drivmedelspriser maximalt. Betonar att svenska utsläpp är marginella globalt.", "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/", "unclear": false },
+            "KD": { "position": 22, "group": "Sänk krav",           "summary": "Stöder sänkt reduktionsplikt. Betonar att kostnader inte ska drabba landsbygden oproportionerligt.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "M":  { "position": 25, "group": "Sänk krav",           "summary": "Sänkt reduktionsplikt för att sänka drivmedelspriser. Betonar att elektrifiering är vägen framåt men avvisar höjd reduktionsplikt.", "source": "Prop. 2025/26:1, bet. 2025/26:MJU16", "unclear": false },
+            "L":  { "position": 30, "group": "Sänk krav",           "summary": "Stöder sänkt reduktionsplikt som del av Tidösamarbetet. Betonar elektrifiering som långsiktig lösning.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "C":  { "position": 65, "group": "Balanserad utfasning","summary": "Vill ha grön skatteväxling och svensk biodrivmedelsproduktion. Betonar att elektrifiering och biodrivmedel ska komplettera varandra.", "source": "bet. 2025/26:MJU16, NU13", "unclear": false },
+            "S":  { "position": 72, "group": "Balanserad utfasning","summary": "Vill satsa på elektrifiering och svensk drivmedelsproduktion. Kritiserar sänkt reduktionsplikt men vill kombinera med jobb och bättre ekonomi.", "source": "bet. 2025/26:MJU16 res., https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/", "unclear": false },
+            "V":  { "position": 85, "group": "Snabb utfasning",     "summary": "Vill höja reduktionsplikten, satsa på elektrifiering och svensk biodrivmedelsproduktion. Kritiserar att sänkt reduktionsplikt lett till att mer fossilt såldes 2024 än på tio år.", "source": "Motion 2025/26:2792, bet. 2025/26:MJU16", "unclear": false },
+            "MP": { "position": 92, "group": "Snabb utfasning",     "summary": "Mest ambitiösa utfasningsmålet. Vill ha höjd reduktionsplikt och progressiv flygskatt. Kritiserar ökat oljeberoende.", "source": "bet. 2025/26:MJU16, SkU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/", "unclear": false }
+          }
+        },
+        {
+          "id": "klimatmal",
+          "name": "Klimatmål",
+          "description": "Hur ambitiösa klimatmål ska Sverige ha?",
+          "scale": { "low": "Sänk ambitionerna", "high": "Skärp målen" },
+          "positions": {
+            "SD": { "position": 20, "group": "Sänk ambitionerna",    "summary": "Mest skeptiska till ambitiösa klimatmål. Betonar att svenska utsläpp är marginella globalt. Ifrågasätter kostnaden för omställningen.", "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/", "unclear": false },
+            "KD": { "position": 40, "group": "Pragmatisk",           "summary": "Stöder nettonoll 2045 men betonar kostnadseffektivitet och att klimatpolitiken inte ska drabba vanligt folk.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "M":  { "position": 42, "group": "Pragmatisk",           "summary": "Stöder nettonoll 2045 men betonar att kärnkraft och elektrifiering är viktigare än reglering. Missar klimatmålen med nuvarande politik.", "source": "Prop. 2025/26:1, bet. 2025/26:MJU16", "unclear": false },
+            "L":  { "position": 48, "group": "Pragmatisk",           "summary": "Stöder nettonoll 2045. Betonar kärnkraft som klimatlösning. Mer ambitiösa än M och KD men kompromissar i Tidö.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "C":  { "position": 68, "group": "Behåll nuvarande mål","summary": "Stöder nettonoll 2045. Betonar grön skatteväxling och att omställningen ska vara lönsam.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "S":  { "position": 72, "group": "Behåll nuvarande mål","summary": "Stöder nettonoll 2045 och EU:s klimatmål. Kritiserar att regeringen missar målen.", "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/", "unclear": false },
+            "V":  { "position": 88, "group": "Skärp målen",          "summary": "Vill skärpa klimatmålen. Nettonoll 2045 otillräckligt. Kritiserar att Sverige missar alla klimatmål.", "source": "Motion 2025/26:2792, bet. 2025/26:MJU16", "unclear": false },
+            "MP": { "position": 95, "group": "Skärp målen",          "summary": "Mest ambitiösa klimatmålen. Vill skärpa och tidigarelägga. Kräver bindande sektormål.", "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/", "unclear": false }
+          }
+        },
+        {
+          "id": "fornybart",
+          "name": "Förnybar energi",
+          "description": "Hur snabbt och hur mycket ska Sverige bygga ut förnybar elproduktion?",
+          "scale": { "low": "Begränsa utbyggnad", "high": "Maximal utbyggnad" },
+          "positions": {
+            "SD": { "position": 20, "group": "Begränsa",        "summary": "Mest skeptiska till vindkraft. Betonar problem med acceptans, landskapspåverkan och subventioner. Vill stärka kommunalt veto.", "source": "bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/energipolitik_hd01nu13/", "unclear": false },
+            "KD": { "position": 32, "group": "Begränsa",        "summary": "Prioriterar kärnkraft. Skeptisk till havsbaserad vindkraft. Betonar acceptans och kommunalt inflytande.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "M":  { "position": 35, "group": "Begränsa",        "summary": "Prioriterar kärnkraft framför vindkraft. Betonar leveranssäkerhet. Accepterar vindkraft men driver inte utbyggnad.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "L":  { "position": 45, "group": "Balanserad",      "summary": "Stöder förnybart som komplement till kärnkraft. Mer positiv till vindkraft än M och KD inom Tidö.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "C":  { "position": 72, "group": "Bred utbyggnad",  "summary": "Stöder vindkraft och förnybart. Kritiserar att M vägrat energiöverenskommelse. Vill ha teknikneutral politik.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "S":  { "position": 75, "group": "Bred utbyggnad",  "summary": "Vill ha 60 TWh ny elproduktion till 2030. Stöder vindkraft och förnybart. Betonar ökat statligt ansvar för energiproduktion.", "source": "bet. 2025/26:NU13 res. 1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/energipolitik_hd01nu13/", "unclear": false },
+            "V":  { "position": 88, "group": "Maximal utbyggnad","summary": "Vill ha 70 TWh ny förnybar el. Satsa på vindkraft, rättssäkert kommunalt veto. Emot att Försvarsmakten blockerar havsbaserad vindkraft.", "source": "Motion 2025/26:2797, bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/energipolitik-for-mer-och-fornybar-el-till-rimliga_hd022797/", "unclear": false },
+            "MP": { "position": 95, "group": "Maximal utbyggnad","summary": "Vill ha 100 TWh ny förnybar el. Mest ambitiösa vindkraftsmålet. Vill ha 10 GW grön baskraft till 2030.", "source": "Motion 2025/26:3507, bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/utgiftsomrade-21-energi_hd023507/", "unclear": false }
+          }
+        },
+        {
+          "id": "elpriser",
+          "name": "Elpriser",
+          "description": "Hur ska elpriser regleras och vem bär ansvaret för priserna?",
+          "scale": { "low": "Marknadspriser", "high": "Statlig priskontroll" },
+          "positions": {
+            "SD": { "position": 22, "group": "Marknadslösningar",  "summary": "Vill ha lägsta möjliga elpriser. Sänkt energiskatt. Kärnkraft som bas. Skeptisk till EU:s elmarknadsregler.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "KD": { "position": 28, "group": "Marknadslösningar",  "summary": "Stöder sänkt energiskatt. Betonar kärnkraft och leveranssäkerhet som prisdämpare.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "M":  { "position": 30, "group": "Marknadslösningar",  "summary": "Driver kärnkraft som lösning på elpriskrisen. Differenskontrakt som prisgaranti. Sänkt energiskatt på el.", "source": "Prop. 2025/26:1, Prop. 2024/25:150", "unclear": false },
+            "L":  { "position": 35, "group": "Marknadslösningar",  "summary": "Stöder marknadslösningar med kärnkraft som bas. Sänkt energiskatt.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "C":  { "position": 50, "group": "Reformera marknaden","summary": "Vill ha reformerad elmarknad. Betonar konkurrens och teknikneutralitet.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "MP": { "position": 55, "group": "Reformera marknaden","summary": "Vill ha reformerad elmarknad med fokus på förnybart. Stöder investeringsstöd för grön baskraft.", "source": "bet. 2025/26:NU13", "unclear": false },
+            "S":  { "position": 65, "group": "Reformera marknaden","summary": "Vill ha ökat statligt ansvar. Kritiserar prisskillnader mellan elområden. Stöder elstöd till hushåll.", "source": "bet. 2025/26:NU13 res. 1", "unclear": false },
+            "V":  { "position": 78, "group": "Statlig styrning",   "summary": "Vill ha mer statligt ansvar för elproduktion. Rimliga priser i hela landet. Kritiserar elmarknadens utformning.", "source": "Motion 2025/26:2797", "unclear": false }
+          }
+        },
+        {
+          "id": "klimatanpassning",
+          "name": "Klimatinvesteringar",
+          "description": "Hur stora och statligt ledda ska klimatomställningsinvesteringarna vara?",
+          "scale": { "low": "Begränsade satsningar", "high": "Stora gröna investeringar" },
+          "positions": {
+            "SD": { "position": 25, "group": "Begränsade satsningar","summary": "Mest skeptisk till stora klimatinvesteringar. Betonar kostnadseffektivitet och att Sverige inte ska gå före internationellt.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "KD": { "position": 42, "group": "Teknikdriven",         "summary": "Stöder teknikdriven omställning. Betonar att omställningen ska vara kostnadseffektiv.", "source": "bet. 2025/26:MJU16, MJU1", "unclear": false },
+            "M":  { "position": 45, "group": "Teknikdriven",         "summary": "Satsar på Industriklivet, CCS, kärnkraft som klimatinvestering. 4 mdr på laddinfrastruktur. Klimatpremier.", "source": "Prop. 2025/26:1 utg.omr. 20", "unclear": false },
+            "L":  { "position": 50, "group": "Teknikdriven",         "summary": "Stöder klimatinvesteringar. Mer ambitiös än M och KD inom Tidö.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "C":  { "position": 65, "group": "Grön tillväxt",        "summary": "Stöder grön omställning genom marknadsinstrument och grön skatteväxling.", "source": "bet. 2025/26:MJU16", "unclear": false },
+            "S":  { "position": 72, "group": "Stora investeringar",  "summary": "Stöder Industriklivet, CCS, grön omställning. Vill ha statligt ledarskap.", "source": "bet. 2025/26:MJU16, MJU1", "unclear": false },
+            "V":  { "position": 85, "group": "Stora investeringar",  "summary": "Vill ha massiva gröna investeringar. Industriklivet, CCS, grön industriomställning. Kritiserar att regeringen minskat klimatinvesteringar.", "source": "Motion 2025/26:2792, bet. 2025/26:MJU1", "unclear": false },
+            "MP": { "position": 92, "group": "Stora investeringar",  "summary": "Mest ambitiösa gröna investeringsprogrammet. Bindande klimatmål för byggsektorn. Bio-CCS.", "source": "bet. 2025/26:MJU16, MJU1", "unclear": false }
+          }
+        }
+      ]
     }
   ]
 }
