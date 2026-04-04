@@ -530,6 +530,110 @@
           }
         }
       ]
+    },
+    {
+      "id": "vard",
+      "name": "Vård & omsorg",
+      "color": "#0891B2",
+      "analysis": "Vårdfrågor präglas av en ovanlig blandning av bred samsyn och djup oenighet. Alla partier är eniga om att primärvården behöver stärkas och att kompetensförsörjningen är den största utmaningen — Vårdansvarskommittén landade i att stärkt nationell styrning behövs med stöd av samtliga partier. Skiljelinjerna handlar om hur: Tidöpartierna satsar på prestationsbundna kömiljarder och skärpt vårdgaranti, medan S, V och Vårdförbundet menar att det krävs långsiktiga resurstillskott och att kortsiktiga prestationskrav inte kortar köer. V vill stoppa privata sjukvårdsförsäkringar i den offentligt finansierade vården och granska LOV:s roll i välfärdsbrottsligheten, medan M och C värnar valfrihet och vill utöka den till slutenvården. KD driver frågan om statligt huvudmannaskap för sjukvården — en utredning redovisades juni 2025 — och har satsat en bupmiljard på barn- och ungdomspsykiatrin. Äldreomsorgens kvalitet har enligt Socialstyrelsen inte varit sämre på tio år, och S och V krävde en kriskommission som oppositionen ställde sig bakom men som avslogs.",
+      "topics": [
+        {
+          "id": "vardkoer",
+          "name": "Vårdköer",
+          "description": "Hur ska väntetiderna i vården kortas?",
+          "scale": { "low": "Långsiktiga resurser", "high": "Prestationsbaserade kömiljarder" },
+          "positions": {
+            "V":  { "position": 10, "group": "Långsiktiga resurser", "summary": "Emot prestationsbundna medel. Vill ha långsiktig stabil finansiering till regionerna. Fler vårdplatser baserat på Socialstyrelsens rekommendationer.", "source": "Motion 2025/26:2777, bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/", "unclear": false },
+            "S":  { "position": 18, "group": "Långsiktiga resurser", "summary": "Dubbla anslag jämfört med Tidöpartierna. 13 mdr extra till välfärd i budget 2026. Kritiserar prestationsbundna medel — Vårdförbundet och SKR stöder S:s linje. Vill ha indexering som värdesäkrar anslagen.", "source": "bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-9-halsovard-sjukvard-och-social_hd01sou1/", "unclear": false },
+            "MP": { "position": 15, "group": "Långsiktiga resurser", "summary": "Vill ha ökade resurser till regionerna. Kritiserar att sektorsbidraget försvinner. Betonar jämlik vård.", "source": "bet. 2025/26:SoU1", "unclear": false },
+            "C":  { "position": 45, "group": "Balanserad",           "summary": "Stöder nationell vårdförmedling och skärpt vårdgaranti. Vill ha fritt val av utförare även i slutenvården. Kritiserar att mer pengar till ett system som inte fungerar sällan hjälper.", "source": "Motion 2025/26:3179, bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/", "unclear": false },
+            "M":  { "position": 85, "group": "Prestationskrav",      "summary": "Driver kömiljarder, prestationsbaserad ersättning, nationell vårdförmedling, skärpt vårdgaranti. 7,5 mdr 2025 för att korta väntetider.", "source": "Prop. 2025/26:1 utg.omr. 9, bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-9-halsovard-sjukvard-och-social_hd01sou1/", "unclear": false },
+            "KD": { "position": 88, "group": "Prestationskrav",      "summary": "Ansvarigt statsrådsparti (Anna Tenje). Driver kömiljarder, skärpt vårdgaranti, nationell vårdförmedling. 750 mkr extra för specifika diagnoser.", "source": "bet. 2025/26:SoU1, Prop. 2025/26:1 utg.omr. 9", "unclear": false },
+            "L":  { "position": 78, "group": "Prestationskrav",      "summary": "Stöder kömiljarder och skärpt vårdgaranti som regeringsparti.", "source": "bet. 2025/26:SoU1", "unclear": false },
+            "SD": { "position": 82, "group": "Prestationskrav",      "summary": "Stöder Tidöpartiernas vårdpolitik. Inga reservationer i SoU22. Betonar att de ska vara garanten för välfärden.", "source": "bet. 2025/26:SoU1, SoU22", "unclear": false }
+          }
+        },
+        {
+          "id": "primarvard",
+          "name": "Primärvård",
+          "description": "Hur ska primärvården stärkas och vem ska ha ansvaret?",
+          "scale": { "low": "Stärk inom nuvarande system", "high": "Statlig styrning" },
+          "positions": {
+            "V":  { "position": 75, "group": "Statlig styrning",    "summary": "Vill ha nationellt basuppdrag för primärvården. Max 1 100 patienter per läkare. Fast läkarkontakt. Stärk primärvården i områden med större utmaningar.", "source": "Motion 2025/26:2777, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/", "unclear": false },
+            "S":  { "position": 70, "group": "Statlig styrning",    "summary": "Vill att staten tar ökat ansvar. Kritiserar att regionerna inte byggt ut primärvården trots 16 mdr. Stöder Vårdansvarskommitténs slutsatser.", "source": "bet. 2025/26:SoU22, SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/", "unclear": false },
+            "MP": { "position": 62, "group": "Stärk och reformera", "summary": "Vill stärka primärvården med mer resurser. Betonar jämlik vård och psykisk hälsa i primärvården.", "source": "bet. 2025/26:SoU22", "unclear": false },
+            "C":  { "position": 68, "group": "Stärk och reformera", "summary": "Statlig medfinansiering av glesbygdsprimärvård. Ny vårdform för primärvård i landsbygd. Stöder Vårdansvarskommittén. Vill ha Norges fastlegemodell.", "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/", "unclear": false },
+            "M":  { "position": 65, "group": "Stärk och reformera", "summary": "Stöder omställning till nära vård. Nationell vårdförmedling. Riktvärden för yrkesgrupper i primärvården.", "source": "Prop. 2025/26:1 utg.omr. 9, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/budgetpropositionen-for-2026-utgiftsomrade-9_hd031d11/", "unclear": false },
+            "KD": { "position": 80, "group": "Statlig styrning",    "summary": "Driver statligt huvudmannaskap för sjukvården — utredning redovisad juni 2025. Primärvården ska vara navet.", "source": "bet. 2023/24:SoU14, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/halso-och-sjukvardens-organisation_hb01sou14/", "unclear": false },
+            "L":  { "position": 60, "group": "Stärk och reformera", "summary": "Stöder primärvårdsreformen som regeringsparti.", "source": "bet. 2025/26:SoU22", "unclear": false },
+            "SD": { "position": 72, "group": "Statlig styrning",    "summary": "Vill att staten stöttar landsbygden direkt. Anser att mer pengar till ett system som inte fungerar sällan leder till bättre resultat.", "source": "bet. 2025/26:SoU22 debatt, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/", "unclear": false }
+          }
+        },
+        {
+          "id": "aldreomsorg",
+          "name": "Äldreomsorg",
+          "description": "Hur ska kvaliteten och valfriheten i äldreomsorgen förbättras?",
+          "scale": { "low": "Mer resurser till offentlig omsorg", "high": "Valfrihet och kvalitetskontroll" },
+          "positions": {
+            "V":  { "position": 12, "group": "Stärk offentlig omsorg", "summary": "Krävde kriskommission i äldreomsorgen — oppositionen bakom men avslogs. Kvaliteten sämst på tio år enligt Socialstyrelsen. Vill ha äldrekonvention.", "source": "bet. 2025/26:SoU21 res. 8, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/", "unclear": false },
+            "S":  { "position": 22, "group": "Stärk offentlig omsorg", "summary": "Äldreomsorgen underfinansierad. Vill ha ordning och reda bland privata utförare — tickande bomb med välfärdsbrottslighet. Stöder språkkrav (SoU26) med särskilt yttrande.", "source": "bet. 2025/26:SoU21, SoU26, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/", "unclear": false },
+            "MP": { "position": 18, "group": "Stärk offentlig omsorg", "summary": "Emot språkkrav i nuvarande form — symbolpolitik som inte löser bemanningskrisen. Vill ha nationell äldreombudsman.", "source": "bet. 2025/26:SoU26 reservation, Motion 2025/26:3504, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/ett-sprakkrav-inom-aldreomsorgen_hd01sou26/", "unclear": false },
+            "C":  { "position": 55, "group": "Valfrihet med kvalitet",  "summary": "Vill ha äldreboendegaranti — flytta in på trygghetsboende utan biståndsprövning. Stärk valfrihet. Utbildningsprogram chefer äldreomsorg.", "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/", "unclear": false },
+            "M":  { "position": 72, "group": "Valfrihet med kvalitet",  "summary": "Stärk valfrihet. Skärpta verktyg till IVO (SoU8) mot oseriösa aktörer. Språkkrav i äldreomsorgen. Äldreomsorgslyftet 1,7 mdr/år.", "source": "bet. 2025/26:SoU8, SoU26, SoU21", "unclear": false },
+            "KD": { "position": 75, "group": "Valfrihet med kvalitet",  "summary": "Driver äldrefrågorna som ansvarigt statsrådsparti. Betonar värdighet, trygghet och valfrihet. Äldreboendegaranti.", "source": "bet. 2025/26:SoU21", "unclear": false },
+            "L":  { "position": 65, "group": "Valfrihet med kvalitet",  "summary": "Stöder valfrihet och kvalitetskontroll som regeringsparti. Politik mot äldres ensamhet.", "source": "bet. 2025/26:SoU21, Motion 2025/26:3758", "unclear": false },
+            "SD": { "position": 70, "group": "Valfrihet med kvalitet",  "summary": "Vill stärka valfrihet och kvalitet. Dåliga verksamheter ska kunna väljas bort. Betonar språkkrav.", "source": "bet. 2025/26:SoU21, SoU26", "unclear": false }
+          }
+        },
+        {
+          "id": "psykisk-halsa",
+          "name": "Psykisk hälsa",
+          "description": "Hur ska psykisk ohälsa förebyggas och behandlas?",
+          "scale": { "low": "Förebyggande insatser", "high": "Specialiserad psykiatri" },
+          "positions": {
+            "V":  { "position": 35, "group": "Bred ansats",        "summary": "Vill stärka primärvårdens ansvar för psykisk hälsa. Granska medicinering av barn. Tillgänglighet till vård vid psykisk ohälsa.", "source": "Motion 2025/26:2777, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/", "unclear": false },
+            "S":  { "position": 40, "group": "Bred ansats",        "summary": "Stöder bupmiljarden men vill ha bredare insatser. Fler ingångar för barn och unga — inte bara bup. Samsjuklighetsutredningen måste leda till proposition.", "source": "bet. 2023/24:SoU14, SoU1", "unclear": false },
+            "MP": { "position": 30, "group": "Bred ansats",        "summary": "Betonar förebyggande folkhälsoarbete och psykisk hälsa i primärvården. Suicidprevention i elevhälsa och äldreomsorgen.", "source": "Motion 2025/26:3544, bet. 2025/26:SoU12", "unclear": false },
+            "C":  { "position": 42, "group": "Bred ansats",        "summary": "Vill utreda kompetensförsörjning psykoterapeuter i primärvården. Suicidprevention i kommuner. Fler hälsosamtal.", "source": "Motion 2025/26:3179", "unclear": false },
+            "M":  { "position": 65, "group": "Specialistinsatser", "summary": "Nationella utvecklingsteam för regionernas psykiatri. Stöder bupmiljarden.", "source": "bet. 2025/26:SoU1", "unclear": false },
+            "KD": { "position": 75, "group": "Specialistinsatser", "summary": "Driver bupmiljarden — 1 mdr/år till barn- och ungdomspsykiatrin. 100 mkr ätstörningar. 300 mkr/år suicidprevention. 500 mkr stärka primärvårdens första linje psykisk ohälsa.", "source": "bet. 2025/26:SoU1, bet. 2024/25:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-9-halsovard-sjukvard-och-social_hd01sou1/", "unclear": false },
+            "L":  { "position": 58, "group": "Bred ansats",        "summary": "Stöder bupmiljarden som regeringsparti.", "source": "bet. 2025/26:SoU1", "unclear": false },
+            "SD": { "position": 60, "group": "Specialistinsatser", "summary": "Stöder bupmiljarden via Tidösamarbetet.", "source": "bet. 2025/26:SoU1", "unclear": false }
+          }
+        },
+        {
+          "id": "valfrihet-vard",
+          "name": "Valfrihet i vården",
+          "description": "Vilken roll ska privata aktörer ha i vård och omsorg?",
+          "scale": { "low": "Begränsa privata aktörer", "high": "Maximal valfrihet" },
+          "positions": {
+            "V":  { "position": 8,  "group": "Begränsa",              "summary": "Vill stoppa privata sjukvårdsförsäkringar i offentlig vård. Granska LOV:s roll i välfärdsbrottsligheten. Ersätt effektivitetsdelegationen med jämlikhetsdelegation.", "source": "Motion 2025/26:2777, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/", "unclear": false },
+            "S":  { "position": 25, "group": "Reglera",               "summary": "Ingenting emot valfrihet om det sker på bra villkor. Tickande bomb med privata utförare — svart marknad 100 mdr. Vill ha ordning och reda före mer valfrihet.", "source": "bet. 2025/26:SoU21 debatt, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/", "unclear": false },
+            "MP": { "position": 15, "group": "Begränsa",              "summary": "Skeptisk till marknadsstyrning. Betonar behovsprincipen och jämlik vård.", "source": "bet. 2025/26:SoU22", "unclear": false },
+            "C":  { "position": 82, "group": "Maximal valfrihet",     "summary": "Vill ha fritt val av utförare även i slutenvården. Värnar LOV och konkurrensneutralitet. Äldreboendegaranti.", "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/", "unclear": false },
+            "M":  { "position": 88, "group": "Maximal valfrihet",     "summary": "Patientens val först. Nationell valfrihet i slutenvård. Konkurrensneutralitet mellan vårdgivare. Emot reservationer i LOV.", "source": "Motion 2021/22:4042, bet. 2025/26:SoU1", "unclear": false },
+            "KD": { "position": 75, "group": "Valfrihet med kvalitet","summary": "Stöder valfrihet och mångfald men betonar kvalitetskontroll. IVO-skärpning (SoU8).", "source": "bet. 2025/26:SoU8, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/skarpare-verktyg-till-inspektionen-for-vard-och_hd01sou8/", "unclear": false },
+            "L":  { "position": 78, "group": "Maximal valfrihet",     "summary": "Stöder valfrihet som liberalt kärnvärde.", "source": "bet. 2025/26:SoU1", "unclear": false },
+            "SD": { "position": 65, "group": "Valfrihet med kvalitet","summary": "Stöder valfrihet men betonar kvalitet och att dåliga verksamheter ska väljas bort. Stöder IVO-skärpning.", "source": "bet. 2025/26:SoU8, SoU21", "unclear": false }
+          }
+        },
+        {
+          "id": "personal",
+          "name": "Vårdpersonal",
+          "description": "Hur ska vårdens kompetensförsörjning lösas?",
+          "scale": { "low": "Mer resurser och bättre villkor", "high": "Effektivisering och teknik" },
+          "positions": {
+            "V":  { "position": 10, "group": "Resurser och villkor", "summary": "Vill ha stabil långsiktig finansiering. Betonar arbetsmiljö — 73% av granskade arbetsplatser fick krav på åtgärder. Stärkt skydd ambulanssjukvårdare.", "source": "Motion 2025/26:974 (V), bet. 2025/26:SoU22, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/", "unclear": false },
+            "S":  { "position": 15, "group": "Resurser och villkor", "summary": "Kompetensförsörjningen är vårdens största utmaning. 80% av akutsjukhus brister i arbetsmiljö. Vill ha nationell kompetensförsörjning per Vårdansvarskommittén.", "source": "bet. 2025/26:SoU22, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/", "unclear": false },
+            "MP": { "position": 12, "group": "Resurser och villkor", "summary": "Äldreomsorgen behöver mer personal, inte symbolpolitik. Satsningar och bättre arbetsmiljö.", "source": "bet. 2025/26:SoU26 debatt", "unclear": false },
+            "C":  { "position": 45, "group": "Balanserad",           "summary": "Satsa på seniora medarbetare 60+. Karriärutveckling undersköterskor. Nationell samordning utbildningsdimensionering. Nationellt ledarskapsprogram chefer.", "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/", "unclear": false },
+            "M":  { "position": 60, "group": "Effektivisering",      "summary": "Äldreomsorgslyftet 1,7 mdr/år. Språkkrav. Riktvärden för yrkesgrupper i primärvården. Digital infrastruktur.", "source": "Prop. 2025/26:1 utg.omr. 9", "unclear": false },
+            "KD": { "position": 58, "group": "Effektivisering",      "summary": "Stöder Äldreomsorgslyftet, språkkrav, och digitalisering. Betonar kompetens och utbildning.", "source": "bet. 2025/26:SoU22, SoU26", "unclear": false },
+            "L":  { "position": 55, "group": "Balanserad",           "summary": "Stöder kompetensförsörjning som regeringsparti.", "source": "bet. 2025/26:SoU22", "unclear": false },
+            "SD": { "position": 62, "group": "Effektivisering",      "summary": "Stöder språkkrav och effektivisering. Kritiserar att äldreomsorgens personal riskerar utvisning pga lönegolv.", "source": "bet. 2025/26:SoU22 debatt, SoU26", "unclear": false }
+          }
+        }
+      ]
     }
   ]
 }
