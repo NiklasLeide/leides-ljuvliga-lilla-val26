@@ -163,6 +163,15 @@ function renderPlot() {
   svg.setAttribute('class', 'gt-svg');
   wrap.appendChild(svg);
 
+  // Background click deselects
+  svg.addEventListener('click', () => {
+    if (selectedParty) {
+      selectedParty = null;
+      hidePanel();
+      renderPlot();
+    }
+  });
+
   // Helpers — map data coords (0–10) to SVG pixels
   function px(econVal) { return PAD.left + (econVal / 10) * innerW; }
   function py(galVal)  { return PAD.top  + (galVal / 10) * innerH; }
@@ -267,89 +276,117 @@ function renderPlot() {
   yHigh.textContent = 'TAN ↓';
   svg.appendChild(yHigh);
 
-  // Plot each party
-  Object.entries(data.positions).forEach(([abbr, points]) => {
-    if (hiddenParties.has(abbr)) return;
+  // Plot each party — selected party drawn last for correct z-order
+  const sortedParties = Object.entries(data.positions)
+    .filter(([abbr]) => !hiddenParties.has(abbr))
+    .sort(([a], [b]) => (a === selectedParty ? 1 : b === selectedParty ? -1 : 0));
+
+  sortedParties.forEach(([abbr, allPoints]) => {
     const party = data.parties[abbr];
     const color = party.color;
+    const isSelected = selectedParty === abbr;
+    const isDimmed = selectedParty !== null && !isSelected;
 
-    const visiblePoints = points.filter(p => activeYears.includes(p.year));
+    // Selected party always shows all three years regardless of year filter
+    const visiblePoints = isSelected
+      ? [...allPoints].sort((a, b) => a.year - b.year)
+      : allPoints.filter(p => activeYears.includes(p.year)).sort((a, b) => a.year - b.year);
     if (visiblePoints.length === 0) return;
 
-    // Movement lines between years (only when showing multiple years)
-    if (activeYears.length > 1) {
-      const ordered = [...visiblePoints].sort((a, b) => a.year - b.year);
-      for (let i = 0; i < ordered.length - 1; i++) {
-        const a = ordered[i], b = ordered[i + 1];
+    // All selected-party dots shrink to the 2018 dot radius (equal size)
+    const selectedR = YEAR_STYLE[2018].r;
+
+    // Outer group — entire trail (lines + dots) is clickable
+    const trailG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    trailG.style.cursor = 'pointer';
+    if (isDimmed) trailG.setAttribute('opacity', '0.15');
+
+    trailG.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (selectedParty === abbr) {
+        selectedParty = null;
+        hidePanel();
+      } else {
+        selectedParty = abbr;
+        showPanel(abbr);
+      }
+      renderPlot();
+    });
+
+    // Movement lines
+    if (visiblePoints.length > 1) {
+      for (let i = 0; i < visiblePoints.length - 1; i++) {
+        const a = visiblePoints[i], b = visiblePoints[i + 1];
         const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
         line.setAttribute('x1', px(a.econ)); line.setAttribute('y1', py(a.gal));
         line.setAttribute('x2', px(b.econ)); line.setAttribute('y2', py(b.gal));
         line.setAttribute('stroke', color);
-        line.setAttribute('stroke-width', '1.5');
-        line.setAttribute('stroke-opacity', '0.35');
-        line.setAttribute('stroke-dasharray', '3 3');
-        svg.appendChild(line);
+        if (isSelected) {
+          line.setAttribute('stroke-width', '2.5');
+          line.setAttribute('stroke-opacity', '1');
+        } else {
+          line.setAttribute('stroke-width', '1.5');
+          line.setAttribute('stroke-opacity', '0.35');
+          line.setAttribute('stroke-dasharray', '3 3');
+        }
+        trailG.appendChild(line);
       }
     }
 
-    // Dots per year
+    // Dots
     visiblePoints.forEach(point => {
-      const style = YEAR_STYLE[point.year];
       const isLatest = point.year === 2026;
-      const isSelected = selectedParty === abbr;
-
-      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-      g.setAttribute('class', 'gt-node' + (isSelected ? ' selected' : ''));
-      g.style.cursor = isLatest ? 'pointer' : 'default';
+      const style = YEAR_STYLE[point.year];
+      const dotR = isSelected ? selectedR : style.r;
+      const dotOpacity = isSelected ? 1.0 : style.opacity;
 
       const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       circle.setAttribute('cx', px(point.econ));
       circle.setAttribute('cy', py(point.gal));
-      circle.setAttribute('r', style.r);
+      circle.setAttribute('r', dotR);
       circle.setAttribute('fill', color);
-      circle.setAttribute('fill-opacity', style.opacity);
-      circle.setAttribute('stroke', isSelected ? 'rgba(0,0,0,0.5)' : 'rgba(255,255,255,0.7)');
-      circle.setAttribute('stroke-width', isSelected ? '3' : isLatest ? '2' : '1.5');
-      g.appendChild(circle);
-
-      // Party abbreviation label on 2026 dot
-      if (isLatest) {
-        const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-        label.setAttribute('x', px(point.econ));
-        label.setAttribute('y', py(point.gal) + 4);
-        label.setAttribute('text-anchor', 'middle');
-        label.setAttribute('font-family', 'DM Sans, sans-serif');
-        const r26 = YEAR_STYLE[2026].r;
-        label.setAttribute('font-size', abbr.length > 2 ? Math.max(6, r26 - 4) : Math.max(7, r26 - 2));
-        label.setAttribute('font-weight', '700');
-        label.setAttribute('fill', '#fff');
-        label.setAttribute('fill-opacity', '0.95');
-        label.setAttribute('pointer-events', 'none');
-        label.setAttribute('user-select', 'none');
-        label.textContent = abbr;
-        g.appendChild(label);
-      }
+      circle.setAttribute('fill-opacity', dotOpacity);
+      circle.setAttribute('stroke', 'rgba(255,255,255,0.8)');
+      circle.setAttribute('stroke-width', isSelected ? '1.5' : isLatest ? '2' : '1.5');
+      trailG.appendChild(circle);
 
       // Tooltip on hover
-      g.addEventListener('mouseenter', (e) => showTooltip(e, abbr, point));
-      g.addEventListener('mouseleave', hideTooltip);
+      circle.addEventListener('mouseenter', (e) => showTooltip(e, abbr, point));
+      circle.addEventListener('mouseleave', hideTooltip);
 
-      // Click on 2026 dot selects party
-      if (isLatest) {
-        g.addEventListener('click', () => {
-          if (selectedParty === abbr) {
-            selectedParty = null;
-            hidePanel();
-          } else {
-            selectedParty = abbr;
-            showPanel(abbr);
-          }
-          renderPlot();
-        });
+      // Abbreviation label inside 2026 dot — only when not selected
+      if (isLatest && !isSelected) {
+        const lbl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        lbl.setAttribute('x', px(point.econ));
+        lbl.setAttribute('y', py(point.gal) + 4);
+        lbl.setAttribute('text-anchor', 'middle');
+        lbl.setAttribute('font-family', 'DM Sans, sans-serif');
+        const r26 = YEAR_STYLE[2026].r;
+        lbl.setAttribute('font-size', abbr.length > 2 ? Math.max(6, r26 - 4) : Math.max(7, r26 - 2));
+        lbl.setAttribute('font-weight', '700');
+        lbl.setAttribute('fill', '#fff');
+        lbl.setAttribute('fill-opacity', '0.95');
+        lbl.setAttribute('pointer-events', 'none');
+        lbl.textContent = abbr;
+        trailG.appendChild(lbl);
       }
 
-      svg.appendChild(g);
+      // Year label next to each dot — only for selected party
+      if (isSelected) {
+        const yearLbl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        yearLbl.setAttribute('x', px(point.econ) + dotR + 5);
+        yearLbl.setAttribute('y', py(point.gal) + 4);
+        yearLbl.setAttribute('font-family', 'DM Sans, sans-serif');
+        yearLbl.setAttribute('font-size', '9');
+        yearLbl.setAttribute('font-weight', '600');
+        yearLbl.setAttribute('fill', color);
+        yearLbl.setAttribute('pointer-events', 'none');
+        yearLbl.textContent = point.year;
+        trailG.appendChild(yearLbl);
+      }
     });
+
+    svg.appendChild(trailG);
   });
 }
 
