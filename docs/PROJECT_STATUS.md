@@ -1,6 +1,6 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
-> **Last updated:** 2026-04-02
+> **Last updated:** 2026-04-05
 > **Current sprint:** Sprint 3 – Expand
 > **Sprint dates:** 2026-04-02 → TBD
 
@@ -61,9 +61,9 @@
 Open `index.html` directly in browser — no server needed.
 
 - Site live at https://val26.leide.se
-- **4 politikområden:** skola (6 ämnen), ekonomi (7), migration (5), försvar (6) — totalt 24 ämnen, 192 partipositioner
+- **7 politikområden:** skola (6 ämnen), ekonomi (7), migration (5), försvar (6), klimat (6), vård (6), demokrati (6) — totalt 42 ämnen, 336 partipositioner
 - **Säger vs gör-vy** (sager-vs-gor.html) — jämför partiernas löften med riksdagsvoteringar, per fråga och per parti
-- **voting.json** med full täckning: 4 areas × alla topics × 8 partier = 184 entries, noll ej-granskat
+- **voting.json** med full täckning: 7 areas × alla topics × 8 partier = 336 entries, noll ej-granskat
 - **Match-badges:** stammer (grön), delvis (gul), avviker (röd), inväntar-votering (blå), ej-granskat (grå)
 - **Analystext** för alla 4 areas — visas som intro ovan innehållet i spektrum- och klustervyerna
 - Spektrum-vy med horisontella skalor, hover-tooltip, klickbar detaljpanel med källlänkar
@@ -100,4 +100,4 @@ None.
 - Hover-tooltip visar korrekt partinamn och sammanfattning
 - Klick på parti-dot öppnar detaljpanel med klickbara källlänkar
 - Kluster-vy visar dynamiska grupper med korrekt antal partier per grupp
-- voting.json: 184 entries, 0 ej-granskat, match-fördelning synlig i Säger vs gör
+- voting.json: 336 entries, 0 ej-granskat, match-fördelning synlig i Säger vs gör
