@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-05] fix: gal-tan.js — scale dot radii with container width (ref 560px desktop); add resize re-render; fixes overlap on 375px mobile
 [2026-04-05] data: galtan.json — verified CHES 2024 exact values for all 8 Swedish parties (country=16); set estimated:false; 2019 values already exact from prior verification; 2026 values remain own assessment (estimated:true)
 [2026-04-05] data: galtan.json — add annotated GAL-TAN data file with lrecon/galtan CHES field names, estimated flags, per-party motivations (2026), and full citation
 [2026-04-05] feat: GAL-TAN view (gal-tan.html + gal-tan.js) — scatter plot with economic left-right (x) and GAL-TAN (y) axes, three years (2018/2022/2026), movement lines, year/party filters, detail panel; placeholder data in data/gal-tan.json

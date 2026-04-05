@@ -6,11 +6,16 @@ let hiddenParties = new Set();
 let selectedParty = null;
 
 const YEARS = [2018, 2022, 2026];
-const YEAR_STYLE = {
-  2018: { r: 6,  opacity: 0.35 },
-  2022: { r: 9,  opacity: 0.60 },
-  2026: { r: 16, opacity: 1.0  },
-};
+
+// Dot sizes scale with plot width. Reference is 560px desktop.
+function yearStyle(W) {
+  const s = Math.min(1, W / 560);
+  return {
+    2018: { r: Math.max(4,  Math.round(6  * s)), opacity: 0.35 },
+    2022: { r: Math.max(6,  Math.round(9  * s)), opacity: 0.60 },
+    2026: { r: Math.max(10, Math.round(16 * s)), opacity: 1.0  },
+  };
+}
 
 /* ===================================================
    Bootstrap
@@ -147,6 +152,7 @@ function renderPlot() {
 
   const W = wrap.clientWidth || 560;
   const H = Math.round(W * 0.85);
+  const YEAR_STYLE = yearStyle(W);
   const PAD = { top: 32, right: 32, bottom: 48, left: 48 };
   const innerW = W - PAD.left - PAD.right;
   const innerH = H - PAD.top - PAD.bottom;
@@ -313,7 +319,8 @@ function renderPlot() {
         label.setAttribute('y', py(point.gal) + 4);
         label.setAttribute('text-anchor', 'middle');
         label.setAttribute('font-family', 'DM Sans, sans-serif');
-        label.setAttribute('font-size', abbr.length > 2 ? '8' : '10');
+        const r26 = YEAR_STYLE[2026].r;
+        label.setAttribute('font-size', abbr.length > 2 ? Math.max(6, r26 - 4) : Math.max(7, r26 - 2));
         label.setAttribute('font-weight', '700');
         label.setAttribute('fill', '#fff');
         label.setAttribute('fill-opacity', '0.95');
@@ -454,5 +461,7 @@ function setupTabs() {
   document.querySelector('.tab[data-view="metod"]')
     ?.addEventListener('click', () => { location.href = 'metod.html'; });
 }
+
+window.addEventListener('resize', () => { if (data) renderPlot(); });
 
 init();
