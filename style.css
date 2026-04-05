@@ -231,6 +231,13 @@ header p {
   line-height: 1.6;
   max-width: 640px;
   margin-bottom: var(--space-md);
+  padding-left: 1.1rem;
+}
+.area-analysis li {
+  margin-bottom: 3px;
+}
+.area-analysis li:last-child {
+  margin-bottom: 0;
 }
 
 #spectrum-container {

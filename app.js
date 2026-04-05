@@ -83,8 +83,8 @@ function renderAreaAnalysis() {
   const area = data.areas.find(a => a.id === activeArea);
   const el = document.getElementById('area-analysis');
   if (!el) return;
-  el.innerHTML = area.analysis
-    ? `<p class="area-analysis">${area.analysis}</p>`
+  el.innerHTML = Array.isArray(area.analysis) && area.analysis.length
+    ? `<ul class="area-analysis">${area.analysis.map(b => `<li>${b}</li>`).join('')}</ul>`
     : '';
 }
 

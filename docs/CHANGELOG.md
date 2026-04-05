@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-05] refactor: area analysis — convert prose strings to bullet arrays (2–4 bullets per area) in positions.json; render as <ul>/<li> in spectrum + cluster views; update CSS for list indent
 [2026-04-05] fix: cross-view consistency audit — gal-tan.json 5 color mismatches fixed (V/MP/C/KD/SD), gt-party-btn aligned to 36×36px/11px matching svs-party-btn, gal-tan.js panel HTML standardised (span/aria-label/event listener)
 [2026-04-05] fix: gal-tan.js — scale dot radii with container width (ref 560px desktop); add resize re-render; fixes overlap on 375px mobile
 [2026-04-05] data: galtan.json — verified CHES 2024 exact values for all 8 Swedish parties (country=16); set estimated:false; 2019 values already exact from prior verification; 2026 values remain own assessment (estimated:true)

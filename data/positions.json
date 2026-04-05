@@ -15,7 +15,12 @@
       "id": "skola",
       "name": "Skola",
       "color": "#4A7FC1",
-      "analysis": "Skolfrågor är ett av valrörelsens mest polariserade områden. V, MP och S vill begränsa eller förbjuda vinstuttag i skolan, medan M, SD och KD värnar friskolereformen. L bröt med högerblocket på landsmötet 2025 och vill fasa ut vinstintresset — en ovanlig position som placerar partiet mitt i ett annars tydligt mönster. I digitaliseringsfrågan har regeringen drivit en kraftig sväng mot analoga läromedel och mobilförbud, medan MP ensamt kräver en samlad digitaliseringsstrategi. I frågan om statligt huvudmannaskap samlas V, SD och L — tre ideologiskt vitt skilda partier — kring förstatligande.",
+      "analysis": [
+        "V, MP och S vill förbjuda eller begränsa vinstuttag — M, SD och KD värnar friskolereformen.",
+        "L bröt med högerblocket på landsmötet 2025 och vill fasa ut vinstintresset.",
+        "V, SD och L — tre ideologiskt vitt skilda partier — möts i frågan om statligt huvudmannaskap.",
+        "MP är ensamt om att kräva en samlad digitaliseringsstrategi; regeringen drev analoga läromedel och mobilförbud."
+      ],
       "topics": [
         {
           "id": "friskolor",
@@ -119,7 +124,12 @@
       "id": "ekonomi",
       "name": "Ekonomi",
       "color": "#C17A2D",
-      "analysis": "Ekonomiska frågor följer i stort den klassiska vänster–höger-skalan: V, S och MP vill höja skatter för att stärka välfärden, medan M, KD, SD och L prioriterar skattesänkningar och effektivisering. C hamnar ofta i en mellanposition. Två undantag bryter mönstret: i EU-frågan samlas V och SD i EU-skepticism medan L ensamt vill fördjupa integrationen, och i infrastrukturfrågan var det SD — inte M — som drev stoppet av nya stambanor som första Tidöåtgärd. Pensionsfrågan präglas av ovanligt bred samsyn genom Pensionsgruppen, men V och SD reserverade sig gemensamt mot höjda pensionsåldrar.",
+      "analysis": [
+        "V, S och MP vill höja skatter för välfärden — M, KD och L prioriterar sänkningar; C hamnar ofta mitt emellan.",
+        "V och SD bildar en ovanlig allians i EU-skepticismen, medan L är ensamt om att vilja fördjupa integrationen.",
+        "SD — inte M — drev stoppet av nya stambanor som en av de första Tidöåtgärderna.",
+        "V och SD reserverade sig gemensamt mot höjda pensionsåldrar trots bred samsyn i Pensionsgruppen."
+      ],
       "topics": [
         {
           "id": "skatt-arbete",
@@ -239,7 +249,11 @@
       "id": "migration",
       "name": "Migration",
       "color": "#8B5CF6",
-      "analysis": "Migration är den fråga där avstånden mellan partierna är störst. V och MP vill ge permanenta uppehållstillstånd direkt och öka kvotflyktingmottagandet till 5 000 per år, medan SD vill avskaffa permanenta uppehållstillstånd helt och minimera asylmottagningen. S undviker tydliga ställningstaganden i flera delfrågor och deltog inte i Asylrättsforum 2025. C sticker ut i arbetskraftsinvandring — enda partiet som vill ta bort lönekravet helt — medan övriga partier accepterar eller vill höja det. L intar konsekvent en mer moderat position än M, KD och SD inom Tidösamarbetet, särskilt i frågan om uppehållstillstånd.",
+      "analysis": [
+        "Avstånden är störst här: V och MP vill ge permanenta uppehållstillstånd direkt, SD vill avskaffa dem helt.",
+        "C är ensamt om att vilja ta bort lönekravet i arbetskraftsinvandringen helt.",
+        "S undvek tydliga ställningstaganden i flera delfrågor och deltog inte i Asylrättsforum 2025."
+      ],
       "topics": [
         {
           "id": "asylpolitik",
@@ -327,7 +341,11 @@
       "id": "forsvar",
       "name": "Försvar & säkerhet",
       "color": "#475569",
-      "analysis": "Försvarsfrågorna präglas av historiskt bred enighet sedan Rysslands invasion av Ukraina 2022. Alla åtta riksdagspartier står bakom Ukrainastödet — Sverige har skickat 21 stödpaket till ett värde av över 100 miljarder kronor utan en enda reservation. En parlamentarisk överenskommelse från juni 2025 sätter målet till 3,5 procent av BNP till militärt försvar senast 2030. De tydligaste skiljelinjerna finns i Nato-frågan, där V och MP röstade emot medlemskapet 2023 och V konsekvent reserverar sig mot kärnvapenövningar och delegering av militära beslut till regeringen. SD har gjort den största resan — från neutralitetslinje till att vara en av de mest uttalade Nato-förespråkarna.",
+      "analysis": [
+        "Historiskt bred enighet sedan 2022 — alla åtta partier stöder Ukraina och ett försvarsmål på 3,5 % av BNP till 2030.",
+        "V och MP röstade mot Nato-medlemskapet 2023; V reserverar sig fortfarande mot kärnvapenövningar.",
+        "SD har gjort den största resan: från neutralitetslinje till en av de mest uttalade Nato-förespråkarna."
+      ],
       "topics": [
         {
           "id": "nato",
@@ -431,7 +449,12 @@
       "id": "klimat",
       "name": "Klimat & energi",
       "color": "#16A34A",
-      "analysis": "Klimat- och energipolitiken är valrörelsens mest polariserade område efter migration. Kärnkraftsfrågan delar riksdagen mitt itu: Prop. 2024/25:150 om statligt stöd till ny kärnkraft antogs med bara 154 mot 151 röster — S, V, C och MP röstade gemensamt emot. MP har lovat att riva upp planerna om de får inflytande, medan S säger sig stödja kärnkraft men ifrågasätts av högerblocket givet nedläggningen av Ringhals 1 och 2. I klimatpolitiken missar Sverige samtliga klimatmål till 2030 och 2040 med nuvarande politik enligt regeringens egen redovisning — oppositionen anklagar Tidöpartierna för att ha ökat utsläppen genom sänkt reduktionsplikt. SD har inga egna reservationer i energibetänkandet NU13 och förklarar att energifrågorna var ett av de områden där Tidöpartierna fattade tycke för varandra först. C sticker ut genom att kräva en bred energiöverenskommelse och kritiserar M för att ha vägrat — partipolitiska poänger framför långsiktig elförsörjning.",
+      "analysis": [
+        "Kärnkraftsfrågan delar riksdagen mitt itu — propositionen om statligt stöd antogs med enbart 154 mot 151 röster.",
+        "Sverige missar samtliga klimatmål till 2030 och 2040 med nuvarande politik enligt regeringens egen redovisning.",
+        "SD hade inga egna reservationer i energibetänkandet och ser energipolitiken som ett kitt i Tidösamarbetet.",
+        "C kräver en bred energiöverenskommelse och kritiserar M för att ha avvisat den."
+      ],
       "topics": [
         {
           "id": "karnkraft",
@@ -535,7 +558,12 @@
       "id": "vard",
       "name": "Vård & omsorg",
       "color": "#0891B2",
-      "analysis": "Vårdfrågor präglas av en ovanlig blandning av bred samsyn och djup oenighet. Alla partier är eniga om att primärvården behöver stärkas och att kompetensförsörjningen är den största utmaningen — Vårdansvarskommittén landade i att stärkt nationell styrning behövs med stöd av samtliga partier. Skiljelinjerna handlar om hur: Tidöpartierna satsar på prestationsbundna kömiljarder och skärpt vårdgaranti, medan S, V och Vårdförbundet menar att det krävs långsiktiga resurstillskott och att kortsiktiga prestationskrav inte kortar köer. V vill stoppa privata sjukvårdsförsäkringar i den offentligt finansierade vården och granska LOV:s roll i välfärdsbrottsligheten, medan M och C värnar valfrihet och vill utöka den till slutenvården. KD driver frågan om statligt huvudmannaskap för sjukvården — en utredning redovisades juni 2025 — och har satsat en bupmiljard på barn- och ungdomspsykiatrin. Äldreomsorgens kvalitet har enligt Socialstyrelsen inte varit sämre på tio år, och S och V krävde en kriskommission som oppositionen ställde sig bakom men som avslogs.",
+      "analysis": [
+        "Alla partier är eniga om att primärvård och kompetensförsörjning är de centrala utmaningarna.",
+        "Tidöpartierna satsar på prestationsbundna kömiljarder; S och V kräver i stället långsiktiga resurstillskott.",
+        "KD driver statligt huvudmannaskap för sjukvården — en utredning redovisades i juni 2025.",
+        "Äldreomsorgens kvalitet har enligt Socialstyrelsen inte varit sämre på tio år."
+      ],
       "topics": [
         {
           "id": "vardkoer",
@@ -639,7 +667,12 @@
       "id": "demokrati",
       "name": "Demokrati & konstitution",
       "color": "#7C3AED",
-      "analysis": "Demokrati- och konstitutionsfrågorna har fått ökad aktualitet under mandatperioden. Den mest betydande reformen är Prop. 2024/25:165 om stärkt skydd för demokratin och domstolarnas oberoende — antagen som vilande med stöd av sju partier. SD var ensamt parti som reserverade sig mot förslaget att kräva kvalificerad majoritet för grundlagsändringar. I public service-frågan splittras riksdagen: S, V, C och MP reserverade sig gemensamt mot regeringens förslag till ny lag om public service 2026-2033, med invändningar om innehållsuppdrag och uppföljning. Yttrandefrihetsfrågan har fått ny dimension genom techjättarnas makt — C driver reglering hårdast och varnar för att USA kan stänga Sverige digitalt. V betonar att civilsamhällets demokratiska utrymme krymper. SD sticker ut genom att vilja ta bort grundlagens bestämmelse om EU-medlemskap och genom sitt motstånd mot skärpta regler för grundlagsändringar.",
+      "analysis": [
+        "Grundlagsreformen om stärkt domstolsoberoende antogs av sju partier — SD ensamt reserverade sig.",
+        "Public service-lagen för 2026–2033 splittrade riksdagen: S, V, C och MP reserverade sig gemensamt.",
+        "C driver hårdast mot techjättarnas makt och varnar för att USA kan stänga Sverige digitalt.",
+        "SD är ensamt om att vilja ta bort grundlagens bestämmelse om EU-medlemskap."
+      ],
       "topics": [
         {
           "id": "public-service",
