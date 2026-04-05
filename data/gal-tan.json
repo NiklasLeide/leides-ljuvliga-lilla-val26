@@ -6,14 +6,14 @@
     "y": { "label": "GAL-TAN-skala", "low": "GAL (0) — Grön, Alternativ, Libertär", "high": "TAN (10) — Traditionell, Auktoritär, Nationalistisk" }
   },
   "parties": {
-    "V":  { "name": "Vänsterpartiet",    "color": "#EE1C25" },
+    "V":  { "name": "Vänsterpartiet",    "color": "#AF1D22" },
     "S":  { "name": "Socialdemokraterna","color": "#ED1B34" },
-    "MP": { "name": "Miljöpartiet",      "color": "#6DB33F" },
-    "C":  { "name": "Centerpartiet",     "color": "#006AB3" },
+    "MP": { "name": "Miljöpartiet",      "color": "#53A12B" },
+    "C":  { "name": "Centerpartiet",     "color": "#009933" },
     "L":  { "name": "Liberalerna",       "color": "#006AB3" },
-    "KD": { "name": "Kristdemokraterna", "color": "#231F74" },
+    "KD": { "name": "Kristdemokraterna", "color": "#231977" },
     "M":  { "name": "Moderaterna",       "color": "#52BDEC" },
-    "SD": { "name": "Sverigedemokraterna","color": "#DDDD00" }
+    "SD": { "name": "Sverigedemokraterna","color": "#DDCF00" }
   },
   "positions": {
     "V":  [

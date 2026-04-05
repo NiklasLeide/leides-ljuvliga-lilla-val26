@@ -409,9 +409,9 @@ function showPanel(abbr) {
   panel.style.display = 'block';
   panel.innerHTML = `
     <div class="panel-header">
-      <div class="panel-dot" style="background:${party.color}"></div>
-      <div class="panel-name">${party.name}</div>
-      <button class="panel-close" onclick="closePanel()">×</button>
+      <span class="panel-dot" style="background:${party.color}"></span>
+      <span class="panel-name">${party.name}</span>
+      <button class="panel-close" aria-label="Stäng">×</button>
     </div>
     <div class="panel-topic-label">Position 2026</div>
     <div class="panel-summary">
@@ -432,6 +432,7 @@ function showPanel(abbr) {
     <div class="panel-source">${driverLinks}</div>` : ''}
     <div class="panel-method">Källa: Chapel Hill Expert Survey (CHES) 2019 och 2023. 2026-värden är preliminära egna bedömningar baserade på riksdagsmotioner och partiprogram.<br><br>${pos2026 ? pos2026.note : ''}</div>
   `;
+  panel.querySelector('.panel-close').addEventListener('click', () => window.closePanel());
 
   requestAnimationFrame(() => panel.classList.add('visible'));
 }
