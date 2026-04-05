@@ -2,7 +2,6 @@
 
 let data = null;
 let activeYears = [2018, 2022, 2026];
-let hiddenParties = new Set();
 let selectedParty = null;
 
 const YEARS = [2018, 2022, 2026];
@@ -90,19 +89,17 @@ function renderLeftNav() {
 
   Object.entries(data.parties).forEach(([abbr, party]) => {
     const btn = document.createElement('button');
-    btn.className = 'gt-party-btn' + (hiddenParties.has(abbr) ? ' hidden' : '');
+    btn.className = 'gt-party-btn' + (selectedParty === abbr ? ' active' : '');
     btn.style.background = party.color;
     btn.title = party.name;
     btn.textContent = abbr;
     btn.addEventListener('click', () => {
-      if (hiddenParties.has(abbr)) {
-        hiddenParties.delete(abbr);
-      } else {
-        hiddenParties.add(abbr);
-      }
       if (selectedParty === abbr) {
         selectedParty = null;
         hidePanel();
+      } else {
+        selectedParty = abbr;
+        showPanel(abbr);
       }
       renderLeftNav();
       renderPlot();
@@ -278,7 +275,6 @@ function renderPlot() {
 
   // Plot each party — selected party drawn last for correct z-order
   const sortedParties = Object.entries(data.positions)
-    .filter(([abbr]) => !hiddenParties.has(abbr))
     .sort(([a], [b]) => (a === selectedParty ? 1 : b === selectedParty ? -1 : 0));
 
   sortedParties.forEach(([abbr, allPoints]) => {
