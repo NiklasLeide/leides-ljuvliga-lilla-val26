@@ -634,6 +634,110 @@
           }
         }
       ]
+    },
+    {
+      "id": "demokrati",
+      "name": "Demokrati & konstitution",
+      "color": "#7C3AED",
+      "analysis": "Demokrati- och konstitutionsfrågorna har fått ökad aktualitet under mandatperioden. Den mest betydande reformen är Prop. 2024/25:165 om stärkt skydd för demokratin och domstolarnas oberoende — antagen som vilande med stöd av sju partier. SD var ensamt parti som reserverade sig mot förslaget att kräva kvalificerad majoritet för grundlagsändringar. I public service-frågan splittras riksdagen: S, V, C och MP reserverade sig gemensamt mot regeringens förslag till ny lag om public service 2026-2033, med invändningar om innehållsuppdrag och uppföljning. Yttrandefrihetsfrågan har fått ny dimension genom techjättarnas makt — C driver reglering hårdast och varnar för att USA kan stänga Sverige digitalt. V betonar att civilsamhällets demokratiska utrymme krymper. SD sticker ut genom att vilja ta bort grundlagens bestämmelse om EU-medlemskap och genom sitt motstånd mot skärpta regler för grundlagsändringar.",
+      "topics": [
+        {
+          "id": "public-service",
+          "name": "Public service",
+          "description": "Vilket uppdrag och oberoende ska public service ha?",
+          "scale": { "low": "Reformera/begränsa", "high": "Stärk och grundlagsskydda" },
+          "positions": {
+            "V":  { "position": 88, "group": "Stärk oberoende", "summary": "Vill stärka public services oberoende och uppdragets bredd. Gemensam reservation med S, C, MP i KrU2 om innehållsuppdrag och uppföljning. Reservation om ekonomiska förutsättningar.", "source": "bet. 2025/26:KrU2 res. 1-4, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-lag-om-public-service-och-riktlinjer-for_hd01kru2/", "unclear": false },
+            "S":  { "position": 85, "group": "Stärk oberoende", "summary": "Vill grundlagsskydda public service (Motion 2025/26:861). Gemensam reservation i KrU2 om innehållsuppdrag och uppföljning.", "source": "bet. 2025/26:KrU2 res. 1-2, Motion 2025/26:861, bet. 2025/26:KU30, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-lag-om-public-service-och-riktlinjer-for_hd01kru2/", "unclear": false },
+            "MP": { "position": 90, "group": "Stärk oberoende", "summary": "Vill trygga public services oberoende och uppdragets bredd. Reservationer i KrU2.", "source": "bet. 2025/26:KrU2 res. 1-5", "unclear": false },
+            "C":  { "position": 82, "group": "Stärk oberoende", "summary": "Stöder starkt public service-oberoende. Reservationer i KrU2 om innehåll, uppföljning och ekonomi.", "source": "bet. 2025/26:KrU2 res. 1-3", "unclear": false },
+            "M":  { "position": 50, "group": "Reformera",       "summary": "Stöder ny lag om public service men med tydligare ramar. Driver propositionen som regeringsparti.", "source": "Prop. 2024/25:166, bet. 2025/26:KrU2", "unclear": false },
+            "KD": { "position": 52, "group": "Reformera",       "summary": "Stöder reformerad public service med tydligare uppdrag.", "source": "bet. 2025/26:KrU2", "unclear": false },
+            "L":  { "position": 60, "group": "Reformera",       "summary": "Stöder public service men vill ha tydligare oberoende inom Tidö.", "source": "bet. 2025/26:KrU2", "unclear": false },
+            "SD": { "position": 25, "group": "Begränsa",        "summary": "Mest kritiska till public service. Vill begränsa uppdraget och stärka politisk kontroll över uppföljning.", "source": "bet. 2025/26:KrU2", "unclear": false }
+          }
+        },
+        {
+          "id": "domstolar",
+          "name": "Domstolarnas oberoende",
+          "description": "Hur ska domstolarnas oberoende stärkas?",
+          "scale": { "low": "Status quo", "high": "Maximalt oberoende" },
+          "positions": {
+            "V":  { "position": 82, "group": "Stärkt oberoende", "summary": "Stöder Prop. 165 om stärkt skydd för domstolarnas oberoende. Röstade för.", "source": "bet. 2025/26:KU2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/starkt-skydd-for-demokratin-och-domstolarnas_hd01ku2/", "unclear": false },
+            "S":  { "position": 85, "group": "Stärkt oberoende", "summary": "Stöder Prop. 165. Initierade 2020 års grundlagskommitté som lade grunden.", "source": "bet. 2025/26:KU2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/starkt-skydd-for-demokratin-och-domstolarnas_hd01ku2/", "unclear": false },
+            "MP": { "position": 85, "group": "Stärkt oberoende", "summary": "Stöder Prop. 165 fullt ut.", "source": "bet. 2025/26:KU2", "unclear": false },
+            "C":  { "position": 88, "group": "Stärkt oberoende", "summary": "Stöder Prop. 165. Betonar demokrati och rättsstatsprincipen. Reservation i KU30 om ytterligare förstärkningar.", "source": "bet. 2025/26:KU2, KU30 res. 4", "unclear": false },
+            "M":  { "position": 80, "group": "Stärkt oberoende", "summary": "Driver Prop. 165 som regeringsparti. Kvalificerad majoritet för grundlagsändringar.", "source": "Prop. 2024/25:165, bet. 2025/26:KU2", "unclear": false },
+            "KD": { "position": 78, "group": "Stärkt oberoende", "summary": "Stöder Prop. 165 som regeringsparti.", "source": "bet. 2025/26:KU2", "unclear": false },
+            "L":  { "position": 85, "group": "Stärkt oberoende", "summary": "Vill ha stark författningsdomstol och oberoende domstolsråd (Motion 2025/26:3143).", "source": "bet. 2025/26:KU2, Motion 2025/26:3143", "unclear": false },
+            "SD": { "position": 30, "group": "Reserverar sig",   "summary": "Enda partiet som reserverade sig mot Prop. 165. Emot kvalificerad majoritet för grundlagsändringar — menar att det inskränker folkviljan.", "source": "bet. 2025/26:KU2 res. 1 och 2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/starkt-skydd-for-demokratin-och-domstolarnas_hd01ku2/", "unclear": false }
+          }
+        },
+        {
+          "id": "yttrandefrihet",
+          "name": "Yttrandefrihet & teknik",
+          "description": "Hur ska yttrandefrihet och techjättarnas makt balanseras?",
+          "scale": { "low": "Minimal reglering", "high": "Aktiv reglering av plattformar" },
+          "positions": {
+            "V":  { "position": 65, "group": "Reglera plattformar", "summary": "Vill reglera techjättar. Gemensam reservation med C i KU18 om yttrandefrihet på internet.", "source": "bet. 2025/26:KU18 res. 2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/tryck-och-yttrandefrihet-massmediefragor_hd01ku18/", "unclear": false },
+            "S":  { "position": 58, "group": "Reglera plattformar", "summary": "Egen reservation i KU18 om yttrandefrihet på internet och säkerhet för opinionsbildare.", "source": "bet. 2025/26:KU18 res. 1 och 6", "unclear": false },
+            "MP": { "position": 62, "group": "Reglera plattformar", "summary": "Egen reservation i KU18 om reglering av techjättar.", "source": "bet. 2025/26:KU18 res. 3", "unclear": false },
+            "C":  { "position": 75, "group": "Aktiv reglering",     "summary": "Starkast förespråkare av reglering av techjättar. Varnar för att USA kan stänga Sverige digitalt. Reservation i KU18.", "source": "bet. 2025/26:KU18 res. 2 och 5 och 7", "unclear": false },
+            "M":  { "position": 35, "group": "Frivillighet först",   "summary": "Förespråkar lösningar som bygger på frivillighet. EU:s regelverk tillräckligt.", "source": "bet. 2025/26:KU18", "unclear": false },
+            "KD": { "position": 38, "group": "Frivillighet först",   "summary": "Stöder utskottets ställningstagande om frivillighet.", "source": "bet. 2025/26:KU18", "unclear": false },
+            "L":  { "position": 42, "group": "Frivillighet först",   "summary": "Betonar yttrandefrihet men vill skydda mot diktaturernas lobbyister (Motion 2025/26:3144).", "source": "bet. 2025/26:KU18, Motion 2025/26:3144", "unclear": false },
+            "SD": { "position": 30, "group": "Minimal reglering",    "summary": "Betonar yttrandefrihet. Vill säkra yttrandefrihetsgrundlagen för onlineyttranden (Motion 2025/26:87).", "source": "bet. 2025/26:KU18, Motion 2025/26:87", "unclear": false }
+          }
+        },
+        {
+          "id": "eu-demokrati",
+          "name": "EU-integration",
+          "description": "Hur mycket EU-integration vill partierna ha?",
+          "scale": { "low": "Stärk nationell suveränitet", "high": "Fördjupat EU-samarbete" },
+          "positions": {
+            "V":  { "position": 15, "group": "EU-skeptisk",      "summary": "Kritisk till EU:s maktexpansion. Vill stärka nationell demokrati.", "source": "V partiprogram", "unclear": false },
+            "S":  { "position": 58, "group": "Pragmatisk",       "summary": "Stöder EU-medlemskap. Pragmatisk linje i de flesta EU-frågor.", "source": "bet. 2025/26:KU30", "unclear": false },
+            "MP": { "position": 62, "group": "Pragmatisk",       "summary": "Stöder EU. Vill fördjupa samarbete i klimat- och miljöfrågor.", "source": "bet. 2025/26:KU30", "unclear": false },
+            "C":  { "position": 72, "group": "Fördjupa",         "summary": "Stöder EU. Vill fördjupa samarbetet. Driver demokrati och rättsstatsprincipen inom EU.", "source": "Motion 2025/26:3583, bet. 2025/26:KU30 res. 4", "unclear": false },
+            "M":  { "position": 55, "group": "Pragmatisk",       "summary": "Stöder EU-medlemskap. Pragmatisk — betonar nationella intressen.", "source": "bet. 2025/26:KU30", "unclear": false },
+            "KD": { "position": 52, "group": "Pragmatisk",       "summary": "Stöder EU. Betonar subsidiaritet.", "source": "bet. 2025/26:KU30", "unclear": false },
+            "L":  { "position": 88, "group": "Federalt",         "summary": "Mest EU-positiva. Motion 2025/26:3488 om ett federalt Europa.", "source": "Motion 2025/26:3488", "unclear": false },
+            "SD": { "position": 8,  "group": "Mest EU-skeptisk", "summary": "Vill ta bort grundlagens bestämmelse om EU-medlemskap. Reserverar sig konsekvent mot fördjupad integration.", "source": "bet. 2025/26:KU30 reservation (SD)", "unclear": false }
+          }
+        },
+        {
+          "id": "civilsamhalle",
+          "name": "Civilsamhälle",
+          "description": "Vilken roll ska civilsamhället ha i demokratin?",
+          "scale": { "low": "Begränsa statligt stöd", "high": "Stärk civilsamhällets roll" },
+          "positions": {
+            "V":  { "position": 85, "group": "Stärk",      "summary": "Betonar att civilsamhällets demokratiska utrymme krymper — 80% av barn/ungdomsorganisationer upplever minskat utrymme. Vill skydda akademisk frihet i grundlag.", "source": "bet. 2025/26:KU28 res. 11 och 12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/fri-och-rattigheter-m-m_hd01ku28/", "unclear": false },
+            "S":  { "position": 72, "group": "Stärk",      "summary": "Stöder civilsamhällets roll. Vill säkerställa statlig service i hela landet.", "source": "bet. 2025/26:KU29", "unclear": false },
+            "MP": { "position": 80, "group": "Stärk",      "summary": "Stöder civilsamhällets roll. Betonar trossamfundens frihet och barn/ungdomsorganisationer.", "source": "bet. 2025/26:KU28", "unclear": false },
+            "C":  { "position": 75, "group": "Stärk",      "summary": "Betonar föreningsfrihet och civilsamhällets demokratiska roll. Avskaffa anonyma partibidrag.", "source": "Motion 2025/26:420, Motion 2025/26:3583", "unclear": false },
+            "M":  { "position": 45, "group": "Balanserad", "summary": "Stöder civilsamhället men vill begränsa föreningsfriheten för våldsbejakande organisationer. Emot myndighetsaktivism.", "source": "bet. 2025/26:KU28, KU29", "unclear": false },
+            "KD": { "position": 55, "group": "Balanserad", "summary": "Stöder trossamfundens roll. Betonar att samhället behöver ideella organisationer.", "source": "bet. 2025/26:KU28", "unclear": false },
+            "L":  { "position": 50, "group": "Balanserad", "summary": "Stöder civilsamhället men vill ha antikorruptionsmyndighet för kommuner.", "source": "Motion 2025/26:2663, bet. 2025/26:KU29", "unclear": false },
+            "SD": { "position": 28, "group": "Begränsa",   "summary": "Vill begränsa statligt stöd till organisationer. Skeptisk till myndighetsaktivism och opinionsbildning. Vill skydda svensk kultur i regeringsformen.", "source": "bet. 2025/26:KU29, KU30 Motion 2025/26:1698", "unclear": false }
+          }
+        },
+        {
+          "id": "grundlag",
+          "name": "Grundlag & rättigheter",
+          "description": "Hur ska grundlagen och rättighetsskyddet stärkas?",
+          "scale": { "low": "Enklare att ändra", "high": "Svårare att ändra, stärkt rättighetsskydd" },
+          "positions": {
+            "V":  { "position": 78, "group": "Stärkt skydd",       "summary": "Stöder kvalificerad majoritet för grundlagsändringar. Vill grundlagsskydda akademisk frihet.", "source": "bet. 2025/26:KU2, KU28 res. 11", "unclear": false },
+            "S":  { "position": 80, "group": "Stärkt skydd",       "summary": "Stöder Prop. 165. Vill grundlagsskydda public service. Initierade grundlagskommittén.", "source": "bet. 2025/26:KU2, KU30", "unclear": false },
+            "MP": { "position": 82, "group": "Stärkt skydd",       "summary": "Stöder Prop. 165. Betonar rättighetsskydd.", "source": "bet. 2025/26:KU2", "unclear": false },
+            "C":  { "position": 85, "group": "Stärkt skydd",       "summary": "Stöder Prop. 165. Betonar demokrati och rättsstatsprincipen.", "source": "bet. 2025/26:KU2, KU30 res. 4", "unclear": false },
+            "M":  { "position": 75, "group": "Stärkt skydd",       "summary": "Driver Prop. 165 som regeringsparti. Vill grundlagsskydda rätten att behålla minst hälften av inkomsten.", "source": "Prop. 2024/25:165, Motion 2025/26:1647", "unclear": false },
+            "KD": { "position": 72, "group": "Stärkt skydd",       "summary": "Stöder Prop. 165.", "source": "bet. 2025/26:KU2", "unclear": false },
+            "L":  { "position": 82, "group": "Stärkt skydd",       "summary": "Stöder Prop. 165. Vill ha stark författningsdomstol.", "source": "bet. 2025/26:KU2, Motion 2025/26:3143", "unclear": false },
+            "SD": { "position": 20, "group": "Enklare att ändra",  "summary": "Enda partiet emot kvalificerad majoritet för grundlagsändringar. Reservationer i KU2. Vill ta bort EU ur grundlagen. Vill ha folklig granskning vid ratificering.", "source": "bet. 2025/26:KU2 res. 1-2, KU30 res. (SD), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/starkt-skydd-for-demokratin-och-domstolarnas_hd01ku2/", "unclear": false }
+          }
+        }
+      ]
     }
   ]
 }

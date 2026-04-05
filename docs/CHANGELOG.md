@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-05] data: add demokrati area — 6 topics (public-service, domstolar, yttrandefrihet, eu-demokrati, civilsamhalle, grundlag), 96 total entries across positions + voting; zero ej-granskat, zero inväntar-votering; all stämmer; SD enda partiet emot grundlagsreformen (KU2)
 [2026-04-04] data: add vard area — 6 topics (vardkoer, primarvard, aldreomsorg, psykisk-halsa, valfrihet-vard, personal), 96 total entries across positions + voting; zero ej-granskat, zero inväntar-votering, all stämmer
 [2026-04-02] data: add klimat area — 6 topics (karnkraft, fossila-branslen, klimatmal, fornybart, elpriser, klimatanpassning), 96 total entries across positions.json + voting.json; one delvis (S/karnkraft); zero ej-granskat
 [2026-04-02] data: voting.json — added ekonomi area (7 topics, 56 party entries: skatt-arbete, valfard-finansiering, arbetsmarknad, bostader, eu-ekonomi, pension, infrastruktur)
