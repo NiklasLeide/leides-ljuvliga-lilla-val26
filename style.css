@@ -659,7 +659,6 @@ header p {
   transition: transform 0.1s, opacity 0.15s;
 }
 .gt-party-btn:hover { transform: scale(1.1); }
-.gt-party-btn.active { border-color: rgba(0,0,0,0.5); border-width: 3px; }
 
 .gt-legend {
   display: flex;

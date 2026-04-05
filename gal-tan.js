@@ -89,7 +89,7 @@ function renderLeftNav() {
 
   Object.entries(data.parties).forEach(([abbr, party]) => {
     const btn = document.createElement('button');
-    btn.className = 'gt-party-btn' + (selectedParty === abbr ? ' active' : '');
+    btn.className = 'gt-party-btn';
     btn.style.background = party.color;
     btn.title = party.name;
     btn.textContent = abbr;
