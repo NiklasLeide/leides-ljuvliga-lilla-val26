@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partiernas ståndpunkter — Val 2026</title>
-  <meta name="description" content="Neutral sammanställning av riksdagspartiernas ståndpunkter i sakfrågor inför valet 2026.">
+  <title>GAL-TAN — Val 2026</title>
+  <meta name="description" content="Partiernas positioner på GAL-TAN-skalan och ekonomisk höger-vänsterskala 2018–2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,10 +22,10 @@
     </header>
 
     <nav class="tab-nav" aria-label="Vyer">
-      <button class="tab active" data-view="spectrum">Spektrum</button>
+      <button class="tab" data-view="spectrum">Spektrum</button>
       <button class="tab" data-view="cluster">Kluster</button>
       <button class="tab" data-view="sager-vs-gor">Säger vs gör</button>
-      <button class="tab" data-view="gal-tan">GAL-TAN</button>
+      <button class="tab active" data-view="gal-tan">GAL-TAN</button>
       <button class="tab" data-view="metod">Om metoden</button>
     </nav>
   </div>
@@ -36,8 +36,7 @@
         <div id="left-nav"></div>
       </aside>
       <div class="app-center">
-        <div id="area-analysis"></div>
-        <div id="spectrum-container"></div>
+        <div id="gal-tan-container"></div>
       </div>
       <aside class="app-right">
         <div id="detail-panel" aria-live="polite"></div>
@@ -51,9 +50,7 @@
     <a href="metod.html#integritet">Ingen personlig data samlas in</a> · <a href="https://github.com/NiklasLeide/leides-ljuvliga-lilla-val26" target="_blank" rel="noopener noreferrer">Öppen källkod på GitHub</a> · © 2026 Niklas Leide
   </footer>
 
-  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
-
-  <script src="app.js"></script>
+  <script src="gal-tan.js"></script>
 
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js"

@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-05] feat: GAL-TAN view (gal-tan.html + gal-tan.js) — scatter plot with economic left-right (x) and GAL-TAN (y) axes, three years (2018/2022/2026), movement lines, year/party filters, detail panel; placeholder data in data/gal-tan.json
+[2026-04-05] feat: add GAL-TAN tab to all page navs (index, kluster, sager-vs-gor, metod)
 [2026-04-05] data: add demokrati area — 6 topics (public-service, domstolar, yttrandefrihet, eu-demokrati, civilsamhalle, grundlag), 96 total entries across positions + voting; zero ej-granskat, zero inväntar-votering; all stämmer; SD enda partiet emot grundlagsreformen (KU2)
 [2026-04-04] data: add vard area — 6 topics (vardkoer, primarvard, aldreomsorg, psykisk-halsa, valfrihet-vard, personal), 96 total entries across positions + voting; zero ej-granskat, zero inväntar-votering, all stämmer
 [2026-04-02] data: add klimat area — 6 topics (karnkraft, fossila-branslen, klimatmal, fornybart, elpriser, klimatanpassning), 96 total entries across positions.json + voting.json; one delvis (S/karnkraft); zero ej-granskat
