@@ -6,6 +6,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 ---
 
 [2026-04-05] refactor: area analysis — convert prose strings to bullet arrays (2–4 bullets per area) in positions.json; render as <ul>/<li> in spectrum + cluster views; update CSS for list indent
+[2026-04-06] feat: hitta-parti — "Hur väljs frågorna?" link in left nav → metod.html#fragor; metod.html new section with differentiation scores (std dev) per topic as collapsible <details> table, selected topics marked
 [2026-04-06] fix: hitta-parti — neutral slider track (no fill); key topics only (3 per area from positions.json keyTopics); remove datalist elements
 [2026-04-06] data: positions.json — add keyTopics array to each area (placeholder: 3 most party-differentiating topics per area)
 [2026-04-06] feat: hitta-parti — full redesign as wizard flow; step indicator + progress bar in left nav; one question per screen with area chip, counter, serif title, step=10 slider; skip excludes from calc; live results in right column (mobile: collapsible); done screen with transparency note + reset; mobile results toggle via left nav button

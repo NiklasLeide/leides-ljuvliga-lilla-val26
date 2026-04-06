@@ -744,6 +744,16 @@ header p {
 .hp-step-item.active .hp-step-dot { background: var(--ink); }
 .hp-step-item.done   .hp-step-dot { background: var(--track); }
 
+/* Info link */
+.hp-metod-link {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: var(--space-md);
+}
+.hp-metod-link:hover { color: var(--ink); text-decoration: underline; }
+
 /* Progress bar */
 .hp-progress-label { font-size: 0.75rem; color: var(--muted); margin: var(--space-sm) 0 var(--space-xs); }
 .hp-progress-track { height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }

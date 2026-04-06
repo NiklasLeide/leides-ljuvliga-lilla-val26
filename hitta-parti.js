@@ -48,6 +48,7 @@ function renderLeft() {
     html += `<li class="hp-step-item ${states[i]}"><span class="hp-step-dot"></span>${i + 1}. ${esc(lbl)}</li>`;
   });
   html += '</ul>';
+  html += '<a href="metod.html#fragor" class="hp-metod-link" target="_blank" rel="noopener noreferrer">Hur väljs frågorna? →</a>';
 
   if (step === 3 || step === 'done') {
     const total    = wizardTopics.length;

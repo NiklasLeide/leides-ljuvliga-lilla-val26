@@ -110,6 +110,73 @@
       font-style: italic;
     }
 
+    .metod-key-marker { color: var(--ink); font-size: 0.8em; }
+
+    .metod-score-details {
+      margin-top: var(--space-md);
+    }
+    .metod-score-details summary {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      padding: var(--space-sm) 0;
+      user-select: none;
+      list-style: none;
+    }
+    .metod-score-details summary::-webkit-details-marker { display: none; }
+    .metod-score-details summary::before {
+      content: '▸ ';
+      font-size: 0.75em;
+      color: var(--muted);
+    }
+    .metod-score-details[open] summary::before { content: '▾ '; }
+
+    .metod-score-block {
+      margin-top: var(--space-lg);
+    }
+    .metod-score-area-hdr {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+      margin-bottom: var(--space-xs);
+    }
+    .metod-score-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .metod-score-table td {
+      padding: 4px 0;
+      color: var(--ink);
+      border-bottom: 1px solid var(--border);
+    }
+    .metod-score-table td:last-child {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      padding-left: var(--space-sm);
+      white-space: nowrap;
+    }
+    .metod-score-table td.key-dot {
+      width: 16px;
+      color: var(--ink);
+      font-size: 0.6em;
+      vertical-align: middle;
+      padding-right: 4px;
+    }
+    .metod-score-table tr.key td { font-weight: 500; }
+    .metod-score-table tr:last-child td { border-bottom: none; }
+    .metod-score-note {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: var(--space-xs);
+      margin-bottom: 0;
+    }
+
     @media (max-width: 480px) {
       .metod-body {
         padding: var(--space-lg) var(--space-md);
@@ -203,6 +270,111 @@
         En oklar position är bättre än ingen position alls — frånvaro på skalan
         vore också missvisande. Men den ska läsas med reservation.
       </p>
+
+      <hr class="metod-divider">
+
+      <h2 id="fragor">Urval av frågor i "Hitta ditt parti"</h2>
+      <p>
+        Frågorna är valda för att de har störst spridning mellan partierna — det är här
+        skiljelinjerna syns tydligast. Spridningen mäts som <strong>standardavvikelse</strong>
+        på partiernas positioner (skala 0–100, exkl. oklara ståndpunkter).
+        Markerade rader (<span class="metod-key-marker">●</span>) ingår i nuvarande urval.
+      </p>
+      <p>
+        Urvalet är preliminärt och uppdateras löpande. Notera att låga spridningsvärden
+        i ett sakområde kan bero på verklig partikonsensus, inte på att frågan är ointressant.
+      </p>
+
+      <details class="metod-score-details">
+        <summary>Visa spridningspoäng per sakfråga</summary>
+
+        <div class="metod-score-block">
+          <div class="metod-score-area-hdr">Skola</div>
+          <table class="metod-score-table">
+            <tr class="key"><td class="key-dot">●</td><td>Vinstuttag i välfärden</td><td>34,6</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Fristående skolor</td><td>31,1</td></tr>
+            <tr><td></td><td>Betyg från tidig ålder</td><td>30,5</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Statlig styrning av skolan</td><td>27,1</td></tr>
+            <tr><td></td><td>Digitalisering i skolan</td><td>26,5</td></tr>
+            <tr><td></td><td>Nationella prov</td><td>25,5</td></tr>
+          </table>
+        </div>
+
+        <div class="metod-score-block">
+          <div class="metod-score-area-hdr">Ekonomi</div>
+          <table class="metod-score-table">
+            <tr class="key"><td class="key-dot">●</td><td>Skatt på arbete</td><td>31,9</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Välfärdens finansiering</td><td>31,1</td></tr>
+            <tr><td></td><td>Infrastruktur och järnväg</td><td>29,8</td></tr>
+            <tr><td></td><td>Bostadspolitik</td><td>29,3</td></tr>
+            <tr><td></td><td>EU:s ekonomiska integration</td><td>23,6</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Arbetsmarknadsreglering</td><td>23,5</td></tr>
+            <tr><td></td><td>Pensionssystemet</td><td>18,7</td></tr>
+          </table>
+        </div>
+
+        <div class="metod-score-block">
+          <div class="metod-score-area-hdr">Migration</div>
+          <table class="metod-score-table">
+            <tr class="key"><td class="key-dot">●</td><td>Uppehållstillstånd</td><td>34,3</td></tr>
+            <tr><td></td><td>Medborgarskap</td><td>33,5</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Asylpolitik</td><td>33,3</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Integrationspolitik</td><td>29,6</td></tr>
+            <tr><td></td><td>Arbetskraftsinvandring</td><td>28,1</td></tr>
+          </table>
+        </div>
+
+        <div class="metod-score-block">
+          <div class="metod-score-area-hdr">Försvar &amp; säkerhet</div>
+          <table class="metod-score-table">
+            <tr><td></td><td>Nato</td><td>27,8</td></tr>
+            <tr><td></td><td>Försvarsindustri</td><td>20,3</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Försvarsbudget</td><td>13,9</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Värnplikt</td><td>10,0</td></tr>
+            <tr><td></td><td>Civil beredskap</td><td>4,9</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Ukrainastöd</td><td>2,9</td></tr>
+          </table>
+          <p class="metod-score-note">Obs: Nato, försvarsindustri och ukrainastöd har låga spridningsvärden pga. bred partikonsensus efter 2022. Urvalet här är preliminärt.</p>
+        </div>
+
+        <div class="metod-score-block">
+          <div class="metod-score-area-hdr">Klimat &amp; energi</div>
+          <table class="metod-score-table">
+            <tr class="key"><td class="key-dot">●</td><td>Kärnkraft</td><td>34,3</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Fossila bränslen</td><td>29,0</td></tr>
+            <tr><td></td><td>Förnybar energi</td><td>26,4</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Klimatmål</td><td>24,2</td></tr>
+            <tr><td></td><td>Klimatinvesteringar</td><td>21,5</td></tr>
+            <tr><td></td><td>Elpriser</td><td>18,6</td></tr>
+          </table>
+        </div>
+
+        <div class="metod-score-block">
+          <div class="metod-score-area-hdr">Vård &amp; omsorg</div>
+          <table class="metod-score-table">
+            <tr class="key"><td class="key-dot">●</td><td>Vårdköer</td><td>32,2</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Valfrihet i vården</td><td>30,7</td></tr>
+            <tr><td></td><td>Äldreomsorg</td><td>25,0</td></tr>
+            <tr><td></td><td>Vårdpersonal</td><td>21,7</td></tr>
+            <tr><td></td><td>Psykisk hälsa</td><td>15,0</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Primärvård</td><td>6,3</td></tr>
+          </table>
+          <p class="metod-score-note">Obs: Primärvård har lågt spridningsvärde — urvalet här är preliminärt.</p>
+        </div>
+
+        <div class="metod-score-block">
+          <div class="metod-score-area-hdr">Demokrati &amp; konstitution</div>
+          <table class="metod-score-table">
+            <tr class="key"><td class="key-dot">●</td><td>EU-integration</td><td>25,4</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Public service</td><td>21,9</td></tr>
+            <tr><td></td><td>Grundlag &amp; rättigheter</td><td>19,9</td></tr>
+            <tr><td></td><td>Civilsamhälle</td><td>18,6</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Domstolarnas oberoende</td><td>17,9</td></tr>
+            <tr><td></td><td>Yttrandefrihet &amp; teknik</td><td>15,4</td></tr>
+          </table>
+        </div>
+
+      </details>
 
       <hr class="metod-divider">
 
