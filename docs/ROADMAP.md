@@ -60,12 +60,12 @@
 
 ---
 
-## Sprint 6 — GAL-TAN scale 🔄
+## Sprint 6 — GAL-TAN scale ✅
 
 - [x] 6.1 New view: GAL-TAN chart with party positions over time *(gal-tan.html + gal-tan.js, SVG scatter plot)*
 - [x] 6.2 Data from Chapel Hill Expert Survey + own assessment *(galtan.json — CHES 2019 + 2024 verified, 2026 own assessment)*
 - [x] 6.3 Show movement since 2019 and 2024 surveys *(movement lines, year toggles, delta badges in detail panel)*
-- [ ] 6.4 UI polish pass — mobile layout remaining
+- [x] 6.4 UI polish pass *(mobile-responsive dot scaling, party selection with dimming, full trail clickable, year labels)*
 
 ---
 
