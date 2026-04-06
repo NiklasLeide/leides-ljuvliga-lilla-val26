@@ -152,7 +152,6 @@ function renderStep2(el) {
     wizardTopics = [];
     posData.areas.filter(a => activeAreas.has(a.id)).forEach(area => {
       const keyIds = area.keyTopics || [];
-      const keySet = new Set(keyIds);
       // Preserve order defined in keyTopics
       keyIds.forEach(id => {
         const t = area.topics.find(t => t.id === id);

@@ -458,8 +458,8 @@
         }
       ],
       "keyTopics": [
-        "friskolor",
         "vinstuttag",
+        "friskolor",
         "statlig-styrning"
       ]
     },
@@ -946,8 +946,8 @@
       ],
       "keyTopics": [
         "skatt-arbete",
-        "valfard-finansiering",
-        "arbetsmarknad"
+        "eu-ekonomi",
+        "infrastruktur"
       ]
     },
     {
@@ -1297,9 +1297,9 @@
         }
       ],
       "keyTopics": [
+        "uppehallstillstand",
         "asylpolitik",
-        "integration",
-        "uppehallstillstand"
+        "arbetskraftsinvandring"
       ]
     },
     {
@@ -1716,9 +1716,8 @@
         }
       ],
       "keyTopics": [
-        "forsvarsbudget",
-        "ukraina",
-        "varnplikt"
+        "nato",
+        "forsvarsindustri"
       ]
     },
     {
@@ -2558,7 +2557,7 @@
       "keyTopics": [
         "valfrihet-vard",
         "vardkoer",
-        "primarvard"
+        "aldreomsorg"
       ]
     },
     {
@@ -2976,9 +2975,9 @@
         }
       ],
       "keyTopics": [
+        "eu-demokrati",
         "public-service",
-        "domstolar",
-        "eu-demokrati"
+        "grundlag"
       ]
     }
   ]

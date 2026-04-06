@@ -112,6 +112,35 @@
 
     .metod-key-marker { color: var(--ink); font-size: 0.8em; }
 
+    .metod-key-list {
+      margin: var(--space-md) 0 var(--space-lg);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4px var(--space-md);
+      align-items: baseline;
+    }
+    .metod-key-list dt {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .metod-key-list dd {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .metod-body ol {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      padding-left: 1.4rem;
+      margin-bottom: var(--space-md);
+    }
+    .metod-body ol li {
+      margin-bottom: var(--space-xs);
+    }
+
     .metod-score-details {
       margin-top: var(--space-md);
     }
@@ -275,15 +304,31 @@
 
       <h2 id="fragor">Urval av frågor i "Hitta ditt parti"</h2>
       <p>
-        Frågorna är valda för att de har störst spridning mellan partierna — det är här
-        skiljelinjerna syns tydligast. Spridningen mäts som <strong>standardavvikelse</strong>
-        på partiernas positioner (skala 0–100, exkl. oklara ståndpunkter).
-        Markerade rader (<span class="metod-key-marker">●</span>) ingår i nuvarande urval.
+        Frågorna är valda för att de har störst spridning mellan partierna —
+        23 av 49 sakfrågor valdes ut baserat på hur mycket partiernas positioner skiljer sig åt.
+        Det är här skiljelinjerna syns tydligast.
       </p>
       <p>
-        Urvalet är preliminärt och uppdateras löpande. Notera att låga spridningsvärden
-        i ett sakområde kan bero på verklig partikonsensus, inte på att frågan är ointressant.
+        Spridningen mäts som <strong>standardavvikelse</strong> på partiernas positioner
+        (skala 0–100, exkl. oklara ståndpunkter). Urvalet uppdateras löpande.
       </p>
+
+      <dl class="metod-key-list">
+        <dt>Skola</dt>
+        <dd>Vinstuttag i välfärden, Fristående skolor, Statlig styrning av skolan</dd>
+        <dt>Ekonomi</dt>
+        <dd>Skatt på arbete, EU:s ekonomiska integration, Infrastruktur och järnväg</dd>
+        <dt>Migration</dt>
+        <dd>Uppehållstillstånd, Asylpolitik, Arbetskraftsinvandring</dd>
+        <dt>Försvar &amp; säkerhet</dt>
+        <dd>Nato, Försvarsindustri</dd>
+        <dt>Klimat &amp; energi</dt>
+        <dd>Kärnkraft, Fossila bränslen, Klimatmål</dd>
+        <dt>Vård &amp; omsorg</dt>
+        <dd>Valfrihet i vården, Vårdköer, Äldreomsorg</dd>
+        <dt>Demokrati &amp; konstitution</dt>
+        <dd>EU-integration, Public service, Grundlag &amp; rättigheter</dd>
+      </dl>
 
       <details class="metod-score-details">
         <summary>Visa spridningspoäng per sakfråga</summary>
@@ -304,11 +349,11 @@
           <div class="metod-score-area-hdr">Ekonomi</div>
           <table class="metod-score-table">
             <tr class="key"><td class="key-dot">●</td><td>Skatt på arbete</td><td>31,9</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Välfärdens finansiering</td><td>31,1</td></tr>
-            <tr><td></td><td>Infrastruktur och järnväg</td><td>29,8</td></tr>
+            <tr><td></td><td>Välfärdens finansiering</td><td>31,1</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Infrastruktur och järnväg</td><td>29,8</td></tr>
             <tr><td></td><td>Bostadspolitik</td><td>29,3</td></tr>
-            <tr><td></td><td>EU:s ekonomiska integration</td><td>23,6</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Arbetsmarknadsreglering</td><td>23,5</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>EU:s ekonomiska integration</td><td>23,6</td></tr>
+            <tr><td></td><td>Arbetsmarknadsreglering</td><td>23,5</td></tr>
             <tr><td></td><td>Pensionssystemet</td><td>18,7</td></tr>
           </table>
         </div>
@@ -319,22 +364,21 @@
             <tr class="key"><td class="key-dot">●</td><td>Uppehållstillstånd</td><td>34,3</td></tr>
             <tr><td></td><td>Medborgarskap</td><td>33,5</td></tr>
             <tr class="key"><td class="key-dot">●</td><td>Asylpolitik</td><td>33,3</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Integrationspolitik</td><td>29,6</td></tr>
-            <tr><td></td><td>Arbetskraftsinvandring</td><td>28,1</td></tr>
+            <tr><td></td><td>Integrationspolitik</td><td>29,6</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Arbetskraftsinvandring</td><td>28,1</td></tr>
           </table>
         </div>
 
         <div class="metod-score-block">
           <div class="metod-score-area-hdr">Försvar &amp; säkerhet</div>
           <table class="metod-score-table">
-            <tr><td></td><td>Nato</td><td>27,8</td></tr>
-            <tr><td></td><td>Försvarsindustri</td><td>20,3</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Försvarsbudget</td><td>13,9</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Värnplikt</td><td>10,0</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Nato</td><td>27,8</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Försvarsindustri</td><td>20,3</td></tr>
+            <tr><td></td><td>Försvarsbudget</td><td>13,9</td></tr>
+            <tr><td></td><td>Värnplikt</td><td>10,0</td></tr>
             <tr><td></td><td>Civil beredskap</td><td>4,9</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Ukrainastöd</td><td>2,9</td></tr>
+            <tr><td></td><td>Ukrainastöd</td><td>2,9</td></tr>
           </table>
-          <p class="metod-score-note">Obs: Nato, försvarsindustri och ukrainastöd har låga spridningsvärden pga. bred partikonsensus efter 2022. Urvalet här är preliminärt.</p>
         </div>
 
         <div class="metod-score-block">
@@ -354,12 +398,11 @@
           <table class="metod-score-table">
             <tr class="key"><td class="key-dot">●</td><td>Vårdköer</td><td>32,2</td></tr>
             <tr class="key"><td class="key-dot">●</td><td>Valfrihet i vården</td><td>30,7</td></tr>
-            <tr><td></td><td>Äldreomsorg</td><td>25,0</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Äldreomsorg</td><td>25,0</td></tr>
             <tr><td></td><td>Vårdpersonal</td><td>21,7</td></tr>
             <tr><td></td><td>Psykisk hälsa</td><td>15,0</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Primärvård</td><td>6,3</td></tr>
+            <tr><td></td><td>Primärvård</td><td>6,3</td></tr>
           </table>
-          <p class="metod-score-note">Obs: Primärvård har lågt spridningsvärde — urvalet här är preliminärt.</p>
         </div>
 
         <div class="metod-score-block">
@@ -367,14 +410,43 @@
           <table class="metod-score-table">
             <tr class="key"><td class="key-dot">●</td><td>EU-integration</td><td>25,4</td></tr>
             <tr class="key"><td class="key-dot">●</td><td>Public service</td><td>21,9</td></tr>
-            <tr><td></td><td>Grundlag &amp; rättigheter</td><td>19,9</td></tr>
+            <tr class="key"><td class="key-dot">●</td><td>Grundlag &amp; rättigheter</td><td>19,9</td></tr>
             <tr><td></td><td>Civilsamhälle</td><td>18,6</td></tr>
-            <tr class="key"><td class="key-dot">●</td><td>Domstolarnas oberoende</td><td>17,9</td></tr>
+            <tr><td></td><td>Domstolarnas oberoende</td><td>17,9</td></tr>
             <tr><td></td><td>Yttrandefrihet &amp; teknik</td><td>15,4</td></tr>
           </table>
         </div>
 
       </details>
+
+      <hr class="metod-divider">
+
+      <h2 id="matchning">Hur beräknas matchningen?</h2>
+      <p>
+        Matchningen i "Hitta ditt parti" beräknas i tre steg:
+      </p>
+      <ol>
+        <li>
+          <strong>Per sakfråga:</strong>
+          överensstämmelse = 1 − |din position − partiets position| / 100.
+          Värdet är 1,0 om ni är helt överens och 0,0 om ni är i motsatta ytterligheter.
+        </li>
+        <li>
+          <strong>Per sakområde:</strong>
+          medelvärde av de ingående sakfrågornas värden.
+          Hoppade frågor och oklara partipositioner räknas inte med.
+        </li>
+        <li>
+          <strong>Totalt:</strong>
+          viktat medelvärde av sakområdenas värden.
+          Du ställer in vikten per område i Steg 2 — ett område med hög vikt väger tyngre i slutresultatet.
+        </li>
+      </ol>
+      <p>
+        Ingen data sparas. Beräkningen sker lokalt i din webbläsare.
+        Källkod och data är öppna på
+        <a href="https://github.com/NiklasLeide/leides-ljuvliga-lilla-val26" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
 
       <hr class="metod-divider">
 
