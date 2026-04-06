@@ -44,7 +44,7 @@
 ## Sprint 3 — Expand
 
 - [x] 3.1 Add more policy areas beyond school *(ekonomi 7 ämnen, migration 5 ämnen, försvar 6 ämnen — full positions + voting data)*
-- [ ] 3.2 Polish, SEO, public launch before election Sept 2026
+- [ ] 3.2 Polish, SEO, public launch before election Sept 2026 🔄
 
 ---
 
@@ -69,7 +69,7 @@
 
 ---
 
-## Sprint 7 — Polling trends
+## Sprint 7 — Polling trends ⏸️
 
 - [ ] 7.1 Aggregate polling data from major Swedish institutes
 - [ ] 7.2 Weighted analysis showing trends

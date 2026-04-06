@@ -6,6 +6,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 ---
 
 [2026-04-05] refactor: area analysis — convert prose strings to bullet arrays (2–4 bullets per area) in positions.json; render as <ul>/<li> in spectrum + cluster views; update CSS for list indent
+[2026-04-06] docs: reprioritise — pause Sprint 7 (polling), activate Sprint 3.2 (polish/SEO/launch)
 [2026-04-06] docs: close Sprint 6 (GAL-TAN) in ROADMAP + PROJECT_STATUS; open Sprint 7 (polling trends); update What's Working Now and metrics
 [2026-04-05] fix: remove active highlight from GAL-TAN party nav buttons — detail panel is sufficient feedback
 [2026-04-05] fix: GAL-TAN left-nav party buttons now select (dim others + show trail) instead of toggling visibility; remove hiddenParties; button shows active border when selected

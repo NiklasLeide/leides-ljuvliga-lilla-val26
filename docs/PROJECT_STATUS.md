@@ -1,19 +1,18 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
 > **Last updated:** 2026-04-06
-> **Current sprint:** Sprint 7 – Polling trends
+> **Current sprint:** Sprint 3.2 – Polish, SEO, public launch
 > **Sprint dates:** 2026-04-06 → TBD
 
 ---
 
-## Current Sprint: Sprint 7 – Polling trends
+## Current Sprint: Sprint 3.2 – Polish, SEO, public launch
 
 | #   | Task                                          | Status  | Notes |
 |-----|-----------------------------------------------|---------|-------|
-| 7.1 | Aggregate polling data from major Swedish institutes | ⬜ Todo | |
-| 7.2 | Weighted analysis showing trends              | ⬜ Todo | |
-| 7.3 | Connect to GAL-TAN movement (if applicable)   | ⬜ Todo | |
-| 7.4 | UI polish pass                                | ⬜ Todo | |
+| 3.2 | Polish, SEO, public launch before Sept 2026   | 🔄 In Progress | Scope TBD |
+
+**Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
@@ -108,7 +107,7 @@ None.
 
 ## Sprint Backlog
 
-### Sprint 7 — Polling trends
+### Sprint 7 — Polling trends ⏸️ Paused
 *(See ROADMAP.md for full task breakdowns)*
 
 ---
