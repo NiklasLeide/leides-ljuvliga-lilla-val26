@@ -5,6 +5,7 @@ let activeAreas = new Set();   // area IDs
 let areaWeights = {};           // areaId → 1–10
 let topicPositions = {};        // topicId → 0–100
 let selectedParty = null;
+let movedSliders = false;       // true once any position slider has been touched
 const stepsOpen = { 1: true, 2: true, 3: true };
 
 /* ===================================================
@@ -99,19 +100,28 @@ function renderStep2(body) {
     top.innerHTML = `<span class="hp-weight-label">${esc(area.name)}</span>`;
     top.appendChild(pctSpan);
 
+    const wDlId = 'dl-w-' + area.id;
     const slider = document.createElement('input');
     slider.type = 'range';
-    slider.min = 1; slider.max = 10;
+    slider.min = 1; slider.max = 10; slider.step = 1;
     slider.value = areaWeights[area.id] || 5;
     slider.className = 'hp-slider';
+    slider.setAttribute('list', wDlId);
     slider.addEventListener('input', () => {
       areaWeights[area.id] = Number(slider.value);
       updateWeightPcts();
       renderResults();
     });
 
+    const wDl = document.createElement('datalist');
+    wDl.id = wDlId;
+    [1, 3, 5, 7, 10].forEach(v => {
+      const opt = document.createElement('option'); opt.value = v; wDl.appendChild(opt);
+    });
+
     row.appendChild(top);
     row.appendChild(slider);
+    row.appendChild(wDl);
     body.appendChild(row);
   });
 }
@@ -142,15 +152,24 @@ function renderStep3(body) {
       lbl.className = 'hp-topic-label';
       lbl.textContent = topic.name;
 
+      const dlId = 'dl-' + topic.id;
       const slider = document.createElement('input');
       slider.type = 'range';
-      slider.min = 0; slider.max = 100;
+      slider.min = 0; slider.max = 100; slider.step = 10;
       slider.value = topicPositions[topic.id] ?? 50;
       slider.className = 'hp-slider';
+      slider.setAttribute('list', dlId);
       slider.addEventListener('input', () => {
         topicPositions[topic.id] = Number(slider.value);
+        movedSliders = true;
         renderResults();
       });
+
+      const dl = document.createElement('datalist');
+      dl.id = dlId;
+      for (let v = 0; v <= 100; v += 10) {
+        const opt = document.createElement('option'); opt.value = v; dl.appendChild(opt);
+      }
 
       const scales = document.createElement('div');
       scales.className = 'hp-scale-labels';
@@ -158,6 +177,7 @@ function renderStep3(body) {
 
       row.appendChild(lbl);
       row.appendChild(slider);
+      row.appendChild(dl);
       row.appendChild(scales);
       body.appendChild(row);
     });
@@ -208,10 +228,19 @@ function computeMatches() {
    =================================================== */
 function renderResults() {
   const container = document.getElementById('hp-results');
-  const matches = computeMatches();
 
+  if (activeAreas.size === 0) {
+    container.innerHTML = '<p class="hp-hint" style="padding:var(--space-lg) 0">Välj minst ett område i Steg 1 för att se matchningar.</p>';
+    return;
+  }
+  if (!movedSliders) {
+    container.innerHTML = '<p class="hp-hint" style="padding:var(--space-lg) 0">Markera dina ståndpunkter i Steg 3 för att se resultat.</p>';
+    return;
+  }
+
+  const matches = computeMatches();
   if (!matches.length) {
-    container.innerHTML = '<p class="hp-hint" style="padding:var(--space-lg) 0">Välj ett eller flera områden i Steg 1 för att se matchningar.</p>';
+    container.innerHTML = '<p class="hp-hint" style="padding:var(--space-lg) 0">Inga matchningar hittades.</p>';
     return;
   }
 

@@ -793,9 +793,10 @@ header p {
 
 .hp-slider {
   width: 100%;
-  height: 4px;
   accent-color: var(--ink);
   cursor: pointer;
+  display: block;
+  margin-bottom: 2px;
 }
 
 /* Step 3 — topic sliders */
