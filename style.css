@@ -687,18 +687,6 @@ header p {
   max-width: 640px;
   margin-bottom: var(--space-md);
 }
-.gt-placeholder-badge {
-  display: inline-block;
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  background: #fff3cd;
-  color: #8a5700;
-  padding: 2px 7px;
-  border-radius: 99px;
-  vertical-align: middle;
-}
 
 .gt-plot-wrap {
   background: var(--card);
@@ -707,7 +695,7 @@ header p {
   padding: var(--space-md);
   width: 100%;
 }
-.gt-svg { display: block; }
+.gt-svg { display: block; overflow: visible; }
 
 .gt-node { transition: opacity 0.1s; }
 .gt-node:hover circle { filter: brightness(1.1); }
@@ -731,6 +719,188 @@ header p {
 .gt-delta-left  { background: #f0fdf4; color: #15803d; }
 .gt-delta-tan   { background: #fef2f2; color: #9b1c1c; }
 .gt-delta-gal   { background: #f0fdf4; color: #15803d; }
+
+/* ===================================================
+   Hitta ditt parti
+   =================================================== */
+
+/* Steps — left nav */
+.hp-step {
+  border-bottom: 1px solid var(--border);
+}
+.hp-step:last-child { border-bottom: none; }
+
+.hp-step-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  background: none;
+  border: none;
+  padding: var(--space-sm) 0;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: left;
+}
+.hp-step-header:hover { color: var(--muted); }
+
+.hp-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.hp-step-title { flex: 1; }
+.hp-step-chevron { font-size: 0.8rem; color: var(--muted); }
+
+.hp-step-body {
+  display: none;
+  padding-bottom: var(--space-md);
+}
+.hp-step.open .hp-step-body { display: block; }
+
+/* Step 1 — area checkboxes */
+.hp-area-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.82rem;
+  padding: 3px 0;
+  cursor: pointer;
+  color: var(--ink);
+}
+.hp-area-row input[type="checkbox"] { cursor: pointer; accent-color: var(--ink); }
+
+/* Step 2 — weight sliders */
+.hp-weight-row { margin-bottom: var(--space-sm); }
+.hp-weight-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+.hp-weight-label { font-size: 0.8rem; color: var(--ink); }
+.hp-weight-pct { font-size: 0.75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.hp-slider {
+  width: 100%;
+  height: 4px;
+  accent-color: var(--ink);
+  cursor: pointer;
+}
+
+/* Step 3 — topic sliders */
+.hp-area-header {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: var(--space-md) 0 var(--space-xs);
+}
+.hp-area-header:first-child { margin-top: 0; }
+
+.hp-topic-row { margin-bottom: var(--space-sm); }
+.hp-topic-label { font-size: 0.78rem; color: var(--ink); margin-bottom: 2px; }
+
+.hp-scale-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.66rem;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+.hp-hint {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Results — center column */
+.hp-result-row {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.1s;
+  border-radius: var(--radius-sm);
+  padding-left: var(--space-xs);
+  padding-right: var(--space-xs);
+}
+.hp-result-row:last-child { border-bottom: none; }
+.hp-result-row:hover { background: var(--hover); }
+.hp-result-row.selected { background: var(--card); }
+
+.hp-result-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: 4px;
+}
+.hp-result-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.hp-result-name { flex: 1; font-size: 0.85rem; font-weight: 500; color: var(--ink); }
+.hp-result-pct { font-size: 0.85rem; font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 600; }
+
+.hp-bar-wrap {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.hp-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.2s ease;
+}
+
+/* Detail panel */
+.hp-detail-area {
+  margin-bottom: var(--space-md);
+}
+.hp-detail-area-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.82rem;
+  margin-bottom: var(--space-xs);
+}
+.hp-detail-pct { font-variant-numeric: tabular-nums; font-weight: 600; }
+.hp-detail-weight { font-size: 0.72rem; font-weight: 400; color: var(--muted); }
+.hp-detail-na { color: var(--muted); font-weight: 400; }
+
+.hp-detail-topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  padding: 2px 0;
+}
+.hp-detail-topic-name { color: var(--muted); }
+
+.hp-dir {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 99px;
+  flex-shrink: 0;
+}
+.hp-dir-left  { background: #eff6ff; color: #1e40af; }
+.hp-dir-right { background: #fef2f2; color: #9b1c1c; }
+.hp-dir-same  { background: #f0fdf4; color: #15803d; }
 
 /* ===================================================
    Footer
@@ -821,8 +991,24 @@ footer a:hover { color: var(--ink); }
 
   .tooltip { max-width: 200px; font-size: 0.75rem; }
 
+  /* Tab nav — scrollable on mobile so all 5 tabs are reachable */
+  .tab-nav { overflow-x: auto; scrollbar-width: none; }
+  .tab-nav::-webkit-scrollbar { display: none; }
+  .tab { white-space: nowrap; padding: 0.6rem 0.9rem; }
+
   /* Säger vs gör — mobile */
   .svs-row { flex-direction: column; gap: 2px; }
   .svs-row-label { align-self: flex-start; }
   .svs-card-title { font-size: 0.88rem; }
+
+  /* GAL-TAN left nav — horizontal year toggles on mobile */
+  .gt-toggle-group { flex-direction: row; flex-wrap: wrap; gap: var(--space-xs); }
+  .gt-toggle-btn {
+    border: 1.5px solid var(--border);
+    border-radius: 100px;
+    padding: 4px var(--space-md);
+    font-size: 0.78rem;
+  }
+  .gt-toggle-btn.active { border-color: var(--ink); background: var(--ink); color: #fff; }
+  .gt-section-label { margin-top: var(--space-sm); }
 }

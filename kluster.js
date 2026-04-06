@@ -350,6 +350,8 @@ function setupTabNav() {
     .addEventListener('click', () => { location.href = 'sager-vs-gor.html'; });
   document.querySelector('.tab[data-view="gal-tan"]')
     .addEventListener('click', () => { location.href = 'gal-tan.html'; });
+  document.querySelector('.tab[data-view="hitta-parti"]')
+    .addEventListener('click', () => { location.href = 'hitta-parti.html'; });
   document.querySelector('.tab[data-view="metod"]')
     .addEventListener('click', () => { location.href = 'metod.html'; });
 }

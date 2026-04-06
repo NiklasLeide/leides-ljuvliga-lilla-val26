@@ -260,6 +260,7 @@ function setupViewTabs() {
       if (tab.dataset.view === 'cluster')      { location.href = 'kluster.html';      return; }
       if (tab.dataset.view === 'sager-vs-gor') { location.href = 'sager-vs-gor.html'; return; }
       if (tab.dataset.view === 'gal-tan')      { location.href = 'gal-tan.html';       return; }
+      if (tab.dataset.view === 'hitta-parti') { location.href = 'hitta-parti.html';   return; }
       if (tab.dataset.view === 'metod')        { location.href = 'metod.html';         return; }
     });
   });

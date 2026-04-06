@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Om metoden — Val 2026</title>
-  <meta name="description" content="Hur partipositioner samlas in, bedöms och placeras på skalan i den här sammanställningen.">
+  <meta name="description" content="Hur partipositioner samlas in, bedöms och placeras på skalan. Källor, neutralitetsambitioner och metodbeskrivning för val26.leide.se.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://val26.leide.se/metod.html">
+  <meta property="og:title" content="Om metoden — Val 2026">
+  <meta property="og:description" content="Hur partipositioner samlas in, bedöms och placeras på skalan. Källor, neutralitetsambitioner och metodbeskrivning för val26.leide.se.">
+  <meta property="og:image" content="https://val26.leide.se/og-image.png">
+  <meta property="og:site_name" content="Val 2026 — Partiernas ståndpunkter">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -126,6 +133,7 @@
       <button class="tab" data-view="cluster">Kluster</button>
       <button class="tab" data-view="sager-vs-gor">Säger vs gör</button>
       <button class="tab" data-view="gal-tan">GAL-TAN</button>
+      <button class="tab" data-view="hitta-parti">Hitta ditt parti</button>
       <button class="tab active" data-view="metod">Om metoden</button>
     </nav>
   </div>
@@ -249,7 +257,9 @@
       .addEventListener('click', () => { location.href = 'sager-vs-gor.html'; });
     document.querySelector('.tab[data-view="gal-tan"]')
       .addEventListener('click', () => { location.href = 'gal-tan.html'; });
-  </script>
+    document.querySelector('.tab[data-view="hitta-parti"]')
+      .addEventListener('click', () => { location.href = 'hitta-parti.html'; });
+</script>
 
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js"

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Säger vs gör — Val 2026</title>
-  <meta name="description" content="Vad lovar partierna — och hur har de faktiskt röstat i riksdagen? Jämförelse per sakfråga och per parti inför valet 2026.">
+  <title>Hitta ditt parti — Val 2026</title>
+  <meta name="description" content="Jämför dina åsikter med riksdagspartierna i 42 sakfrågor. Välj områden, sätt vikt och se vilket parti du matchar bäst inför valet 2026.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://val26.leide.se/sager-vs-gor.html">
-  <meta property="og:title" content="Säger vs gör — Val 2026">
-  <meta property="og:description" content="Vad lovar partierna — och hur har de faktiskt röstat i riksdagen? Jämförelse per sakfråga och per parti inför valet 2026.">
+  <meta property="og:url" content="https://val26.leide.se/hitta-parti.html">
+  <meta property="og:title" content="Hitta ditt parti — Val 2026">
+  <meta property="og:description" content="Jämför dina åsikter med riksdagspartierna i 42 sakfrågor. Välj områden, sätt vikt och se vilket parti du matchar bäst inför valet 2026.">
   <meta property="og:image" content="https://val26.leide.se/og-image.png">
   <meta property="og:site_name" content="Val 2026 — Partiernas ståndpunkter">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -31,9 +31,9 @@
     <nav class="tab-nav" aria-label="Vyer">
       <button class="tab" data-view="spectrum">Spektrum</button>
       <button class="tab" data-view="cluster">Kluster</button>
-      <button class="tab active" data-view="sager-vs-gor">Säger vs gör</button>
+      <button class="tab" data-view="sager-vs-gor">Säger vs gör</button>
       <button class="tab" data-view="gal-tan">GAL-TAN</button>
-      <button class="tab" data-view="hitta-parti">Hitta ditt parti</button>
+      <button class="tab active" data-view="hitta-parti">Hitta ditt parti</button>
       <button class="tab" data-view="metod">Om metoden</button>
     </nav>
   </div>
@@ -44,8 +44,11 @@
         <div id="left-nav"></div>
       </aside>
       <div class="app-center">
-        <div id="cards-container"></div>
+        <div id="hp-results"></div>
       </div>
+      <aside class="app-right">
+        <div id="detail-panel" aria-live="polite"></div>
+      </aside>
     </div>
   </main>
 
@@ -55,7 +58,7 @@
     <a href="metod.html#integritet">Ingen personlig data samlas in</a> · <a href="https://github.com/NiklasLeide/leides-ljuvliga-lilla-val26" target="_blank" rel="noopener noreferrer">Öppen källkod på GitHub</a> · © 2026 Niklas Leide
   </footer>
 
-  <script src="sager-vs-gor.js"></script>
+  <script src="hitta-parti.js"></script>
 
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js"

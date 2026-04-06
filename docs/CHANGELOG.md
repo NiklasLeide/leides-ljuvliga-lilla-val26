@@ -6,6 +6,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 ---
 
 [2026-04-05] refactor: area analysis — convert prose strings to bullet arrays (2–4 bullets per area) in positions.json; render as <ul>/<li> in spectrum + cluster views; update CSS for list indent
+[2026-04-06] feat: new view "Hitta ditt parti" (hitta-parti.html + hitta-parti.js) — weighted voting advice app with 3-step left nav (area checkboxes, weight sliders, topic sliders), real-time party match bars (uses positions.json), per-area detail panel with direction indicators; tab added to all 6 pages
+[2026-04-06] feat: Sprint 3.2 polish — OG meta tags + improved titles on all 5 pages; V26 SVG favicon; mobile: tab nav scrollable, GAL-TAN year toggles horizontal, gt-svg overflow:visible; remove placeholder-data badge
 [2026-04-06] docs: reprioritise — pause Sprint 7 (polling), activate Sprint 3.2 (polish/SEO/launch)
 [2026-04-06] docs: close Sprint 6 (GAL-TAN) in ROADMAP + PROJECT_STATUS; open Sprint 7 (polling trends); update What's Working Now and metrics
 [2026-04-05] fix: remove active highlight from GAL-TAN party nav buttons — detail panel is sufficient feedback
