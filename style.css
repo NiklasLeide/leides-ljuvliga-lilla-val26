@@ -794,8 +794,54 @@ header p {
   color: var(--ink); margin-bottom: var(--space-lg);
 }
 
-/* Shared slider */
-.hp-slider { width: 100%; accent-color: var(--ink); cursor: pointer; display: block; margin-bottom: 2px; }
+/* Shared slider — neutral track, no left-fill */
+.hp-slider {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 2px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 20px;
+}
+.hp-slider:focus { outline: none; }
+
+/* Track */
+.hp-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  background: var(--track);
+  border-radius: 1px;
+}
+.hp-slider::-moz-range-track {
+  height: 2px;
+  background: var(--track);
+  border-radius: 1px;
+  border: none;
+}
+/* Remove Firefox's left-fill */
+.hp-slider::-moz-range-progress { background: var(--track); height: 2px; }
+
+/* Thumb */
+.hp-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 2.5px solid var(--bg);
+  box-shadow: 0 0 0 1.5px var(--ink);
+  margin-top: -7px;
+  cursor: pointer;
+}
+.hp-slider::-moz-range-thumb {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 2.5px solid var(--bg);
+  box-shadow: 0 0 0 1.5px var(--ink);
+  cursor: pointer;
+}
+.hp-slider:focus::-webkit-slider-thumb { box-shadow: 0 0 0 1.5px var(--ink), 0 0 0 4px rgba(28,28,28,0.12); }
 .hp-scale-labels {
   display: flex; justify-content: space-between;
   font-size: 0.66rem; color: var(--muted);

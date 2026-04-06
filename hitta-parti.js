@@ -127,20 +127,14 @@ function renderStep2(el) {
     valEl.className = 'hp-weight-val';
     valEl.textContent = weightLabel(areaWeights[area.id] || 5);
 
-    const dlId   = 'dlw-' + area.id;
     const slider = item.appendChild(document.createElement('input'));
     slider.type = 'range'; slider.min = 1; slider.max = 10; slider.step = 1;
     slider.value = areaWeights[area.id] || 5;
     slider.className = 'hp-slider';
-    slider.setAttribute('list', dlId);
     slider.addEventListener('input', () => {
       areaWeights[area.id] = Number(slider.value);
       valEl.textContent = weightLabel(Number(slider.value));
     });
-
-    const dl = item.appendChild(document.createElement('datalist'));
-    dl.id = dlId;
-    [1, 3, 5, 7, 10].forEach(v => { const o = document.createElement('option'); o.value = v; dl.appendChild(o); });
 
     const scl = item.appendChild(div('hp-weight-scale'));
     scl.innerHTML = '<span>Låg</span><span>Hög</span>';
@@ -156,7 +150,15 @@ function renderStep2(el) {
     topicAnswers = {};
     wizardTopics = [];
     posData.areas.filter(a => activeAreas.has(a.id)).forEach(area => {
-      area.topics.forEach(topic => wizardTopics.push({ topic, area }));
+      const keyIds = area.keyTopics || [];
+      const keySet = new Set(keyIds);
+      // Preserve order defined in keyTopics
+      keyIds.forEach(id => {
+        const t = area.topics.find(t => t.id === id);
+        if (t) wizardTopics.push({ topic: t, area });
+      });
+      // Fallback: if no keyTopics defined, include all topics
+      if (!keyIds.length) area.topics.forEach(topic => wizardTopics.push({ topic, area }));
     });
     qIndex = 0; step = 3; render();
   });
@@ -180,22 +182,16 @@ function renderStep3(el) {
   const ttl = wrap.appendChild(document.createElement('h2'));
   ttl.className = 'hp-question-title'; ttl.textContent = topic.name;
 
-  const dlId   = 'dlq-' + topic.id;
   const slider = wrap.appendChild(document.createElement('input'));
   slider.type = 'range'; slider.min = 0; slider.max = 100; slider.step = 10;
   slider.value = topicAnswers[topic.id] ?? 50;
   slider.className = 'hp-slider';
-  slider.setAttribute('list', dlId);
   let touched = topic.id in topicAnswers && topicAnswers[topic.id] !== null;
   slider.addEventListener('input', () => {
     touched = true;
     topicAnswers[topic.id] = Number(slider.value);
     renderRight();
   });
-
-  const dl = wrap.appendChild(document.createElement('datalist'));
-  dl.id = dlId;
-  for (let v = 0; v <= 100; v += 10) { const o = document.createElement('option'); o.value = v; dl.appendChild(o); }
 
   const scl = wrap.appendChild(div('hp-scale-labels'));
   scl.innerHTML = `<span>${esc(topic.scale.low)}</span><span>${esc(topic.scale.high)}</span>`;

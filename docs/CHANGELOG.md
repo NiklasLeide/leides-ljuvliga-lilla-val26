@@ -6,6 +6,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 ---
 
 [2026-04-05] refactor: area analysis — convert prose strings to bullet arrays (2–4 bullets per area) in positions.json; render as <ul>/<li> in spectrum + cluster views; update CSS for list indent
+[2026-04-06] fix: hitta-parti — neutral slider track (no fill); key topics only (3 per area from positions.json keyTopics); remove datalist elements
+[2026-04-06] data: positions.json — add keyTopics array to each area (placeholder: 3 most party-differentiating topics per area)
 [2026-04-06] feat: hitta-parti — full redesign as wizard flow; step indicator + progress bar in left nav; one question per screen with area chip, counter, serif title, step=10 slider; skip excludes from calc; live results in right column (mobile: collapsible); done screen with transparency note + reset; mobile results toggle via left nav button
 [2026-04-06] feat: new view "Hitta ditt parti" (hitta-parti.html + hitta-parti.js) — weighted voting advice app with 3-step left nav (area checkboxes, weight sliders, topic sliders), real-time party match bars (uses positions.json), per-area detail panel with direction indicators; tab added to all 6 pages
 [2026-04-06] feat: Sprint 3.2 polish — OG meta tags + improved titles on all 5 pages; V26 SVG favicon; mobile: tab nav scrollable, GAL-TAN year toggles horizontal, gt-svg overflow:visible; remove placeholder-data badge
