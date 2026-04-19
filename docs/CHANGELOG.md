@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-19] chore: migrate to project@niklas-marketplace plugin — .claude/settings.json declares plugin, delete per-project .claude/commands/ (now provided by plugin v1.0.2)
 [2026-04-05] refactor: area analysis — convert prose strings to bullet arrays (2–4 bullets per area) in positions.json; render as <ul>/<li> in spectrum + cluster views; update CSS for list indent
 [2026-04-06] data: positions.json — update keyTopics to final selections (ekonomi: eu-ekonomi/infrastruktur; migration: arbetskraftsinvandring; forsvar: nato/forsvarsindustri; vard: aldreomsorg; demokrati: grundlag)
 [2026-04-06] docs: metod.html — update #fragor with new intro text + area/topic dl list; update score table markers; add #matchning section explaining weighted calculation
