@@ -11,6 +11,7 @@
 | #   | Task                                          | Status  | Notes |
 |-----|-----------------------------------------------|---------|-------|
 | 3.2 | Polish, SEO, public launch before Sept 2026   | 🔄 In Progress | Scope TBD |
+| 8.1 | Diskurs view — fas 1 pilot                    | ✅ Done | diskurs.html + diskurs.js; SD/S/V on rättsväsende + migration; floating signifier comparison panel |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
@@ -86,7 +87,8 @@
 Open `index.html` directly in browser — no server needed.
 
 - Site live at https://val26.leide.se
-- **5 vyer:** Spektrum, Kluster, Säger vs gör, GAL-TAN, Om metoden
+- **6 vyer:** Spektrum, Kluster, Säger vs gör, GAL-TAN, Diskurs, Om metoden
+- **Diskurs-vy** (diskurs.html) — diskursprofiler per parti, nyckelbegrepp med laddningsanalys, jämförelse av flytande signifikanter (trygghet/ansvar/gemenskap) mellan SD, S, V; fas 1 pilot täcker rättsväsende + migration
 - **7 politikområden:** skola (6 ämnen), ekonomi (7), migration (5), försvar (6), klimat (6), vård (6), demokrati (6) — totalt 42 ämnen, 336 partipositioner
 - **GAL-TAN-vy** (gal-tan.html) — SVG scatter plot med rörelsestigar, klicka parti för att dimma övriga + visa detaljpanel med CHES-data
 - **Säger vs gör-vy** (sager-vs-gor.html) — jämför partiernas löften med riksdagsvoteringar, per fråga och per parti
