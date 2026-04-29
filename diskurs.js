@@ -9,7 +9,7 @@ let discourseData = null;
 let allParties    = null;     // from positions.json
 let selectedParty = null;
 let selectedArea  = null;
-let signifierLookup = {};     // term -> floating_signifier data
+let signifierLookup = {};     // term -> flytande_signifikanter data
 
 /* ===================================================
    Bootstrap
@@ -24,7 +24,7 @@ async function init() {
     if (!pRes.ok) throw new Error('positions.json ' + pRes.status);
     discourseData = await dRes.json();
     allParties    = (await pRes.json()).parties;
-    signifierLookup = discourseData.floating_signifiers || {};
+    signifierLookup = discourseData.flytande_signifikanter || {};
     renderLeftNav();
     renderCenter();
     renderRight(null);
@@ -48,7 +48,7 @@ function renderLeftNav() {
 
   const grid = mkEl('div', 'disk-party-grid');
   Object.entries(allParties).forEach(([abbr, party]) => {
-    const hasData = !!discourseData.parties[abbr];
+    const hasData = !!discourseData.partier[abbr];
     const cls = 'disk-party-circle' +
                 (hasData ? '' : ' disk-party-inactive') +
                 (selectedParty === abbr ? ' disk-party-selected' : '');
@@ -70,8 +70,8 @@ function renderLeftNav() {
   });
   nav.appendChild(grid);
 
-  if (selectedParty && discourseData.parties[selectedParty]) {
-    const areas = Object.keys(discourseData.parties[selectedParty].by_area || {});
+  if (selectedParty && discourseData.partier[selectedParty]) {
+    const areas = Object.keys(discourseData.partier[selectedParty].per_omrade || {});
     if (areas.length > 0) {
       nav.appendChild(mkDivider());
       const areaLabel = mkEl('div', 'gt-section-label');
@@ -109,14 +109,14 @@ function renderCenter() {
   }
 
   const partyInfo = allParties[selectedParty];
-  const partyData = discourseData.parties[selectedParty];
+  const partyData = discourseData.partier[selectedParty];
   let html = renderProfileSection(partyInfo, partyData);
 
   if (selectedArea) {
-    const areaData = partyData.by_area?.[selectedArea];
+    const areaData = partyData.per_omrade?.[selectedArea];
     if (areaData) html += renderAreaCard(selectedArea, areaData);
   } else {
-    Object.entries(partyData.by_area || {}).forEach(([areaId, areaData]) => {
+    Object.entries(partyData.per_omrade || {}).forEach(([areaId, areaData]) => {
       html += renderAreaCard(areaId, areaData);
     });
   }
@@ -132,14 +132,14 @@ function renderCenter() {
    Section 1 — Party discourse profile
    =================================================== */
 function renderProfileSection(partyInfo, partyData) {
-  const p = partyData.discourse_profile;
-  const cong = p.galtan_congruence;
-  const levelClass = { hög: 'disk-cong-hog', delvis: 'disk-cong-delvis', låg: 'disk-cong-lag' }[cong.assessment] || '';
+  const p = partyData.diskursprofil;
+  const cong = p.galtan_kongruens;
+  const levelClass = { hög: 'disk-cong-hog', delvis: 'disk-cong-delvis', låg: 'disk-cong-lag' }[cong.bedomning] || '';
 
-  const pillsHtml = (p.nodal_points || [])
+  const pillsHtml = (p.nodalpunkter || [])
     .map(t => `<span class="disk-pill">${esc(t)}</span>`).join('');
 
-  const strategiesHtml = (p.rhetorical_strategies || [])
+  const strategiesHtml = (p.retoriska_strategier || [])
     .map(s => `<li>${esc(s)}</li>`).join('');
 
   return `
@@ -150,7 +150,7 @@ function renderProfileSection(partyInfo, partyData) {
       </div>
       <div class="disk-field">
         <div class="disk-field-label">Övergripande inramning</div>
-        <p class="disk-field-text">${esc(p.master_frame)}</p>
+        <p class="disk-field-text">${esc(p.overordnad_inramning)}</p>
       </div>
       <div class="disk-field">
         <div class="disk-field-label">Nyckelbegrepp</div>
@@ -163,8 +163,8 @@ function renderProfileSection(partyInfo, partyData) {
       <div class="disk-field">
         <div class="disk-field-label">GAL-TAN-kongruens</div>
         <div class="disk-cong-row">
-          <span class="disk-cong-badge ${levelClass}">${esc(cong.assessment)}</span>
-          <span class="disk-cong-text">${esc(cong.explanation)}</span>
+          <span class="disk-cong-badge ${levelClass}">${esc(cong.bedomning)}</span>
+          <span class="disk-cong-text">${esc(cong.forklaring)}</span>
         </div>
       </div>
     </div>`;
@@ -176,7 +176,7 @@ function renderProfileSection(partyInfo, partyData) {
 function renderAreaCard(areaId, areaData) {
   const areaLabel = AREA_LABELS[areaId] || areaId;
 
-  const sigsHtml = (areaData.key_signifiers || []).map(sig => {
+  const sigsHtml = (areaData.nyckelbegrepp || []).map(sig => {
     const clickable = !!signifierLookup[sig.term];
     const termHtml = clickable
       ? `<span class="disk-sig disk-sig-clickable" data-term="${esc(sig.term)}" title="Klicka för att jämföra mellan partier">${esc(sig.term)} <span class="disk-sig-icon">⇄</span></span>`
@@ -184,9 +184,9 @@ function renderAreaCard(areaId, areaData) {
     return `
       <div class="disk-sig-row">
         <div class="disk-sig-top">${termHtml}</div>
-        <p class="disk-sig-meaning">${esc(sig.meaning)}</p>
-        ${sig.implicit_assumption
-          ? `<p class="disk-sig-assumption"><em>Antagande:</em> ${esc(sig.implicit_assumption)}</p>`
+        <p class="disk-sig-meaning">${esc(sig.innebord)}</p>
+        ${sig.underforstadd_premiss
+          ? `<p class="disk-sig-assumption"><em>Antagande:</em> ${esc(sig.underforstadd_premiss)}</p>`
           : ''}
       </div>`;
   }).join('');
@@ -196,7 +196,7 @@ function renderAreaCard(areaId, areaData) {
       <div class="disk-area-header">${esc(areaLabel)}</div>
       <div class="disk-field">
         <div class="disk-field-label">Inramning</div>
-        <p class="disk-field-text">${esc(areaData.framing)}</p>
+        <p class="disk-field-text">${esc(areaData.inramning)}</p>
       </div>
       <div class="disk-field">
         <div class="disk-field-label">Nyckelbegrepp</div>
@@ -204,10 +204,10 @@ function renderAreaCard(areaId, areaData) {
       </div>
       <div class="disk-field">
         <div class="disk-field-label">GAL-TAN-kongruens</div>
-        <p class="disk-field-text disk-text-sm">${esc(areaData.galtan_congruence)}</p>
+        <p class="disk-field-text disk-text-sm">${esc(areaData.galtan_kongruens)}</p>
       </div>
-      ${areaData.contrast_with
-        ? `<div class="disk-field"><div class="disk-field-label">Kontrast</div><p class="disk-field-text disk-text-sm">${esc(areaData.contrast_with)}</p></div>`
+      ${areaData.kontrast_med
+        ? `<div class="disk-field"><div class="disk-field-label">Kontrast</div><p class="disk-field-text disk-text-sm">${esc(areaData.kontrast_med)}</p></div>`
         : ''}
     </div>`;
 }
@@ -234,22 +234,22 @@ function renderRight(term) {
   }
 
   const sigData = signifierLookup[term];
-  const byParty = sigData.by_party || {};
+  const byParty = sigData.per_parti || {};
 
   const rowsHtml = Object.entries(byParty).map(([abbr, pd]) => {
     const pi = allParties[abbr] || { color: '#ccc', name: abbr };
-    const galCls = pd.galtan_alignment
-      ? 'disk-galtan-tag disk-galtan-' + pd.galtan_alignment.toLowerCase().replace(/[^a-z]/g, '')
+    const galCls = pd.galtan_matchning
+      ? 'disk-galtan-tag disk-galtan-' + pd.galtan_matchning.toLowerCase().replace(/[^a-z]/g, '')
       : '';
     return `
       <div class="disk-comp-row">
         <div class="disk-comp-party-hdr">
           <span class="disk-comp-dot" style="background:${esc(pi.color)}"></span>
           <span class="disk-comp-pname">${esc(pi.name)}</span>
-          ${pd.galtan_alignment ? `<span class="${galCls}">${esc(pd.galtan_alignment)}</span>` : ''}
+          ${pd.galtan_matchning ? `<span class="${galCls}">${esc(pd.galtan_matchning)}</span>` : ''}
         </div>
-        <p class="disk-comp-meaning">${esc(pd.meaning)}</p>
-        ${pd.example ? `<p class="disk-comp-example">"${esc(pd.example)}"</p>` : ''}
+        <p class="disk-comp-meaning">${esc(pd.innebord)}</p>
+        ${pd.exempel ? `<p class="disk-comp-example">"${esc(pd.exempel)}"</p>` : ''}
       </div>`;
   }).join('');
 
@@ -258,10 +258,10 @@ function renderRight(term) {
       <span class="panel-name">"${esc(term)}"</span>
       <button class="panel-close" aria-label="Stäng jämförelse">×</button>
     </div>
-    <p class="disk-comp-desc">${esc(sigData.description)}</p>
+    <p class="disk-comp-desc">${esc(sigData.beskrivning)}</p>
     <div class="disk-comp-rows">${rowsHtml}</div>
-    ${sigData.analytical_note
-      ? `<div class="disk-comp-note"><div class="disk-field-label">Analytisk not</div><p class="disk-field-text disk-text-sm">${esc(sigData.analytical_note)}</p></div>`
+    ${sigData.analytisk_not
+      ? `<div class="disk-comp-note"><div class="disk-field-label">Analytisk not</div><p class="disk-field-text disk-text-sm">${esc(sigData.analytisk_not)}</p></div>`
       : ''}`;
 
   panel.style.display = 'block';

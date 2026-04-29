@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-04-29] fix: diskurs.js — update all field names to match Swedish keys in discourse.json (partier, diskursprofil, per_omrade, flytande_signifikanter, etc.)
 [2026-04-29] data: discourse.json — expand key_signifiers to cover ansvar and gemenskap, enabling all three floating signifier comparison panels
 [2026-04-29] feat: new view "Diskurs" (diskurs.html + diskurs.js) — party discourse profiles, area-specific key signifiers, floating-signifier comparison panel; fas 1 pilot covers SD, S, V on rättsväsende + migration
 [2026-04-29] feat: add Diskurs tab to all page navs (index, kluster, sager-vs-gor, gal-tan, hitta-parti, metod)
