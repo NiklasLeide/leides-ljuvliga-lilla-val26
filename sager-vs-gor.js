@@ -211,6 +211,8 @@ function setupTabNav() {
     ?.addEventListener('click', () => { location.href = 'kluster.html'; });
   document.querySelector('.tab[data-view="gal-tan"]')
     ?.addEventListener('click', () => { location.href = 'gal-tan.html'; });
+  document.querySelector('.tab[data-view="diskurs"]')
+    ?.addEventListener('click', () => { location.href = 'diskurs.html'; });
   document.querySelector('.tab[data-view="hitta-parti"]')
     ?.addEventListener('click', () => { location.href = 'hitta-parti.html'; });
   document.querySelector('.tab[data-view="metod"]')

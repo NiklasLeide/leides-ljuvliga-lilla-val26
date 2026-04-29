@@ -310,6 +310,7 @@ function setupTabs() {
   document.querySelector('.tab[data-view="cluster"]')     ?.addEventListener('click', () => { location.href = 'kluster.html'; });
   document.querySelector('.tab[data-view="sager-vs-gor"]')?.addEventListener('click', () => { location.href = 'sager-vs-gor.html'; });
   document.querySelector('.tab[data-view="gal-tan"]')     ?.addEventListener('click', () => { location.href = 'gal-tan.html'; });
+  document.querySelector('.tab[data-view="diskurs"]')     ?.addEventListener('click', () => { location.href = 'diskurs.html'; });
   document.querySelector('.tab[data-view="metod"]')       ?.addEventListener('click', () => { location.href = 'metod.html'; });
 }
 

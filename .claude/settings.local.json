@@ -23,7 +23,10 @@
       "Bash(python3 -c ':*)",
       "Bash(node:*)",
       "Bash(python:*)",
-      "Bash(ls *.html *.js data/ docs/)"
+      "Bash(ls *.html *.js data/ docs/)",
+      "mcp__plugin_project_github__list_pull_requests",
+      "mcp__plugin_project_context7__resolve-library-id",
+      "mcp__plugin_project_context7__query-docs"
     ]
   }
 }
