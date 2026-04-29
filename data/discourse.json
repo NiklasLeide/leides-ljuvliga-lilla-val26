@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "methodology": "Discourse analysis applying framing analysis (Entman), discourse theory (Laclau/Mouffe), and DHA (Wodak/Krzyżanowski)",
-    "sources": "Party programs, riksdag motions 2024/25–2025/26, party websites, parliamentary debate protocols",
-    "academic_references": [
-      "Holt & Bolin (2025) – Resilient populism? SD discourse in parliament 2010–2024",
+    "metodik": "Diskursanalys baserad på inramningsanalys (Entman), diskursteori (Laclau/Mouffe) och diskurshistorisk ansats (Wodak/Krzyżanowski)",
+    "kallor": "Partiprogram, riksdagsmotioner 2024/25–2025/26, partiwebbplatser, riksdagsprotokoll",
+    "akademiska_referenser": [
+      "Holt & Bolin (2025) – Resilient populism? SD:s diskurs i riksdagen 2010–2024",
       "Elgenius & Rydgren (2026) – Who are the People and what does Home mean?",
       "Krzyżanowski & Ekström (2023/2025) – Saying Criminality, meaning Immigration",
       "Schclarek Mulinari (2025) – Sweden's race to the bottom",
@@ -11,429 +11,233 @@
       "Gustafsson (2024) – Vad gör språket i politiken?",
       "Fredén, Johansson & Saynova (2024) – Word embeddings on ideology from Swedish parliamentarians"
     ],
-    "scope": "Fas 1 pilot: SD, S, V on rättsväsende and migration",
-    "last_updated": "2026-04-29",
+    "omfattning": "Fas 1-pilot: SD, S, V om rättsväsende och migration",
+    "senast_uppdaterad": "2026-04-29",
     "version": "0.1.0"
   },
-  "floating_signifiers": {
+  "flytande_signifikanter": {
     "trygghet": {
-      "description": "Central contested concept in Swedish politics — same word, fundamentally different meaning per party",
-      "by_party": {
+      "beskrivning": "Centralt omstritt begrepp i svensk politik — samma ord, fundamentalt olika innebörd per parti",
+      "per_parti": {
         "SD": {
-          "meaning": "Physical safety from crime + cultural/ethnic belonging",
-          "example": "Återskapa tryggheten (through punishment and reduced immigration)",
-          "galtan_alignment": "TAN"
+          "innebord": "Fysisk säkerhet från brott + kulturell/etnisk hemhörighet",
+          "exempel": "Återskapa tryggheten (genom straff och minskad invandring)",
+          "galtan_matchning": "TAN"
         },
         "S": {
-          "meaning": "Hybrid — shifting from social welfare security toward physical safety from crime",
-          "example": "Ett tryggare Sverige (identical campaign slogan to M)",
-          "galtan_alignment": "Sliding toward TAN"
+          "innebord": "Hybrid — glider från social välfärdstrygghet mot fysisk säkerhet från brott",
+          "exempel": "Ett tryggare Sverige (identisk kampanjslogan som M)",
+          "galtan_matchning": "Glidning mot TAN"
         },
         "V": {
-          "meaning": "Social and economic security as crime prevention",
-          "example": "Trygghetszoner (resource investment, not repression) vs government's visitationszoner",
-          "galtan_alignment": "GAL"
+          "innebord": "Social och ekonomisk trygghet som brottsförebyggande",
+          "exempel": "Trygghetszoner (resurstillskott, inte repression) vs regeringens visitationszoner",
+          "galtan_matchning": "GAL"
         }
       },
-      "analytical_note": "The concept has been captured. The original social-democratic definition (trygghet = work + housing + welfare) has eroded. SD and M have successfully redistributed the concept's meaning toward fear of crime. S has partially followed. V defends the original definition from an increasingly marginal position. Research reference: Tham (Dagens Arena) documents this shift in riksdag motions over time."
+      "analytisk_kommentar": "Begreppet har kapats. Den ursprungliga socialdemokratiska definitionen (trygghet = arbete + bostad + välfärd) har eroderats. SD och M har lyckats omfördela begreppets innebörd mot brottsrädsla. S har delvis följt med. V försvarar den gamla definitionen från en alltmer marginell position. Forskningsreferens: Tham (Dagens Arena) dokumenterar denna förskjutning i riksdagsmotioner över tid."
     },
     "ansvar": {
-      "description": "Responsibility — who bears it and for what differs fundamentally between parties",
-      "by_party": {
+      "beskrivning": "Ansvar — vem som bär det och för vad skiljer sig fundamentalt mellan partierna",
+      "per_parti": {
         "SD": {
-          "meaning": "Individual responsibility to assimilate + previous governments' culpability for 'ansvarslös invandringspolitik'",
-          "example": "Ansvarsfull migrationspolitik = restrictive migration policy",
-          "galtan_alignment": "TAN"
+          "innebord": "Individens ansvar att anpassa sig + tidigare regeringars skuld för 'ansvarslös invandringspolitik'",
+          "exempel": "Ansvarsfull migrationspolitik = restriktiv migrationspolitik",
+          "galtan_matchning": "TAN"
         },
         "S": {
-          "meaning": "Society's responsibility to intervene + individual's responsibility to integrate",
-          "example": "Gemensamt ansvar / höga förväntningar på var och en",
-          "galtan_alignment": "Center — dual framing"
+          "innebord": "Samhällets ansvar att gripa in + individens ansvar att integrera sig",
+          "exempel": "Gemensamt ansvar / höga förväntningar på var och en",
+          "galtan_matchning": "Mittfåra — dubbelinramning"
         },
         "V": {
-          "meaning": "State's responsibility for equality + global responsibility for refugees",
-          "example": "EU-länder måste ta sitt ansvar (for refugee reception)",
-          "galtan_alignment": "GAL"
+          "innebord": "Statens ansvar för jämlikhet + globalt ansvar för flyktingar",
+          "exempel": "EU-länder måste ta sitt ansvar (för flyktingmottagande)",
+          "galtan_matchning": "GAL"
         }
       },
-      "analytical_note": "SD uses 'ansvar' primarily as accusation (others were irresponsible) and as demand (immigrants must take responsibility). S uses it bidirectionally — society and individual both carry responsibility. V directs it upward — toward the state, toward wealthy nations, toward structural power. The word is identical; the direction of obligation is opposite."
+      "analytisk_kommentar": "SD använder 'ansvar' primärt som anklagelse (andra var ansvarslösa) och som krav (invandrare måste ta ansvar). S använder det dubbelriktat — samhälle och individ bär båda ansvar. V riktar det uppåt — mot staten, mot rika nationer, mot strukturell makt. Ordet är identiskt; riktningen på skyldigheten är motsatt."
     },
     "gemenskap": {
-      "description": "Community/belonging — the basis for social cohesion differs radically",
-      "by_party": {
+      "beskrivning": "Gemenskap/tillhörighet — grunden för social sammanhållning skiljer sig radikalt",
+      "per_parti": {
         "SD": {
-          "meaning": "Ethno-cultural community based on shared culture, history, language, and national identity",
-          "example": "Samhörighet med det samhälle vi lever i (via nationalstaten as prerequisite)",
-          "galtan_alignment": "TAN"
+          "innebord": "Etnokulturell — baserad på delad kultur, historia, språk och nationell identitet",
+          "exempel": "Samhörighet med det samhälle vi lever i (via nationalstaten som förutsättning)",
+          "galtan_matchning": "TAN"
         },
         "S": {
-          "meaning": "Civic community based on participation, integration, and shared institutions",
-          "example": "Samhällsgemenskap (strengthened through demands + resources)",
-          "galtan_alignment": "Center — civic nationalist undertone"
+          "innebord": "Medborgerlig — baserad på deltagande, integration och delade institutioner",
+          "exempel": "Samhällsgemenskap (stärks genom krav + resurser)",
+          "galtan_matchning": "Mittfåra — medborgerlig nationalism"
         },
         "V": {
-          "meaning": "Class-based solidarity across ethnic and national boundaries",
-          "example": "Solidaritet och gemenskap (against racism and nationalism)",
-          "galtan_alignment": "GAL"
+          "innebord": "Klassbaserad solidaritet över etniska och nationella gränser",
+          "exempel": "Solidaritet och gemenskap (mot rasism och nationalism)",
+          "galtan_matchning": "GAL"
         }
       },
-      "analytical_note": "SD's gemenskap requires cultural homogeneity — the nation-state is the necessary container. S's samhällsgemenskap is formally civic but has shifted toward demanding cultural adaptation. V's gemenskap is built on class solidarity and is explicitly anti-nationalist. The concept maps directly onto the GAL-TAN axis: GAL = universalist solidarity, TAN = particularist belonging."
+      "analytisk_kommentar": "SD:s gemenskap kräver kulturell homogenitet — nationalstaten är den nödvändiga ramen. S:s samhällsgemenskap är formellt medborgerlig men har glidit mot att kräva kulturell anpassning. V:s gemenskap bygger på klasssolidaritet och är explicit antinationalistisk. Begreppet speglar GAL-TAN-axeln direkt: GAL = universalistisk solidaritet, TAN = partikularistisk tillhörighet."
     }
   },
-  "parties": {
+  "partier": {
     "SD": {
-      "discourse_profile": {
-        "master_frame": "Sweden is in decline due to mass immigration and failed left-liberal policies; restoration requires cultural homogeneity, strict law enforcement, and return migration",
-        "nodal_points": ["folkhem", "svenskhet", "trygghet", "återvandring", "brottsoffer"],
-        "rhetorical_strategies": [
-          "Nostalgia and golden-age rhetoric (Sverige ska bli bra igen)",
-          "Folk-vs-elite antagonism (populist discursive structure)",
-          "Securitization of migration and cultural diversity",
-          "Euphemization of exclusion (återvandring as 'human solution')",
-          "Affective contrast and ridiculing opponents (saft, bullar och straffrabatter)"
+      "diskursprofil": {
+        "overordnad_inramning": "Sverige är i förfall på grund av massinvandring och misslyckad vänsterliberal politik; återupprättelse kräver kulturell homogenitet, strikt brottsbekämpning och återvandring",
+        "nodalpunkter": ["folkhem", "svenskhet", "trygghet", "återvandring", "brottsoffer"],
+        "retoriska_strategier": [
+          "Nostalgi och guldåldersretorik (Sverige ska bli bra igen)",
+          "Folk-mot-elit-antagonism (populistisk diskursiv struktur)",
+          "Säkerhetisering av migration och kulturell mångfald",
+          "Eufemisering av exkludering (återvandring som human lösning)",
+          "Affektiv kontrast och förlöjligande av motståndare (saft, bullar och straffrabatter)"
         ],
-        "galtan_congruence": {
-          "assessment": "hög",
-          "explanation": "Discourse is consistently TAN across all dimensions: authoritarian (harsh punishment, surveillance, indefinite detention), nationalist (crime and social problems attributed to immigration), traditionalist (victim's moral restitution over rehabilitation). Language matches ideological position closely."
+        "galtan_kongruens": {
+          "bedomning": "hög",
+          "forklaring": "Diskursen är konsekvent TAN i alla dimensioner: auktoritär (hårda straff, övervakning, förvaring på obestämd tid), nationalistisk (brott och sociala problem tillskrivs invandring), traditionalistisk (brottsoffrets moraliska upprättelse framför rehabilitering). Språkbruket matchar den ideologiska positionen."
         }
       },
-      "by_area": {
+      "per_omrade": {
         "rattsvasende": {
-          "framing": "Crime is a culturally imported problem — a direct consequence of mass immigration. The causal chain is: immigration → gang culture → insecurity. The solution is punishment, deportation, and immigration reduction, not social reform.",
-          "key_signifiers": [
-            {
-              "term": "brottsoffer",
-              "meaning": "Moral legitimation of repressive policy — the victim's perspective is framed as incompatible with rehabilitation",
-              "implicit_assumption": "Rehabilitation and victim justice are zero-sum; prioritizing one means neglecting the other"
-            },
-            {
-              "term": "kännbara straff",
-              "meaning": "Punishment that the offender genuinely feels — contrasted with what is framed as a lenient system",
-              "implicit_assumption": "The current system is too soft; leniency is the cause of continued crime"
-            },
-            {
-              "term": "vanliga människor",
-              "meaning": "Law-abiding majority separated from criminals/illegals — creates an in-group/out-group binary",
-              "implicit_assumption": "There is a clear line between 'ordinary people' and criminals; the state should protect the former from the latter"
-            },
-            {
-              "term": "förstörda områden",
-              "meaning": "Neighborhoods described as beyond repair due to 'socialist and liberal policies'",
-              "implicit_assumption": "Some areas are irredeemable and must be demolished — securitization at its most extreme"
-            }
+          "inramning": "Kriminalitet är ett kulturellt importproblem — en direkt konsekvens av massinvandring. Orsakskedjan är: invandring → gängkultur → otrygghet. Lösningen är straff, utvisning och minskad invandring, inte sociala reformer.",
+          "nyckelbegrepp": [
+            {"term": "brottsoffer", "innebord": "Moralisk legitimering av repressiv politik — brottsofferperspektivet framställs som oförenligt med rehabilitering", "underforstadd_premiss": "Rehabilitering och brottsofferrättvisa är ett nollsummespel"},
+            {"term": "kännbara straff", "innebord": "Straff som gärningspersonen verkligen känner av — kontrasteras mot vad som framställs som ett mesigt system", "underforstadd_premiss": "Det nuvarande systemet är för mjukt; mildhet är orsaken till fortsatt brottslighet"},
+            {"term": "vanliga människor", "innebord": "Laglydig majoritet som skiljs från kriminella/illegala — skapar en ingrupp/utgrupp-binär", "underforstadd_premiss": "Det finns en tydlig gräns mellan vanliga människor och brottslingar"},
+            {"term": "förstörda områden", "innebord": "Stadsdelar beskrivna som bortom räddning på grund av socialistisk och borgerlig politik", "underforstadd_premiss": "Vissa områden är oåterkalleliga och måste rivas — säkerhetisering i sin mest extrema form"}
           ],
-          "rhetorical_strategies": [
-            {
-              "strategy": "Golden-age nostalgia",
-              "example": "Sverige ska bli bra igen",
-              "source": "sd.se/vad-vi-vill"
-            },
-            {
-              "strategy": "Affective contrast / ridiculing opponents",
-              "example": "Brottslingar ska få kännbara straff – inte saft, bullar och straffrabatter",
-              "source": "sd.se/vad-vi-vill"
-            },
-            {
-              "strategy": "Love-protection framing",
-              "example": "Det nya rättsväsendet är hårt mot de hårda, men inte därför att man känner hat utan därför att man älskar det som man skyddar",
-              "source": "Riksdagsprotokoll 2025/26:45 (Henrik Vinge, SD)"
-            },
-            {
-              "strategy": "Securitization of neighborhoods",
-              "example": "Områden så förstörda av socialistisk och borgerlig politik att de helt enkelt måste rivas",
-              "source": "sd.se/vad-vi-vill/brott-och-straff"
-            }
+          "retoriska_strategier": [
+            {"strategi": "Guldåldersnostalgi", "exempel": "Sverige ska bli bra igen", "kalla": "sd.se/vad-vi-vill"},
+            {"strategi": "Affektiv kontrast / förlöjligande", "exempel": "Brottslingar ska få kännbara straff – inte saft, bullar och straffrabatter", "kalla": "sd.se/vad-vi-vill"},
+            {"strategi": "Kärlek-skydd-inramning", "exempel": "Det nya rättsväsendet är hårt mot de hårda, men inte därför att man känner hat utan därför att man älskar det som man skyddar", "kalla": "Riksdagsprotokoll 2025/26:45 (Henrik Vinge, SD)"},
+            {"strategi": "Säkerhetisering av bostadsområden", "exempel": "Områden så förstörda av socialistisk och borgerlig politik att de helt enkelt måste rivas", "kalla": "sd.se/vad-vi-vill/brott-och-straff"}
           ],
-          "galtan_congruence": "High TAN congruence. Authoritarian (surveillance, indefinite detention, reduced civil liberties for suspects), nationalist (links crime causally to immigration), moralist (punishment has intrinsic moral value). Rhetoric matches position.",
-          "contrast_with": "S shares some repressive vocabulary but retains structural causal analysis. V represents the polar opposite — crime as class problem, rehabilitation over punishment."
+          "galtan_kongruens": "Hög TAN-kongruens. Auktoritär, nationalistisk, moralistisk. Retoriken matchar positionen.",
+          "kontrast_med": "S delar viss repressiv vokabulär men behåller strukturell orsaksanalys. V representerar den polära motsatsen."
         },
         "migration": {
-          "framing": "Migration is an existential threat to the nation-state. The nation requires cultural homogeneity for social trust and cohesion. Migration is not framed as an individual rights question but as a question of national survival.",
-          "key_signifiers": [
-            {
-              "term": "återvandring",
-              "meaning": "SD's most distinctive concept — normalizes the idea that people with residence permits should leave Sweden",
-              "implicit_assumption": "People who have not culturally assimilated do not belong, even if legally present"
-            },
-            {
-              "term": "massinvandring",
-              "meaning": "Consistently used to signal unmanageable volumes — frames all post-1990s immigration as excessive",
-              "implicit_assumption": "Any significant non-European immigration is by definition 'mass immigration'"
-            },
-            {
-              "term": "kulturell belastning",
-              "meaning": "Imported cultures as burden rather than resource",
-              "implicit_assumption": "Cultural diversity weakens rather than enriches society"
-            },
-            {
-              "term": "ta seden dit man kommer",
-              "meaning": "Colloquial proverb signaling one-way assimilation, not mutual integration",
-              "implicit_assumption": "Swedish culture is the norm; newcomers must fully adapt"
-            },
-            {
-              "term": "har inte här att göra",
-              "meaning": "Repeated phrase creating categories of people who by definition do not belong",
-              "implicit_assumption": "Presence in Sweden is a privilege, not a right, revocable for broad categories of non-citizens"
-            }
+          "inramning": "Migration är ett existentiellt hot mot nationalstaten. Nationen kräver kulturell homogenitet för social tillit. Migration ramas inte in som rättighetsfråga utan som överlevnadsfråga.",
+          "nyckelbegrepp": [
+            {"term": "återvandring", "innebord": "SD:s mest distinkta begrepp — normaliserar att personer med uppehållstillstånd ska lämna Sverige", "underforstadd_premiss": "Den som inte kulturellt assimilerats tillhör inte Sverige, även om personen vistas lagligt"},
+            {"term": "massinvandring", "innebord": "Konsekvent använt för att signalera ohanterliga volymer", "underforstadd_premiss": "All betydande icke-europeisk invandring är per definition massinvandring"},
+            {"term": "kulturell belastning", "innebord": "Invandrade kulturer som börda snarare än resurs", "underforstadd_premiss": "Kulturell mångfald försvagar snarare än berikar samhället"},
+            {"term": "ta seden dit man kommer", "innebord": "Talspråkligt ordspråk som signalerar enkelriktad assimilation", "underforstadd_premiss": "Svensk kultur är normen; nyanlända ska anpassa sig fullständigt"},
+            {"term": "har inte här att göra", "innebord": "Upprepad fras som skapar kategorier av människor som per definition inte tillhör", "underforstadd_premiss": "Vistelse i Sverige är ett privilegium, inte en rättighet"}
           ],
-          "rhetorical_strategies": [
-            {
-              "strategy": "Magnet metaphor (deagentification of migrants)",
-              "example": "Sverige har blivit en magnet för världens migranter. Detta på grund av ett generöst bidragssystem.",
-              "source": "sd.se/vad-vi-vill/en-strikt-invandringspolitik"
-            },
-            {
-              "strategy": "Quantification-as-threat",
-              "example": "Migrationskartan visualizes demographic change per municipality to make immigration visually threatening through numbers",
-              "source": "SD Europaparlamentet, Migrationskartan 2.0 (April 2026)"
-            },
-            {
-              "strategy": "Euphemization of exclusion",
-              "example": "Återvandring är en human lösning — persons who have lived in Sweden a long time 'may feel greater belonging to another nation'",
-              "source": "sd.se migrationspolitiskt inriktningsprogram; GP debatt (Nov 2025)"
-            },
-            {
-              "strategy": "Nettominus framing",
-              "example": "Målsättningen ska vara ett volymmässigt nettominus — frames population decrease as policy goal",
-              "source": "Motion 2021/22:224 (Tobias Andersson, SD)"
-            }
+          "retoriska_strategier": [
+            {"strategi": "Magnetmetaforen (avagentifiering)", "exempel": "Sverige har blivit en magnet för världens migranter. Detta på grund av ett generöst bidragssystem.", "kalla": "sd.se/vad-vi-vill/en-strikt-invandringspolitik"},
+            {"strategi": "Kvantifiering som hot", "exempel": "Migrationskartan visualiserar demografisk förändring per kommun", "kalla": "SD Europaparlamentet, Migrationskartan 2.0 (april 2026)"},
+            {"strategi": "Eufemisering av exkludering", "exempel": "Återvandring är en human lösning", "kalla": "sd.se migrationspolitiskt inriktningsprogram; GP debatt (nov 2025)"},
+            {"strategi": "Nettominus-inramning", "exempel": "Målsättningen ska vara ett volymmässigt nettominus", "kalla": "Motion 2021/22:224 (Tobias Andersson, SD)"}
           ],
-          "galtan_congruence": "Strong TAN. Nationalist (ethno-cultural nation-state as ideal), authoritarian (state control over who may reside), assimilationist (one-way cultural adaptation). Fully congruent with GAL-TAN position.",
-          "contrast_with": "S has adopted 'stram' vocabulary but retains asylum rights in principle. V is the polar opposite — migration as human right, open borders as aspiration."
+          "galtan_kongruens": "Stark TAN. Nationalistisk, auktoritär, assimilationistisk. Fullt kongruent med GAL-TAN-position.",
+          "kontrast_med": "S har antagit stram vokabulär men behåller asylrätten i princip. V är den polära motsatsen."
         }
       }
     },
     "S": {
-      "discourse_profile": {
-        "master_frame": "Sweden faces a national crisis requiring the state to 'step forward' — combining traditional social-democratic structural analysis with a new repressive layer on crime and restrictive stance on migration",
-        "nodal_points": ["trygghet", "samhällskontrakt", "samhällsgemenskap", "kliva fram", "reglerad invandring"],
-        "rhetorical_strategies": [
-          "Dual framing (brotten OCH brottens orsaker — but concrete proposals lean repressive)",
-          "Crisis rhetoric (nationell kris, samhällsproblem)",
-          "Technocratic-military metaphor (repression med precision)",
-          "Retroactive self-criticism (2015 as proof that strict policy is needed)",
-          "EU normalization (Sweden should not differ from other EU countries)"
+      "diskursprofil": {
+        "overordnad_inramning": "Sverige står inför en nationell kris som kräver att samhället kliver fram — kombinerar traditionell strukturanalys med nytt repressivt lager i kriminalpolitiken och restriktiv migrationshållning",
+        "nodalpunkter": ["trygghet", "samhällskontrakt", "samhällsgemenskap", "kliva fram", "reglerad invandring"],
+        "retoriska_strategier": [
+          "Dubbelinramning (brotten OCH brottens orsaker — men konkreta förslag lutar repressivt)",
+          "Krishanteringsretorik (nationell kris, samhällsproblem)",
+          "Teknokratisk-militär metaforik (repression med precision)",
+          "Retroaktiv självkritik (2015 som bevis för att stram politik behövs)",
+          "EU-normalisering (Sverige ska inte skilja sig från andra EU-länder)"
         ],
-        "galtan_congruence": {
-          "assessment": "delvis",
-          "explanation": "S occupies a discursive hybrid position. The party has retained GAL elements (structural causes, welfare, equality) but layered TAN vocabulary on top (skärpta straff, stram migrationspolitik, nationell kris). The rhetoric has moved toward Tidöpartierna faster than the formal policy position. The gap between S's self-image (center-left, welfare party) and actual discourse (increasingly repressive, restrictive) is the most analytically interesting finding."
+        "galtan_kongruens": {
+          "bedomning": "delvis",
+          "forklaring": "S intar en diskursiv hybridposition. Partiet har behållit GAL-element men lagt TAN-vokabulär ovanpå. Retoriken har rört sig mot Tidöpartierna snabbare än den formella policypositionen."
         }
       },
-      "by_area": {
+      "per_omrade": {
         "rattsvasende": {
-          "framing": "Hybrid framing: crime has structural causes (inequality, segregation) AND requires repressive response (harsher sentences, surveillance, maffialag). The structural analysis is retained grammatically but subordinated in practice — concrete proposals cluster on the repressive side.",
-          "key_signifiers": [
-            {
-              "term": "trygghet",
-              "meaning": "Has shifted from welfare-security toward physical safety from crime — now overlaps with M's usage",
-              "implicit_assumption": "Trygghet is primarily about not being a victim of crime, not about economic security"
-            },
-            {
-              "term": "samhällskontrakt",
-              "meaning": "Reformulated from welfare commitment to security commitment — citizens are owed protection from crime",
-              "implicit_assumption": "The social contract's primary obligation is safety, not equality"
-            },
-            {
-              "term": "kliva fram / ta tillbaka kontrollen",
-              "meaning": "State intervention — but now primarily meaning repressive intervention rather than welfare expansion",
-              "implicit_assumption": "The state has lost control; regaining it requires force, not just resources"
-            },
-            {
-              "term": "nationell kris",
-              "meaning": "Crisis framing that justifies exceptional measures",
-              "implicit_assumption": "Normal political tools are insufficient; extraordinary action is needed"
-            }
+          "inramning": "Hybridinramning: brott har strukturella orsaker OCH kräver repressivt svar. Den strukturella analysen behålls grammatiskt men underordnas i praktiken.",
+          "nyckelbegrepp": [
+            {"term": "trygghet", "innebord": "Har glidit från välfärdstrygghet mot fysisk säkerhet från brott", "underforstadd_premiss": "Trygghet handlar primärt om att inte utsättas för brott, inte om ekonomisk säkerhet"},
+            {"term": "samhällskontrakt", "innebord": "Omformulerat från välfärdsåtagande till säkerhetsåtagande", "underforstadd_premiss": "Samhällskontraktets främsta skyldighet är säkerhet, inte jämlikhet"},
+            {"term": "kliva fram / ta tillbaka kontrollen", "innebord": "Statligt ingripande — nu primärt repressivt snarare än välfärdsexpansion", "underforstadd_premiss": "Staten har tappat kontrollen; att återta den kräver kraft"},
+            {"term": "nationell kris", "innebord": "Krisinramning som legitimerar exceptionella åtgärder", "underforstadd_premiss": "Normala politiska verktyg räcker inte"}
           ],
-          "rhetorical_strategies": [
-            {
-              "strategy": "Dual framing with repressive lean",
-              "example": "Vi ska bekämpa brotten, men också brottens orsaker — but specific proposals are: maffialag, fotboja, straffskärpningar",
-              "source": "socialdemokraterna.se/var-politik/a-till-o/trygghet"
-            },
-            {
-              "strategy": "Technocratic-military metaphor",
-              "example": "Repression med precision",
-              "source": "Teresa Carvalho, pressträff April 2025"
-            },
-            {
-              "strategy": "Crisis exceptionalism",
-              "example": "Vi befinner oss i en långvarig nationell kris — justifies measures beyond normal politics",
-              "source": "socialdemokraterna.se/var-politik/a-till-o/brottsforebyggande"
-            },
-            {
-              "strategy": "Paradigm shift documentation",
-              "example": "S's recent justice minister 'boasted about having toughened sentences more than any other justice minister' — noted by Tham as marking a paradigm break",
-              "source": "Dagens Arena analysis of S criminal policy shift"
-            }
+          "retoriska_strategier": [
+            {"strategi": "Dubbelinramning med repressiv lutning", "exempel": "Vi ska bekämpa brotten, men också brottens orsaker — men specifika förslag är: maffialag, fotboja, straffskärpningar", "kalla": "socialdemokraterna.se/var-politik/a-till-o/trygghet"},
+            {"strategi": "Teknokratisk-militär metaforik", "exempel": "Repression med precision", "kalla": "Teresa Carvalho, pressträff april 2025"},
+            {"strategi": "Krisexceptionalism", "exempel": "Vi befinner oss i en långvarig nationell kris", "kalla": "socialdemokraterna.se/var-politik/a-till-o/brottsforebyggande"},
+            {"strategi": "Paradigmskifte", "exempel": "S senaste justitieminister skröt med att ha skärpt straffen mer än någon annan justitieminister", "kalla": "Dagens Arena, analys av S kriminalpolitiska skifte"}
           ],
-          "galtan_congruence": "Partial — sliding toward TAN. S's criminal policy discourse now shares more vocabulary with M and Tidöpartierna than with V. The structural analysis persists in subordinate clauses but is no longer the organizing frame. Research (Tham) documents this as a paradigm shift from the party's historical position.",
-          "contrast_with": "SD frames crime as immigration problem (cultural); V frames it as class problem (structural). S tries to hold both frames simultaneously but the repressive frame is gaining dominance."
+          "galtan_kongruens": "Delvis — glidning mot TAN. S:s kriminalpolitiska diskurs delar nu mer vokabulär med M och Tidöpartierna än med V.",
+          "kontrast_med": "SD ramar in brott som invandringsproblem; V ramar det som klassproblem. S försöker hålla båda ramarna men den repressiva vinner mark."
         },
         "migration": {
-          "framing": "Regulated, sustainable, strict migration within EU norms. Bureaucratic-technocratic language rather than rights-based. Asylum rights mentioned but subordinated to system sustainability. The 2025 party program formally commits to 'stram' migration policy 'under överskådlig tid'.",
-          "key_signifiers": [
-            {
-              "term": "reglerad invandring",
-              "meaning": "Control and order — signals manageability without SD's antagonistic charge",
-              "implicit_assumption": "Previous immigration was insufficiently regulated; control is the priority"
-            },
-            {
-              "term": "stram",
-              "meaning": "New key term from 2025 party program — borrowed from right-of-center vocabulary",
-              "implicit_assumption": "Current levels remain too high; restriction is necessary"
-            },
-            {
-              "term": "hållbar / långsiktig",
-              "meaning": "Borrowed from sustainability discourse — implies current migration is unsustainable",
-              "implicit_assumption": "Migration at previous levels is incompatible with welfare state maintenance"
-            },
-            {
-              "term": "samhällsgemenskap",
-              "meaning": "Civic community requiring active integration — close to SD's 'gemenskap' but without ethnic undertone",
-              "implicit_assumption": "Newcomers must adapt to Swedish norms; community requires cultural convergence"
-            }
+          "inramning": "Reglerad, hållbar, stram migration inom EU:s ramar. Byråkratisk-teknokratiskt språk snarare än rättighetsbaserat. Partiprogrammet 2025 fastslår stram migrationspolitik under överskådlig tid.",
+          "nyckelbegrepp": [
+            {"term": "reglerad invandring", "innebord": "Kontroll och ordning utan SD:s antagonistiska laddning", "underforstadd_premiss": "Tidigare invandring var otillräckligt reglerad"},
+            {"term": "stram", "innebord": "Ny nyckelterm från partiprogrammet 2025 — lånad från höger-mittens vokabulär", "underforstadd_premiss": "Nuvarande nivåer är fortfarande för höga"},
+            {"term": "hållbar / långsiktig", "innebord": "Lånad från hållbarhetsdiskursen — implicerar att nuvarande migration är ohållbar", "underforstadd_premiss": "Migration på tidigare nivåer är oförenlig med välfärdsstatens bevarande"},
+            {"term": "samhällsgemenskap", "innebord": "Medborgerlig gemenskap som kräver aktiv integration", "underforstadd_premiss": "Nyanlända måste anpassa sig till svenska normer"}
           ],
-          "rhetorical_strategies": [
-            {
-              "strategy": "Retroactive self-criticism as legitimation",
-              "example": "Det blev tydligt under flyktingkrisen 2014–2015 — S references its own time in power as proof that strict policy is needed",
-              "source": "socialdemokraterna.se/var-politik/a-till-o/migration-asyl--och-flyktingpolitik"
-            },
-            {
-              "strategy": "EU normalization",
-              "example": "Vår migrationslagstiftning ska inte skiljer sig väsentligen från övriga länders i EU — makes restriction normal rather than extreme",
-              "source": "socialdemokraterna.se migration policy page"
-            },
-            {
-              "strategy": "Absence of rights language",
-              "example": "Asylum rights are mentioned briefly but the discourse centers on system management, not individual rights. Compare V where asylrätten is the organizing nodal point.",
-              "source": "Comparison of S vs V migration policy pages"
-            }
+          "retoriska_strategier": [
+            {"strategi": "Retroaktiv självkritik som legitimering", "exempel": "Det blev tydligt under flyktingkrisen 2014–2015", "kalla": "socialdemokraterna.se migrationspolicysida"},
+            {"strategi": "EU-normalisering", "exempel": "Vår migrationslagstiftning ska inte skilja sig väsentligen från övriga länders i EU", "kalla": "socialdemokraterna.se migrationspolicysida"},
+            {"strategi": "Frånvaro av rättighetsspråk", "exempel": "Asylrätten nämns kort men diskursen centreras kring systemhantering, inte individuella rättigheter", "kalla": "Jämförelse av S vs V migrationspolicysidor"}
           ],
-          "galtan_congruence": "Discursive slide is clearer here than in criminal policy. S has adopted key terms (stram, hållbar, reglerad) that position it closer to center-right than to V. The traditional social-democratic migration rhetoric (solidarity, internationalism) survives only in subordinate clauses. The 2025 party program makes this shift programmatic.",
-          "contrast_with": "SD frames migration as existential threat; V frames it as human right. S occupies a technocratic middle ground but has drifted toward SD's framing of migration as primarily a problem to be managed."
+          "galtan_kongruens": "Diskursiv glidning tydligare här än i kriminalpolitiken. S har antagit nyckeltermer som positionerar partiet närmare höger-mitten än V.",
+          "kontrast_med": "SD ramar in migration som existentiellt hot; V ramar det som mänsklig rättighet. S intar en teknokratisk mellanposition som glidit mot SD:s problemramning."
         }
       }
     },
     "V": {
-      "discourse_profile": {
-        "master_frame": "Social problems — crime, insecurity, exclusion — are consequences of class inequality and dismantled welfare; the solution is redistribution, strong public services, and defense of human rights against authoritarian drift",
-        "nodal_points": ["klassklyftor", "välfärd", "asylrätten", "reparativ rättvisa", "solidaritet"],
-        "rhetorical_strategies": [
-          "Explicit counter-discourse (names and rejects the dominant frame)",
-          "Research legitimation (cites evidence against punitive approaches)",
-          "Gender analysis as differentiator (aggressiv maskulinitet, feministisk migrationspolitik)",
-          "Welfare-nostalgic counter-narrative (Sweden was safe because of welfare, not homogeneity)",
-          "Historical moral parallels (Holocaust, Balkan wars as precedent for asylum defense)"
+      "diskursprofil": {
+        "overordnad_inramning": "Sociala problem är konsekvenser av klassojämlikhet och nedmonterad välfärd; lösningen är omfördelning, starka offentliga tjänster och försvar av mänskliga rättigheter mot auktoritär drift",
+        "nodalpunkter": ["klassklyftor", "välfärd", "asylrätten", "reparativ rättvisa", "solidaritet"],
+        "retoriska_strategier": [
+          "Explicit motdiskurs (namnger och avvisar den dominerande ramen)",
+          "Forskningslegitimering (hänvisar till evidens mot straffskärpningar)",
+          "Genusanalys som differentiator (aggressiv maskulinitet, feministisk migrationspolitik)",
+          "Välfärdsnostalgisk motberättelse (Sverige var tryggt tack vare välfärden, inte homogenitet)",
+          "Historiska moraliska paralleller (Förintelsen, Balkankrigen)"
         ],
-        "galtan_congruence": {
-          "assessment": "hög",
-          "explanation": "Discourse is consistently GAL across all dimensions: libertarian (opposes surveillance, mandatory detention, expanded police powers), universalist (rights-based, internationalist), progressive (feminist analysis, reparative justice). Language matches ideological position closely. V is the most discursively coherent party in the pilot — no gap between rhetoric and GAL-TAN placement."
+        "galtan_kongruens": {
+          "bedomning": "hög",
+          "forklaring": "Diskursen är konsekvent GAL i alla dimensioner: libertär, universalistisk, progressiv. V är det mest diskursivt koherenta partiet i piloten — inget gap mellan retorik och GAL-TAN-placering."
         }
       },
-      "by_area": {
+      "per_omrade": {
         "rattsvasende": {
-          "framing": "Crime is a class problem — consequence of economic inequality, segregation, and dismantled welfare. The causal chain is: class inequality → segregation → lack of opportunity → gang recruitment. The solution is structural: strengthen welfare, reduce inequality, invest in prevention. Punishment is accepted for specific grave crimes but rejected as general strategy.",
-          "key_signifiers": [
-            {
-              "term": "klassklyftor",
-              "meaning": "V's nodal point — everything is related back to economic inequality",
-              "implicit_assumption": "Crime is ultimately a product of material conditions, not cultural factors or individual moral failure"
-            },
-            {
-              "term": "trygghetszoner",
-              "meaning": "V's alternative to government's visitationszoner — same root word, opposite meaning. Resource investment instead of police powers.",
-              "implicit_assumption": "Safety comes from community investment, not from surveillance and search powers"
-            },
-            {
-              "term": "reparativ rättvisa",
-              "meaning": "Justice through repair rather than punishment — frames victim support as compatible with offender rehabilitation",
-              "implicit_assumption": "Victim interests and offender rehabilitation are not zero-sum (contrasts with SD's framing)"
-            },
-            {
-              "term": "politiskt eftersatta områden",
-              "meaning": "V's alternative label for what SD calls 'förstörda områden' and police call 'utsatta områden' — shifts blame to political neglect",
-              "implicit_assumption": "These neighborhoods are not broken by their residents but by political decisions"
-            }
+          "inramning": "Brott är ett klassproblem — konsekvens av ekonomisk ojämlikhet, segregation och nedmonterad välfärd. Orsakskedjan är: klassklyftor → segregation → brist på möjligheter → rekrytering till gäng. Lösningen är strukturell.",
+          "nyckelbegrepp": [
+            {"term": "klassklyftor", "innebord": "V:s nodalpunkt — allt relateras tillbaka till ekonomisk ojämlikhet", "underforstadd_premiss": "Brottslighet är ytterst en produkt av materiella villkor, inte kulturella faktorer"},
+            {"term": "trygghetszoner", "innebord": "V:s alternativ till visitationszoner — resursinvestering istället för polisbefogenheter", "underforstadd_premiss": "Säkerhet kommer från samhällsinvestering, inte övervakning"},
+            {"term": "reparativ rättvisa", "innebord": "Rättvisa genom reparation snarare än bestraffning", "underforstadd_premiss": "Brottsofferintressen och rehabilitering är inte ett nollsummespel"},
+            {"term": "politiskt eftersatta områden", "innebord": "Alternativ benämning som förskjuter skulden till politisk försummelse", "underforstadd_premiss": "Dessa stadsdelar är inte förstörda av sina invånare utan av politiska beslut"}
           ],
-          "rhetorical_strategies": [
-            {
-              "strategy": "Explicit counter-discourse",
-              "example": "Istället för politikers prat om längre och hårdare straff, en gemensam politisk vilja för att minska klassklyftorna",
-              "source": "vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard"
-            },
-            {
-              "strategy": "Research legitimation",
-              "example": "Forskning visar att längre och hårdare straff generellt sett inte får människor att sluta begå brott. Man kan se på USA som ett exempel.",
-              "source": "vansterpartiet.se kriminalitet page"
-            },
-            {
-              "strategy": "Gender analysis as differentiator",
-              "example": "En gemensam nämnare för de män som dras till våldsbejakande miljöer och gängkriminalitet är kvinnohatet — unique among riksdag parties",
-              "source": "V riksdagsmotion on gang crime"
-            },
-            {
-              "strategy": "Welfare-nostalgic counter-narrative",
-              "example": "Sverige var länge ett land med lägre kriminalitet — en direkt koppling till att vi haft ett starkt välfärdssamhälle",
-              "source": "vansterpartiet.se/var-politik/politik-a-o/grova-brott"
-            }
+          "retoriska_strategier": [
+            {"strategi": "Explicit motdiskurs", "exempel": "Istället för politikers prat om längre och hårdare straff, en gemensam politisk vilja för att minska klassklyftorna", "kalla": "vansterpartiet.se/var-politik/politik-a-o/kriminalitet-och-kriminalvard"},
+            {"strategi": "Forskningslegitimering", "exempel": "Forskning visar att längre och hårdare straff generellt sett inte får människor att sluta begå brott. Man kan se på USA som ett exempel.", "kalla": "vansterpartiet.se kriminalitetssida"},
+            {"strategi": "Genusanalys som differentiator", "exempel": "En gemensam nämnare för de män som dras till våldsbejakande miljöer och gängkriminalitet är kvinnohatet", "kalla": "V riksdagsmotion om gängkriminalitet"},
+            {"strategi": "Välfärdsnostalgisk motberättelse", "exempel": "Sverige var länge ett land med lägre kriminalitet — en direkt koppling till att vi haft ett starkt välfärdssamhälle", "kalla": "vansterpartiet.se/var-politik/politik-a-o/grova-brott"}
           ],
-          "galtan_congruence": "High GAL congruence. Structural/class analysis, rights-based, anti-authoritarian (opposes surveillance expansion, security zones, anonymous witnesses), feminist analysis. V is the most internally consistent party — no gap between discourse and GAL-TAN placement.",
-          "contrast_with": "SD attributes crime to immigration (cultural framing); S is hybrid but leaning repressive. V alone maintains the structural/class framing as its primary organizing principle."
+          "galtan_kongruens": "Hög GAL-kongruens. Strukturell klassanalys, rättighetsbaserad, antiauktoritär, feministisk. Inget gap mellan diskurs och GAL-TAN-placering.",
+          "kontrast_med": "SD tillskriver brott invandring; S är hybrid men lutar repressivt. V ensamt upprätthåller den strukturella klassinramningen."
         },
         "migration": {
-          "framing": "Migration is a human right and a consequence of global inequality. The organizing principle is asylrätten as non-negotiable. Migration is 'natural and self-evident' — the opposite of SD's threat framing. Restrictions are framed as walls and barriers that cause suffering, not as rational policy tools.",
-          "key_signifiers": [
-            {
-              "term": "asylrätten",
-              "meaning": "V's absolute nodal point in migration — non-negotiable, under attack, must be defended",
-              "implicit_assumption": "Asylum is a fundamental human right that overrides state sovereignty concerns"
-            },
-            {
-              "term": "solidarisk realism",
-              "meaning": "Deliberate combination of idealism and pragmatism to counter accusations of naivety",
-              "implicit_assumption": "Solidarity and realism are compatible; it is the restrictive position that is unrealistic"
-            },
-            {
-              "term": "murar",
-              "meaning": "Physical metaphor for border restrictions — frames them as brutal barriers causing death",
-              "implicit_assumption": "Restrictions kill; openness saves"
-            },
-            {
-              "term": "feministisk migrationspolitik",
-              "meaning": "Migration analyzed through gender lens — unique in Swedish debate",
-              "implicit_assumption": "Migration policy that ignores gender reproduces patriarchal structures"
-            },
-            {
-              "term": "naturligt och självklart",
-              "meaning": "Migration as normal human phenomenon — the opposite of SD's framing as crisis/threat",
-              "implicit_assumption": "Human movement is natural; it is borders and restrictions that are the aberration"
-            }
+          "inramning": "Migration är en mänsklig rättighet och en konsekvens av global ojämlikhet. Asylrätten är icke-förhandlingsbar. Migration är naturligt och självklart — motsatsen till SD:s hotinramning.",
+          "nyckelbegrepp": [
+            {"term": "asylrätten", "innebord": "V:s absoluta nodalpunkt — icke-förhandlingsbar, under attack, måste försvaras", "underforstadd_premiss": "Asyl är en grundläggande mänsklig rättighet som överordnar statssuveränitetshänsyn"},
+            {"term": "solidarisk realism", "innebord": "Medveten kombination av idealism och pragmatism", "underforstadd_premiss": "Solidaritet och realism är förenliga; det är den restriktiva positionen som är orealistisk"},
+            {"term": "murar", "innebord": "Fysisk metafor för gränsrestriktioner som orsakar lidande och död", "underforstadd_premiss": "Restriktioner dödar; öppenhet räddar"},
+            {"term": "feministisk migrationspolitik", "innebord": "Migration analyserad genom könsperspektiv — unikt i svensk debatt", "underforstadd_premiss": "Migrationspolitik som ignorerar kön reproducerar patriarkala strukturer"},
+            {"term": "naturligt och självklart", "innebord": "Migration som normalt mänskligt fenomen", "underforstadd_premiss": "Mänsklig rörlighet är naturlig; det är gränser och restriktioner som är avvikelsen"}
           ],
-          "rhetorical_strategies": [
-            {
-              "strategy": "Historical moral parallels",
-              "example": "From failed international attempts to save Jews from the Holocaust in 1938 to today's failures — draws direct line from history's greatest moral failure to current migration policy",
-              "source": "Motion 2025/26:2798 (Tony Haddou, V)"
-            },
-            {
-              "strategy": "Agentification of migrants",
-              "example": "V consistently uses 'människor på flykt', 'barn', 'kvinnor som är särskilt utsatta' — giving migrants agency and individuality, contrasting SD's deagentification (volumes, magnets, numbers)",
-              "source": "All V migration texts"
-            },
-            {
-              "strategy": "Explicit resistance framing",
-              "example": "I en tid då starka nationalistiska och högerextrema vindar blåser, måste vi som tror på mänskliga rättigheter fortsätta att försvara flyktingkonventionen",
-              "source": "Motion 2025/26:2798"
-            },
-            {
-              "strategy": "Feminist counter-framing",
-              "example": "När patriarkala strukturer och bristande jämställdhet används som slagträ i debatten för att misstänkliggöra flyktingar skadar det arbetet för jämställdheten",
-              "source": "V riksdagsmotion svensk flyktingpolitik 2024/25"
-            }
+          "retoriska_strategier": [
+            {"strategi": "Historiska moraliska paralleller", "exempel": "Från misslyckade internationella försök att rädda judar undan Förintelsen 1938 till dagens misslyckanden", "kalla": "Motion 2025/26:2798 (Tony Haddou, V)"},
+            {"strategi": "Agentifiering av migranter", "exempel": "V använder konsekvent människor på flykt, barn, kvinnor som är särskilt utsatta — ger migranter agens och individualitet", "kalla": "Alla V:s migrationstexter"},
+            {"strategi": "Explicit motståndsinramning", "exempel": "I en tid då starka nationalistiska och högerextrema vindar blåser, måste vi som tror på mänskliga rättigheter fortsätta att försvara flyktingkonventionen", "kalla": "Motion 2025/26:2798"},
+            {"strategi": "Feministisk motinramning", "exempel": "När patriarkala strukturer används som slagträ för att misstänkliggöra flyktingar skadar det arbetet för jämställdheten", "kalla": "V riksdagsmotion svensk flyktingpolitik 2024/25"}
           ],
-          "galtan_congruence": "Strong GAL. Internationalist (open borders aspiration, EU solidarity), universalist (human rights as organizing principle), feminist (gender analysis of migration policy), anti-authoritarian (opposes border militarization, Frontex, surveillance). Fully congruent with GAL-TAN position.",
-          "contrast_with": "SD frames migration as existential threat requiring exclusion; S frames it as manageable through technocratic restriction. V alone frames migration as a human right requiring defense against authoritarian drift."
+          "galtan_kongruens": "Stark GAL. Internationalistisk, universalistisk, feministisk, antiauktoritär. Fullt kongruent med GAL-TAN-position.",
+          "kontrast_med": "SD ramar in migration som existentiellt hot; S ramar det som hanterbart genom teknokratisk restriktion. V ensamt ramar migration som mänsklig rättighet."
         }
       }
     }

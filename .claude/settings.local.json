@@ -26,7 +26,8 @@
       "Bash(ls *.html *.js data/ docs/)",
       "mcp__plugin_project_github__list_pull_requests",
       "mcp__plugin_project_context7__resolve-library-id",
-      "mcp__plugin_project_context7__query-docs"
+      "mcp__plugin_project_context7__query-docs",
+      "Bash(git -C \"C:\\\\Users\\\\nikla\\\\projects\\\\leides-ljuvliga-lilla-val26\" log --oneline --since=\"2026-04-28\")"
     ]
   }
 }
