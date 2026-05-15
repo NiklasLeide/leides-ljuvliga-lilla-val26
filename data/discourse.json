@@ -1,0 +1,1552 @@
+{
+  "metadata": {
+    "metodik": "Diskursanalys baserad på inramningsanalys (Entman), diskursteori (Laclau/Mouffe) och diskurshistorisk ansats (Wodak/Krzyżanowski)",
+    "kallor": "Partiprogram, riksdagsmotioner 2024/25–2025/26, partiwebbplatser, riksdagsprotokoll, utskottsdebatter",
+    "akademiska_referenser": [
+      "Holt & Bolin (2025) – Resilient populism? SD:s diskurs i riksdagen 2010–2024",
+      "Elgenius & Rydgren (2026) – Who are the People and what does Home mean?",
+      "Krzyżanowski & Ekström (2023/2025) – Saying Criminality, meaning Immigration",
+      "Schclarek Mulinari (2025) – Sweden's race to the bottom",
+      "Calvo, Bäck & Carroll (2024) – Debating the Populist Pariah",
+      "Gustafsson (2024) – Vad gör språket i politiken?",
+      "Fredén, Johansson & Saynova (2024) – Word embeddings on ideology from Swedish parliamentarians"
+    ],
+    "omfattning": "Alla 8 riksdagspartier om rättsväsende, migration och klimat/energi",
+    "senast_uppdaterad": "2026-05-15",
+    "version": "0.3.0"
+  },
+  "flytande_signifikanter": {
+    "trygghet": {
+      "beskrivning": "Centralt omstritt begrepp i svensk politik — samma ord, fundamentalt olika innebörd per parti",
+      "per_parti": {
+        "SD": {
+          "innebord": "Fysisk säkerhet från brott + kulturell/etnisk hemhörighet",
+          "exempel": "Återskapa tryggheten (genom straff och minskad invandring)",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Frihetsfråga — trygghet som förutsättning för individuell frihet",
+          "exempel": "Trygghet har blivit vår tids stora frihetsfråga",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Familjens trygghet som grund för samhällets trygghet",
+          "exempel": "Trygga familjer skapar ett tryggt samhälle",
+          "galtan_matchning": "TAN — värdekonservativ"
+        },
+        "L": {
+          "innebord": "Trygghet genom utbildning, rehabilitering och rättssäkerhet",
+          "exempel": "En studentexamen är det bästa skyddet mot kriminalitet",
+          "galtan_matchning": "GAL-rest i TAN-kontext"
+        },
+        "S": {
+          "innebord": "Hybrid — glider från social välfärdstrygghet mot fysisk säkerhet från brott",
+          "exempel": "Ett tryggare Sverige (identisk kampanjslogan som M)",
+          "galtan_matchning": "Glidning mot TAN"
+        },
+        "C": {
+          "innebord": "Trygghet genom förebyggande arbete och poliser i vardagen",
+          "exempel": "Polisen måste finnas där i gathörnet och på torget",
+          "galtan_matchning": "Mittfåra"
+        },
+        "MP": {
+          "innebord": "Trygghet genom inkludering, jämlikhet och förebyggande",
+          "exempel": "Där människor känner samhörighet, delaktighet och hopp, minskar brottsligheten",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Social och ekonomisk trygghet som brottsförebyggande",
+          "exempel": "Trygghetszoner (resurstillskott, inte repression) vs regeringens visitationszoner",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Begreppet har kapats. Den ursprungliga socialdemokratiska definitionen (trygghet = arbete + bostad + välfärd) har eroderats. SD och M har lyckats omfördela begreppets innebörd mot brottsrädsla — M genom att koppla det till frihet, SD till kulturell hemhörighet. S har delvis följt med. KD adderar en familjemoralisk dimension. L, C och MP försöker hålla kvar förebyggande dimensioner. V försvarar den gamla definitionen från en alltmer marginell position."
+    },
+    "ansvar": {
+      "beskrivning": "Ansvar — vem som bär det och för vad skiljer sig fundamentalt mellan partierna",
+      "per_parti": {
+        "SD": {
+          "innebord": "Individens ansvar att anpassa sig + tidigare regeringars skuld för 'ansvarslös invandringspolitik'",
+          "exempel": "Ansvarsfull migrationspolitik = restriktiv migrationspolitik",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Individansvar ('göra rätt för sig') + systemansvar (ordning och reda)",
+          "exempel": "Ett ja ska vara ett ja och ett nej ska vara ett nej",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Familjens ansvar + samhällets moraliska ansvar + individens ansvar att sona sitt brott",
+          "exempel": "Brottsoffret är berättigat till upprättelse genom att gärningsmannen sonar sitt brott",
+          "galtan_matchning": "TAN — värdekonservativ"
+        },
+        "L": {
+          "innebord": "Individens ansvar att bryta med kriminalitet + samhällets ansvar att ge möjligheter",
+          "exempel": "Stålhandske och lovikkavante — repression och rehabilitering",
+          "galtan_matchning": "Spänning GAL-TAN"
+        },
+        "S": {
+          "innebord": "Samhällets ansvar att gripa in + individens ansvar att integrera sig",
+          "exempel": "Gemensamt ansvar / höga förväntningar på var och en",
+          "galtan_matchning": "Mittfåra — dubbelinramning"
+        },
+        "C": {
+          "innebord": "Delat ansvar — stat, kommun, familj, individ i samverkan",
+          "exempel": "Samverkan mellan socialtjänst, skola och polis i vardagen",
+          "galtan_matchning": "Mittfåra"
+        },
+        "MP": {
+          "innebord": "Samhällets ansvar att förebygga — inte den unges ansvar att de hamnat i kriminalitet",
+          "exempel": "Syftet är att färre brott ska begås — inte att fler ska straffas hårdare",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Statens ansvar för jämlikhet + globalt ansvar för flyktingar",
+          "exempel": "EU-länder måste ta sitt ansvar (för flyktingmottagande)",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Ansvarsbegreppet avslöjar partiernas grundläggande samhällssyn. SD och M riktar ansvaret nedåt (individen ska anpassa sig). KD riktar det till familjen som moralisk enhet. L pendlar mellan individ och samhälle. S och C fördelar ansvaret. MP och V riktar det uppåt (samhällets strukturer). Riktningen på ansvaret speglar GAL-TAN-axeln."
+    },
+    "gemenskap": {
+      "beskrivning": "Gemenskap/tillhörighet — grunden för social sammanhållning skiljer sig radikalt",
+      "per_parti": {
+        "SD": {
+          "innebord": "Etnokulturell — baserad på delad kultur, historia, språk och nationell identitet",
+          "exempel": "Samhörighet med det samhälle vi lever i (via nationalstaten som förutsättning)",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Prestationsbaserad — gemenskap genom arbete, språk och egenförsörjning",
+          "exempel": "Göra rätt för sig, lära sig svenska, börja jobba",
+          "galtan_matchning": "TAN — meritokratisk"
+        },
+        "KD": {
+          "innebord": "Värdebaserad — gemenskap genom delade normer, värderingar och familjestruktur",
+          "exempel": "Samhällsgemenskapskommittén — normer och värderingar som grund",
+          "galtan_matchning": "TAN — värdekonservativ"
+        },
+        "L": {
+          "innebord": "Liberal medborgerlig — gemenskap genom deltagande, utbildning och möjligheter",
+          "exempel": "Sverige ska vara möjligheternas land",
+          "galtan_matchning": "GAL-lutning"
+        },
+        "S": {
+          "innebord": "Medborgerlig — baserad på deltagande, integration och delade institutioner",
+          "exempel": "Samhällsgemenskap (stärks genom krav + resurser)",
+          "galtan_matchning": "Mittfåra — medborgerlig nationalism"
+        },
+        "C": {
+          "innebord": "Öppen och pragmatisk — gemenskap genom arbete och bidragande oavsett bakgrund",
+          "exempel": "Människor som kommer hit för att jobba bidrar till välfärden",
+          "galtan_matchning": "GAL-lutning"
+        },
+        "MP": {
+          "innebord": "Inkluderande — gemenskap genom delaktighet, samhörighet och hopp",
+          "exempel": "Där människor känner samhörighet, delaktighet och hopp, minskar brottsligheten",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Klassbaserad solidaritet över etniska och nationella gränser",
+          "exempel": "Solidaritet och gemenskap (mot rasism och nationalism)",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Gemenskapsbegreppet avslöjar den djupaste ideologiska skiljelinjen. SD kräver kulturell homogenitet. M kräver prestation (arbete och språk). KD kräver delade värderingar. L och C betonar möjligheter och öppenhet. MP betonar inkludering. V bygger gemenskap på klasssolidaritet. Skalan från etnisk till universell gemenskap följer GAL-TAN-axeln exakt."
+    },
+    "omstallning": {
+      "beskrivning": "Omställning — klimatpolitikens mest centrala begrepp, fylls med radikalt olika innehåll",
+      "per_parti": {
+        "SD": {
+          "innebord": "Energiomställning = kärnkraft + utfasning av vindkraftsberoende, inte beteendeförändring",
+          "exempel": "Förnybarhetshets — delegitimerar det förnybara paradigmet",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Fossilfri omställning = alla kraftslag, individuell frihet bevarad",
+          "exempel": "Klimatpolitiken ska öka människors frihet — inte begränsa deras vardag",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Teknikdriven omställning med alla verktyg, ingen teknik utesluts",
+          "exempel": "Fossilfritt med alla verktyg — SMR, vätgas, CCS",
+          "galtan_matchning": "TAN — teknikoptimistisk"
+        },
+        "L": {
+          "innebord": "Klimatomställning = kärnkraft som grön teknik, marknadsbaserade lösningar",
+          "exempel": "Klimatet kräver kärnkraft",
+          "galtan_matchning": "Spänning GAL-TAN"
+        },
+        "S": {
+          "innebord": "Rättvis omställning för vanligt folk = jobb + fossilfritt + alla kraftslag",
+          "exempel": "En rättvis klimatomställning som fungerar för vanligt folk i hela landet",
+          "galtan_matchning": "Glidning mot mitten"
+        },
+        "C": {
+          "innebord": "Marknadsdriven omställning = förnybart + landsbygdsutveckling",
+          "exempel": "Ni har ingen energipolitik, ni har en kärnkraftspolitik",
+          "galtan_matchning": "GAL-lutning"
+        },
+        "MP": {
+          "innebord": "Grön omställning = förnybart + energilagring, mot kärnkraft som dyr omväg",
+          "exempel": "10 GW grön baskraft till 2030 — motbegrepp till planerbar kraft",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Rättvis klimatomställning = klassfråga, offentliga investeringar, fossilfritt 2035",
+          "exempel": "Det krävs ökad jämlikhet för att möta klimathotet",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Omställning är klimatpolitikens trygghet — alla använder ordet, ingen menar samma sak. Skalan går från SD:s omställning bort från förnybart till V:s omställning till fossilfritt genom klassutjämning. S:s position har glidit från förnybar omställning till fossilfri omställning — samma begreppsshift som M drivit. MP:s grön baskraft och V:s rättvisa omställning representerar två distinkta GAL-alternativ: ekologiskt respektive klassmässigt."
+    },
+    "energitrygghet": {
+      "beskrivning": "Energitrygghet/planerbar kraft — vilken energi som är trygg och pålitlig skiljer partierna",
+      "per_parti": {
+        "SD": {
+          "innebord": "Kärnkraft + vattenkraft = planerbart = tryggt. Vindkraft = opålitligt.",
+          "exempel": "Det fungerar inte att förlita sig på att det ska blåsa dygnet runt",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Planerbar fossilfri kraft = kärnkraft som klimatlösning och systemstabilitet",
+          "exempel": "Utan energipolitik ingen klimatpolitik",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Stabil energimix med kärnkraft som bas, pragmatisk teknikneutralitet",
+          "exempel": "Alla verktyg behövs i energimixen",
+          "galtan_matchning": "TAN"
+        },
+        "L": {
+          "innebord": "Klimatkärnkraft — kärnkraft direkt kopplad till klimatmålen",
+          "exempel": "Grön kärnkraft som miljövänlig teknik",
+          "galtan_matchning": "Spänning GAL-TAN"
+        },
+        "S": {
+          "innebord": "Alla kraftslag — nu inklusive kärnkraft, energitrygghet = fossilfri mix",
+          "exempel": "Storskaliga investeringar i fossilfri el, såsom vind- och kärnkraft",
+          "galtan_matchning": "Glidning mot mitten"
+        },
+        "C": {
+          "innebord": "Diversifierad mix — inte beroende av en enda teknik, marknad avgör",
+          "exempel": "Kärnkraftspolitik ≠ energipolitik",
+          "galtan_matchning": "GAL-lutning"
+        },
+        "MP": {
+          "innebord": "Grön baskraft = lagrad energi + reglerbar förnybar effekt (motbegrepp till planerbar kraft)",
+          "exempel": "Höjd effekt i vattenkraft, energilagring, pumpkraft, vätgas",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Förnybar energi + offentlig kontroll över infrastruktur = verklig trygghet",
+          "exempel": "Staten måste öka sin kontroll över infrastruktur som behövs för klimatomställningen",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Tidöblocket har lyckats etablera planerbar kraft som synonymt med kärnkraft. MP:s grön baskraft är ett medvetet motbegrepp som försöker bryta den kopplingen. C utmanar via marknadslogik (kärnkraft är för dyr), V via offentligt ägande (infrastruktur ska inte vara privat). S har rört sig från förnybartfokus till alla kraftslag — en diskursiv kapitulation inför Tidöblockets begreppsapparat."
+    }
+  },
+  "partier": {
+    "SD": {
+      "diskursprofil": {
+        "overordnad_inramning": "Sverige är i förfall på grund av massinvandring och misslyckad vänsterliberal politik; återupprättelse kräver kulturell homogenitet, strikt brottsbekämpning och återvandring",
+        "nodalpunkter": [
+          "folkhem",
+          "svenskhet",
+          "trygghet",
+          "återvandring",
+          "brottsoffer",
+          "planerbar kraft"
+        ],
+        "retoriska_strategier": [
+          "Nostalgi och guldåldersretorik (Sverige ska bli bra igen)",
+          "Folk-mot-elit-antagonism (populistisk diskursiv struktur)",
+          "Säkerhetisering av migration och kulturell mångfald",
+          "Eufemisering av exkludering (återvandring som human lösning)",
+          "Affektiv kontrast och förlöjligande av motståndare"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "hög",
+          "forklaring": "Konsekvent TAN i alla dimensioner: auktoritär, nationalistisk, traditionalistisk. Språkbruket matchar den ideologiska positionen."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Kriminalitet som kulturellt importproblem — direkt konsekvens av massinvandring. Orsakskedjan: invandring → gängkultur → otrygghet.",
+          "nyckelbegrepp": [
+            {
+              "term": "brottsoffer",
+              "innebord": "Moralisk legitimering av repressiv politik — framställs som oförenligt med rehabilitering",
+              "underforstadd_premiss": "Rehabilitering och brottsofferrättvisa är ett nollsummespel"
+            },
+            {
+              "term": "kännbara straff",
+              "innebord": "Straff som gärningspersonen verkligen känner av",
+              "underforstadd_premiss": "Det nuvarande systemet är för mjukt"
+            },
+            {
+              "term": "vanliga människor",
+              "innebord": "Laglydig majoritet skild från kriminella/illegala",
+              "underforstadd_premiss": "Tydlig gräns mellan vanliga människor och brottslingar"
+            },
+            {
+              "term": "förstörda områden",
+              "innebord": "Stadsdelar bortom räddning pga socialistisk och borgerlig politik",
+              "underforstadd_premiss": "Vissa områden är oåterkalleliga och måste rivas"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Guldåldersnostalgi",
+              "exempel": "Sverige ska bli bra igen",
+              "kalla": "sd.se/vad-vi-vill"
+            },
+            {
+              "strategi": "Affektiv kontrast",
+              "exempel": "Brottslingar ska få kännbara straff – inte saft, bullar och straffrabatter",
+              "kalla": "sd.se/vad-vi-vill"
+            },
+            {
+              "strategi": "Kärlek-skydd-inramning",
+              "exempel": "Hårt mot de hårda, inte av hat utan av kärlek till det man skyddar",
+              "kalla": "Riksdagsprotokoll 2025/26:45"
+            },
+            {
+              "strategi": "Säkerhetisering av bostadsområden",
+              "exempel": "Områden som måste rivas",
+              "kalla": "sd.se/vad-vi-vill/brott-och-straff"
+            }
+          ],
+          "galtan_kongruens": "Hög TAN-kongruens.",
+          "kontrast_med": "M delar repressiv agenda men utan etnokulturell kausalförklaring. V är polär motsats."
+        },
+        "migration": {
+          "inramning": "Migration som existentiellt hot mot nationalstaten. Kräver kulturell homogenitet för social tillit.",
+          "nyckelbegrepp": [
+            {
+              "term": "återvandring",
+              "innebord": "Normaliserar att personer med uppehållstillstånd ska lämna",
+              "underforstadd_premiss": "Den som inte assimilerats tillhör inte Sverige"
+            },
+            {
+              "term": "massinvandring",
+              "innebord": "Signalerar ohanterliga volymer",
+              "underforstadd_premiss": "All betydande icke-europeisk invandring är massinvandring"
+            },
+            {
+              "term": "kulturell belastning",
+              "innebord": "Invandrade kulturer som börda",
+              "underforstadd_premiss": "Kulturell mångfald försvagar samhället"
+            },
+            {
+              "term": "har inte här att göra",
+              "innebord": "Kategorier av människor som per definition inte tillhör",
+              "underforstadd_premiss": "Vistelse i Sverige är ett privilegium"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Magnetmetaforen",
+              "exempel": "Sverige har blivit en magnet för världens migranter",
+              "kalla": "sd.se"
+            },
+            {
+              "strategi": "Kvantifiering som hot",
+              "exempel": "Migrationskartan visualiserar demografisk förändring per kommun",
+              "kalla": "SD Europaparlamentet"
+            },
+            {
+              "strategi": "Eufemisering av exkludering",
+              "exempel": "Återvandring är en human lösning",
+              "kalla": "sd.se migrationspolitiskt inriktningsprogram"
+            },
+            {
+              "strategi": "Nettominus-inramning",
+              "exempel": "Målsättningen ska vara ett volymmässigt nettominus",
+              "kalla": "Motion 2021/22:224"
+            }
+          ],
+          "galtan_kongruens": "Stark TAN.",
+          "kontrast_med": "M delar restriktivitet men utan etnokulturell ram. C och V är polära motsatser."
+        },
+        "klimat": {
+          "inramning": "Energi primärt som försörjningstrygghet och ekonomi, inte klimatfråga. Klimatomställningen framställs som kostnadsdrivare. Kärnkraft och vattenkraft är lösningen; vindkraft är opålitlig och skadlig.",
+          "nyckelbegrepp": [
+            {
+              "term": "förnybarhetshets",
+              "innebord": "Delegitimerar hela det förnybara paradigmet med ett enda ord",
+              "underforstadd_premiss": "Satsningen på förnybart var ideologiskt driven, inte rationell"
+            },
+            {
+              "term": "planerbar kraft",
+              "innebord": "Kärnkraft och vattenkraft som stabilt och tillförlitligt",
+              "underforstadd_premiss": "Vindkraft är per definition opålitlig och systemfarlig"
+            },
+            {
+              "term": "politisk nedläggning",
+              "innebord": "Kärnkraftsnedläggningen beskrivs som politisk trots kommersiella beslut",
+              "underforstadd_premiss": "S/MP bar ansvaret — kausalitet konstrueras retroaktivt"
+            },
+            {
+              "term": "energitrygghet",
+              "innebord": "Nationell energisuveränitet och låga priser",
+              "underforstadd_premiss": "Internationella klimatåtaganden hotar svensk energitrygghet"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Guldåldersnostalgi",
+              "exempel": "En stabil elförsörjning var det som byggde Sverige tillsammans med den svenska fliten",
+              "kalla": "sd.se/vad-vi-vill/svensk-energi"
+            },
+            {
+              "strategi": "Vi-visste-bättre",
+              "exempel": "Vi varnade tidigt för vad nedlagd kärnkraft skulle innebära. Vi är inte som alla andra partier.",
+              "kalla": "sd.se/vad-vi-vill/svensk-energi"
+            },
+            {
+              "strategi": "Ekonomisk skräckbild av grön politik",
+              "exempel": "Kostnader för vindkraft och klimatåtgärder lyfts, aldrig kostnaden för klimatförändringen",
+              "kalla": "Riksdagsdebatt NU13 2025/26"
+            },
+            {
+              "strategi": "Delegitimering av förnybart",
+              "exempel": "Den förnybarhetshets som hade rått under längre tid var någonting osunt",
+              "kalla": "Riksdagsdebatt NU13 2025/26 (Tobias Andersson, SD)"
+            }
+          ],
+          "galtan_kongruens": "Stark TAN. Nationell energisuveränitet, skeptisk mot internationella klimatåtaganden, fossila bränslen försvaras implicit. Konsekvent med SD:s övriga positioner.",
+          "kontrast_med": "M delar kärnkraftsfokus men accepterar klimatmålen fullständigt. MP och V är polära motsatser."
+        }
+      }
+    },
+    "M": {
+      "diskursprofil": {
+        "overordnad_inramning": "Sverige behöver lag och ordning genom ett perspektivskifte, restriktiv men rättvis migrationspolitik, och en energipolitik där klimatmål nås genom fossilfri teknik utan att begränsa individuell frihet",
+        "nodalpunkter": [
+          "lag och ordning",
+          "perspektivskifte",
+          "nolltolerans",
+          "göra rätt för sig",
+          "fossilfritt",
+          "alla kraftslag"
+        ],
+        "retoriska_strategier": [
+          "Perspektivskifte-retorik",
+          "Trygghet/frihet-koppling",
+          "Paradigmskifte-narrativ",
+          "Kvantifiering av resultat",
+          "Alla-kraftslag-inkludering"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "hög",
+          "forklaring": "TAN i praktik men med liberal retorisk fernissa. M undviker SD:s etnokulturella ramverk och använder individansvar, systemhållbarhet och frihet som legitimerande principer."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Paradigmskifte — bort från gärningsmannens behov, mot brottsoffer och samhällsskydd. Nolltolerans. Inkapacitering som strategi.",
+          "nyckelbegrepp": [
+            {
+              "term": "perspektivskifte",
+              "innebord": "Rättsväsendets syfte omformulerat från rehabilitering till samhällsskydd",
+              "underforstadd_premiss": "Tidigare fokus på gärningsmannen var felaktigt"
+            },
+            {
+              "term": "nolltolerans",
+              "innebord": "Ingen brottslighet accepteras, inte ens småbrott",
+              "underforstadd_premiss": "Tolerans mot småbrott skapar laglöshetskultur"
+            },
+            {
+              "term": "trygghet som frihetsfråga",
+              "innebord": "Trygghet omdefinerad till liberal frihetsfråga",
+              "underforstadd_premiss": "Repression är frihetsbefrämjande"
+            },
+            {
+              "term": "den som sitter inlåst kan inte begå brott",
+              "innebord": "Inkapacitering som uttrycklig strategi",
+              "underforstadd_premiss": "Fängelsets primära funktion är samhällsskydd"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Paradigmskifte-narrativ",
+              "exempel": "Den största reformen av straffrätten sedan brottsbalken",
+              "kalla": "moderaterna.se; Gunnar Strömmer april 2026"
+            },
+            {
+              "strategi": "Trygghet-frihet-koppling",
+              "exempel": "Trygghet har blivit vår tids stora frihetsfråga",
+              "kalla": "Motion 2021/22:4031"
+            },
+            {
+              "strategi": "Kvantifiering som bevis",
+              "exempel": "Skjutningarna halverade, förtroendet för rättsväsendet högst någonsin",
+              "kalla": "Riksdagsprotokoll 2025/26:45"
+            },
+            {
+              "strategi": "Nolltolerans-inramning",
+              "exempel": "Nolltolerans mot all form av brottslighet",
+              "kalla": "Motion 2020/21:3365"
+            }
+          ],
+          "galtan_kongruens": "Hög TAN men med liberal retorik.",
+          "kontrast_med": "SD delar repressiv agenda men med etnokulturell kausalitet. V och MP står i opposition."
+        },
+        "migration": {
+          "inramning": "Restriktiv men rättvis — byråkratisk ordning-och-reda-ram. Restriktivitet legitimeras som förutsättning för integration.",
+          "nyckelbegrepp": [
+            {
+              "term": "ett ja ska vara ett ja",
+              "innebord": "Byråkratisk rättviselogik",
+              "underforstadd_premiss": "Systemet har inte fungerat"
+            },
+            {
+              "term": "integrationsskuld",
+              "innebord": "Ackumulerat underskott som motiverar restriktion",
+              "underforstadd_premiss": "Sverige måste stanna upp"
+            },
+            {
+              "term": "skuggsamhälle",
+              "innebord": "Människor utan tillstånd som ordningsproblem",
+              "underforstadd_premiss": "Irreguljär migration kräver kontroll"
+            },
+            {
+              "term": "göra rätt för sig",
+              "innebord": "Prestationsbaserad tillhörighet",
+              "underforstadd_premiss": "Tillhörighet ska förtjänas"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Humanism-omdefiniering",
+              "exempel": "Det humana är inte att låta så många som möjligt komma in. Det humana är att ge de som redan fått skydd en verklig möjlighet.",
+              "kalla": "Motion 2021/22:3840"
+            },
+            {
+              "strategi": "Paradigmskifte-narrativ",
+              "exempel": "Regeringen genomför ett paradigmskifte i migrationspolitiken",
+              "kalla": "moderaterna.se"
+            },
+            {
+              "strategi": "Kvantifiering som framgång",
+              "exempel": "Lägsta asylrelaterade invandringen sedan 1985",
+              "kalla": "moderaterna.se mars 2026"
+            }
+          ],
+          "galtan_kongruens": "TAN i praktik med liberal retorik.",
+          "kontrast_med": "SD ramar migration som kulturellt hot. S har närmat sig M:s språk. C och V i opposition."
+        },
+        "klimat": {
+          "inramning": "Klimatmål accepteras men villkoras av energisystemets trygghet. Kärnkraft som klimatlösning. Alla fossilfria kraftslag behövs, men kärnkraft prioriteras i praktik. Klimatpolitik ska inte begränsa individuell frihet.",
+          "nyckelbegrepp": [
+            {
+              "term": "fossilfritt (inte förnybart)",
+              "innebord": "Avgörande begreppsändring som inkluderar kärnkraft i klimatmålet",
+              "underforstadd_premiss": "Förnybart-målet var ideologiskt och uteslöt effektiv teknik"
+            },
+            {
+              "term": "alla kraftslag",
+              "innebord": "Inkluderande formulering som döljer att kärnkraft prioriteras",
+              "underforstadd_premiss": "Vindkraft och sol är bra men otillräckliga utan kärnkraft"
+            },
+            {
+              "term": "utan energipolitik ingen klimatpolitik",
+              "innebord": "Energitrygghet som förutsättning för klimatmål",
+              "underforstadd_premiss": "Klimatpolitik utan stabil energi är meningslös"
+            },
+            {
+              "term": "frihetsinramning",
+              "innebord": "Klimatåtgärder får inte begränsa vardagen",
+              "underforstadd_premiss": "Beteendeförändring är inte en legitim klimatstrategi"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Alla-kraftslag-inkludering",
+              "exempel": "Alla fossilfria kraftslag behövs — vattenkraft, kärnkraft, vindkraft och solenergi",
+              "kalla": "Regeringens klimathandlingsplan 2023/24:59"
+            },
+            {
+              "strategi": "Ansvarsförskjutning bakåt",
+              "exempel": "Nedläggningen av hälften av Sveriges kärnkraftsreaktorer har lett till elbrist",
+              "kalla": "Ulf Kristersson, regeringen.se"
+            },
+            {
+              "strategi": "Kvantifiering som framgång",
+              "exempel": "Miljardsatsningar på ny kärnkraft, 400 miljarder i kreditgarantier",
+              "kalla": "regeringen.se/karnkraft-i-sverige"
+            },
+            {
+              "strategi": "Frihet-klimat-syntes",
+              "exempel": "Klimatpolitiken ska öka människors frihet — inte begränsa och försvåra deras vardag",
+              "kalla": "Skr. 2023/24:59"
+            }
+          ],
+          "galtan_kongruens": "TAN med liberal retorik. Accepterar klimatmålen men motverkar regleringar som begränsar individer. Kärnkraft som teknikoptimistisk lösning istället för beteendeförändring.",
+          "kontrast_med": "SD delar kärnkraftsfokus men är mer skeptisk till klimatmål. MP och V betonar förnybart och systemförändring. S har närmat sig M:s fossilfritt-vokabulär."
+        }
+      }
+    },
+    "KD": {
+      "diskursprofil": {
+        "overordnad_inramning": "Brottslighet bekämpas genom starka familjer och tydliga normer; migration kräver ansvar och humanitet; energipolitik bygger på teknikneutralitet och förvaltarskap",
+        "nodalpunkter": [
+          "familjen",
+          "upprättelse",
+          "normer och värderingar",
+          "sona sitt brott",
+          "förvaltarskap",
+          "alla verktyg"
+        ],
+        "retoriska_strategier": [
+          "Familjen som brottsförebyggare",
+          "Uppgörelse med 68-vänstern",
+          "Upprättelse-retorik",
+          "Stram men human",
+          "Teknikoptimism och förvaltarskap"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "hög",
+          "forklaring": "TAN med tydlig värdekonservativ signatur. Unik familjemoralisk dimension och andlig rehabilitering. I klimat/energi följer KD Tidöblockets linje men med förvaltarskapsdimension."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Brottslighet som normupplösning och familjekris. Straff har moraliskt egenvärde.",
+          "nyckelbegrepp": [
+            {
+              "term": "familjen som brottsförebyggare",
+              "innebord": "Starka familjer förhindrar kriminalitet",
+              "underforstadd_premiss": "Brottslighetens rot är bristande familjestruktur"
+            },
+            {
+              "term": "upprättelse",
+              "innebord": "Brottsoffrets moraliska rätt",
+              "underforstadd_premiss": "Upprättelse kräver kännbart straff"
+            },
+            {
+              "term": "sona sitt brott",
+              "innebord": "Straffet har egenvärde utöver samhällsskydd",
+              "underforstadd_premiss": "Personligt moraliskt ansvar kan inte reduceras till strukturer"
+            },
+            {
+              "term": "arvet efter 68-vänstern",
+              "innebord": "Ideologisk fiende — orsaken till mildhet",
+              "underforstadd_premiss": "Svensk straffrätts problem beror på en specifik ideologisk tradition"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Familjen som grundval",
+              "exempel": "Familjen är den viktigaste brottsförebyggaren",
+              "kalla": "kristdemokraterna.se/brottsforebyggande-atgarder"
+            },
+            {
+              "strategi": "Ideologisk historieskrivning",
+              "exempel": "Politiken måste göra upp med arvet efter 68-vänstern",
+              "kalla": "KD kriminalpolitiskt handlingsprogram 2021"
+            },
+            {
+              "strategi": "Andlig rehabilitering",
+              "exempel": "Tolvstegsprogram och klosterverksamhet i kriminalvården",
+              "kalla": "Dagen debatt, februari 2025"
+            },
+            {
+              "strategi": "Upprättelse-retorik",
+              "exempel": "Gärningsmannen ska sona sitt brott",
+              "kalla": "KD kriminalpolitiskt handlingsprogram 2021"
+            }
+          ],
+          "galtan_kongruens": "TAN — värdekonservativ variant.",
+          "kontrast_med": "M delar repressiv agenda utan familjemoralisk inramning. SD saknar rehabiliteringsspår."
+        },
+        "migration": {
+          "inramning": "Ansvarsfull, rättssäker, human. Kvotflyktingsystemet som huvudväg — omdirigering snarare än avvisning av asylrätten.",
+          "nyckelbegrepp": [
+            {
+              "term": "kvotflyktingar som huvudväg",
+              "innebord": "Kanalisera asyl genom UNHCR",
+              "underforstadd_premiss": "Spontanasyl är oordnad"
+            },
+            {
+              "term": "positiva förväntningar",
+              "innebord": "Integrationskrav som respekt",
+              "underforstadd_premiss": "Avsaknad av krav var brist på respekt"
+            },
+            {
+              "term": "nordiska nivåer",
+              "innebord": "Mottagande som grannländerna",
+              "underforstadd_premiss": "Sverige har tagit emot oproportionerligt mycket"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Stram men human",
+              "exempel": "Långsiktigt ansvarsfull, rättssäker, human och överblickbar",
+              "kalla": "kristdemokraterna.se/migration-och-integration"
+            },
+            {
+              "strategi": "Kvotflykting-omdirigering",
+              "exempel": "Säkra och lagliga vägar ska vara den huvudsakliga metoden",
+              "kalla": "kristdemokraterna.se/flyktingar"
+            },
+            {
+              "strategi": "Positiva förväntningar",
+              "exempel": "Samhället har brustit i att ha positiva förväntningar på nyanlända",
+              "kalla": "kristdemokraterna.se"
+            }
+          ],
+          "galtan_kongruens": "TAN men med humanitärt anspråk.",
+          "kontrast_med": "SD avvisar asylrätten mer radikalt. M betonar systemeffektivitet."
+        },
+        "klimat": {
+          "inramning": "Förvaltarskap — jorden ska förvaltas ansvarsfullt. Fossilfritt med alla verktyg, teknikoptimism. KD följer Tidöblockets energilinje men adderar en värdekonservativ förvaltarskapsdimension.",
+          "nyckelbegrepp": [
+            {
+              "term": "förvaltarskap",
+              "innebord": "Kristet-konservativ ansats: ansvarsfullt förvaltande av skapelsen",
+              "underforstadd_premiss": "Miljöansvar motiveras av förvaltartanken, inte av ekologisk kris"
+            },
+            {
+              "term": "alla verktyg",
+              "innebord": "Kärnkraft, SMR, CCS, vätgas — ingen teknik utesluts",
+              "underforstadd_premiss": "Teknikförbud (som mot kärnkraft) är irrationella"
+            },
+            {
+              "term": "energimix",
+              "innebord": "Pragmatisk-teknokratisk term",
+              "underforstadd_premiss": "Balans och mångfald i energisystemet"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Teknikoptimism",
+              "exempel": "Nya lösningar som SMR och vätgas som svar istället för beteendeförändring",
+              "kalla": "kristdemokraterna.se/energi"
+            },
+            {
+              "strategi": "Gemensam front med Tidöblocket",
+              "exempel": "KD driver inte egen energidiskurs utan förstärker blockets",
+              "kalla": "Riksdagsdebatt NU13 2025/26"
+            },
+            {
+              "strategi": "Landsbygdsperspektiv",
+              "exempel": "Vindkraftskritik kopplad till lokal acceptans och påverkan",
+              "kalla": "KD energipolitisk motion"
+            }
+          ],
+          "galtan_kongruens": "TAN men mildare. Accepterar klimatmålen fullständigt. Metodvalet (kärnkraft + teknik framför beteendeförändring) är TAN-orienterat.",
+          "kontrast_med": "SD mer skeptisk till klimatmål. MP och V betonar förnybart. KD:s förvaltarskapsdimension är unik."
+        }
+      }
+    },
+    "L": {
+      "diskursprofil": {
+        "overordnad_inramning": "Liberal kriminalpolitik som söker balans; Tidösamarbetets spänning som diskursiv utmaning; kärnkraft som klimatlösning",
+        "nodalpunkter": [
+          "stålhandske och lovikkavante",
+          "utbildning",
+          "humanism och realism",
+          "teknikneutralitet",
+          "klimatkärnkraft"
+        ],
+        "retoriska_strategier": [
+          "Bådeoch-retorik",
+          "Utbildning som brottsförebyggande",
+          "Humanism-realism-balans",
+          "Grön kärnkraft-narrativ",
+          "EU-fokus"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "delvis",
+          "forklaring": "Intern diskursiv spänning. Liberal tradition bryts mot Tidösamarbetets praktik i alla tre områden."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Balanserad — hårda tag mot gängen med liberala skyddsspår: rehabilitering, utbildning, möjligheter.",
+          "nyckelbegrepp": [
+            {
+              "term": "stålhandske och lovikkavante",
+              "innebord": "Metafor som förenar hårdhet med omtanke",
+              "underforstadd_premiss": "Gängkriminaliteten kräver hårda tag men liberala samvetet kräver motvikt"
+            },
+            {
+              "term": "studentexamen som skydd",
+              "innebord": "Utbildning som brottsförebyggande",
+              "underforstadd_premiss": "Brottslighet beror på brist på möjligheter"
+            },
+            {
+              "term": "motivera till förändring",
+              "innebord": "Kriminalvårdens rehabiliterande roll",
+              "underforstadd_premiss": "Rehabilitering fungerar"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Bådeoch-metaforen",
+              "exempel": "Stålhandske och lovikkavante",
+              "kalla": "liberalerna.se/politik/gangkriminalitet"
+            },
+            {
+              "strategi": "Utbildning som lösning",
+              "exempel": "En studentexamen är det bästa skyddet mot kriminalitet",
+              "kalla": "liberalerna.se"
+            },
+            {
+              "strategi": "Rehabilitering bevarad",
+              "exempel": "Kriminalvården ska motivera till förändring",
+              "kalla": "liberalerna.se/politik/kriminalvard"
+            }
+          ],
+          "galtan_kongruens": "Spänning. Liberal tradition mot Tidöpraktik.",
+          "kontrast_med": "M och SD saknar rehabiliteringsspår. V och MP delar förebyggande fokus."
+        },
+        "migration": {
+          "inramning": "Humanism och realism — öppenhet för arbetskraft, rättssäker asylprocess, EU-lösningar.",
+          "nyckelbegrepp": [
+            {
+              "term": "humanism och realism",
+              "innebord": "Strukturellt identiskt med V:s solidarisk realism men annat innehåll",
+              "underforstadd_premiss": "Öppenhet och kontroll kan kombineras"
+            },
+            {
+              "term": "möjligheternas land",
+              "innebord": "Sverige som attraktivt för bidragande människor",
+              "underforstadd_premiss": "Migration är primärt tillgång om den hanteras rätt"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Humanism-realism-balans",
+              "exempel": "Migrationspolitik byggd på humanism och realism",
+              "kalla": "Riksdagsdebatt SfU20"
+            },
+            {
+              "strategi": "Arbetskraft och kompetens",
+              "exempel": "Sveriges öppenhet har bidragit till tillväxt och välfärd",
+              "kalla": "Riksdagsdebatt SfU20"
+            }
+          ],
+          "galtan_kongruens": "Spänning. Liberal tradition mot Tidöpraktik.",
+          "kontrast_med": "M delar Tidöpraktik utan spänning. C delar liberal syn utan Tidöansvar."
+        },
+        "klimat": {
+          "inramning": "Kärnkraft som klimatlösning — L driver kärnkraft mest explicit som klimatpolitik. Energi och klimat behandlas som identiska frågor. Marknadsbaserade lösningar.",
+          "nyckelbegrepp": [
+            {
+              "term": "klimatkärnkraft",
+              "innebord": "Kärnkraft direkt kopplad till klimatmålen, inte bara energitrygghet",
+              "underforstadd_premiss": "Klimatmålen kräver kärnkraft — utan den klarar vi inte omställningen"
+            },
+            {
+              "term": "teknikneutralitet",
+              "innebord": "Staten ska inte välja teknik, marknaden avgör",
+              "underforstadd_premiss": "Politiska teknikförbud (mot kärnkraft) var skadliga — men statligt stöd till kärnkraft accepteras (spänning)"
+            },
+            {
+              "term": "EU:s energisäkerhet",
+              "innebord": "Europas energiberoende som argument för svensk kärnkraft",
+              "underforstadd_premiss": "Svensk kärnkraft bidrar till europeisk säkerhet"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Grön kärnkraft-narrativ",
+              "exempel": "Kärnkraft framställs som miljövänlig teknik, inte som nödvändigt ont",
+              "kalla": "liberalerna.se/politik/energi"
+            },
+            {
+              "strategi": "EU-fokus",
+              "exempel": "Europas energisäkerhet som argument för svensk kärnkraftsexport",
+              "kalla": "liberalerna.se/eu-politik"
+            },
+            {
+              "strategi": "Marknadslogik med statligt stöd",
+              "exempel": "Teknikneutralitet som princip men 400 miljarder i statliga kreditgarantier till kärnkraft",
+              "kalla": "Riksdagsdebatt NU13 2025/26"
+            }
+          ],
+          "galtan_kongruens": "Spänning. Liberal tradition (marknadsbaserade klimatlösningar, utsläppshandel) i kombination med Tidösamarbetets kärnkraftsfokus och massiva statliga garantier. LUF driver starkare klimatlinje.",
+          "kontrast_med": "M delar kärnkraftsfokus men utan lika stark klimatkoppling. C kritiserar kärnkraftskostnaden. MP och V vill ha förnybart."
+        }
+      }
+    },
+    "S": {
+      "diskursprofil": {
+        "overordnad_inramning": "Sverige står inför en nationell kris som kräver att samhället kliver fram — kombinerar strukturanalys med repressivt lager i kriminalpolitiken, restriktiv migration, och fossilfri energipolitik med alla kraftslag",
+        "nodalpunkter": [
+          "trygghet",
+          "samhällskontrakt",
+          "samhällsgemenskap",
+          "kliva fram",
+          "reglerad invandring",
+          "rättvis omställning",
+          "alla kraftslag"
+        ],
+        "retoriska_strategier": [
+          "Dubbelinramning",
+          "Krishanteringsretorik",
+          "Retroaktiv självkritik",
+          "EU-normalisering",
+          "Ledartröjan tillbaka"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "delvis",
+          "forklaring": "Diskursiv hybridposition i alla tre områden. Behållit GAL-element men lagt TAN-vokabulär ovanpå. Glidningen syns tydligast i migration och energi."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Hybridinramning: strukturella orsaker OCH repressivt svar. Strukturanalysen behålls grammatiskt men underordnas.",
+          "nyckelbegrepp": [
+            {
+              "term": "trygghet",
+              "innebord": "Glidit från välfärdstrygghet mot fysisk säkerhet",
+              "underforstadd_premiss": "Trygghet handlar primärt om att inte utsättas för brott"
+            },
+            {
+              "term": "samhällskontrakt",
+              "innebord": "Omformulerat till säkerhetsåtagande",
+              "underforstadd_premiss": "Samhällskontraktets främsta skyldighet är säkerhet"
+            },
+            {
+              "term": "kliva fram",
+              "innebord": "Statligt ingripande — nu primärt repressivt",
+              "underforstadd_premiss": "Staten har tappat kontrollen"
+            },
+            {
+              "term": "nationell kris",
+              "innebord": "Krisinramning som legitimerar exceptionella åtgärder",
+              "underforstadd_premiss": "Normala verktyg räcker inte"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Dubbelinramning",
+              "exempel": "Bekämpa brotten men också brottens orsaker",
+              "kalla": "socialdemokraterna.se/trygghet"
+            },
+            {
+              "strategi": "Teknokratisk metaforik",
+              "exempel": "Repression med precision",
+              "kalla": "Teresa Carvalho, april 2025"
+            },
+            {
+              "strategi": "Krisexceptionalism",
+              "exempel": "Vi befinner oss i en långvarig nationell kris",
+              "kalla": "socialdemokraterna.se/brottsforebyggande"
+            }
+          ],
+          "galtan_kongruens": "Delvis — glidning mot TAN.",
+          "kontrast_med": "SD ramar brott som invandringsproblem; V som klassproblem. S håller båda ramarna men den repressiva vinner."
+        },
+        "migration": {
+          "inramning": "Reglerad, hållbar, stram migration. Byråkratisk-teknokratiskt språk.",
+          "nyckelbegrepp": [
+            {
+              "term": "reglerad invandring",
+              "innebord": "Kontroll och ordning utan antagonism",
+              "underforstadd_premiss": "Tidigare invandring var otillräckligt reglerad"
+            },
+            {
+              "term": "stram",
+              "innebord": "Nyckelterm från partiprogrammet 2025",
+              "underforstadd_premiss": "Nuvarande nivåer för höga"
+            },
+            {
+              "term": "hållbar",
+              "innebord": "Lånad från hållbarhetsdiskursen",
+              "underforstadd_premiss": "Migration på tidigare nivåer ohållbar"
+            },
+            {
+              "term": "samhällsgemenskap",
+              "innebord": "Medborgerlig gemenskap som kräver integration",
+              "underforstadd_premiss": "Nyanlända måste anpassa sig"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Retroaktiv självkritik",
+              "exempel": "Det blev tydligt under flyktingkrisen 2014–2015",
+              "kalla": "socialdemokraterna.se"
+            },
+            {
+              "strategi": "EU-normalisering",
+              "exempel": "Ska inte skilja sig väsentligen från övriga EU-länder",
+              "kalla": "socialdemokraterna.se"
+            },
+            {
+              "strategi": "Frånvaro av rättighetsspråk",
+              "exempel": "Asylrätten nämns kort, diskursen centreras kring systemhantering",
+              "kalla": "Jämförelse S vs V"
+            }
+          ],
+          "galtan_kongruens": "Diskursiv glidning tydligare här än i kriminalpolitiken.",
+          "kontrast_med": "SD ramar migration som hot; V som rättighet. S teknokratisk mellanposition."
+        },
+        "klimat": {
+          "inramning": "Rättvis klimatomställning för vanligt folk i hela landet. Alla kraftslag inklusive kärnkraft. Oppositionsretorik: regeringen har slarvat bort Sveriges klimatposition. Ekonomisk inramning: jobb, tillväxt, nyindustrialisering.",
+          "nyckelbegrepp": [
+            {
+              "term": "rättvis omställning för vanligt folk",
+              "innebord": "Omställning som inte drabbar arbetarklassen",
+              "underforstadd_premiss": "Tidigare klimatpolitik riskerade att slå mot låginkomsttagare"
+            },
+            {
+              "term": "alla kraftslag",
+              "innebord": "S har antagit M:s formel — kärnkraft nu nämnd vid sidan av vindkraft",
+              "underforstadd_premiss": "Det förnybara paradigmet räcker inte ensamt"
+            },
+            {
+              "term": "ledartröjan",
+              "innebord": "Nostalgisk referens till Sveriges tidigare klimatposition",
+              "underforstadd_premiss": "Sverige var en gång ledande — vi kan bli det igen"
+            },
+            {
+              "term": "springnota",
+              "innebord": "Missade klimatmål = EU-böter = ekonomisk kostnad",
+              "underforstadd_premiss": "Klimatpolitik motiveras ekonomiskt, inte ekologiskt"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Ledartröjan-nostalgi",
+              "exempel": "Sverige behöver ta tillbaka ledartröjan i klimatarbetet",
+              "kalla": "socialdemokraterna.se/var-politik/a-till-o/klimatpolitik"
+            },
+            {
+              "strategi": "Ekonomisk klimatinramning",
+              "exempel": "Nyindustrialisering med fler välbetalda industrijobb — klimat som tillväxtmotor",
+              "kalla": "socialdemokraterna.se/klimatpolitik"
+            },
+            {
+              "strategi": "Oppositionskvantifiering",
+              "exempel": "Sveriges utsläpp ökade med sju procent 2024, näst störst i EU efter Rumänien",
+              "kalla": "socialdemokraterna.se/klimatpolitik"
+            },
+            {
+              "strategi": "Alla-kraftslag-antagande",
+              "exempel": "Storskaliga investeringar i fossilfri el, såsom vind- och kärnkraft",
+              "kalla": "socialdemokraterna.se/karnkraft"
+            }
+          ],
+          "galtan_kongruens": "Delvis — diskursiv glidning. S:s klimatdiskurs har rört sig från GAL (förnybart, föregångsland, internationell solidaritet) mot mitten (alla kraftslag, ekonomiska argument, vanligt folk). Retoriken nu närmare M:s fossilfritt än MP:s förnybart.",
+          "kontrast_med": "M delar alla-kraftslag-formeln men utan rättvisedimensionen. MP och V vill ha ambitiösare mål och utesluta kärnkraft. SD ifrågasätter klimatmålen."
+        }
+      }
+    },
+    "C": {
+      "diskursprofil": {
+        "overordnad_inramning": "Pragmatisk kriminalpolitik utan enkla lösningar; öppen migrationspolitik med fokus på arbetskraft; marknadsdriven energiomställning med förnybart i centrum",
+        "nodalpunkter": [
+          "förebyggande",
+          "hopp",
+          "arbetskraftsinvandring",
+          "medmänsklighet och ordning",
+          "marknadsdriven omställning",
+          "förnybart"
+        ],
+        "retoriska_strategier": [
+          "Ingen-enkla-lösningar-retorik",
+          "Färre-brott-inte-fler-i-fängelse",
+          "Arbetskraftsinvandring som tillgång",
+          "Kärnkraftspolitik ≠ energipolitik",
+          "Landsbygdsperspektiv som tillgång"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "GAL-lutning",
+          "forklaring": "GAL-lutning tydligast i migration och klimat. I kriminalpolitiken mer centralt. C:s profil är pragmatisk snarare än ideologisk."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Pragmatisk tvåsidig strategi. Explicit avvisning av enkla lösningar.",
+          "nyckelbegrepp": [
+            {
+              "term": "inga enkla lösningar",
+              "innebord": "Avvisning av ensidig repressiv linje",
+              "underforstadd_premiss": "De som lovar enkla lösningar är oärliga"
+            },
+            {
+              "term": "färre som begår brott",
+              "innebord": "Målet omformulerat — inte fler i fängelse",
+              "underforstadd_premiss": "Fler i fängelse ≠ mindre brottslighet"
+            },
+            {
+              "term": "hopp och framtidstro",
+              "innebord": "Ungdomar behöver alternativ till gängen",
+              "underforstadd_premiss": "Gängrekrytering beror på brist på alternativ"
+            },
+            {
+              "term": "samverkan",
+              "innebord": "Polis, skola, socialtjänst som gemensam front",
+              "underforstadd_premiss": "Brottslighet kräver samhällslösningar"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Mål-omformulering",
+              "exempel": "Vi vill att färre ska begå brott. Det är en skillnad i fokus.",
+              "kalla": "Riksdagsdebatt JuU15 2025/26"
+            },
+            {
+              "strategi": "Avvisning av förenkling",
+              "exempel": "Det finns inga enkla lösningar",
+              "kalla": "centerpartiet.se/gangkriminalitet"
+            },
+            {
+              "strategi": "Hopp som motberättelse",
+              "exempel": "Jobb, utbildning och fritid ger unga framtidshopp",
+              "kalla": "centerpartiet.se"
+            }
+          ],
+          "galtan_kongruens": "Mittfåra med GAL-lutning.",
+          "kontrast_med": "SD och M betonar straff. V betonar strukturer. C pragmatisk mitt."
+        },
+        "migration": {
+          "inramning": "Medmänsklighet och ordning — öppen arbetskraftsinvandring, opposition mot Tidöåtstramning.",
+          "nyckelbegrepp": [
+            {
+              "term": "öppen arbetskraftsinvandring",
+              "innebord": "Ekonomisk liberalism — arbetskraft bidrar till välfärden",
+              "underforstadd_premiss": "Migration av arbetskraft är primärt tillgång"
+            },
+            {
+              "term": "medmänsklighet och ordning och reda",
+              "innebord": "Humanitet och kontroll förenas",
+              "underforstadd_premiss": "Man behöver inte välja"
+            },
+            {
+              "term": "kvalificering in i välfärden",
+              "innebord": "Krav som trappa, inte mur",
+              "underforstadd_premiss": "Gradvis tillgång motiverar integration"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Arbetskraft som tillgång",
+              "exempel": "Öppen arbetskraftsinvandring för låg- och högkvalificerad arbetskraft",
+              "kalla": "centerpartiet.se/migration-och-integration"
+            },
+            {
+              "strategi": "Opposition mot åtstramning",
+              "exempel": "Vi beklagar att regeringen rivit upp lagstiftningen",
+              "kalla": "Motion 2025/26:3190"
+            },
+            {
+              "strategi": "Ekonomisk kvantifiering",
+              "exempel": "Arbetskraftsinvandringen bidrog med 45 miljarder till BNP",
+              "kalla": "Motion 2025/26:3190"
+            }
+          ],
+          "galtan_kongruens": "GAL-lutning. Tydligast i försvaret av arbetskraftsinvandring.",
+          "kontrast_med": "SD och M vill strama åt. V och MP vill öppna upp. C pragmatisk öppen mittposition."
+        },
+        "klimat": {
+          "inramning": "Bredare energipolitik än bara kärnkraft. Marknad ska driva omställningen. Förnybart i centrum med landsbygdsutveckling som bonus. Skarpaste diskursiva kritiken mot Tidöblocket: kärnkraftspolitik ≠ energipolitik.",
+          "nyckelbegrepp": [
+            {
+              "term": "kärnkraftspolitik ≠ energipolitik",
+              "innebord": "Omdefinierar debatten — Tidöblocket har inte en energipolitik utan en kärnkraftsfixering",
+              "underforstadd_premiss": "Ensidigt kärnkraftsfokus tränger undan billigare och snabbare alternativ"
+            },
+            {
+              "term": "energimix",
+              "innebord": "Alla kraftslag men med förnybart som bas",
+              "underforstadd_premiss": "Marknaden visar att förnybart är billigast"
+            },
+            {
+              "term": "landsbygdens resurser",
+              "innebord": "Vindkraft och bioenergi som landsbygdsutveckling",
+              "underforstadd_premiss": "Energiomställningen kan ge landsbygden nya intäkter"
+            },
+            {
+              "term": "marknadsdriven omställning",
+              "innebord": "Staten skapar förutsättningar, marknaden väljer teknik",
+              "underforstadd_premiss": "400 miljarder i statliga kärnkraftsgarantier är marknadsfrämmande"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Omvänd kärnkraftskritik",
+              "exempel": "Ni har ingen energipolitik, ni har en kärnkraftspolitik",
+              "kalla": "Anna-Karin Hatt, partiledardebatt SVT Agenda maj 2025"
+            },
+            {
+              "strategi": "Kostnadsargument",
+              "exempel": "Kärnkraft subventionerad av skattebetalarna — förnybart billigare",
+              "kalla": "Riksdagsdebatt NU13 2025/26"
+            },
+            {
+              "strategi": "Landsbygdsperspektiv som tillgång",
+              "exempel": "Vindkraft och bioenergi ger landsbygden nya intäkter",
+              "kalla": "centerpartiet.se/energi"
+            },
+            {
+              "strategi": "Marknadslogik mot subventioner",
+              "exempel": "400 miljarder i statliga garantier till kärnkraft bryter mot teknikneutralitet",
+              "kalla": "C reservation NU13"
+            }
+          ],
+          "galtan_kongruens": "GAL-lutning. Förnybart som primärt energislag, marknadsbaserade lösningar, landsbygdsperspektiv. Tydligt skild från Tidöblocket.",
+          "kontrast_med": "Tidöblocket betonar kärnkraft. MP och V vill gå längre med förnybart och statlig styrning. S har närmat sig Tidöblockets alla-kraftslag-formel."
+        }
+      }
+    },
+    "MP": {
+      "diskursprofil": {
+        "overordnad_inramning": "Brott förebyggs genom att bekämpa segregation; migration kräver mänskliga rättigheter och barnperspektiv; klimatkrisen kräver grön omställning med förnybar energi och energilagring — inte kärnkraft",
+        "nodalpunkter": [
+          "förebyggande",
+          "barnperspektiv",
+          "mänskliga rättigheter",
+          "klimatkris",
+          "grön baskraft",
+          "billig hållbar el"
+        ],
+        "retoriska_strategier": [
+          "Förebyggande som huvudstrategi",
+          "Barnrättsperspektiv",
+          "Klimatkris-terminologi",
+          "Grön baskraft som motbegrepp",
+          "Ekonomisk motoffensiv mot kärnkraft"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "hög",
+          "forklaring": "Konsekvent GAL. Strukturell analys, rättighetsbaserad, ekologisk kris som organiserande princip."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Förebyggande som överordnat — syftet är färre brott, inte fler straff.",
+          "nyckelbegrepp": [
+            {
+              "term": "syftet är färre brott",
+              "innebord": "Explicit omformulering av kriminalpolitikens mål",
+              "underforstadd_premiss": "Hårdare straff ≠ mindre brottslighet"
+            },
+            {
+              "term": "förebyggande",
+              "innebord": "MP:s nodalpunkt",
+              "underforstadd_premiss": "Det effektivaste sättet att minska brott är att förhindra dem"
+            },
+            {
+              "term": "segregation och ojämlikhet",
+              "innebord": "Strukturella orsaker — nära V utan klassramverk",
+              "underforstadd_premiss": "Kriminalitet beror på samhällsförhållanden"
+            },
+            {
+              "term": "destruktiva maskulinitetsnormer",
+              "innebord": "Genusanalys av våld",
+              "underforstadd_premiss": "Våldskultur kopplad till maskulinitetsnormer, inte etnicitet"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Syftes-omformulering",
+              "exempel": "Syftet är att färre brott ska begås — inte att fler ska straffas hårdare",
+              "kalla": "Riksdagsdebatt JuU15 2025/26"
+            },
+            {
+              "strategi": "Förebyggande som primärstrategi",
+              "exempel": "Bekämpa fattigdom, arbetslöshet, segregation och utanförskap",
+              "kalla": "mp.se/politik/lag-och-ordning"
+            },
+            {
+              "strategi": "Motstånd mot sänkt straffålder",
+              "exempel": "Sänkt straffmyndighetsålder är inte effektivt",
+              "kalla": "mp.se partiprogram"
+            },
+            {
+              "strategi": "Samhörighet som trygghet",
+              "exempel": "Där människor känner samhörighet, delaktighet och hopp, minskar brottsligheten",
+              "kalla": "mp.se partiprogram"
+            }
+          ],
+          "galtan_kongruens": "GAL. Strukturell analys, förebyggande, feministisk.",
+          "kontrast_med": "Tidöpartierna betonar straff. V delar strukturanalys med klassramverk."
+        },
+        "migration": {
+          "inramning": "Mänskliga rättigheter, asylrätt, barnperspektiv, klimatflyktingar.",
+          "nyckelbegrepp": [
+            {
+              "term": "asylrätten",
+              "innebord": "Grundläggande rättighet — delad nodalpunkt med V",
+              "underforstadd_premiss": "Icke-förhandlingsbar"
+            },
+            {
+              "term": "barnperspektiv",
+              "innebord": "MP:s distinktiva tillägg",
+              "underforstadd_premiss": "Migrationspolitik måste ta hänsyn till barn"
+            },
+            {
+              "term": "klimatflyktingar",
+              "innebord": "Ekologisk dimension — migration kopplad till klimat",
+              "underforstadd_premiss": "Klimatkrisen driver ökad migration"
+            },
+            {
+              "term": "säkra och lagliga vägar",
+              "innebord": "Legalitet som alternativ till farliga flyktvägar",
+              "underforstadd_premiss": "Restriktioner tvingar till farliga vägar"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Asylrättsförsvar",
+              "exempel": "Att ta bort rätten att pröva asyl i Sverige vore en farlig utveckling",
+              "kalla": "Riksdagsdebatt SfU20"
+            },
+            {
+              "strategi": "Barnrättsperspektiv",
+              "exempel": "40% av alla flyktingar är barn",
+              "kalla": "mp.se"
+            },
+            {
+              "strategi": "Klimat-migration-koppling",
+              "exempel": "Motion om klimatförändring som flyktgrund",
+              "kalla": "Motion 2021/22:3410"
+            }
+          ],
+          "galtan_kongruens": "GAL. Rättighetsbaserad med ekologisk profil.",
+          "kontrast_med": "Tidöpartierna restriktiva. V delar rättighetsperspektiv med klassinramning."
+        },
+        "klimat": {
+          "inramning": "Klimatkris som organiserande princip. Tidöblocket för ett krig mot billig hållbar el. Kärnkraft är en dyr omväg — förnybart + energilagring är billigare, snabbare och säkrare. Grön baskraft som alternativt paradigm.",
+          "nyckelbegrepp": [
+            {
+              "term": "klimatkris",
+              "innebord": "MP konsekvent i att använda kristerminologi om klimatet",
+              "underforstadd_premiss": "Situationen är akut och kräver omedelbar handling — inte 15 år till ny kärnkraft"
+            },
+            {
+              "term": "grön baskraft",
+              "innebord": "Motbegrepp till Tidöblockets planerbar kraft — inkluderar energilagring, pumpkraft, vätgas",
+              "underforstadd_premiss": "Planerbar kraft behöver inte betyda kärnkraft"
+            },
+            {
+              "term": "krig mot billig hållbar el",
+              "innebord": "Tidöblocket aktivt motarbetar förnybar energi",
+              "underforstadd_premiss": "Kärnkraftssatsningen tränger undan billigare alternativ"
+            },
+            {
+              "term": "2000 miljarder i merkostnad",
+              "innebord": "Kärnkraftsutbyggnadens totalkostnad jämförd med förnybart",
+              "underforstadd_premiss": "Kärnkraft är ekonomiskt oansvarigt"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Ekonomisk motoffensiv",
+              "exempel": "Merkostnaden för kärnkraft jämfört med förnybart uppgår till 2000 miljarder — 1000 kronor per hushåll per månad i 40 år",
+              "kalla": "MP debattartikel; referens till Chalmers/BTH-studie"
+            },
+            {
+              "strategi": "Grön baskraft som alternativ",
+              "exempel": "10 GW grön baskraft till 2030 — höjd effekt i vattenkraft, energilagring, pumpkraft, vätgas",
+              "kalla": "Motion 2025/26:3507"
+            },
+            {
+              "strategi": "Säkerhetsvändning",
+              "exempel": "Sveriges energiberoende är en säkerhetsrisk i sig — förnybart ger resiliens",
+              "kalla": "Motion 2025/26:4132"
+            },
+            {
+              "strategi": "Billig el som folklig fråga",
+              "exempel": "En energipolitik för att ge svenska folket billig el",
+              "kalla": "mp.se skuggbudget 2025"
+            }
+          ],
+          "galtan_kongruens": "Stark GAL. Ekologisk kris som organiserande princip, internationella åtaganden, reglering och styrmedel. MP är det parti som tydligast kopplar klimat till alla andra politikområden.",
+          "kontrast_med": "Tidöblocket driver kärnkraft. V delar klimatambition men med klassinramning och mer fokus på statliga investeringar. C delar förnybart-fokus men med marknadslogik. S har glidit mot alla-kraftslag."
+        }
+      }
+    },
+    "V": {
+      "diskursprofil": {
+        "overordnad_inramning": "Sociala problem är konsekvenser av klassojämlikhet; lösningen är omfördelning och försvar av rättigheter; klimatomställningen kräver massiva offentliga investeringar och rättvisa — rött och grönt hänger ihop",
+        "nodalpunkter": [
+          "klassklyftor",
+          "välfärd",
+          "asylrätten",
+          "reparativ rättvisa",
+          "solidaritet",
+          "rättvis klimatomställning",
+          "fossilfritt 2035"
+        ],
+        "retoriska_strategier": [
+          "Explicit motdiskurs",
+          "Forskningslegitimering",
+          "Genusanalys som differentiator",
+          "Rött-grönt-sammanfogning",
+          "Folklig förankring via Sverigebiljetten"
+        ],
+        "galtan_kongruens": {
+          "bedomning": "hög",
+          "forklaring": "Konsekvent GAL men med intressant spänning i klimat: V:s folkliga populistiska dimension (sänkt bensinskatt, nedtonad konsumtionskritik) krockar ibland med den radikalt gröna."
+        }
+      },
+      "per_omrade": {
+        "rattsvasende": {
+          "inramning": "Brott som klassproblem. Lösningen är strukturell.",
+          "nyckelbegrepp": [
+            {
+              "term": "klassklyftor",
+              "innebord": "V:s nodalpunkt — allt relateras till ojämlikhet",
+              "underforstadd_premiss": "Brottslighet ytterst en produkt av materiella villkor"
+            },
+            {
+              "term": "trygghetszoner",
+              "innebord": "Alternativ till visitationszoner — resursinvestering",
+              "underforstadd_premiss": "Säkerhet genom investering, inte övervakning"
+            },
+            {
+              "term": "reparativ rättvisa",
+              "innebord": "Rättvisa genom reparation, inte bestraffning",
+              "underforstadd_premiss": "Brottsofferintressen och rehabilitering är inte nollsummespel"
+            },
+            {
+              "term": "politiskt eftersatta områden",
+              "innebord": "Skulden förskjuts till politisk försummelse",
+              "underforstadd_premiss": "Stadsdelarna förstördes av politiska beslut"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Explicit motdiskurs",
+              "exempel": "Istället för prat om hårdare straff, minska klassklyftorna",
+              "kalla": "vansterpartiet.se/kriminalitet"
+            },
+            {
+              "strategi": "Forskningslegitimering",
+              "exempel": "Forskning visar att hårdare straff inte fungerar. Se USA.",
+              "kalla": "vansterpartiet.se"
+            },
+            {
+              "strategi": "Genusanalys",
+              "exempel": "Gemensam nämnare för gängkriminella män är kvinnohatet",
+              "kalla": "V riksdagsmotion"
+            },
+            {
+              "strategi": "Välfärdsnostalgisk motberättelse",
+              "exempel": "Sverige var tryggt tack vare välfärden",
+              "kalla": "vansterpartiet.se/grova-brott"
+            }
+          ],
+          "galtan_kongruens": "Hög GAL-kongruens.",
+          "kontrast_med": "SD tillskriver brott invandring; M betonar individansvar. V ensamt håller klassramverket."
+        },
+        "migration": {
+          "inramning": "Migration som mänsklig rättighet. Asylrätten icke-förhandlingsbar. Migration är naturligt och självklart.",
+          "nyckelbegrepp": [
+            {
+              "term": "asylrätten",
+              "innebord": "Absolut nodalpunkt — icke-förhandlingsbar",
+              "underforstadd_premiss": "Asyl överordnar statssuveränitetshänsyn"
+            },
+            {
+              "term": "solidarisk realism",
+              "innebord": "Idealism + pragmatism",
+              "underforstadd_premiss": "Solidaritet och realism förenliga"
+            },
+            {
+              "term": "murar",
+              "innebord": "Fysisk metafor för restriktioner",
+              "underforstadd_premiss": "Restriktioner dödar"
+            },
+            {
+              "term": "feministisk migrationspolitik",
+              "innebord": "Migration genom könsperspektiv",
+              "underforstadd_premiss": "Migrationspolitik som ignorerar kön reproducerar patriarkala strukturer"
+            },
+            {
+              "term": "naturligt och självklart",
+              "innebord": "Migration som normalt fenomen",
+              "underforstadd_premiss": "Gränser är avvikelsen"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Historiska moraliska paralleller",
+              "exempel": "Från misslyckade försök att rädda judar 1938",
+              "kalla": "Motion 2025/26:2798"
+            },
+            {
+              "strategi": "Agentifiering av migranter",
+              "exempel": "Människor på flykt, barn, kvinnor — individer, inte volymer",
+              "kalla": "Alla V:s migrationstexter"
+            },
+            {
+              "strategi": "Explicit motstånd",
+              "exempel": "Vi som tror på mänskliga rättigheter måste försvara flyktingkonventionen",
+              "kalla": "Motion 2025/26:2798"
+            },
+            {
+              "strategi": "Feministisk motinramning",
+              "exempel": "Patriarkala strukturer som slagträ mot flyktingar",
+              "kalla": "V riksdagsmotion 2024/25"
+            }
+          ],
+          "galtan_kongruens": "Stark GAL.",
+          "kontrast_med": "SD ramar migration som hot; M som systemproblem. V ensamt ramar det som rättighet."
+        },
+        "klimat": {
+          "inramning": "Klimat som klassfråga — de rika orsakar mest utsläpp, de fattiga drabbas hårdast. Rättvis klimatomställning kräver massiva offentliga investeringar och omfördelning. Fossilfritt 2035. 830 miljarder i klimatinvesteringsprogram.",
+          "nyckelbegrepp": [
+            {
+              "term": "rättvis klimatomställning",
+              "innebord": "V:s nodalpunkt — klimat och klass hänger ihop",
+              "underforstadd_premiss": "Ökad jämlikhet är en förutsättning för att möta klimathotet"
+            },
+            {
+              "term": "fossilfritt 2035",
+              "innebord": "Aggressivaste klimatmålet bland riksdagspartierna",
+              "underforstadd_premiss": "2045 är för sent — vi behöver agera tio år snabbare"
+            },
+            {
+              "term": "klimatinvesteringsprogram 830 miljarder",
+              "innebord": "Största offentliga investeringen något parti föreslår",
+              "underforstadd_premiss": "Klimatomställningen kräver statliga investeringar i en skala som marknaden inte levererar"
+            },
+            {
+              "term": "Sverigebiljetten",
+              "innebord": "450 kr/mån för all regional kollektivtrafik",
+              "underforstadd_premiss": "Klimatpolitik måste vara konkret och folklig, inte abstrakt"
+            },
+            {
+              "term": "progressiv flygskatt",
+              "innebord": "De som flyger mest betalar mest",
+              "underforstadd_premiss": "Klimatpåverkan är ojämlikt fördelad — de rika belastar mest"
+            }
+          ],
+          "retoriska_strategier": [
+            {
+              "strategi": "Rött-grönt-sammanfogning",
+              "exempel": "Det krävs ökad jämlikhet för att möta klimathotet — förena grönt med rött",
+              "kalla": "vansterpartiet.se/var-politik/politik-a-o/klimat"
+            },
+            {
+              "strategi": "Ojämlikhetskvantifiering",
+              "exempel": "Den rikaste procenten släpper ut lika mycket på ett år som en medelinkomsttagare på 30 år",
+              "kalla": "Motion 2025/26:2789"
+            },
+            {
+              "strategi": "Genusanalys av klimat",
+              "exempel": "Män har betydligt högre klimatpåverkan genom transporter och köttkonsumtion",
+              "kalla": "Motion 2025/26:2789"
+            },
+            {
+              "strategi": "Folklig förankring",
+              "exempel": "Sverigebiljetten, utökat stöd för elbilsköp — klimatpolitik som vanligt folk har råd med",
+              "kalla": "vansterpartiet.se/klimat"
+            }
+          ],
+          "galtan_kongruens": "Stark GAL men med intressant spänning. V:s radikala klimatmål (fossilfritt 2035, 830 miljarder) matchar GAL. Men partiet kritiserades för sänkt bensinskatt och nedtonad konsumtionskritik under Dadgostar — en folklig-populistisk dimension som ibland krockar med den radikalt gröna linjen.",
+          "kontrast_med": "MP delar klimatambition men med ekologisk ram istället för klassram. S har antagit alla-kraftslag-formeln. SD och M betonar teknik framför omfördelning."
+        }
+      }
+    }
+  }
+}
