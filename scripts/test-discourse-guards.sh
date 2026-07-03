@@ -11,6 +11,7 @@
 #   4. corrupt spent     -> exit 4 when stored spent_usd is unparsable
 #   5. validator         -> exit 0 on minimal valid fixture, exit 1 on broken
 #   6. scope conflict    -> exit 6 when the same scope-violation repeats
+#   7. git-history guard -> exit 7 when the worker commits during its turn
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
@@ -141,6 +142,26 @@ restore_branch
 git checkout -q -- metod.html
 rm -f "$CITAT"
 check "$rc" 6 "scope conflict: repeated validator rejection exits 6"
+
+# --- Test 7: git-history guard (exit 7) ------------------------------------
+# Stub commits an empty commit during the "worker" turn — the loop must
+# detect the moved HEAD and abort with exit 7 (tool lists are config, not
+# enforcement; the guard lives in code).
+STUB_COMMITTER=.loop/stub-claude-committer.sh
+cat > "$STUB_COMMITTER" <<'EOF'
+#!/usr/bin/env bash
+git commit --allow-empty -q -m "stub rogue commit (guard test)"
+echo '{"result":"stub","session_id":"stub-session","total_cost_usd":0.01,"modelUsage":{"claude-sonnet-4-6":{}}}'
+EOF
+chmod +x "$STUB_COMMITTER"
+
+rm -f "$LOOP_STATE_FILE"
+ensure_on_pipeline_branch
+pre_head="$(git rev-parse HEAD)"
+rc=0; CLAUDE_BIN="$STUB_COMMITTER" DRY_RUN=1 bash scripts/discourse-quote-loop.sh >/dev/null 2>&1 || rc=$?
+if [[ "$(git rev-parse HEAD)" != "$pre_head" ]]; then git reset -q "$pre_head"; fi
+restore_branch
+check "$rc" 7 "git-history guard: worker commit during turn exits 7"
 
 echo ""
 echo "$PASS passed, $FAIL failed"

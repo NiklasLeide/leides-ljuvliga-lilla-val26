@@ -11,6 +11,7 @@
 #   5. validator         -> exit 0 on the unmodified working tree
 #   6. scope conflict    -> exit 6 when the same scope-violation repeats
 #                            two iterations in a row
+#   7. git-history guard -> exit 7 when the worker commits during its turn
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
@@ -127,6 +128,25 @@ rc=0; CLAUDE_BIN="$STUB_COSTED" bash scripts/data-loop.sh >/dev/null 2>&1 || rc=
 restore_from_loop_pilot
 git checkout -q -- data/voting.json
 check "$rc" 6 "scope conflict: repeated validator rejection exits 6"
+
+# --- Test 7: git-history guard (exit 7) ------------------------------------
+# Stub commits an empty commit during the "worker" turn — the loop must
+# detect the moved HEAD and abort with exit 7.
+STUB_COMMITTER=.loop/stub-claude-committer.sh
+cat > "$STUB_COMMITTER" <<'EOF'
+#!/usr/bin/env bash
+git commit --allow-empty -q -m "stub rogue commit (guard test)"
+echo '{"result":"stub","session_id":"stub-session","total_cost_usd":0.01,"modelUsage":{"claude-sonnet-4-6":{}}}'
+EOF
+chmod +x "$STUB_COMMITTER"
+
+rm -f loop-state.json
+ensure_on_loop_pilot
+pre_head="$(git rev-parse HEAD)"
+rc=0; CLAUDE_BIN="$STUB_COMMITTER" DRY_RUN=1 bash scripts/data-loop.sh >/dev/null 2>&1 || rc=$?
+if [[ "$(git rev-parse HEAD)" != "$pre_head" ]]; then git reset -q "$pre_head"; fi
+restore_from_loop_pilot
+check "$rc" 7 "git-history guard: worker commit during turn exits 7"
 
 echo ""
 echo "$PASS passed, $FAIL failed"

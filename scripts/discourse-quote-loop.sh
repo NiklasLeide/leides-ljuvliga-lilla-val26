@@ -18,6 +18,8 @@
 #   5. Human checkpoint: commit + STOPP A-rapport happen outside this script
 #   6. Scope-conflict escalation: same validator scope-violation two
 #      iterations in a row exits 6 for a human decision
+#   7. Git-history guard: HEAD captured before each worker call and
+#      verified after — tool lists are config, not enforcement
 #
 # Exit codes:
 #   0  evaluator PASS (or DRY_RUN stop)
@@ -26,6 +28,7 @@
 #   4  fail-closed: cost/state could not be parsed
 #   5  MAX_ITERS reached without PASS
 #   6  scope-konflikt — kräver Niklas beslut
+#   7  worker modified git history
 #
 # Resumable: state lives in loop-state-discourse.json (gitignored).
 # DRY_RUN=1 runs exactly one iteration then stops (state is kept).
@@ -79,12 +82,18 @@ for ((i = start_iter; i <= MAX_ITERS; i++)); do
   echo "=== Iteration $i/$MAX_ITERS (spent \$$(lib get spent_usd)) ==="
 
   # --- WORKER: Sonnet, resumable session so it remembers earlier rounds ---
+  # GUARDRAIL 7: tool lists are configuration, not enforcement — verify in
+  # code that the worker did not touch git history (incident 2026-07-04:
+  # false-PASS commits from inside this loop via inherited
+  # settings.local.json allowlist).
+  head_before="$(git rev-parse HEAD)"
   wfile=".loop/dq-worker-$i.json"
   wrc=0
   if [[ -z "$session" ]]; then
     "$CLAUDE_BIN" -p "$(cat scripts/discourse-quote-worker-prompt.md)" \
       --model "$WORKER_MODEL" \
       --allowedTools "$WORKER_TOOLS" \
+      --disallowedTools "Bash" \
       --output-format json > "$wfile" || wrc=$?
   else
     "$CLAUDE_BIN" -p "Granskningen underkände din senaste version av sources/discourse/citat-ekonomi.json. Åtgärda punkterna nedan. Samma regler som tidigare gäller: ordagranna citat, aldrig påhittade, riksdagsmaterial i basen, ändra endast citat-ekonomi.json.
@@ -93,12 +102,18 @@ $feedback" \
       --resume "$session" \
       --model "$WORKER_MODEL" \
       --allowedTools "$WORKER_TOOLS" \
+      --disallowedTools "Bash" \
       --output-format json > "$wfile" || wrc=$?
   fi
   if [[ $wrc -ne 0 ]]; then
     echo "Worker call failed (exit $wrc). State kept — re-run to resume at iteration $i."
     lib set status=interrupted
     exit "$wrc"
+  fi
+  if [[ "$(git rev-parse HEAD)" != "$head_before" ]]; then
+    echo "FEL: workern har ändrat git-historiken (HEAD $head_before -> $(git rev-parse HEAD)). Avbryter."
+    lib set status=worker_git_tamper
+    exit 7
   fi
   rc=0; lib ingest "$i" worker "$wfile" >/dev/null || rc=$?   # fail-closed cost parse
   if [[ $rc -ne 0 ]]; then lib set status=cost_parse_error; exit 4; fi
@@ -139,6 +154,7 @@ $val_out"
   "$CLAUDE_BIN" -p "$(cat scripts/discourse-quote-evaluator-prompt.md)" \
     --model "$EVAL_MODEL" \
     --allowedTools "$EVAL_TOOLS" \
+    --disallowedTools "Bash" \
     --output-format json > "$efile" || erc=$?
   if [[ $erc -ne 0 ]]; then
     echo "Evaluator call failed (exit $erc). State kept — re-run to resume at iteration $i."

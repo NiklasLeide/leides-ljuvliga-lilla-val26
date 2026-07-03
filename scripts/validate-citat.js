@@ -17,7 +17,11 @@ const NO_MANIFEST = new Set(['M', 'SD', 'KD', 'MP']);
 const CITAT_FIELDS = ['citat', 'kalltyp', 'dokumenttitel', 'url', 'datum', 'kontext'];
 // settings.local.json: harness writes permission state during the run.
 // CHANGELOG.md: updated for the final commit (commit.sh requires it).
-const ALLOWED_DIRTY = new Set(['.claude/settings.local.json', 'docs/CHANGELOG.md']);
+// TARGET_FILE: tracked since the Steg A commit — loop edits to it are the
+// loop's whole purpose, so it is allowed dirty (scope is enforced by the
+// schema checks above, not by the dirty list).
+const ALLOWED_DIRTY = new Set(['.claude/settings.local.json', 'docs/CHANGELOG.md',
+  TARGET_FILE]);
 
 const fail = [];
 
