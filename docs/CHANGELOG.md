@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-03] docs: DEC-007 kompletterat med villkor 1–6 (scope binärt verifierbar data, post-för-post-granskning ≤15/PR, evaluator andra försvarslinjen, PR=godkännande, en commit utanför loopen, validatorjusteringar endast namngivna undantag) + strukturfyndet om eskaleringsväg vid scope-deadlock; utkast drafts/research_agent_loop_exception.md (villkor 1–4) och drafts/claude_md_loop_conventions.md (villkor 5–6 + guardrails-i-kod, node-för-JSON, eskaleringsregel) — målfilerna oförändrade
 [2026-07-03] docs: DEC-007 (evaluator-optimizer-loop med modellrouting) i DECISIONS.md; PROJECT_STATUS uppdaterad med pilotloop-rad (PASS iter 8/8, $8.54 av $10)
 [2026-07-03] data: voting.json — medborgarskap/L voted uppdaterat: "Prop. 175 ej omröstad ännu" → "Röstade för … SfU28 (2026-04-29)", voted_source/voted_url ifyllda (L är regeringsparti utan reservation)
 [2026-07-03] data: voting.json — tidiga-betyg/L,KD,M,SD voted-text återställd till faktaformat (tog bort tolkningspåstående); match kvarstår stammer (partierna röstade för det specifika Prop. 197 som utpekades i promises)
