@@ -18,6 +18,25 @@ Record of key decisions made during the project. **Newest first.**
 
 ---
 
+### DEC-007: Evaluator-optimizer-loop med modellrouting för datauppdateringar
+**Date:** 2026-07-03
+**Decision:** Bounded datauppdateringar i voting.json körs som en evaluator-optimizer-loop (`scripts/data-loop.sh`): Sonnet-worker (resumable session) + separat Sonnet-evaluator (färsk session per runda, domare ≠ utförare) via `claude -p`, med noll-token schemavalidering i node (`scripts/validate-voting.js`) före varje evaluatoranrop. Fem guardrails ligger i loopskriptet, inte i hooks eller promptar: (1) binärt exitvillkor = validering OK + evaluatorns första rad PASS, (2) MAX_ITERS=8 hårdkodat, (3) budgettak $10 kontrollerat i node före varje API-anrop, fail-closed exit 4 om `total_cost_usd` saknas/inte kan parsas, (4) branch-sandbox — skriptet vägrar köra utanför `loop-pilot` (exit 3), (5) mänsklig checkpoint — loopen committar/mergar aldrig; resultatet går som PR mot master som Niklas granskar. Fable 5 (huvudtråden) används endast utanför loopkroppen: design, slutgranskning av diffen, syntes. All state (spent, session_id, verdict) persisteras i gitignorerad `loop-state.json` efter varje steg — avbruten körning återupptas, startas inte om.
+
+**Villkor (1–6, gäller varje loopkörning):**
+1. **Scope:** undantaget gäller ENDAST data med binärt verifierbar ground truth (t.ex. voteringsutfall med riksdagen.se-källa). discourse.json och GAL-TAN-bedömningar (galtan.json) omfattas uttryckligen INTE — för dessa gäller RESEARCH_AGENT.md:s ursprungliga godkänneregel oförändrad.
+2. **Post-för-post-granskning:** Niklas granskar varje match-bedömning i PR:en post för post; riktlinje max 15 poster per PR.
+3. **Evaluatorn är andra försvarslinjen**, inte en ersättning för Niklas granskning.
+4. **PR-granskning = godkännande:** RESEARCH_AGENT.md:s krav "Ingen match-bedömning läggs in i voting.json utan Niklas godkännande" uppfylls genom PR-granskningen; loopen mergar aldrig.
+5. **Loopen committar aldrig per iteration** — en enda commit görs utanför loopen via `./commit.sh` efter huvudtrådens slutgranskning.
+6. **Validatorjusteringar mitt i körning endast som uttryckligen namngivna undantag**, aldrig mönster. Loggade i pilotkörningen: (a) docs/CHANGELOG.md tillagd i ALLOWED_DIRTY efter iteration 1 (krävs av commit.sh för slutcommiten), (b) migration/medborgarskap/L tillagd som 13:e målpost av Niklas för att lösa evaluator/validator-deadlocken (iteration 5–7).
+
+**Strukturfynd från piloten:** scope-deadlock mellan evaluator (ser fakta) och validator (ser hårdkodad målpostlista) kräver en definierad eskaleringsväg innan mönstret generaliseras — loopen ska avsluta med en egen exitkod för mänskligt beslut i stället för att bränna iterationer på en konflikt den inte kan lösa själv.
+
+**Reasoning:** Piloten validerade mönstret: 13 inväntar-votering-poster uppdaterade, PASS på iteration 8/8, $8.54 av $10. Evaluatorn fångade tre substantiella fel som workern missat (medborgarskap/SD stammer→delvis eftersom återkallelse via SOU 2026:21 inte omröstats; inkonsekvent KD-acklamationstext; overifierat tolkningspåstående i tidiga-betyg). Validatorn stoppade två scope-överträdelser till noll tokenkostnad. Fail-closed-principen (en guardrail som inte kan mäta ska stoppa, inte släppa igenom) verifierades med stubbade tester (`scripts/test-loop-guards.sh`). Omtolkning av RESEARCH_AGENT.md: kravet "Niklas godkänner innan data skrivs" uppfylls som PR-granskning = godkännande; evaluatorn är maskinell förhandsgranskare, inte ersättare för människan.
+**Alternatives considered:** Hook-baserad enforcement — avvisad, SessionStart-hooks har bevisats opålitliga (plugin v1.1.2). Tak i prompten ("gör max 8 försök") — avvisad, en instruktion är inte ett tak; taken ligger i kod. Fable 5 i loopkroppen — avvisad, onödig kostnad; Sonnet räcker för worker/evaluator och huvudtråden gör slutbedömningen. jq för budgetaritmetik — avvisad, jq saknas i Git Bash-miljön och bash klarar inte flyttal; all aritmetik i node. Låta loopen committa själv — avvisad, commit.sh pushar alltid och skulle förbigå den mänskliga checkpointen.
+
+---
+
 ### DEC-006: Design language aligned to leides-ljuvliga-lilla-reformkarta
 **Date:** 2026-04-01
 **Decision:** Adopt the reformkarta design system as the visual foundation: dark full-width header with `header-badge` eyebrow, CSS tokens `--ink`/`--bg`/`--card`/`--border`/`--muted`, Source Serif 4 (headings) + DM Sans (body), `#f7f6f3` page background, `border-bottom` tab indicator pattern, centered footer.
