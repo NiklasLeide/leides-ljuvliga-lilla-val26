@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-03] chore: sources/manifest/2026/ — engångsinsamling av partiernas slutgiltiga valmanifest 2026 från partiernas egna webbplatser: S (Plan för Sverige, 4 s), C (Sverige kan mer, 96 s), V (kongressbeslutad valplattform, preliminär version, 4 s), L (För din frihet, 40 s); M/SD/KD/MP saknas (inget publicerat slutdokument — detaljer i KATALOG.md); KATALOG.md med typ, sidantal, beslutsdatum, käll-URL, status och ekonomiavsnittspekare per parti
 [2026-07-03] docs: DEC-007 villkor 2 reviderat (ursprunglig lydelse bevarad som överskriven, inte tyst omskriven) — post-för-post-granskning av ALLA ändrade poster ersatt med: evaluatorn verifierar 100 % av källorna, Niklas granskar bara "Kräver beslut" (delvis/avviker/osäkert/scope-ändringar); RESEARCH_AGENT.md villkor 2 uppdaterat i synk; "Strukturfynd" markerad löst med hänvisning till guardrail 6
 [2026-07-03] feat: data-loop v2 — evaluatorn (scripts/loop-evaluator-prompt.md) kräver nu WebFetch-verifiering av VARJE ändrad posts voted_url (100 %, ej stickprov om minst 2) och en maskinparsbar per-post-verifieringstabell i varje svar
 [2026-07-03] feat: scripts/generate-pr-body.js — bygger pr-body.md från commitad diff (HEAD~1 vs HEAD) + evaluatorns verifieringstabell; delar poster i "Kräver ditt beslut" (delvis/avviker/obekräftat/scope-ändringar från .loop/interventions.md) och "Maskinverifierat" (stammer med bekräftad källa); obekräftad post faller fail-closed till "Kräver ditt beslut", aldrig tyst till maskinverifierat
