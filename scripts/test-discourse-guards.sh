@@ -12,6 +12,8 @@
 #   5. validator         -> exit 0 on minimal valid fixture, exit 1 on broken
 #   6. scope conflict    -> exit 6 when the same scope-violation repeats
 #   7. git-history guard -> exit 7 when the worker commits during its turn
+#   8-10. discourse-drafts.sh (Steg B): branch guard exit 3, HEAD guard
+#         exit 7, invalid draft after the single retry exit 8
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
@@ -162,6 +164,29 @@ rc=0; CLAUDE_BIN="$STUB_COMMITTER" DRY_RUN=1 bash scripts/discourse-quote-loop.s
 if [[ "$(git rev-parse HEAD)" != "$pre_head" ]]; then git reset -q "$pre_head"; fi
 restore_branch
 check "$rc" 7 "git-history guard: worker commit during turn exits 7"
+
+# --- Tests 8-10: discourse-drafts.sh (Steg B runner) ------------------------
+# Test 8: branch guard
+git checkout -q -b dq-drafts-branch-test
+rc=0; CLAUDE_BIN="$STUB" bash scripts/discourse-drafts.sh >/dev/null 2>&1 || rc=$?
+git checkout -q "$orig_branch"
+git branch -q -D dq-drafts-branch-test
+check "$rc" 3 "drafts runner: wrong branch exits 3"
+
+# Test 9: HEAD guard — stub commits during the draft call
+rm -f "$LOOP_STATE_FILE"
+ensure_on_pipeline_branch
+pre_head="$(git rev-parse HEAD)"
+rc=0; CLAUDE_BIN="$STUB_COMMITTER" bash scripts/discourse-drafts.sh >/dev/null 2>&1 || rc=$?
+if [[ "$(git rev-parse HEAD)" != "$pre_head" ]]; then git reset -q "$pre_head"; fi
+restore_branch
+check "$rc" 7 "drafts runner: draft call committing exits 7"
+
+# Test 10: invalid draft JSON on call AND retry -> exit 8
+ensure_on_pipeline_branch
+rc=0; CLAUDE_BIN="$STUB" bash scripts/discourse-drafts.sh >/dev/null 2>&1 || rc=$?
+restore_branch
+check "$rc" 8 "drafts runner: invalid draft after single retry exits 8"
 
 echo ""
 echo "$PASS passed, $FAIL failed"
