@@ -27,7 +27,28 @@
       "mcp__plugin_project_github__list_pull_requests",
       "mcp__plugin_project_context7__resolve-library-id",
       "mcp__plugin_project_context7__query-docs",
-      "Bash(git -C \"C:\\\\Users\\\\nikla\\\\projects\\\\leides-ljuvliga-lilla-val26\" log --oneline --since=\"2026-04-28\")"
+      "Bash(git -C \"C:\\\\Users\\\\nikla\\\\projects\\\\leides-ljuvliga-lilla-val26\" log --oneline --since=\"2026-04-28\")",
+      "Bash(git config *)",
+      "Bash(claude --version)",
+      "Bash(jq --version)",
+      "Bash(rm -rf /tmp/loop-engineer)",
+      "Bash(git clone *)",
+      "Read(//tmp/**)",
+      "Bash(claude -p \"Reply with exactly: ok\" --model claude-haiku-4-5-20251001 --output-format json)",
+      "Bash(chmod +x scripts/data-loop.sh scripts/test-loop-guards.sh)",
+      "Bash(bash scripts/test-loop-guards.sh)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git stash *)",
+      "Bash(DRY_RUN=1 bash scripts/data-loop.sh)",
+      "Bash(tee .loop/dryrun.log)",
+      "Bash(tee .loop/dryrun2.log)",
+      "Bash(bash scripts/data-loop.sh)",
+      "Bash(tee .loop/sharprun.log)",
+      "Bash(command -v gh)",
+      "Bash(gh auth *)",
+      "Bash(git checkout *)",
+      "Bash(git pull *)",
+      "Bash(git branch *)"
     ]
   }
 }
