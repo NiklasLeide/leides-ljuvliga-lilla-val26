@@ -270,11 +270,14 @@ post för post i chatten — på följande villkor:
    (galtan.json) följer den ursprungliga godkänneregeln oförändrad —
    ingen sådan data läggs in utan Niklas uttryckliga godkännande i chatten.
 
-2. **Niklas granskar varje match-bedömning post för post i PR:en.**
-   Loopens resultat går som PR mot master; PR-granskningen ersätter
-   chattpresentationen och utgör godkännandet. Riktlinje: max 15 poster
-   per PR — större uppdateringar delas upp så att post-för-post-granskning
-   förblir realistisk.
+2. **Niklas granskar undantag; maskinen verifierar allt.** Evaluatorn
+   WebFetch-verifierar källan för VARJE ändrad post (100 %, ej
+   stickprov) — en post utan hämtad och bekräftad källa kan inte nå
+   PASS. PR-bodyn delas i "Kräver beslut" (delvis/avviker,
+   tveksamheter, scope-ändringar) och "Maskinverifierat" (stammer
+   med bekräftad källa). Niklas granskar den första sektionen post
+   för post; den andra godkänns genom merge utan detaljgranskning.
+   En körning vars "Kräver beslut" överstiger 5 poster delas upp.
 
 3. **Evaluatorn är andra försvarslinjen, inte en ersättning för Niklas.**
    Den maskinella evaluatorn (separat session, domare ≠ utförare)

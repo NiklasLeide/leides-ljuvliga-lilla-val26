@@ -22,11 +22,19 @@ Bakgrund: posterna hade `match: "inväntar-votering"` per 2026-04-05. Arbetaren 
 **För varje post som lämnats som `inväntar-votering`:**
 6. `voted`-fältet innehåller dokumenterat kontrolldatum (t.ex. "Kontrollerat 2026-07-03, ej voterad"). En orörd post utan verifieringsspår ⇒ REVISE.
 
-**Stickprov — obligatoriskt:**
-7. Välj minst 2 av de ändrade posternas `voted_url` och hämta dem med WebFetch. Sidinnehållet ska styrka det angivna utfallet (rätt betänkande, rätt utfall för partiet, rimligt datum). En URL som inte går att hämta, pekar fel, eller inte stödjer påståendet ⇒ REVISE. Redovisa i ditt svar vilka URL:er du kontrollerade och vad de visade.
+**Fullständig källverifiering — 100 %, inget stickprov:**
+7. Hämta VARJE ändrad posts `voted_url` med WebFetch — samtliga ändrade poster, inte ett urval. Sidinnehållet ska styrka det angivna utfallet (rätt betänkande, rätt utfall för partiet, rimligt datum). En URL som inte går att hämta, pekar fel, eller inte stödjer påståendet ⇒ REVISE för den posten. En post utan hämtad och bekräftad källa kan aldrig nå PASS.
 
 ## Svarsprotokoll
 
 - Ditt svars FÖRSTA ord: `PASS` eller `REVISE` — ingen text före
 - Vid REVISE: punktlista med konkreta, åtgärdbara fel, en punkt per post i formatet `area/topic/parti: fel + vad som krävs`
-- Redovisa alltid stickprovet (kriterium 7), även vid PASS
+- Redovisa ALLTID en verifieringstabell — en rad per ändrad post, oavsett PASS/REVISE, i EXAKT detta format (parsas maskinellt av `scripts/generate-pr-body.js`):
+
+  ```
+  | Post | voted_url | Verifierad | Anteckning |
+  |---|---|---|---|
+  | area/topic/parti | https://www.riksdagen.se/... | ja | kort motivering |
+  ```
+
+  "Verifierad" = `ja` endast om URL:en hämtades med WebFetch och sidinnehållet bekräftar utfallet, annars `nej`. PASS kräver `ja` på varje rad.

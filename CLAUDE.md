@@ -57,7 +57,17 @@ och framtida varianter, se DEC-007):
 - **Scope-konflikter eskaleras, itereras inte bort.** Om evaluatorn
   kräver en ändring som validatorn förbjuder (eller omvänt) ska loopen
   avsluta med en egen exitkod för mänskligt beslut — inte bränna
-  iterationer på en konflikt den inte kan lösa själv.
+  iterationer på en konflikt den inte kan lösa själv. I kod: samma
+  scope-avvisning två iterationer i rad avslutar loopen med exit 6
+  ("scope-konflikt — kräver Niklas beslut"), se `scripts/data-loop.sh`
+  och `scripts/loop-lib.js` (`scope-violations` / `check-scope-conflict`).
+- **Källverifiering är 100 %, aldrig stickprov.** Evaluatorn
+  WebFetch-verifierar `voted_url` för VARJE ändrad post och redovisar
+  det i en maskinparsbar verifieringstabell (se
+  `scripts/loop-evaluator-prompt.md`). En post utan bekräftad källa
+  kan inte nå PASS och kan inte klassas som "Maskinverifierat" i
+  PR-bodyn (`scripts/generate-pr-body.js`) — den hamnar under "Kräver
+  ditt beslut" i stället, se DEC-007 villkor 2.
 
 ## Design System (if applicable)
 If this project has a UI, create a design tokens file as single source of truth

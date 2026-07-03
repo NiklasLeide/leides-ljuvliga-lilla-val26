@@ -9,6 +9,9 @@
 #   3. Budget cap:     BUDGET_USD, checked BEFORE every API call, fail-closed
 #   4. Sandbox:        refuses to run off branch loop-pilot; never commits
 #   5. Human checkpoint: commit + PR happen outside this script
+#   6. Scope-conflict escalation: same validator scope-violation two
+#      iterations in a row exits immediately for a human decision instead
+#      of burning iterations on a deadlock it cannot resolve itself
 #
 # Exit codes:
 #   0  evaluator PASS (or DRY_RUN stop)
@@ -16,6 +19,7 @@
 #   3  wrong branch
 #   4  fail-closed: cost/state could not be parsed
 #   5  MAX_ITERS reached without PASS
+#   6  scope-konflikt — kräver Niklas beslut
 #
 # Resumable: state lives in loop-state.json (gitignored). Interrupt and re-run.
 # DRY_RUN=1 runs exactly one iteration then stops (state is kept).
@@ -101,12 +105,27 @@ $feedback" \
   if [[ $val_rc -ne 0 ]]; then
     echo "--- validation FAILED ---"
     printf '%s\n' "$val_out"
+
+    # GUARDRAIL 6: same scope-violation two iterations in a row means the
+    # evaluator/worker and the validator are deadlocked on it (see DEC-007
+    # "Strukturfynd") — escalate instead of iterating on an unwinnable fight.
+    scope_keys="$(printf '%s\n' "$val_out" | lib scope-violations)"
+    conflict_rc=0
+    printf '%s\n' "$scope_keys" | lib check-scope-conflict || conflict_rc=$?
+    if [[ $conflict_rc -eq 0 ]]; then
+      echo "Scope-konflikt: samma post/fil avvisas av validatorn två iterationer i rad:"
+      printf '%s\n' "$scope_keys"
+      lib set status=scope_conflict
+      exit 6
+    fi
+
     feedback="Schemavalideringen misslyckades. Åtgärda exakt dessa punkter:
 $val_out"
     lib set "next_iteration=$((i + 1))" "worker_session_id=$session" "last_verdict=$feedback" status=running
     if [[ "$DRY_RUN" == "1" ]]; then echo "DRY_RUN: stopping after one iteration."; exit 0; fi
     continue
   fi
+  lib reset-scope-conflict >/dev/null
   echo "--- validation ok ---"
 
   # --- EXIT CONDITION part 2: evaluator (FRESH Sonnet session every round,
@@ -134,7 +153,7 @@ $val_out"
   if [[ "$first_line" =~ ^[^A-Za-zÅÄÖåäö]*PASS ]]; then
     lib set status=passed "next_iteration=$((i + 1))" "worker_session_id=$session" last_verdict=PASS
     echo "=== PASS på iteration $i. Total kostnad: \$$(lib get spent_usd) ==="
-    echo "Nästa steg (utanför loopen): granska diffen, uppdatera CHANGELOG, ./commit.sh, öppna PR."
+    echo "Nästa steg (utanför loopen): granska diffen, uppdatera CHANGELOG, ./commit.sh, sedan scripts/open-loop-pr.sh."
     exit 0
   fi
 

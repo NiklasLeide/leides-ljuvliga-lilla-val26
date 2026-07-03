@@ -16,6 +16,7 @@ function defaultState() {
     worker_session_id: '',
     last_verdict: '',
     model_usage: [],
+    last_scope_violation_keys: [],
   };
 }
 
@@ -117,6 +118,47 @@ switch (cmd) {
   case 'session': {
     const resp = readResponse(args[0]);
     console.log(resp.session_id ?? '');
+    break;
+  }
+
+  case 'scope-violations': {
+    // Reads validate-voting.js failure text from stdin, prints the unique
+    // scope-violation keys it contains (one per line, empty if none).
+    // GUARDRAIL 6: feeds check-scope-conflict below.
+    const text = fs.readFileSync(0, 'utf8');
+    const targetRe = /^- (.+): changed, but is not one of the \d+ target entries$/;
+    const dirtyRe = /^- unexpected modified tracked file: (.+)$/;
+    const keys = new Set();
+    for (const line of text.split('\n')) {
+      const t = targetRe.exec(line); if (t) keys.add(t[1]);
+      const d = dirtyRe.exec(line); if (d) keys.add(d[1]);
+    }
+    for (const k of keys) console.log(k);
+    break;
+  }
+
+  case 'check-scope-conflict': {
+    // Reads this iteration's scope-violation keys from stdin (one per line,
+    // possibly empty). Exit 0 = same key was also flagged last iteration
+    // (evaluator/worker and validator are deadlocked on it) -> caller must
+    // escalate (exit 6). Exit 1 = no conflict. Always records the current
+    // keys for the next comparison.
+    const text = fs.readFileSync(0, 'utf8');
+    const current = text.split('\n').map((s) => s.trim()).filter(Boolean);
+    const state = loadState();
+    const prev = Array.isArray(state.last_scope_violation_keys) ? state.last_scope_violation_keys : [];
+    const conflict = current.some((k) => prev.includes(k));
+    state.last_scope_violation_keys = current;
+    saveState(state);
+    process.exit(conflict ? 0 : 1);
+  }
+
+  case 'reset-scope-conflict': {
+    // Called after a validation pass to break the "consecutive" streak that
+    // check-scope-conflict tracks.
+    const state = loadState();
+    state.last_scope_violation_keys = [];
+    saveState(state);
     break;
   }
 

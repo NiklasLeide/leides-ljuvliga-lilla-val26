@@ -21,3 +21,4 @@ htmlcov/
 loop-state.json
 .loop-state.test-backup
 .loop/
+pr-body.md
