@@ -10,6 +10,7 @@ Statusvärden: `slutgiltigt` / `preliminärt` / `saknas`.
 |---|---|---|---|---|---|---|---|
 | S | Plan för Sverige (Valplattform) | pdf | 4 | Presenterad av partiledningen 2026-02-05 (presskonferens); beslutsorgan ej angivet | https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf | 2026-07-03 | slutgiltigt |
 | M | — | — | — | — | — | 2026-07-03 | saknas |
+| M | Vallöften 2026 — sparad som `M-valloften-2026_snapshot-2026-07-03.md` (se avsnittet Ögonblicksbilder) | kampanjsida (ögonblicksbild) | — | Löpande uppdaterad t.o.m. 2026-09-13; ej beslutad som dokument | https://moderaterna.se/valloften-2026/ | 2026-07-03 | — |
 | SD | — | — | — | — | — | 2026-07-03 | saknas |
 | C | Sverige kan mer. Valmanifest 2026 | pdf | 96 | Presenterad 2026-06-16 av partiledaren och partisekreteraren; beslutsorgan ej angivet | https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf | 2026-07-03 | slutgiltigt |
 | V | Vänsterpartiets valplattform efter beslut på kongressen 2026 | pdf | 4 | Kongressen i Örebro 2026-04-17–19 | https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf | 2026-07-03 | preliminärt |
@@ -26,6 +27,26 @@ Statusvärden: `slutgiltigt` / `preliminärt` / `saknas`.
 | V | dokumentet saknar områdesrubriker; ekonomi (skatter, välfärdsinvesteringar, pensioner, arbetstid) löper genom s. 1–3 |
 | L | kapitel 3 "Ett samhälle där ansträngning lönar sig. Politik för flit och företagsamhet", s. 15–18 |
 | M/SD/KD/MP | — (dokument saknas) |
+
+## Ögonblicksbilder
+
+Vissa partier publicerar sina valbudskap som levande kampanjsidor som uppdateras
+löpande i stället för som fasta dokument. Sådana sidor fångas här som daterade
+ögonblicksbilder:
+
+- **Vad:** sidans fullständiga sakinnehåll (löften med rubriker) sparas som
+  markdown med käll-URL, hämtdatum och sidans Last-Modified i filhuvudet.
+  Filnamnsmönster: `<parti>-<sida>_snapshot-<datum>.md`.
+- **Varför:** en levande sida kan ändras när som helst; ögonblicksbilden gör
+  varje senare hänvisning spårbar till vad partiet faktiskt publicerade vid en
+  viss tidpunkt.
+- **Omkontroll:** levande sidor kontrolleras veckovis; vid ändrat innehåll
+  sparas en ny daterad ögonblicksbild (äldre bilder behålls).
+- **Ersätts av dokument:** när partiet publicerar ett slutgiltigt
+  valmanifest/valplattformsdokument ersätter dokumentet ögonblicksbilden som
+  primärkälla; ögonblicksbilderna behålls som historik.
+- En ögonblicksbild är **inte** ett valmanifest och ändrar inte partiets
+  status i huvudtabellen.
 
 ## Anteckningar per parti
 
@@ -46,7 +67,9 @@ i stället: kampanjsidan "Vallöften 2026" (moderaterna.se/valloften-2026/,
 uppdateras löpande fram till valdagen — kampanjlandningssida, ej dokument),
 "Handlingsprogram för 2030-talet" (antaget på arbetsstämman i Västerås okt 2025 —
 handlingsprogram, ej valmanifest) samt Moderatkvinnornas valmanifest 2026
-(kvinnoförbundets, ej partiets).
+(kvinnoförbundets, ej partiets). Kampanjsidan "Vallöften 2026" är sparad som
+daterad ögonblicksbild: `M-valloften-2026_snapshot-2026-07-03.md` (se avsnittet
+Ögonblicksbilder).
 
 ### SD — saknas
 Sidan sd.se/dokument/ listar fortfarande "Valplattform 2022" som senaste
