@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-03] docs: metod.html — språkjustering i Datakällor-stycket om publiceringsformer: "kongressbeslutade valplattformar" → "valplattformar", "ännu inte publicerat" → "inte publicerat"
 [2026-07-03] chore: sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md — daterad ögonblicksbild av moderaterna.se/valloften-2026/ (16 vallöften med rubriker; käll-URL, hämtdatum och sidans Last-Modified i filhuvudet; markerad "Levande kampanjsida — ögonblicksbild. Ej valmanifest.")
 [2026-07-03] docs: KATALOG.md — separat rad för M:s kampanjsida med typ "kampanjsida (ögonblicksbild)" (M:s manifeststatus kvarstår saknas) + nytt avsnitt "Ögonblicksbilder" (praxis: levande kampanjsidor fångas som daterade snapshots, omkontroll veckovis, publicerat manifestdokument ersätter som primärkälla); tabellen verifierad intakt (8 kolumner per rad) — den rapporterade formateringsskadan fanns inte i filen på HEAD, inga innehållsändringar gjorda
 [2026-07-03] docs: metod.html — nytt stycke i "Datakällor" om partiernas olika publiceringsformer (valmanifest/valplattform/kampanjsida), daterade ögonblicksbilder för spårbarhet, saknat manifest redovisas som det är
