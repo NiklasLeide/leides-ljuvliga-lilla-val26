@@ -16,3 +16,8 @@ build/
 *.egg-info/
 .coverage
 htmlcov/
+
+# data-loop runtime state (scripts/data-loop.sh) — never committed
+loop-state.json
+.loop-state.test-backup
+.loop/

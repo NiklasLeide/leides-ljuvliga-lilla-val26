@@ -5,6 +5,12 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-03] feat: evaluator-optimizer-loop för datauppdatering (scripts/data-loop.sh) — Sonnet-worker + separat Sonnet-evaluator via claude -p, fem guardrails i kod (binärt exitvillkor, MAX_ITERS=8, budgettak $10 fail-closed, branch-sandbox loop-pilot, ingen commit/merge i loopen), resumable via loop-state.json
+[2026-07-03] feat: scripts/loop-lib.js — node-hjälpare för state + kostnadsackumulering (all flyttalsaritmetik i node, exit 4 fail-closed vid oparsbar total_cost_usd)
+[2026-07-03] feat: scripts/validate-voting.js — schemavalidering av data/voting.json (336 poster, fältkrav, match-värden, riksdagen.se-URL-krav, diff-scope-kontroll mot HEAD: endast de 12 inväntar-votering-målposterna får ändras)
+[2026-07-03] feat: scripts/loop-worker-prompt.md + loop-evaluator-prompt.md — worker- och evaluatorinstruktioner byggda på RESEARCH_AGENT.md:s källhierarki; evaluatorn kör obligatoriskt WebFetch-stickprov av voted_url
+[2026-07-03] test: scripts/test-loop-guards.sh — guardrail-tester med stubbad claude-binär (branch exit 3, fail-closed exit 4, budgettak exit 2, korrupt state exit 4, validator)
+[2026-07-03] chore: .gitignore — loop-state.json, .loop/ (loopens runtime-state committas aldrig)
 [2026-04-29] fix: diskurs.js — update all field names to match Swedish keys in discourse.json (partier, diskursprofil, per_omrade, flytande_signifikanter, etc.)
 [2026-04-29] data: discourse.json — expand key_signifiers to cover ansvar and gemenskap, enabling all three floating signifier comparison panels
 [2026-04-29] feat: new view "Diskurs" (diskurs.html + diskurs.js) — party discourse profiles, area-specific key signifiers, floating-signifier comparison panel; fas 1 pilot covers SD, S, V on rättsväsende + migration
