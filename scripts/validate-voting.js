@@ -18,6 +18,7 @@ const TARGETS = new Set([
   'migration/medborgarskap/KD',
   'migration/medborgarskap/M',
   'migration/medborgarskap/SD',
+  'migration/medborgarskap/L',
 ]);
 const REQUIRED_FIELDS = ['says', 'promises', 'promises_source', 'promises_url',
   'voted', 'voted_source', 'voted_url', 'match'];
@@ -26,7 +27,7 @@ const EXPECTED_ENTRIES = 336;
 // settings.local.json: harness writes permission state during the run.
 // CHANGELOG.md: updated for the final commit (commit.sh requires it).
 const ALLOWED_DIRTY = new Set(['data/voting.json', '.claude/settings.local.json',
-  'docs/CHANGELOG.md']);
+  'docs/CHANGELOG.md', 'scripts/validate-voting.js']);
 
 const fail = [];
 

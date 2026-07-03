@@ -1,6 +1,6 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
-> **Last updated:** 2026-04-06
+> **Last updated:** 2026-07-03
 > **Current sprint:** Sprint 3.2 – Polish, SEO, public launch
 > **Sprint dates:** 2026-04-06 → TBD
 
@@ -12,6 +12,7 @@
 |-----|-----------------------------------------------|---------|-------|
 | 3.2 | Polish, SEO, public launch before Sept 2026   | 🔄 In Progress | Scope TBD |
 | 8.1 | Diskurs view — fas 1 pilot                    | ✅ Done | diskurs.html + diskurs.js; SD/S/V on rättsväsende + migration; floating signifier comparison panel |
+| 9.1 | Pilotloop: evaluator-optimizer för datauppdatering | ✅ Done | scripts/data-loop.sh — 13 voting.json-poster uppdaterade, PASS iter 8/8, $8.54 av $10; PR mot master (granskas av Niklas, ej mergad); DEC-007 |
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
