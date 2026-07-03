@@ -23,8 +23,10 @@ const REQUIRED_FIELDS = ['says', 'promises', 'promises_source', 'promises_url',
   'voted', 'voted_source', 'voted_url', 'match'];
 const VALID_MATCH = new Set(['stammer', 'delvis', 'avviker', 'ej-granskat', 'inväntar-votering']);
 const EXPECTED_ENTRIES = 336;
-// Pre-existing local modification, not produced by the loop:
-const ALLOWED_DIRTY = new Set(['data/voting.json', '.claude/settings.local.json']);
+// settings.local.json: harness writes permission state during the run.
+// CHANGELOG.md: updated for the final commit (commit.sh requires it).
+const ALLOWED_DIRTY = new Set(['data/voting.json', '.claude/settings.local.json',
+  'docs/CHANGELOG.md']);
 
 const fail = [];
 
@@ -39,7 +41,7 @@ try {
 let base;
 try {
   base = JSON.parse(cp.execSync('git show HEAD:data/voting.json',
-    { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 }));
+    { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024, stdio: ['pipe', 'pipe', 'ignore'] }));
 } catch (e) {
   console.error(`cannot read HEAD version of data/voting.json: ${e.message}`);
   process.exit(1);
@@ -91,7 +93,8 @@ for (const [key, entry] of curMap) {
 }
 
 // No other tracked files may be touched by the loop.
-const dirty = cp.execSync('git diff --name-only', { encoding: 'utf8' })
+const dirty = cp.execSync('git diff --name-only',
+  { encoding: 'utf8', stdio: ['pipe', 'pipe', 'ignore'] })
   .trim().split('\n').filter(Boolean);
 for (const f of dirty) {
   if (!ALLOWED_DIRTY.has(f)) fail.push(`unexpected modified tracked file: ${f}`);

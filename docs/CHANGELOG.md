@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-03] fix: validate-voting.js — tillåt docs/CHANGELOG.md och .claude/settings.local.json som dirty (CHANGELOG krävs av commit.sh, settings skrivs av harnessen); tysta gits CRLF-varningar så worker-feedback hålls ren
 [2026-07-03] feat: evaluator-optimizer-loop för datauppdatering (scripts/data-loop.sh) — Sonnet-worker + separat Sonnet-evaluator via claude -p, fem guardrails i kod (binärt exitvillkor, MAX_ITERS=8, budgettak $10 fail-closed, branch-sandbox loop-pilot, ingen commit/merge i loopen), resumable via loop-state.json
 [2026-07-03] feat: scripts/loop-lib.js — node-hjälpare för state + kostnadsackumulering (all flyttalsaritmetik i node, exit 4 fail-closed vid oparsbar total_cost_usd)
 [2026-07-03] feat: scripts/validate-voting.js — schemavalidering av data/voting.json (336 poster, fältkrav, match-värden, riksdagen.se-URL-krav, diff-scope-kontroll mot HEAD: endast de 12 inväntar-votering-målposterna får ändras)
