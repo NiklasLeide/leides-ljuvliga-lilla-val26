@@ -22,11 +22,16 @@ if (!area) { console.error('usage: batch-changelog.js <area> <nCitat> <evalStatu
 
 const p = 'docs/CHANGELOG.md';
 const md = fs.readFileSync(p, 'utf8');
+// EOL-robust: arbeta radvis utan \r (Windows-checkout kan ge CRLF),
+// återmontera med filens ursprungliga radslut.
+const EOL = md.includes('\r\n') ? '\r\n' : '\n';
+const stripCR = (l) => l.replace(/\r$/, '');
 
 let headLines = new Set();
 try {
   headLines = new Set(cp.execSync(`git show HEAD:${p}`,
-    { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024, stdio: ['pipe', 'pipe', 'ignore'] }).split('\n'));
+    { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024, stdio: ['pipe', 'pipe', 'ignore'] })
+    .split('\n').map(stripCR));
 } catch {
   // no HEAD version (should not happen) -> treat everything as committed,
   // i.e. remove nothing (fail-safe).
@@ -38,7 +43,8 @@ const AUTH_MARKER = `diskursbatch ${area} — citatkatalog`;
 
 const out = [];
 let removed = 0, marked = 0;
-for (const line of md.split('\n')) {
+for (const raw of md.split('\n')) {
+  const line = stripCR(raw);
   if (mentionsArea(line) && !headLines.has(line) && !line.includes(AUTH_MARKER)) {
     if (strictWorkerShape.test(line)) { removed++; continue; }        // worker noise: drop
     if (!line.startsWith('[worker, oauktoritativ] ')) {               // ambiguous: mark, keep
@@ -51,10 +57,8 @@ for (const line of md.split('\n')) {
 const today = new Date().toISOString().slice(0, 10);
 const authLine = `[${today}] feat: diskursbatch ${area} — citatkatalog sources/discourse/citat-${area}.json (${ncit} citat, evaluator ${vstat}), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-${area}-RAPPORT.md (${ndiv} divergenser); kostnad $${cost}; data/discourse.json orörd — Steg D efter Niklas granskning`;
 
-let text = out.join('\n');
-const marker = '---\n';
-const i = text.indexOf(marker);
-if (i < 0) { console.error('CHANGELOG saknar ----avdelare'); process.exit(1); }
-text = text.slice(0, i + marker.length) + '\n' + authLine + text.slice(i + marker.length).replace(/^\n/, '\n');
-fs.writeFileSync(p, text);
+const mi = out.findIndex((l) => l === '---');
+if (mi < 0) { console.error('CHANGELOG saknar ----avdelare'); process.exit(1); }
+out.splice(mi + 1, 0, '', authLine);
+fs.writeFileSync(p, out.join(EOL));
 console.log(`CHANGELOG: auktoritativ rad skriven; ${removed} workerrad(er) borttagna, ${marked} tvetydiga markerade`);
