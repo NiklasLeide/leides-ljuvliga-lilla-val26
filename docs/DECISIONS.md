@@ -26,7 +26,7 @@ Record of key decisions made during the project. **Newest first.**
 1. **Scope:** undantaget gäller ENDAST data med binärt verifierbar ground truth (t.ex. voteringsutfall med riksdagen.se-källa). discourse.json och GAL-TAN-bedömningar (galtan.json) omfattas uttryckligen INTE — för dessa gäller RESEARCH_AGENT.md:s ursprungliga godkänneregel oförändrad.
 2. **[URSPRUNGLIG — ersatt 2026-07-03, se revidering nedan] Post-för-post-granskning:** Niklas granskar varje match-bedömning i PR:en post för post; riktlinje max 15 poster per PR.
 3. **Evaluatorn är andra försvarslinjen**, inte en ersättning för Niklas granskning.
-4. **PR-granskning = godkännande:** RESEARCH_AGENT.md:s krav "Ingen match-bedömning läggs in i voting.json utan Niklas godkännande" uppfylls genom PR-granskningen; loopen mergar aldrig.
+4. **[URSPRUNGLIG — ersatt 2026-07-04, se revidering nedan] PR-granskning = godkännande:** RESEARCH_AGENT.md:s krav "Ingen match-bedömning läggs in i voting.json utan Niklas godkännande" uppfylls genom PR-granskningen; loopen mergar aldrig.
 5. **Loopen committar aldrig per iteration** — en enda commit görs utanför loopen via `./commit.sh` efter huvudtrådens slutgranskning.
 6. **Validatorjusteringar mitt i körning endast som uttryckligen namngivna undantag**, aldrig mönster. Loggade i pilotkörningen: (a) docs/CHANGELOG.md tillagd i ALLOWED_DIRTY efter iteration 1 (krävs av commit.sh för slutcommiten), (b) migration/medborgarskap/L tillagd som 13:e målpost av Niklas för att lösa evaluator/validator-deadlocken (iteration 5–7).
 
@@ -35,6 +35,12 @@ Record of key decisions made during the project. **Newest first.**
 > 2. **Niklas granskar undantag; maskinen verifierar allt.** Evaluatorn WebFetch-verifierar källan för VARJE ändrad post (100 %, ej stickprov) — en post utan hämtad och bekräftad källa kan inte nå PASS. PR-bodyn delas i "Kräver beslut" (delvis/avviker, tveksamheter, scope-ändringar) och "Maskinverifierat" (stammer med bekräftad källa). Niklas granskar den första sektionen post för post; den andra godkänns genom merge utan detaljgranskning. En körning vars "Kräver beslut" överstiger 5 poster delas upp.
 
 **Reasoning för revideringen:** Mänsklig post-för-post-granskning av rutinposter (stammer-bedömningar med redan maskinellt verifierad källa) visade sig opraktisk i skarp drift — den ger inget extra skydd över evaluatorns 100-procentiga källverifiering och sänker Niklas kvarvarande granskningskapacitet till poster som faktiskt kräver omdöme. Verifieringsbördan flyttas därför till maskinen (evaluatorn WebFetch-kontrollerar samtliga ändrade poster i stället för ett stickprov om minst 2), och den mänskliga granskningen koncentreras till delvis/avviker-bedömningar, tveksamma fall och scope-ändringar — se `scripts/loop-evaluator-prompt.md` och `scripts/generate-pr-body.js`.
+
+**Revidering av villkor 4 (2026-07-04):** Villkor 4 ovan (ursprunglig lydelse bevarad ovan, inte tyst omskriven) ersätts av:
+
+> 4. **PR-granskning = godkännande; merge-beslutet fattas alltid av Niklas, per PR, efter granskning.** Kravet "Ingen match-bedömning läggs in utan Niklas godkännande" uppfylls genom att inget når master utan att Niklas granskat PR:en och därefter beslutat om merge. Själva merge-kommandot får utföras av Claude på Niklas uttryckliga instruktion för den specifika PR:en, given efter granskningen. Stående merge-ordrar — i briefer, loopar eller konfiguration — är förbjudna; loopen mergar aldrig.
+
+**Reasoning för revideringen:** Ursprungslydelsen ("rör aldrig merge-knappen") blandade ihop merge-BESLUTET med merge-EXEKVERINGEN. Beslutet är den mänskliga checkpointen och ligger kvar odelat hos Niklas; vem som kör kommandot efter beslutet är mekanik. Precedent: PR #2 (diskurspipeline ekonomi, 2026-07-04) granskades av Niklas i chatten och mergades av Claude på hans uttryckliga per-PR-instruktion. Gränsen som skyddas är att instruktionen måste vara (a) per specifik PR, (b) given efter granskning, (c) från Niklas i chatten — aldrig en stående order i en brief, loopkonfiguration eller prompt.
 
 **Strukturfynd från piloten:** scope-deadlock mellan evaluator (ser fakta) och validator (ser hårdkodad målpostlista) kräver en definierad eskaleringsväg innan mönstret generaliseras — loopen ska avsluta med en egen exitkod för mänskligt beslut i stället för att bränna iterationer på en konflikt den inte kan lösa själv.
 

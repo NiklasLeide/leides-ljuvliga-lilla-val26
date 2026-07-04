@@ -286,11 +286,14 @@ post för post i chatten — på följande villkor:
    PR-granskningen. Ett PASS från evaluatorn är ett nödvändigt villkor
    för PR, aldrig ett tillräckligt villkor för merge.
 
-4. **PR-granskning = godkännande; loopen mergar aldrig.** Regeln
-   "Ingen match-bedömning läggs in i voting.json utan Niklas godkännande"
-   uppfylls genom att inget når master utan att Niklas själv granskat
-   och mergat PR:en. Loopen (och Claude) skapar PR:en men rör aldrig
-   merge-knappen.
+4. **PR-granskning = godkännande; merge-beslutet fattas alltid av
+   Niklas, per PR, efter granskning.** Regeln "Ingen match-bedömning
+   läggs in i voting.json utan Niklas godkännande" uppfylls genom att
+   inget når master utan att Niklas granskat PR:en och därefter
+   beslutat om merge. Själva merge-kommandot får utföras av Claude på
+   Niklas uttryckliga instruktion för den specifika PR:en, given efter
+   granskningen. Stående merge-ordrar — i briefer, loopar eller
+   konfiguration — är förbjudna; loopen mergar aldrig.
 
 ---
 
