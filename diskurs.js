@@ -1,6 +1,6 @@
 'use strict';
 
-const AREA_LABELS = { rattsvasende: 'Rättsväsende', migration: 'Migration' };
+const AREA_LABELS = { rattsvasende: 'Rättsväsende', migration: 'Migration', klimat: 'Klimat & energi', ekonomi: 'Ekonomi' };
 
 /* ===================================================
    State
