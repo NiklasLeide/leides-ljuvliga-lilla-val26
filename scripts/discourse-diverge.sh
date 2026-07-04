@@ -32,6 +32,7 @@ LOOP_DIR=".loop/$DISCOURSE_AREA"
 readonly OUT="drafts/discourse-$DISCOURSE_AREA-RAPPORT.md"
 
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
+export CLAUDE_CODE_DISABLE_1M_CONTEXT=1   # standardkontext, se quote-loop
 mkdir -p "$LOOP_DIR" drafts
 DIVERGE_PROMPT="$(node scripts/render-area-prompt.js "$PROMPT_FILE" "$DISCOURSE_AREA")"
 

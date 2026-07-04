@@ -128,6 +128,12 @@ for area in "${AREAS[@]}"; do
       steg_b_done) [[ "$step" == "steg_a" || "$step" == "steg_b" ]] && continue ;;
     esac
 
+    # Självläkande exit 7 (Niklas 2026-07-04, DEC-007 Strukturfynd 3):
+    # HEAD-vaktutlösning ger soft-reset till före-anrops-HEAD (filinnehåll
+    # bevaras i arbetsträdet), incidenten loggas ALLTID i issue, och steget
+    # görs om. Tak: 2 tamper-händelser i samma område => området failar ändå.
+    while :; do
+
     # GUARDRAIL: totalbudget före varje steg
     tot="$(total_cost)"
     if over "$tot" "$TOTAL_BUDGET_USD"; then
@@ -147,11 +153,12 @@ for area in "${AREAS[@]}"; do
       set_area_status "$area" failed
       file_issue "Batch: $area avbrutet — väggklocka 3 h" \
 "Området $area nådde 3-timmarstaket under $step. Statefil loop-state-$area.json är kvar — återupptagbart genom att nollställa area_$area i $BATCH_STATE och köra om wrappern."
-      continue 2
+      continue 3
     fi
 
     echo "--- $area/$step (max ${remaining}s, spent område: \$$(area_cost "$area"), totalt: \$$tot) ---"
     log=".loop/$area-$step.log"
+    step_head_before="$(git rev-parse HEAD)"
 
     # Transient-limit-hantering: 429/limit-fel försöks om med backoff innan
     # exit 9 får konstateras (incident 2026-07-04: "Usage credits required
@@ -180,6 +187,31 @@ for area in "${AREAS[@]}"; do
     done
     tail -5 "$log"
 
+    # GUARDRAIL 7-hantering: självläkning i stället för areafall (Niklas
+    # 2026-07-04). ALLTID incident-issue — tamper är icke-fatalt, aldrig tyst.
+    if [[ $rc -eq 7 ]]; then
+      tcount="$(blib get "area_${area}_tamper")"
+      tcount=$(( ${tcount:-0} + 1 ))
+      blib set "area_${area}_tamper=$tcount"
+      rogue_head="$(git rev-parse HEAD)"
+      git reset -q --soft "$step_head_before"
+      push_note=""
+      if ! git push --force-with-lease origin "$BATCH_BRANCH" >/dev/null 2>&1; then
+        push_note=" OBS: force-with-lease misslyckades — remote kan fortfarande innehålla den obehöriga commiten."
+      fi
+      file_issue "Batch: $area — git-manipulation självläkt (händelse $tcount)" \
+"HEAD-vakten löste ut under $area/$step: obehörig commit $rogue_head återställd (soft-reset) till $step_head_before; filinnehåll bevarat i arbetsträdet.$push_note Steget görs om (tak: 2 händelser per område)."
+      if (( tcount >= 2 )); then
+        echo "$area: upprepad git-manipulation ($tcount händelser) — området failar (systematiskt beteende kräver människa)."
+        set_area_status "$area" failed
+        file_issue "Batch: $area avbrutet — upprepad git-manipulation" \
+"$tcount tamper-händelser i samma område. Statefiler kvar — mänsklig granskning krävs innan återupptag."
+        continue 3
+      fi
+      echo "tamper självläkt ($area/$step, händelse $tcount) — steget görs om."
+      continue
+    fi
+
     if [[ $rc -ne 0 ]]; then
       # persistent usage-/rate-limit (efter $RETRY_MAX försök) => meningslöst
       # att fortsätta någonstans
@@ -202,7 +234,7 @@ Sista felrad: ${err_line:-okänd}
 "Steget $step för området $area misslyckades ($reason, iteration ${it:-?}).
 Logg: .loop/$area-$step.log (lokal). Statefiler kvar — återupptagbart:
 nollställ area_$area i $BATCH_STATE och kör om wrappern."
-      continue 2
+      continue 3
     fi
 
     case "$step" in
@@ -218,8 +250,11 @@ nollställ area_$area i $BATCH_STATE och kör om wrappern."
       set_area_status "$area" failed
       file_issue "Batch: $area avbrutet — områdesbudget \$$AREA_BUDGET_USD nådd" \
 "Området $area kostade \$$ac efter $step (tak \$$AREA_BUDGET_USD). Levererade steg är committade/på disk; återupptagbart efter Niklas beslut om höjt tak."
-      continue 2
+      continue 3
     fi
+
+    break   # steget klart utan tamper — lämna självläknings-loopen
+    done
   done
 
   # Område klart: committa + pusha (en commit per område, sanningsenlig)

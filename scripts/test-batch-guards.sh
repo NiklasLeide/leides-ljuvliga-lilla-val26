@@ -11,6 +11,9 @@
 #   5. changelog auth -> worker noise line removed, ambiguous line marked,
 #                        authoritative line written (deterministic, no model)
 #   6. transient limit -> two 429-failures then success => retries, NO exit 9
+#   7. tamper self-heal -> one rogue commit => HEAD restored, incident issue,
+#                          step retried (area fails later on exit 5, not 7)
+#   8. tamper cap       -> two rogue commits in same area => area fails
 set -uo pipefail
 cd "$(dirname "$0")/.."
 export RETRY_BACKOFF_S=1   # snabb backoff i tester (default 60s i skarp drift)
@@ -202,6 +205,52 @@ grep -q "diskursbatch demokrati — citatkatalog sources/discourse/citat-demokra
 grep -q "\[worker, oauktoritativ\] konstig rad" docs/CHANGELOG.md && ok=0
 mv .loop/CHANGELOG.test-backup docs/CHANGELOG.md
 check "$ok" "changelog: workerrad borttagen, tvetydig rad markerad, auktoritativ rad skriven"
+
+# --- Test 7: tamper self-heal (one rogue commit) -----------------------------
+reset_state
+rm -f .loop/stub-count
+STUB_TAMPER_ONCE=.loop/stub-tamper-once.sh
+cat > "$STUB_TAMPER_ONCE" <<'EOF'
+#!/usr/bin/env bash
+n=$(cat .loop/stub-count 2>/dev/null || echo 0); n=$((n+1)); echo "$n" > .loop/stub-count
+if [ "$n" -eq 1 ]; then git commit --allow-empty -q -m "rogue (guard test 7)"; fi
+echo '{"result":"stub ok","session_id":"stub-session","total_cost_usd":0.01,"modelUsage":{"claude-sonnet-4-6":{}}}'
+EOF
+chmod +x "$STUB_TAMPER_ONCE"
+ensure_on_batch_branch
+pre_head="$(git rev-parse HEAD)"
+CLAUDE_BIN="$STUB_TAMPER_ONCE" GH_BIN="$STUB_GH" bash scripts/run-discourse-batch.sh > .loop/batch-t7.log 2>&1
+rc7=$?
+post_head="$(git rev-parse HEAD)"
+restore_branch
+ok=1
+[[ $rc7 -eq 0 && "$pre_head" == "$post_head" ]] && \
+grep -q "git-manipulation självläkt (händelse 1)" .loop/gh-test.log && \
+grep -q "tamper självläkt (demokrati/steg_a, händelse 1)" .loop/batch-t7.log && \
+! grep -q "upprepad git-manipulation" .loop/gh-test.log && ok=0
+check "$ok" "tamper self-heal: HEAD återställd, incident-issue, steget omgjort, inget areafall på exit 7"
+rm -f .loop/stub-count
+
+# --- Test 8: tamper cap (two rogue commits in same area) ---------------------
+reset_state
+STUB_TAMPER_ALWAYS=.loop/stub-tamper-always.sh
+cat > "$STUB_TAMPER_ALWAYS" <<'EOF'
+#!/usr/bin/env bash
+git commit --allow-empty -q -m "rogue (guard test 8)"
+echo '{"result":"stub ok","session_id":"stub-session","total_cost_usd":0.01,"modelUsage":{"claude-sonnet-4-6":{}}}'
+EOF
+chmod +x "$STUB_TAMPER_ALWAYS"
+ensure_on_batch_branch
+pre_head="$(git rev-parse HEAD)"
+CLAUDE_BIN="$STUB_TAMPER_ALWAYS" GH_BIN="$STUB_GH" bash scripts/run-discourse-batch.sh > .loop/batch-t8.log 2>&1
+rc8=$?
+post_head="$(git rev-parse HEAD)"
+restore_branch
+ok=1
+[[ $rc8 -eq 0 && "$pre_head" == "$post_head" ]] && \
+grep -q "avbrutet — upprepad git-manipulation" .loop/gh-test.log && \
+[[ "$(LOOP_STATE_FILE=batch-state.json node scripts/loop-lib.js get area_demokrati_tamper)" == "2" ]] && ok=0
+check "$ok" "tamper cap: två händelser i samma område => området failar, HEAD återställd"
 
 echo ""
 echo "$PASS passed, $FAIL failed"

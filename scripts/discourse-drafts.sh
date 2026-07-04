@@ -38,6 +38,7 @@ fi
 export LOOP_STATE_FILE="${LOOP_STATE_FILE:-loop-state-$DISCOURSE_AREA.json}"
 LOOP_DIR=".loop/$DISCOURSE_AREA"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
+export CLAUDE_CODE_DISABLE_1M_CONTEXT=1   # standardkontext, se quote-loop
 mkdir -p "$LOOP_DIR" drafts
 DRAFT_PROMPT="$(node scripts/render-area-prompt.js "$PROMPT_FILE" "$DISCOURSE_AREA")"
 

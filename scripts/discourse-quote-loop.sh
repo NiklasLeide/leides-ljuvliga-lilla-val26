@@ -57,6 +57,9 @@ LOOP_DIR=".loop/$DISCOURSE_AREA"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 DRY_RUN="${DRY_RUN:-0}"
 export CLAUDE_CODE_SUBAGENT_MODEL="$WORKER_MODEL"
+# Standardkontext-pinning (Niklas 2026-07-04): inga usage credits — 1M-auto-
+# uppgradering ska aldrig försökas (incident: 429 "Usage credits required").
+export CLAUDE_CODE_DISABLE_1M_CONTEXT=1
 
 lib() { node scripts/loop-lib.js "$@"; }
 mkdir -p "$LOOP_DIR" sources/discourse
