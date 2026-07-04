@@ -171,6 +171,7 @@ Varje parti × område-entry måste ha:
 - **Neutral, beskrivande ton** — som en statsvetenskaplig analys, inte en debattartikel
 - **Konkret framför abstrakt** — textnära exempel alltid bättre än generella observationer
 - **Alla 8 partier** — SD, M, KD, L, S, C, MP, V — behandlas likvärdigt i omfång och djup
+- **Partiernas egna värdeladdade begrepp citattecknas alltid i beskrivande text** — analysen beskriver att partiet kallar något X, den påstår inte att det är X. Exempel: "ansvarsfull budgetpolitik" (SD), "rättvis skattesänkning" (S), "ett finanspolitiskt ramverk som respekteras" (C), "rättvisare skatter" (MP).
 
 ---
 
