@@ -10,8 +10,10 @@
 #   4. total budget   -> orderly stop (exit 2) before any API call
 #   5. changelog auth -> worker noise line removed, ambiguous line marked,
 #                        authoritative line written (deterministic, no model)
+#   6. transient limit -> two 429-failures then success => retries, NO exit 9
 set -uo pipefail
 cd "$(dirname "$0")/.."
+export RETRY_BACKOFF_S=1   # snabb backoff i tester (default 60s i skarp drift)
 
 PASS=0; FAIL=0
 check() { # condition-desc: pass 0/1 as $1
@@ -39,17 +41,25 @@ restore_branch() {
   fi
 }
 
-# Preserve any real state
+# Preserve any real state — statefiler OCH .loop/<område>-artefakter
+# (skarpa körningar lämnar råsvar där; testerna får aldrig radera dem)
 for f in batch-state.json loop-state-demokrati.json loop-state-forsvar.json loop-state-skola.json loop-state-vard.json; do
   if [[ -f "$f" ]]; then mv "$f" "$f.test-backup"; fi
+done
+for a in demokrati forsvar skola vard; do
+  if [[ -d ".loop/$a" ]]; then mv ".loop/$a" ".loop/$a.suite-backup"; fi
 done
 cleanup() {
   for f in batch-state.json loop-state-demokrati.json loop-state-forsvar.json loop-state-skola.json loop-state-vard.json; do
     rm -f "$f"
     if [[ -f "$f.test-backup" ]]; then mv "$f.test-backup" "$f"; fi
   done
+  for a in demokrati forsvar skola vard; do
+    rm -rf ".loop/$a"
+    if [[ -d ".loop/$a.suite-backup" ]]; then mv ".loop/$a.suite-backup" ".loop/$a"; fi
+  done
   rm -f drafts/discourse-forsvar-sonnet.json drafts/discourse-forsvar-opus.json
-  rm -f .loop/gh-test.log
+  rm -f .loop/gh-test.log .loop/stub-count
 }
 trap cleanup EXIT
 
@@ -141,6 +151,35 @@ restore_branch
 ok=1
 [[ $rc4 -eq 2 ]] && grep -q "totalbudget nådd" .loop/gh-test.log && ok=0
 check "$ok" "totalbudget: ordnat stopp exit 2 utan API-anrop"
+
+# --- Test 6 (körs före 5 av städskäl): transient limit -> retry, no exit 9 --
+# Stub failar två gånger med 429-text, lyckas därefter. Batchen ska
+# backoffa+retrya (aldrig exit 9); områdena failar sedan ordinärt (exit 5).
+reset_state
+rm -f .loop/stub-count
+STUB_FLAKY=.loop/stub-claude-flaky.sh
+cat > "$STUB_FLAKY" <<'EOF'
+#!/usr/bin/env bash
+n=$(cat .loop/stub-count 2>/dev/null || echo 0); n=$((n+1)); echo "$n" > .loop/stub-count
+if [ "$n" -le 2 ]; then
+  echo '{"type":"result","is_error":true,"api_error_status":429,"result":"API Error: rate limit exceeded"}'
+  exit 1
+fi
+echo '{"result":"stub ok","session_id":"stub-session","total_cost_usd":0.01,"modelUsage":{"claude-sonnet-4-6":{}}}'
+EOF
+chmod +x "$STUB_FLAKY"
+ensure_on_batch_branch
+CLAUDE_BIN="$STUB_FLAKY" GH_BIN="$STUB_GH" bash scripts/run-discourse-batch.sh > .loop/batch-t6.log 2>&1
+rc6=$?
+restore_branch
+ok=1
+[[ $rc6 -eq 0 ]] && \
+grep -q "transient limit (demokrati/steg_a, försök 1/3)" .loop/batch-t6.log && \
+grep -q "transient limit (demokrati/steg_a, försök 2/3)" .loop/batch-t6.log && \
+! grep -qi "persistent usage" .loop/batch-t6.log && \
+! grep -qi "usage-/rate-limit" .loop/gh-test.log && ok=0
+check "$ok" "transient limit: två 429-fel retryas med backoff, inget exit 9"
+rm -f .loop/stub-count
 
 # --- Test 5: authoritative CHANGELOG line replaces worker noise -------------
 cp docs/CHANGELOG.md .loop/CHANGELOG.test-backup

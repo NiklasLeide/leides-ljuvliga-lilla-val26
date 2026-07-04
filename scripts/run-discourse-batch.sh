@@ -32,6 +32,8 @@ readonly BATCH_BRANCH="discourse-batch"
 readonly AREA_BUDGET_USD="20.00"     # per område, A+B+C sammantaget
 readonly TOTAL_BUDGET_USD="75.00"    # hela batchen
 readonly AREA_WALLCLOCK_S=10800      # 3 h per område
+readonly RETRY_MAX=3                 # limit-fel: max försök per steg
+RETRY_BACKOFF_S="${RETRY_BACKOFF_S:-60}"   # övstyrbar endast för guardtester
 readonly TIMEOUT_BIN="/usr/bin/timeout"   # GNU coreutils — INTE Windows timeout.exe
 readonly BATCH_STATE="batch-state.json"
 
@@ -150,21 +152,45 @@ for area in "${AREAS[@]}"; do
 
     echo "--- $area/$step (max ${remaining}s, spent område: \$$(area_cost "$area"), totalt: \$$tot) ---"
     log=".loop/$area-$step.log"
+
+    # Transient-limit-hantering: 429/limit-fel försöks om med backoff innan
+    # exit 9 får konstateras (incident 2026-07-04: "Usage credits required
+    # for 1M context" — engångsfel i EN session — feltolkades som uttömt
+    # fönster). Loopstegen är resumable, så ett omförsök = fresh session på
+    # samma iteration, aldrig omgjort arbete.
     rc=0
-    case "$step" in
-      steg_a) "$TIMEOUT_BIN" "$remaining" bash scripts/discourse-quote-loop.sh  > "$log" 2>&1 || rc=$? ;;
-      steg_b) "$TIMEOUT_BIN" "$remaining" bash scripts/discourse-drafts.sh     > "$log" 2>&1 || rc=$? ;;
-      steg_c) "$TIMEOUT_BIN" "$remaining" bash scripts/discourse-diverge.sh    > "$log" 2>&1 || rc=$? ;;
-    esac
+    for attempt in 1 2 3; do
+      rc=0
+      case "$step" in
+        steg_a) "$TIMEOUT_BIN" "$remaining" bash scripts/discourse-quote-loop.sh  > "$log" 2>&1 || rc=$? ;;
+        steg_b) "$TIMEOUT_BIN" "$remaining" bash scripts/discourse-drafts.sh     > "$log" 2>&1 || rc=$? ;;
+        steg_c) "$TIMEOUT_BIN" "$remaining" bash scripts/discourse-diverge.sh    > "$log" 2>&1 || rc=$? ;;
+      esac
+      if [[ $rc -eq 0 ]]; then break; fi
+      if is_usage_limit "$log" "$area" && [[ $attempt -lt $RETRY_MAX ]]; then
+        echo "transient limit ($area/$step, försök $attempt/$RETRY_MAX) — backoff ${RETRY_BACKOFF_S}s och omförsök"
+        sleep "$RETRY_BACKOFF_S"
+        # räkna om väggklockan inför omförsöket
+        elapsed=$(( $(date +%s) - area_start ))
+        remaining=$(( AREA_WALLCLOCK_S - elapsed ))
+        if (( remaining <= 0 )); then break; fi
+        continue
+      fi
+      break
+    done
     tail -5 "$log"
 
     if [[ $rc -ne 0 ]]; then
-      # usage-/rate-limit => meningslöst att fortsätta någonstans
+      # persistent usage-/rate-limit (efter $RETRY_MAX försök) => meningslöst
+      # att fortsätta någonstans
       if is_usage_limit "$log" "$area"; then
-        echo "USAGE-/RATE-LIMIT upptäckt — ordnat batchslut."
+        err_line="$(grep -ioE '(API Error|rate.?limit|usage.?limit|overloaded|quota exceeded|credit)[^\"]{0,120}' "$log" ".loop/$area"/* 2>/dev/null | head -1)"
+        echo "PERSISTENT USAGE-/RATE-LIMIT efter $RETRY_MAX försök — ordnat batchslut."
         blib set status=usage_limit_stop
-        file_issue "Diskursbatch: usage-/rate-limit — ordnat stopp" \
-"Stopp vid $area/$step (exit $rc). Återupptagningsläge: area_$area=$(get_area_status "$area"), ackumulerat \$$(total_cost). Kör om wrappern när fönstret återställts — klara områden körs inte om."
+        file_issue "Diskursbatch: persistent usage-/rate-limit — ordnat stopp" \
+"Stopp vid $area/$step (exit $rc) efter $RETRY_MAX försök med ${RETRY_BACKOFF_S}s backoff.
+Sista felrad: ${err_line:-okänd}
+Återupptagningsläge: area_$area=$(get_area_status "$area"), ackumulerat \$$(total_cost). Kör om wrappern när orsaken är åtgärdad — klara områden körs inte om."
         exit 9
       fi
       reason="exit $rc"

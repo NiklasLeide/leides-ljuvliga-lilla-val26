@@ -119,6 +119,10 @@ $feedback" \
       --output-format json > "$wfile" || wrc=$?
   fi
   if [[ $wrc -ne 0 ]]; then
+    # Best-effort kostnadsingest även för misslyckade anrop — ett failat
+    # anrop kostar ändå (incident 2026-07-04: $1.40 för 429-anrop som
+    # aldrig bokfördes). Parsefel ignoreras här (anropet är redan felat).
+    lib ingest "$i" worker-failed "$wfile" >/dev/null 2>&1 || true
     echo "Worker call failed (exit $wrc). State kept — re-run to resume at iteration $i."
     lib set status=interrupted
     exit "$wrc"
@@ -170,6 +174,7 @@ $val_out"
     --disallowedTools "Bash" \
     --output-format json > "$efile" || erc=$?
   if [[ $erc -ne 0 ]]; then
+    lib ingest "$i" evaluator-failed "$efile" >/dev/null 2>&1 || true
     echo "Evaluator call failed (exit $erc). State kept — re-run to resume at iteration $i."
     lib set "worker_session_id=$session" status=interrupted
     exit "$erc"
