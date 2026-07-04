@@ -2,6 +2,11 @@
   "omrade_id": "skola",
   "namn": "skola",
   "amnesavgransning": "skolpolitik: friskolor och vinstuttag, betyg och nationella prov, statlig styrning av skolan, kunskapskrav, lärarnas villkor, ordning i klassrummet",
-  "kallvagledning": "1. **Motioner till utbildningsutskottet (UbU) 2025/26** — riksdagen.se: friskolor, vinstuttag, betygssystem, statligt huvudmannaskap, kunskapskrav\n2. **Riksdagens skolpolitiska debatter** — protokoll på riksdagen.se\n3. **Partiprogrammens skolkapitel** — partiernas webbplatser (skola, utbildning-sidor)",
-  "signifikant_kandidater": ["kunskap", "likvärdighet", "valfrihet", "ordning"]
+  "kallvagledning": "1. **Motioner till utbildningsutskottet (UbU) 2025/26** — riksdagen.se: friskolor, vinstuttag, betygssystem, statligt huvudmannaskap, kunskapskrav\n2. **Riksdagens skolpolitiska debatter** — protokoll på riksdagen.se. Debattprotokoll uppmuntras särskilt: UbU-debatterna (betyg, friskolor, huvudmannaskap) ger direktcitat ur kammaren.\n3. **Partiprogrammens skolkapitel** — partiernas webbplatser (skola, utbildning-sidor)",
+  "signifikant_kandidater": [
+    "kunskap",
+    "likvärdighet",
+    "valfrihet",
+    "ordning"
+  ]
 }

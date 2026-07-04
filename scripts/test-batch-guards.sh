@@ -8,6 +8,8 @@
 #   2. resume         -> done-area skipped, in-progress area resumes at rätt steg
 #   3. usage-limit    -> orderly batch stop (exit 9), later areas never started
 #   4. total budget   -> orderly stop (exit 2) before any API call
+#   5. changelog auth -> worker noise line removed, ambiguous line marked,
+#                        authoritative line written (deterministic, no model)
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
@@ -139,6 +141,28 @@ restore_branch
 ok=1
 [[ $rc4 -eq 2 ]] && grep -q "totalbudget nådd" .loop/gh-test.log && ok=0
 check "$ok" "totalbudget: ordnat stopp exit 2 utan API-anrop"
+
+# --- Test 5: authoritative CHANGELOG line replaces worker noise -------------
+cp docs/CHANGELOG.md .loop/CHANGELOG.test-backup
+node -e "
+const fs = require('fs');
+const p = 'docs/CHANGELOG.md';
+let md = fs.readFileSync(p, 'utf8');
+const i = md.indexOf('---\n') + 4;
+// strikt workermönster (ska TAS BORT) + tvetydig rad (ska MARKERAS)
+md = md.slice(0, i)
+  + '\n[2026-07-04] feat: sources/discourse/citat-demokrati.json — citatkatalog med FELAKTIGA siffror (13 citat, allt perfekt)\n'
+  + 'konstig rad som nämner sources/discourse/citat-demokrati.json utan datumprefix\n'
+  + md.slice(i);
+fs.writeFileSync(p, md);
+"
+node scripts/batch-changelog.js demokrati 49 "REVISE (testfixtur)" 7 12.34 > /dev/null
+ok=1
+grep -q "diskursbatch demokrati — citatkatalog sources/discourse/citat-demokrati.json (49 citat" docs/CHANGELOG.md && \
+! grep -q "FELAKTIGA siffror" docs/CHANGELOG.md && \
+grep -q "\[worker, oauktoritativ\] konstig rad" docs/CHANGELOG.md && ok=0
+mv .loop/CHANGELOG.test-backup docs/CHANGELOG.md
+check "$ok" "changelog: workerrad borttagen, tvetydig rad markerad, auktoritativ rad skriven"
 
 echo ""
 echo "$PASS passed, $FAIL failed"
