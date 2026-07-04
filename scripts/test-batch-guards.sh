@@ -14,6 +14,8 @@
 #   7. tamper self-heal -> one rogue commit => HEAD restored, incident issue,
 #                          step retried (area fails later on exit 5, not 7)
 #   8. tamper cap       -> two rogue commits in same area => area fails
+#   9. semantic exit    -> loop budget-stop (exit 2) with STALE 429-files in
+#                          .loop/<area> => area fails ordinarily, NO exit 9
 set -uo pipefail
 cd "$(dirname "$0")/.."
 export RETRY_BACKOFF_S=1   # snabb backoff i tester (default 60s i skarp drift)
@@ -251,6 +253,28 @@ ok=1
 grep -q "avbrutet — upprepad git-manipulation" .loop/gh-test.log && \
 [[ "$(LOOP_STATE_FILE=batch-state.json node scripts/loop-lib.js get area_demokrati_tamper)" == "2" ]] && ok=0
 check "$ok" "tamper cap: två händelser i samma område => området failar, HEAD återställd"
+
+# --- Test 9: semantic exit never limit-classified ----------------------------
+# demokrati-loopens EGEN budget är slut (exit 2 direkt) OCH en stale 429-fil
+# ligger i .loop/demokrati — gammal bugg: stale-filen gav falskt exit 9.
+reset_state
+node -e "
+const fs=require('fs');
+fs.writeFileSync('loop-state-demokrati.json', JSON.stringify({spent_usd:'16.00',status:'running',next_iteration:3}));
+"
+mkdir -p .loop/demokrati
+echo '{"is_error":true,"result":"API Error: 429 rate limit exceeded (STALE FIXTURE)"}' > .loop/demokrati/stale-old-failure.json
+touch -d "2 hours ago" .loop/demokrati/stale-old-failure.json 2>/dev/null || true
+ensure_on_batch_branch
+CLAUDE_BIN="$STUB_FAIL" GH_BIN="$STUB_GH" bash scripts/run-discourse-batch.sh > .loop/batch-t9.log 2>&1
+rc9=$?
+restore_branch
+ok=1
+[[ $rc9 -eq 0 ]] && \
+grep -q "Batch: demokrati avbrutet — exit 2" .loop/gh-test.log && \
+! grep -qi "PERSISTENT" .loop/batch-t9.log && \
+grep -q "OMRÅDE: forsvar" .loop/batch-t9.log && ok=0
+check "$ok" "semantisk exit: budget-exit 2 med stale 429-filer ger areafall + fortsättning, aldrig exit 9"
 
 echo ""
 echo "$PASS passed, $FAIL failed"

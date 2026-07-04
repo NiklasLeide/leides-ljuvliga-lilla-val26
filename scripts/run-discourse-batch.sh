@@ -95,13 +95,23 @@ file_issue() { # title body
     echo "VARNING: kunde inte skapa issue: $1"
 }
 
-# rate-/usage-limit-detektering: stegets logg (stderr från claude) OCH
-# områdets råsvarsfiler (stdout går dit, inte till loggen)
-is_usage_limit() { # logfile area
-  local pat='rate.?limit|usage.?limit|429|overloaded|quota exceeded|credit balance'
+# rate-/usage-limit-detektering: stegets logg (stderr från claude) OCH de
+# råsvarsfiler som SKREVS UNDER DETTA STEG (mtime-filter — historiska
+# felfiler från tidigare körningar får aldrig påverka klassificeringen;
+# bugg 2026-07-04: forsvars budget-exit 2 feltolkades som persistent limit
+# pga gårdagens 429-filer i .loop/forsvar/).
+is_usage_limit() { # logfile area stepStartEpoch
+  local pat='rate.?limit|usage.?limit|429|overloaded|quota exceeded|credit'
   grep -qiE "$pat" "$1" && return 0
-  grep -qiE "$pat" ".loop/$2"/* 2>/dev/null
+  local recent
+  recent="$(find ".loop/$2" -maxdepth 1 -type f -newermt "@$3" 2>/dev/null)"
+  [[ -n "$recent" ]] && echo "$recent" | tr '\n' '\0' | xargs -0 grep -qiE "$pat" 2>/dev/null
 }
+
+# Semantiska exitkoder från stegskripten får ALDRIG limit-klassificeras:
+# 2=budget, 3=branch, 5=max_iters, 6=scope-konflikt, 124=timeout.
+# (7=tamper hanteras separat före denna kontroll.)
+is_semantic_exit() { case "$1" in 2|3|5|6|124) return 0 ;; *) return 1 ;; esac; }
 
 get_area_status() { blib get "area_$1"; }
 set_area_status() { blib set "area_$1=$2"; }
@@ -159,6 +169,7 @@ for area in "${AREAS[@]}"; do
     echo "--- $area/$step (max ${remaining}s, spent område: \$$(area_cost "$area"), totalt: \$$tot) ---"
     log=".loop/$area-$step.log"
     step_head_before="$(git rev-parse HEAD)"
+    step_started="$(( $(date +%s) - 1 ))"   # marginal 1s för mtime-filtret
 
     # Transient-limit-hantering: 429/limit-fel försöks om med backoff innan
     # exit 9 får konstateras (incident 2026-07-04: "Usage credits required
@@ -174,7 +185,8 @@ for area in "${AREAS[@]}"; do
         steg_c) "$TIMEOUT_BIN" "$remaining" bash scripts/discourse-diverge.sh    > "$log" 2>&1 || rc=$? ;;
       esac
       if [[ $rc -eq 0 ]]; then break; fi
-      if is_usage_limit "$log" "$area" && [[ $attempt -lt $RETRY_MAX ]]; then
+      if is_semantic_exit "$rc"; then break; fi
+      if is_usage_limit "$log" "$area" "$step_started" && [[ $attempt -lt $RETRY_MAX ]]; then
         echo "transient limit ($area/$step, försök $attempt/$RETRY_MAX) — backoff ${RETRY_BACKOFF_S}s och omförsök"
         sleep "$RETRY_BACKOFF_S"
         # räkna om väggklockan inför omförsöket
@@ -214,8 +226,8 @@ for area in "${AREAS[@]}"; do
 
     if [[ $rc -ne 0 ]]; then
       # persistent usage-/rate-limit (efter $RETRY_MAX försök) => meningslöst
-      # att fortsätta någonstans
-      if is_usage_limit "$log" "$area"; then
+      # att fortsätta någonstans. Semantiska exitkoder är aldrig limits.
+      if ! is_semantic_exit "$rc" && is_usage_limit "$log" "$area" "$step_started"; then
         err_line="$(grep -ioE '(API Error|rate.?limit|usage.?limit|overloaded|quota exceeded|credit)[^\"]{0,120}' "$log" ".loop/$area"/* 2>/dev/null | head -1)"
         echo "PERSISTENT USAGE-/RATE-LIMIT efter $RETRY_MAX försök — ordnat batchslut."
         blib set status=usage_limit_stop
