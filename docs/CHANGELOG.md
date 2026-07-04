@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-04] fix: sources/discourse/citat-forsvar.json — 5 evaluatorfynd åtgärdade: S[5] "i vårt omedelbara närområde" återlagd (trunkerat utan ellips); SD[1] "rörliga" (kongruens, källan HD022402); KD[1] "totalförsvarsplikten" (bestämd form, källan HD02756); L[0] källans dubbeltyck "försvara försvara" markerat med [sic] (tyst rättning tillåts ej); MP[5] komplett mening återgiven inkl. inledning "När vi nu står inför en historiskt stor upprustning" och avslut "under lång tid" (klippt ur mening utan ellips)
+[2026-07-04] data: sources/discourse/citat-forsvar.json — citatkatalog för diskursanalys, området försvar/säkerhet: 68 citat (S 9, M 8, SD 10, C 8, V 9, KD 9, L 7, MP 8), alla 8 partier kallbas "ok" (≥6 citat, ≥2 källtyper); källtyper: motion, budgetmotion, partiprogram, kampanjsida; manuell insamling med WebFetch mot riksdagen.se (data.riksdagen.se) och partiwebbplatser; S-citat ur motion 3556 verifierade via verbatim textblock; PDF-läsning ej möjlig utan poppler (lokala manifest kunde ej läsas direkt)
 [2026-07-04] docs: docs/LOOP_BACKLOG.md — v3-backlogg skapad: per-steg-budgetar i stället för per-område (Steg A åt upp hela områdesbudgeten by design), sessionsrotation mot kontextväxt (477k/71 turns-incidenten)
 [2026-07-04] feat: diskursbatch demokrati — citatkatalog sources/discourse/citat-demokrati.json (43 citat, evaluator exit 5 — 40/43 maskinverifierade; evaluatorns 2 kvarvarande fel refuterade av deterministisk rå-HTML-grep; SD[5] behållen med Niklas-motivering), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-demokrati-RAPPORT.md (6 divergenser); kostnad $20.70; data/discourse.json orörd — Steg D efter Niklas granskning
 
