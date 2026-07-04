@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 #
 # discourse-quote-loop.sh — evaluator-optimizer loop (loop v2-mönstret) that
-# builds sources/discourse/citat-ekonomi.json: 6-12 verbatim economy quotes
+# builds sources/discourse/citat-<DISCOURSE_AREA>.json: 6-12 verbatim quotes
 # per riksdag party, for the discourse pipeline (BRIEF_diskurspipeline.md,
-# Steg A). Sister script to data-loop.sh — reuses scripts/loop-lib.js for
-# state/cost/scope, with its own state file via LOOP_STATE_FILE.
+# Steg A). Area comes from DISCOURSE_AREA (default ekonomi); prompts are
+# rendered from templates + scripts/discourse-areas/<area>.json. Sister
+# script to data-loop.sh — reuses scripts/loop-lib.js for state/cost/scope.
 #
-# Writes ONLY sources/discourse/citat-ekonomi.json (enforced by
+# Writes ONLY sources/discourse/citat-<area>.json (enforced by
 # scripts/validate-citat.js). NEVER touches data/discourse.json (DEC-007
 # villkor 1: tolkningsdata kräver Niklas godkännande i chatten).
 #
@@ -37,20 +38,32 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 readonly MAX_ITERS=8                 # GUARDRAIL 2: hard iteration cap
-readonly BUDGET_USD="15.00"          # GUARDRAIL 3: hard budget cap (USD)
-readonly REQUIRED_BRANCH="discourse-pipeline"
+readonly BUDGET_USD="${LOOP_BUDGET_USD:-15.00}"   # GUARDRAIL 3: hard budget cap (USD)
+readonly REQUIRED_BRANCH="${LOOP_BRANCH:-discourse-pipeline}"
 readonly WORKER_MODEL="claude-sonnet-4-6"
 readonly EVAL_MODEL="claude-sonnet-4-6"
 readonly WORKER_TOOLS="Read,Write,Edit,Grep,Glob,WebSearch,WebFetch"  # no Bash: worker cannot touch git
 readonly EVAL_TOOLS="Read,WebFetch"  # Read for local PDF/snapshot sources, WebFetch for URLs
 
-export LOOP_STATE_FILE="loop-state-discourse.json"
+# Area-parametrized (diskursbatchen): DISCOURSE_AREA styr målfil, prompts
+# (renderade ur områdeskonfig), statefil och .loop-underkatalog.
+export DISCOURSE_AREA="${DISCOURSE_AREA:-ekonomi}"
+if [[ ! -f "scripts/discourse-areas/$DISCOURSE_AREA.json" ]]; then
+  echo "FEL: okänt område '$DISCOURSE_AREA' (ingen scripts/discourse-areas/$DISCOURSE_AREA.json)"
+  exit 1
+fi
+export LOOP_STATE_FILE="${LOOP_STATE_FILE:-loop-state-$DISCOURSE_AREA.json}"
+LOOP_DIR=".loop/$DISCOURSE_AREA"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 DRY_RUN="${DRY_RUN:-0}"
 export CLAUDE_CODE_SUBAGENT_MODEL="$WORKER_MODEL"
 
 lib() { node scripts/loop-lib.js "$@"; }
-mkdir -p .loop sources/discourse
+mkdir -p "$LOOP_DIR" sources/discourse
+
+# Fail-closed prompt-rendering INNAN första API-anropet
+WORKER_PROMPT="$(node scripts/render-area-prompt.js scripts/discourse-quote-worker-prompt.md "$DISCOURSE_AREA")"
+EVAL_PROMPT="$(node scripts/render-area-prompt.js scripts/discourse-quote-evaluator-prompt.md "$DISCOURSE_AREA")"
 
 status="$(lib get status)"
 if [[ "$status" == "passed" ]]; then
@@ -87,16 +100,16 @@ for ((i = start_iter; i <= MAX_ITERS; i++)); do
   # false-PASS commits from inside this loop via inherited
   # settings.local.json allowlist).
   head_before="$(git rev-parse HEAD)"
-  wfile=".loop/dq-worker-$i.json"
+  wfile="$LOOP_DIR/dq-worker-$i.json"
   wrc=0
   if [[ -z "$session" ]]; then
-    "$CLAUDE_BIN" -p "$(cat scripts/discourse-quote-worker-prompt.md)" \
+    "$CLAUDE_BIN" -p "$WORKER_PROMPT" \
       --model "$WORKER_MODEL" \
       --allowedTools "$WORKER_TOOLS" \
       --disallowedTools "Bash" \
       --output-format json > "$wfile" || wrc=$?
   else
-    "$CLAUDE_BIN" -p "Granskningen underkände din senaste version av sources/discourse/citat-ekonomi.json. Åtgärda punkterna nedan. Samma regler som tidigare gäller: ordagranna citat, aldrig påhittade, riksdagsmaterial i basen, ändra endast citat-ekonomi.json.
+    "$CLAUDE_BIN" -p "Granskningen underkände din senaste version av sources/discourse/citat-$DISCOURSE_AREA.json. Åtgärda punkterna nedan. Samma regler som tidigare gäller: ordagranna citat, aldrig påhittade, riksdagsmaterial i basen, ändra endast citat-$DISCOURSE_AREA.json.
 
 $feedback" \
       --resume "$session" \
@@ -149,9 +162,9 @@ $val_out"
 
   # --- EXIT CONDITION part 2: evaluator (FRESH Sonnet session every round,
   #     own instructions — judge is never the worker) ---
-  efile=".loop/dq-eval-$i.json"
+  efile="$LOOP_DIR/dq-eval-$i.json"
   erc=0
-  "$CLAUDE_BIN" -p "$(cat scripts/discourse-quote-evaluator-prompt.md)" \
+  "$CLAUDE_BIN" -p "$EVAL_PROMPT" \
     --model "$EVAL_MODEL" \
     --allowedTools "$EVAL_TOOLS" \
     --disallowedTools "Bash" \

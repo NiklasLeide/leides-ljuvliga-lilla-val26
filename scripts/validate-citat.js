@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 // Schema + scope validation for the discourse quote loop (Steg A). Zero tokens.
 // Exit 0 = valid, exit 1 = violations (printed, fed back to the worker).
-// Target file is NEW (untracked): sources/discourse/citat-ekonomi.json.
+// Target file: sources/discourse/citat-<DISCOURSE_AREA>.json.
 'use strict';
 const fs = require('fs');
 const cp = require('child_process');
 
-const TARGET_FILE = 'sources/discourse/citat-ekonomi.json';
+// Area-parametrized (diskursbatchen): DISCOURSE_AREA styr målfil och
+// omrade-kravet. Default ekonomi = bakåtkompatibel med guard-testerna.
+const AREA = process.env.DISCOURSE_AREA || 'ekonomi';
+if (!/^[a-z]+$/.test(AREA)) { console.error(`invalid DISCOURSE_AREA "${AREA}"`); process.exit(1); }
+const TARGET_FILE = `sources/discourse/citat-${AREA}.json`;
 const PARTIES = ['S', 'M', 'SD', 'C', 'V', 'KD', 'L', 'MP'];
 const KALLTYPER = new Set(['budgetmotion', 'motion', 'protokoll', 'partiprogram',
   'valmanifest', 'kampanjsida']);
@@ -39,7 +43,7 @@ try {
 }
 
 if (root.schemaVersion !== 1) fail.push(`schemaVersion must be 1 (got ${root.schemaVersion})`);
-if (root.omrade !== 'ekonomi') fail.push(`omrade must be "ekonomi" (got "${root.omrade}")`);
+if (root.omrade !== AREA) fail.push(`omrade must be "${AREA}" (got "${root.omrade}")`);
 if (typeof root.tidsfonster !== 'string' || !root.tidsfonster.trim()) {
   fail.push('tidsfonster missing or empty');
 }
