@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-04] feat: diskursbatch forsvar — citatkatalog sources/discourse/citat-forsvar.json (57 citat, evaluator PASS via deterministisk verifiering (56/57 evaluator + SD[1] grep-refuterad; Niklas 2026-07-05)), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-forsvar-RAPPORT.md (5 divergenser); kostnad $19.91; data/discourse.json orörd — Steg D efter Niklas granskning
+
 [2026-07-04] fix: run-discourse-batch.sh — andra falska exit 9 åtgärdat: (a) semantiska exitkoder (2 budget/3 branch/5 max_iters/6 scope/124 timeout) limit-klassificeras aldrig, (b) is_usage_limit mtime-filtrerar råsvarsfiler till aktuellt steg (stale 429-filer från tidigare körningar poisonade klassificeringen — forsvars budget-exit 2 blev "persistent limit"); guardtest 9
 [2026-07-04] data: citat-forsvar.json SD[1] — evaluatorns sista fynd (adjektivböjning rörliga/avancerade) REFUTERAT av deterministisk grep mot rå-HTML: källan HD022402 skriver exakt katalogens form; forsvar-katalogen därmed 57/57 korrekt, Steg A innehållsklar men loopbudget uttömd (exit 2 vid iteration 7, $15.04)
 [2026-07-04] fix: CLAUDE_CODE_DISABLE_1M_CONTEXT=1 exporteras i alla fyra pipelineskript (quote-loop, drafts, diverge, data-loop) — probat och verifierat (contextWindow 200000): CLI:t försöker aldrig auto-uppgradera till 1M-kontext (rotorsaken bakom skolas 3/3 429-stopp; Niklas beslut: inga usage credits, fetch-beteendet är felet — se LOOP_BACKLOG v3-punkt om riktad dokumenthämtning)

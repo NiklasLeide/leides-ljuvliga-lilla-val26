@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "omrade": "forsvar",
+  "tidsfonster": "valrörelsefokus 2025/26 till 2026-07-04",
+  "genererad": "2026-07-04",
+  "partier": {
+    "S": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Sverige befinner sig i det allvarligaste säkerhetspolitiska läget sedan andra världskriget.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Totalförsvarets beredskap (motion 2025/26:3556)",
+          "url": "https://data.riksdagen.se/dokument/HD023556.html",
+          "datum": "2025-10-07",
+          "kontext": "Inledande mening i motionens motivering, ingiven till försvarsutskottet av Peter Hultqvist m.fl. (S)."
+        },
+        {
+          "citat": "För oss socialdemokrater är det en självklarhet att Sverige ska ha ett totalförsvar av det svenska folket för det svenska folket.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Totalförsvarets beredskap (motion 2025/26:3556)",
+          "url": "https://data.riksdagen.se/dokument/HD023556.html",
+          "datum": "2025-10-07",
+          "kontext": "Partiets principiella utgångspunkt för totalförsvarspolitiken, formulerad i motionens motivering."
+        },
+        {
+          "citat": "Totalförsvaret är det yttersta skyddet för vår demokrati, våra rättigheter och våra grundläggande värderingar.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Totalförsvarets beredskap (motion 2025/26:3556)",
+          "url": "https://data.riksdagen.se/dokument/HD023556.html",
+          "datum": "2025-10-07",
+          "kontext": "Motionens motivering om totalförsvarets demokratiska funktion, av Peter Hultqvist m.fl. (S)."
+        },
+        {
+          "citat": "Det militära och civila försvaret ska sammantaget ha en sådan styrka, sammansättning, ledning, beredskap och uthållighet att det avhåller andra från att försöka angripa, kontrollera eller på annat sätt utnyttja svenskt territorium.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Totalförsvarets beredskap (motion 2025/26:3556)",
+          "url": "https://data.riksdagen.se/dokument/HD023556.html",
+          "datum": "2025-10-07",
+          "kontext": "Motionens krav på totalförsvarets avskräckningsförmåga, motionens motivering."
+        },
+        {
+          "citat": "Eftersom det säkerhetspolitiska läget i vårt närområde kraftigt försämrats i och med Rysslands olagliga anfallskrig mot Ukraina måste det militära och det civila försvaret på alla nivåer stärkas och våra internationella samarbeten stärkas och fördjupas.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Totalförsvarets beredskap (motion 2025/26:3556)",
+          "url": "https://data.riksdagen.se/dokument/HD023556.html",
+          "datum": "2025-10-07",
+          "kontext": "S motivering till varför totalförsvaret behöver stärkas, med hänvisning till kriget i Ukraina."
+        },
+        {
+          "citat": "Natomedlemskapet höjer avskräckningsförmågan i förhållande till en kris eller konflikt i vårt omedelbara närområde",
+          "kalltyp": "motion",
+          "dokumenttitel": "Totalförsvarets beredskap (motion 2025/26:3556)",
+          "url": "https://data.riksdagen.se/dokument/HD023556.html",
+          "datum": "2025-10-07",
+          "kontext": "S bedömning av NATO-medlemskapets strategiska värde, ur motionens motivering."
+        },
+        {
+          "citat": "Den socialdemokratiska målsättningen är att på sikt utbilda 20 000 värnpliktiga per år, men att minst 12 000 ska påbörja utbildning genom värnplikt senast 2030.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Totalförsvarets beredskap (motion 2025/26:3556)",
+          "url": "https://data.riksdagen.se/dokument/HD023556.html",
+          "datum": "2025-10-07",
+          "kontext": "S värnpliktsambition formulerad i motionens motivering om personalförsörjning."
+        },
+        {
+          "citat": "Flera remissinstanser pekar på att de förslag som nu läggs fram innebär betydande nya uppgifter för kommuner, regioner och fastighetsägare, samtidigt som de ekonomiska konsekvenserna inte är tillräckligt belysta.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:142 Ett starkare skydd för civilbefolkningen vid höjd beredskap (motion 2025/26:3935)",
+          "url": "https://data.riksdagen.se/dokument/HD023935.html",
+          "datum": "2026-03-01",
+          "kontext": "S följdmotion till propositionen om civilbefolkningens skydd; kritiserar otillräcklig konsekvensanalys för kommuner. Exakt datum okänt, estimate baserat på propositionens tidpunkt."
+        },
+        {
+          "citat": "Vårt luftrum ska skyddas av stridsflyg, våra vatten av moderna stridsfartyg och vårt land av en stark armé.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Socialdemokraternas val 2026 — försvar och säkerhet",
+          "url": "https://www.socialdemokraterna.se/val-2026/",
+          "datum": "2026-07-03",
+          "kontext": "Från S officiella val-2026-sida, avsnittet om militär förmåga."
+        }
+      ]
+    },
+    "M": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Det finns ingen viktigare uppgift än att värna Sveriges och svenskars säkerhet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/forsvar/",
+          "datum": "2026-07-03",
+          "kontext": "Inledande tes på M:s officiella försvarspolitiksida."
+        },
+        {
+          "citat": "Sverige är säkrare som medlem av Nato.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/forsvar/",
+          "datum": "2026-07-03",
+          "kontext": "M:s sammanfattning av NATO-medlemskapets säkerhetspolitiska värde."
+        },
+        {
+          "citat": "Den moderatledda regeringen förde Sverige in i Nato den 7 mars 2024.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/forsvar/",
+          "datum": "2026-07-03",
+          "kontext": "M:s beskrivning av NATO-anslutningen på sin officiella försvarspolitiksida."
+        },
+        {
+          "citat": "Sverige har sammanlagt stött Ukraina militärt med 128 miljarder kronor sedan kriget började 2022.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/forsvar/",
+          "datum": "2026-07-03",
+          "kontext": "M:s redovisning av det samlade svenska militära stödet till Ukraina."
+        },
+        {
+          "citat": "Sverige ska ha ett starkt totalförsvar där det militära försvaret och civila försvaret stärks parallellt.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/forsvar/",
+          "datum": "2026-07-03",
+          "kontext": "M:s position om totalförsvarets uppbyggnad på partiets officiella försvarspolitiksida."
+        },
+        {
+          "citat": "Moderaterna går till val på att under början av nästa mandatperiod inrätta ett svenskt drönarvärn med 10 000 skyddsutbildade personer. Det handlar om att stärka skyddet av vårt samhälle, våra medborgare och vår motståndskraft i krig.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md",
+          "datum": "2026-07-03",
+          "kontext": "Vallöfte under rubriken 'Stärkt drönarskydd' på M:s kampanjsida, läst ur lokalt sparad ögonblicksbild."
+        },
+        {
+          "citat": "Under det senaste decenniet har Sveriges säkerhetsläge försämrats kraftigt och Rysslands fullskaliga krig mot Ukraina från den 24 februari 2022 har i grunden förändrat säkerhetsläget i Europa.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stärkt sydsvenskt försvar (motion 2025/26:3443)",
+          "url": "https://data.riksdagen.se/dokument/HD023443.html",
+          "datum": "2025-10-07",
+          "kontext": "Inledande motivering i M-motion om regemente i Skåne, ingiven till försvarsutskottet."
+        },
+        {
+          "citat": "Vi vill därför att regeringen tar initiativ till att etablera ett nytt regemente i Skåne, med förmåga att utbilda, mobilisera och leda markstridskrafter.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stärkt sydsvenskt försvar (motion 2025/26:3443)",
+          "url": "https://data.riksdagen.se/dokument/HD023443.html",
+          "datum": "2025-10-07",
+          "kontext": "M:s yrkande om nytt sydsvenskt regemente i motion till försvarsutskottet."
+        }
+      ]
+    },
+    "SD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Samtidigt behöver totalförsvaret återuppbyggas med ett starkt militärt försvar och bättre beredskap i hela landet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Vad vi vill — Trygg i Sverige",
+          "url": "https://sd.se/vad-vi-vill/",
+          "datum": "2026-07-04",
+          "kontext": "Från SD:s övergripande politiksida under rubriken 'Trygg i Sverige', om totalförsvar och beredskap."
+        },
+        {
+          "citat": "Ukraina, som sedan februari 2022 utsätts för ett konstant och hänsynslöst angrepp, har utvecklats till Europas mest rörliga och avancerade militärmakt.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Ukraina i Joint Expeditionary Force (motion 2025/26:2402)",
+          "url": "https://data.riksdagen.se/dokument/HD022402.html",
+          "datum": "2025-10-07",
+          "kontext": "SD-motionens motivering till varför Ukraina bör inkluderas i JEF-samarbetet, av Markus Wiechel (SD)."
+        },
+        {
+          "citat": "Den ukrainska drönarindustrin är i särklass och bygger på värdefulla erfarenheter av att bemästra de ofta snabbt föränderliga attackerna från ryska styrkor.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Ukraina i Joint Expeditionary Force (motion 2025/26:2402)",
+          "url": "https://data.riksdagen.se/dokument/HD022402.html",
+          "datum": "2025-10-07",
+          "kontext": "SD:s argument om Ukrainas militärtekniska kompetens som skäl för JEF-medlemskap."
+        },
+        {
+          "citat": "Ukraina besitter unik kompetens inom elektroniska motmedel, dynamiska ledningsstrukturer och drönarkamp vilket gör landet till en ovärderlig partner för JEF.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Ukraina i Joint Expeditionary Force (motion 2025/26:2402)",
+          "url": "https://data.riksdagen.se/dokument/HD022402.html",
+          "datum": "2025-10-07",
+          "kontext": "SD:s specificering av Ukrainas militära kompetensfördelar för nordiskt försvarssamarbete."
+        },
+        {
+          "citat": "Under 2000-talet har de svenska beredskapslagren successivt skrotats, och mat, mediciner, medicinsk utrustning och olja har inte längre setts som nödvändigt att lagra.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Beredskapslag (motion 2025/26:2805)",
+          "url": "https://data.riksdagen.se/dokument/HD022805.html",
+          "datum": "2025-10-07",
+          "kontext": "SD-motion av Markus Wiechel och Eric Palmqvist om att återinrätta beredskapslager, motivering om historisk avveckling."
+        },
+        {
+          "citat": "Finland har dock valt en helt annan väg än Sverige, och var väl rustade när coronapandemin slog till; detta tack vare sina enorma beredskapslager som både är underhållna och kontinuerligt utvecklade.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Beredskapslag (motion 2025/26:2805)",
+          "url": "https://data.riksdagen.se/dokument/HD022805.html",
+          "datum": "2025-10-07",
+          "kontext": "SD jämför Sverige och Finland vad gäller beredskapslagring, till stöd för förslaget om finsk modell."
+        },
+        {
+          "citat": "Regeringen bör lära av det goda exemplet vi har i vårt östra grannland, och därför inrätta en beredskapslag likt den i Finland.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Beredskapslag (motion 2025/26:2805)",
+          "url": "https://data.riksdagen.se/dokument/HD022805.html",
+          "datum": "2025-10-07",
+          "kontext": "SD:s yrkande om inrättande av finsk modell för beredskapslag i Sverige."
+        },
+        {
+          "citat": "I Sverige finns drygt 65 000 skyddsrum med plats för ungefär sju miljoner människor.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Operativa skyddsrum i Sverige (motion 2025/26:227)",
+          "url": "https://data.riksdagen.se/dokument/HD02227.html",
+          "datum": "2025-10-07",
+          "kontext": "SD-motion av Björn Tidland om skyddsrum, inledande faktauppgift om befintlig kapacitet."
+        },
+        {
+          "citat": "Den bistra sanningen är att ett mycket stort antal skyddsrum i Sverige inte är operativa.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Operativa skyddsrum i Sverige (motion 2025/26:227)",
+          "url": "https://data.riksdagen.se/dokument/HD02227.html",
+          "datum": "2025-10-07",
+          "kontext": "SD:s beskrivning av underhållsbristen i det civila skyddet, motionens motivering."
+        },
+        {
+          "citat": "MSB måste få nya och utökade direktiv för att säkerställa tillgången på fungerande skyddsrum.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Operativa skyddsrum i Sverige (motion 2025/26:227)",
+          "url": "https://data.riksdagen.se/dokument/HD02227.html",
+          "datum": "2025-10-07",
+          "kontext": "SD:s yrkande om MSB:s ansvar för att säkerställa operativa skyddsrum i hela landet."
+        }
+      ]
+    },
+    "C": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Det civila försvaret behöver ges mer uppmärksamhet då detta är helt avgörande för totalförsvarsplaneringen och för Sveriges säkerhet.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 6 Försvar och samhällets krisberedskap (motion 2025/26:3605)",
+          "url": "https://data.riksdagen.se/dokument/HD023605.html",
+          "datum": "2025-10-07",
+          "kontext": "C budgetmotion om försvarsutgifter av Mikael Larsson m.fl., om prioritering av civilt försvar."
+        },
+        {
+          "citat": "Personalen är Försvarsmaktens viktigaste resurs i utvecklingen av försvarsförmågan.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 6 Försvar och samhällets krisberedskap (motion 2025/26:3605)",
+          "url": "https://data.riksdagen.se/dokument/HD023605.html",
+          "datum": "2025-10-07",
+          "kontext": "C:s ståndpunkt om personalförsörjningens prioritet i försvarsbygget, från budgetmotionens motivering."
+        },
+        {
+          "citat": "Kort och gott – kommunerna har en nyckelroll både i den fredstida krisberedskapen och i totalförsvaret.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 6 Försvar och samhällets krisberedskap (motion 2025/26:3605)",
+          "url": "https://data.riksdagen.se/dokument/HD023605.html",
+          "datum": "2025-10-07",
+          "kontext": "C:s betoning av kommunernas roll i totalförsvaret, från motionens motivering."
+        },
+        {
+          "citat": "Det nordisk-baltiska försvarssamarbetet kommer att utvecklas tillsammans i en Natokontext, där vi gemensamt bidrar till ökat försvar och ökad stabilitet i Östersjöområdet, men också i Arktis och Nordatlanten och genom den transatlantiska länken.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Internationellt samarbete i en utmanande tid (motion 2025/26:3729)",
+          "url": "https://data.riksdagen.se/dokument/HD023729.html",
+          "datum": "2025-10-07",
+          "kontext": "C-motion av Kerstin Lundgren m.fl. om nordiskt-baltiskt försvarssamarbete inom NATO-ramen."
+        },
+        {
+          "citat": "Sverige ska kunna delta i internationella militära och civila insatser under Nato‑, EU- och FN-flagg",
+          "kalltyp": "motion",
+          "dokumenttitel": "Internationellt samarbete i en utmanande tid (motion 2025/26:3729)",
+          "url": "https://data.riksdagen.se/dokument/HD023729.html",
+          "datum": "2025-10-07",
+          "kontext": "C:s position om Sveriges deltagande i internationella försvarsinsatser efter NATO-anslutningen."
+        },
+        {
+          "citat": "Hela Sverige ska kunna försvaras men Stockholmsområdet, Gotland, Öresundsregionen, västkusten med Göteborg, västra Svealand och delar av Jämtland och Norrbottens län har av försvarsberedningen bedömts vara strategiskt viktiga områden i händelse av krig.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Militärt och civilt försvar samt samhällets krisberedskap (motion 2025/26:2822)",
+          "url": "https://data.riksdagen.se/dokument/HD022822.html",
+          "datum": "2025-10-07",
+          "kontext": "C-motion av Mikael Larsson m.fl. om geografisk prioritering i försvarsplaneringen."
+        },
+        {
+          "citat": "Ukraina slåss inte bara för sin egen frihet. De slåss mot ett aggressivt Ryssland som startat sitt anfallskrig.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Militärt och civilt försvar samt samhällets krisberedskap (motion 2025/26:2822)",
+          "url": "https://data.riksdagen.se/dokument/HD022822.html",
+          "datum": "2025-10-07",
+          "kontext": "C:s beskrivning av Ukrainakonflikten och dess principiella betydelse, ur motionens motivering."
+        },
+        {
+          "citat": "Värnplikt som företeelse är ett ingrepp i den enskilda individens liv och därför är det extra viktigt att de villkor man har under värnplikten är goda.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Militärt och civilt försvar samt samhällets krisberedskap (motion 2025/26:2822)",
+          "url": "https://data.riksdagen.se/dokument/HD022822.html",
+          "datum": "2025-10-07",
+          "kontext": "C:s perspektiv på värnpliktens villkor och individens rättigheter, från motionens motivering."
+        }
+      ]
+    },
+    "V": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Vi är för en allmän och könsneutral värnplikt.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvaret — Vänsterpartiets politik A–Ö",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+          "datum": "2026-07-04",
+          "kontext": "V:s officiella position om värnplikten på partiets politiksida om försvaret."
+        },
+        {
+          "citat": "Medlemskapet i Nato kan inte ersätta uppbyggnaden av vårt eget försvar.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvaret — Vänsterpartiets politik A–Ö",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+          "datum": "2026-07-04",
+          "kontext": "V:s ståndpunkt om nationellt försvarsansvar trots NATO-medlemskapet."
+        },
+        {
+          "citat": "Svensk säkerhetspolitik ska bygga på fredliga lösningar och på att förebygga kriser snarare än att förespråka militära alternativ.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvaret — Vänsterpartiets politik A–Ö",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+          "datum": "2026-07-04",
+          "kontext": "V:s grundprincip för säkerhetspolitikens inriktning, från partiets officiella politiksida."
+        },
+        {
+          "citat": "Sverige ska vara tydliga med att vi inte accepterar kärnvapen på svenskt territorium.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvaret — Vänsterpartiets politik A–Ö",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+          "datum": "2026-07-04",
+          "kontext": "V:s kärnvapenposition: avvisning av kärnvapen på svensk mark oavsett NATO-kontext."
+        },
+        {
+          "citat": "Vi ska heller inte ha några permanenta baser med soldater från andra länder i Sverige.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvaret — Vänsterpartiets politik A–Ö",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/forsvaret/",
+          "datum": "2026-07-04",
+          "kontext": "V:s position mot permanenta utländska militärbaser i Sverige, från partiets politiksida."
+        },
+        {
+          "citat": "DCA-avtalet, eller som det egentligen heter – Defense Cooperation Agreement – reglerar förutsättningarna för amerikansk militär på svensk mark men är i grunden en fråga om svensk suveränitet.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Uppsägning av DCA-avtalet med USA (motion 2025/26:102)",
+          "url": "https://data.riksdagen.se/dokument/HD02102.html",
+          "datum": "2025-10-01",
+          "kontext": "V-motion av Hanna Gunnarsson m.fl. om att säga upp DCA-avtalet, motionens inledning om avtalets karaktär."
+        },
+        {
+          "citat": "Det faktum att avtalet går utöver Natosamarbetet innebär att amerikanska aktiviteter på svenskt territorium enligt DCA-avtalet kan komma att gälla amerikanska militära operationer var som helst med vilka ändamål som helst.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Uppsägning av DCA-avtalet med USA (motion 2025/26:102)",
+          "url": "https://data.riksdagen.se/dokument/HD02102.html",
+          "datum": "2025-10-01",
+          "kontext": "V:s argument om DCA-avtalets räckvidd utöver NATO-ramen, från motionens motivering."
+        },
+        {
+          "citat": "Vänsterpartiet är emot att Sverige gick med i Nato.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:25 Svenskt bidrag till Natos avskräckning och försvar under 2026 (motion 2025/26:3826)",
+          "url": "https://data.riksdagen.se/dokument/HD023826.html",
+          "datum": "2025-11-01",
+          "kontext": "V:s grundposition om NATO-anslutningen, angiven som utgångspunkt i följdmotionen. Exakt datum okänt, estimate baserat på propositionens tidpunkt."
+        },
+        {
+          "citat": "Sverige ska därför aldrig delta i Natos övningsverksamhet som inkluderar övning i användandet av kärnvapen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:25 Svenskt bidrag till Natos avskräckning och försvar under 2026 (motion 2025/26:3826)",
+          "url": "https://data.riksdagen.se/dokument/HD023826.html",
+          "datum": "2025-11-01",
+          "kontext": "V:s yrkande om att Sverige ska undanta sig NATO-övningar med kärnvapeninslag."
+        }
+      ]
+    },
+    "KD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Sverige kan inför vår tids nya och allvarliga hot inte klara sig på egen hand. Bara det fullvärdiga Natomedlemskapet ger Sverige de säkerhetsgarantier som krävs för att kunna försvara vårt land.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Kristdemokraternas politikområden",
+          "url": "https://www.kristdemokraterna.se/var-politik/politikomraden/forsvar",
+          "datum": "2026-07-04",
+          "kontext": "KD:s motivering till NATO-stödet på partiets officiella försvarspolitiksida."
+        },
+        {
+          "citat": "Ett obligatoriskt tjänstgöringsår för unga vuxna inom ramen för totalförsvarsplikten skulle kunna stärka samhällsgemenskapen, öka försvarsförmågan och bidra till viktiga samhällsfunktioner.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Obligatoriskt tjänstgöringsår (motion 2025/26:756)",
+          "url": "https://data.riksdagen.se/dokument/HD02756.html",
+          "datum": "2025-10-07",
+          "kontext": "KD-motion av Kjell-Arne Ottosson om obligatorisk samhällstjänst, motionens centrala förslag."
+        },
+        {
+          "citat": "Det skulle kunna omfatta såväl värn- som civilplikt och medföra tjänstgöring inom försvaret, vården, äldreomsorgen eller andra samhällsviktiga sektorer.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Obligatoriskt tjänstgöringsår (motion 2025/26:756)",
+          "url": "https://data.riksdagen.se/dokument/HD02756.html",
+          "datum": "2025-10-07",
+          "kontext": "KD:s specificering av tjänstgöringsårets möjliga innehåll, från motionens motivering."
+        },
+        {
+          "citat": "En utredning bör därför tillsättas i syfte att undersöka förutsättningarna för att införa ett obligatoriskt tjänstgöringsår",
+          "kalltyp": "motion",
+          "dokumenttitel": "Obligatoriskt tjänstgöringsår (motion 2025/26:756)",
+          "url": "https://data.riksdagen.se/dokument/HD02756.html",
+          "datum": "2025-10-07",
+          "kontext": "KD:s yrkande om utredning av obligatoriskt tjänstgöringsår, motionens förslag till riksdagsbeslut."
+        },
+        {
+          "citat": "Ett starkt försvar kräver inte bara modern materiel och internationellt samarbete – det kräver framför allt personal.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Åtgärder mot personalbrist inom försvaret (motion 2025/26:743)",
+          "url": "https://data.riksdagen.se/dokument/HD02743.html",
+          "datum": "2025-10-07",
+          "kontext": "KD-motion av Mikael Oscarsson om personalförsörjning; motionens huvudtes om personalens primat."
+        },
+        {
+          "citat": "Försvarsmakten har under flera år pekat på personalbristen som en av de största utmaningarna.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Åtgärder mot personalbrist inom försvaret (motion 2025/26:743)",
+          "url": "https://data.riksdagen.se/dokument/HD02743.html",
+          "datum": "2025-10-07",
+          "kontext": "KD:s beskrivning av Försvarsmaktens egna bedömningar om personalläget."
+        },
+        {
+          "citat": "Denna hårda gräns leder till att försvaret förlorar erfarna och efterfrågade soldater.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Åtgärder mot personalbrist inom försvaret (motion 2025/26:743)",
+          "url": "https://data.riksdagen.se/dokument/HD02743.html",
+          "datum": "2025-10-07",
+          "kontext": "KD:s argument om åldersregler och deras effekt på personalförsörjningen, motionens motivering."
+        },
+        {
+          "citat": "En stark personalförsörjning är grunden för Sveriges försvarsförmåga.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Åtgärder mot personalbrist inom försvaret (motion 2025/26:743)",
+          "url": "https://data.riksdagen.se/dokument/HD02743.html",
+          "datum": "2025-10-07",
+          "kontext": "KD:s övergripande slutsats om personalens centrala roll i försvarsförmågan."
+        },
+        {
+          "citat": "Från politiskt håll är vi helt eniga i stödet till Ukraina. Detta har vid flera tillfällen visat sig vid omröstningar i riksdagen",
+          "kalltyp": "motion",
+          "dokumenttitel": "Svenskar som har försvarat Ukraina (motion 2025/26:1002)",
+          "url": "https://data.riksdagen.se/dokument/HD021002.html",
+          "datum": "2025-10-07",
+          "kontext": "KD-motion av Magnus Jacobsson om svenska frivilligsoldater i Ukraina; konstaterar riksdagsenighet om ukrainastödet."
+        }
+      ]
+    },
+    "L": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Vår frihet, demokrati och territoriella integritet måste vi kunna försvara försvara [sic]",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/forsvar/",
+          "datum": "2026-07-04",
+          "kontext": "L:s grundmotivering för försvarsengagemanget på partiets officiella försvarspolitiksida. Källans dubbeltyck 'försvara försvara' återges med [sic]."
+        },
+        {
+          "citat": "Det kräver ett starkt och uthålligt totalförsvar",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/forsvar/",
+          "datum": "2026-07-04",
+          "kontext": "L:s krav på totalförsvarets styrka som svar på säkerhetspolitiska hot."
+        },
+        {
+          "citat": "Sverige nu är fullvärdig medlem i världens mest kraftfulla försvarsallians",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/forsvar/",
+          "datum": "2026-07-04",
+          "kontext": "L:s beskrivning av NATO-anslutningens status på partiets försvarspolitiksida."
+        },
+        {
+          "citat": "Försvarsanslagen måste öka kraftigt",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar — Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/forsvar/",
+          "datum": "2026-07-04",
+          "kontext": "L:s budgetkrav för försvaret, formulerat på partiets officiella försvarspolitiksida."
+        },
+        {
+          "citat": "Kina, Ryssland, Iran och Nordkorea bedriver i dag ett systematiskt gråzonskrig mot öppna demokratier.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En mer offensiv cyberdoktrin (motion 2025/26:3493)",
+          "url": "https://data.riksdagen.se/dokument/HD023493.html",
+          "datum": "2025-10-07",
+          "kontext": "L-motion av Joar Forssell om cyberdoktrin; beskrivning av det nuvarande hotbildsläget."
+        },
+        {
+          "citat": "Försvarsmaktens och Säkerhetspolisens offensiva cyberförmåga måste stärkas och de bör få ett starkt mandat.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En mer offensiv cyberdoktrin (motion 2025/26:3493)",
+          "url": "https://data.riksdagen.se/dokument/HD023493.html",
+          "datum": "2025-10-07",
+          "kontext": "L:s yrkande om offensiv cyberförmåga för Försvarsmakten och Säkerhetspolisen."
+        },
+        {
+          "citat": "För att Sverige – och Europas demokratier – ska kunna värna frihet behövs både framtidens materiel och robust industriell förmåga.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Villkor för svensk försvarsindustri (motion 2025/26:3145)",
+          "url": "https://data.riksdagen.se/dokument/HD023145.html",
+          "datum": "2025-10-06",
+          "kontext": "L-motion av Joar Forssell om försvarsindustrins villkor; motivering om materiel och industriell bas."
+        }
+      ]
+    },
+    "MP": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Miljöpartiet röstade nej till Nato, men respekterar riksdagens beslut och driver inte frågan om ett utträde.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar och säkerhet — Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/forsvar-och-sakerhet/",
+          "datum": "2026-07-04",
+          "kontext": "MP:s position om NATO-medlemskapet på partiets officiella sida om försvar och säkerhet."
+        },
+        {
+          "citat": "Sverige ska stå upp för Ukrainas frihet och stötta Ukraina så mycket och så länge det behövs.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar och säkerhet — Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/forsvar-och-sakerhet/",
+          "datum": "2026-07-04",
+          "kontext": "MP:s position om Ukrainastödet på partiets officiella sida om försvar och säkerhet."
+        },
+        {
+          "citat": "Sverige ska lagstifta mot kärnvapen på svensk mark i både freds- och krigstid.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar och säkerhet — Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/forsvar-och-sakerhet/",
+          "datum": "2026-07-04",
+          "kontext": "MP:s krav på lagstiftning mot kärnvapen på svensk mark, även i krigstid."
+        },
+        {
+          "citat": "Nato ska fokusera på försvaret av de allierade och tillämpa principen 'no first use' – att inte som första part i en konflikt använda kärnvapen.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Försvar och säkerhet — Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/forsvar-och-sakerhet/",
+          "datum": "2026-07-04",
+          "kontext": "MP:s krav på NATO att tillämpa no-first-use-principen, från partiets försvarspolitiksida."
+        },
+        {
+          "citat": "Ett av de största hoten mot internationell fred och säkerhet är utvecklandet av dödliga autonoma vapensystem.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Exportkontroll, försvarsindustrins förutsättningar och reglering av autonoma vapen (motion 2025/26:3407)",
+          "url": "https://data.riksdagen.se/dokument/HD023407.html",
+          "datum": "2025-10-07",
+          "kontext": "MP-motion om autonoma vapensystem; bedömning av hotet från autonom vapenteknologi."
+        },
+        {
+          "citat": "När vi nu står inför en historiskt stor upprustning innebär detta att Sverige kommer köpa in essentiella system för försvaret från andra länder som vi därigenom blir direkt beroende av under lång tid.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Exportkontroll, försvarsindustrins förutsättningar och reglering av autonoma vapen (motion 2025/26:3407)",
+          "url": "https://data.riksdagen.se/dokument/HD023407.html",
+          "datum": "2025-10-07",
+          "kontext": "MP-motion om exportkontroll och autonoma vapen; påtalar risken med importberoende i försvarsmateriel."
+        },
+        {
+          "citat": "Sveriges försvar ska utformas för att avskräcka från angrepp och försvara Sverige, inte för att utgöra eller understödja ett militärt hot mot någon annan stat.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Ökad försvarsförmåga (motion 2025/26:3410)",
+          "url": "https://data.riksdagen.se/dokument/HD023410.html",
+          "datum": "2025-10-07",
+          "kontext": "MP-motion om försvarsförmåga; partiets grundprincip om försvarsandamålets defensiva karaktär."
+        },
+        {
+          "citat": "Sverige bör ha en bred syn på säkerhet som tar i beaktande militära hot såväl som andra hot, exempelvis klimatförändringar, pandemier och naturkatastrofer.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Ökad civil försvarsförmåga och stärkt krisberedskap (motion 2025/26:3405)",
+          "url": "https://data.riksdagen.se/dokument/HD023405.html",
+          "datum": "2025-10-07",
+          "kontext": "MP-motion om civil försvarsförmåga; pläderar för bred säkerhetssyn bortom militära hot."
+        }
+      ]
+    }
+  }
+}
