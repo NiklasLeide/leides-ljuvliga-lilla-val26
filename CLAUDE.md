@@ -61,6 +61,14 @@ och framtida varianter, se DEC-007):
   scope-avvisning två iterationer i rad avslutar loopen med exit 6
   ("scope-konflikt — kräver Niklas beslut"), se `scripts/data-loop.sh`
   och `scripts/loop-lib.js` (`scope-violations` / `check-scope-conflict`).
+- **Toollistor är konfiguration, inte enforcement.** Headless `claude -p`
+  ärver `.claude/settings.local.json`-allowlisten; `--allowedTools`
+  adderar men återkallar aldrig. Varje privilegiebegränsning för
+  loopagenter kräver därför BÅDE `--disallowedTools` på anropet OCH en
+  verifiering i skriptkod: HEAD fångas före varje workeranrop och
+  kontrolleras efteråt — ändrad HEAD ⇒ exit 7 ("worker modified git
+  history"). Se DEC-007 Strukturfynd 2 (incidenten med falska
+  PASS-commits 2026-07-04).
 - **Källverifiering är 100 %, aldrig stickprov.** Evaluatorn
   WebFetch-verifierar `voted_url` för VARJE ändrad post och redovisar
   det i en maskinparsbar verifieringstabell (se

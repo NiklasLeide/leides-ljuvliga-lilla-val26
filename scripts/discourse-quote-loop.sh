@@ -1,17 +1,23 @@
 #!/usr/bin/env bash
 #
-# data-loop.sh — evaluator-optimizer loop that updates the 12
-# "inväntar-votering" entries in data/voting.json.
+# discourse-quote-loop.sh — evaluator-optimizer loop (loop v2-mönstret) that
+# builds sources/discourse/citat-ekonomi.json: 6-12 verbatim economy quotes
+# per riksdag party, for the discourse pipeline (BRIEF_diskurspipeline.md,
+# Steg A). Sister script to data-loop.sh — reuses scripts/loop-lib.js for
+# state/cost/scope, with its own state file via LOOP_STATE_FILE.
+#
+# Writes ONLY sources/discourse/citat-ekonomi.json (enforced by
+# scripts/validate-citat.js). NEVER touches data/discourse.json (DEC-007
+# villkor 1: tolkningsdata kräver Niklas godkännande i chatten).
 #
 # Guardrails (all enforced in code, none in prompts):
-#   1. Binary exit condition: validate-voting.js exits 0 AND evaluator says PASS
+#   1. Binary exit condition: validate-citat.js exits 0 AND evaluator says PASS
 #   2. Iteration cap:  MAX_ITERS, hardcoded below
 #   3. Budget cap:     BUDGET_USD, checked BEFORE every API call, fail-closed
-#   4. Sandbox:        refuses to run off branch loop-pilot; never commits
-#   5. Human checkpoint: commit + PR happen outside this script
+#   4. Sandbox:        refuses to run off branch discourse-pipeline; never commits
+#   5. Human checkpoint: commit + STOPP A-rapport happen outside this script
 #   6. Scope-conflict escalation: same validator scope-violation two
-#      iterations in a row exits immediately for a human decision instead
-#      of burning iterations on a deadlock it cannot resolve itself
+#      iterations in a row exits 6 for a human decision
 #   7. Git-history guard: HEAD captured before each worker call and
 #      verified after — tool lists are config, not enforcement
 #
@@ -24,30 +30,31 @@
 #   6  scope-konflikt — kräver Niklas beslut
 #   7  worker modified git history
 #
-# Resumable: state lives in loop-state.json (gitignored). Interrupt and re-run.
+# Resumable: state lives in loop-state-discourse.json (gitignored).
 # DRY_RUN=1 runs exactly one iteration then stops (state is kept).
-# CLAUDE_BIN override exists only for the guard tests in test-loop-guards.sh.
+# CLAUDE_BIN override exists only for the guard tests.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-readonly MAX_ITERS=8            # GUARDRAIL 2: hard iteration cap
-readonly BUDGET_USD="10.00"     # GUARDRAIL 3: hard budget cap (USD)
-readonly REQUIRED_BRANCH="loop-pilot"
+readonly MAX_ITERS=8                 # GUARDRAIL 2: hard iteration cap
+readonly BUDGET_USD="15.00"          # GUARDRAIL 3: hard budget cap (USD)
+readonly REQUIRED_BRANCH="discourse-pipeline"
 readonly WORKER_MODEL="claude-sonnet-4-6"
 readonly EVAL_MODEL="claude-sonnet-4-6"
-readonly WORKER_TOOLS="Read,Edit,Grep,Glob,WebSearch,WebFetch"   # no Bash: worker cannot touch git
-readonly EVAL_TOOLS="Read,WebFetch"                              # WebFetch required for URL spot checks
+readonly WORKER_TOOLS="Read,Write,Edit,Grep,Glob,WebSearch,WebFetch"  # no Bash: worker cannot touch git
+readonly EVAL_TOOLS="Read,WebFetch"  # Read for local PDF/snapshot sources, WebFetch for URLs
 
+export LOOP_STATE_FILE="loop-state-discourse.json"
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 DRY_RUN="${DRY_RUN:-0}"
 export CLAUDE_CODE_SUBAGENT_MODEL="$WORKER_MODEL"
 
 lib() { node scripts/loop-lib.js "$@"; }
-mkdir -p .loop
+mkdir -p .loop sources/discourse
 
 status="$(lib get status)"
 if [[ "$status" == "passed" ]]; then
-  echo "Loop already passed. Delete loop-state.json to run again."
+  echo "Loop already passed. Delete $LOOP_STATE_FILE to run again."
   exit 0
 fi
 start_iter="$(lib get next_iteration)"
@@ -57,8 +64,7 @@ echo "Start: iteration $start_iter/$MAX_ITERS, spent so far: \$$(lib get spent_u
 
 for ((i = start_iter; i <= MAX_ITERS; i++)); do
 
-  # GUARDRAIL 3: budget — checked BEFORE the next API call. Fail-closed:
-  # if spend cannot be parsed the loop stops (exit 4), it never assumes 0.
+  # GUARDRAIL 3: budget — checked BEFORE the next API call. Fail-closed.
   rc=0; lib under-budget "$BUDGET_USD" || rc=$?
   if [[ $rc -eq 4 ]]; then lib set status=cost_parse_error; exit 4; fi
   if [[ $rc -ne 0 ]]; then
@@ -78,19 +84,19 @@ for ((i = start_iter; i <= MAX_ITERS; i++)); do
   # --- WORKER: Sonnet, resumable session so it remembers earlier rounds ---
   # GUARDRAIL 7: tool lists are configuration, not enforcement — verify in
   # code that the worker did not touch git history (incident 2026-07-04:
-  # false-PASS commits from inside the quote loop via inherited
+  # false-PASS commits from inside this loop via inherited
   # settings.local.json allowlist).
   head_before="$(git rev-parse HEAD)"
-  wfile=".loop/worker-$i.json"
+  wfile=".loop/dq-worker-$i.json"
   wrc=0
   if [[ -z "$session" ]]; then
-    "$CLAUDE_BIN" -p "$(cat scripts/loop-worker-prompt.md)" \
+    "$CLAUDE_BIN" -p "$(cat scripts/discourse-quote-worker-prompt.md)" \
       --model "$WORKER_MODEL" \
       --allowedTools "$WORKER_TOOLS" \
       --disallowedTools "Bash" \
       --output-format json > "$wfile" || wrc=$?
   else
-    "$CLAUDE_BIN" -p "Evaluatorn underkände din senaste revision av data/voting.json. Åtgärda punkterna nedan. Samma regler som tidigare gäller: ändra enbart de 12 målposterna, hitta aldrig på voteringsdata, riksdagen.se-URL krävs.
+    "$CLAUDE_BIN" -p "Granskningen underkände din senaste version av sources/discourse/citat-ekonomi.json. Åtgärda punkterna nedan. Samma regler som tidigare gäller: ordagranna citat, aldrig påhittade, riksdagsmaterial i basen, ändra endast citat-ekonomi.json.
 
 $feedback" \
       --resume "$session" \
@@ -116,19 +122,17 @@ $feedback" \
 
   # --- EXIT CONDITION part 1: schema/scope validation (node, zero tokens) ---
   val_rc=0
-  val_out="$(node scripts/validate-voting.js 2>&1)" || val_rc=$?
+  val_out="$(node scripts/validate-citat.js 2>&1)" || val_rc=$?
   if [[ $val_rc -ne 0 ]]; then
     echo "--- validation FAILED ---"
     printf '%s\n' "$val_out"
 
-    # GUARDRAIL 6: same scope-violation two iterations in a row means the
-    # evaluator/worker and the validator are deadlocked on it (see DEC-007
-    # "Strukturfynd") — escalate instead of iterating on an unwinnable fight.
+    # GUARDRAIL 6: same scope-violation two iterations in a row -> escalate
     scope_keys="$(printf '%s\n' "$val_out" | lib scope-violations)"
     conflict_rc=0
     printf '%s\n' "$scope_keys" | lib check-scope-conflict || conflict_rc=$?
     if [[ $conflict_rc -eq 0 ]]; then
-      echo "Scope-konflikt: samma post/fil avvisas av validatorn två iterationer i rad:"
+      echo "Scope-konflikt: samma fil avvisas av validatorn två iterationer i rad:"
       printf '%s\n' "$scope_keys"
       lib set status=scope_conflict
       exit 6
@@ -145,10 +149,9 @@ $val_out"
 
   # --- EXIT CONDITION part 2: evaluator (FRESH Sonnet session every round,
   #     own instructions — judge is never the worker) ---
-  git diff data/voting.json > .loop/diff.txt
-  efile=".loop/eval-$i.json"
+  efile=".loop/dq-eval-$i.json"
   erc=0
-  "$CLAUDE_BIN" -p "$(cat scripts/loop-evaluator-prompt.md)" \
+  "$CLAUDE_BIN" -p "$(cat scripts/discourse-quote-evaluator-prompt.md)" \
     --model "$EVAL_MODEL" \
     --allowedTools "$EVAL_TOOLS" \
     --disallowedTools "Bash" \
@@ -169,7 +172,7 @@ $val_out"
   if [[ "$first_line" =~ ^[^A-Za-zÅÄÖåäö]*PASS ]]; then
     lib set status=passed "next_iteration=$((i + 1))" "worker_session_id=$session" last_verdict=PASS
     echo "=== PASS på iteration $i. Total kostnad: \$$(lib get spent_usd) ==="
-    echo "Nästa steg (utanför loopen): granska diffen, uppdatera CHANGELOG, ./commit.sh, sedan scripts/open-loop-pr.sh."
+    echo "Nästa steg (utanför loopen): STOPP A — katalogstatistik till Niklas i chatten."
     exit 0
   fi
 
@@ -178,6 +181,6 @@ $val_out"
   if [[ "$DRY_RUN" == "1" ]]; then echo "DRY_RUN: stopping after one iteration."; exit 0; fi
 done
 
-echo "MAX_ITERS=$MAX_ITERS nått utan PASS. Senaste utlåtande finns i loop-state.json."
+echo "MAX_ITERS=$MAX_ITERS nått utan PASS. Senaste utlåtande finns i $LOOP_STATE_FILE."
 lib set status=max_iters
 exit 5

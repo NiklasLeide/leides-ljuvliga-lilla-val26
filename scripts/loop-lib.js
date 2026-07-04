@@ -5,7 +5,9 @@
 'use strict';
 const fs = require('fs');
 
-const STATE_FILE = 'loop-state.json';
+// Overridable so sister loops (e.g. discourse-quote-loop.sh) can keep their
+// own state without colliding with data-loop.sh.
+const STATE_FILE = process.env.LOOP_STATE_FILE || 'loop-state.json';
 const FAIL_CLOSED = 4;
 
 function defaultState() {

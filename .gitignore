@@ -22,3 +22,6 @@ loop-state.json
 .loop-state.test-backup
 .loop/
 pr-body.md
+# discourse-quote-loop runtime state (scripts/discourse-quote-loop.sh)
+loop-state-discourse.json
+.loop-state-discourse.test-backup

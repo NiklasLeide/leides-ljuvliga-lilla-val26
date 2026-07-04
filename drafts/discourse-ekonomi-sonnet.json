@@ -1,0 +1,477 @@
+{
+  "omrade": "ekonomi",
+  "baserad_pa": "sources/discourse/citat-ekonomi.json",
+  "partier": {
+    "SD": {
+      "inramning": "SD ramar in ekonomin som en fråga om nationell lojalitet och fördelningsrättvisa villkorad av bidragsprincip — den som arbetat och bidragit till Sverige ska garanteras dräglig levnadsstandard. Problemet formuleras som en statsbudget som prioriterar fel: bistånd och klimatpolitik finansieras på bekostnad av hushållens skattelättnader. Lösningen är ansvarsfull budgetpolitik definierad som omfördelning bort från slösaktiga utgiftsposter mot sänkta konsumtionsskatter på el, drivmedel och livsmedel.",
+      "nyckelbegrepp": [
+        {
+          "term": "ansvarsfull budgetpolitik",
+          "innebord": "Budgetpolitik som skär bort bistånd och klimatsatsningar för att finansiera skattelättnader på konsumtion",
+          "underforstadd_premiss": "Bistånd och klimatpolitik är slöseri; välfärdsresurser ska prioriteras nationellt"
+        },
+        {
+          "term": "prioriterar svenska medborgare och dem som bidragit",
+          "innebord": "Välfärden villkoras med nationalitetskriterium och bidragsprincip",
+          "underforstadd_premiss": "Universell välfärd underminerar dem som förtjänat den"
+        },
+        {
+          "term": "transparent skattesystem",
+          "innebord": "Medborgarens rätt att veta vad skatterna betalas för — används som argument mot höga och osynliga skatter",
+          "underforstadd_premiss": "Om skatterna synliggjordes fullt ut skulle skattetrycket upplevas som oacceptabelt"
+        },
+        {
+          "term": "leva pa sin lon",
+          "innebord": "Lönearbete ska garantera tillräcklig levnadsstandard",
+          "underforstadd_premiss": "Det nuvarande systemet lever inte upp till detta löfte för den som arbetar"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Budgetkontrast via delegitimering av motståndares prioriteringar",
+          "exempel": "Vi vill ha en ansvarsfull budgetpolitik utan ineffektiva klimatpolitiska satsningar eller slösaktig biståndspolitik, genom lägre skatt på el och fortsatt låga skatter på drivmedel och livsmedel.",
+          "kalla": "Vad vi vill – Sverigedemokraternas politik"
+        },
+        {
+          "strategi": "Skattebetalarens rättighetsspråk",
+          "exempel": "Som skattebetalare bör det vara en självklar rättighet att enkelt kunna ta del av information om vad du betalar för.",
+          "kalla": "Motion 2025/26:3717 – Ett transparent skattesystem"
+        },
+        {
+          "strategi": "Samhällsekonomisk legitimering av konsumtionsskatteavskaffanden",
+          "exempel": "Genom att man momsbefriar körkortsutbildningen kan fler ha råd att ta körkort, vilket ur ett samhällsekonomiskt perspektiv, på sikt, kan bli lönsamt.",
+          "kalla": "Motion 2025/26:3716 av Jessica Stegrud (SD) – Momslättnader till transportsektorn"
+        },
+        {
+          "strategi": "Bidragsprincip som välfärdsram",
+          "exempel": "Vi tror på ett samhälle där den som arbetar ska kunna leva på sin lön, där familjer ska känna trygghet inför framtiden och där välfärden prioriterar svenska medborgare och dem som bidragit till vårt land.",
+          "kalla": "Vad vi vill – Sverigedemokraternas politik"
+        }
+      ],
+      "galtan_kongruens": "Hög kongruens med TAN-positionen (galtan 8.8). Den ekonomiska inramningen speglar nationalist-konservativa värderingar: välfärden villkoras med nationalitetstillhörighet och bidragsprincip. Ekonomiska TAN-partier kombinerar typiskt marknadsorientering med social exkludering — SD gör detsamma. Den ekonomiska center-höger-positionen (lrecon 6.2) passar med skatteminskningsfokuset, medan TAN-dimensionen tillkommer genom nationalitetskraven på välfärdsåtkomst och i budgetretorikens delegitimering av global solidaritet.",
+      "kontrast_med": "M och KD delar fokus på skattelättnader och hushållsekonomi men utan explicit nationalitetskriterium för välfärdsåtkomst. SD är ensamt om att formulera budgetpolitiken som ett val mellan slösaktig global solidaritet och nationellt hushållsstöd."
+    },
+    "M": {
+      "inramning": "M ramar in ekonomin som en belöningsfråga — lönearbete ska ge tydlig utdelning, och den som arbetat hårt ska se det märkas i plånboken och i pensionen. Problemet är att skatterna är för höga och för osynliga, vilket urholkar arbetsincitamenten och gör det svårt att se sambandet mellan arbete och utdelning. Lösningen är skattelättnader kopplade till arbete, ökad transparens i skattesystemet och skattefritt sparande.",
+      "nyckelbegrepp": [
+        {
+          "term": "planboken",
+          "innebord": "Abstrakta skattelättnader konkretiseras till hushållsnivå — det ska märkas för den enskilda barnfamiljen",
+          "underforstadd_premiss": "Politikens legitimitet prövas i barnfamiljens vardagsekonomi"
+        },
+        {
+          "term": "hart arbetande",
+          "innebord": "Moralisk kategorisering av den som är skattekronornas rättmätige ägare — den som jobbar förtjänar att behålla mer",
+          "underforstadd_premiss": "Det finns en distinktion mellan dem som arbetar och dem som inte gör det, och skattemoral kopplas till arbetsinsats"
+        },
+        {
+          "term": "det lonar sig att arbeta",
+          "innebord": "Skattelättnader motiveras som incitamentsstärkande, inte primärt som konsumtionsökning",
+          "underforstadd_premiss": "Arbete kan upphöra att löna sig om skatterna är för höga — arbetslinjelogiken är kontingent"
+        },
+        {
+          "term": "jobbat-avdrag",
+          "innebord": "Pensionsinkomst kopplad till arbetat livstid beskattas lägre — belöning för livslångt arbete",
+          "underforstadd_premiss": "Pension är intjänad förmån, inte social ersättning"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Kvantifiering som regeringstrovärdighetsmarkör",
+          "exempel": "Den moderatledda regeringen har bekämpat inflationen och tagit Sverige från EU botten till toppen när det gäller tillväxt.",
+          "kalla": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)"
+        },
+        {
+          "strategi": "Arbetsmoralism i skatteargumentationen",
+          "exempel": "Varje skattekrona från hårt arbetande människor ska användas på bästa sätt.",
+          "kalla": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)"
+        },
+        {
+          "strategi": "Konkretion till hushållsnivå via plånboksberättelse",
+          "exempel": "Vi vill att en barnfamilj får ytterligare 5 000 kronor i plånboken under nästa mandatperiod.",
+          "kalla": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)"
+        },
+        {
+          "strategi": "Skattetransparens som medborgarupplysning",
+          "exempel": "Genom att synliggöra arbetsgivaravgiften på lönebeskedet och i deklarationen får den som tjänat pengarna enklare en rimlig bild av vad pengarna går till.",
+          "kalla": "Motion 2025/26:2192 av Ann-Sofie Lifvenhage (M) – Synliggörande av skatter"
+        }
+      ],
+      "galtan_kongruens": "God kongruens med M:s position (lrecon 7.5, galtan 6.8). Den meritokratiska moralismen speglar den TAN-lutande individualismen — prestation motiverar belöning. Arbetslinjelogiken är typisk för center-höger-TAN-partier som kombinerar marknadsorientering med konservativ arbetsmoralism. Diskursen är mer renodlat arbetslinjeorienterad än partiets övriga TAN-agenda (brottspolitik, migration), vilket ger en viss diskursiv delning mellan det ekonomiska och det kulturkonservativa.",
+      "kontrast_med": "KD delar hushållsfokuset men formulerar det i familjetermer snarare än i individuella arbetsincitament. L delar ISK-förslaget men motiverar med frihet, inte med arbetsbelöning. S erbjuder konkurrerande fördelningsberättelse mot M:s prestationsberättelse."
+    },
+    "KD": {
+      "inramning": "KD ramar in ekonomin som en familjepolitisk fråga — statsbudgetens uppgift är att förbättra familjers ekonomiska handlingsutrymme, och politikens framgång mäts i om fler hushåll kan få matpengarna att räcka. Problemet är att levnadskostnader för mat, el och bostad pressar familjer ekonomiskt, och att skatteincitament för civilsamhällets finansiering är otillräckliga. Lösningen är direkta kostnadsreduceringar kombinerade med stärkta incitament för gåvogivande som demokratisk och ekonomisk kraft.",
+      "nyckelbegrepp": [
+        {
+          "term": "familjen",
+          "innebord": "Ekonomins grundläggande enhet — politiken utvärderas i termer av vad den gör för familjer, inte för BNP eller individer",
+          "underforstadd_premiss": "Familjens välmående är det yttersta politiska måttet"
+        },
+        {
+          "term": "billigare att vara svensk",
+          "innebord": "Levnadskostnadspolitik formulerad med nationalitetsmarkör — att vara svensk ska inte vara ekonomiskt betungande",
+          "underforstadd_premiss": "Det nuvarande systemet kostar mer än det borde för en vanlig svensk familj"
+        },
+        {
+          "term": "demokratifråga",
+          "innebord": "Gåvoavdragets utformning görs till en principfråga om civilsamhällets autonomi gentemot staten",
+          "underforstadd_premiss": "Civilsamhällets finansiering är ett demokratiproblem, inte enbart en teknisk skattefråga"
+        },
+        {
+          "term": "familjepolitiskt stod",
+          "innebord": "Ekonomisk politik betraktas och kategoriseras i familjetermer — bostadsbidraget är familjepolitik, inte bostadspolitik",
+          "underforstadd_premiss": "Familjeperspektivet ska vara överordnat i all ekonomisk politik"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Familjemoralisk budgetinramning",
+          "exempel": "Det här är en budget som gör det billigare att vara svensk. Mer på kontot för familjerna, mer mat på bordet för pengarna, bättre villkor för Sveriges familjer, företag och bönder.",
+          "kalla": "En budget för familjen – Kristdemokraternas politik"
+        },
+        {
+          "strategi": "Konkretisering av matprisproblemet till hushållsnivå",
+          "exempel": "Vi ser till att sänka matpriserna tillfälligt, så att fler hushåll kan få matpengarna att räcka hela månaden.",
+          "kalla": "En budget för familjen – Kristdemokraternas politik"
+        },
+        {
+          "strategi": "Principupphöjning av skatteincitament till demokratiargument",
+          "exempel": "Avdragsrätt för gåvor är inte bara en teknisk skattefråga. Det är också en demokratifråga.",
+          "kalla": "Motion 2025/26:3452 av Mikael Oscarsson (KD) – Stärkta incitament för gåvogivande"
+        }
+      ],
+      "galtan_kongruens": "Stark kongruens med KD:s TAN-position (lrecon 6.0, galtan 7.0). Familjeterminologin som grundläggande analytisk enhet, civilsamhällets autonomi och nationalitetskopplad kostnadsretorik återspeglar värdekonservativ och traditionalistisk TAN-diskurs. Ekonomisk center-höger kombineras med familjemoral som primärt välfärdsfilter. Civilsamhällesargumentet för gåvoavdrag är diskursivt distinkt och inte enbart skattemässigt.",
+      "kontrast_med": "M delar hushållsfokus men i individuell arbetslinjelogik; KD motiverar med familjemoral. S delar matprisagenda men med strukturell marknadslösning snarare än tillfällig momssänkning. Civilsamhällesargumentet saknar direkt parallell hos övriga partier."
+    },
+    "L": {
+      "inramning": "L ramar in ekonomin som en frihetsfråga — skattesystemets uppgift är att stärka individers möjlighet till ekonomisk självständighet och egenförsörjning. Problemet är att strukturella hinder som avsaknad av bosparande och inlåsningseffekter i skattesystemet försvårar för individer, särskilt unga, att etablera sig ekonomiskt. Lösningen är riktade incitament som skattefritt ISK-sparande och bosparande för förstagångsköpare, samt fördjupad europeisk ekonomisk integration.",
+      "nyckelbegrepp": [
+        {
+          "term": "frihet",
+          "innebord": "Ekonomisk självständighet och möjlighet att försörja sig — frihet definieras som självbärighet, inte primärt frånvaro av statlig inblandning",
+          "underforstadd_premiss": "Det nuvarande systemet begränsar friheten genom att inte uppmuntra arbete, sparande och företagande tillräckligt"
+        },
+        {
+          "term": "forsörja sig själva",
+          "innebord": "Självbärighet som normativt ideal — beroende av transfereringar är sekundärt alternativ",
+          "underforstadd_premiss": "Ekonomisk självständighet är ett mål i sig, inte enbart en konsekvens av marknadens funktion"
+        },
+        {
+          "term": "konkurrenskraft",
+          "innebord": "Eurointegration motiveras i marknadstermer — euron är ett konkurrenskraftsinstrument, inte ett utpräglat politiskt projekt",
+          "underforstadd_premiss": "Sverige bör delta i eurozonen för att stärka sin ekonomiska position i handel och kapitalmarknad"
+        },
+        {
+          "term": "skattebefriat bosparande",
+          "innebord": "Riktat incitament med generationslogik — unga som sparar till första bostad kompenseras skattemässigt för strukturella nackdelar",
+          "underforstadd_premiss": "Unga möter strukturella hinder på bostadsmarknaden som motiverar särskild skattebehandling"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Frihetsprincip som skatteargument",
+          "exempel": "Liberalerna vill ha ett skattesystem som stärker människors frihet och gör att fler kan försörja sig själva.",
+          "kalla": "Skatter – Liberalernas politik"
+        },
+        {
+          "strategi": "Marknadsfunktionalitet som systemargument",
+          "exempel": "När det blir mer lönsamt att arbeta, investera och starta företag stärks också ekonomin.",
+          "kalla": "Skatter – Liberalernas politik"
+        },
+        {
+          "strategi": "Generationsrättvisa via strukturellt underskottspåpekande",
+          "exempel": "I dag saknar Sverige ett skattegynnat bosparande för unga.",
+          "kalla": "Motion 2025/26:2662 av Liberalerna – Ett skattebefriat bosparande för förstagångsköpare"
+        }
+      ],
+      "galtan_kongruens": "Partiell kongruens med intern spänning. L:s ekonomidiskurs är mer renodlat liberal (frihet, marknad, självbärighet, eurointegration) än vad GAL-TAN-positionen (galtan 4.8) antyder efter Tidösamarbetets TAN-drift. Ekonomidiskursen lutar GAL — öppenhet, eurointegration, strukturincitament — medan den övergripande partiprofilens TAN-drift inte reproduceras i ekonomimaterialet. Det ekonomiska och det kulturpolitiska är diskursivt åtskilda.",
+      "kontrast_med": "M delar ISK-förslaget men motiverar med arbetsbelöning; L med frihet och sparincitament. Euron som explicit förslag skiljer L från samtliga övriga riksdagspartier. Bosparande-förslaget är ett strukturincitament till skillnad från KD:s direkta kostnadsreduktion."
+    },
+    "S": {
+      "inramning": "S ramar in ekonomin som en fördelningsfråga — tillväxt är nödvändig men politiskt otillräcklig om den inte distribueras brett. Problemet är att sittande regering skapat de största statsunderskotten sedan 90-talskrisen och att matpriserna skenar utan strukturella åtgärder. Lösningen är offentliga investeringar i jobb och välfärd, konkurrensreglering på livsmedelsmarknaden och finansiering via bankskatt snarare än underskott.",
+      "nyckelbegrepp": [
+        {
+          "term": "rattvis",
+          "innebord": "Adjektiv som differentierar S:s skattepolitik — rättvis skattesänkning signalerar att borgerliga sänkningar är orättvisa",
+          "underforstadd_premiss": "Skattelättnader kan vara rättvisa eller orättvisa beroende på vem de gynnar"
+        },
+        {
+          "term": "alla till del",
+          "innebord": "Universalistisk fördelningsprincip — tillväxt mäts i om den fördelas, inte bara om den uppkommer",
+          "underforstadd_premiss": "Tillväxt som gynnar bara en del av befolkningen är inte god ekonomisk politik"
+        },
+        {
+          "term": "bankernas overvinster",
+          "innebord": "Aktörskategorisering som moralisk och fiskal grund för tillfällig bankskatt — banker pekas ut som oproportionerligt gynnade av inflationsperioden",
+          "underforstadd_premiss": "Finanssektorn har tjänat på en kris som drabbat hushållen och bör bidra mer"
+        },
+        {
+          "term": "matpriskommission",
+          "innebord": "Institutionell lösning på strukturellt marknadsproblem — konkurrensreglering snarare än punktskattsänkning",
+          "underforstadd_premiss": "Höga matpriser är ett marknadsstrukturproblem som kräver utredning och reglering, inte enbart tillfälliga skattejusteringar"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Statistisk legitimering av fördelningseffekt",
+          "exempel": "9 av 10 vinner på Socialdemokraternas nya ekonomiska politik.",
+          "kalla": "Ekonomi – Socialdemokraternas politik"
+        },
+        {
+          "strategi": "Finansieringsdisciplin som trovärdighetsmarkör",
+          "exempel": "Alla nya åtgärder som föreslås i Socialdemokraternas vårmotion är fullt finansierade genom en tillfällig skatt på bankernas övervinster.",
+          "kalla": "Motion 2025/26:4101 av Magdalena Andersson m.fl. (S) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        },
+        {
+          "strategi": "Underskottskritik som ansvarsdiskurs",
+          "exempel": "Nu går staten med de största underskotten sedan 90-talskrisen, bortsett från pandemin.",
+          "kalla": "Motion 2025/26:4101 av Magdalena Andersson m.fl. (S) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        }
+      ],
+      "galtan_kongruens": "God kongruens med den ekonomiska vänsterpositionen (lrecon 3.5). Offentliga investeringar, universell fördelning, bankskatt och konkurrensreglering är typiska för center-vänster ekonomidiskurs. Inom GAL-TAN-mittfåran (galtan 4.8) syns minimalt av TAN-komponenten i ekonomimaterialet — den TAN-drift som noterats i galtan.json reproduceras inte i ekonomidiskursen. Ekonomidiskursen är mer kongruent med traditionell socialdemokratisk position än den övergripande GAL-TAN-glidningen antyder.",
+      "kontrast_med": "M erbjuder konkurrerande ekonomiberättelse om 5 000 kronor mer mot S:s fördelningsberättelse om 9 av 10 vinnare. KD och SD delar matprisagenda men S väljer strukturell reglering medan de väljer punktskattsänkningar. Bankskatten som finansieringsmodell är S:s tydligaste differentiator mot högerblocket."
+    },
+    "C": {
+      "inramning": "C ramar in ekonomin som en tillväxt- och geografifråga — ekonomisk politik ska skapa förutsättningar för näringsliv och arbetsmarknad i hela landet, inte bara i storstäder. Problemet är att sittande regering misslyckat med tillväxtpolitiken och försämrat statsfinanserna under en utdragen lågkonjunktur, vilket drabbar glesbygd och småföretag hårdast. Lösningen är grön skatteväxling med sänkt skatt på arbete och höjd skatt på utsläpp, förenkling för småföretag och respekt för det finanspolitiska ramverket.",
+      "nyckelbegrepp": [
+        {
+          "term": "hela landet",
+          "innebord": "Geografisk universalism som differentierar C från storstadsfokuserade alternativ — tillväxt måste ske även på landsbygden",
+          "underforstadd_premiss": "Storstadscentrerad ekonomisk politik missgynnar landsbygden strukturellt"
+        },
+        {
+          "term": "vanligt folk",
+          "innebord": "Fördelningsdimension i en marknadsoriented skattediskurs — låginkomsttagare namnges explicit som primär målgrupp",
+          "underforstadd_premiss": "Skattelättnader för höginkomsttagare är otillräckliga; de svagare ska prioriteras"
+        },
+        {
+          "term": "ansvarsfull ekonomisk politik",
+          "innebord": "Finanspolitisk disciplin och respekt för ramverket som normativ grundprincip",
+          "underforstadd_premiss": "Sittande regering bryter mot ramverket och är därmed inte ansvarsfull"
+        },
+        {
+          "term": "gron skatteväxling",
+          "innebord": "Skatt på arbete sänks, skatt på utsläpp höjs — en princip som kopplar klimat och arbetsmarknadsincitament",
+          "underforstadd_premiss": "Skatteincitament kan styra ekonomin i en mer hållbar riktning utan att vara kontraproduktiva"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Geografisk inklusivitet som ideologiskt signum",
+          "exempel": "Centerpartiet vill se en ekonomi som fungerar för alla, i hela landet.",
+          "kalla": "Ekonomi och skatter – Centerpartiets politik"
+        },
+        {
+          "strategi": "Ramverkslojalitet som kompetensmarkör",
+          "exempel": "Grunden för en ansvarsfull ekonomisk politik är ett finanspolitiskt ramverk som respekteras.",
+          "kalla": "Motion 2025/26:4109 av Martin Ådahl m.fl. (C) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        },
+        {
+          "strategi": "EU-jämförelsebaserad tillväxtkritik",
+          "exempel": "Sveriges tillväxt har under lång tid varit bland de svagaste i hela EU. Resultatet är en ovanligt seg och utdragen lågkonjunktur, där regeringen har misslyckats med att få fart på tillväxten.",
+          "kalla": "Motion 2025/26:4110 av Martin Ådahl m.fl. (C) med anledning av prop. 2025/26:100 – Jobben ska bli fler, utsläppen ska ned, välfärden ska fungera i hela landet"
+        },
+        {
+          "strategi": "Riktat företagsstöd med precisionsargument",
+          "exempel": "Vi föreslår i denna motion att arbetsgivaravgiften tas bort för de tio första anställda i ett växande småföretag och att den sänks permanent för lågavlönade, långtidsarbetslösa och unga.",
+          "kalla": "Motion 2025/26:4110 av Martin Ådahl m.fl. (C) med anledning av prop. 2025/26:100 – Jobben ska bli fler, utsläppen ska ned, välfärden ska fungera i hela landet"
+        }
+      ],
+      "galtan_kongruens": "God kongruens med C:s hybridposition (lrecon 5.8, galtan 3.3). Den gröna skatteväxlingen speglar GAL-lutningen i ett ekonomiskt center-höger-ramverk. Geografisk inklusion är C:s ideologiska signum och är ortogonal mot GAL-TAN-axeln — den passar varken renodlad GAL eller TAN. Marknadslösningar kombinerade med klimathänsyn och landsbygdsfokus är diskursivt koherent med C:s faktiska positionering.",
+      "kontrast_med": "M och SD delar skattelättnadsagenda men utan grön komponent. S och C konvergerar kring liknande folklig retorik men C kopplar den till marknadsincitament, S till transfereringar och reglering. C:s hela-landet-inramning saknar direkt parallell."
+    },
+    "MP": {
+      "inramning": "MP ramar in ekonomin som en kombinerad jämlikhets- och hållbarhetsfråga — det nuvarande systemet producerar ökade klyftor och underfinansierar välfärden, och dessa problem är strukturella snarare än konjunkturella. Problemet är att kapitalinkomster beskattas för lågt relativt löner och att det finanspolitiska ramverket saknar ett investeringsperspektiv. Lösningen är skärpt kapitalskatt, ett bindande investeringsmål på 1 procent av BNP och indexerade statsbidrag till kommuner och regioner.",
+      "nyckelbegrepp": [
+        {
+          "term": "rattvísare skatter",
+          "innebord": "Skatteomläggning som jämlikhetsprojekt — rättvisare markerar att nuvarande system är orättvist utan att precisera ett exakt slutläge",
+          "underforstadd_premiss": "Kapital beskattas systematiskt lägre än arbete, vilket är ett inbyggt rättviseproblem"
+        },
+        {
+          "term": "klyftor",
+          "innebord": "Ojämlikhet som primärt ekonomiskt problem — inte tillväxt, inte sysselsättning, utan fördelning",
+          "underforstadd_premiss": "Ökade klyftor är ett politiskt val som kan göras om"
+        },
+        {
+          "term": "investeringsmal",
+          "innebord": "Komplement till överskottsmålet — offentliga investeringar ska ha ett eget mål, inte enbart vara restpost i det befintliga ramverket",
+          "underforstadd_premiss": "Det befintliga ramverkets fokus på underskottsbegränsning leder till systematisk underinvestering"
+        },
+        {
+          "term": "extremt rika",
+          "innebord": "Klasspositionering utan att namnge specifika aktörer — markerar en kategori vars skattesituation är privilegierad",
+          "underforstadd_premiss": "Kapitalkoncentration på toppen är ett politiskt problem, inte ett marknadsneutralt utfall"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Kapitalkoncentration som systemkritik via löntagarjämförelse",
+          "exempel": "I dag kan personer som är extremt rika i praktiken beskattas betydligt lägre än vanliga löntagare, vilket bidrar till ökade ekonomiska klyftor och ett orättvist skattesystem.",
+          "kalla": "Motion 2025/26:4118 av Daniel Helldén m.fl. (MP) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        },
+        {
+          "strategi": "Kvantifiering av sittande regerings effekter",
+          "exempel": "120 000 fler arbetslösa nu än när regeringen tillträdde.",
+          "kalla": "Motion 2025/26:4118 av Daniel Helldén m.fl. (MP) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        },
+        {
+          "strategi": "Institutionell reformstrategi inom befintligt ramverk",
+          "exempel": "Miljöpartiet vill komplettera det finanspolitiska ramverket med ett investeringsmål på 1 procent av BNP per år.",
+          "kalla": "Grön ekonomi – Miljöpartiets politik"
+        },
+        {
+          "strategi": "Transfereringsprecision för de mest utsatta",
+          "exempel": "Miljöpartiet vill höja barnbidraget med 350 kronor per barn och månad, införa ensamförsörjartillägg på 800 kronor per barn, och höja och indexera bostadsbidraget.",
+          "kalla": "Grön ekonomi – Miljöpartiets politik"
+        }
+      ],
+      "galtan_kongruens": "Stark kongruens med GAL-vänster (lrecon 2.2, galtan 1.4). Kapitalskattekritik, universell välfärdsfinansiering, investeringsmål och stärkt barnbidrag är typiska för den GAL-vänstra kombinationen av omfördelning och institutionell reform. MP:s ekonomidiskurs är mer renodlat omfördelande än klimatdiskursen — klyftor och kapitalskatt dominerar framför klimatekonomiska resonemang i materialet.",
+      "kontrast_med": "V delar kapitalskattekritik men MP:s framing är mer institutionell (ramverksreform, indexering) medan V:s är mer mobiliserande och sifferbaserad. MP namnger extremt rika som kategori; V pekar på strukturella makroekonomiska konsekvenser. S delar matprisagenda men MP kopplar det till konkurrensreglering och bolånemarknaden."
+    },
+    "V": {
+      "inramning": "V ramar in ekonomin som en systemkrisberättelse — decennielånga skattesänkningar och urholkade trygghetssystem har raderat ut reallönevinster och fördubblat fattigdomen. Problemet är inte konjunkturellt utan strukturellt: jobbskatteavdraget kostar 200 miljarder per år men har inte förbättrat sysselsättningsläget, och matmarknaden präglas av oligopolstruktur som håller priserna höga. Lösningen är höjd skattekvot, återställda trygghetssystem och strukturell konkurrensreglering.",
+      "nyckelbegrepp": [
+        {
+          "term": "skattekvot",
+          "innebord": "Makroekonomiskt nyckeltal som konkretiserar politikens strukturella konsekvenser — presenteras som den centrala mekanismen bakom välfärdsfinansieringens kris",
+          "underforstadd_premiss": "Skattekvoten är ett politiskt val, inte en ekonomisk naturlag"
+        },
+        {
+          "term": "jobbskatteavdrag",
+          "innebord": "Negativ nodalpunkt — presenteras som ett 20-årigt politiskt misslyckande med enormt skattebortfall och utebliven sysselsättningseffekt",
+          "underforstadd_premiss": "Jobbskatteavdraget gynnar höginkomsttagare, inte de med lägst inkomster, och är ineffektivt som sysselsättningspolitik"
+        },
+        {
+          "term": "ruta ett",
+          "innebord": "Retorisk bild för att summera 20 år av skattepolitik — vi är tillbaka på utgångspunkten trots alla reformer",
+          "underforstadd_premiss": "Högerorienterade skattesänkningar löser inte sysselsättningsproblem, utan återskapar dem"
+        },
+        {
+          "term": "oligopolmarknad",
+          "innebord": "Marknadsstruktur med för få aktörer — Konkurrensverkets begrepp används för att legitimera krav på reglering av livsmedelspriserna",
+          "underforstadd_premiss": "Höga matpriser är ett marknadsstrukturproblem, inte ett effektivitetsproblem"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Kumulativ räkning av skattekvotens konsekvenser",
+          "exempel": "Bara under 2000-talet har skattekvoten sänkts 7,2 procentenheter, vilket motsvarar 470 miljarder kronor i mindre skatteinkomster varje år.",
+          "kalla": "Skattepolitik – Vänsterpartiets politik A–Ö"
+        },
+        {
+          "strategi": "Fattigdomsstatistik som politisk mobilisering",
+          "exempel": "Antalet som lever i materiell och social fattigdom är nu 730 000 personer, en fördubbling jämfört med 2021.",
+          "kalla": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        },
+        {
+          "strategi": "Reallönsraderingsargument",
+          "exempel": "Till följd av de senaste årens höga inflation har omkring tio års reallöneökning raderats ut.",
+          "kalla": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        },
+        {
+          "strategi": "Auktoritetsappell i marknadskritik",
+          "exempel": "Ica ensamt har en marknadsandel på ca 50 procent. Konkurrensverket konstaterar att 'det är en koncentrerad marknad med få aktörer, en s.k. oligopolmarknad'.",
+          "kalla": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition"
+        }
+      ],
+      "galtan_kongruens": "Stark kongruens med GAL-vänster (lrecon 1.2, galtan 1.9). V:s ekonomidiskurs är den mest koherent vänsterstrukturella av alla partier — skattekvot som makroekonomisk nyckel, oligopol som marknadsfelanalys, fattigdomsstatistik som systemkritik. Diskursen är klass- och strukturorienterad snarare än individ- eller familjeorienterad. Kongruent med den starkast markerade GAL-vänsterpositionen i galtan.json.",
+      "kontrast_med": "MP delar kapitalskattekritik men i institutionell form; V:s kritik är mer mobiliserande och makrostrukturell. S delar underskottskritik mot sittande regering men V:s tidsperspektiv är 20 år, inte ett mandatperiodperspektiv. Jobbskatteavdraget ifrågasätts av V men försvaras eller expanderas av samtliga övriga partier."
+    }
+  },
+  "flytande_signifikanter": {
+    "ansvar": {
+      "beskrivning": "Ansvar i ekonomisk kontext — vem som bär det finansiella ansvaret och vad det innebär att vara ansvarsfull med offentliga medel skiljer sig fundamentalt mellan partierna",
+      "per_parti": {
+        "SD": {
+          "innebord": "Budgetansvar definierat som nationell prioritering — ansvarsfull politik innebär att skära bort bistånd och klimatsatsningar och sänka konsumtionsskatter",
+          "exempel": "Vi vill ha en ansvarsfull budgetpolitik utan ineffektiva klimatpolitiska satsningar eller slösaktig biståndspolitik, genom lägre skatt på el och fortsatt låga skatter på drivmedel och livsmedel.",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Ansvar för skattemedlens effektivitet — hårt arbetande bär skattebördan och förtjänar att den används rätt",
+          "exempel": "Varje skattekrona från hårt arbetande människor ska användas på bästa sätt.",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Ansvar för familjernas ekonomi — statsbudgeten bär ansvar för att familjer kan klara sin ekonomi",
+          "exempel": "Det här är en budget som gör det billigare att vara svensk. Mer på kontot för familjerna, mer mat på bordet för pengarna, bättre villkor för Sveriges familjer, företag och bönder.",
+          "galtan_matchning": "TAN — värdekonservativ"
+        },
+        "L": {
+          "innebord": "Systemansvar för rätt incitament — skattesystemet bär ansvaret för att möjliggöra självförsörjning",
+          "exempel": "Liberalerna vill ha ett skattesystem som stärker människors frihet och gör att fler kan försörja sig själva.",
+          "galtan_matchning": "Spänning GAL-TAN"
+        },
+        "S": {
+          "innebord": "Finansieringsansvar — alla reformer ska vara fullt finansierade; underskott är ett tecken på bristande ansvar",
+          "exempel": "Alla nya åtgärder som föreslås i Socialdemokraternas vårmotion är fullt finansierade genom en tillfällig skatt på bankernas övervinster.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "C": {
+          "innebord": "Ramverksansvar — ansvarsfull politik respekterar det finanspolitiska ramverket och skapar tillväxt i hela landet",
+          "exempel": "Grunden för en ansvarsfull ekonomisk politik är ett finanspolitiskt ramverk som respekteras.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "MP": {
+          "innebord": "Strukturellt ansvar för klyftor — ansvar innebär att adressera kapitalkoncentration och välfärdsunderfinansiering",
+          "exempel": "Kapitalinkomster och stora förmögenheter beskattas i dag för lågt, vilket ökar ojämlikheten och försvagar välfärdens finansiering.",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Historiskt systemansvar — 20 år av skattesänkningar är ett kollektivt politiskt ansvar för strukturellt urholkad välfärd",
+          "exempel": "Bara under 2000-talet har skattekvoten sänkts 7,2 procentenheter, vilket motsvarar 470 miljarder kronor i mindre skatteinkomster varje år.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "I ekonomisk kontext är ansvarslogiken defensiv hos de flesta partier — ansvar innebär att inte göra fel saker. Logikens riktning varierar: TAN-partier riktar ansvaret mot budgetprioriteringar och skattemoral, mittfårepartier mot ramverkslojalitet, GAL-partier mot strukturella klyftor och historiska misslyckanden. Begreppet fungerar som legitimeringsverktyg: alla kallar sin politik ansvarsfull, men definierar ansvarsfull mot vad de betraktar som slöseri eller orättvisa — och dessa definitioner är direkt kontroversiella."
+    },
+    "vanligt_folk": {
+      "beskrivning": "Vanligt folk och vanliga löntagare — en folklig referent som partier från höger till vänster använder för att positionera sin politik som riktad mot den ordinarie befolkningens bästa, men med radikalt olika implikationer om vem som inkluderas och vad som hjälper dem",
+      "per_parti": {
+        "SD": {
+          "innebord": "Svenska medborgare och bidragsgivare — vanligt folk underförstås som dem välfärden bör prioritera, exklusive dem som inte bidragit",
+          "exempel": "Vi tror på ett samhälle där den som arbetar ska kunna leva på sin lön, där familjer ska känna trygghet inför framtiden och där välfärden prioriterar svenska medborgare och dem som bidragit till vårt land.",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Hårt arbetande barnfamiljer — de som jobbar och betalar skatt och förtjänar att se det i plånboken",
+          "exempel": "Vi vill att en barnfamilj får ytterligare 5 000 kronor i plånboken under nästa mandatperiod.",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Familjer med ekonomisk press — de som kämpar att få matpengarna att räcka hela månaden",
+          "exempel": "Vi ser till att sänka matpriserna tillfälligt, så att fler hushåll kan få matpengarna att räcka hela månaden.",
+          "galtan_matchning": "TAN — värdekonservativ"
+        },
+        "L": {
+          "innebord": "Individer som vill försörja sig själva — vanligt folk som behöver rätt incitament att arbeta och spara",
+          "exempel": "Liberalerna vill ha ett skattesystem som stärker människors frihet och gör att fler kan försörja sig själva.",
+          "galtan_matchning": "Spänning GAL-TAN"
+        },
+        "S": {
+          "innebord": "Den breda majoriteten — de 9 av 10 som vinner på S:s fördelningspolitik",
+          "exempel": "9 av 10 vinner på Socialdemokraternas nya ekonomiska politik.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "C": {
+          "innebord": "Låginkomsttagare i hela landet — explicit benämns vanligt folk som de med låga inkomster, med geografisk dimension",
+          "exempel": "Sänka skatten för vanligt folk, särskilt för dem med låga inkomster.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "MP": {
+          "innebord": "Löntagare i kontrast till extremt rika — vanliga löntagare definieras negativt gentemot de med kapitalinkomster",
+          "exempel": "I dag kan personer som är extremt rika i praktiken beskattas betydligt lägre än vanliga löntagare, vilket bidrar till ökade ekonomiska klyftor och ett orättvist skattesystem.",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "De med låga löner och försvagade trygghetssystem — konkret definierat som de 730 000 i materiell fattigdom eller de vars reallöner raderats ut",
+          "exempel": "Antalet som lever i materiell och social fattigdom är nu 730 000 personer, en fördubbling jämfört med 2021.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Vanligt folk är ekonomidiskursens mest belastade signifikant — alla vill tala för dem, men definitionen varierar från nationalitetsfiltrad (SD) till klassdefinerad (V). M och KD konkretiserar begreppet till barnfamiljer och yrkesarbetande; C till låginkomsttagare och glesbygdsbor; S till majoriteten; MP till löntagare i kontrast till kapitalägare; V till de i materiell fattigdom. Begreppet fungerar som universallegitimering: ingen part presenterar sin politik som gynnsam för de privilegierade, alla anspråkar vanligt folk som målgrupp. Kontrasten syns tydligast i finansieringsförslaget: M låter vanligt folk behålla mer via sänkt skatt; V låter vanligt folk finansiera mer välfärd via höjd skattekvot."
+    }
+  }
+}

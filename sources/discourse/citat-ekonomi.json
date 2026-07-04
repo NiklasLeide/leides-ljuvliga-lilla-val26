@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "omrade": "ekonomi",
+  "tidsfonster": "valrörelsefokus 2025/26 till 2026-07-03",
+  "genererad": "2026-07-03",
+  "partier": {
+    "S": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Socialdemokraterna arbetar för en stark ekonomi där tillväxten kommer alla till del och fler jobb skapas i hela landet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi – Socialdemokraternas politik",
+          "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
+          "datum": "2026-07-03",
+          "kontext": "Partiets övergripande ekonomiska vision på den officiella politiksidan."
+        },
+        {
+          "citat": "Vi har föreslagit en rättvis skattesänkning och att sparande på ISK görs skattefritt upp till 300 000 kronor.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi – Socialdemokraternas politik",
+          "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
+          "datum": "2026-07-03",
+          "kontext": "Beskrivning av S skattepolitiska förslag inför valet 2026."
+        },
+        {
+          "citat": "Vi ska skapa nya jobb och minska arbetslösheten genom investeringar, nya jobb i välfärden och omfattande utbildningssatsningar.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi – Socialdemokraternas politik",
+          "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
+          "datum": "2026-07-03",
+          "kontext": "S sysselsättningspolitik och investeringsstrategi."
+        },
+        {
+          "citat": "9 av 10 vinner på Socialdemokraternas nya ekonomiska politik.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi – Socialdemokraternas politik",
+          "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
+          "datum": "2026-07-03",
+          "kontext": "Partiets beskrivning av fördelningseffekterna av sin budgetpolitik."
+        },
+        {
+          "citat": "Öka konkurrensen i livsmedelsbranschen. Vi har krävt tillfälligt sänkt matmoms till 6 procent och att en matpriskommission inrättas som ska motverka skenande priser.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi – Socialdemokraternas politik",
+          "url": "https://www.socialdemokraterna.se/var-politik/a-till-o/ekonomi",
+          "datum": "2026-07-03",
+          "kontext": "S förslag om matpriser och moms i livsmedelskedjan."
+        },
+        {
+          "citat": "Nu går staten med de största underskotten sedan 90-talskrisen, bortsett från pandemin.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4101 av Magdalena Andersson m.fl. (S) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024101/",
+          "datum": "2026-04-28",
+          "kontext": "S beskrivning av statsfinansernas tillstånd i vårpropositionen 2026."
+        },
+        {
+          "citat": "Alla nya åtgärder som föreslås i Socialdemokraternas vårmotion är fullt finansierade genom en tillfällig skatt på bankernas övervinster.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4101 av Magdalena Andersson m.fl. (S) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024101/",
+          "datum": "2026-04-28",
+          "kontext": "S finansieringsprincip för budgetförslagen i alternativbudgeten våren 2026."
+        },
+        {
+          "citat": "Vi vill därför att regeringen genomlyser alla kostnader för omorganisationen så att dessa redovisas korrekt och transparent.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:4202 av Mikael Damberg m.fl. (S) med anledning av skr. 2025/26:130 Redovisning av AP-fondernas verksamhet t.o.m. 2025",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-skr-202526130-redovisning-av_hd024202/",
+          "datum": "2026-06-15",
+          "kontext": "S yrkande om transparens kring AP-fondernas omorganisationskostnader och pensionssystemets förvaltning."
+        }
+      ]
+    },
+    "M": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Vi har under den här mandatperioden sett till att barnfamiljer har ungefär 5 000 kronor mer i månaden jämfört med 2022.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "datum": "2026-07-03",
+          "kontext": "M:s redovisning av genomförd hushållsekonomisk förstärkning under mandatperioden.",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md"
+        },
+        {
+          "citat": "Vi vill att en barnfamilj får ytterligare 5 000 kronor i plånboken under nästa mandatperiod.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "datum": "2026-07-03",
+          "kontext": "M:s löfte om ytterligare hushållsekonomisk förstärkning inför valet 2026.",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md"
+        },
+        {
+          "citat": "Vi vill därför sänka skatten för föräldrar som jobbar, så det verkligen märks i plånboken att det lönar sig att arbeta.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "datum": "2026-07-03",
+          "kontext": "M:s skattepolitik för yrkesarbetande föräldrar, under rubriken '5 000 kr mer kvar i plånboken'.",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md"
+        },
+        {
+          "citat": "Därför lovar vi att höja gränsen för skattefritt sparande på ISK till 500 000 kronor.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "datum": "2026-07-03",
+          "kontext": "M:s vallöfte om höjt tak för skattefritt ISK-sparande, under rubriken 'Sänkt skatt på sparande'.",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md"
+        },
+        {
+          "citat": "Den moderatledda regeringen har bekämpat inflationen och tagit Sverige från EU botten till toppen när det gäller tillväxt.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "datum": "2026-07-03",
+          "kontext": "M:s framställning av ekonomiska resultat under mandatperioden, under rubriken 'Slöserikommission istället för skattehöjningar'.",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md"
+        },
+        {
+          "citat": "Varje skattekrona från hårt arbetande människor ska användas på bästa sätt.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "datum": "2026-07-03",
+          "kontext": "M:s princip för effektiv offentlig resursanvändning, motivering till slöserikommissionen.",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md"
+        },
+        {
+          "citat": "Din pension ska gå att leva på efter ett långt arbetsliv, vi vill införa ett nytt jobbat-avdrag som innebär att arbetsrelaterade pensionsinkomster beskattas lägre.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "datum": "2026-07-03",
+          "kontext": "M:s pensionspolitik och förslag om jobbat-avdrag, under rubriken 'Sänkt skatt på pension och sänkt skatt på arbete efter pensionen'.",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md"
+        },
+        {
+          "citat": "Den generella kunskapen om skattesystemet hos den svenska befolkningen är förvånansvärt låg.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:2192 av Ann-Sofie Lifvenhage (M) – Synliggörande av skatter",
+          "url": "https://data.riksdagen.se/dokument/HD022192.html",
+          "datum": "2025-10-03",
+          "kontext": "M-motionens motivering till förslag om att synliggöra arbetsgivaravgiften på lönebesked och i deklarationen."
+        },
+        {
+          "citat": "Genom att synliggöra arbetsgivaravgiften på lönebeskedet och i deklarationen får den som tjänat pengarna enklare en rimlig bild av vad pengarna går till.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:2192 av Ann-Sofie Lifvenhage (M) – Synliggörande av skatter",
+          "url": "https://data.riksdagen.se/dokument/HD022192.html",
+          "datum": "2025-10-03",
+          "kontext": "M-motionens konkreta förslag om transparens i skattesystemet."
+        }
+      ]
+    },
+    "SD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Vi tror på ett samhälle där den som arbetar ska kunna leva på sin lön, där familjer ska känna trygghet inför framtiden och där välfärden prioriterar svenska medborgare och dem som bidragit till vårt land.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Vad vi vill – Sverigedemokraternas politik",
+          "url": "https://sd.se/vad-vi-vill/",
+          "datum": "2026-07-03",
+          "kontext": "SD:s arbetsmarknadspolitiska princip om att lönearbete ska ge tillräcklig levnadsstandard."
+        },
+        {
+          "citat": "Vi vill ha en ansvarsfull budgetpolitik utan ineffektiva klimatpolitiska satsningar eller slösaktig biståndspolitik, genom lägre skatt på el och fortsatt låga skatter på drivmedel och livsmedel.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Vad vi vill – Sverigedemokraternas politik",
+          "url": "https://sd.se/vad-vi-vill/",
+          "datum": "2026-07-03",
+          "kontext": "SD:s budgetpolitiska inriktning och prioriteringar för offentliga utgifter."
+        },
+        {
+          "citat": "Sverige är ett land med jämförelsevis högt skattetryck. En stor del av den skatt som betalas in är dessutom mer eller mindre osynlig för privatpersoner.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:3717 – Ett transparent skattesystem",
+          "url": "https://data.riksdagen.se/dokument/HD023717.html",
+          "datum": "2025-10-07",
+          "kontext": "SD-motionens ingress om skattesystemets synlighet och medborgarnas kunskap om skatterna."
+        },
+        {
+          "citat": "Som skattebetalare bör det vara en självklar rättighet att enkelt kunna ta del av information om vad du betalar för.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:3717 – Ett transparent skattesystem",
+          "url": "https://data.riksdagen.se/dokument/HD023717.html",
+          "datum": "2025-10-07",
+          "kontext": "SD-motionens normativa utgångspunkt om skattebetalarens rätt till insyn."
+        },
+        {
+          "citat": "Genom att man momsbefriar körkortsutbildningen kan fler ha råd att ta körkort, vilket ur ett samhällsekonomiskt perspektiv, på sikt, kan bli lönsamt.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:3716 av Jessica Stegrud (SD) – Momslättnader till transportsektorn",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/momslattnad-till-transportsektorn_hd023716/",
+          "datum": "2025-10-07",
+          "kontext": "SD-motionens ekonomiska argument för momsbefrielse av körkortsutbildning."
+        },
+        {
+          "citat": "Av den anledningen finns det goda skäl till att privatpersoner slipper beskattning om de väljer att bidra till bostadsmarknaden genom att öppna sina hem för inneboende.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:3718 – Utökad skattefrihet för bostäder",
+          "url": "https://data.riksdagen.se/dokument/HD023718.html",
+          "datum": "2025-10-07",
+          "kontext": "SD-motionens förslag om skattefrihet vid uthyrning till inneboende för att öka bostadsutbudet."
+        }
+      ]
+    },
+    "C": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Centerpartiet vill se en ekonomi som fungerar för alla, i hela landet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi och skatter – Centerpartiets politik",
+          "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter",
+          "datum": "2026-07-03",
+          "kontext": "C:s övergripande ekonomiska vision om tillväxt i hela landet."
+        },
+        {
+          "citat": "Sänka skatten på arbete och höja den på miljöskadliga utsläpp.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi och skatter – Centerpartiets politik",
+          "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter",
+          "datum": "2026-07-03",
+          "kontext": "C:s skattepolitiska princip om grön skatteväxling."
+        },
+        {
+          "citat": "Sänka skatten för vanligt folk, särskilt för dem med låga inkomster.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi och skatter – Centerpartiets politik",
+          "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter",
+          "datum": "2026-07-03",
+          "kontext": "C:s fördelningspolitiska ambition i skattepolitiken."
+        },
+        {
+          "citat": "Ordning och reda i statens finanser är grunden för att kunna möta framtidens utmaningar.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi och skatter – Centerpartiets politik",
+          "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/ekonomi-och-skatter",
+          "datum": "2026-07-03",
+          "kontext": "C:s finanspolitiska grundprincip om budgetdisciplin."
+        },
+        {
+          "citat": "Grunden för en ansvarsfull ekonomisk politik är ett finanspolitiskt ramverk som respekteras.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4109 av Martin Ådahl m.fl. (C) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024109/",
+          "datum": "2026-04-28",
+          "kontext": "C-motionens bärande princip för budgetpolitiken i alternativbudgeten till vårpropositionen 2026."
+        },
+        {
+          "citat": "Resultatet av regeringens politik är en snabb försämring av de offentliga finanserna.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4109 av Martin Ådahl m.fl. (C) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024109/",
+          "datum": "2026-04-28",
+          "kontext": "C:s bedömning av statsfinansernas utveckling under den sittande regeringen."
+        },
+        {
+          "citat": "Sveriges tillväxt har under lång tid varit bland de svagaste i hela EU. Resultatet är en ovanligt seg och utdragen lågkonjunktur, där regeringen har misslyckats med att få fart på tillväxten.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4110 av Martin Ådahl m.fl. (C) med anledning av prop. 2025/26:100 – Jobben ska bli fler, utsläppen ska ned, välfärden ska fungera i hela landet",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024110/",
+          "datum": "2026-04-28",
+          "kontext": "C:s ekonomiska lägesbeskrivning om Sveriges tillväxtproblem jämfört med övriga EU."
+        },
+        {
+          "citat": "Vi föreslår i denna motion att arbetsgivaravgiften tas bort för de tio första anställda i ett växande småföretag och att den sänks permanent för lågavlönade, långtidsarbetslösa och unga.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4110 av Martin Ådahl m.fl. (C) med anledning av prop. 2025/26:100 – Jobben ska bli fler, utsläppen ska ned, välfärden ska fungera i hela landet",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024110/",
+          "datum": "2026-04-28",
+          "kontext": "C:s konkreta jobbpolitiska förslag om sänkta arbetsgivaravgifter för att öka sysselsättningen."
+        }
+      ]
+    },
+    "V": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Skatternas huvudsakliga uppgift är att finansiera välfärden och övriga delar av det offentliga åtagandet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Skattepolitik – Vänsterpartiets politik A–Ö",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
+          "datum": "2026-07-03",
+          "kontext": "V:s grundläggande syn på skattesystemets funktion och syfte."
+        },
+        {
+          "citat": "Bara under 2000-talet har skattekvoten sänkts 7,2 procentenheter, vilket motsvarar 470 miljarder kronor i mindre skatteinkomster varje år.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Skattepolitik – Vänsterpartiets politik A–Ö",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
+          "datum": "2026-07-03",
+          "kontext": "V:s beskrivning av skattekvotens utveckling och konsekvenserna för välfärdsfinansieringen."
+        },
+        {
+          "citat": "Sedan regeringen tillträdde har arbetslösheten ökat med ca 80 000 personer, och den är nu bland de högsta inom hela EU.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024108/",
+          "datum": "2026-04-28",
+          "kontext": "V:s redovisning av arbetsmarknadsutvecklingen under den sittande regeringens mandatperiod."
+        },
+        {
+          "citat": "Efter 20 år av ständigt nya jobbskatteavdrag – som nu uppgår till ett årligt skattebortfall på över 200 miljarder kronor – och försämringar av a-kassa och sjukförsäkring är vi alltså tillbaka på ruta ett.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024108/",
+          "datum": "2026-04-28",
+          "kontext": "V:s kritik av jobbskatteavdragets kumulativa kostnad för statskassan."
+        },
+        {
+          "citat": "Antalet som lever i materiell och social fattigdom är nu 730 000 personer, en fördubbling jämfört med 2021.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024108/",
+          "datum": "2026-04-28",
+          "kontext": "V:s statistik över fattigdomsutvecklingen i Sverige under aktuell mandatperiod."
+        },
+        {
+          "citat": "Till följd av de senaste årens höga inflation har omkring tio års reallöneökning raderats ut.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024108/",
+          "datum": "2026-04-28",
+          "kontext": "V:s beskrivning av inflationskrisens påverkan på hushållens reallöner."
+        },
+        {
+          "citat": "Ica ensamt har en marknadsandel på ca 50 procent. Konkurrensverket konstaterar att 'det är en koncentrerad marknad med få aktörer, en s.k. oligopolmarknad'.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4108 av Nooshi Dadgostar m.fl. (V) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024108/",
+          "datum": "2026-04-28",
+          "kontext": "V:s redovisning av Konkurrensverkets bedömning om matmarknadens koncentration och höga matpriser."
+        }
+      ]
+    },
+    "KD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Det här är en budget som gör det billigare att vara svensk. Mer på kontot för familjerna, mer mat på bordet för pengarna, bättre villkor för Sveriges familjer, företag och bönder.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "En budget för familjen – Kristdemokraternas politik",
+          "url": "https://www.kristdemokraterna.se/var-politik/en-budget-for-familjen/",
+          "datum": "2026-07-03",
+          "kontext": "KD:s övergripande presentation av sin budgetpolitik och dess syfte för hushållen."
+        },
+        {
+          "citat": "Vi ser till att sänka matpriserna tillfälligt, så att fler hushåll kan få matpengarna att räcka hela månaden.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "En budget för familjen – Kristdemokraternas politik",
+          "url": "https://www.kristdemokraterna.se/var-politik/en-budget-for-familjen/",
+          "datum": "2026-07-03",
+          "kontext": "KD:s förslag om tillfällig matprisreducering för att hjälpa pressade hushåll."
+        },
+        {
+          "citat": "Vi gör nu det som krävs för att sänka svenskarnas utgifter och nu sänker vi skatten på el.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "En budget för familjen – Kristdemokraternas politik",
+          "url": "https://www.kristdemokraterna.se/var-politik/en-budget-for-familjen/",
+          "datum": "2026-07-03",
+          "kontext": "KD:s motivering till elskattsänkning som hushållsekonomisk åtgärd."
+        },
+        {
+          "citat": "Höjt jobbskatteavdrag, du får behålla mer pengar av det du tjänar på ditt arbete.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "En budget för familjen – Kristdemokraternas politik",
+          "url": "https://www.kristdemokraterna.se/var-politik/en-budget-for-familjen/",
+          "datum": "2026-07-03",
+          "kontext": "KD:s förslag om höjt jobbskatteavdrag som del av budgetpolitiken för familjerna."
+        },
+        {
+          "citat": "Bostadsbidraget är det familjepolitiska stöd som bäst når barnfamiljer som är ekonomiskt utsatta.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "En budget för familjen – Kristdemokraternas politik",
+          "url": "https://www.kristdemokraterna.se/var-politik/en-budget-for-familjen/",
+          "datum": "2026-07-03",
+          "kontext": "KD:s motivering till bostadsbidraget som riktat stöd till ekonomiskt pressade barnfamiljer."
+        },
+        {
+          "citat": "Det nuvarande svenska systemet för avdragsrätt för gåvor är alltför begränsat.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:3452 av Mikael Oscarsson (KD) – Stärkta incitament för gåvogivande",
+          "url": "https://data.riksdagen.se/dokument/HD023452.html",
+          "datum": "2025-10-07",
+          "kontext": "KD-motionens skatteanalys av det nuvarande systemet för avdragsrätt vid gåvor till ideella organisationer."
+        },
+        {
+          "citat": "Avdragsrätt för gåvor är inte bara en teknisk skattefråga. Det är också en demokratifråga.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:3452 av Mikael Oscarsson (KD) – Stärkta incitament för gåvogivande",
+          "url": "https://data.riksdagen.se/dokument/HD023452.html",
+          "datum": "2025-10-07",
+          "kontext": "KD-motionens argumentation om att skatteincitament för gåvor stärker civilsamhällets ekonomiska förutsättningar."
+        }
+      ]
+    },
+    "L": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Skatter behövs för att finansiera skolan, vården och tryggheten.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Skatter – Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/skatter",
+          "datum": "2026-07-03",
+          "kontext": "L:s grundläggande syn på skattesystemets syfte och samhällsuppdrag."
+        },
+        {
+          "citat": "Liberalerna vill ha ett skattesystem som stärker människors frihet och gör att fler kan försörja sig själva.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Skatter – Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/skatter",
+          "datum": "2026-07-03",
+          "kontext": "L:s vision om ett skattesystem som stärker ekonomisk självständighet."
+        },
+        {
+          "citat": "Göra det enklare att spara och bygga ekonomisk trygghet genom skattefritt ISK-sparande upp till 500 000 kronor.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Skatter – Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/skatter",
+          "datum": "2026-07-03",
+          "kontext": "L:s konkreta skatteförslag för att underlätta hushållssparande."
+        },
+        {
+          "citat": "När det blir mer lönsamt att arbeta, investera och starta företag stärks också ekonomin.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Skatter – Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/skatter",
+          "datum": "2026-07-03",
+          "kontext": "L:s ekonomiska grundsyn om sambandet mellan skattepolitik och tillväxt."
+        },
+        {
+          "citat": "Liberalerna anser att euron kan stärka Sveriges konkurrenskraft, underlätta handel och ge Sverige större inflytande i det europeiska samarbetet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Ekonomi – Liberalernas politik",
+          "url": "https://www.liberalerna.se/politik/ekonomi",
+          "datum": "2026-07-03",
+          "kontext": "L:s ståndpunkt om eurons ekonomiska fördelar för Sverige."
+        },
+        {
+          "citat": "I dag saknar Sverige ett skattegynnat bosparande för unga.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:2662 av Liberalerna – Ett skattebefriat bosparande för förstagångsköpare",
+          "url": "https://data.riksdagen.se/dokument/HD022662.html",
+          "datum": "2025-10-06",
+          "kontext": "L-motionens problembeskrivning om avsaknaden av skattefördelar för unga bostadssparare i Sverige."
+        },
+        {
+          "citat": "Man bör därför utreda ett införande av ett skattebefriat bosparande för förstagångsköpare.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Motion 2025/26:2662 av Liberalerna – Ett skattebefriat bosparande för förstagångsköpare",
+          "url": "https://data.riksdagen.se/dokument/HD022662.html",
+          "datum": "2025-10-06",
+          "kontext": "L-motionens konkreta yrkande om utredning av skattegynnat bosparande för unga."
+        }
+      ]
+    },
+    "MP": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Kapitalinkomster och stora förmögenheter beskattas i dag för lågt, vilket ökar ojämlikheten och försvagar välfärdens finansiering.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Grön ekonomi – Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/gron-ekonomi/",
+          "datum": "2026-07-03",
+          "kontext": "MP:s analys av kapitalskatternas nivå och konsekvenser för välfärdens finansiering."
+        },
+        {
+          "citat": "Miljöpartiet vill komplettera det finanspolitiska ramverket med ett investeringsmål på 1 procent av BNP per år.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Grön ekonomi – Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/gron-ekonomi/",
+          "datum": "2026-07-03",
+          "kontext": "MP:s förslag om att stärka det finanspolitiska ramverket med ett bindande investeringsmål."
+        },
+        {
+          "citat": "Miljöpartiet vill höja barnbidraget med 350 kronor per barn och månad, införa ensamförsörjartillägg på 800 kronor per barn, och höja och indexera bostadsbidraget.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Grön ekonomi – Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/gron-ekonomi/",
+          "datum": "2026-07-03",
+          "kontext": "MP:s konkreta förslag för att stärka hushållsekonomin för barnfamiljer och ensamförsörjare."
+        },
+        {
+          "citat": "Kommuner och regioner ska inte tvingas skära ned på skola, vård och omsorg när kostnaderna ökar.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Grön ekonomi – Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/gron-ekonomi/",
+          "datum": "2026-07-03",
+          "kontext": "MP:s krav på stabila statsbidrag till kommuner och regioner för välfärdens finansiering."
+        },
+        {
+          "citat": "Miljöpartiet vill indexera statsbidragen, ha rättvisare skatter för långsiktig välfärdsfinansiering och stärka konkurrensen på marknader där hushåll betalar för mycket, till exempel mat och bolån.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Grön ekonomi – Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/gron-ekonomi/",
+          "datum": "2026-07-03",
+          "kontext": "MP:s förslag om indexerade statsbidrag och skattereform för långsiktig välfärdsfinansiering."
+        },
+        {
+          "citat": "Regeringens politik har därmed vidgat klyftorna i samhället.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4118 av Daniel Helldén m.fl. (MP) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024118/",
+          "datum": "2026-04-28",
+          "kontext": "MP:s övergripande bedömning av den sittande regeringens ekonomiska politik."
+        },
+        {
+          "citat": "120 000 fler arbetslösa nu än när regeringen tillträdde.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4118 av Daniel Helldén m.fl. (MP) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024118/",
+          "datum": "2026-04-28",
+          "kontext": "Rubrik/bildtext på diagram i MP:s alternativmotion till vårpropositionen 2026 — anger ökning av antalet arbetslösa sedan nuvarande regering tillträdde."
+        },
+        {
+          "citat": "I dag kan personer som är extremt rika i praktiken beskattas betydligt lägre än vanliga löntagare, vilket bidrar till ökade ekonomiska klyftor och ett orättvist skattesystem.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Motion 2025/26:4118 av Daniel Helldén m.fl. (MP) med anledning av prop. 2025/26:100 2026 års ekonomiska vårproposition",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526100-2026-ars_hd024118/",
+          "datum": "2026-04-28",
+          "kontext": "MP:s beskrivning av ojämlikheter i det svenska skattesystemet som driver ökad kapitalkoncentration."
+        }
+      ]
+    }
+  }
+}
