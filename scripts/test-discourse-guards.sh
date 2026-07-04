@@ -14,6 +14,8 @@
 #   7. git-history guard -> exit 7 when the worker commits during its turn
 #   8-10. discourse-drafts.sh (Steg B): branch guard exit 3, HEAD guard
 #         exit 7, invalid draft after the single retry exit 8
+#   11-13. discourse-diverge.sh (Steg C): branch guard exit 3, HEAD guard
+#          exit 7, invalid report after the single retry exit 8
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
@@ -53,6 +55,9 @@ cleanup() {
   rm -f "$LOOP_STATE_FILE" "$CITAT"
   if [[ -f .loop-state-discourse.test-backup ]]; then mv .loop-state-discourse.test-backup "$LOOP_STATE_FILE"; fi
   if [[ -f "$CITAT.test-backup" ]]; then mv "$CITAT.test-backup" "$CITAT"; fi
+  for f in drafts/discourse-ekonomi-sonnet.json drafts/discourse-ekonomi-opus.json; do
+    if [[ -f "$f.test-backup" ]]; then rm -f "$f"; mv "$f.test-backup" "$f"; fi
+  done
   git checkout -q -- metod.html 2>/dev/null || true
 }
 trap cleanup EXIT
@@ -187,6 +192,44 @@ ensure_on_pipeline_branch
 rc=0; CLAUDE_BIN="$STUB" bash scripts/discourse-drafts.sh >/dev/null 2>&1 || rc=$?
 restore_branch
 check "$rc" 8 "drafts runner: invalid draft after single retry exits 8"
+
+# --- Tests 11-13: discourse-diverge.sh (Steg C runner) ----------------------
+# The runner requires both draft files; use dummies, preserving real ones.
+for f in drafts/discourse-ekonomi-sonnet.json drafts/discourse-ekonomi-opus.json; do
+  if [[ -f "$f" ]]; then mv "$f" "$f.test-backup"; fi
+done
+mkdir -p drafts
+echo '{}' > drafts/discourse-ekonomi-sonnet.json
+echo '{}' > drafts/discourse-ekonomi-opus.json
+cleanup_diverge_fixtures() {
+  for f in drafts/discourse-ekonomi-sonnet.json drafts/discourse-ekonomi-opus.json; do
+    rm -f "$f"
+    if [[ -f "$f.test-backup" ]]; then mv "$f.test-backup" "$f"; fi
+  done
+}
+
+# Test 11: branch guard
+git checkout -q -b dq-diverge-branch-test
+rc=0; CLAUDE_BIN="$STUB" bash scripts/discourse-diverge.sh >/dev/null 2>&1 || rc=$?
+git checkout -q "$orig_branch"
+git branch -q -D dq-diverge-branch-test
+check "$rc" 3 "diverge runner: wrong branch exits 3"
+
+# Test 12: HEAD guard — stub commits during the call
+ensure_on_pipeline_branch
+pre_head="$(git rev-parse HEAD)"
+rc=0; CLAUDE_BIN="$STUB_COMMITTER" bash scripts/discourse-diverge.sh >/dev/null 2>&1 || rc=$?
+if [[ "$(git rev-parse HEAD)" != "$pre_head" ]]; then git reset -q "$pre_head"; fi
+restore_branch
+check "$rc" 7 "diverge runner: call committing exits 7"
+
+# Test 13: invalid report on call AND retry -> exit 8
+ensure_on_pipeline_branch
+rc=0; CLAUDE_BIN="$STUB" bash scripts/discourse-diverge.sh >/dev/null 2>&1 || rc=$?
+restore_branch
+check "$rc" 8 "diverge runner: invalid report after single retry exits 8"
+
+cleanup_diverge_fixtures
 
 echo ""
 echo "$PASS passed, $FAIL failed"
