@@ -5,6 +5,7 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-04] docs: docs/LOOP_BACKLOG.md — v3-backlogg skapad: per-steg-budgetar i stället för per-område (Steg A åt upp hela områdesbudgeten by design), sessionsrotation mot kontextväxt (477k/71 turns-incidenten)
 [2026-07-04] feat: diskursbatch demokrati — citatkatalog sources/discourse/citat-demokrati.json (43 citat, evaluator exit 5 — 40/43 maskinverifierade; evaluatorns 2 kvarvarande fel refuterade av deterministisk rå-HTML-grep; SD[5] behållen med Niklas-motivering), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-demokrati-RAPPORT.md (6 divergenser); kostnad $20.70; data/discourse.json orörd — Steg D efter Niklas granskning
 
 [2026-07-04] fix: run-discourse-batch.sh — falskt exit 9 diagnostiserat och åtgärdat: stoppet berodde INTE på uttömt fönster utan på 429 "Usage credits required for 1M context" (forsvar-workern växte till 477k cachad kontext på 71 turns i EN session; CLI:t försökte auto-uppgradera till 1M-kontext som kräver credits); transient-limit-fel retryas nu med backoff (60s, max 3 försök per steg — resumable steg = fresh session, inget omgjort arbete) innan exit 9 får konstateras; persistenta limit-fel efter 3 försök ⇒ exit 9 med sista felraden i issuen; okända fel stoppar området som förut (fail-closed); nytt guardtest (två 429-fel + lyckat tredje ⇒ inget exit 9)
