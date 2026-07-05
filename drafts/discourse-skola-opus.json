@@ -1,0 +1,493 @@
+{
+  "omrade": "skola",
+  "baserad_pa": "sources/discourse/citat-skola.json",
+  "partier": {
+    "SD": {
+      "inramning": "SD ramar skolan som en nationell angelägenhet i förfall, där kärnproblemet är förlorad ordning och ett splittrat, kommunalt huvudmannaskap. Orsakskedjan går från urholkad lärarauktoritet och stök till sjunkande kvalitet, vilket kräver ett statligt 'omtag'. Lösningen är förstatligande av skolan tillsammans med repressiva ordningsåtgärder — jourskolor och obligatorisk relegering — samt att bra skolor premieras och dåliga läggs ner oavsett driftsform.",
+      "nyckelbegrepp": [
+        {
+          "term": "statligt huvudmannaskap",
+          "innebord": "Skolan som ett nationellt intresse som ska styras av staten i stället för kommunerna",
+          "underforstadd_premiss": "Kommunaliseringen är en huvudorsak till skolans problem"
+        },
+        {
+          "term": "styra i klassrummet igen",
+          "innebord": "Återupprättad lärarauktoritet",
+          "underforstadd_premiss": "Läraren har fråntagits makt — ett tidigare tillstånd ska återställas ('igen')"
+        },
+        {
+          "term": "jourskolor",
+          "innebord": "Separata skolor dit ordningsstörande elever omgående flyttas",
+          "underforstadd_premiss": "Studiero uppnås genom att avlägsna störande elever, inte genom att inkludera dem"
+        },
+        {
+          "term": "förövare mot offer",
+          "innebord": "Mobbning som en fråga om att markera mot förövaren till skydd för offret",
+          "underforstadd_premiss": "Hänsyn till förövaren sker på offrets bekostnad — ett nollsummeförhållande"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Guldåldersnostalgi och återställande",
+          "exempel": "Sverige behöver ett rejält omtag och lärare måste få lov att styra i klassrummet igen.",
+          "kalla": "Sverigedemokraternas utbildningspolitik (partiets webbsida)"
+        },
+        {
+          "strategi": "Nationalisering av skolan",
+          "exempel": "Skolan är ett nationellt intresse och måste därför drivas nationellt.",
+          "kalla": "Sverigedemokraternas utbildningspolitik (partiets webbsida)"
+        },
+        {
+          "strategi": "Exkludering som ordningslösning",
+          "exempel": "Elever som förstör studieron för andra ska omgående flyttas till särskilda jourskolor eller jourklasser",
+          "kalla": "Sverigedemokraternas utbildningspolitik (partiets webbsida)"
+        },
+        {
+          "strategi": "Offer-förövar-inramning",
+          "exempel": "Vi behöver därför vidta kraftfullare åtgärder mot förövarna, istället för att de utsatta offren ska tvingas att uppleva fler negativa konsekvenser. En obligatorisk relegering vid upprepad mobbning är ett sätt att markera frågans dignitet.",
+          "kalla": "Införande av obligatorisk relegering vid upprepad mobbning i skolor (motion 2025/26:2535)"
+        }
+      ],
+      "galtan_kongruens": "Hög kongruens med SD:s TAN-position (galtan 8.8). Auktoritär ordningsbetoning (jourskolor, obligatorisk relegering), nationaliserande huvudmannaskap ('nationellt intresse') och nostalgiskt återställande av lärarauktoritet uttrycker en traditionalist-auktoritär skoldiskurs. Kravet att bra skolor premieras och dåliga läggs ner oavsett driftsform är förenligt med en marknadskompatibel mittenhögerekonomi (lrecon 6.2), men underordnas den nationella styrnings- och ordningslogiken.",
+      "kontrast_med": "Delar studiero- och ordningsfokus med M, KD, S och L, men är ensam om att koppla lösningen till förstatligande och fysisk exkludering av elever. Den statliga inramningen sammanfaller ytligt med MP:s krav på ökat statligt ansvar men vilar på motsatt motiv. Polär motsats till V och MP, som ramar skolan som jämlikhets- snarare än ordningsfråga."
+    },
+    "M": {
+      "inramning": "M ramar skolan som en kunskaps- och rättighetsfråga där problemet är sjunkande resultat, lärarbrist och bristande likvärdighet. Orsaken lokaliseras till obehöriga lärare, otydliga läroplaner och ett betygssystem som inte ger rättvisande betyg, med särskild vikt vid läsförståelseskillnader kopplade till vilket språk som talas hemma. Lösningen är kunskapsfokuserade läroplaner, ett nytt betygssystem och fler behöriga lärare.",
+      "nyckelbegrepp": [
+        {
+          "term": "studiero och kunskaper",
+          "innebord": "Skolans kärnuppdrag formulerat som varje barns rättighet",
+          "underforstadd_premiss": "Både studiero och kunskaper har gått förlorade och måste återställas"
+        },
+        {
+          "term": "kunskapsfokus",
+          "innebord": "Läroplaner styrda mot mätbar kunskap",
+          "underforstadd_premiss": "Nuvarande läroplaner saknar ett tydligt kunskapsfokus"
+        },
+        {
+          "term": "rättvisande betyg i hela landet",
+          "innebord": "Likvärdighet som nationellt standardiserad och jämförbar bedömning",
+          "underforstadd_premiss": "Dagens betyg är missvisande och ojämnt satta över landet"
+        },
+        {
+          "term": "obehöriga lärare",
+          "innebord": "Lärarbrist och obehörighet som kvantifierad huvudorsak",
+          "underforstadd_premiss": "Behörighet är avgörande för undervisningens kvalitet"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Rättighetsinramning av kunskap och ordning",
+          "exempel": "Alla barn har rätt till en skola och utbildning som ger studiero och kunskaper.",
+          "kalla": "Moderaternas skolpolitik (partiets webbsida)"
+        },
+        {
+          "strategi": "Kvantifiering av problemet",
+          "exempel": "35 000 utbildade lärare arbetar inte inom skolan. Samtidigt är nästan 30 procent av lärarna i grundskolan obehöriga.",
+          "kalla": "Moderaternas skolpolitik (partiets webbsida)"
+        },
+        {
+          "strategi": "Internationell måttstock för likvärdighet",
+          "exempel": "Inget annat OECD- eller EU-land har lika stora skillnader som Sverige i läsförståelse mellan de elever som alltid pratar svenska hemma och de som sällan gör det.",
+          "kalla": "Moderaternas skolpolitik (partiets webbsida)"
+        },
+        {
+          "strategi": "Reformlöfte med tidsangivelse",
+          "exempel": "Införa nya läroplaner med ett tydligt kunskapsfokus från höstterminen 2028.",
+          "kalla": "Moderaternas skolpolitik (partiets webbsida)"
+        }
+      ],
+      "galtan_kongruens": "God kongruens med M:s TAN-position (galtan 6.8): kunskapsfokus, återupprättad studiero och standardiserade 'rättvisande betyg' uttrycker en traditionalist-restaurativ kunskapssyn. Att läsförståelsegapet knyts till språket i hemmet ligger nära en assimilationsinriktad linje förenlig med M:s TAN-drift, medan tonen förblir teknisk-administrativ snarare än etnokulturell. Diskursen berör inte direkt den ekonomiska högerpositionen (lrecon 7.5) i detta material.",
+      "kontrast_med": "Delar kunskaps- och betygsfokus med KD men saknar KD:s medborgarbildnings- och moraldimension. Delar ordningsfokus med SD men undviker SD:s statliga huvudmannaskap och exkluderingsåtgärder. Står mot V och MP, som ramar problemet som en resurs- och marknadsfråga snarare än en kunskaps- och behörighetsfråga."
+    },
+    "KD": {
+      "inramning": "KD ramar skolan kring dess 'huvuduppgift' att förmedla kunskap och att fostra ansvarsfulla samhällsmedborgare, där problemet är att både kunskaps- och ordningsuppdraget nedprioriterats. Kausaliteten kopplas till lärarnas status och till att skolan värderar ämneskunskap men inte förmågan att följa ordningsregler och visa respekt. Lösningen är ett stärkt läraryrke, betyg som tydlig information och ordningsbetyg som likställer uppförande med ämneskunskaper.",
+      "nyckelbegrepp": [
+        {
+          "term": "förmedla kunskap",
+          "innebord": "Skolans primära och avgränsade huvuduppgift",
+          "underforstadd_premiss": "Skolan har tappat fokus på sitt kunskapsuppdrag"
+        },
+        {
+          "term": "ansvarsfull samhällsmedborgare",
+          "innebord": "Kunskap som både yrkesförberedelse och medborgarfostran",
+          "underforstadd_premiss": "Skolan har ett moraliskt-formande ansvar utöver ämneskunskap"
+        },
+        {
+          "term": "ordningsbetyg",
+          "innebord": "Uppförande som bedöms formellt och jämbördigt med ämneskunskaper",
+          "underforstadd_premiss": "Ordning och respekt är mätbara och lika viktiga som att läsa, skriva och räkna"
+        },
+        {
+          "term": "skolans viktigaste resurs",
+          "innebord": "Lärarstatus (löner, karriärtjänster, mindre administration) som nyckel",
+          "underforstadd_premiss": "Höjd lärarstatus höjer skolans kvalitet"
+        },
+        {
+          "term": "oseriösa aktörer",
+          "innebord": "Enskilda friskoleaktörer som skär i kvaliteten för vinst",
+          "underforstadd_premiss": "Problemet är enskilda aktörer, inte friskolesystemet i sig"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Definition av skolans kärnuppdrag",
+          "exempel": "Skolans huvuduppgift är att förmedla kunskap, att stimulera elevernas intellektuella utveckling och att förbereda barn och unga för vuxenlivet.",
+          "kalla": "Kristdemokraternas politik om skolan (partiets webbsida)"
+        },
+        {
+          "strategi": "Normativ likställning av ordning och kunskap",
+          "exempel": "Vi anser att skolan måste börja värdera förmågan att följa skolans ordningsregler och att behandla de andra barnen med respekt på samma sätt som vi värderar förmågan att läsa, skriva och räkna.",
+          "kalla": "Ordningsbetyg i skolan (motion 2025/26:3464)"
+        },
+        {
+          "strategi": "Avgränsning av oseriösa aktörer som försvar av friskolor",
+          "exempel": "Oseriösa aktörer ska inte kunna skära ner på kvaliteten för att ta ut mer vinst.",
+          "kalla": "Kristdemokraternas politik om friskolor (partiets webbsida)"
+        },
+        {
+          "strategi": "Uppvärdering av lärarstatus",
+          "exempel": "Lärarna är skolans viktigaste resurs.",
+          "kalla": "Kristdemokraternas politik om lärare (partiets webbsida)"
+        }
+      ],
+      "galtan_kongruens": "Hög kongruens med KD:s TAN-position (galtan 7.0). Betoningen på fostran till 'ansvarsfull samhällsmedborgare', ordningsbetyg och respekt för ordningsregler uttrycker en värdekonservativ, normorienterad skoldiskurs. Försvaret av fristående skolor med förbehåll mot oseriösa vinstuttag ligger nära en moderat mittenhögerekonomi (lrecon 6.0) snarare än renodlad marknadsliberalism.",
+      "kontrast_med": "Delar kunskaps- och ordningsbetoning med M men adderar en unik moralisk-medborgerlig fostransdimension via ordningsbetyget. Skiljer sig från V, MP och S genom att försvara friskolor som en 'självklar del' av skolväsendet samtidigt som vinstuttag villkoras."
+    },
+    "L": {
+      "inramning": "L ramar skolan som 'Sveriges viktigaste frihetsfråga', där problemet är sjunkande resultat orsakade av att skärmar trängt undan lärarledd undervisning och läsning. Kausaliteten pekar på att digitaliseringen 'gått för långt' och att lärare belastas med administration i stället för att undervisa. Lösningen är en återgång till fysiska läroböcker, läsning och behöriga lärare med struktur och arbetsro, samt utfasat vinstintresse i friskolesektorn.",
+      "nyckelbegrepp": [
+        {
+          "term": "frihetsfråga",
+          "innebord": "Utbildning som grunden för individuell frihet",
+          "underforstadd_premiss": "Bristande skolgång begränsar den enskildes frihet"
+        },
+        {
+          "term": "digitaliseringen har gått för långt",
+          "innebord": "Skärmar i undervisningen som ett pedagogiskt felsteg att korrigera",
+          "underforstadd_premiss": "Elever lär sig bättre med böcker än med skärmar"
+        },
+        {
+          "term": "struktur och arbetsro",
+          "innebord": "Läraren i centrum för ordning och lärande",
+          "underforstadd_premiss": "Digitala och elevcentrerade metoder har försämrat arbetsron"
+        },
+        {
+          "term": "fasa ut vinstintresset",
+          "innebord": "Vinst i friskolor ska gradvis avvecklas medan systemet behålls",
+          "underforstadd_premiss": "Vinstintresset skadar kvaliteten men fritt skolval är i sig legitimt"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Prioriteringsmarkör via frihet",
+          "exempel": "Skolan är Sveriges viktigaste frihetsfråga. Därför är skolan Liberalernas viktigaste fråga.",
+          "kalla": "Liberalernas politik om skolan (partiets webbsida)"
+        },
+        {
+          "strategi": "Återställande och teknikkritik (böcker mot skärmar)",
+          "exempel": "Digitaliseringen i skolan har gått för långt. Elever lär sig bättre med böcker än med skärmar – därför ska alla ha rätt till riktiga läroböcker.",
+          "kalla": "Liberalernas politik om skolan (partiets webbsida)"
+        },
+        {
+          "strategi": "Lärarledd struktur",
+          "exempel": "Fler elever behöver möta utbildade och kunniga lärare som kan skapa struktur och arbetsro i klassrummet.",
+          "kalla": "Liberalernas politik om grundskolan (partiets webbsida)"
+        },
+        {
+          "strategi": "Utfasning av vinst",
+          "exempel": "Vi vill fasa ut vinstintresset i friskolesektorn.",
+          "kalla": "Liberalernas politik om skolan (partiets webbsida)"
+        }
+      ],
+      "galtan_kongruens": "Blandad, i linje med den interna spänning galtan.json noterar. Frihetsinramningen och den marknadsvänliga traditionen motsvarar en ekonomisk högerposition (lrecon 6.3), men 'fasa ut vinstintresset' drar vänsterut (landsmöte 2025). Betoningen på lärarledd struktur, arbetsro och en normativ återgång till fysiska läroböcker ligger i linje med L:s TAN-drift (galtan 4.8), medan frihetsspråket bevarar en liberal-GAL-rest.",
+      "kontrast_med": "Delar vinstkritik med S, V och MP men behåller friskolesystemet och motiverar med frihet snarare än jämlikhet. Unik i sin uttalade digitaliserings- och skärmkritik och i kravet på återgång till fysiska läroböcker."
+    },
+    "S": {
+      "inramning": "S ramar skolan som en gemensam, skattefinansierad institution som dränerats av vinstuttag och präglas av överfulla, stökiga klassrum. Kausaliteten kopplar sjunkande kvalitet till att skattepengar går till bolagsvinst i stället för till lärare, och till att lärarnas tid trängts undan av administration. Lösningen är fler lärare, mindre klasser, vinstförbud och återupprättad studiero med läraren som 'klassrummets självklara chef'.",
+      "nyckelbegrepp": [
+        {
+          "term": "skattepengarna ska stanna i skolan",
+          "innebord": "Offentliga medel ska gå till verksamheten, inte till vinst",
+          "underforstadd_premiss": "Vinstuttag är ett läckage av resurser från skolan"
+        },
+        {
+          "term": "fler lärare och mindre klasser",
+          "innebord": "Lärartäthet och klasstorlek som den centrala kvalitetsnyckeln",
+          "underforstadd_premiss": "Klasstorlek avgör lärandet, särskilt för de yngsta eleverna"
+        },
+        {
+          "term": "klassrummets självklara chef",
+          "innebord": "Återupprättad lärarauktoritet och studiero",
+          "underforstadd_premiss": "Läraren har förlorat sin självklara ledarroll"
+        },
+        {
+          "term": "obegränsade vinstuttag",
+          "innebord": "Vinst i skolan som en internationellt unik avart",
+          "underforstadd_premiss": "Sverige avviker onormalt genom att tillåta obegränsad vinst"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Kärnvälfärd ställd mot vinst",
+          "exempel": "Dina skattepengar ska stanna i skolan. De ska gå till fler lärare, bättre utbildning och bra skolmat. Inte till bolag som skär ner för att plocka ut vinst. Skolor ska inte kunna stängas för att ägarna tycker att barnen är en dålig affär. Vi vill förbjuda religiösa friskolor.",
+          "kalla": "Plan för Sverige (Valplattform 2026)"
+        },
+        {
+          "strategi": "Resurslöfte om lärartäthet",
+          "exempel": "Lärare ska ha tid för alla barn som räcker upp handen. Och för de elever som inte ber om hjälp, men verkligen behöver det. Svensk skola ska inte ha överfulla och stökiga klassrum. Därför vill vi satsa på fler lärare och mindre klasser. Särskilt för de yngsta eleverna. Och läraren ska vara klassrummets självklara chef.",
+          "kalla": "Plan för Sverige (Valplattform 2026)"
+        },
+        {
+          "strategi": "Systemkritik via kvantifierande unikhet",
+          "exempel": "Svensk skola är idag världsunik med att tillåta obegränsade vinstuttag ur den offentligt finansierade skolan.",
+          "kalla": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3810)"
+        },
+        {
+          "strategi": "Ordning och nolltolerans",
+          "exempel": "Skolan ska präglas av lugn och ro, vara mobilfri och ha nolltolerans mot trakasserier, kränkande behandling och mobbning.",
+          "kalla": "med anledning av prop. 2025/26:198 Bättre förutsättningar för trygghet och studiero (motion 2025/26:4018)"
+        }
+      ],
+      "galtan_kongruens": "Kongruent med S:s vänsterekonomiska position (lrecon 3.5) genom vinstförbud och resurssatsningar på lärartäthet. Ordningsspråket ('klassrummets självklara chef', 'nolltolerans', mobilfritt) speglar den markanta TAN-drift galtan.json noterar (galtan 4.8) och närmar sig blockets studierodiskurs, vilket skapar en glidning mellan en fördelningsradikal och en ordningsbetonande inramning.",
+      "kontrast_med": "Delar vinstkritik och lärarfokus med V och MP men går längre mot studiero och ordning än dessa. Delar studierospråk med M och SD men kopplar det till resurser och vinstförbud snarare än till exkludering eller statligt huvudmannaskap. Förbudet mot religiösa friskolor delar S med V:s kritik av konfessionell drift."
+    },
+    "C": {
+      "inramning": "C ramar skolan som en fråga om geografisk likvärdighet, där problemet är att 'geografiska orättvisor' klyver skolan mellan stad och landsbygd. Kausaliteten kopplas till ojämn lärarbehörighet — 6 av 10 behöriga på landsbygden mot 8 av 10 i städerna — och till oseriösa huvudmän som berövar elever deras skolgång. Lösningen kombinerar höjd behörighet, kvalitetskrav på huvudmän och en uppmjukad godkäntgräns så att fler elever kan gå vidare.",
+      "nyckelbegrepp": [
+        {
+          "term": "geografiska orättvisor",
+          "innebord": "Ojämlikhet mellan stad och landsbygd som skolområdets centrala problem",
+          "underforstadd_premiss": "Var eleven bor avgör skolans kvalitet"
+        },
+        {
+          "term": "behöriga lärare",
+          "innebord": "Lärarbehörighet som mätbar och geografiskt ojämnt fördelad likvärdighetsindikator",
+          "underforstadd_premiss": "Behörighet avgör kvaliteten och saknas systematiskt på landsbygden"
+        },
+        {
+          "term": "den skarpa godkäntgränsen",
+          "innebord": "Betygströskeln E/F som utestängningsmekanism att ta bort",
+          "underforstadd_premiss": "Ett enda underkänt kärnämne bör inte blockera vidare studier"
+        },
+        {
+          "term": "oseriösa huvudmän",
+          "innebord": "Aktörer som inte lever upp till skollagens krav",
+          "underforstadd_premiss": "Bristande kvalitetskontroll underminerar välfärdens legitimitet"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Geografisk rättvisediskurs med dramatiserande metafor",
+          "exempel": "De geografiska orättvisor som vi i dag ser skär genom svensk skola och klyver samhället mitt itu.",
+          "kalla": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3746)"
+        },
+        {
+          "strategi": "Kvantifierad ojämlikhet",
+          "exempel": "Endast 6 av 10 lärare är behöriga på landsbygden, medan 8 av 10 är behöriga i de större städerna.",
+          "kalla": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3746)"
+        },
+        {
+          "strategi": "Inkluderingsargument mot betygströskeln",
+          "exempel": "Den skarpa gränsen mellan godkänt (E) och icke godkänt (F) innebär att en elev som presterar väl i många ämnen ändå kan stängas ute från vidare studier på grund av ett misslyckande i ett enda kärnämne.",
+          "kalla": "med anledning av prop. 2025/26:197 Ett likvärdigt betygssystem (motion 2025/26:4044)"
+        },
+        {
+          "strategi": "Kvalitetskrav på huvudmän",
+          "exempel": "Oseriösa huvudmän som inte lever upp till skollagens krav underminerar välfärdens legitimitet och berövar eleverna på deras skolgång.",
+          "kalla": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3746)"
+        }
+      ],
+      "galtan_kongruens": "Kongruent med C:s GAL-lutande mittposition (galtan 3.3). Fokus på geografisk rättvisa, inkludering (borttagen godkäntgräns) och en trygg lärandemiljö snarare än repression speglar en socialliberal-GAL-inriktning. Marknadsvänligheten (lrecon 5.8) syns i att C behåller fristående huvudmän men villkorar dem med skollagens kvalitetskrav i stället för vinstförbud.",
+      "kontrast_med": "Delar likvärdighets- och behörighetsfokus med V och MP men saknar deras vinstförbud och marknadskritik. Skiljer sig från SD och KD genom att rama betygsgränsen som en utestängning att mjuka upp, inte som ordning att skärpa."
+    },
+    "V": {
+      "inramning": "V ramar skolan som en jämlikhetsinstitution som privatiseringar och 'marknadsexperiment' har dränerat och segregerat. Kausaliteten är entydig: fristående skolor — vinstdrivande och konfessionella — får elever med olika bakgrund att i allt mindre grad mötas i en gemensam skola, medan vinst- och besparingsmotiv driver upp klasstorlekarna. Lösningen är att stoppa marknadsstyrningen och förbättra en arbetsmiljö som får lärare att lämna yrket.",
+      "nyckelbegrepp": [
+        {
+          "term": "gemensam skola",
+          "innebord": "En skola där olika bakgrunder möts, som integrationsinstitution",
+          "underforstadd_premiss": "Friskolesystemet har brutit sönder den gemensamma skolan"
+        },
+        {
+          "term": "marknadsexperiment",
+          "innebord": "Skolmarknaden som ett misslyckat experiment",
+          "underforstadd_premiss": "Marknadsstyrning dränerar välfärden och öppnar för kriminella aktörer"
+        },
+        {
+          "term": "klasstorlek",
+          "innebord": "Klasstorlek som en resurs- och likvärdighetsfråga",
+          "underforstadd_premiss": "Besparings- och vinstmotiv, inte pedagogik, styr klasstorleken"
+        },
+        {
+          "term": "arbetsmiljö",
+          "innebord": "Skolan som en av landets sämsta arbetsplatser",
+          "underforstadd_premiss": "Dålig arbetsmiljö är främsta skälet till att lärare lämnar yrket"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Segregationskritik av friskolor",
+          "exempel": "Införandet av fristående skolor, såväl vinstdrivande som på konfessionell grund, har bidragit till att elever med olika bakgrund i allt mindre utsträckning möts i en gemensam skola.",
+          "kalla": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)"
+        },
+        {
+          "strategi": "Marknads- och privatiseringskritik med kriminalitetskoppling",
+          "exempel": "Privatiseringar och marknadsexperiment har dränerat skolan, vården och omsorgen. Det har även öppnat upp för kriminella att bedriva verksamhet inom den skattefinansierade välfärdssektorn.",
+          "kalla": "Vänsterpartiets valplattform efter beslut på kongressen 2026 (preliminär kongressversion)"
+        },
+        {
+          "strategi": "Vinst som drivkraft bakom större klasser",
+          "exempel": "I stället ser vi allt fler exempel runt om i landet där klassernas storlek ökar för att i kommunerna spara pengar eller att i friskolorna kunna ta ut mer vinst.",
+          "kalla": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)"
+        },
+        {
+          "strategi": "Arbetsmiljöargument",
+          "exempel": "Arbetsmiljön i skolan måste förbättras. Skolan är Sveriges största arbetsplats men samtidigt också en av de sämsta avseende arbetsmiljön.",
+          "kalla": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)"
+        }
+      ],
+      "galtan_kongruens": "Hög kongruens med V:s position längst till vänster ekonomiskt (lrecon 1.2) och tydligt GAL (galtan 1.9). Marknads- och vinstkritiken, betoningen på en 'gemensam' och 'jämlik' skola samt arbetsmiljöfokus uttrycker en egalitär, avkommodifierande skoldiskurs helt i linje med partiets position. Ingen ordnings- eller nationaliseringsretorik förekommer i materialet.",
+      "kontrast_med": "Mest långtgående i marknadskritiken — vill bort från både vinst och konfessionella friskolor — där S och MP delar riktning men V ensamt kopplar privatisering till kriminalitet. Polär motsats till SD, M och KD:s ordnings- och kunskapsinramning; V ramar problemet som strukturellt och ekonomiskt."
+    },
+    "MP": {
+      "inramning": "MP ramar skolan som en sammanhållande institution vars syfte 'alltid' ska vara utbildning och 'aldrig' vinst, och vars problem är ojämlikhet mellan elever. Kausaliteten kopplas till att postnummer, kommunal ekonomi och skolval avgör elevers möjligheter, och till att bolagsdrift och bristande insyn tillåts. Lösningen är ökat statligt ansvar för en likvärdig skola, stopp för aktiebolag, full insyn och legitimerade lärare.",
+      "nyckelbegrepp": [
+        {
+          "term": "utbildning – aldrig vinst",
+          "innebord": "Vinst som oförenligt med skolans syfte",
+          "underforstadd_premiss": "Vinstmotivet förvränger utbildningsuppdraget i grunden"
+        },
+        {
+          "term": "postnummer",
+          "innebord": "Likvärdighet som oberoende av bostadsort och skolekonomi",
+          "underforstadd_premiss": "Dagens system låter geografi och ekonomi avgöra elevers möjligheter"
+        },
+        {
+          "term": "hålla ihop samhället",
+          "innebord": "Skolan som sammanhållningsinstitution",
+          "underforstadd_premiss": "Skolan kan antingen ena samhället eller förstärka ojämlikhet"
+        },
+        {
+          "term": "statens ansvar",
+          "innebord": "Staten som garant för likvärdighet och stark kunskapsutveckling",
+          "underforstadd_premiss": "Kommunal och privat drift har försvagat likvärdigheten"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Syftesabsolutism (aldrig vinst)",
+          "exempel": "Skolans syfte ska alltid vara utbildning – aldrig vinst.",
+          "kalla": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3518)"
+        },
+        {
+          "strategi": "Likvärdighet mot geografisk slump",
+          "exempel": "Elevers möjligheter ska inte avgöras av postnummer, kommunens ekonomi eller vilken skola de går i.",
+          "kalla": "Miljöpartiets politik om skola och utbildning (partiets webbsida)"
+        },
+        {
+          "strategi": "Sammanhållningsinramning",
+          "exempel": "Skolan ska hålla ihop samhället, inte förstärka ojämlikhet.",
+          "kalla": "Miljöpartiets politik om skola och utbildning (partiets webbsida)"
+        },
+        {
+          "strategi": "Statligt ansvar för likvärdighet och kunskap",
+          "exempel": "Svensk skola ska vara en skola för alla och staten måste ta ett större ansvar för en likvärdig skola med stark kunskapsutveckling.",
+          "kalla": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3518)"
+        }
+      ],
+      "galtan_kongruens": "Hög kongruens med MP:s stabila GAL-profil (galtan 1.4) och vänsterlutning (lrecon 2.2). Betoningen på likvärdighet, sammanhållning, vinstfrihet och insyn uttrycker en egalitär, GAL-orienterad skoldiskurs. MP:s krav på ökat statligt ansvar sammanfaller ytligt med SD:s statliga huvudmannaskap men vilar på motsatt motiv — likvärdighet snarare än nationell styrning och ordning.",
+      "kontrast_med": "Delar vinstkritik och likvärdighetsfokus med V och S men betonar sammanhållning och insyn mer än V:s marknads- och arbetsmiljökritik. Skiljer sig från SD, M och KD genom att helt sakna ordnings- och kunskapsdisciplinär inramning."
+    }
+  },
+  "flytande_signifikanter": {
+    "likvärdighet": {
+      "beskrivning": "Likvärdighet åberopas brett men klyvs i två innebörder: som lika resurser och geografisk/social rättvisa (V, MP, C) respektive som standardiserad, 'rättvisande' mätning och betygssättning (M, S). Samma ord, olika kampzon.",
+      "per_parti": {
+        "M": {
+          "innebord": "Likvärdighet som nationellt rättvisande och jämförbara betyg",
+          "exempel": "Införa ett nytt betygssystem och nya betygskriterier som ger rättvisande betyg i hela landet.",
+          "galtan_matchning": "TAN"
+        },
+        "S": {
+          "innebord": "Likvärdighet som återställd tillit till ett betygssystem urholkat av inflation",
+          "exempel": "Betygsinflationen tilltog, och tilliten till betygssystemet urholkades.",
+          "galtan_matchning": "Glidning"
+        },
+        "C": {
+          "innebord": "Likvärdighet som geografisk rättvisa mellan stad och landsbygd",
+          "exempel": "De geografiska orättvisor som vi i dag ser skär genom svensk skola och klyver samhället mitt itu.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "V": {
+          "innebord": "Likvärdighet som lika resurser — här klasstorlek — i hela landet",
+          "exempel": "Klasstorlek är också en fråga om en likvärdig utbildning i hela landet.",
+          "galtan_matchning": "GAL"
+        },
+        "MP": {
+          "innebord": "Likvärdighet som oberoende av bostadsort och skolekonomi, garanterad av staten",
+          "exempel": "Elevers möjligheter ska inte avgöras av postnummer, kommunens ekonomi eller vilken skola de går i.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Likvärdighet är skolområdets mest omstridda signifikant. För V, MP och C betyder den lika förutsättningar — resurser, klasstorlek och geografi — och motiverar omfördelning och statligt ansvar. För M och S förskjuts den mot mätningens likvärdighet: ett 'rättvisande' och inflationssäkrat betygssystem. Skalan från resurslikvärdighet till mätlikvärdighet följer den ekonomiska vänster–höger-axeln (lrecon) tätare än GAL–TAN, med C och S i mitten. Kandidaten 'valfrihet' prövades men bärs inte i detta material — friskolefrågan drivs i termer av vinst, insyn och huvudmannaskap, inte som ett val- eller frihetsbegrepp — och tas därför inte upp som egen signifikant."
+    },
+    "kunskap": {
+      "beskrivning": "Kunskap åberopas som skolans mål av flera partier men fylls olika: som mätbart kärnuppdrag att återupprätta (M), som bildning och medborgarfostran (KD), och som jämlik kunskapsutveckling garanterad av staten (MP).",
+      "per_parti": {
+        "M": {
+          "innebord": "Kunskap som ett mätbart, tydligt fokus att återställa i läroplanen",
+          "exempel": "Införa nya läroplaner med ett tydligt kunskapsfokus från höstterminen 2028.",
+          "galtan_matchning": "TAN"
+        },
+        "KD": {
+          "innebord": "Kunskap som både yrkesförberedelse och fostran till ansvarsfull medborgare",
+          "exempel": "Skolan ska erbjuda den kunskap som behövs för att klara av arbetslivet, men också kunskap för att klara livet som ansvarsfull samhällsmedborgare.",
+          "galtan_matchning": "TAN"
+        },
+        "MP": {
+          "innebord": "Kunskap som jämlik kunskapsutveckling under statligt ansvar",
+          "exempel": "Svensk skola ska vara en skola för alla och staten måste ta ett större ansvar för en likvärdig skola med stark kunskapsutveckling.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Kunskap fungerar som ett samlande men töjbart mål. M gör kunskap till ett mätbart kärnuppdrag som gått förlorat och ska återupprättas; KD vidgar den till en dubbel bildningsuppgift som också fostrar medborgare; MP kopplar den till likvärdighet och kollektiv kunskapsutveckling. Center-högern (M, KD) ramar kunskap som restaurering av nivå och ordning, medan MP ramar den som en jämlikhetsfråga — samma mål, olika subjekt och orsaksbild. S och L bär angränsande formuleringar ('lära sig mer', 'kunniga lärare', 'fokus på läsning') men lyfter inte kunskap som eget signifikantbärande begrepp i materialet och tas därför inte upp här."
+    },
+    "ordning": {
+      "beskrivning": "Ordning och studiero är brett delad men skiljer i medel och motiv: från exkludering och relegering (SD) via formell moralbedömning (KD) till studiero som en resursburen förutsättning för lärande (S, M, C, L).",
+      "per_parti": {
+        "SD": {
+          "innebord": "Ordning genom att omgående avlägsna störande elever",
+          "exempel": "Elever som förstör studieron för andra ska omgående flyttas till särskilda jourskolor eller jourklasser",
+          "galtan_matchning": "TAN"
+        },
+        "KD": {
+          "innebord": "Ordning som formellt betygsatt uppförande, jämställt med ämneskunskap",
+          "exempel": "Vi anser att skolan måste börja värdera förmågan att följa skolans ordningsregler och att behandla de andra barnen med respekt på samma sätt som vi värderar förmågan att läsa, skriva och räkna.",
+          "galtan_matchning": "TAN"
+        },
+        "S": {
+          "innebord": "Ordning som lugn, mobilfrihet och nolltolerans med läraren som chef",
+          "exempel": "Skolan ska präglas av lugn och ro, vara mobilfri och ha nolltolerans mot trakasserier, kränkande behandling och mobbning.",
+          "galtan_matchning": "Glidning"
+        },
+        "M": {
+          "innebord": "Studiero som elevens rättighet vid sidan av kunskap",
+          "exempel": "Alla barn har rätt till en skola och utbildning som ger studiero och kunskaper.",
+          "galtan_matchning": "TAN"
+        },
+        "C": {
+          "innebord": "Studiero som en trygg skolmiljö och arbetsmiljö att skydda",
+          "exempel": "Alla elever har rätt till en trygg skolmiljö där de kan fokusera på lärande, och alla lärare har rätt till en trygg arbetsmiljö.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "L": {
+          "innebord": "Arbetsro genom lärarledd struktur i klassrummet",
+          "exempel": "Fler elever behöver möta utbildade och kunniga lärare som kan skapa struktur och arbetsro i klassrummet.",
+          "galtan_matchning": "Spänning"
+        }
+      },
+      "analytisk_kommentar": "Ordning är skolans 'trygghet' — nästan alla vill ha studiero, men medlen skiljer. SD gör ordning till exkludering (jourskolor, relegering) och KD till formaliserad moralbedömning (ordningsbetyg). S, M, C och L ramar den mildare som studiero eller arbetsro — en förutsättning för lärande snarare än ett självständigt disciplinmål — där C tonar den som trygghet och arbetsmiljö. V och MP saknar ordningsinramning i materialet och tas därför inte upp. Skärpan i ordningsspråket följer GAL–TAN-axeln: hårdast hos SD och KD, mjukast hos C, med S som ett gränsfall där den fördelningsradikala inramningen glider mot blockets studierospråk."
+    }
+  }
+}

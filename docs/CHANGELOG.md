@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-05] feat: diskursbatch skola — citatkatalog sources/discourse/citat-skola.json (54 citat, evaluator PASS), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-skola-RAPPORT.md (6 divergenser); kostnad $20.849952; data/discourse.json orörd — Steg D efter Niklas granskning
+
 [2026-07-05] feat: scripts/start-batch-detached.sh — frikopplad batchstart via schtasks one-shot (förälder = Task Scheduler-tjänsten, överlever sessionsdöd; fallback cmd start /b); stabil logg .loop/batch-detached.log; run-discourse-batch.sh-headern kräver nu denna startmetod
 [2026-07-05] chore: run-discourse-batch.sh — AREA_BUDGET_USD/TOTAL_BUDGET_USD env-övstyrbara (defaults 20/75 oförändrade i kod; övstyrning endast som namngivna Niklas-undantag); tre undantag loggade: skola $26 (tredje), totaltak $85 (denna batch — tre områdesundantag rymdes inte i $75)
 [2026-07-05] data: citat-skola.json SD[4] ersatt (Niklas åtgärdsbeslut): off-topic drogtestcitat (motion 1352, verbatim-korrekt men utanför skolämnena) ersatt med ordningscitat ur motion 2025/26:2535 (obligatorisk relegering vid mobbning), grep-verifierat VERBATIM MATCH; ersatt citat + granskningsfråga bevarade i drafts/discourse-skola-STEGD-NOTER.md för Steg D
