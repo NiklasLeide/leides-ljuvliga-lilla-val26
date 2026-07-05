@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-05] docs: DISCOURSE_AGENT.md — kongruensprincipen (Niklas beslut, utvidgar glidningsregeln): (1) frånvaro av partiets vanliga ideologiska markörer i ett områdes diskurs är ett FYND, fylls aldrig i från känd position — kongruens bedöms ur materialet ensamt; (2) divergens diskurs/GAL-TAN-position lyfts fram med riktningsbeskriven gap-notering, aldrig motiv-/taktikspekulation
+[2026-07-05] docs: GRANSKNING-4-omraden.md — de 7 kongruensposterna (I1–I4, I10–I12) uppdaterade med föreslagen lösning per kongruensprincipen; ingen post kvarstår utan förberedd lösning i sektion 1b
 [2026-07-05] feat: drafts/GRANSKNING-4-omraden.md — samlat granskningsunderlag för demokrati/forsvar/skola/vard strukturerat efter beslutstyp: Sektion 1a 9 metodfrågor (samtliga med föreslagen lösning per ekonomi-prejudikatet), 1b 15 innehållsdivergenser (8 med maskinkontrollerat citatstöd per unionsregeln, 6 rena bedömningsbeslut, 1 följdbeslut), 1c parkerade citatbeslut (skola SD[4]-paret, vard M[0]-paret + kantfixar); Sektion 2 alla 32 inramningar med citatteckensregeln mekaniskt applicerad (7 ändringar, loggade); Sektion 3 övrigt Samstämmigt som appendix
 [2026-07-05] feat: diskursbatchen KOMPLETT 4/4 — vard levererad (56 citat evaluator PASS efter v3-flödet, 7 divergenser, $20.62); batchtotal $82.09 av $85-undantaget; data/discourse.json orörd (verifierad i slutissue #18)
 [2026-07-05] feat: diskursbatch vard — citatkatalog sources/discourse/citat-vard.json (56 citat, evaluator PASS), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-vard-RAPPORT.md (7 divergenser); kostnad $20.623641; data/discourse.json orörd — Steg D efter Niklas granskning

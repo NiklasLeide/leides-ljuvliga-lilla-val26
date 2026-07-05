@@ -162,6 +162,20 @@ Varje parti × område-entry måste ha:
 - **Tvinga inte symmetri** — om ett parti saknar tydlig diskurs i ett område, skriv det. "Otydlig diskursiv profil" är acceptabelt.
 - **Överdramatisera inte glidning** — beskriv den sakligt med belägg.
 
+### GAL-TAN-kongruens — kongruensprincipen (Niklas 2026-07-05)
+
+Utvidgar glidningsregeln ovan:
+
+1. **Frånvaro av partiets vanliga ideologiska markörer i ett områdes diskurs
+   är ett FYND** — den fylls aldrig i från partiets kända position.
+   Kongruensen bedöms ur materialet ensamt: saknas t.ex. den etnokulturella
+   kausaliteten i ett SD-material bedöms kongruensen utifrån det som faktiskt
+   finns där, och frånvaron redovisas explicit.
+2. **Divergens mellan diskurs och GAL-TAN-position LYFTS FRAM som analytiskt
+   fynd**: en tydlig gap-notering i kongruenstexten med riktningen beskriven
+   ("diskursen är mer X än positionen antyder"). Beskriv gapet och dess
+   belägg — spekulera aldrig i motiv eller taktik.
+
 ---
 
 ## Språk och stil

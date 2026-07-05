@@ -30,10 +30,13 @@ innehåll); täckningsbegränsningen dokumenteras med tackningsnot.
 
 ### 1b. Innehållsdivergenser (citatkatalogens utslag förkontrollerat)
 
-Unionsregeln (ekonomi-prejudikat): element som bara ena utkastet har
+| I12 | vard / S galtan | löses av I14 + kongruensprincipen | **föreslagen lösning:** U2:s läsning — språkkravet (S[1], inkluderat per I14) är en materialgrundad TAN-markör; kongruens på båda axlarna bedöms ur materialet, ingen ifyllnad behövs || I11 | vard / KD galtan | ej citatavgörbar | **föreslagen lösning per kongruensprincipen:** U2:s läsning — U1 fyller i från KD:s kända förskjutningsnotering (strider mot princip 1); gap-notering med riktning: "vårddiskursen drar ekonomiskt vänster om lrecon-positionen (6.0)" || I10 | vard / SD galtan-grad | ej citatavgörbar | **föreslagen lösning per kongruensprincipen:** U2:s läsning — svag/indirekt kongruens bedömd ur materialet; frånvaron av nationalistisk dimension redovisas som fynd, med tunn-källbas-förbehåll (endast motioner) || I4 | forsvar / SD galtan-grad + Ukraina/JEF-elementet | **STÖD** för Ukraina/JEF: SD[1], SD[3] | unionsregeln: Ukraina/JEF-strategin in (U1). **Kongruensgraden per kongruensprincipen:** U2:s linje — frånvaron av etnokulturell kausalitet och NATO-tematik är ett FYND som redovisas; kongruensen bedöms delvis, ur materialet ensamt || I3 | demokrati / S galtan_kongruens | ej citatavgörbar | **föreslagen lösning per kongruensprincipen:** konsoliderad tvåskiktsläsning (U2:s struktur) med explicit gap-notering (U1:s fynd): "sakinnehållet (transparens, public service, föreningsliv) är mer GAL än TAN-driftpositionen antyder; ramberättelsen (hot inifrån) är förenlig med driften" || I2 | demokrati / KD galtan_kongruens | ej citatavgörbar | **föreslagen lösning per kongruensprincipen:** U2:s delade läsning — materialet innehåller BÅDA komponenterna; gap-notering: "yttrande-/tryckfrihetsförsvaret drar mer liberalt än TAN-positionen (7.0) antyder", medan författningsskyddstanken är TAN-förenlig || I1 | demokrati / M galtan_kongruens | ej citatavgörbar | **föreslagen lösning per kongruensprincipen:** U2:s läsning — materialet är liberal-konstitutionellt; gap-notering med riktning: "demokratidiskursen är mer liberal-konstitutionell (GAL-lutande) än TAN-positionen (6.8) antyder"; offentlighetsprincipen redovisas som det TAN-förenliga undantaget |Unionsregeln (ekonomi-prejudikat): element som bara ena utkastet har
 INKLUDERAS om dess stödcitat finns i katalogen. Citatutslagen nedan är
-maskinkontrollerade. GAL-TAN-kongruensbedömningar är INTE citatavgörbara —
-de är rena bedömningsbeslut och markeras så.
+maskinkontrollerade. GAL-TAN-kongruensbedömningar är INTE citatavgörbara. För dem gäller
+**kongruensprincipen** (Niklas 2026-07-05, DISCOURSE_AGENT.md): frånvaro av
+partiets vanliga markörer är ett FYND (fylls aldrig i från känd position;
+bedöm ur materialet ensamt), och divergens mot GAL-TAN-positionen LYFTS FRAM
+med riktningsbeskriven gap-notering — aldrig motiv-/taktikspekulation.
 
 | # | Divergens | Citatutslag | Förkontrollerad rekommendation |
 |---|---|---|---|
