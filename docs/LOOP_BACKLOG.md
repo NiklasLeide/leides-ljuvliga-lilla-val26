@@ -12,6 +12,12 @@ den implementeras.
   v3: per-steg-tak (t.ex. A $12 / B $5 / C $3) som summerar till områdestaket,
   kontrollerade i wrappern före varje steg.
 
+- **Kalibrera om områdestaket till ~$25 utifrån utfall.** Alla tre körda
+  områden krävde namngivna undantag ($26) eller landade strax under taket:
+  demokrati $20.70, forsvar $19.91, skola ~$20.5 (est. inkl. B+C). $20 var
+  systematiskt för snålt; per-steg-taken (punkt 1) löser grundproblemet, men
+  tills dess bör default vara ~$25. (Niklas 2026-07-05, beslut 1.)
+
 - **Riktad dokumenthämtning i workern (v3, den riktiga fixen för kontextväxt).**
   Interimfixen 2026-07-04 är CLAUDE_CODE_DISABLE_1M_CONTEXT=1 (standardkontext,
   stora anrop komprimeras i stället för att krascha). Rotorsaken är att workern

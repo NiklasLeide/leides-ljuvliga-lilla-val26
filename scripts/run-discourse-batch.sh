@@ -24,13 +24,25 @@
 #             2 totalbudget nådd, 3 fel branch, 9 usage-/rate-limit-stopp
 #
 # CLAUDE_BIN/GH_BIN overrides exist only for the guard tests.
+#
+# START: använd ALLTID scripts/start-batch-detached.sh (schtasks one-shot,
+# frikopplad från interaktiva sessionen — logg .loop/batch-detached.log).
+# Direktstart som barn till en interaktiv session har dödat körningar.
+#
+# VARNING under körning: redigera ALDRIG spårade repo-filer medan batchen
+# kör — validatorernas dirty-tree-kontroll fäller pågående iterationer
+# (incident 2026-07-05: en backlog-redigering fällde vards validering).
 set -uo pipefail
 cd "$(dirname "$0")/.."
 
 readonly AREAS=(demokrati forsvar skola vard)
 readonly BATCH_BRANCH="discourse-batch"
-readonly AREA_BUDGET_USD="20.00"     # per område, A+B+C sammantaget
-readonly TOTAL_BUDGET_USD="75.00"    # hela batchen
+# Budgettak: defaults i kod; env-övstyrning ENDAST som namngivna undantag
+# beslutade av Niklas (loggas i områdesstate + CHANGELOG). Se LOOP_BACKLOG
+# om omkalibrering (~$25) och per-steg-tak.
+AREA_BUDGET_USD="${AREA_BUDGET_USD:-20.00}"     # per område, A+B+C sammantaget
+TOTAL_BUDGET_USD="${TOTAL_BUDGET_USD:-75.00}"   # hela batchen
+readonly AREA_BUDGET_USD TOTAL_BUDGET_USD
 readonly AREA_WALLCLOCK_S=10800      # 3 h per område
 readonly RETRY_MAX=3                 # limit-fel: max försök per steg
 RETRY_BACKOFF_S="${RETRY_BACKOFF_S:-60}"   # övstyrbar endast för guardtester
