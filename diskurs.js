@@ -1,6 +1,11 @@
 'use strict';
 
-const AREA_LABELS = { rattsvasende: 'Rättsväsende', migration: 'Migration', klimat: 'Klimat & energi', ekonomi: 'Ekonomi' };
+const AREA_LABELS = {
+  rattsvasende: 'Rättsväsende', migration: 'Migration',
+  klimat: 'Klimat & energi', ekonomi: 'Ekonomi',
+  demokrati: 'Demokrati & konstitution', forsvar: 'Försvar & säkerhet',
+  skola: 'Skola', vard: 'Vård & omsorg',
+};
 
 /* ===================================================
    State
