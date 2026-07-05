@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-05] feat: drafts/GRANSKNING-4-omraden.md — samlat granskningsunderlag för demokrati/forsvar/skola/vard strukturerat efter beslutstyp: Sektion 1a 9 metodfrågor (samtliga med föreslagen lösning per ekonomi-prejudikatet), 1b 15 innehållsdivergenser (8 med maskinkontrollerat citatstöd per unionsregeln, 6 rena bedömningsbeslut, 1 följdbeslut), 1c parkerade citatbeslut (skola SD[4]-paret, vard M[0]-paret + kantfixar); Sektion 2 alla 32 inramningar med citatteckensregeln mekaniskt applicerad (7 ändringar, loggade); Sektion 3 övrigt Samstämmigt som appendix
+[2026-07-05] feat: diskursbatchen KOMPLETT 4/4 — vard levererad (56 citat evaluator PASS efter v3-flödet, 7 divergenser, $20.62); batchtotal $82.09 av $85-undantaget; data/discourse.json orörd (verifierad i slutissue #18)
 [2026-07-05] feat: diskursbatch vard — citatkatalog sources/discourse/citat-vard.json (56 citat, evaluator PASS), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-vard-RAPPORT.md (7 divergenser); kostnad $20.623641; data/discourse.json orörd — Steg D efter Niklas granskning
 
 [2026-07-05] feat: scripts/verify-citat-verbatim.py — deterministisk ordagrann-verifiering (v3-mönstret, 0 tokens): hämtar varje källa (HTML + PDF via pypdf, lokal_fil-stöd), normaliserar (NBSP, mjuka bindestreck inkl. omgivande whitespace, typografiska tecken, PDF-avstavning), kräver varje …-segment ordagrant; elementvis fallback för DOM-interfolierade sidor
