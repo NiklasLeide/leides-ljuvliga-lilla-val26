@@ -1,0 +1,492 @@
+{
+  "omrade": "demokrati",
+  "baserad_pa": "sources/discourse/citat-demokrati.json",
+  "metadata": {
+    "status": "FINAL efter Steg D-konsolidering — Niklas godkännande av GRANSKNING-4-omraden.md sektion 1+2 i sin helhet (2026-07-05, DEC-007)",
+    "linje": "Bas: Utkast 2 (opus, den godkända linjen i samtliga tvistepunkter); inramningar ur GRANSKNING sektion 2 (citatteckensregeln applicerad); unionstillägg från Utkast 1 där citatstöd finns; kongruenstexter per kongruensprincipen",
+    "signifikant_tackning": "Täckningen speglar citatkatalogen för demokrati (sources/discourse/citat-demokrati.json) — att ett parti \"inte använder\" begreppet betyder \"inte i detta material\", inte att partiet aldrig använder det."
+  },
+  "partier": {
+    "SD": {
+      "inramning": "SD ramar in demokrati främst som \"folkstyre\" och lokalt självbestämmande: det representativa systemet har distanserat medborgarna från makten, särskilt på lokal nivå, och folkomröstningar och \"medborgarnas inflytande\" framställs som skydd mot centralt beslutade kommun- och regionsammanslagningar — orsaken till bristande legitimitet lokaliseras till beslut som fattas över medborgarnas huvuden. Vid sidan av detta drivs institutionell effektivisering (färre riksdagsledamöter, skilda valdagar, transparens i utskott och EU-nämnd) och en gränsdragning där religion som blir politik görs till en gemensam angelägenhet. Källbasen är tunn — enbart riksdagsmotioner av en källtyp, inget publicerat valmanifest 2026 — vilket ger SD en jämförelsevis tunn och tematiskt splittrad demokratidiskurs i katalogen.",
+      "nyckelbegrepp": [
+        {
+          "term": "lokal demokrati / medborgarnas inflytande",
+          "innebord": "Folkomröstning på lokal nivå som skydd mot kommun- och regionsammanslagningar",
+          "underforstadd_premiss": "Beslut om lokala strukturer saknar legitimitet utan folkbeslut"
+        },
+        {
+          "term": "slimmad och effektiviserad riksdag",
+          "innebord": "Minskat antal ledamöter som organisatorisk reform",
+          "underforstadd_premiss": "Den representativa institutionen är för stor eller ineffektiv"
+        },
+        {
+          "term": "skilda valdagar",
+          "innebord": "Separation av kommun- och regionval från riksdagsval",
+          "underforstadd_premiss": "Gemensam valdag döljer lokalpolitikens synlighet och ansvarsutkrävande"
+        },
+        {
+          "term": "religion som blir politik",
+          "innebord": "Gräns mellan privat religion och religion i det offentliga",
+          "underforstadd_premiss": "När religion blir politik är den en legitim gemensam (statlig) angelägenhet"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Direktdemokratisk delaktighet",
+          "exempel": "Det finns stora fördelar med att genomföra folkomröstningar på lokal nivå. Människor känner sig delaktiga och ges möjlighet att vara med och påverka frågor som till stor del påverkar deras liv.",
+          "kalla": "Krav på folkomröstning vid förslag om sammanslagning av kommuner och regioner (motion 2025/26:2536)"
+        },
+        {
+          "strategi": "Värn om lokal demokrati",
+          "exempel": "Det är ytterst en fråga om att värna den lokala demokratin och medborgarnas inflytande.",
+          "kalla": "Krav på folkomröstning vid förslag om sammanslagning av kommuner och regioner (motion 2025/26:2536)"
+        },
+        {
+          "strategi": "Institutionell effektivisering",
+          "exempel": "Riksdagen ställer sig bakom det som anförs i motionen om att minska antalet ledamöter i Sveriges riksdag och tillkännager detta för regeringen.",
+          "kalla": "Slimmad och effektiviserad riksdag (motion 2025/26:3066)"
+        },
+        {
+          "strategi": "Gränsdragning religion/politik",
+          "exempel": "Religion är en privatsak, men när religion blir politik så är den inte längre en privatsak, då angår det alla.",
+          "kalla": "Religionsfrihet (motion 2025/26:3082)"
+        }
+      ],
+      "galtan_kongruens": "SD placeras extremt TAN (galtan 8.8) och något höger om mitten ekonomiskt (lrecon 6.2). Den direktdemokratiska folkstyre- och \"medborgarnas inflytande\"-retoriken är förenlig med en populistisk TAN-appell till folkviljan mot centraliserade beslut, och religion/politik-gränsen ligger i linje med en nationalist-sekulär framställning. Kongruensbedömningen vilar dock på en smal och motionsbaserad grund; galtan.json noterar att SD ensamt reserverade sig mot grundlagsreformen om domstolsoberoende — en konstitutionell hållning som inte återfinns i denna katalog.",
+      "kontrast_med": "SD delar transparensintresset (offentlig statistik i utskott) med S men saknar S:s inramning av dold påverkan; till skillnad från C:s och L:s \"liberala demokrati\" och rättighetsfokus vilar SD:s demokratidiskurs på lokal folkomröstning, institutionell \"effektivisering\" och religionens gräns mot politiken."
+    },
+    "M": {
+      "inramning": "M ramar in demokrati som rättsstatlig stabilitet och förvaltningsordning: en rättsstat där lagar gäller lika för alla och där medborgarna kan lita på att det offentliga fungerar. Problemet är institutionellt — grundlagen är otillräcklig och behöver ett \"högre skydd\" för att ändras, domstolarna har historiskt saknat oberoende, och väljarinflytandet begränsas av tekniska hinder och bristfälliga personvalsregler. Samtidigt argumenterar M för att offentlighetsprincipen \"gått för långt\" vad gäller känsliga personuppgifter och bör reformeras. Problemdefinitionen rör alltså både ett för svagt konstitutionellt skydd och en insyn som ställts mot integriteten; lösningen är att förstärka befintliga institutioner (stärkt grundlag, oavhängiga domstolar, breddat röstdeltagande, kalibrerad offentlighetsprincip).",
+      "nyckelbegrepp": [
+        {
+          "term": "rättsstat",
+          "innebord": "Likhet inför lagen och förtroende för att det offentliga fungerar",
+          "underforstadd_premiss": "Rättsstatens kärna är förutsägbarhet och lika tillämpning"
+        },
+        {
+          "term": "högre skydd för grundlagen",
+          "innebord": "Höjd tröskel för att ändra grundlagen",
+          "underforstadd_premiss": "Nuvarande ändringsskydd är för svagt för att skydda demokratin"
+        },
+        {
+          "term": "domstolarnas oberoende",
+          "innebord": "Stärkt oberoende i enlighet med lagd proposition",
+          "underforstadd_premiss": "Domstolarnas oberoende är ett centralt konstitutionellt värde"
+        },
+        {
+          "term": "reformerad offentlighetsprincip",
+          "innebord": "Insyn begränsas där den blottlägger känsliga personuppgifter",
+          "underforstadd_premiss": "Transparens och integritet kan stå i konflikt och integriteten kan behöva företräde"
+        },
+        {
+          "term": "väljarnas inflytande",
+          "innebord": "Minskad partikontroll över listor genom personval",
+          "underforstadd_premiss": "Dagens system låter partierna på förhand avgöra listplaceringarna"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Rättsstatsprincip som förtroendegrund",
+          "exempel": "Sveriges ska vara en rättsstat där lagar gäller lika för alla och där människor kan lita på att det offentliga fungerar.",
+          "kalla": "Demokrati, rättsstat och förvaltning — Moderaternas politik"
+        },
+        {
+          "strategi": "Konstitutionell förstärkning",
+          "exempel": "Införa ett högre skydd för att kunna ändra vår grundlag",
+          "kalla": "Demokrati, rättsstat och förvaltning — Moderaternas politik"
+        },
+        {
+          "strategi": "Avvägning offentlighet mot integritet",
+          "exempel": "Sverige har länge nationellt och internationellt försvarat en stark offentlighetsprincip, som garanterar transparens och demokratiskt ansvarstagande. Men i dag har utvecklingen gått för långt – särskilt när det gäller lagligt offentliggörande av känsliga personuppgifter.",
+          "kalla": "Reformerad offentlighetsprincip – skydd för integriteten i ett modernt samhälle (motion 2025/26:3401)"
+        },
+        {
+          "strategi": "Väljarinflytande mot partimakt",
+          "exempel": "I praktiken innebär femprocentsspärren att väljarnas inflytande ofta begränsas till att bekräfta de listplaceringar som partierna redan bestämt.",
+          "kalla": "Stärk personvalet – ta bort spärren för personkryss (motion 2025/26:3254)"
+        }
+      ],
+      "galtan_kongruens": "Demokratidiskursen är mer liberal-konstitutionell (GAL-lutande) än TAN-positionen (6.8) antyder — rättsstat, domstolarnas oberoende, grundlagsskydd och personval är ett register som lutar bort från TAN. Gap-noteringen är ett analytiskt fynd i materialet. Den reformerade offentlighetsprincipen, där integritet ställs före insyn, är det TAN-förenliga undantaget.",
+      "kontrast_med": "M delar grundlagsskydd och domstolsoberoende med L, men L går längre och vill inrätta en \"författningsdomstol\"; M är ensam i materialet om att vilja begränsa offentlighetsprincipen. Mot SD, som ensamt reserverade sig mot domstolsreformen (galtan.json), står M som dess pådrivare."
+    },
+    "KD": {
+      "inramning": "KD ramar in demokrati kring \"det öppna och fria samtalet\", skyddat av yttrandefrihetsgrundlagen och tryckfrihetsförordningen som ett grundläggande fundament, i ett spänningsfält mot behovet att skydda demokratin mot krafter som brukar yttrandefriheten för att undergräva den. Problemet är att nuvarande lagstiftning är otillräcklig för att hantera hat, hot och antidemokratiska rörelser utan att inskränka fri- och rättigheter. Lösningen hämtas från den tyska modellen: ett \"författningsskydd\" där en författningsdomstol kan agera mot rörelser som anses farliga för författningen, utan att offra det öppna och fria samtalet. Inramningen förenar frihetsförsvar med en förstärkning av författningsskyddet och de demokratiska institutionerna, jämte ett värn om public service.",
+      "nyckelbegrepp": [
+        {
+          "term": "det öppna och fria samtalet",
+          "innebord": "Yttrande- och tryckfrihet som demokratins fundament",
+          "underforstadd_premiss": "Ett fritt samtal är konstitutivt för en fungerande demokrati"
+        },
+        {
+          "term": "författningsskydd (tyska modellen)",
+          "innebord": "Konstitutionellt skydd som möjliggör åtgärder mot farliga rörelser",
+          "underforstadd_premiss": "En demokrati får legitimt försvara sig mot författningsfientliga rörelser"
+        },
+        {
+          "term": "skydd mot hot och hat",
+          "innebord": "Översyn av yttrandefrihetens gräns mot den enskildes skydd",
+          "underforstadd_premiss": "Yttrandefrihet och skydd av enskilda och institutioner kan behöva balanseras om"
+        },
+        {
+          "term": "värna public service",
+          "innebord": "Public service brett tillgängligt i de kanaler människor använder",
+          "underforstadd_premiss": "Brett tillgänglig public service är del av den demokratiska infrastrukturen"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Yttrandefrihet som demokratins fundament",
+          "exempel": "Båda dessa lagar värnar det öppna och fria samtalet vilket är ett grundläggande fundament för en fungerande demokrati.",
+          "kalla": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)"
+        },
+        {
+          "strategi": "Avvägning frihet mot skydd",
+          "exempel": "Vi borde dock se över våra lagar för att stärka skyddet för den enskilde avseende hot och hat samt stärka skyddet av våra egna demokratiska intuitioner likt det man har i Tyskland.",
+          "kalla": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)"
+        },
+        {
+          "strategi": "Tysk modell som förebild för författningsskydd",
+          "exempel": "I exempelvis Tyskland värnar man också yttrande- och tryckfriheten samtidigt har man en lagstiftning där man via författningsdomstolen kan agera gentemot rörelser som anses vara farliga för själva författningen/staten.",
+          "kalla": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)"
+        },
+        {
+          "strategi": "Värn om public service",
+          "exempel": "Kristdemokraterna ska verka för att värna public service, som ska finnas tillgängligt brett i de kanaler som människor använder.",
+          "kalla": "Public service — Kristdemokraternas politik"
+        }
+      ],
+      "galtan_kongruens": "Diskursen är delad: yttrande- och tryckfrihetsförsvaret drar mer liberalt än TAN-positionen (7.0) antyder — en gap-notering ur materialet — medan intresset för ett tyskt författningsskydd med möjlighet att agera mot farliga rörelser, och betoningen av skydd mot hot och hat, är förenliga med TAN-placeringen.",
+      "kontrast_med": "KD delar intresset för den tyska modellen med L, men där L vill inrätta en \"författningsdomstol\" och \"oberoende domstolsråd\" för maktdelning betonar KD författningsskydd mot farliga rörelser och skydd mot hot och hat; KD delar värnet om public service med S och V men utan V:s krav på grundlagsskydd."
+    },
+    "L": {
+      "inramning": "L ramar in demokrati som en existentiell sårbarhetsfråga: hotet är inte primärt yttre utan ett konstitutionellt tomrum. Grundlagen är så svag att Sveriges demokrati snabbt skulle kunna avvecklas i ett krisläge, och arvet från \"det författningslösa halvseklet\" innebär att Sverige historiskt saknat ett substansiellt konstitutionellt skydd. Kausaliteten är institutionell-strukturell — svag konstitution ger sårbar demokrati — förstärkt av en global demokratisk tillbakagång. Lösningen är nykonstruktion: att stärka grundlagsskyddet för demokratin som system, inrätta en stark författningsdomstol och ett oberoende domstolsråd, samt en aktiv utrikespolitik för demokratisering. Inramningen kopplar inhemsk konstitutionell förstärkning till en universell demokratimission.",
+      "nyckelbegrepp": [
+        {
+          "term": "grundlagsskyddet för demokratin som system",
+          "innebord": "Konstitutionell förankring mot snabb avveckling i kris",
+          "underforstadd_premiss": "Nuvarande grundlag är för svag för att förhindra ett snabbt avskaffande"
+        },
+        {
+          "term": "författningsdomstol",
+          "innebord": "En stark domstol som kan pröva den politiska majoriteten konstitutionellt",
+          "underforstadd_premiss": "Domstolar måste kunna kontrollera majoriteten"
+        },
+        {
+          "term": "oberoende domstolsråd",
+          "innebord": "Domstolsväsende frikopplat från regeringens inflytande",
+          "underforstadd_premiss": "Regeringens inflytande över domstolarna är en sårbarhet"
+        },
+        {
+          "term": "demokratins sårbarhet",
+          "innebord": "Även en fungerande demokrati kan avvecklas snabbt",
+          "underforstadd_premiss": "Att demokratin fungerar bra i dag garanterar inte dess bestånd"
+        },
+        {
+          "term": "det författningslösa halvseklet",
+          "innebord": "Historisk ram om en svag svensk konstitutionell tradition",
+          "underforstadd_premiss": "Sveriges författning har varit irrelevant och innehållslös"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Demokratins globala kamp",
+          "exempel": "Liberalismen föddes ur arbetet för demokrati och frihet världen över. Vi ger oss inte förrän den sista diktaturen har fallit. Skyddet för demokratin i EU och Sverige ska stärkas.",
+          "kalla": "Demokrati — Liberalernas politik"
+        },
+        {
+          "strategi": "Sårbarhetsvarning",
+          "exempel": "Även om demokratin fungerar bra i Sverige är den inte osårbar. I ett krisläge skulle den svenska demokratin snabbt kunna avvecklas.",
+          "kalla": "Demokrati — Liberalernas politik"
+        },
+        {
+          "strategi": "Konstitutionell förstärkning genom grundlagsskydd",
+          "exempel": "Men i dag är grundlagen så svag att det skulle gå fort att avskaffa Sveriges demokrati i ett krisläge. Liberalerna vill stärka grundlagsskyddet för demokratin som system.",
+          "kalla": "Demokrati — Liberalernas politik"
+        },
+        {
+          "strategi": "Krav på författningsdomstol",
+          "exempel": "Riksdagen ställer sig bakom det som anförs i motionen om behovet av att inrätta en stark författningsdomstol och tillkännager detta för regeringen.",
+          "kalla": "Inrättande av en stark författningsdomstol och oberoende domstolsråd (motion 2025/26:3143)"
+        }
+      ],
+      "galtan_kongruens": "L placeras höger om mitten ekonomiskt (lrecon 6.3) och har enligt galtan.json en TAN-drift via Tidösamarbetet (galtan 4.8) med interna spänningar. Demokratidiskursen är däremot starkt liberal-konstitutionell — fri- och rättigheter, domstolsoberoende, författningsdomstol och antidiktaturretorik — ett register som lutar mot GAL. Detta markerar ett gap mellan L:s TAN-drift och partiets demokratidiskurs, i linje med de interna spänningar galtan.json noterar.",
+      "kontrast_med": "L delar grundlagsskydd och domstolsoberoende med M men går längre med krav på \"författningsdomstol\" och \"oberoende domstolsråd\"; L delar intresset för den tyska modellen med KD men L:s syfte är maktdelning och domstolskontroll snarare än KD:s skydd mot farliga rörelser. Mot SD, som reserverade sig mot domstolsreformen (galtan.json), står L som den starkaste förespråkaren för domstolarnas oberoende."
+    },
+    "S": {
+      "inramning": "S ramar in demokratin som \"vår viktigaste gemensamma tillgång\" som hotas både utifrån och inifrån. Hotet definieras inte primärt som institutionell svaghet utan som dolda inflöden av pengar, intressen och utländsk påverkan som omöjliggör ansvarsutkrävning — oreglerad lobbyism, ogenomskinlig partifinansiering, \"trollarméer\" och \"religiös fundamentalism\". Kausaliteten är ekonomisk-informationell: dold påverkan urholkar det demokratiska samtalet. Lösningen formuleras som öppenhet och reglering — ekonomisk redovisning, lobbyregister, anmälningsplikt för förtroendevalda — jämte skydd av public service och föreningslivet. Inramningen kopplar demokratins motståndskraft till insyn i vem som utövar inflytande.",
+      "nyckelbegrepp": [
+        {
+          "term": "öppenhet",
+          "innebord": "Insyn i finansiering och inflytande som grund för en stark demokrati",
+          "underforstadd_premiss": "Dold påverkan är det främsta hotet mot demokratin"
+        },
+        {
+          "term": "hot inifrån",
+          "innebord": "Hotet lokaliseras internt — lobbyism, trollarméer, fundamentalism",
+          "underforstadd_premiss": "Demokratin kan urholkas inifrån av ogenomskinliga aktörer"
+        },
+        {
+          "term": "oreglerad lobbyism",
+          "innebord": "Oreglerad lobbyism som växande problem som kräver register",
+          "underforstadd_premiss": "Inflytande bör vara synligt och reglerat"
+        },
+        {
+          "term": "public service och föreningslivet",
+          "innebord": "Demokratisk infrastruktur som ska skyddas",
+          "underforstadd_premiss": "Dessa institutioner är utsatta för hot"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Säkerhetisering av demokratihotet inifrån",
+          "exempel": "Hotet kommer också inifrån. Vi vill skydda public service och föreningslivet.",
+          "kalla": "Socialdemokraternas val 2026 — Försvara den svenska demokratin och vårt sätt att leva"
+        },
+        {
+          "strategi": "Transparenskrav som demokratiskt värn",
+          "exempel": "Vi vill ha krav på ekonomisk redovisning och öppenhet om vilka aktörer som finansierar politiska partier, trollarméer och religiös fundamentalism.",
+          "kalla": "Socialdemokraternas val 2026 — Försvara den svenska demokratin och vårt sätt att leva"
+        },
+        {
+          "strategi": "Problematisering av lobbyism",
+          "exempel": "Den oreglerade lobbyismen utgör ett växande problem för svensk demokrati.",
+          "kalla": "Om transparens och ett lobbyregister (motion 2025/26:2751)"
+        },
+        {
+          "strategi": "Axiomatisk demokratidefinition",
+          "exempel": "En stark demokrati bygger på öppenhet och förtroende.",
+          "kalla": "Reglering av hemlig politisk påverkan (motion 2025/26:1950)"
+        }
+      ],
+      "galtan_kongruens": "Tvåskiktad bild: sakinnehållet (transparens, public service, föreningsliv) är mer GAL än TAN-driftpositionen (4.8) antyder — en gap-notering ur materialet — medan ramberättelsen (\"försvara den svenska demokratin\", \"hot inifrån\", \"religiös fundamentalism\") är förenlig med den noterade TAN-driften. Sakinnehåll och ramberättelse redovisas som skilda skikt.",
+      "kontrast_med": "S delar transparens- och insynsagenda med SD (offentlig statistik) men ramar hotet som dold påverkan (finansiering, \"trollarméer\", \"religiös fundamentalism\") snarare än institutionell effektivitet; till skillnad från V:s statsmaktsskepsis riktar S insynskraven mot privata och utländska aktörer."
+    },
+    "C": {
+      "inramning": "C ramar in demokratin som \"liberal demokrati\" som vilar på individens rättigheter och människors \"egenmakt\". Problemet är tvådelat: dels att majoritetsstyret kan kränka minoriteters rättigheter om det inte möts av konstitutionella spärrar, dels att demokratisk information inte är tillgänglig för alla medborgare (en fjärdedel av vuxna har svårt med skriftlig information). Folkviljan ska kanaliseras genom en effektiv förvaltning, med respekt för minoriteter och rättssäkerhet och granskning av oberoende medier; det underförstådda hotet är statligt förtryck och majoritetens makt över den enskilda människan. Lösningen förenar ett robust minoritets- och rättighetsskydd med aktivt tillgänglighetsarbete — demokrati som både form och praktisk verklighet.",
+      "nyckelbegrepp": [
+        {
+          "term": "liberal demokrati",
+          "innebord": "Demokrati som individrättigheter, egenmakt och minoritetsskydd",
+          "underforstadd_premiss": "Demokrati är mer än majoritetsstyre — den begränsar majoritetens makt"
+        },
+        {
+          "term": "folkviljan (kanaliserad)",
+          "innebord": "Folkviljan omsatt via effektiv förvaltning, oberoende medier och rättssäkerhet",
+          "underforstadd_premiss": "Folkviljan måste gå genom institutioner och granskning, inte direkt majoritet"
+        },
+        {
+          "term": "medborgerliga och politiska rättigheter",
+          "innebord": "Skydd för individen mot statligt förtryck och majoritetens makt",
+          "underforstadd_premiss": "Individen behöver skydd både mot staten och mot majoriteten"
+        },
+        {
+          "term": "lättläst demokrati",
+          "innebord": "Tillgänglig demokrati- och valinformation som demokratisk inkludering",
+          "underforstadd_premiss": "Formella rättigheter är tomma utan tillgänglig information"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Liberal demokrati som ram",
+          "exempel": "Centerpartiet vill stärka den liberala demokratin, individens rättigheter och människors egenmakt i vardagen.",
+          "kalla": "Sverige kan mer. Valmanifest 2026 — Frihet och framtidstro"
+        },
+        {
+          "strategi": "Demokratins innovationsberättelse",
+          "exempel": "Den svenska demokratin har fyllt hundra år och det är tydligt att den liberala demokratin är en av mänsklighetens främsta innovationer.",
+          "kalla": "Utgiftsområde 1 Rikets styrelse (motion 2025/26:3604)"
+        },
+        {
+          "strategi": "Minoritetsskydd mot majoritetsmakt",
+          "exempel": "Medborgerliga och politiska rättigheter skyddar individen mot statligt förtryck och begränsar majoritetens makt över den enskilda människan.",
+          "kalla": "Utgiftsområde 1 Rikets styrelse (motion 2025/26:3604)"
+        },
+        {
+          "strategi": "Tillgänglighetsargument",
+          "exempel": "en fjärdedel av Sveriges vuxna befolkning har svårt att ta till sig skriftlig information",
+          "kalla": "Lättläst demokratisatsning (motion 2025/26:2826)"
+        }
+      ],
+      "galtan_kongruens": "C placeras nära mitten ekonomiskt (lrecon 5.8) och GAL (galtan 3.3). Kongruensen är hög: \"liberal demokrati\", individrättigheter, minoritetsskydd mot majoritetsmakt, oberoende medier och tillgänglighet utgör en genomgående GAL-libertär demokratisyn som ligger tätt intill partiets GAL-placering.",
+      "kontrast_med": "C delar \"liberal demokrati\"-ramen med L, men C betonar minoritetsskydd mot majoriteten och tillgänglighet (lättläst) medan L betonar grundlagsskydd och \"författningsdomstol\"; C:s folkviljeinramning, kanaliserad via förvaltning och oberoende medier, står mot SD:s direktdemokratiska folkomröstningslinje."
+    },
+    "MP": {
+      "inramning": "MP ramar in demokratin som mänskliga rättigheters institutionalisering plus stabila spelregler \"som inte kan ändras snabbt eller lättvindigt\". Problemet är att demokratins skyddsmekanismer — framför allt Institutet för mänskliga rättigheter, som övervakar regering och myndigheter — saknar tillräckligt starkt oberoende och är exponerade för politisk detaljstyrning. Kausaliteten är institutionell: ett MR-institut beroende av dem det övervakar kan inte trovärdigt fylla sin funktion. Lösningen är att grundlagsreglera institutet för att säkra dess oberoende och starka ställning över tid, att följa FN:s rekommendationer i linje med civilsamhällets krav, och att garantera rätten att uttrycka sig, organisera sig och demonstrera. Inramningen kopplar institutionellt oberoende till skyddet av deltaganderättigheter.",
+      "nyckelbegrepp": [
+        {
+          "term": "oberoende (MR-institutet)",
+          "innebord": "Oberoende granskning av statens efterlevnad av mänskliga rättigheter",
+          "underforstadd_premiss": "En institution som granskar regeringen måste skyddas från den"
+        },
+        {
+          "term": "grundlagsreglering / stabila spelregler",
+          "innebord": "Förankring av regler som inte kan ändras snabbt eller lättvindigt",
+          "underforstadd_premiss": "Skydd genom vanlig lag är för bräckligt för demokratins kärninstitutioner"
+        },
+        {
+          "term": "det demokratiska samtalet",
+          "innebord": "Rätten att uttrycka sig, söka kunskap, organisera sig och demonstrera",
+          "underforstadd_premiss": "Deltaganderättigheter är konstitutiva för demokratin"
+        },
+        {
+          "term": "mänskliga rättigheter",
+          "innebord": "Efterlevnad av MR-rekommendationer i linje med civilsamhället",
+          "underforstadd_premiss": "Internationella MR-normer bör binda staten"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Institutionellt oberoende för MR-institutet",
+          "exempel": "Med hänsyn till institutets viktiga uppgift att övervaka hur bland annat regeringen och statliga myndigheter efterlever mänskliga rättigheter, bör institutet garanteras en stark ställning som inte kan rubbas lättvindigt.",
+          "kalla": "Sveriges arbete med mänskliga rättigheter (motion 2025/26:3527)"
+        },
+        {
+          "strategi": "Grundlagsreglering som långsiktighet",
+          "exempel": "En grundlagsreglering skulle säkerställa institutets långsiktiga existens och stärka dess möjlighet att behålla en oberoende och stark ställning över tid.",
+          "kalla": "Sveriges arbete med mänskliga rättigheter (motion 2025/26:3527)"
+        },
+        {
+          "strategi": "Stabila spelregler",
+          "exempel": "Demokratin behöver stabila spelregler som inte kan ändras snabbt eller lättvindigt",
+          "kalla": "Demokrati och mänskliga rättigheter — Miljöpartiets politik"
+        },
+        {
+          "strategi": "Rätt att delta i det demokratiska samtalet",
+          "exempel": "Alla människor ska ha rätt att uttrycka sig, söka kunskap, organisera sig, demonstrera och på andra sätt delta i det demokratiska samtalet.",
+          "kalla": "Demokrati och mänskliga rättigheter — Miljöpartiets politik"
+        }
+      ],
+      "galtan_kongruens": "MP placeras vänster om mitten ekonomiskt (lrecon 2.2) och har enligt galtan.json den mest stabila GAL-profilen (galtan 1.4). Kongruensen är mycket hög: MR-fokus, oberoende granskning av statsmakten, deltaganderättigheter och grundlagsreglering är genomgående GAL och ligger tätt intill placeringen som ett av de mest GAL-orienterade partierna.",
+      "kontrast_med": "MP delar kravet på grundlagsförankrat oberoende med V (public service) och L (grundlagsskydd) men centrerar det kring Institutet för mänskliga rättigheter och statens MR-efterlevnad; MP:s \"stabila spelregler\" liknar M:s \"högre skydd\" för grundlagen men motiveras av rättighetsskydd snarare än av rättsstatens förtroende."
+    },
+    "V": {
+      "inramning": "V ramar in demokratin som ett skyddsproblem: demokratin hotas primärt av statens egen expansiva maktutövning, inte av yttre fiender eller institutionell otillräcklighet. Rättssäkerhet, proportionalitet och \"personlig integritet\" framställs som demokratiska grundvärden. Oron gäller en utveckling sedan tidigt 2000-tal mot ett \"övervakningssamhälle\" där integritet och rättigheter gång på gång får stå tillbaka, samt public services konstitutionella skyddslöshet. Kausaliteten är statsmaktsbetingad — när statens maktutövning expanderar urholkas demokratins substans inifrån. Lösningarna är starkare konstitutionella skydd mot staten: grundlagsskydd för public service, motstånd mot \"chat control\" och en utredning om republik. Inramningen gör staten till demokratins främsta potentiella hot.",
+      "nyckelbegrepp": [
+        {
+          "term": "skydd mot statens maktutövning",
+          "innebord": "Rättsstat som medborgarnas sköld, med krav på proportionalitet",
+          "underforstadd_premiss": "Staten är det främsta potentiella hotet mot medborgaren"
+        },
+        {
+          "term": "övervakningssamhälle",
+          "innebord": "En övervakningsutveckling sedan 2000-talet som oroar",
+          "underforstadd_premiss": "Utökad statlig och EU-övervakning urholkar integritet och rättigheter"
+        },
+        {
+          "term": "grundlagsskydd (public service)",
+          "innebord": "Public service saknar ett effektivt konstitutionellt skydd",
+          "underforstadd_premiss": "Mediernas oberoende behöver förankras bortom vanlig lag"
+        },
+        {
+          "term": "republik",
+          "innebord": "Statsskicket ifrågasatt genom utredning om republik",
+          "underforstadd_premiss": "Statschefsämbetet är ett legitimt objekt för demokratisk reform"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Rättsstat som skydd mot staten",
+          "exempel": "En av de viktigaste principerna i en rättsstat är att medborgarna ska ha ett effektivt skydd mot statens maktutövning. Alla människor ska ha rätt till en rättssäker behandling vid till exempel rättegångar. Alla åtgärder som staten kan vidta mot invånarna ska vara proportionella.",
+          "kalla": "Integritet och statens maktutövning — Vänsterpartiets politik"
+        },
+        {
+          "strategi": "Varning för övervakningssamhälle",
+          "exempel": "Vi ser med stor oro på den utveckling som skett sedan i början av 2000-talet och som idag lett till att vi börjar närma oss ett övervakningssamhälle. Frågor om personlig integritet och mänskliga rättigheter får gång på gång stå tillbaka.",
+          "kalla": "Integritet och statens maktutövning — Vänsterpartiets politik"
+        },
+        {
+          "strategi": "Grundlagsskydd för public service",
+          "exempel": "Public service saknar dock ett effektivt grundlagsskydd.",
+          "kalla": "Konstitutionella frågor (motion 2025/26:2790)"
+        },
+        {
+          "strategi": "Systemkritik — utredning om republik",
+          "exempel": "Riksdagen ställer sig bakom det som anförs i motionen om att regeringen bör tillsätta en utredning om det svenska statsskicket i syfte att införa republik och tillkännager detta för regeringen.",
+          "kalla": "Konstitutionella frågor (motion 2025/26:2790)"
+        }
+      ],
+      "galtan_kongruens": "V placeras längst till vänster ekonomiskt (lrecon 1.2) och längst mot GAL (galtan 1.9). Kongruensen är mycket hög: statsmaktsskepsis, integritetsförsvar, motstånd mot övervakning, republik och grundlagsskydd för public service utgör en genomgående GAL-libertär hållning i linje med placeringen som partiet längst mot GAL.",
+      "kontrast_med": "V delar oron för public service med S och KD men ramar den konstitutionellt (grundlagsskydd) snarare än som skydd av institutionen i sig; V:s statsmaktsskepsis och krav på republik står i skarp kontrast mot M:s förtroende för \"det offentliga\" och mot SD:s och KD:s författnings- och ordningsfokus."
+    }
+  },
+  "flytande_signifikanter": {
+    "oberoende": {
+      "beskrivning": "Oberoende åberopas av flera partier i demokratiområdet, men vad som ska vara oberoende — och gentemot vem — skiljer sig: domstolar, medier eller en människorättsinstitution, gentemot regering, majoritet eller staten.",
+      "tackningsnot": "Täckningen speglar citatkatalogen för demokrati (sources/discourse/citat-demokrati.json) — att ett parti \"inte använder\" begreppet betyder \"inte i detta material\", inte att partiet aldrig använder det.",
+      "per_parti": {
+        "M": {
+          "innebord": "Domstolarnas oberoende gentemot den politiska makten, framdrivet i enlighet med lagd proposition",
+          "exempel": "Domstolarnas oberoende stärks, i enlighet med proposition som lagts",
+          "galtan_matchning": "Spänning"
+        },
+        "L": {
+          "innebord": "Ett helt oberoende domstolsråd som frikopplar domstolarna från regeringens inflytande",
+          "exempel": "behovet av att inrätta ett helt oberoende domstolsråd",
+          "galtan_matchning": "Spänning"
+        },
+        "C": {
+          "innebord": "Oberoende medier som granskar hur folkviljan omsätts av förvaltning och riksdag",
+          "exempel": "granskas av oberoende medier",
+          "galtan_matchning": "GAL"
+        },
+        "MP": {
+          "innebord": "En oberoende människorättsinstitution som övervakar staten utan att kunna rubbas lättvindigt",
+          "exempel": "en oberoende och stark ställning över tid",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Oberoende är ett av områdets tydligaste flytande begrepp: alla fyra partier vill skydda ett oberoende, men objektet skiljer dem åt. För M och L gäller det domstolarna gentemot den politiska makten — hos M markerat av att partiet drev den reform SD ensamt reserverade sig mot (galtan.json), hos L radikaliserat till en \"författningsdomstol\" och ett \"oberoende domstolsråd\". C använder begreppet om medier som granskare, MP om en människorättsinstitution som granskar staten. TAN-placerade M och L hamnar i spänning: att stärka domstolars oberoende gentemot majoriteten är ett liberal-konstitutionellt drag som lutar bort från deras position, medan GAL-partierna C och MP använder begreppet i linje med sin placering."
+    },
+    "grundlagsskydd": {
+      "beskrivning": "Grundlagsskydd och grundlagsreglering är områdets mest delade konstitutionella grepp — flera partier vill förankra något i grundlagen, men objektet skiljer sig: själva ändringströskeln, public service eller en människorättsinstitution.",
+      "tackningsnot": "Täckningen speglar citatkatalogen för demokrati (sources/discourse/citat-demokrati.json) — att ett parti \"inte använder\" begreppet betyder \"inte i detta material\", inte att partiet aldrig använder det.",
+      "per_parti": {
+        "M": {
+          "innebord": "Ett högre skydd för själva möjligheten att ändra grundlagen — höjd tröskel för att skydda demokratin som ordning",
+          "exempel": "Införa ett högre skydd för att kunna ändra vår grundlag",
+          "galtan_matchning": "Spänning"
+        },
+        "L": {
+          "innebord": "Stärkt grundlagsskydd för demokratin som system mot snabb avveckling i kris",
+          "exempel": "Liberalerna vill stärka grundlagsskyddet för demokratin som system",
+          "galtan_matchning": "Spänning"
+        },
+        "V": {
+          "innebord": "Grundlagsskydd för public service, som i dag saknar ett effektivt sådant",
+          "exempel": "Public service saknar dock ett effektivt grundlagsskydd.",
+          "galtan_matchning": "GAL"
+        },
+        "MP": {
+          "innebord": "Grundlagsreglering av Institutet för mänskliga rättigheter för långsiktigt oberoende",
+          "exempel": "En grundlagsreglering skulle säkerställa institutets långsiktiga existens",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Grundlagsskydd fungerar som ett flytande begrepp längs två axlar. Objektsaxeln skiljer M och L, som vill förankra själva systemet — en höjd ändringströskel respektive skydd för \"demokratin som system\" — från V och MP, som vill lyfta in specifika institutioner (public service, MR-institutet) i grundlagen. Riktningsaxeln följer delvis GAL-TAN: TAN-partierna M och L använder grundlagsskyddet defensivt mot kris och avveckling, medan GAL-partierna V och MP använder det för att skydda oberoende granskande institutioner mot statsmakten. Att begreppet bärs av båda blocken gör det till områdets bredaste samlingspunkt — och samtidigt dess mest innehållsligt delade."
+    },
+    "rattsstat": {
+      "beskrivning": "Rättsstaten åberopas av både M och V men fylls med motsatt tyngdpunkt — som ordning och förtroende för det offentliga hos M, som medborgarens skydd mot statens makt hos V; C använder den närliggande termen 'rättssäkerheten'.",
+      "tackningsnot": "Täckningen speglar citatkatalogen för demokrati (sources/discourse/citat-demokrati.json) — att ett parti \"inte använder\" begreppet betyder \"inte i detta material\", inte att partiet aldrig använder det.",
+      "per_parti": {
+        "M": {
+          "innebord": "Rättsstat som likhet inför lagen och förtroende för att det offentliga fungerar",
+          "exempel": "en rättsstat där lagar gäller lika för alla och där människor kan lita på att det offentliga fungerar",
+          "galtan_matchning": "Mittfåra"
+        },
+        "V": {
+          "innebord": "Rättsstat som medborgarnas effektiva skydd mot statens maktutövning, med krav på proportionalitet",
+          "exempel": "medborgarna ska ha ett effektivt skydd mot statens maktutövning",
+          "galtan_matchning": "GAL"
+        },
+        "C": {
+          "innebord": "Angränsande konstruktion (\"rättssäkerhet\"): Rättssäkerheten som en av de ramar folkviljan ska kanaliseras genom (angränsande term)",
+          "exempel": "med respekt för olika minoriteter och rättssäkerheten",
+          "galtan_matchning": "GAL",
+          "markering": "angränsande konstruktion"
+        }
+      },
+      "analytisk_kommentar": "Rättsstaten visar hur samma begrepp bär motsatt tyngdpunkt. Hos M pekar rättsstaten utåt mot ordning och pålitliga institutioner — \"lagar gäller lika för alla\" och medborgaren kan \"lita på att det offentliga fungerar\". Hos V pekar den inåt mot medborgarens sköld: rättsstatens kärna är ett \"effektivt skydd mot statens maktutövning\" och krav på proportionalitet, alltså en misstro mot samma offentliga makt som M vill inge förtroende för. C:s angränsande \"rättssäkerhet\" placeras som en av flera ramar (jämte minoritetsrespekt och oberoende medier) som folkviljan ska kanaliseras genom. Skalan från rättsstat som förtroende till rättsstat som skydd mot staten följer GAL-TAN-axeln, med M i mittfåran och V och C på GAL-sidan. Analytiskt signifikant frånvaro: SD använder inte \"rättsstat\" i materialet — \"folkstyre\" fyller nodalpunktsfunktionen i SD:s demokratidiskurs (se partiets inramning)."
+    }
+  }
+}
