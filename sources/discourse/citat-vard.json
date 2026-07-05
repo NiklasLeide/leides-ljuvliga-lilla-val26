@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "omrade": "vard",
+  "tidsfonster": "valrörelsefokus 2025/26 till 2026-07-04",
+  "genererad": "2026-07-05",
+  "partier": {
+    "S": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Vi ska satsa på vårdpersonalen. Så att du får vård snabbare, av läkare och vårdpersonal som har mer tid för dig. För att öka tryggheten ska alla ha en fast namngiven läkare på vårdcentralen. Psykiatrin ska stärkas, inte minst för barn och unga. Vi vill stoppa privatiseringar av svenska akutsjukhus och göra upp med de marknadsmisslyckanden som försämrar svensk sjukvård.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Plan för Sverige (Valplattform)",
+          "url": "https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+          "lokal_fil": "sources/manifest/2026/S-valmanifest-2026.pdf",
+          "datum": "2026-02-05",
+          "kontext": "Under rubriken 'En stark välfärd för dig och din familj', avsnittet 'Kortare väntetider i vården', s. 2 i S:s valplattform presenterad av Magdalena Andersson m.fl. 2026-02-05."
+        },
+        {
+          "citat": "Det ska vara tryggt att bli gammal i Sverige. Du som behöver hjälp i din vardag ska mötas med värdighet, kvalitet och respekt. Av personal som har tid, kunskap och kan prata svenska. Du som jobbar i äldreomsorgen ska få bättre villkor och fler kollegor vid din sida.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Plan för Sverige (Valplattform)",
+          "url": "https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+          "lokal_fil": "sources/manifest/2026/S-valmanifest-2026.pdf",
+          "datum": "2026-02-05",
+          "kontext": "Under rubriken 'Mer personal och språkkrav i äldreomsorgen', s. 3 i S:s valplattform."
+        },
+        {
+          "citat": "Tre år med Tidöregeringen har inneburit minskat statligt stöd och sämre förutsättningar för hälso- och sjukvården.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3645)",
+          "url": "https://data.riksdagen.se/dokument/HD023645.html",
+          "datum": "2025-10-01",
+          "kontext": "Inledande diagnos av sjukvårdens tillstånd i S:s budgetmotion för utgiftsområde 9, ingiven av Fredrik Lundh Sammeli m.fl. Exakt datum ej bekräftat; inlämnad under 2025/26 riksdagssession."
+        },
+        {
+          "citat": "Inom såväl hälso- och sjukvård som äldreomsorg, tandvård och socialtjänst råder idag stor brist på personal. Personalbristen leder till kapacitets- och kvalitetsbrister i verksamheterna och till svårigheter att möta medborgarnas förväntningar.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3645)",
+          "url": "https://data.riksdagen.se/dokument/HD023645.html",
+          "datum": "2025-10-01",
+          "kontext": "Motionens avsnitt om personalförsörjning inom välfärdssektorn, ur S:s budgetmotion för utgiftsområde 9."
+        },
+        {
+          "citat": "De senaste åren har dock antalet vårdplatser minskat alltför fort, utan att behoven minskat i samma takt. IVO inledde 2022 en sammanhållen nationell tillsyn av den svenska sjukhusvården och konstaterade i januari 2023 att det rådde brist på disponibla vårdplatser inom akutsjukhusvården i samtliga regioner.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3645)",
+          "url": "https://data.riksdagen.se/dokument/HD023645.html",
+          "datum": "2025-10-01",
+          "kontext": "Motionens avsnitt om vårdplatsbristen, med hänvisning till IVO:s nationella tillsyn 2022–2023."
+        },
+        {
+          "citat": "En viktig del för att höja kvaliteten och också systemeffektiviteten inom hälso- och sjukvården är genomförandet av primärvårdsreformen omställningen till en god och nära vård.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3645)",
+          "url": "https://data.riksdagen.se/dokument/HD023645.html",
+          "datum": "2025-10-01",
+          "kontext": "Motionens avsnitt om primärvårdsreformen, ur S:s budgetmotion för utgiftsområde 9."
+        }
+      ]
+    },
+    "M": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Äldre som har varit med och byggt vårt land ska ha rätt till god och näringsrik mat hela livet. Därför är det ett vallöfte från Moderaterna att rädda söndagssteken för äldre.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md",
+          "datum": "2026-07-03",
+          "kontext": "M:s vallöfte om mat och guldkant i äldreomsorgen, ur kampanjsidans avsnitt Bättre mat inom äldreomsorgen."
+        },
+        {
+          "citat": "Äldre som har varit med och byggt vårt land ska ha rätt till god och näringsrik mat hela livet. Därför är det ett vallöfte från Moderaterna att rädda söndagssteken för äldre. Det handlar dels om att säkerställa att äldre får god och näringsrik mat, dels om att de ska kunna behålla guldkanten i tillvaron.",
+          "kalltyp": "kampanjsida",
+          "dokumenttitel": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)",
+          "url": "https://moderaterna.se/valloften-2026/",
+          "lokal_fil": "sources/manifest/2026/M-valloften-2026_snapshot-2026-07-03.md",
+          "datum": "2026-07-03",
+          "kontext": "Under rubriken 'Bättre mat inom äldreomsorgen' på Moderaternas vallöftessida, daterad ögonblicksbild 2026-07-03."
+        },
+        {
+          "citat": "Vi ser nu tyvärr hur Region Stockholm monterar ner valfriheten på område efter område och försämrar för fristående aktörer inom vården.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Villkor för fristående utförare i välfärden (motion 2025/26:2083)",
+          "url": "https://data.riksdagen.se/dokument/HD022083.html",
+          "datum": "2025-09-24",
+          "kontext": "Motionens motivering om valfrihetens villkor för privata vårdgivare i Region Stockholm, ingiven av Maria Stockhaus m.fl. (M). Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "Villkoren för fristående/privata aktörer måste vara likvärdiga med de villkor som offentliga utförare har för att säkerställa likvärdighet och hög kvalitet för den som nyttjar välfärden oavsett vem som driver den.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Villkor för fristående utförare i välfärden (motion 2025/26:2083)",
+          "url": "https://data.riksdagen.se/dokument/HD022083.html",
+          "datum": "2025-09-24",
+          "kontext": "Motionens principiella krav på likvärdiga villkor för offentliga och privata välfärdsutförare."
+        },
+        {
+          "citat": "Kognitiva sjukdomar, däribland Alzheimers sjukdom, är några av våra stora folksjukdomar.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stärkta åtgärder mot kognitiva sjukdomar med hjälp av demensstrategin (motion 2025/26:1207)",
+          "url": "https://data.riksdagen.se/dokument/HD021207.html",
+          "datum": "2025-09-15",
+          "kontext": "Inledning i motionens motivering om behovet av en stärkt demensstrategi, ingiven av Ulrika Heindorff (M). Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "Enligt Socialstyrelsen lever över 150 000 personer i Sverige med en demensdiagnos.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stärkta åtgärder mot kognitiva sjukdomar med hjälp av demensstrategin (motion 2025/26:1207)",
+          "url": "https://data.riksdagen.se/dokument/HD021207.html",
+          "datum": "2025-09-15",
+          "kontext": "Statistisk bakgrund i motionens motivering om demenssjukdomarnas utbredning i Sverige."
+        }
+      ]
+    },
+    "SD": {
+      "kallbas": "tunn",
+      "tunn_beskrivning": "Alla 9 hittade citat är från riksdagsmotioner (en källtyp). Partiets sjukvårdspolitiska inriktningsprogram är från 2018 (utanför tidsfönstret). Partiets webbplatssidor (sd.se/var-politik/sjukvard/ m.fl.) är inte textläsbara — serveras som PNG-bilder. Principprogrammet 2023 (PDF) returnerade binärt innehåll och kunde inte läsas. Inga SD-anföranden om sjukvård hittades i riksdagens API för 2025/26 (interpellationer 0, anföranden 0). Kravet på ≥2 källtyper uppnås inte.",
+      "citat": [
+        {
+          "citat": "Äldreomsorgen har, precis som barnomsorgen en gång hade, ett enormt behov av en genomgripande reform",
+          "kalltyp": "motion",
+          "dokumenttitel": "Värdighet för äldre och professionalisering av äldreomsorgen (motion 2025/26:3049)",
+          "url": "https://data.riksdagen.se/dokument/HD023049.html",
+          "datum": "2025-10-06",
+          "kontext": "Inledning i motionens avsnitt om professionalisering och samordning inom äldreomsorgen, ingiven av Markus Wiechel (SD)."
+        },
+        {
+          "citat": "Bara ungefär fem procent av personalen inom äldreomsorgen har idag en sjuksköterskeutbildning.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Värdighet för äldre och professionalisering av äldreomsorgen (motion 2025/26:3049)",
+          "url": "https://data.riksdagen.se/dokument/HD023049.html",
+          "datum": "2025-10-06",
+          "kontext": "Statistik om kompetensnivån hos äldreomsorgens personal, ur motionens motivering."
+        },
+        {
+          "citat": "I hela landet finns det samtidigt bara omkring 350 legitimerade sjuksköterskor som specialiserat sig på geriatrik",
+          "kalltyp": "motion",
+          "dokumenttitel": "Värdighet för äldre och professionalisering av äldreomsorgen (motion 2025/26:3049)",
+          "url": "https://data.riksdagen.se/dokument/HD023049.html",
+          "datum": "2025-10-06",
+          "kontext": "Statistik om bristen på geriatrikspecialiserade sjuksköterskor i landet, ur motionens motivering."
+        },
+        {
+          "citat": "Äldre personers rättigheter är mänskliga rättigheter och återkommande framkommer det nya exempel där man blundar för en dåligt skött behandling",
+          "kalltyp": "motion",
+          "dokumenttitel": "Värdighet för äldre och professionalisering av äldreomsorgen (motion 2025/26:3049)",
+          "url": "https://data.riksdagen.se/dokument/HD023049.html",
+          "datum": "2025-10-06",
+          "kontext": "Motionens avsnitt om behovet av en nationell äldreombudsman, ur motiveringen."
+        },
+        {
+          "citat": "Trots vårdens ökade komplexitet finns det fortfarande inga nationella krav på att chefer inom den kommunala och regionala hälso- och sjukvården har legitimation eller relevant vårdutbildning.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stärkt chefskap inom hälso- och sjukvården, kommunalt och regionalt (motion 2025/26:241)",
+          "url": "https://data.riksdagen.se/dokument/HD02241.html",
+          "datum": "2025-09-24",
+          "kontext": "Motionens motivering om avsaknaden av krav på vårdutbildning för chefer inom kommunal och regional sjukvård, ingiven av Johnny Svedin (SD)."
+        },
+        {
+          "citat": "Chefer med vårdbakgrund har en djupare förståelse för arbetsmiljön och de utmaningar vårdpersonalen möter, vilket möjliggör ett mer relevant och stödjande ledarskap.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stärkt chefskap inom hälso- och sjukvården, kommunalt och regionalt (motion 2025/26:241)",
+          "url": "https://data.riksdagen.se/dokument/HD02241.html",
+          "datum": "2025-09-24",
+          "kontext": "Motionens argument för legitimerad vårdpersonal i chefsbefattningar, ur motiveringen."
+        },
+        {
+          "citat": "Ett centralt register ökar möjligheten att på ett enkelt och snabbt sätt få en samlad bild av kompetensen inom hela äldreomsorgen i hela landet.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Personalregister för äldreomsorgen (motion 2025/26:2374)",
+          "url": "https://data.riksdagen.se/dokument/HD022374.html",
+          "datum": "2025-10-01",
+          "kontext": "Motionens motivering för ett nationellt kompetensregister för äldreomsorgens personal. Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "Utan ett tydligt system för att följa upp personalens kompetens kan det vara svårt att säkerställa att de som vårdar våra äldre har rätt erfarenhet och kunskap.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Personalregister för äldreomsorgen (motion 2025/26:2374)",
+          "url": "https://data.riksdagen.se/dokument/HD022374.html",
+          "datum": "2025-10-01",
+          "kontext": "Motionens argument om vikten av kompetensuppföljning inom äldreomsorgen, ur motiveringen."
+        },
+        {
+          "citat": "För att underlätta för medborgarna bör däremot en tjänst för digitalt högkostnadsskydd finnas tillgänglig.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Digitalt högkostnadsskydd inom hälso- och sjukvården (motion 2025/26:2530)",
+          "url": "https://data.riksdagen.se/dokument/HD022530.html",
+          "datum": "2025-10-01",
+          "kontext": "Motionens yrkande om att regeringen ska utreda ett digitalt system för sjukvårdens högkostnadsskydd. Exakt datum ej bekräftat."
+        }
+      ]
+    },
+    "C": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Centerpartiet vill att du ska kunna lita på att vården och omsorgen finns där när du behöver den.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Centerpartiet — Vård och omsorg (partipolitisk webbsida)",
+          "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg",
+          "datum": "2026-07-04",
+          "kontext": "Inledande policymening på Centerpartiets partipolitiska sida om vård och omsorg, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Vårdköerna växer och det kan vara svårt att få en tid hos läkaren.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Centerpartiet — Vård och omsorg (partipolitisk webbsida)",
+          "url": "https://www.centerpartiet.se/centerpartiets-politik/centerpartiets-politik-a-o/vard-och-omsorg",
+          "datum": "2026-07-04",
+          "kontext": "Problembeskrivning på Centerpartiets partipolitiska sida om vård och omsorg, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Vården på landsbygden är underfinansierad, regelverken är snåriga och kompetensförsörjningen bristfällig.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En tillgänglig vård och omsorg i hela landet (motion 2025/26:3179)",
+          "url": "https://data.riksdagen.se/dokument/HD023179.html",
+          "datum": "2025-10-06",
+          "kontext": "Motionens motivering om strukturella problem i landsbygdens sjukvård, ingiven av Christofer Bergenblock m.fl. (C). Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "Hälso- och sjukvården ska arbeta proaktivt och hålla jämlik och hög kvalitet i hela landet.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En tillgänglig vård och omsorg i hela landet (motion 2025/26:3179)",
+          "url": "https://data.riksdagen.se/dokument/HD023179.html",
+          "datum": "2025-10-06",
+          "kontext": "Motionens principiella målsättning om jämlik vård, ur motiveringens inledande avsnitt."
+        },
+        {
+          "citat": "Rätten till självbestämmande och inflytande över den vård och omsorg som ges måste gälla såväl unga som gamla, friska som sjuka.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En tillgänglig vård och omsorg i hela landet (motion 2025/26:3179)",
+          "url": "https://data.riksdagen.se/dokument/HD023179.html",
+          "datum": "2025-10-06",
+          "kontext": "Motionens motivering om patientens rätt till självbestämmande oavsett ålder eller hälsostatus."
+        },
+        {
+          "citat": "Den svenska sjukvården står trots sin goda medicinska kvalitet inför flera stora utmaningar.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3737)",
+          "url": "https://data.riksdagen.se/dokument/HD023737.html",
+          "datum": "2025-10-08",
+          "kontext": "Inledning i C:s budgetmotion för utgiftsområde 9, ingiven av Christofer Bergenblock, Anders W Jonsson, Martina Johansson (C). Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "Med för få allmänläkare stannar omställningen mot primärvården av och patienterna får aldrig tillgång till en egen fast läkarkontakt.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3737)",
+          "url": "https://data.riksdagen.se/dokument/HD023737.html",
+          "datum": "2025-10-08",
+          "kontext": "Motionens avsnitt om primärvårdsreformens utmaningar och bristen på allmänläkare, ur C:s budgetmotion."
+        }
+      ]
+    },
+    "V": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Sjukvården är väljarnas viktigaste fråga och Sverige har av Tidöregeringen tvingats in i en nationell sjukvårdskris. Väntetiderna till vården är de längsta någonsin, den psykiska ohälsan fortsätter att öka och vårdpersonal går på knäna.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Valplattform 2026 (preliminär kongressversion)",
+          "url": "https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+          "lokal_fil": "sources/manifest/2026/V-valmanifest-2026.pdf",
+          "datum": "2026-04-19",
+          "kontext": "Avsnittet om sjukvårdskrisen, s. 2 i V:s kongressbeslutade valplattform (Örebro 2026-04-17–19). Dokumentet bär märkningen 'Preliminär version kongress 2026' på varje sida."
+        },
+        {
+          "citat": "Det är statens ansvar att avsätta de resurser som krävs för att garantera en jämlik och jämställd sjukvård i hela landet där vårdpersonalen får fler kollegor och alla invånare får en fungerande vårdcentral och fast läkarkontakt.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Valplattform 2026 (preliminär kongressversion)",
+          "url": "https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+          "lokal_fil": "sources/manifest/2026/V-valmanifest-2026.pdf",
+          "datum": "2026-04-19",
+          "kontext": "Avsnittet om statens finansieringsansvar för sjukvården, s. 2 i V:s kongressbeslutade valplattform."
+        },
+        {
+          "citat": "Den marknadsstyrda vården, där lönsamhet går före behov och där den som har råd kan köpa sig en plats längst fram i kön, ska ersättas med en väl fungerande sjukvård som styrs utifrån patienternas behov.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Valplattform 2026 (preliminär kongressversion)",
+          "url": "https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+          "lokal_fil": "sources/manifest/2026/V-valmanifest-2026.pdf",
+          "datum": "2026-04-19",
+          "kontext": "Avsnittet om avprivatisering av vården, s. 2 i V:s valplattform."
+        },
+        {
+          "citat": "Privatiseringar och marknadsexperiment har dränerat skolan, vården och omsorgen.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Valplattform 2026 (preliminär kongressversion)",
+          "url": "https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+          "lokal_fil": "sources/manifest/2026/V-valmanifest-2026.pdf",
+          "datum": "2026-04-19",
+          "kontext": "Avsnittet om privatiseringars konsekvenser för välfärden, s. 2 i V:s valplattform."
+        },
+        {
+          "citat": "Vänsterpartiet anser att den svenska hälso- och sjukvården behöver återgå till att styras med utgångspunkt från vårdbehov.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En bättre hälso- och sjukvård (motion 2025/26:2777)",
+          "url": "https://data.riksdagen.se/dokument/HD022777.html",
+          "datum": "2025-09-24",
+          "kontext": "Motionens inledande principdeklaration om behovsstyrd vård, ingiven av Nooshi Dadgostar m.fl. (V). Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "Nätläkarföretagens affärsmodell må vara effektiv för deras egna vinster men knappast för det offentligas ekonomi eller för att uppnå en god och jämlik vård efter behov.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En bättre hälso- och sjukvård (motion 2025/26:2777)",
+          "url": "https://data.riksdagen.se/dokument/HD022777.html",
+          "datum": "2025-09-24",
+          "kontext": "Motionens avsnitt om nätläkarbolagen och deras roll i det svenska vårdsystemet."
+        },
+        {
+          "citat": "Den vård du erbjuds ska inte vara beroende av din samhällsklass, ditt kön, ditt ursprung eller din geografiska hemvist.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En bättre hälso- och sjukvård (motion 2025/26:2777)",
+          "url": "https://data.riksdagen.se/dokument/HD022777.html",
+          "datum": "2025-09-24",
+          "kontext": "Motionens inledande jämlikhetsprincip för sjukvården, ur motiveringens avsnitt 1."
+        }
+      ]
+    },
+    "KD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Hälso- och sjukvårdens uppgift är att erbjuda en behovsanpassad, tillgänglig och effektiv vård av god kvalitet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraterna — Sjukvård (partipolitisk webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/sjukvard",
+          "datum": "2026-07-04",
+          "kontext": "Inledande policymening på KD:s partipolitiska sida om sjukvård, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Kristdemokraterna driver sedan lång tid tillbaka frågan om ett statligt huvudmannaansvar för sjukvården, för att skapa en mer jämlik och tillgänglig vård.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraterna — Sjukvård (partipolitisk webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/sjukvard",
+          "datum": "2026-07-04",
+          "kontext": "KD:s långvariga kärnståndpunkt om statligt huvudmannaansvar för sjukvården, på partipolitisk webbsida."
+        },
+        {
+          "citat": "En god nära vård ska finnas tillgänglig för alla. Primärvården är basen för det och man ska ha rätt till en fast namngiven läkarkontakt på samma sätt som man idag har rätt till en fast vårdkontakt. Primärvården har ett brett uppdrag och för att det ska kunna förverkligas krävs betydande tillskott av ekonomiska resurser så att fler medarbetare kan anställas.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraterna — Primärvård (partipolitisk webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/primarvard",
+          "datum": "2026-07-04",
+          "kontext": "Fullständig text på KD:s partipolitiska sida om primärvård, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Äldre ska kunna leva ett aktivt liv och ha inflytande i samhället och över sin vardag. Äldre ska få känna välbefinnande och ha inflytande över vilka omsorgsinsatser som ges, oavsett i vilken kommun de bor. Alla ska få ett värdigt bemötande, ett tryggt boende och nära till läkarkontakter inom äldreomsorgen.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraterna — Äldre (partipolitisk webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/aldre",
+          "datum": "2026-07-04",
+          "kontext": "KD:s grundläggande målsättningar för äldres rättigheter och äldreomsorgens kvalitet, på partipolitisk webbsida."
+        },
+        {
+          "citat": "De som har svår psykisk ohälsa, neuropsykiatrisk funktionsnedsättning eller konstaterad psykiatrisk sjukdom måste få hjälp, stöd och vård i tid. Psykiatriska tillstånd måste få lika hög prioritet som kroppsliga sjukdomar inom sjukvården.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraterna — Psykiatri (partipolitisk webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/psykiatri",
+          "datum": "2026-07-04",
+          "kontext": "KD:s ståndpunkt om prioritering av psykiatrisk vård, på partipolitisk webbsida om psykiatri."
+        },
+        {
+          "citat": "Sverige ska ha en solidariskt finansierad jämlik hälso- och sjukvård. Det är välfärdens kärna. Vården ska kännetecknas av värdighet, kvalitet och tillgänglighet och vi anser att vården och omsorgen behöver många olika utförare - för kvalitetsutveckling och valfrihet - och vi välkomnar privata, kooperativa och ideella vårdgivare.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraterna — Privat vård (partipolitisk webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/privat-vard",
+          "datum": "2026-07-04",
+          "kontext": "KD:s ståndpunkt om mångfald av vårdgivare inom ramen för solidarisk finansiering, på partipolitisk webbsida."
+        },
+        {
+          "citat": "Ett sätt som vi ser som viktigt för att kunna förbättra vården men också samordningen mellan kommuner och regioner är om kommuner får möjlighet att driva eller upphandla vårdcentraler, vilket gör att man kan kombinera äldreomsorg och vårdcentraler och på så sätt förbättra samordningen av vården av framför allt de äldre.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Utökad kommunal vård (motion 2025/26:1039)",
+          "url": "https://data.riksdagen.se/dokument/HD021039.html",
+          "datum": "2025-09-15",
+          "kontext": "Motionens konkreta förslag om att låta kommuner driva eller upphandla vårdcentraler för bättre samordning, ingiven av Magnus Jacobsson och Dan Hovskär (KD). Exakt datum ej bekräftat."
+        }
+      ]
+    },
+    "L": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Rätt vård i rätt tid för varje patient, det är grunden i liberal sjukvårdspolitik.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalerna — Sjukvård (partipolitisk webbsida)",
+          "url": "https://www.liberalerna.se/politik/sjukvard/",
+          "datum": "2026-07-04",
+          "kontext": "Inledande principmening på Liberalernas partipolitiska sida om sjukvård, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Den som inte är frisk tvingas in i ofrihet. Svensk sjukvård behöver bli bättre, för våra patienter, deras anhöriga och alla de yrkesgrupper som arbetar outtröttligt med att hjälpa andra. Liberal sjukvårdspolitik utgår alltid från den enskilde, och hur hen ska få god vård i rätt tid, vare sig det är en vanlig, sällsynt, eller kronisk sjukdom.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalerna — Sjukvård (partipolitisk webbsida)",
+          "url": "https://www.liberalerna.se/politik/sjukvard/",
+          "datum": "2026-07-04",
+          "kontext": "Liberalernas beskrivning av sjukvårdens koppling till frihet och individens behov, under rubriken 'En ansvarstagande liberal sjukvård'."
+        },
+        {
+          "citat": "I ett halvsekel har Liberalerna drivit på för att alla ska ha en fast, namngiven husläkare – ofta i strid med Socialdemokraterna. Vi vill se en patientnära vård, och arbetar fortfarande för en fast läkare till alla, både inom primärvården och specialistsjukvården.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalerna — Sjukvård (partipolitisk webbsida)",
+          "url": "https://www.liberalerna.se/politik/sjukvard/",
+          "datum": "2026-07-04",
+          "kontext": "Liberalernas historiska och aktuella ståndpunkt om fast läkarkontakt för alla patienter."
+        },
+        {
+          "citat": "Att bli äldre får aldrig innebära att man förlorar sin frihet. Liberalerna vill se en äldreomsorg präglad av valfrihet, respekt och människovärde.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalerna — Äldreomsorg (partipolitisk webbsida)",
+          "url": "https://www.liberalerna.se/politik/aldreomsorg/",
+          "datum": "2026-07-04",
+          "kontext": "Inledande värdedeklaration på Liberalernas partipolitiska sida om äldreomsorg, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Liberalerna vill därför höja ambitionsnivån i äldreomsorgen och modernisera socialtjänstlagen så att äldre inte bara ska bli garanterade skäliga levnadsvillkor, utan goda levnadsvillkor.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalerna — Äldreomsorg (partipolitisk webbsida)",
+          "url": "https://www.liberalerna.se/politik/aldreomsorg/",
+          "datum": "2026-07-04",
+          "kontext": "Liberalernas konkreta lagstiftningsambition för äldreomsorgen, under rubriken 'En höjd ambitionsnivå i äldreomsorgen'."
+        },
+        {
+          "citat": "Denna övergång mellan barnsjukvård och vuxensjukvård upplevs av många unga med funktionsnedsättning som problematisk.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Förbättrad övergångsvård (motion 2025/26:1585)",
+          "url": "https://data.riksdagen.se/dokument/HD021585.html",
+          "datum": "2025-09-15",
+          "kontext": "Motionens diagnos av övergångsvårdens problem för unga med funktionsnedsättning, ingiven av Malin Danielsson (L). Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "I en rapport från Unga Hörselskadade uppger mer än hälften av 18–20-åringarna att de inte förberetts på flytten från barnhabiliteringen till vuxenhabiliteringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Förbättrad övergångsvård (motion 2025/26:1585)",
+          "url": "https://data.riksdagen.se/dokument/HD021585.html",
+          "datum": "2025-09-15",
+          "kontext": "Statistisk belysning av brister i övergångsvården, med hänvisning till rapport från Unga Hörselskadade."
+        }
+      ]
+    },
+    "MP": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Miljöpartiet vill främja jämlik hälsa och en tillgänglig vård med kortare köer, starkare primärvård och bättre stöd vid psykisk ohälsa.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Miljöpartiet — Hälso- och sjukvård (partipolitisk webbsida)",
+          "url": "https://www.mp.se/politik/halso-och-sjukvard/",
+          "datum": "2026-07-04",
+          "kontext": "Inledande policymening på Miljöpartiets partipolitiska sida om hälso- och sjukvård, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Svensk hälso- och sjukvård är underfinansierad. För Miljöpartiet är tillgång till och vård efter behov en grund för ett jämlikt samhälle. Köer, personalbrist och stora hälsoskillnader som gör att människor får olika vård beroende på ekonomi, bostadsort, kön och bakgrund ska åtgärdas.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Miljöpartiet — Hälso- och sjukvård (partipolitisk webbsida)",
+          "url": "https://www.mp.se/politik/halso-och-sjukvard/",
+          "datum": "2026-07-04",
+          "kontext": "Miljöpartiets grunddiagnos av sjukvårdens problem och jämlikhetsambition, på partipolitisk webbsida."
+        },
+        {
+          "citat": "Allt fler människor, också barn och unga, drabbas av psykisk ohälsa. Många möter långa köer, en otydlig ansvarsfördelning och ett splittrat stöd. För Miljöpartiet är psykisk hälsa en central välfärds- och folkhälsofråga. Psykisk ohälsa kan förebyggas med rätt resurser.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Miljöpartiet — Psykisk hälsa (partipolitisk webbsida)",
+          "url": "https://www.mp.se/politik/ratt-att-ma-bra/",
+          "datum": "2026-07-04",
+          "kontext": "Inledning på Miljöpartiets partipolitiska sida om psykisk hälsa, åtkommen 2026-07-04."
+        },
+        {
+          "citat": "Underfinansiering, personalbrist och en pressad arbetsmiljö riskerar att slita ut de medarbetare som varje dag gör sitt yttersta för vår hälsa.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Förstärkt sjukvård i hela landet (motion 2025/26:3542)",
+          "url": "https://data.riksdagen.se/dokument/HD023542.html",
+          "datum": "2025-10-07",
+          "kontext": "Motionens inledande diagnos av sjukvårdens personalutmaning, ingiven av MP. Exakt datum ej bekräftat."
+        },
+        {
+          "citat": "inget av omställningens mål har uppnåtts, trots att omställningen mot en god och nära vård är en central reform för utvecklingen och förbättringen av den svenska hälso- och sjukvården.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Förstärkt sjukvård i hela landet (motion 2025/26:3542)",
+          "url": "https://data.riksdagen.se/dokument/HD023542.html",
+          "datum": "2025-10-07",
+          "kontext": "Motionens bedömning av primärvårdsreformens utfall, med stöd i Myndigheten för vård- och omsorgsanalys rapport."
+        },
+        {
+          "citat": "Svenska primärvårdsläkare träffar lägst antal patienter per arbetad timme, men är samtidigt bland de mest stressade jämfört med andra länder.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Förstärkt sjukvård i hela landet (motion 2025/26:3542)",
+          "url": "https://data.riksdagen.se/dokument/HD023542.html",
+          "datum": "2025-10-07",
+          "kontext": "Internationell jämförelse av primärvårdsläkarnas arbetsbelastning, ur motionens avsnitt om personalförsörjning."
+        },
+        {
+          "citat": "Den yttersta konsekvensen av psykisk ohälsa är suicid. Det är en av de vanligaste dödsorsakerna bland personer under 50 år.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Förbättrad psykisk hälsa och stärkt folkhälsa (motion 2025/26:3544)",
+          "url": "https://data.riksdagen.se/dokument/HD023544.html",
+          "datum": "2025-10-07",
+          "kontext": "Motionens avsnitt om suicidprevention som folkhälsofrågans yttersta konsekvens, ur MP:s motion om psykisk hälsa. Exakt datum ej bekräftat."
+        }
+      ]
+    }
+  },
+  "statistik": {
+    "citat_per_parti": {
+      "S": 6,
+      "M": 6,
+      "SD": 9,
+      "C": 7,
+      "V": 7,
+      "KD": 7,
+      "L": 7,
+      "MP": 7
+    },
+    "kalltyper_per_parti": {
+      "S": [
+        "valmanifest",
+        "budgetmotion"
+      ],
+      "M": [
+        "kampanjsida",
+        "motion"
+      ],
+      "SD": [
+        "motion"
+      ],
+      "C": [
+        "partiprogram",
+        "motion",
+        "budgetmotion"
+      ],
+      "V": [
+        "valmanifest",
+        "motion"
+      ],
+      "KD": [
+        "partiprogram",
+        "motion"
+      ],
+      "L": [
+        "partiprogram",
+        "motion"
+      ],
+      "MP": [
+        "partiprogram",
+        "motion"
+      ]
+    },
+    "tunn_partier": {
+      "SD": "9 citat men bara 1 källtyp (riksdagsmotioner). Partiets sjukvårdspolitiska inriktningsprogram är från 2018 (utanför tidsfönstret). Webbplatssidor (sd.se/var-politik/sjukvard/ m.fl.) serveras som PNG-bilder, ej textläsbara. Principprogrammet 2023 returnerade binärt innehåll. Krav på ≥2 källtyper ej uppfyllt."
+    },
+    "noteringar": {
+      "riksdag_riksdag_verbatim": "Citat hämtade via WebFetch från riksdagen.se kan vara AI-parafraserade snarare än ordagrann löptext. Varje redigerare rekommenderas att verifiera kritiska citat direkt mot källdokumentet (data.riksdagen.se/dokument/HDXXXXXX.html) innan analys publiceras.",
+      "manifest_verbatim": "Citat ur lokala PDF-filer (S, V, C, L) är hämtade via Read-verktyget och garanterat verbatima. M-citat är från lokal ögonblicksbild (markdown) — likaså verbatima.",
+      "sd_webbsida": "SD:s sjukvårdssida (sd.se/vad-vi-vill/sjukvard/) returnerade PNG-bild i stället för HTML — partisidans text är ej tillgänglig för textextraktion.",
+      "kd_manifest": "KD saknar publicerat valmanifest 2026. Partiets politik representeras av webbsidorna under kristdemokraterna.se/var-politik/politik-a-till-o/."
+    }
+  }
+}

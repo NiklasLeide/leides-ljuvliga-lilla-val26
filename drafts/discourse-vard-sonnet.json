@@ -1,0 +1,458 @@
+{
+  "omrade": "vard",
+  "baserad_pa": "sources/discourse/citat-vard.json",
+  "partier": {
+    "SD": {
+      "inramning": "SD ramar in problemet inom vård/omsorg som ett kompetens- och styrningsunderskott: äldreomsorgen saknar nationella krav, formell kompetensuppföljning och legitimerad personal i chefsbefattningar. Orsaken är frånvaron av systematisk nationell styrning — inte resursbrist eller ideologisk organisationsform — vilket leder till att äldres värdighet och säkerhet inte kan garanteras. Notat: källbasen är tunn (enbart riksdagsmotioner, en källtyp); diskursiv profil kan vara ofullständig.",
+      "nyckelbegrepp": [
+        {
+          "term": "professionalisering",
+          "innebord": "Höjd formell kompetens inom äldreomsorgen genom nationella krav på utbildning och legitimation, analogt med barnomsorgens historiska professionalisering",
+          "underforstadd_premiss": "Äldreomsorgen befinner sig i ett outvecklat tillstånd som kan botas med standardisering och formella kvalifikationskrav"
+        },
+        {
+          "term": "vaerdighet",
+          "innebord": "Äldres rättigheter förstådda som mänskliga rättigheter — skyddsvärda och kränkningskänsliga",
+          "underforstadd_premiss": "Det nuvarande systemet blundar för kränkningar, vilket kräver extern tillsyn och ett nationellt äldreombudsman-uppdrag"
+        },
+        {
+          "term": "nationell styrning",
+          "innebord": "Central statlig kontroll och kompetensregistrering som förutsättning för enhetlig kvalitet i äldreomsorgen",
+          "underforstadd_premiss": "Lokal och kommunal förvaltning är otillräcklig utan nationell överblick och kravreglering"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Historisk jämförelse som reformmotiv",
+          "exempel": "Äldreomsorgen har, precis som barnomsorgen en gång hade, ett enormt behov av en genomgripande reform",
+          "kalla": "Värdighet för äldre och professionalisering av äldreomsorgen (motion 2025/26:3049)"
+        },
+        {
+          "strategi": "Kvantifiering av kompetensbrist",
+          "exempel": "Bara ungefär fem procent av personalen inom äldreomsorgen har idag en sjuksköterskeutbildning.",
+          "kalla": "Värdighet för äldre och professionalisering av äldreomsorgen (motion 2025/26:3049)"
+        },
+        {
+          "strategi": "Centraliseringslösning som effektivitetsargument",
+          "exempel": "Ett centralt register ökar möjligheten att på ett enkelt och snabbt sätt få en samlad bild av kompetensen inom hela äldreomsorgen i hela landet.",
+          "kalla": "Personalregister för äldreomsorgen (motion 2025/26:2374)"
+        }
+      ],
+      "galtan_kongruens": "SD är extremt TAN (8,8/2026). Materialet speglar ett korporativistiskt styrningsideal: nationella register, legitimationskrav, auktoritetshierarkier i vården — typiska TAN-markörer. Materialet innehåller ingen etnisk eller kulturell inramning av vårdproblem, men det nationella kontrollfokuset är kongruent med SD:s övergripande position.",
+      "kontrast_med": "Fokus på kompetensstruktur och nationell kontroll skiljer SD från S (systemkritik mot regeringen) och V (marknadskritik). Till skillnad från KD kopplar SD inte statlig styrning till jämlik finansiering."
+    },
+    "M": {
+      "inramning": "M ramar in frågan om vård och omsorg som ett hot mot 'valfriheten' och en fråga om äldres förtjänta livskvalitet. Problemet definieras i två register: politiska aktörers nedmontering av fristående aktörers villkor, och det faktum att äldre — som byggt landet — inte garanteras tillräcklig 'guldkant' i tillvaron. Orsaken är ojämlika villkor mellan offentliga och privata utförare.",
+      "nyckelbegrepp": [
+        {
+          "term": "valfrihet",
+          "innebord": "Rätten att välja utförare inom vård och omsorg, förstådd som ett värde i sig och ett kvalitetsdrivande instrument",
+          "underforstadd_premiss": "Konkurrens mellan utförare är nödvändig för kvalitet; politiska beslut som begränsar privata aktörers villkor skadar medborgarna"
+        },
+        {
+          "term": "guldkant",
+          "innebord": "Livskvalitet och välbefinnande för äldre — framburen som ett moraliskt anspråk kopplat till äldres bidrag till samhällsbygget",
+          "underforstadd_premiss": "Äldre har förtjänat mer än den minimistandard som det offentliga erbjuder"
+        },
+        {
+          "term": "likvaerdighet",
+          "innebord": "Lika villkor för privata och offentliga utförare — principiellt rättviseargument snarare än ren marknadsretorik",
+          "underforstadd_premiss": "Snedvridna villkor drabbar i slutändan brukaren, inte bara utföraren"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Moralisk tacksamhetsskuld",
+          "exempel": "Äldre som har varit med och byggt vårt land ska ha rätt till god och näringsrik mat hela livet.",
+          "kalla": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)"
+        },
+        {
+          "strategi": "Hotbildsinramning mot valfrihet",
+          "exempel": "Vi ser nu tyvärr hur Region Stockholm monterar ner valfriheten på område efter område och försämrar för fristående aktörer inom vården.",
+          "kalla": "Villkor för fristående utförare i välfärden (motion 2025/26:2083)"
+        },
+        {
+          "strategi": "Neutralitetsprincip som rättviseargument",
+          "exempel": "Villkoren för fristående/privata aktörer måste vara likvärdiga med de villkor som offentliga utförare har för att säkerställa likvärdighet och hög kvalitet för den som nyttjar välfärden oavsett vem som driver den.",
+          "kalla": "Villkor för fristående utförare i välfärden (motion 2025/26:2083)"
+        }
+      ],
+      "galtan_kongruens": "M är konsekvent TAN (6,8/2026). Vård-materialet uppvisar en karaktäristisk blandning: valfrihetsretorik är marknads-liberal, men kopplingen av äldres anspråk till deras historiska bidrag ('byggt vårt land') är en TAN-markör. God kongruens med M:s övergripande profil.",
+      "kontrast_med": "M är det enda partiet i materialet som explicit försvarar fristående aktörers ställning och ramar in begränsningen av dem som ett politiskt problem. Där V och S ser privatisering som orsak till problem, ser M begränsning av privata aktörer som problemet."
+    },
+    "KD": {
+      "inramning": "KD ramar in sjukvårdens problem som ett strukturellt styrningsunderskott: ett regionaliserat system skapar ojämlikhet och brist på samordning, framför allt för äldre med komplexa vårdbehov. Orsaken är att kommuner och regioner inte samordnar sina uppdrag och att primärvården underfinansieras. Lösningen är ett statligt huvudmannaansvar — en reform KD drivit under lång tid — som inte reduceras till avprivatisering utan handlar om ansvarssystem.",
+      "nyckelbegrepp": [
+        {
+          "term": "statligt huvudmannaansvar",
+          "innebord": "Statlig organisering av sjukvårdsfinansieringen och styrningen i stället för nuvarande regionmodell, för att skapa jämlik tillgänglighet",
+          "underforstadd_premiss": "Regionernas skiftande prioriteringar är en strukturell orsak till ojämlik vård; likformig statlig styrning är en förutsättning för jämlikhet"
+        },
+        {
+          "term": "vaerdighet",
+          "innebord": "Äldres rätt till värdigt bemötande, valfrihet i omsorgsinsatser och inflytande över sin vardag — oavsett bostadskommun",
+          "underforstadd_premiss": "Nuvarande system garanterar inte värdigheten; kommunalt beroende skapar godtyckliga skillnader"
+        },
+        {
+          "term": "tillgaenglighet",
+          "innebord": "Vård nära patienten, med primärvården som bas och rätt till fast namngiven läkarkontakt",
+          "underforstadd_premiss": "Tillgänglighet är en rättighet, inte en service som varierar med geografi eller resurser"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Historiskt ägandeargument",
+          "exempel": "Kristdemokraterna driver sedan lång tid tillbaka frågan om ett statligt huvudmannaansvar för sjukvården, för att skapa en mer jämlik och tillgänglig vård.",
+          "kalla": "Kristdemokraterna — Sjukvård (partipolitisk webbsida)"
+        },
+        {
+          "strategi": "Samordningsargument för kommunal integration",
+          "exempel": "Ett sätt som vi ser som viktigt för att kunna förbättra vården men också samordningen mellan kommuner och regioner är om kommuner får möjlighet att driva eller upphandla vårdcentraler, vilket gör att man kan kombinera äldreomsorg och vårdcentraler och på så sätt förbättra samordningen av vården av framför allt de äldre.",
+          "kalla": "Utökad kommunal vård (motion 2025/26:1039)"
+        },
+        {
+          "strategi": "Paritetsprincip för psykiatri",
+          "exempel": "Psykiatriska tillstånd måste få lika hög prioritet som kroppsliga sjukdomar inom sjukvården.",
+          "kalla": "Kristdemokraterna — Psykiatri (partipolitisk webbsida)"
+        }
+      ],
+      "galtan_kongruens": "KD är stabilt TAN (7,0/2026). Materialet om vård är delvis atypiskt: kravet på statligt huvudmannaansvar och resurstillskott till primärvård är ekonomiskt vänsterlutande, vilket speglar galtan.json:s notering om att KD rört sig ekonomiskt vänsterut. Den centralistiska styrningslogiken är kongruent med TAN; betoningen på värdighet och inflytande bär KD:s socialkonservativa profil.",
+      "kontrast_med": "KD är ensamt om att driva statligt huvudmannaansvar som diskursiv kärna. Till skillnad från M välkomnar KD privata aktörer inom en solidarisk finansieringsram; till skillnad från V motiveras centraliseringen av jämlikhet och samordning, inte av avprivatisering."
+    },
+    "L": {
+      "inramning": "L ramar in sjukvårdsfrågan som en frihetsfråga: sjukdom inskränker individens frihet, varför god och tillgänglig vård är en liberal angelägenhet. Problemet är att sjukvårdsorganisationen inte är tillräckligt patientnära och att äldreomsorgen nöjer sig med en för låg ambitionsnivå. Orsaken lokaliseras inte till marknadsmodellen i sig utan till otillräcklig patientorientering och historiska politiska blockeringar.",
+      "nyckelbegrepp": [
+        {
+          "term": "frihet",
+          "innebord": "Hälsa och tillgång till vård som förutsättning för individuell frihet — ohälsa förstås som ofrihet",
+          "underforstadd_premiss": "Liberal sjukvårdspolitik är ett frihetsprojekt; den som inte är frisk kan inte leva ett fritt liv"
+        },
+        {
+          "term": "fast laekarkontakt",
+          "innebord": "En namngiven husläkare som patienträttighet, driven av L i ett halvsekel och betraktad som patientnärhetens grundelement",
+          "underforstadd_premiss": "Kontinuitet i vården är en förutsättning för god kvalitet; systemet har historiskt sviktat på denna punkt"
+        },
+        {
+          "term": "valfrihet",
+          "innebord": "Äldreomsorgen ska präglas av valfrihet, respekt och människovärde — individens rätt att välja",
+          "underforstadd_premiss": "Åldrande ska inte innebära förlust av autonomi; omsorgen ska anpassas efter individen, inte tvärtom"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Frihetskoppling",
+          "exempel": "Den som inte är frisk tvingas in i ofrihet. Svensk sjukvård behöver bli bättre, för våra patienter, deras anhöriga och alla de yrkesgrupper som arbetar outtröttligt med att hjälpa andra.",
+          "kalla": "Liberalerna — Sjukvård (partipolitisk webbsida)"
+        },
+        {
+          "strategi": "Historiskt pionjäranspråk med motdiskurs mot S",
+          "exempel": "I ett halvsekel har Liberalerna drivit på för att alla ska ha en fast, namngiven husläkare – ofta i strid med Socialdemokraterna.",
+          "kalla": "Liberalerna — Sjukvård (partipolitisk webbsida)"
+        },
+        {
+          "strategi": "Normativ ambitionshöjning via lagstiftningsförslag",
+          "exempel": "Liberalerna vill därför höja ambitionsnivån i äldreomsorgen och modernisera socialtjänstlagen så att äldre inte bara ska bli garanterade skäliga levnadsvillkor, utan goda levnadsvillkor.",
+          "kalla": "Liberalerna — Äldreomsorg (partipolitisk webbsida)"
+        }
+      ],
+      "galtan_kongruens": "L befinner sig i intern spänning (galtan 4,8/2026 med TAN-drift via Tidö). Vård-materialet speglar primärt den äldre GAL-liberala profilen: individens frihet, patientnärhet, autonomi i äldreomsorgen. Materialet uppvisar ingen av de TAN-markörer som präglar L:s bredare position; diskursen om vård är mer kongruent med L:s historiska GAL-position än med dess aktuella.",
+      "kontrast_med": "L:s frihetskoppling är unik i materialet — inget annat parti motiverar sjukvårdspolitiken ur ett frihetsperspektiv på detta sätt. Delar fast-läkare-kravet med KD och S, men med en liberal ideologisk motivering snarare än samordnings- eller personalpolitisk."
+    },
+    "S": {
+      "inramning": "S ramar in vårdens problem som ett systemfel orsakat av tre år med Tidöregeringens politik: minskat statligt stöd har underminerat sjukvårdens kapacitet och personalförsörjning. Orsaken formuleras som en kombination av ideologiska val (privatisering) och politiska prioriteringar (minskade statsbidrag). Lösningen är satsning på personal, primärvårdsreform och stopp för privatiseringar av akutsjukhus.",
+      "nyckelbegrepp": [
+        {
+          "term": "marknadsmisslyckanden",
+          "innebord": "Privatiseringsmodellens konsekvenser beskrivs som systembrister som kräver politisk korrigering, inte som valfrihetens kostnader",
+          "underforstadd_premiss": "Marknadslogik är oförenlig med sjukvårdens behovsstyrda uppdrag; staten måste korrigera"
+        },
+        {
+          "term": "personalbrist",
+          "innebord": "Strukturell brist på personal som den direkta orsaken till kapacitets- och kvalitetsbrister i vård, äldreomsorg, tandvård och socialtjänst",
+          "underforstadd_premiss": "Personalens villkor och antal är det avgörande kvalitetsproblemet; tillräckliga resurser till personal löser kärnan av problemet"
+        },
+        {
+          "term": "naer vard",
+          "innebord": "Primärvårdsreform som omställning till en vård förankrad i patientens närmiljö och med fast läkarkontakt",
+          "underforstadd_premiss": "Omställningen mot primärvård höjer systemeffektivitet och kvalitet och är en pågående reform som bör fullföljas"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Regeringskritik som kausalförklaring",
+          "exempel": "Tre år med Tidöregeringen har inneburit minskat statligt stöd och sämre förutsättningar för hälso- och sjukvården.",
+          "kalla": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3645)"
+        },
+        {
+          "strategi": "Auktoritetsbelägg för krisnarrativ",
+          "exempel": "IVO inledde 2022 en sammanhållen nationell tillsyn av den svenska sjukhusvården och konstaterade i januari 2023 att det rådde brist på disponibla vårdplatser inom akutsjukhusvården i samtliga regioner.",
+          "kalla": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3645)"
+        },
+        {
+          "strategi": "Defensiv antiprivatiseringsretorik",
+          "exempel": "Vi vill stoppa privatiseringar av svenska akutsjukhus och göra upp med de marknadsmisslyckanden som försämrar svensk sjukvård.",
+          "kalla": "Plan för Sverige (Valplattform)"
+        }
+      ],
+      "galtan_kongruens": "S är i glidning mot TAN (4,8/2026) i rättsväsende och migration, men vård-diskursen är mer klassiskt socialdemokratisk. Personalsatsning, antiprivatisering och krisnarrativ är kongruenta med S:s ekonomisk-vänster-position (lrecon 3,5). Diskursiv splittring: vård-diskursen är GAL-kodad relativt S:s övergripande profil.",
+      "kontrast_med": "S är det parti som tydligast kopplar problemdiagnosen till den sittande regeringens politik. Delar antiprivatiseringsposition med V men från defensiv och systeminriktad inramning snarare än klassanalytisk."
+    },
+    "C": {
+      "inramning": "C ramar in vårdens problem som en geografisk ojämlikhetsfråga: landsbygden underfinansieras och saknar tillräcklig kompetensförsörjning medan den nationella primärvårdsomställningen stannar av på grund av brist på allmänläkare. Orsaken är strukturella brister i finansiering och regelverk, inte ideologiska organisationsval. Lösningen är tillgänglig vård i hela landet med stärkt primärvård och rätt till fast läkarkontakt.",
+      "nyckelbegrepp": [
+        {
+          "term": "tillgaenglighet",
+          "innebord": "Geografisk tillgänglighet — tillgång till vård i hela landet, inte enbart i storstäder och regioncentra",
+          "underforstadd_premiss": "Bostadsort ska inte avgöra vårdens kvalitet; glesbygdens underfinansiering är ett strukturproblem, inte ett rimligt marknadsutfall"
+        },
+        {
+          "term": "sjaelvbestaemmande",
+          "innebord": "Patientens rätt till inflytande över vård och omsorg oavsett ålder, hälsostatus eller bostadsort",
+          "underforstadd_premiss": "Vården ska anpassas efter individen, inte omvänt; autonomi är en universell rättighet, inte ett privilegium"
+        },
+        {
+          "term": "naer vard",
+          "innebord": "Primärvård nära patienten som nationell reformambition, med fast läkarkontakt som konkret mål",
+          "underforstadd_premiss": "Omställningen mot primärvård är nödvändig men blockeras av strukturella hinder som måste adresseras"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Geografisk ojämlikhetsram",
+          "exempel": "Vården på landsbygden är underfinansierad, regelverken är snåriga och kompetensförsörjningen bristfällig.",
+          "kalla": "En tillgänglig vård och omsorg i hela landet (motion 2025/26:3179)"
+        },
+        {
+          "strategi": "Reformhinder som systemdiagnos",
+          "exempel": "Med för få allmänläkare stannar omställningen mot primärvården av och patienterna får aldrig tillgång till en egen fast läkarkontakt.",
+          "kalla": "Utgiftsområde 9 Hälsovård, sjukvård och social omsorg (motion 2025/26:3737)"
+        },
+        {
+          "strategi": "Universellt rättsanspråk",
+          "exempel": "Rätten till självbestämmande och inflytande över den vård och omsorg som ges måste gälla såväl unga som gamla, friska som sjuka.",
+          "kalla": "En tillgänglig vård och omsorg i hela landet (motion 2025/26:3179)"
+        }
+      ],
+      "galtan_kongruens": "C är tillbaka mot GAL (3,3/2026) efter Januariavtalets fall. Vård-materialet speglar en GAL-profil: geografisk jämlikhet, universella rättigheter, strukturella förklaringsmodeller utan etnisk eller kulturell kodning. Hög kongruens.",
+      "kontrast_med": "C är det enda partiet som explicit fokuserar på geografisk tillgänglighet och landsbygdens underfinansiering som primär problemdefinition. Självbestämmandebegreppet är mer autonomi- och individfokuserat än SD:s professionskontrollinramning och mer strukturellt än L:s frihetsinramning."
+    },
+    "MP": {
+      "inramning": "MP ramar in sjukvårdens problem som ett systemfel orsakat av underfinansiering och personalbrist, vilket skapar hälsoskillnader längs multipla ojämlikhetsaxlar — ekonomi, bostadsort, kön och bakgrund. Orsaken är strukturell: systemet har inte tilldelats tillräckliga resurser och reformmål för primärvårdsomställningen har inte uppnåtts. Psykisk ohälsa ges en framträdande plats som central folkhälsofråga med preventionsperspektiv.",
+      "nyckelbegrepp": [
+        {
+          "term": "jaamlik haelsa",
+          "innebord": "Hälsa som en strukturell rättighet som inte ska bero på ekonomi, bostadsort, kön eller bakgrund — inte ett konsumentval",
+          "underforstadd_premiss": "Hälsoskillnader är politiskt producerade och politiskt korrigerbara, inte naturgivna eller individuellt betingade"
+        },
+        {
+          "term": "underfinansiering",
+          "innebord": "Otillräckliga resurstillskott till sjukvården som primat systemdiagnos — roten till personalbrist, köer och utbrändhet",
+          "underforstadd_premiss": "Problemen är inte primärt organisatoriska utan resursmässiga; mer pengar är en nödvändig förutsättning"
+        },
+        {
+          "term": "psykisk ohaelsa",
+          "innebord": "Psykisk hälsa som folkhälsofråga och politisk prioritet, med prevention som primärt perspektiv",
+          "underforstadd_premiss": "Psykisk ohälsa kan förebyggas med rätt resurser; suicid är ett politiskt undvikbart utfall, inte ett oundvikligt individuellt öde"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Intersektionell ojämlikhetsinramning",
+          "exempel": "Köer, personalbrist och stora hälsoskillnader som gör att människor får olika vård beroende på ekonomi, bostadsort, kön och bakgrund ska åtgärdas.",
+          "kalla": "Miljöpartiet — Hälso- och sjukvård (partipolitisk webbsida)"
+        },
+        {
+          "strategi": "Internationell jämförelse som krisbelägg",
+          "exempel": "Svenska primärvårdsläkare träffar lägst antal patienter per arbetad timme, men är samtidigt bland de mest stressade jämfört med andra länder.",
+          "kalla": "Förstärkt sjukvård i hela landet (motion 2025/26:3542)"
+        },
+        {
+          "strategi": "Suicid som politiskt prioriteringsargument",
+          "exempel": "Den yttersta konsekvensen av psykisk ohälsa är suicid. Det är en av de vanligaste dödsorsakerna bland personer under 50 år.",
+          "kalla": "Förbättrad psykisk hälsa och stärkt folkhälsa (motion 2025/26:3544)"
+        }
+      ],
+      "galtan_kongruens": "MP är konsekvent GAL (1,4/2026). Materialet speglar fullt ut denna profil: intersektionell jämlikhet, strukturella förklaringsmodeller, prevention som primär strategi, folkhälsoperspektiv. Hög kongruens.",
+      "kontrast_med": "MP är det enda partiet i materialet som explicit och centralt lyfter psykisk ohälsa och suicidprevention. Intersektionell inramning av ojämlikhet (ekonomi, kön, bakgrund, bostadsort sammanvävda) skiljer MP från C (geografisk dimension dominant) och V (klassdimension dominant)."
+    },
+    "V": {
+      "inramning": "V ramar in sjukvårdens problem som en nationell kris orsakad av marknadsstyrning och privatiseringar: när lönsamhet prioriteras före behov uppstår ojämlikhet, köer för dem utan resurser och utbrändhet hos personalen. Orsaken är ideologisk — 'marknadsexperiment' har dränerat vården. Lösningen är statligt finansieringsansvar, avprivatisering och återgång till behovsstyrd vård.",
+      "nyckelbegrepp": [
+        {
+          "term": "behovsstyrning",
+          "innebord": "Vård ska tillhandahållas och prioriteras utifrån patientens medicinska behov, inte ekonomisk bärighet eller utförarens lönsamhetslogik",
+          "underforstadd_premiss": "Det nuvarande systemet avviker från behovsstyrning; en medveten återgång krävs"
+        },
+        {
+          "term": "marknadsstyrning",
+          "innebord": "Kritisk beteckning för det nuvarande systemet där privata aktörers vinstintressen anses styra resursfördelningen på ett sätt som skadar jämlikheten",
+          "underforstadd_premiss": "Marknadslogik och behovsstyrd vård är oförenliga; den ena utesluter den andra"
+        },
+        {
+          "term": "jaamlik vard",
+          "innebord": "Vård oberoende av klass, kön, ursprung och geografisk hemvist — en rättighetsprincip",
+          "underforstadd_premiss": "Den marknadsstyrda modellen producerar systematisk ojämlikhet längs klasslinjer; avprivatisering är en förutsättning för jämlikhet"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Klassanalytisk systemkritik",
+          "exempel": "Den marknadsstyrda vården, där lönsamhet går före behov och där den som har råd kan köpa sig en plats längst fram i kön, ska ersättas med en väl fungerande sjukvård som styrs utifrån patienternas behov.",
+          "kalla": "Valplattform 2026 (preliminär kongressversion)"
+        },
+        {
+          "strategi": "Krisnarrativ med statlig ansvarsram",
+          "exempel": "Sjukvården är väljarnas viktigaste fråga och Sverige har av Tidöregeringen tvingats in i en nationell sjukvårdskris. Väntetiderna till vården är de längsta någonsin, den psykiska ohälsan fortsätter att öka och vårdpersonal går på knäna.",
+          "kalla": "Valplattform 2026 (preliminär kongressversion)"
+        },
+        {
+          "strategi": "Kontraposition mot specifik aktör",
+          "exempel": "Nätläkarföretagens affärsmodell må vara effektiv för deras egna vinster men knappast för det offentligas ekonomi eller för att uppnå en god och jämlik vård efter behov.",
+          "kalla": "En bättre hälso- och sjukvård (motion 2025/26:2777)"
+        }
+      ],
+      "galtan_kongruens": "V är extremt GAL (1,9/2026). Materialet speglar fullt ut denna position: klassanalys, statlig styrning som lösning, antiprivatisering, universell jämlikhet utan etnisk kodning. Hög kongruens.",
+      "kontrast_med": "V driver den mest systematiska antiprivatiseringsdiskursen i materialet. Klassanalysen ('den som har råd kan köpa sig en plats längst fram i kön') är unik för V och saknar direkt motsvarighet hos S, MP eller C."
+    }
+  },
+  "flytande_signifikanter": {
+    "tillgaenglighet": {
+      "beskrivning": "Samtliga partier använder begreppet men fyller det med vitt skilda geografiska, tidsmässiga och strukturella innebörder. Begreppet döljer en djup oenighet om vad tillgänglighetsproblemet egentligen är.",
+      "per_parti": {
+        "SD": {
+          "innebord": "Otydlig i materialet — begreppet dyker inte upp explicit; underförstått handlar det om kompetent personal nära den äldre",
+          "exempel": "Utan ett tydligt system för att följa upp personalens kompetens kan det vara svårt att säkerställa att de som vårdar våra äldre har rätt erfarenhet och kunskap.",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Tillgänglighet via ett system med likvärdiga villkor för alla utförare — valfriheten som mekanism",
+          "exempel": "Villkoren för fristående/privata aktörer måste vara likvärdiga med de villkor som offentliga utförare har för att säkerställa likvärdighet och hög kvalitet för den som nyttjar välfärden oavsett vem som driver den.",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Strukturell tillgänglighet via statligt huvudmannaansvar och primärvård nära patienten",
+          "exempel": "Kristdemokraterna driver sedan lång tid tillbaka frågan om ett statligt huvudmannaansvar för sjukvården, för att skapa en mer jämlik och tillgänglig vård.",
+          "galtan_matchning": "TAN"
+        },
+        "L": {
+          "innebord": "Tidsmässig tillgänglighet — rätt vård i rätt tid för varje patient",
+          "exempel": "Rätt vård i rätt tid för varje patient, det är grunden i liberal sjukvårdspolitik.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "S": {
+          "innebord": "Tillgänglighet via personalförsörjning och primärvårdsomställning — kapacitetsbaserad",
+          "exempel": "En viktig del för att höja kvaliteten och också systemeffektiviteten inom hälso- och sjukvården är genomförandet av primärvårdsreformen omställningen till en god och nära vård.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "C": {
+          "innebord": "Geografisk tillgänglighet — vård i hela landet, med landsbygden som explicit referenspunkt",
+          "exempel": "Vården på landsbygden är underfinansierad, regelverken är snåriga och kompetensförsörjningen bristfällig.",
+          "galtan_matchning": "GAL"
+        },
+        "MP": {
+          "innebord": "Tillgänglighet som frånvaro av hälsoskillnader längs socioekonomiska och demografiska axlar",
+          "exempel": "Miljöpartiet vill främja jämlik hälsa och en tillgänglig vård med kortare köer, starkare primärvård och bättre stöd vid psykisk ohälsa.",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Tillgänglighet som behovsstyrning — vårdens åtkomlighet ska inte bero på ekonomisk förmåga",
+          "exempel": "Den vård du erbjuds ska inte vara beroende av din samhällsklass, ditt kön, ditt ursprung eller din geografiska hemvist.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Begreppet 'tillgänglighet' uppträder som ett skenbart konsensusbegrepp som döljer fundamentala politiska skiljelinjer. TAN-partierna kopplar tillgänglighet till styrningssystem och marknadsmekanismer; mittpartier till kapacitet och tidsperspektiv; GAL-partierna till geografisk, socioekonomisk och demografisk jämlikhet. Begreppets tomma kärna gör det möjligt att framstå som samstämmiga utan att vara det."
+    },
+    "valfrihet": {
+      "beskrivning": "Valfriheten är ett av de mest laddade begreppen i vård-debatten — explicit försvarat av M, KD och L, implicit utmanat av S och V, och tonat ned mot 'självbestämmande' av C. Begreppets innebörd skiljer sig fundamentalt åt beroende på om valfriheten ses som ett marknadsinstrument eller som en individuell autonomirättighet.",
+      "per_parti": {
+        "SD": {
+          "innebord": "Begreppet förekommer inte explicit i materialet; otydlig diskursiv profil på denna punkt",
+          "exempel": "För att underlätta för medborgarna bör däremot en tjänst för digitalt högkostnadsskydd finnas tillgänglig.",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Valfrihet som marknadsmekanism och kvalitetsdrivare — hotad av politiska beslut mot privata aktörer",
+          "exempel": "Vi ser nu tyvärr hur Region Stockholm monterar ner valfriheten på område efter område och försämrar för fristående aktörer inom vården.",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Valfrihet inom en solidarisk finansieringsram — mångfald av utförare som kvalitetsdrivare, inte som ren marknadsprincip",
+          "exempel": "Sverige ska ha en solidariskt finansierad jämlik hälso- och sjukvård. Det är välfärdens kärna. Vården ska kännetecknas av värdighet, kvalitet och tillgänglighet och vi anser att vården och omsorgen behöver många olika utförare - för kvalitetsutveckling och valfrihet - och vi välkomnar privata, kooperativa och ideella vårdgivare.",
+          "galtan_matchning": "TAN"
+        },
+        "L": {
+          "innebord": "Valfrihet som autonomirättighet kopplad till frihetsprincipen — äldre ska inte förlora sin frihet genom att bli gamla",
+          "exempel": "Att bli äldre får aldrig innebära att man förlorar sin frihet. Liberalerna vill se en äldreomsorg präglad av valfrihet, respekt och människovärde.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "S": {
+          "innebord": "Valfrihet som problem — 'marknadsmisslyckanden' underminerar den jämlikhet som valfrihetsmodellen påstod sig leverera",
+          "exempel": "Vi vill stoppa privatiseringar av svenska akutsjukhus och göra upp med de marknadsmisslyckanden som försämrar svensk sjukvård.",
+          "galtan_matchning": "Glidning"
+        },
+        "C": {
+          "innebord": "Begreppet tonas ned; 'självbestämmande' används i stället — autonomi utan marknadslogik",
+          "exempel": "Rätten till självbestämmande och inflytande över den vård och omsorg som ges måste gälla såväl unga som gamla, friska som sjuka.",
+          "galtan_matchning": "GAL"
+        },
+        "MP": {
+          "innebord": "Valfrihet förekommer inte i materialet; jämlik hälsa sätts som övergripande norm",
+          "exempel": "Svensk hälso- och sjukvård är underfinansierad. För Miljöpartiet är tillgång till och vård efter behov en grund för ett jämlikt samhälle.",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Valfrihet som illusion — den som har råd köper sig förtur; begreppet döljer klassojämlikhet",
+          "exempel": "Den marknadsstyrda vården, där lönsamhet går före behov och där den som har råd kan köpa sig en plats längst fram i kön, ska ersättas med en väl fungerande sjukvård som styrs utifrån patienternas behov.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Valfriheten fungerar som det kanske tydligaste ideologiska vattendelare i vård-diskursen. M använder det som marknadsliberal term; KD integrerar det i en solidarisk ram; L kopplar det till frihetsprincipen; S behandlar det som ett misslyckande; C ersätter det med 'självbestämmande' för att undvika marknadskonnotationer; V avvisar det som klassaskymning; MP låter bli att använda det. Begreppet bär alltså med sig hela den ideologiska konflikten om vårdens organisationsform."
+    },
+    "jaamlik_vard": {
+      "beskrivning": "Jämlik vård är ett begrepp som alla eller nästan alla partier ansluter sig till, men innebörden — vad ojämlikheten beror på och hur den ska åtgärdas — varierar radikalt.",
+      "per_parti": {
+        "SD": {
+          "innebord": "Jämlikhet genom lika kompetensstandard och nationell styrning — personalkvalitet som jämlikhetsinstrument",
+          "exempel": "Utan ett tydligt system för att följa upp personalens kompetens kan det vara svårt att säkerställa att de som vårdar våra äldre har rätt erfarenhet och kunskap.",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Jämlikhet genom lika villkor för utförare — organisatorisk neutralitet som jämlikhetsprincip",
+          "exempel": "Villkoren för fristående/privata aktörer måste vara likvärdiga med de villkor som offentliga utförare har för att säkerställa likvärdighet och hög kvalitet för den som nyttjar välfärden oavsett vem som driver den.",
+          "galtan_matchning": "TAN med liberal retorik"
+        },
+        "KD": {
+          "innebord": "Jämlikhet som mål för statligt huvudmannaansvar — central styrning som förutsättning",
+          "exempel": "Kristdemokraterna driver sedan lång tid tillbaka frågan om ett statligt huvudmannaansvar för sjukvården, för att skapa en mer jämlik och tillgänglig vård.",
+          "galtan_matchning": "TAN"
+        },
+        "L": {
+          "innebord": "Jämlikhet via individuell rättighet till fast läkare och god äldrevård — rättighetsbas",
+          "exempel": "Liberalerna vill därför höja ambitionsnivån i äldreomsorgen och modernisera socialtjänstlagen så att äldre inte bara ska bli garanterade skäliga levnadsvillkor, utan goda levnadsvillkor.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "S": {
+          "innebord": "Jämlikhet via personal och kapacitet — resurstillskott och stopp för privatiseringar",
+          "exempel": "Inom såväl hälso- och sjukvård som äldreomsorg, tandvård och socialtjänst råder idag stor brist på personal. Personalbristen leder till kapacitets- och kvalitetsbrister i verksamheterna och till svårigheter att möta medborgarnas förväntningar.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "C": {
+          "innebord": "Jämlikhet som geografisk fråga — hela landet, inte bara tätorter",
+          "exempel": "Hälso- och sjukvården ska arbeta proaktivt och hålla jämlik och hög kvalitet i hela landet.",
+          "galtan_matchning": "GAL"
+        },
+        "MP": {
+          "innebord": "Jämlikhet som intersektionell — frånvaro av skillnader längs ekonomi, bostadsort, kön och bakgrund",
+          "exempel": "Köer, personalbrist och stora hälsoskillnader som gör att människor får olika vård beroende på ekonomi, bostadsort, kön och bakgrund ska åtgärdas.",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Jämlikhet som klassfråga — vård ska inte bero på ekonomisk förmåga; behovsstyrning som enda lösning",
+          "exempel": "Den vård du erbjuds ska inte vara beroende av din samhällsklass, ditt kön, ditt ursprung eller din geografiska hemvist.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Alla åtta partier bekänner sig till 'jämlik vård', men definitionen av vad som skapar ojämlikheten avspeglar hela det politiska spektrumet. TAN-partierna pekar på styrningsmodell (KD), organisatoriska villkor (M) eller kompetensnivåer (SD). Mittpartierna pekar på resurser och rättigheter. GAL-partierna specificerar ojämlikhetens axlar: geografisk (C), intersektionell (MP), klass (V). Begreppets konsensus är artificiell — bakom den döljer sig fundamentalt olika diagnoser och lösningar."
+    }
+  }
+}
