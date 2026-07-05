@@ -54,6 +54,11 @@ done
 for a in demokrati forsvar skola vard; do
   if [[ -d ".loop/$a" ]]; then mv ".loop/$a" ".loop/$a.suite-backup"; fi
 done
+# forsvar-drafts är numera RIKTIGA committade filer — testerna använder
+# dummies i deras ställe och återställer originalen efteråt
+for f in drafts/discourse-forsvar-sonnet.json drafts/discourse-forsvar-opus.json; do
+  if [[ -f "$f" ]]; then cp "$f" "$f.suite-backup"; fi
+done
 cleanup() {
   for f in batch-state.json loop-state-demokrati.json loop-state-forsvar.json loop-state-skola.json loop-state-vard.json; do
     rm -f "$f"
@@ -63,7 +68,10 @@ cleanup() {
     rm -rf ".loop/$a"
     if [[ -d ".loop/$a.suite-backup" ]]; then mv ".loop/$a.suite-backup" ".loop/$a"; fi
   done
-  rm -f drafts/discourse-forsvar-sonnet.json drafts/discourse-forsvar-opus.json
+  for f in drafts/discourse-forsvar-sonnet.json drafts/discourse-forsvar-opus.json; do
+    rm -f "$f"
+    if [[ -f "$f.suite-backup" ]]; then mv "$f.suite-backup" "$f"; fi
+  done
   rm -f .loop/gh-test.log .loop/stub-count
 }
 trap cleanup EXIT
