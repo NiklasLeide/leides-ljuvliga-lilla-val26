@@ -1,18 +1,16 @@
-# Uppgift: citatkatalog för diskursanalys — området ekonomi
+# Uppgift: citatkatalog för diskursanalys — området {{OMRADE_NAMN}}
 
 Du är research-agent för val26.leide.se — en neutral kunskapstjänst. Dagens
-datum: 2026-07-03. Din uppgift: bygg `sources/discourse/citat-ekonomi.json`
+datum: 2026-07-04. Din uppgift: bygg `sources/discourse/citat-{{OMRADE_ID}}.json`
 med 6–12 ordagranna citat per riksdagsparti (S, M, SD, C, V, KD, L, MP) om
-**ekonomisk politik**, som råmaterial för senare diskursanalys.
+**{{OMRADE_NAMN}}**, som råmaterial för senare diskursanalys.
 
 Tidsfönster: valrörelsefokus 2025/26 fram till idag. Äldre material används
 inte. Detta är INSAMLING, inte analys — du tolkar ingenting.
 
 ## Källor i prioritetsordning
 
-1. **Budgetmotioner och ekonomisk-politiska motioner 2025/26** — riksdagen.se
-2. **Riksdagens budget- och partiledardebatter** — protokoll på riksdagen.se
-3. **Partiprogrammens ekonomikapitel** — partiernas webbplatser
+{{KALLVAGLEDNING}}
 4. **Valmanifest enligt `sources/manifest/2026/KATALOG.md`:**
    - S, C, L: slutgiltiga manifest, lokala PDF:er i `sources/manifest/2026/`
    - V: valplattform finns men är PRELIMINÄR — citat härifrån ska markeras
@@ -29,21 +27,21 @@ inte. Detta är INSAMLING, inte analys — du tolkar ingenting.
 
 ## Utdataformat — exakt detta schema
 
-Skriv filen `sources/discourse/citat-ekonomi.json`:
+Skriv filen `sources/discourse/citat-{{OMRADE_ID}}.json`:
 
 ```json
 {
   "schemaVersion": 1,
-  "omrade": "ekonomi",
-  "tidsfonster": "valrörelsefokus 2025/26 till 2026-07-03",
-  "genererad": "2026-07-03",
+  "omrade": "{{OMRADE_ID}}",
+  "tidsfonster": "valrörelsefokus 2025/26 till 2026-07-04",
+  "genererad": "2026-07-04",
   "partier": {
     "S": {
       "kallbas": "ok",
       "citat": [
         {
           "citat": "Ordagrant citat utan ändringar.",
-          "kalltyp": "budgetmotion",
+          "kalltyp": "motion",
           "dokumenttitel": "Motionens/dokumentets titel",
           "url": "https://www.riksdagen.se/...",
           "datum": "2025-10-01",
@@ -75,10 +73,9 @@ Skriv filen `sources/discourse/citat-ekonomi.json`:
   motion eller protokoll). Kampanj- och programmaterial får aldrig vara
   enda källtyp.
 - Sök snippets räcker INTE som källa — hämta alltid dokumentsidan.
-- Citaten ska handla om ekonomisk politik: skatter, jobb, välfärdens
-  finansiering, tillväxt, hushållsekonomi, statsbudget, pensioner.
-- Skapa/ändra ENDAST `sources/discourse/citat-ekonomi.json`. Rör inga andra
-  filer.
+- Citaten ska handla om {{AMNESAVGRANSNING}}.
+- Skapa/ändra ENDAST `sources/discourse/citat-{{OMRADE_ID}}.json`. Rör inga
+  andra filer.
 - Neutral `kontext` — beskriv var citatet yttrades, värdera aldrig.
 
 ## Avslut

@@ -41,6 +41,7 @@ readonly EVAL_TOOLS="Read,WebFetch"                              # WebFetch requ
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 DRY_RUN="${DRY_RUN:-0}"
 export CLAUDE_CODE_SUBAGENT_MODEL="$WORKER_MODEL"
+export CLAUDE_CODE_DISABLE_1M_CONTEXT=1   # standardkontext (Niklas 2026-07-04)
 
 lib() { node scripts/loop-lib.js "$@"; }
 mkdir -p .loop

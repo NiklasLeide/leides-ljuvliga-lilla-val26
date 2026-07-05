@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "omrade": "demokrati",
+  "tidsfonster": "valrörelsefokus 2025/26 till 2026-07-04",
+  "genererad": "2026-07-04",
+  "partier": {
+    "S": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Hotet kommer också inifrån. Vi vill skydda public service och föreningslivet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Socialdemokraternas val 2026 — Försvara den svenska demokratin och vårt sätt att leva",
+          "url": "https://www.socialdemokraterna.se/val-2026/",
+          "datum": "2026-07-03",
+          "kontext": "Från S kampanjsida för val 2026, avsnittet om att försvara demokratin. Sidan publicerad av Socialdemokraterna inför riksdagsvalet 2026."
+        },
+        {
+          "citat": "Vi vill ha krav på ekonomisk redovisning och öppenhet om vilka aktörer som finansierar politiska partier, trollarméer och religiös fundamentalism.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Socialdemokraternas val 2026 — Försvara den svenska demokratin och vårt sätt att leva",
+          "url": "https://www.socialdemokraterna.se/val-2026/",
+          "datum": "2026-07-03",
+          "kontext": "Från S kampanjsida för val 2026, om transparenskrav för partifinansiering och skydd mot utländsk påverkan."
+        },
+        {
+          "citat": "Den oreglerade lobbyismen utgör ett växande problem för svensk demokrati.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Om transparens och ett lobbyregister (motion 2025/26:2751)",
+          "url": "https://data.riksdagen.se/dokument/HD022751.html",
+          "datum": "2025-10-06",
+          "kontext": "Inledande motivering i S-motion av Mathias Tegnér m.fl. om att inrätta ett lobbyregister, ingiven till konstitutionsutskottet."
+        },
+        {
+          "citat": "En stark demokrati bygger på öppenhet och förtroende.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Reglering av hemlig politisk påverkan (motion 2025/26:1950)",
+          "url": "https://data.riksdagen.se/dokument/HD021950.html",
+          "datum": "2025-10-03",
+          "kontext": "Motivering i S-motion av Mattias Vepsä m.fl. om insyn i lobbyism och reglering av hemlig utländsk politisk påverkan."
+        },
+        {
+          "citat": "Demokratin är vår viktigaste gemensamma tillgång.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Demokratisk infrastruktur (motion 2025/26:1946)",
+          "url": "https://data.riksdagen.se/dokument/HD021946.html",
+          "datum": "2025-10-03",
+          "kontext": "Slutsats i S-motion av Mikael Dahlqvist om samhällsservice och demokratisk närvaro i hela landet."
+        },
+        {
+          "citat": "Vi anser att om man är förtroendevald på högre positioner i kommun, region eller riksdag och har i sitt uppdrag att företräda och tjäna det svenska folket samt ha folkets bästa för ögonen är det mer än rimligt att folket då också har kännedom om vilka andra löften och intressen och förpliktelser man företräder och har intressen i.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Anmälningsplikt för medlemskap i ordenssällskap och s.k. hemliga sällskap (motion 2025/26:1874)",
+          "url": "https://data.riksdagen.se/dokument/HD021874.html",
+          "datum": "2025-10-03",
+          "kontext": "Motivering i S-motion av Tomas Kronståhl m.fl. om transparenskrav för förtroendevalda som är medlemmar i ordenssällskap."
+        }
+      ]
+    },
+    "M": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Sveriges ska vara en rättsstat där lagar gäller lika för alla och där människor kan lita på att det offentliga fungerar.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati, rättsstat och förvaltning — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/demokrati-rattsstat-forvaltning/",
+          "datum": "2026-07-03",
+          "kontext": "Inledande tes på M:s officiella politiksida om demokrati, rättsstat och förvaltning."
+        },
+        {
+          "citat": "Införa ett högre skydd för att kunna ändra vår grundlag",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati, rättsstat och förvaltning — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/demokrati-rattsstat-forvaltning/",
+          "datum": "2026-07-03",
+          "kontext": "Listat vallöfte på M:s officiella politiksida om att stärka grundlagsskyddet för demokratin."
+        },
+        {
+          "citat": "Domstolarnas oberoende stärks, i enlighet med proposition som lagts",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati, rättsstat och förvaltning — Moderaternas politik",
+          "url": "https://moderaterna.se/var-politik/demokrati-rattsstat-forvaltning/",
+          "datum": "2026-07-03",
+          "kontext": "Listat genomfört mål på M:s officiella politiksida om domstolarnas oberoende."
+        },
+        {
+          "citat": "Sverige har länge nationellt och internationellt försvarat en stark offentlighetsprincip, som garanterar transparens och demokratiskt ansvarstagande. Men i dag har utvecklingen gått för långt – särskilt när det gäller lagligt offentliggörande av känsliga personuppgifter.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Reformerad offentlighetsprincip – skydd för integriteten i ett modernt samhälle (motion 2025/26:3401)",
+          "url": "https://data.riksdagen.se/dokument/HD023401.html",
+          "datum": "2025-10-06",
+          "kontext": "Inledning till motivering i M-motion av Lars Püss om att reformera offentlighetsprincipen för att skydda känsliga personuppgifter."
+        },
+        {
+          "citat": "Det är viktigt ur ett demokratiskt perspektiv att så många som möjligt ges möjlighet att delta i våra allmänna val – även om de bor utomlands.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Åtgärder för att underlätta för utlandsboende svenskar att rösta (motion 2025/26:3136)",
+          "url": "https://data.riksdagen.se/dokument/HD023136.html",
+          "datum": "2025-10-06",
+          "kontext": "Motivering i M-motion av Lars Beckman om att underlätta för utlandssvenskar att utöva sin rösträtt."
+        },
+        {
+          "citat": "I praktiken innebär femprocentsspärren att väljarnas inflytande ofta begränsas till att bekräfta de listplaceringar som partierna redan bestämt.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stärk personvalet – ta bort spärren för personkryss (motion 2025/26:3254)",
+          "url": "https://data.riksdagen.se/dokument/HD023254.html",
+          "datum": "2025-10-06",
+          "kontext": "Motivering i M-motion av Camilla Brunsberg om att avskaffa femprocentsspärren för personval."
+        }
+      ]
+    },
+    "SD": {
+      "kallbas": "tunn",
+      "tunn_beskrivning": "SD saknar valmanifest 2026 (ingen slutgiltig plattform publicerad per 2026-07-04 — landsdagarna i Örebro nov 2025 sköt plattformen till en valkonferens vars resultat inte publicerats). Principprogrammet från 2023 är utanför tidsfönstret. Partiets webbplatssidor för demokrati/konstitution (sd.se/vad-vi-vill/demokrati, /friheter, /det-fria-samhallet, /demokrati-och-folkstyre) returnerade HTTP 404. Trots ärligt sökande hittades inga partiprogramkällor inom tidsramen — samtliga citat hämtade från riksdagsmotioner (en källtyp).",
+      "citat": [
+        {
+          "citat": "Det finns stora fördelar med att genomföra folkomröstningar på lokal nivå. Människor känner sig delaktiga och ges möjlighet att vara med och påverka frågor som till stor del påverkar deras liv.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Krav på folkomröstning vid förslag om sammanslagning av kommuner och regioner (motion 2025/26:2536)",
+          "url": "https://data.riksdagen.se/dokument/HD022536.html",
+          "datum": "2025-10-06",
+          "kontext": "Motivering i SD-motion av Mattias Eriksson Falk och Roger Hedlund om lokal demokrati och medborgarnas rätt till folkbeslut vid kommunsammanslagning."
+        },
+        {
+          "citat": "Det är ytterst en fråga om att värna den lokala demokratin och medborgarnas inflytande.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Krav på folkomröstning vid förslag om sammanslagning av kommuner och regioner (motion 2025/26:2536)",
+          "url": "https://data.riksdagen.se/dokument/HD022536.html",
+          "datum": "2025-10-06",
+          "kontext": "Avslutande motivering i SD-motion om folkstyre och lokal demokrati vid kommunala förändringar."
+        },
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om att utreda en separation av kommun- och regionval från riksdagsval och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Skilda valdagar (motion 2025/26:3087)",
+          "url": "https://data.riksdagen.se/dokument/HD023087.html",
+          "datum": "2025-10-06",
+          "kontext": "Yrkande i SD-motion av Markus Wiechel om att utreda separata valdagar för att stärka lokalpolitikens synlighet och ansvarsutkrävande."
+        },
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om att minska antalet ledamöter i Sveriges riksdag och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Slimmad och effektiviserad riksdag (motion 2025/26:3066)",
+          "url": "https://data.riksdagen.se/dokument/HD023066.html",
+          "datum": "2025-10-06",
+          "kontext": "Yrkande 1 i SD-motion av Markus Wiechel om att reformera riksdagens storlek och organisation."
+        },
+        {
+          "citat": "Riksdagsstyrelsen bör säkerställa att offentlig statistik också förs i riksdagens utskott och i EU-nämnden",
+          "kalltyp": "motion",
+          "dokumenttitel": "Ökad transparens i utskott och tydliggörande av handlingar (motion 2025/26:3085)",
+          "url": "https://data.riksdagen.se/dokument/HD023085.html",
+          "datum": "2025-10-07",
+          "kontext": "Motivering i SD-motion av Markus Wiechel om transparens och statistik i riksdagens utskottsarbete."
+        },
+        {
+          "citat": "Religion är en privatsak, men när religion blir politik så är den inte längre en privatsak, då angår det alla.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Religionsfrihet (motion 2025/26:3082)",
+          "url": "https://data.riksdagen.se/dokument/HD023082.html",
+          "datum": "2025-10-06",
+          "kontext": "Kärnargument i SD-motion av Markus Wiechel m.fl. om att utreda hur religionsfriheten kan innefatta friheten från religion. Behållet i demokrati-katalogen med motivering (Niklas 2026-07-04): religionsfrihetens gränser och religionens plats i det offentliga är en konstitutionell fråga (RF 2 kap.) — citatet belyser SD:s gränsdragning religion/politik inom demokrati/konstitution-området."
+        }
+      ]
+    },
+    "C": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Centerpartiet vill stärka den liberala demokratin, individens rättigheter och människors egenmakt i vardagen.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Sverige kan mer. Valmanifest 2026 — Frihet och framtidstro",
+          "url": "https://val2026.centerpartiet.se/",
+          "datum": "2026-06-16",
+          "kontext": "Övergripande demokratiposition i C:s valmanifest 2026, avsnittet Frihet och framtidstro. Valmanifestet presenterades 2026-06-16."
+        },
+        {
+          "citat": "Den svenska demokratin har fyllt hundra år och det är tydligt att den liberala demokratin är en av mänsklighetens främsta innovationer.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Utgiftsområde 1 Rikets styrelse (motion 2025/26:3604)",
+          "url": "https://data.riksdagen.se/dokument/HD023604.html",
+          "datum": "2025-10-07",
+          "kontext": "Inledande motivering i C:s budgetmotion av Malin Björk m.fl. om rikets styrelse, om demokratins hundraåriga historia."
+        },
+        {
+          "citat": "Folkviljan ska kanaliseras genom en effektiv förvaltning inom såväl Regeringskansliet som riksdagen, med respekt för olika minoriteter och rättssäkerheten, och granskas av oberoende medier.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Utgiftsområde 1 Rikets styrelse (motion 2025/26:3604)",
+          "url": "https://data.riksdagen.se/dokument/HD023604.html",
+          "datum": "2025-10-07",
+          "kontext": "C:s budgetmotion om hur demokratins folkvilja ska omsättas i fungerande och granskade institutioner."
+        },
+        {
+          "citat": "Medborgerliga och politiska rättigheter skyddar individen mot statligt förtryck och begränsar majoritetens makt över den enskilda människan.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Utgiftsområde 1 Rikets styrelse (motion 2025/26:3604)",
+          "url": "https://data.riksdagen.se/dokument/HD023604.html",
+          "datum": "2025-10-07",
+          "kontext": "C:s motivering om individens konstitutionella rättigheter som skydd mot maktkoncentration."
+        },
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om att regeringen bör ta fram en strategi för hur demokrati- och valinformation ska finnas tillgänglig och spridas på lättläst svenska och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Lättläst demokratisatsning (motion 2025/26:2826)",
+          "url": "https://data.riksdagen.se/dokument/HD022826.html",
+          "datum": "2025-10-06",
+          "kontext": "Yrkande i C-motion av Ulrika Heie om att demokrati- och valinformation ska finnas på lättläst svenska inför valet 2026."
+        },
+        {
+          "citat": "en fjärdedel av Sveriges vuxna befolkning har svårt att ta till sig skriftlig information",
+          "kalltyp": "motion",
+          "dokumenttitel": "Lättläst demokratisatsning (motion 2025/26:2826)",
+          "url": "https://data.riksdagen.se/dokument/HD022826.html",
+          "datum": "2025-10-06",
+          "kontext": "Faktabas i C-motion om tillgänglig demokratiinformation; gäller bl.a. personer med utländsk bakgrund, dyslexi och funktionsnedsättning."
+        }
+      ]
+    },
+    "V": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Vänsterpartiet värnar demokratiska grundvärden som rättssäkerhet och skyddet för den personliga integriteten.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Integritet och statens maktutövning — Vänsterpartiets politik",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/",
+          "datum": "2026-07-03",
+          "kontext": "Inledning på V:s partiprogramsida om integritet och statsmakt, hämtad 2026-07-03."
+        },
+        {
+          "citat": "En av de viktigaste principerna i en rättsstat är att medborgarna ska ha ett effektivt skydd mot statens maktutövning. Alla människor ska ha rätt till en rättssäker behandling vid till exempel rättegångar. Alla åtgärder som staten kan vidta mot invånarna ska vara proportionella.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Integritet och statens maktutövning — Vänsterpartiets politik",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/",
+          "datum": "2026-07-03",
+          "kontext": "V:s definition av rättsstatsprincipen och proportionalitetskravet på statlig maktutövning."
+        },
+        {
+          "citat": "Vi ser med stor oro på den utveckling som skett sedan i början av 2000-talet och som idag lett till att vi börjar närma oss ett övervakningssamhälle. Frågor om personlig integritet och mänskliga rättigheter får gång på gång stå tillbaka.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Integritet och statens maktutövning — Vänsterpartiets politik",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/",
+          "datum": "2026-07-03",
+          "kontext": "V:s varning mot ett framväxande övervakningssamhälle och urholkning av medborgerliga rättigheter."
+        },
+        {
+          "citat": "Public service saknar dock ett effektivt grundlagsskydd.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Konstitutionella frågor (motion 2025/26:2790)",
+          "url": "https://data.riksdagen.se/dokument/HD022790.html",
+          "datum": "2025-10-06",
+          "kontext": "Nyckelargument i V-motion av Jessica Wetterling m.fl. för att grundlagsskydda public service."
+        },
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om att regeringen bör tillsätta en utredning om det svenska statsskicket i syfte att införa republik och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Konstitutionella frågor (motion 2025/26:2790)",
+          "url": "https://data.riksdagen.se/dokument/HD022790.html",
+          "datum": "2025-10-06",
+          "kontext": "Yrkande 1 i V-motion av Jessica Wetterling m.fl. om att utreda övergång till republik — konstitutionell systemfråga."
+        },
+        {
+          "citat": "Vi har även hittills sagt nej till EU-kommissionens och Europarådets förslag om chat control. Det kommer vi att fortsätta att göra så länge förslagen innebär massövervakning, inskränkningar av den personliga integriteten eller att man hindrar journalisters viktiga arbete.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Integritet och statens maktutövning — Vänsterpartiets politik",
+          "url": "https://www.vansterpartiet.se/var-politik/politik-a-o/integritet-och-statens-maktutovning/",
+          "datum": "2026-07-03",
+          "kontext": "V:s ståndpunkt om chat control — yttrandefrihet och pressfrihet som gräns för statlig och EU-övervaknings­befogenhet."
+        }
+      ]
+    },
+    "KD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Båda dessa lagar värnar det öppna och fria samtalet vilket är ett grundläggande fundament för en fungerande demokrati.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)",
+          "url": "https://data.riksdagen.se/dokument/HD021468.html",
+          "datum": "2025-10-02",
+          "kontext": "KD-motionens motivering om att yttrandefrihetsgrundlagen och tryckfrihetsförordningen ('dessa lagar') värnar det demokratiska samtalet — principuttalande om demokratins fundament."
+        },
+        {
+          "citat": "Samtidigt som vi ser det som nu sker så måste vi också värna de rättigheter som vi har i yttrandefrihetsgrundlagen samt tryckfrihetsförordningen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)",
+          "url": "https://data.riksdagen.se/dokument/HD021468.html",
+          "datum": "2025-10-02",
+          "kontext": "KD:s principiella ståndpunkt i motionens motivering: yttrandefrihetsgrundlagen och tryckfrihetsförordningen ska värnas trots behov av uppdaterad lagstiftning."
+        },
+        {
+          "citat": "Kristdemokraterna ska verka för att värna public service, som ska finnas tillgängligt brett i de kanaler som människor använder.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Public service — Kristdemokraternas politik",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/public-service",
+          "datum": "2026-07-03",
+          "kontext": "KD:s kärnposition om public service på partiets officiella politiksida, hämtad 2026-07-03."
+        },
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om att se över gränssnittet mellan de lagar som hanterar yttrandefrihet samt den enskildes skydd mot förtal, hets mot folkgrupp samt författningsskydd och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)",
+          "url": "https://data.riksdagen.se/dokument/HD021468.html",
+          "datum": "2025-10-02",
+          "kontext": "Yrkande i KD-motion av Magnus Jacobsson om balansen mellan yttrandefrihet och skydd mot hat och förtal."
+        },
+        {
+          "citat": "I exempelvis Tyskland värnar man också yttrande- och tryckfriheten samtidigt har man en lagstiftning där man via författningsdomstolen kan agera gentemot rörelser som anses vara farliga för själva författningen/staten.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)",
+          "url": "https://data.riksdagen.se/dokument/HD021468.html",
+          "datum": "2025-10-02",
+          "kontext": "KD:s motivering med hänvisning till det tyska systemet: ett stärkt författningsskydd kan förenas med yttrandefrihet — skilda argument för det tyska systemet jämfört med KD[5]."
+        },
+        {
+          "citat": "Vi borde dock se över våra lagar för att stärka skyddet för den enskilde avseende hot och hat samt stärka skyddet av våra egna demokratiska intuitioner likt det man har i Tyskland.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Översyn av gränsen för yttrandefriheten, hets mot folkgrupp och författningsskydd (motion 2025/26:1468)",
+          "url": "https://data.riksdagen.se/dokument/HD021468.html",
+          "datum": "2025-10-02",
+          "kontext": "KD:s argument för stärkt skydd för demokratiska institutioner, med hänvisning till det tyska systemet. Källan skriver 'intuitioner' [sic] — ordagrant återgivet."
+        }
+      ]
+    },
+    "L": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Liberalismen föddes ur arbetet för demokrati och frihet världen över. Vi ger oss inte förrän den sista diktaturen har fallit. Skyddet för demokratin i EU och Sverige ska stärkas.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati — Liberalernas politik",
+          "url": "https://liberalerna.se/politik/demokrati/",
+          "datum": "2026-07-03",
+          "kontext": "Inledande tes på L:s officiella demokratipolitiksida, hämtad 2026-07-03."
+        },
+        {
+          "citat": "De senaste årtiondena har demokratin pressats tillbaka, både globalt och i Europa. Även om demokratin fungerar bra i Sverige är den inte osårbar. I ett krisläge skulle den svenska demokratin snabbt kunna avvecklas.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati — Liberalernas politik",
+          "url": "https://liberalerna.se/politik/demokrati/",
+          "datum": "2026-07-03",
+          "kontext": "L:s bedömning av demokratins globala tillbakagång och sårbarhet även i Sverige."
+        },
+        {
+          "citat": "Men i dag är grundlagen så svag att det skulle gå fort att avskaffa Sveriges demokrati i ett krisläge. Liberalerna vill stärka grundlagsskyddet för demokratin som system.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati — Liberalernas politik",
+          "url": "https://liberalerna.se/politik/demokrati/",
+          "datum": "2026-07-03",
+          "kontext": "L:s tes om grundlagsskyddets otillräcklighet och kravet på stärkt konstitutionellt skydd."
+        },
+        {
+          "citat": "Demokrati är det enda system som kan förenas med mänskliga fri- och rättigheter. Sveriges utrikespolitik ska arbeta aktivt för demokratisering och vi ska ge ökat stöd till demokratiförkämpar i ofria länder.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati — Liberalernas politik",
+          "url": "https://liberalerna.se/politik/demokrati/",
+          "datum": "2026-07-03",
+          "kontext": "L:s tes om demokrati och mänskliga rättigheter som oupplösligt sammankopplade, samt utrikespolitisk inriktning."
+        },
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om behovet av att inrätta en stark författningsdomstol och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Inrättande av en stark författningsdomstol och oberoende domstolsråd (motion 2025/26:3143)",
+          "url": "https://data.riksdagen.se/dokument/HD023143.html",
+          "datum": "2025-10-06",
+          "kontext": "Yrkande 1 i L-motion av Malin Danielsson om att inrätta en stark författningsdomstol modellerad efter den tyska."
+        },
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om behovet av att inrätta ett helt oberoende domstolsråd och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Inrättande av en stark författningsdomstol och oberoende domstolsråd (motion 2025/26:3143)",
+          "url": "https://data.riksdagen.se/dokument/HD023143.html",
+          "datum": "2025-10-06",
+          "kontext": "Yrkande 2 i L-motion av Malin Danielsson om att inrätta ett domstolsråd för att frigöra domstolarna från regeringens inflytande."
+        },
+        {
+          "citat": "Det har varit en lång vandring från den tid som med rätta har kallats 'det för­fattningslösa halvseklet', då vår konstitution i stort sett både var irrelevant och tämligen innehållslös.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Inrättande av en stark författningsdomstol och oberoende domstolsråd (motion 2025/26:3143)",
+          "url": "https://data.riksdagen.se/dokument/HD023143.html",
+          "datum": "2025-10-06",
+          "kontext": "Historisk analys i L-motionens motivering om Sveriges konstitutionella historia och bristen på grundlagsskydd."
+        }
+      ]
+    },
+    "MP": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Riksdagen ställer sig bakom det som anförs i motionen om att säkerställa oberoendet och finansieringen för Institutet för mänskliga rättigheter och tillkännager detta för regeringen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Sveriges arbete med mänskliga rättigheter (motion 2025/26:3527)",
+          "url": "https://data.riksdagen.se/dokument/HD023527.html",
+          "datum": "2025-10-07",
+          "kontext": "Yrkande 7 i MP-motion av Ulrika Westerlund m.fl. om att säkra MR-institutets finansiering och oberoende."
+        },
+        {
+          "citat": "Med hänsyn till institutets viktiga uppgift att övervaka hur bland annat regeringen och statliga myndigheter efterlever mänskliga rättigheter, bör institutet garanteras en stark ställning som inte kan rubbas lättvindigt.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Sveriges arbete med mänskliga rättigheter (motion 2025/26:3527)",
+          "url": "https://data.riksdagen.se/dokument/HD023527.html",
+          "datum": "2025-10-07",
+          "kontext": "MP:s motivering för att grundlagsreglera Institutet för mänskliga rättigheter och säkra dess oberoende."
+        },
+        {
+          "citat": "Stater som tar arbetet med mänskliga rättigheter på allvar, som Sverige, borde ändå ta rekommendationerna på allvar, särskilt när de sammanfaller med det som det egna civilsamhället kräver.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Sveriges arbete med mänskliga rättigheter (motion 2025/26:3527)",
+          "url": "https://data.riksdagen.se/dokument/HD023527.html",
+          "datum": "2025-10-07",
+          "kontext": "MP:s argumentation för att Sverige ska följa FN:s UPR-rekommendationer i linje med civilsamhällets krav."
+        },
+        {
+          "citat": "En grundlagsreglering skulle säkerställa institutets långsiktiga existens och stärka dess möjlighet att behålla en oberoende och stark ställning över tid.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Sveriges arbete med mänskliga rättigheter (motion 2025/26:3527)",
+          "url": "https://data.riksdagen.se/dokument/HD023527.html",
+          "datum": "2025-10-07",
+          "kontext": "MP:s förslag om att grundlagsreglera MR-institutets uppgifter och ledningsform för att säkra långsiktigt oberoende."
+        },
+        {
+          "citat": "Demokratin behöver stabila spelregler som inte kan ändras snabbt eller lättvindigt",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati och mänskliga rättigheter — Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/demokrati-och-mr/",
+          "datum": "2026-07-03",
+          "kontext": "MP:s kärntes om konstitutionell stabilitet på partiets officiella demokratipolitiksida."
+        },
+        {
+          "citat": "Alla människor ska ha rätt att uttrycka sig, söka kunskap, organisera sig, demonstrera och på andra sätt delta i det demokratiska samtalet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Demokrati och mänskliga rättigheter — Miljöpartiets politik",
+          "url": "https://www.mp.se/politik/demokrati-och-mr/",
+          "datum": "2026-07-03",
+          "kontext": "MP:s tes om grundläggande fri- och rättigheter på partiets officiella demokratipolitiksida."
+        }
+      ]
+    }
+  }
+}

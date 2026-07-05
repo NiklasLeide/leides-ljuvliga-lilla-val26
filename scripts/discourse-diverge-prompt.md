@@ -1,9 +1,9 @@
-# Uppgift: divergensrapport — två oberoende diskursutkast, området ekonomi
+# Uppgift: divergensrapport — två oberoende diskursutkast, området {{OMRADE_NAMN}}
 
 Två modeller har OBEROENDE av varandra skrivit varsitt diskursutkast för
-området ekonomi utifrån samma citatkatalog. Din uppgift: jämför dem parti
-för parti och analysdel för analysdel, och producera en rapport som skiljer
-det samstämmiga från det som kräver mänskligt beslut.
+området {{OMRADE_NAMN}} utifrån samma citatkatalog. Din uppgift: jämför dem
+parti för parti och analysdel för analysdel, och producera en rapport som
+skiljer det samstämmiga från det som kräver mänskligt beslut.
 
 Du kan tillhöra samma modellfamilj som ett av utkasten. Behandla båda
 utkasten exakt likvärdigt — ingen självpreferens, inget antagande om att
@@ -11,8 +11,8 @@ något av dem är bättre.
 
 ## Underlag
 
-1. `drafts/discourse-ekonomi-sonnet.json` — Utkast 1
-2. `drafts/discourse-ekonomi-opus.json` — Utkast 2
+1. `drafts/discourse-{{OMRADE_ID}}-sonnet.json` — Utkast 1
+2. `drafts/discourse-{{OMRADE_ID}}-opus.json` — Utkast 2
 3. `DISCOURSE_AGENT.md` — terminologi och kvalitetskrav (referens)
 
 ## Klassificering
@@ -40,7 +40,7 @@ Svaret ska vara rapportens fullständiga innehåll, inget annat. Exakt denna
 struktur:
 
 ```
-# Divergensrapport: diskursutkast ekonomi (Utkast 1 = sonnet, Utkast 2 = opus)
+# Divergensrapport: diskursutkast {{OMRADE_ID}} (Utkast 1 = sonnet, Utkast 2 = opus)
 
 ## Statistik
 

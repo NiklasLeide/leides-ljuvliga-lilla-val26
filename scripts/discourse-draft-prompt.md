@@ -1,4 +1,4 @@
-# Uppgift: diskursutkast för området ekonomi — alla 8 riksdagspartier
+# Uppgift: diskursutkast för området {{OMRADE_NAMN}} — alla 8 riksdagspartier
 
 Du gör en diskursanalys för val26.leide.se. Ditt utkast granskas senare mot ett
 oberoende utkast från en annan modell — arbeta självständigt och följ ENDAST
@@ -6,24 +6,25 @@ underlaget nedan.
 
 ## Underlag (läs allt innan du börjar)
 
-1. `sources/discourse/citat-ekonomi.json` — citatkatalogen. **Din ENDA
+1. `sources/discourse/citat-{{OMRADE_ID}}.json` — citatkatalogen. **Din ENDA
    empiriska källa.** Varje observation, exempel och slutsats ska kunna spåras
    till citat i katalogen. Använd INTE egen minneskunskap om partierna, inga
    egna citat, ingen websökning.
 2. `DISCOURSE_AGENT.md` — metodiken (Entman, Laclau/Mouffe, Wodak),
-   kvalitetskriterierna och stilreglerna. Följ dem fullt ut.
+   kvalitetskriterierna och stilreglerna. Följ dem fullt ut — inklusive
+   citatteckensregeln: partiernas egna värdeladdade begrepp citattecknas
+   alltid i beskrivande text.
 3. `data/discourse.json` — läs 2–3 befintliga per_omrade-poster som
    STILREFERENS (ton, densitet, längd). Kopiera inget innehåll.
 4. `data/galtan.json` — partiernas GAL-TAN-positioner, som grund för
-   kongruensbedömningen (matchar den ekonomiska diskursen partiets position?).
+   kongruensbedömningen (matchar diskursen i området partiets position?).
 
 ## Uppgift
 
 Skriv ett fullständigt utkast per parti (SD, M, KD, L, S, C, MP, V) för
-området **ekonomi**, plus flytande signifikanter för området.
+området **{{OMRADE_NAMN}}**, plus flytande signifikanter för området.
 
-**Signifikant-kandidater att pröva mot citaten:** "ansvar" (ekonomisk
-kontext), "plånboken", "hårt arbetande", "vanligt folk", "arbetslinjen".
+**Signifikant-kandidater att pröva mot citaten:** {{SIGNIFIKANT_KANDIDATER}}.
 Behåll ENDAST de som faktiskt bär i citatmaterialet (flera partier använder
 begreppet, med olika innehåll). Föreslå egna kandidater om citaten visar dem.
 1–3 signifikanter totalt.
@@ -46,8 +47,8 @@ markdown-staket:
 
 ```json
 {
-  "omrade": "ekonomi",
-  "baserad_pa": "sources/discourse/citat-ekonomi.json",
+  "omrade": "{{OMRADE_ID}}",
+  "baserad_pa": "sources/discourse/citat-{{OMRADE_ID}}.json",
   "partier": {
     "SD": {
       "inramning": "…",

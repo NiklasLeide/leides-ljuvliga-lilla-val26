@@ -25,3 +25,6 @@ pr-body.md
 # discourse-quote-loop runtime state (scripts/discourse-quote-loop.sh)
 loop-state-discourse.json
 .loop-state-discourse.test-backup
+# diskursbatch: per-område- och batch-state (scripts/run-discourse-batch.sh)
+loop-state-*.json
+batch-state.json

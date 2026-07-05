@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "omrade": "skola",
+  "tidsfonster": "valrörelsefokus 2025/26 till 2026-07-04",
+  "genererad": "2026-07-04",
+  "partier": {
+    "S": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Lärare ska ha tid för alla barn som räcker upp handen. Och för de elever som inte ber om hjälp, men verkligen behöver det. Svensk skola ska inte ha överfulla och stökiga klassrum. Därför vill vi satsa på fler lärare och mindre klasser. Särskilt för de yngsta eleverna. Och läraren ska vara klassrummets självklara chef.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Plan för Sverige (Valplattform 2026)",
+          "url": "https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+          "lokal_fil": "sources/manifest/2026/S-valmanifest-2026.pdf",
+          "datum": "2026-02-05",
+          "kontext": "Under rubriken 'Mindre klasser i skolan' på s. 3, presenterad av Magdalena Andersson m.fl. vid presskonferens 2026-02-05."
+        },
+        {
+          "citat": "Dina skattepengar ska stanna i skolan. De ska gå till fler lärare, bättre utbildning och bra skolmat. Inte till bolag som skär ner för att plocka ut vinst. Skolor ska inte kunna stängas för att ägarna tycker att barnen är en dålig affär. Vi vill förbjuda religiösa friskolor.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Plan för Sverige (Valplattform 2026)",
+          "url": "https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+          "lokal_fil": "sources/manifest/2026/S-valmanifest-2026.pdf",
+          "datum": "2026-02-05",
+          "kontext": "Under rubriken 'Vinstförbud i skola och förskola' på s. 3 i valplattformen."
+        },
+        {
+          "citat": "Svensk skola är idag världsunik med att tillåta obegränsade vinstuttag ur den offentligt finansierade skolan.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3810)",
+          "url": "https://data.riksdagen.se/dokument/HD023810.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Anders Ygeman m.fl. (S) till utbildningsutskottet, om vinstuttag i skolan."
+        },
+        {
+          "citat": "Lärarna är nyckeln för att stärka undervisningens kvalitet och för att eleverna ska lära sig mer.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3810)",
+          "url": "https://data.riksdagen.se/dokument/HD023810.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Anders Ygeman m.fl. (S), om lärarnas roll för skolans kvalitet."
+        },
+        {
+          "citat": "Propositionen tar fasta på ett reellt problem i svensk skola: att alltför mycket av lärarnas tid under lång tid har trängts undan av dokumentation, administration och otydlighet om kärnuppdraget.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:196 Tid för undervisningsuppdraget (motion 2025/26:4023)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/tid-for-undervisningsuppdraget_hd024023/",
+          "datum": "2026-04-01",
+          "kontext": "Följdmotion av Anders Ygeman m.fl. (S) till prop. om lärarnas tjänstetid, lämnad till utbildningsutskottet."
+        },
+        {
+          "citat": "Det finns också en tydlig risk att nationella prov får en så styrande roll att undervisningen anpassas efter proven.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:197 Ett likvärdigt betygssystem (motion 2025/26:4025)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-likvardighetsbetygssystem_hd024025/",
+          "datum": "2026-04-01",
+          "kontext": "Följdmotion av Anders Ygeman m.fl. (S) om riskerna med nationella provens styrande roll, till utbildningsutskottet."
+        },
+        {
+          "citat": "Betygsinflationen tilltog, och tilliten till betygssystemet urholkades.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:197 Ett likvärdigt betygssystem (motion 2025/26:4025)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-likvardighetsbetygssystem_hd024025/",
+          "datum": "2026-04-01",
+          "kontext": "Följdmotion av Anders Ygeman m.fl. (S) om bristerna i det nuvarande betygssystemet."
+        },
+        {
+          "citat": "Skolan ska präglas av lugn och ro, vara mobilfri och ha nolltolerans mot trakasserier, kränkande behandling och mobbning.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:198 Bättre förutsättningar för trygghet och studiero (motion 2025/26:4018)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/battre-forutsattningar-for-trygghet-och_hd024018/",
+          "datum": "2026-04-01",
+          "kontext": "Följdmotion av Anders Ygeman m.fl. (S) om studiero och ordning i skolan, till utbildningsutskottet."
+        }
+      ]
+    },
+    "M": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Alla barn har rätt till en skola och utbildning som ger studiero och kunskaper.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Moderaternas skolpolitik (partiets webbsida)",
+          "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från Moderaternas officiella skolpolitiksida, inledande princip om elevers rätt till kunskap och studiero."
+        },
+        {
+          "citat": "35 000 utbildade lärare arbetar inte inom skolan. Samtidigt är nästan 30 procent av lärarna i grundskolan obehöriga.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Moderaternas skolpolitik (partiets webbsida)",
+          "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från Moderaternas skolpolitiksida, problemformulering om lärarbrist och obehöriga lärare."
+        },
+        {
+          "citat": "Inget annat OECD- eller EU-land har lika stora skillnader som Sverige i läsförståelse mellan de elever som alltid pratar svenska hemma och de som sällan gör det.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Moderaternas skolpolitik (partiets webbsida)",
+          "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från Moderaternas skolpolitiksida, om likvärdighet och läsförmåga som central skolpolitisk utmaning."
+        },
+        {
+          "citat": "Införa nya läroplaner med ett tydligt kunskapsfokus från höstterminen 2028.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Moderaternas skolpolitik (partiets webbsida)",
+          "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från Moderaternas skolpolitiksida, konkret löfte om läroplanernas inriktning och tidplan."
+        },
+        {
+          "citat": "Införa ett nytt betygssystem och nya betygskriterier som ger rättvisande betyg i hela landet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Moderaternas skolpolitik (partiets webbsida)",
+          "url": "https://moderaterna.se/var-politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från Moderaternas skolpolitiksida, om det nya betygssystemets syfte."
+        },
+        {
+          "citat": "Åtskilliga lärare har dålig kunskap om dyslexi",
+          "kalltyp": "motion",
+          "dokumenttitel": "Stöd i skolans undervisning av barn med dyslexi (motion 2025/26:1683)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/stod-i-skolans-undervisning-av-barn-med_hd021683/",
+          "datum": "2025-10-03",
+          "kontext": "Motion av Margareta Cederfelt (M) till utbildningsutskottet om bristande lärarkunskap om dyslexi och stödinsatser i skolan."
+        }
+      ]
+    },
+    "SD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Sverige behöver ett rejält omtag och lärare måste få lov att styra i klassrummet igen.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Sverigedemokraternas utbildningspolitik (partiets webbsida)",
+          "url": "https://www.sd.se/utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från SD:s officiella utbildningspolitiksida, om lärarautoritet i klassrummet."
+        },
+        {
+          "citat": "Elever som förstör studieron för andra ska omgående flyttas till särskilda jourskolor eller jourklasser",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Sverigedemokraternas utbildningspolitik (partiets webbsida)",
+          "url": "https://www.sd.se/utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från SD:s officiella utbildningspolitiksida, om ordning och studiero via jourskolor."
+        },
+        {
+          "citat": "Vi måste få till stånd ett statligt huvudmannaskap för den svenska skolan.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Sverigedemokraternas utbildningspolitik (partiets webbsida)",
+          "url": "https://www.sd.se/utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från SD:s officiella utbildningspolitiksida, om statlig styrning av skolan i stället för kommunalt huvudmannaskap."
+        },
+        {
+          "citat": "Bra skolor ska premieras och dåliga skolor ska bli bättre eller läggas ner, oavsett om de är kommunala eller fristående.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Sverigedemokraternas utbildningspolitik (partiets webbsida)",
+          "url": "https://www.sd.se/utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från SD:s officiella utbildningspolitiksida, om kvalitetskrav som gäller lika för kommunala och fristående skolor."
+        },
+        {
+          "citat": "Vi behöver därför vidta kraftfullare åtgärder mot förövarna, istället för att de utsatta offren ska tvingas att uppleva fler negativa konsekvenser. En obligatorisk relegering vid upprepad mobbning är ett sätt att markera frågans dignitet.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Införande av obligatorisk relegering vid upprepad mobbning i skolor (motion 2025/26:2535)",
+          "url": "https://data.riksdagen.se/dokument/HD022535.html",
+          "datum": "2025-10-03",
+          "kontext": "SD-motionens motivering för obligatorisk relegering efter upprepad mobbning — ordnings- och trygghetsargument i skolmiljön."
+        },
+        {
+          "citat": "Skolan är ett nationellt intresse och måste därför drivas nationellt.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Sverigedemokraternas utbildningspolitik (partiets webbsida)",
+          "url": "https://www.sd.se/utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från SD:s officiella utbildningspolitiksida, om principen bakom kravet på statligt skolhuvudmannaskap."
+        }
+      ]
+    },
+    "C": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "De geografiska orättvisor som vi i dag ser skär genom svensk skola och klyver samhället mitt itu.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3746)",
+          "url": "https://data.riksdagen.se/dokument/HD023746.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Niels Paarup-Petersen m.fl. (C) till utbildningsutskottet, om geografisk ojämlikhet i skolan."
+        },
+        {
+          "citat": "Endast 6 av 10 lärare är behöriga på landsbygden, medan 8 av 10 är behöriga i de större städerna.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3746)",
+          "url": "https://data.riksdagen.se/dokument/HD023746.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Niels Paarup-Petersen m.fl. (C) om lärarbehörighet och geografisk klyfta i skolan."
+        },
+        {
+          "citat": "Oseriösa huvudmän som inte lever upp till skollagens krav underminerar välfärdens legitimitet och berövar eleverna på deras skolgång.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3746)",
+          "url": "https://data.riksdagen.se/dokument/HD023746.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Niels Paarup-Petersen m.fl. (C) om kvalitetskrav på skolhuvudmän."
+        },
+        {
+          "citat": "Centerpartiet vill ta bort den skarpa godkäntgränsen i grundskolan så att även de som har fått F ska ha möjlighet att, med sina övriga betyg som grund eller genom yrkesprov, söka sig vidare till gymnasiets yrkesprogram.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3746)",
+          "url": "https://data.riksdagen.se/dokument/HD023746.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Niels Paarup-Petersen m.fl. (C) om reform av betygssystemets godkäntgräns."
+        },
+        {
+          "citat": "Alla elever har rätt till en trygg skolmiljö där de kan fokusera på lärande, och alla lärare har rätt till en trygg arbetsmiljö.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:198 Bättre förutsättningar för trygghet och studiero (motion 2025/26:4041)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/battre-forutsattningar-for-trygghet-och_hd024041/",
+          "datum": "2026-04-01",
+          "kontext": "Följdmotion av Niels Paarup-Petersen m.fl. (C) om trygghet och studiero i skolan, till utbildningsutskottet."
+        },
+        {
+          "citat": "Rapporter om hot, våld och stök i klassrummen är alarmerande",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:198 Bättre förutsättningar för trygghet och studiero (motion 2025/26:4041)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/battre-forutsattningar-for-trygghet-och_hd024041/",
+          "datum": "2026-04-01",
+          "kontext": "Följdmotion av Niels Paarup-Petersen m.fl. (C) om ordningsproblem i klassrummen."
+        },
+        {
+          "citat": "Den skarpa gränsen mellan godkänt (E) och icke godkänt (F) innebär att en elev som presterar väl i många ämnen ändå kan stängas ute från vidare studier på grund av ett misslyckande i ett enda kärnämne.",
+          "kalltyp": "motion",
+          "dokumenttitel": "med anledning av prop. 2025/26:197 Ett likvärdigt betygssystem (motion 2025/26:4044)",
+          "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-likvardighetsbetygssystem_hd024044/",
+          "datum": "2026-04-01",
+          "kontext": "Följdmotion av Niels Paarup-Petersen m.fl. (C) om konsekvenserna av nuvarande betygssystems godkäntgräns."
+        }
+      ]
+    },
+    "V": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Införandet av fristående skolor, såväl vinstdrivande som på konfessionell grund, har bidragit till att elever med olika bakgrund i allt mindre utsträckning möts i en gemensam skola.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)",
+          "url": "https://data.riksdagen.se/dokument/HD022791.html",
+          "datum": "2025-10-07",
+          "kontext": "Motion av Isabell Mixter m.fl. (V) till utbildningsutskottet, avsnitt 2.2, om hur friskolor — vinstdrivande och konfessionella — ökar segregationen i skolan."
+        },
+        {
+          "citat": "Privatiseringar och marknadsexperiment har dränerat skolan, vården och omsorgen. Det har även öppnat upp för kriminella att bedriva verksamhet inom den skattefinansierade välfärdssektorn.",
+          "kalltyp": "valmanifest",
+          "dokumenttitel": "Vänsterpartiets valplattform efter beslut på kongressen 2026 (preliminär kongressversion)",
+          "url": "https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+          "lokal_fil": "sources/manifest/2026/V-valmanifest-2026.pdf",
+          "datum": "2026-04-19",
+          "kontext": "Från V:s valplattform s. 2, om konsekvenserna av marknadsanpassningen av skolan."
+        },
+        {
+          "citat": "I stället ser vi allt fler exempel runt om i landet där klassernas storlek ökar för att i kommunerna spara pengar eller att i friskolorna kunna ta ut mer vinst.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)",
+          "url": "https://data.riksdagen.se/dokument/HD022791.html",
+          "datum": "2025-10-07",
+          "kontext": "Motion av Isabell Mixter m.fl. (V) till utbildningsutskottet, avsnitt 4.1, om hur kommuner och friskolor ökar klasstorlekarna av ekonomiska skäl."
+        },
+        {
+          "citat": "Arbetsmiljön i skolan måste förbättras. Skolan är Sveriges största arbetsplats men samtidigt också en av de sämsta avseende arbetsmiljön.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)",
+          "url": "https://data.riksdagen.se/dokument/HD022791.html",
+          "datum": "2025-10-07",
+          "kontext": "Motion av Isabell Mixter m.fl. (V) till utbildningsutskottet, om den dåliga arbetsmiljön i skolan."
+        },
+        {
+          "citat": "Arbetsmiljön och arbetssituationen är de vanligaste skälen till att lärare väljer att arbeta med något annat än skolan.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)",
+          "url": "https://data.riksdagen.se/dokument/HD022791.html",
+          "datum": "2025-10-07",
+          "kontext": "Motion av Isabell Mixter m.fl. (V) om varför lärare lämnar yrket."
+        },
+        {
+          "citat": "Klasstorlek är också en fråga om en likvärdig utbildning i hela landet.",
+          "kalltyp": "motion",
+          "dokumenttitel": "En jämlik förskola, skola och vuxenutbildning för alla (motion 2025/26:2791)",
+          "url": "https://data.riksdagen.se/dokument/HD022791.html",
+          "datum": "2025-10-07",
+          "kontext": "Motion av Isabell Mixter m.fl. (V) om klasstorlek och likvärdighet i skolan."
+        }
+      ]
+    },
+    "KD": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Skolans huvuduppgift är att förmedla kunskap, att stimulera elevernas intellektuella utveckling och att förbereda barn och unga för vuxenlivet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraternas politik om skolan (partiets webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/skolan",
+          "datum": "2026-07-04",
+          "kontext": "Från KD:s officiella skolpolitiksida (Politik A–Ö), om skolans grundläggande syfte."
+        },
+        {
+          "citat": "Skolan ska erbjuda den kunskap som behövs för att klara av arbetslivet, men också kunskap för att klara livet som ansvarsfull samhällsmedborgare.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraternas politik om skolan (partiets webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/skolan",
+          "datum": "2026-07-04",
+          "kontext": "Från KD:s skolpolitiksida, om skolans dubbla uppdrag: arbetslivets krav och medborgarbildning."
+        },
+        {
+          "citat": "Oseriösa aktörer ska inte kunna skära ner på kvaliteten för att ta ut mer vinst.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraternas politik om friskolor (partiets webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/friskolor",
+          "datum": "2026-07-04",
+          "kontext": "Från KD:s friskolor-sida, om krav på kvalitet och ansvar för friskolor."
+        },
+        {
+          "citat": "Fristående skolor är en självklar och viktig del av det svenska skolväsendet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraternas politik om friskolor (partiets webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/friskolor",
+          "datum": "2026-07-04",
+          "kontext": "Från KD:s friskolor-sida, grundläggande position om friskolornas roll."
+        },
+        {
+          "citat": "Lärarna är skolans viktigaste resurs.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraternas politik om lärare (partiets webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/larare",
+          "datum": "2026-07-04",
+          "kontext": "Från KD:s lärare-sida, om lärarnas centrala roll i skolan."
+        },
+        {
+          "citat": "Vi vill stärka lärarnas status bland annat genom höjda löner, via till exempel karriärlärartjänsterna, och minskad administrativ börda.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraternas politik om lärare (partiets webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/larare",
+          "datum": "2026-07-04",
+          "kontext": "Från KD:s lärare-sida, om konkreta åtgärder för lärarnas status och villkor."
+        },
+        {
+          "citat": "Betyg är ett viktigt verktyg för att ge elever och föräldrar information om hur eleven klarar kunskapsmålen.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Kristdemokraternas politik om betyg (partiets webbsida)",
+          "url": "https://www.kristdemokraterna.se/var-politik/politik-a-till-o/betyg",
+          "datum": "2026-07-04",
+          "kontext": "Från KD:s betyg-sida, om betygssystemets funktion som information till elever och föräldrar."
+        },
+        {
+          "citat": "Vi anser att skolan måste börja värdera förmågan att följa skolans ordningsregler och att behandla de andra barnen med respekt på samma sätt som vi värderar förmågan att läsa, skriva och räkna.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Ordningsbetyg i skolan (motion 2025/26:3464)",
+          "url": "https://data.riksdagen.se/dokument/HD023464.html",
+          "datum": "2025-10-07",
+          "kontext": "Motion av Christian Carlsson (KD) till utbildningsutskottet — motivering till kravet på ordningsbetyg: ordning och respekt bör bedömas jämbördigt med ämneskunskaper."
+        }
+      ]
+    },
+    "L": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Skolan är Sveriges viktigaste frihetsfråga. Därför är skolan Liberalernas viktigaste fråga.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalernas politik om skolan (partiets webbsida)",
+          "url": "https://www.liberalerna.se/politik/skola",
+          "datum": "2026-07-04",
+          "kontext": "Från Liberalernas officiella skolpolitiksida, partiets grundläggande prioritering av skolan."
+        },
+        {
+          "citat": "Digitaliseringen i skolan har gått för långt. Elever lär sig bättre med böcker än med skärmar – därför ska alla ha rätt till riktiga läroböcker.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalernas politik om skolan (partiets webbsida)",
+          "url": "https://www.liberalerna.se/politik/skola",
+          "datum": "2026-07-04",
+          "kontext": "Från Liberalernas skolpolitiksida, om digitaliseringens negativa konsekvenser för inlärning."
+        },
+        {
+          "citat": "Vi vill fasa ut vinstintresset i friskolesektorn.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalernas politik om skolan (partiets webbsida)",
+          "url": "https://www.liberalerna.se/politik/skola",
+          "datum": "2026-07-04",
+          "kontext": "Från Liberalernas skolpolitiksida, om vinstuttag i friskolesektorn."
+        },
+        {
+          "citat": "Fler elever behöver möta utbildade och kunniga lärare som kan skapa struktur och arbetsro i klassrummet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalernas politik om grundskolan (partiets webbsida)",
+          "url": "https://www.liberalerna.se/politik/grundskolan",
+          "datum": "2026-07-04",
+          "kontext": "Från Liberalernas grundskolepolitiksida, om behovet av behöriga lärare och arbetsro."
+        },
+        {
+          "citat": "Fysiska läroböcker, lärarledd undervisning och fokus på läsning ska åter få en starkare roll i undervisningen.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalernas politik om grundskolan (partiets webbsida)",
+          "url": "https://www.liberalerna.se/politik/grundskolan",
+          "datum": "2026-07-04",
+          "kontext": "Från Liberalernas grundskolepolitiksida, om återgång till läroböcker och läsning framför skärmar."
+        },
+        {
+          "citat": "Lärare ska få ägna sin tid åt undervisning, inte onödig administration.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Liberalernas politik om skolan (partiets webbsida)",
+          "url": "https://www.liberalerna.se/politik/skola",
+          "datum": "2026-07-04",
+          "kontext": "Från Liberalernas skolpolitiksida, om att minska lärares administrativa börda."
+        },
+        {
+          "citat": "Allting börjar med en bra lärare. Det gäller inte minst inom yrkesprogrammen.",
+          "kalltyp": "motion",
+          "dokumenttitel": "Säkrad tillgång till yrkeslärare (motion 2025/26:1605)",
+          "url": "https://data.riksdagen.se/dokument/HD021605.html",
+          "datum": "2025-10-07",
+          "kontext": "Motion av Martin Melin (L) till utbildningsutskottet om bristen på yrkeslärare i Stockholm-Mälarregionen."
+        }
+      ]
+    },
+    "MP": {
+      "kallbas": "ok",
+      "citat": [
+        {
+          "citat": "Skolans syfte ska alltid vara utbildning – aldrig vinst.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3518)",
+          "url": "https://data.riksdagen.se/dokument/HD023518.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Camilla Hansén m.fl. (MP) till utbildningsutskottet, om principen att vinst inte ska styra skolan."
+        },
+        {
+          "citat": "Undervisning ska bedrivas av legitimerade lärare.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3518)",
+          "url": "https://data.riksdagen.se/dokument/HD023518.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Camilla Hansén m.fl. (MP) om kravet på legitimerade lärare i skolan."
+        },
+        {
+          "citat": "Svensk skola ska vara en skola för alla och staten måste ta ett större ansvar för en likvärdig skola med stark kunskapsutveckling.",
+          "kalltyp": "budgetmotion",
+          "dokumenttitel": "Utgiftsområde 16 Utbildning och universitetsforskning (motion 2025/26:3518)",
+          "url": "https://data.riksdagen.se/dokument/HD023518.html",
+          "datum": "2025-10-07",
+          "kontext": "Budgetmotion av Camilla Hansén m.fl. (MP) om statens ansvar för en likvärdig skola."
+        },
+        {
+          "citat": "Elevers möjligheter ska inte avgöras av postnummer, kommunens ekonomi eller vilken skola de går i.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Miljöpartiets politik om skola och utbildning (partiets webbsida)",
+          "url": "https://www.mp.se/politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från MP:s officiella skolpolitiksida, om likvärdighet och geografisk rättvisa i skolan."
+        },
+        {
+          "citat": "Skattepengar ska stanna i skolan. Vi vill stoppa aktiebolag i skolan, införa full insyn i skattefinansierad skolverksamhet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Miljöpartiets politik om skola och utbildning (partiets webbsida)",
+          "url": "https://www.mp.se/politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från MP:s skolpolitiksida, om vinstuttag och insyn i friskolor."
+        },
+        {
+          "citat": "Skolan ska hålla ihop samhället, inte förstärka ojämlikhet.",
+          "kalltyp": "partiprogram",
+          "dokumenttitel": "Miljöpartiets politik om skola och utbildning (partiets webbsida)",
+          "url": "https://www.mp.se/politik/skola-och-utbildning/",
+          "datum": "2026-07-04",
+          "kontext": "Från MP:s skolpolitiksida, om skolans roll som sammanhållningsskapande institution."
+        }
+      ]
+    }
+  }
+}

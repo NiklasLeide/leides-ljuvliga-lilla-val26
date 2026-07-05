@@ -18,20 +18,29 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-readonly REQUIRED_BRANCH="discourse-pipeline"
+readonly REQUIRED_BRANCH="${LOOP_BRANCH:-discourse-pipeline}"
 readonly PROMPT_FILE="scripts/discourse-diverge-prompt.md"
 readonly MODEL="claude-opus-4-8"
 readonly TOOLS="Read"
-readonly OUT="drafts/discourse-ekonomi-RAPPORT.md"
+
+export DISCOURSE_AREA="${DISCOURSE_AREA:-ekonomi}"
+if [[ ! -f "scripts/discourse-areas/$DISCOURSE_AREA.json" ]]; then
+  echo "FEL: okänt område '$DISCOURSE_AREA'"; exit 1
+fi
+export LOOP_STATE_FILE="${LOOP_STATE_FILE:-loop-state-$DISCOURSE_AREA.json}"
+LOOP_DIR=".loop/$DISCOURSE_AREA"
+readonly OUT="drafts/discourse-$DISCOURSE_AREA-RAPPORT.md"
 
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
-mkdir -p .loop drafts
+export CLAUDE_CODE_DISABLE_1M_CONTEXT=1   # standardkontext, se quote-loop
+mkdir -p "$LOOP_DIR" drafts
+DIVERGE_PROMPT="$(node scripts/render-area-prompt.js "$PROMPT_FILE" "$DISCOURSE_AREA")"
 
 if [[ "$(git branch --show-current)" != "$REQUIRED_BRANCH" ]]; then
   echo "FEL: aktuell branch är '$(git branch --show-current)', inte $REQUIRED_BRANCH. Avbryter."
   exit 3
 fi
-for f in drafts/discourse-ekonomi-sonnet.json drafts/discourse-ekonomi-opus.json; do
+for f in "drafts/discourse-$DISCOURSE_AREA-sonnet.json" "drafts/discourse-$DISCOURSE_AREA-opus.json"; do
   if [[ ! -f "$f" ]]; then echo "FEL: $f saknas — kör Steg B först."; exit 1; fi
 done
 
@@ -51,7 +60,7 @@ validate_report() {
 }
 
 run_call() { # promptText [resumeSession]
-  local rfile=".loop/diverge.json"
+  local rfile="$LOOP_DIR/diverge.json"
   local head_before; head_before="$(git rev-parse HEAD)"
   if [[ $# -eq 1 ]]; then
     "$CLAUDE_BIN" -p "$1" --model "$MODEL" --allowedTools "$TOOLS" \
@@ -68,19 +77,19 @@ run_call() { # promptText [resumeSession]
 }
 
 echo "=== Steg C: divergensrapport ($MODEL) ==="
-run_call "$(cat "$PROMPT_FILE")"
+run_call "$DIVERGE_PROMPT"
 
-vrc=0; verr="$(validate_report .loop/diverge.json "$OUT" 2>&1)" || vrc=$?
+vrc=0; verr="$(validate_report $LOOP_DIR/diverge.json "$OUT" 2>&1)" || vrc=$?
 if [[ $vrc -ne 0 ]]; then
   echo "--- rapport ogiltig, ETT omförsök ---"
   printf '%s\n' "$verr"
-  session="$(node scripts/loop-lib.js session .loop/diverge.json)"
+  session="$(node scripts/loop-lib.js session $LOOP_DIR/diverge.json)"
   run_call "Din rapport kunde inte användas. Fel:
 
 $verr
 
 Svara igen med ENDAST rapportens fullständiga markdown enligt strukturen i ursprungsinstruktionen." "$session"
-  vrc=0; verr="$(validate_report .loop/diverge.json "$OUT" 2>&1)" || vrc=$?
+  vrc=0; verr="$(validate_report $LOOP_DIR/diverge.json "$OUT" 2>&1)" || vrc=$?
   if [[ $vrc -ne 0 ]]; then
     echo "FEL: rapporten ogiltig även efter omförsök:"
     printf '%s\n' "$verr"
@@ -88,5 +97,6 @@ Svara igen med ENDAST rapportens fullständiga markdown enligt strukturen i ursp
   fi
 fi
 
+node scripts/loop-lib.js set "diverge_cost_usd=$total_cost"   # för batchens budgetkontroll
 echo "=== Steg C klart. Kostnad: \$$total_cost ==="
 echo "$OUT"

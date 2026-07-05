@@ -33,7 +33,8 @@ try {
 
 const fail = [];
 const PARTIES = ['SD', 'M', 'KD', 'L', 'S', 'C', 'MP', 'V'];
-if (draft.omrade !== 'ekonomi') fail.push(`omrade must be "ekonomi" (got "${draft.omrade}")`);
+const AREA = process.env.DISCOURSE_AREA || 'ekonomi';
+if (draft.omrade !== AREA) fail.push(`omrade must be "${AREA}" (got "${draft.omrade}")`);
 const partier = draft.partier || {};
 for (const p of PARTIES) {
   const e = partier[p];

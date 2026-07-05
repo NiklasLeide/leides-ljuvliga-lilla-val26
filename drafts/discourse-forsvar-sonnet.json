@@ -1,0 +1,427 @@
+{
+  "omrade": "forsvar",
+  "baserad_pa": "sources/discourse/citat-forsvar.json",
+  "partier": {
+    "SD": {
+      "inramning": "SD ramar in försvaret som ett system som förvittrat under 2000-talet: beredskapslager skrotades, skyddsrum förföll och den civila robustheten gick förlorad. Problemet är institutionell passivitet — inte primärt militär svaghet — och lösningen är en återuppbyggnad av totalförsvarets civila ben med Finland som normativt föredöme.",
+      "nyckelbegrepp": [
+        {
+          "term": "beredskap",
+          "innebord": "Fysisk civil beredskap — lager av mat, mediciner, drivmedel — som garanterar samhällets uthållighet vid kris eller krig",
+          "underforstadd_premiss": "Beredskap är statens direktansvar; marknadens logik kan inte tillåtas styra samhällsviktig försörjning"
+        },
+        {
+          "term": "totalförsvar",
+          "innebord": "Militärt försvar kombinerat med civil infrastrukturrobusthet; den civila komponenten lyfts fram som det systematiskt försummade ledet",
+          "underforstadd_premiss": "Återuppbyggnad kräver aktiv statlig styrning, inte marknadsanpassning"
+        },
+        {
+          "term": "finsk modell",
+          "innebord": "Finland som referensstat — ett land som inte demonterade sin beredskapskapacitet och därför klarade coronapandemin bättre",
+          "underforstadd_premiss": "Sveriges grannländer har gjort klokare institutionella val; Sverige bör imitera snarare än att uppfinna egna lösningar"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Historisk ansvarsplacering — skuldbörda på tidigare politisk kurs",
+          "exempel": "Under 2000-talet har de svenska beredskapslagren successivt skrotats, och mat, mediciner, medicinsk utrustning och olja har inte längre setts som nödvändigt att lagra.",
+          "kalla": "Beredskapslag (motion 2025/26:2805)"
+        },
+        {
+          "strategi": "Normativ jämförelse med grannestat — Finland som positiv kontrast till Sverige",
+          "exempel": "Finland har dock valt en helt annan väg än Sverige, och var väl rustade när coronapandemin slog till; detta tack vare sina enorma beredskapslager som både är underhållna och kontinuerligt utvecklade.",
+          "kalla": "Beredskapslag (motion 2025/26:2805)"
+        },
+        {
+          "strategi": "Deficiency-retorik — exponering av systematisk brist bakom statistikens fasad",
+          "exempel": "Den bistra sanningen är att ett mycket stort antal skyddsrum i Sverige inte är operativa.",
+          "kalla": "Operativa skyddsrum i Sverige (motion 2025/26:227)"
+        },
+        {
+          "strategi": "Militärteknisk expertisretorik — Ukraina som kunskapsbärare för nordiskt samarbete",
+          "exempel": "Ukraina besitter unik kompetens inom elektroniska motmedel, dynamiska ledningsstrukturer och drönarkamp vilket gör landet till en ovärderlig partner för JEF.",
+          "kalla": "Ukraina i Joint Expeditionary Force (motion 2025/26:2402)"
+        }
+      ],
+      "galtan_kongruens": "SD:s försvarsdiskurs är kongruent med partiets TAN-position (8,8). Betoningen på statlig kontroll, nationell självförsörjning och civil robusthet speglar en TAN-logik där statens primära funktion är att skydda det egna territoriet. Att Finland — inte NATO eller EU — lyfts som föredöme understryker nationalstatens primat. JEF-motionen om Ukraina pekar mot pragmatisk säkerhetspolitik men avviker inte diskursivt från TAN-ramen.",
+      "kontrast_med": "M fokuserar på NATO-anslutningen som det avgörande säkerhetssteget; SD fokuserar i stället på beredskapslager och skyddsrum. C delar civilt försvarsintresse men inramar det i ett multilateralt NATO-EU-FN-perspektiv. V och MP ifrågasätter den militära grundlogiken; SD gör det inte."
+    },
+    "M": {
+      "inramning": "M ramar in säkerhetsläget som fundamentalt förändrat av Rysslands krig mot Ukraina, och positionerar NATO-anslutningen — som M tar tydligt ägarskap för — som den avgörande lösningen. Frånvaron av \"alliansfrihet\" presenteras som en säkerhetsvinst; därifrån byggs ett brett totalförsvar med parallella militära och civila satsningar och nya konkreta kapaciteter.",
+      "nyckelbegrepp": [
+        {
+          "term": "NATO-anslutning",
+          "innebord": "Politisk-strategisk milstolpe som M presenterar som sin egen prestation och som en permanent säkerhetsförbättring",
+          "underforstadd_premiss": "Den gamla alliansfriheten var ett säkerhetspolitiskt misstag; det rätta valet var att gå med i NATO"
+        },
+        {
+          "term": "totalförsvar",
+          "innebord": "Militärt och civilt försvar som måste stärkas parallellt och integrerat — ingendera kan nedprioriteras",
+          "underforstadd_premiss": "Historisk underfinansiering av försvaret var ansvarslös politik; nuläget kräver kompensatoriska investeringar"
+        },
+        {
+          "term": "drönarvärn",
+          "innebord": "Ny kapacitet — 10 000 skyddsutbildade personer — som ett konkret vallöfte om samhällets motståndskraft mot moderna vapensystem",
+          "underforstadd_premiss": "Modern krigföring kräver att hela samhället involveras i försvaret, inte bara Försvarsmakten"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Ägareskapskonstruktion — politisk prestation knyts till partinamn",
+          "exempel": "Den moderatledda regeringen förde Sverige in i Nato den 7 mars 2024.",
+          "kalla": "Försvar — Moderaternas politik"
+        },
+        {
+          "strategi": "Kvantifieringsretorik — trovärdighet genom konkreta siffror",
+          "exempel": "Sverige har sammanlagt stött Ukraina militärt med 128 miljarder kronor sedan kriget började 2022.",
+          "kalla": "Försvar — Moderaternas politik"
+        },
+        {
+          "strategi": "Geografisk specialisering — strategisk lucka som konkret motiv för kapacitetsinvestering",
+          "exempel": "Vi vill därför att regeringen tar initiativ till att etablera ett nytt regemente i Skåne, med förmåga att utbilda, mobilisera och leda markstridskrafter.",
+          "kalla": "Stärkt sydsvenskt försvar (motion 2025/26:3443)"
+        }
+      ],
+      "galtan_kongruens": "M:s försvarsdiskurs är kongruent med partiets TAN-position (6,8). NATO-ägarskapet, kvantifieringen av stöd och ambitionen om konkreta militära kapaciteter speglar en nationell säkerhetslogik som prioriterar militärt handlingsutrymme. Formuleringen \"Det finns ingen viktigare uppgift än att värna Sveriges och svenskars säkerhet\" är nationell-liberal snarare än GAL-universell.",
+      "kontrast_med": "SD fokuserar på civilt försvar och beredskapslager snarare än NATO-ägarskap. C betonar civilt försvar och multilateralism bortom NATO. KD betonar personalbristen framför kapacitetsinvesteringar. MP och V ifrågasätter det militära paradigmet i sig."
+    },
+    "KD": {
+      "inramning": "KD ramar in försvaret som primärt en personalfråga — den nödvändiga men ofta förbisedda resursen. NATO ger de säkerhetsgarantier Sverige inte kan uppnå ensamt, men den centrala flaskhalsen för försvarsförmågan är personalförsörjningen, vilken KD söker lösa genom ett obligatoriskt tjänstgöringsår som samtidigt stärker samhällsgemenskapen.",
+      "nyckelbegrepp": [
+        {
+          "term": "personalförsörjning",
+          "innebord": "Tillgången på utbildad och motiverad militär personal — beskriven som försvarets grundläggande flaskhals snarare än materiel eller allianstillhörighet",
+          "underforstadd_premiss": "Strukturella karriärhinder och åldersgränser motverkar försvarsförmågan; administrativa reformer är lika viktiga som anslagsökningar"
+        },
+        {
+          "term": "obligatoriskt tjänstgöringsår",
+          "innebord": "Ett år av obligatorisk samhällstjänst — inom försvar, vård eller äldreomsorg — som löser personalbehovet och stärker samhällsgemenskapen parallellt",
+          "underforstadd_premiss": "Samhällsplikten bör vara universell och täcka fler sektorer än enbart militären; tjänst skapar normativ gemenskap"
+        },
+        {
+          "term": "totalförsvarsplikt",
+          "innebord": "Den lagliga grunden för obligatorisk tjänstgöring — KD vill bredda dess tillämpning utöver nuvarande värnplikt till att inkludera civila samhällsfunktioner",
+          "underforstadd_premiss": "Statens rätt att kräva tjänst av medborgare är legitim och nödvändig i nuläget"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Nödvändighetsinramning — NATO som tvingande realitet snarare än idealval",
+          "exempel": "Sverige kan inför vår tids nya och allvarliga hot inte klara sig på egen hand. Bara det fullvärdiga Natomedlemskapet ger Sverige de säkerhetsgarantier som krävs för att kunna försvara vårt land.",
+          "kalla": "Försvar — Kristdemokraternas politikområden"
+        },
+        {
+          "strategi": "Personalparadox — kontrastering av resursprioriteringar mot det som faktiskt saknas",
+          "exempel": "Ett starkt försvar kräver inte bara modern materiel och internationellt samarbete – det kräver framför allt personal.",
+          "kalla": "Åtgärder mot personalbrist inom försvaret (motion 2025/26:743)"
+        },
+        {
+          "strategi": "Dubbelvinst-argumentation — ett förslag löser militärt och socialt problem simultant",
+          "exempel": "Ett obligatoriskt tjänstgöringsår för unga vuxna inom ramen för totalförsvarsplikten skulle kunna stärka samhällsgemenskapen, öka försvarsförmågan och bidra till viktiga samhällsfunktioner.",
+          "kalla": "Obligatoriskt tjänstgöringsår (motion 2025/26:756)"
+        }
+      ],
+      "galtan_kongruens": "KD:s försvarsdiskurs är kongruent med partiets TAN-position (7,0). Det obligatoriska tjänstgöringsåret speglar en värdekonservativ syn där plikten mot samhället är fundamental och bör vara universell. NATO-nödvändighetsargumentet och personalfokusets konservativa logik — att strukturella brister hotar nationens defensiva kapacitet — är typiskt TAN.",
+      "kontrast_med": "M äger NATO-narrativet som prestation; KD äger personalnarrativet som systemanalys. S fokuserar på värnpliktens volym. C värnar individens rättigheter under tjänstgöringen; KD betonar tjänsteplikten som norm. MP och V avvisar obligatorisk tjänstgöring."
+    },
+    "L": {
+      "inramning": "L ramar in försvaret som ett skydd för demokratiska friheter — inte primärt territorium — hotade av ett identifierat auktoritärt komplex (Ryssland, Kina, Iran, Nordkorea) som bedriver \"gråzonskrig\" mot öppna demokratier. Lösningen är ett brett försvarskoncept: NATO-garantier, kraftigt ökade anslag, offensiv cyberförmåga och en stark inhemsk försvarsindustri.",
+      "nyckelbegrepp": [
+        {
+          "term": "gråzonskrig",
+          "innebord": "Auktoritära staters systematiska hybridkrigföring mot demokratier — cyber, desinformation, ekonomisk påverkan — under den traditionella konflikttröskelns nivå",
+          "underforstadd_premiss": "Traditionell militär avskräckning är otillräcklig; Sverige behöver offensiv kapacitet i det gråa spektret"
+        },
+        {
+          "term": "frihet och demokrati",
+          "innebord": "Det som försvaret ytterst skyddar — inte bara territorium eller befolkning utan demokratiska institutioner och individuella friheter",
+          "underforstadd_premiss": "Militärt försvar är ett liberalt värn, inte ett nationalistiskt projekt"
+        },
+        {
+          "term": "industriell förmåga",
+          "innebord": "Den inhemska försvarsindustriella kapaciteten som möjliggör uthållig och oberoende försvarsförmåga — presenterad som ett frihetspolitiskt krav",
+          "underforstadd_premiss": "Importberoende för strategisk materiel skapar politisk sårbarhet; suveränitet kräver industriell kapacitet"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Hotbildsspecificering — namngivna auktoritära aktörer legitimerar offensivt mandat",
+          "exempel": "Kina, Ryssland, Iran och Nordkorea bedriver i dag ett systematiskt gråzonskrig mot öppna demokratier.",
+          "kalla": "En mer offensiv cyberdoktrin (motion 2025/26:3493)"
+        },
+        {
+          "strategi": "Frihetsretorik som försvarslegitimering",
+          "exempel": "Vår frihet, demokrati och territoriella integritet måste vi kunna försvara försvara [sic]",
+          "kalla": "Försvar — Liberalernas politik"
+        },
+        {
+          "strategi": "Industriell suveränitetsargumentation — försvarsindustri som frihetsbetingelse",
+          "exempel": "För att Sverige – och Europas demokratier – ska kunna värna frihet behövs både framtidens materiel och robust industriell förmåga.",
+          "kalla": "Villkor för svensk försvarsindustri (motion 2025/26:3145)"
+        }
+      ],
+      "galtan_kongruens": "L:s position (4,8, spänning GAL-TAN) avspeglas i en intern diskursiv spänning. Frihets- och demokratiretoriken är GAL-kodad: försvaret motiveras med liberala värden, inte nationell lojalitet. Men det offensiva cyberkapacitetskravet, hotbildsspecificeringen med fyra namngivna stater och den starka NATO-entusiasmen är TAN-kodade. Diskursen befinner sig i en spänning som är genuint kongruent med partiets gränsposition.",
+      "kontrast_med": "M äger NATO-anslutningen som prestation; L fokuserar på hotbild och kapacitetsanalys. KD betonar personal; L betonar cyber och industri. MP och V begränsar cyberambitioner och avvisar offensiv logik. SD fokuserar på nationell civil beredskap; L fokuserar på teknologisk och industriell förmåga."
+    },
+    "S": {
+      "inramning": "S ramar in det säkerhetspolitiska läget som det allvarligaste sedan andra världskriget — en epokbeteckning som legitimerar historiskt stora försvarsinvesteringar. Totalförsvaret beskrivs som demokratins yttersta skydd, inte enbart ett militärt instrument. NATO-anslutningen accepteras som ett strategiskt tillskott till avskräckningsförmågan, men den nationella försvarsförmågan — militär och civil — måste byggas i grunden.",
+      "nyckelbegrepp": [
+        {
+          "term": "totalförsvar",
+          "innebord": "Integrering av militär och civil försvarsförmåga — av det svenska folket för det svenska folket — med demokratiskyddet som explicit syfte",
+          "underforstadd_premiss": "Försvaret är ett kollektivt nationellt projekt med folklig förankring; det kan inte delegeras till en allians"
+        },
+        {
+          "term": "avskräckning",
+          "innebord": "Förmågan att avhålla angrepp genom att göra det kostsamt — NATO adderar, men ersätter inte, nationell avskräckningsförmåga",
+          "underforstadd_premiss": "Säkerhet uppnås inte enbart genom allianstillhörighet; trovärdig nationell militär kapacitet är nödvändig"
+        },
+        {
+          "term": "värnplikt",
+          "innebord": "Personalförsörjningsmekanismen för ett brett totalförsvar — S vill kraftigt utöka den (mot 20 000 per år) som ett nationellt mobiliseringsprojekt",
+          "underforstadd_premiss": "Försvarsförmåga kräver bred folklig delaktighet, inte enbart ett professionellt yrkesförsvar"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Historisk allvarlighetsmarkering — referens till andra världskriget som epokgräns",
+          "exempel": "Sverige befinner sig i det allvarligaste säkerhetspolitiska läget sedan andra världskriget.",
+          "kalla": "Totalförsvarets beredskap (motion 2025/26:3556)"
+        },
+        {
+          "strategi": "Demokratiskyddsretorik — försvaret som yttersta värn för rättigheter och värderingar",
+          "exempel": "Totalförsvaret är det yttersta skyddet för vår demokrati, våra rättigheter och våra grundläggande värderingar.",
+          "kalla": "Totalförsvarets beredskap (motion 2025/26:3556)"
+        },
+        {
+          "strategi": "Kausalkedja — Rysslands krig som direkt orsak till nödvändiga svenska investeringar",
+          "exempel": "Eftersom det säkerhetspolitiska läget i vårt närområde kraftigt försämrats i och med Rysslands olagliga anfallskrig mot Ukraina måste det militära och det civila försvaret på alla nivåer stärkas och våra internationella samarbeten stärkas och fördjupas.",
+          "kalla": "Totalförsvarets beredskap (motion 2025/26:3556)"
+        },
+        {
+          "strategi": "Kvantifiering av ambition — konkret värnpliktsmål som trovärdighetssignal",
+          "exempel": "Den socialdemokratiska målsättningen är att på sikt utbilda 20 000 värnpliktiga per år, men att minst 12 000 ska påbörja utbildning genom värnplikt senast 2030.",
+          "kalla": "Totalförsvarets beredskap (motion 2025/26:3556)"
+        }
+      ],
+      "galtan_kongruens": "S:s försvarsdiskurs befinner sig vid en GAL-TAN-position om 4,8 och speglar den glidningen. \"Av det svenska folket för det svenska folket\" har en nationell-solidarisk klang som är TAN-kodad; NATO ses som ett strategiskt verktyg snarare än ett värdegemenskapsprojekt. Demokratiskyddsretoriken är däremot GAL-kodad. Diskursen är ett hybriddokument som kongruent speglar partiets mittfåretension.",
+      "kontrast_med": "M äger NATO-anslutningen som historisk prestation; S framhåller den som strategisk tillgång utan att ta ägarskap. KD betonar personalens primat; S betonar volym och bredd i värnplikten. MP och V begränsar den nationella försvarslogiken; S förstärker den."
+    },
+    "C": {
+      "inramning": "C ramar in försvarsdebatten som en obalans där det civila försvaret systematiskt underprioriterats till förmån för det militära. Förutom att lyfta den civila sidan betonar C kommunernas nyckelroll som lokal krishanteringsaktör, och placerar allt i ett brett multilateralt sammanhang — NATO, EU och FN — som normaliserar internationellt försvarsengagemang utan att reducera det till enbart allianslogik.",
+      "nyckelbegrepp": [
+        {
+          "term": "civilt försvar",
+          "innebord": "Den kommunala och samhälleliga kapaciteten att hantera kris och krig — beskrivet som avgörande för totalförsvarsplaneringen men ges otillräcklig uppmärksamhet",
+          "underforstadd_premiss": "Militär styrka utan civil robusthet skapar ett falskt skydd; försvaret börjar lokalt och i vardagen"
+        },
+        {
+          "term": "kommunernas roll",
+          "innebord": "Kommunerna som nyckelaktörer i både fredstida krisberedskap och totalförsvar — inte enbart staten och Försvarsmakten",
+          "underforstadd_premiss": "Decentralisering och lokal kapacitet är effektivare än central styrning; lokalt ägarskap är demokratiskt nödvändigt"
+        },
+        {
+          "term": "nordisk-baltiskt försvarssamarbete",
+          "innebord": "Regionalt samarbete inom NATO-ramen — Östersjöområdet, Arktis och Nordatlanten som gemensamt säkerhetsrum",
+          "underforstadd_premiss": "Säkerhet i Norden är ett gemensamt regionalt projekt; bilateral relation till USA är inte tillräcklig"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Balansbristinramning — civilt försvar som det underskattat ledet i totalförsvaret",
+          "exempel": "Det civila försvaret behöver ges mer uppmärksamhet då detta är helt avgörande för totalförsvarsplaneringen och för Sveriges säkerhet.",
+          "kalla": "Utgiftsområde 6 Försvar och samhällets krisberedskap (motion 2025/26:3605)"
+        },
+        {
+          "strategi": "Lokalt förankrad säkerhetslogik — kommunen som försvarsaktör",
+          "exempel": "Kort och gott – kommunerna har en nyckelroll både i den fredstida krisberedskapen och i totalförsvaret.",
+          "kalla": "Utgiftsområde 6 Försvar och samhällets krisberedskap (motion 2025/26:3605)"
+        },
+        {
+          "strategi": "Individrättighetsreservation inom värnpliktsdiskursen",
+          "exempel": "Värnplikt som företeelse är ett ingrepp i den enskilda individens liv och därför är det extra viktigt att de villkor man har under värnplikten är goda.",
+          "kalla": "Militärt och civilt försvar samt samhällets krisberedskap (motion 2025/26:2822)"
+        },
+        {
+          "strategi": "Multilateral breddinramning — NATO, EU och FN som likvärdiga format",
+          "exempel": "Sverige ska kunna delta i internationella militära och civila insatser under Nato‑, EU- och FN-flagg",
+          "kalla": "Internationellt samarbete i en utmanande tid (motion 2025/26:3729)"
+        }
+      ],
+      "galtan_kongruens": "C:s GAL-lutning (3,3) är synlig i försvarsdiskursen på två sätt: individrättighetsreservationen under värnplikten är typiskt liberal-GAL, och breddningen av internationellt engagemang till EU och FN (inte bara NATO) signalerar en kosmopolitisk snarare än nationalistisk säkerhetslogik. Det civila försvarsbetoningen är GAL-kodad i sin betoning av decentralisering och lokal kapacitet. Diskursen är kongruent med positionen.",
+      "kontrast_med": "M reducerar det multilaterala i praktiken till NATO; C insisterar på NATO+EU+FN. SD betonar nationell självförsörjning och Finland-modellen; C betonar kommunal kapacitet och regional integration. KD betonar obligatorisk tjänstgöring; C värnar individens villkor under tjänstgöringen."
+    },
+    "MP": {
+      "inramning": "MP accepterar NATO-medlemskapet som ett faktum men inramar det med normativa begränsningar: inga kärnvapen på svensk mark (lagstiftat, även i krigstid), inget deltagande i kärnvapenövningar, krav på no-first-use-doktrin inom NATO. Parallellt utvidgas säkerhetsbegreppet bortom det militära till att inkludera klimatförändringar, pandemier och naturkatastrofer, och försvaret beskrivs som defensivt till sin natur.",
+      "nyckelbegrepp": [
+        {
+          "term": "bred sakerhetssyn",
+          "innebord": "Ett säkerhetskoncept som inkluderar militära hot men likställer dem med icke-militära hot: klimatförändringar, pandemier, naturkatastrofer",
+          "underforstadd_premiss": "Militär upprustning svarar på en snäv hotbild; en ansvarsfull säkerhetspolitik måste hantera hela hotspektrumet"
+        },
+        {
+          "term": "kärnvapenfritt Sverige",
+          "innebord": "Lagstiftat förbud mot kärnvapen på svensk mark i både freds- och krigstid — en restriktion som ska binda även NATO-beslut",
+          "underforstadd_premiss": "Kärnvapennedrustning och icke-spridning är överordnade intressen som inte ska offras för allianslojalitet"
+        },
+        {
+          "term": "defensivt mandat",
+          "innebord": "Försvaret ska avskräcka och försvara Sverige — explicit avgränsat mot att utgöra eller understödja ett militärt hot mot någon annan stat",
+          "underforstadd_premiss": "Militär kapacitet kan missbrukas offensivt; ett tydligt defensivt mandat begränsar denna risk"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Acceptans med reservationer — NATO godkänns som faktum men begränsas normativt",
+          "exempel": "Miljöpartiet röstade nej till Nato, men respekterar riksdagens beslut och driver inte frågan om ett utträde.",
+          "kalla": "Försvar och säkerhet — Miljöpartiets politik"
+        },
+        {
+          "strategi": "Säkerhetskonceptsutvidgning — militär som en hottyp bland flera",
+          "exempel": "Sverige bör ha en bred syn på säkerhet som tar i beaktande militära hot såväl som andra hot, exempelvis klimatförändringar, pandemier och naturkatastrofer.",
+          "kalla": "Ökad civil försvarsförmåga och stärkt krisberedskap (motion 2025/26:3405)"
+        },
+        {
+          "strategi": "Autonoma vapen som systemhot — ny hottyp som kräver reglering bortom traditionell säkerhetspolitik",
+          "exempel": "Ett av de största hoten mot internationell fred och säkerhet är utvecklandet av dödliga autonoma vapensystem.",
+          "kalla": "Exportkontroll, försvarsindustrins förutsättningar och reglering av autonoma vapen (motion 2025/26:3407)"
+        }
+      ],
+      "galtan_kongruens": "MP:s försvarsdiskurs är starkt kongruent med partiets GAL-position (1,4). Kärnvapenmotstånd, bred säkerhetssyn, defensivt mandat och restriktioner mot NATO-kärnvapenövningar är konsekvent GAL-kodade. Att MP trots detta stöder Ukraina skapar en viss intern spänning, men formuleringen undviker militarismens logik och betonar frihet som värde snarare än avskräckningsförmåga.",
+      "kontrast_med": "M och KD driver på militär kapacitetsuppbyggnad utan normativa begränsningar; MP accepterar upprustning men ställer villkor. V är mer principfast i sin NATO-kritik; MP har mer pragmatisk acceptans. SD fokuserar på nationell beredskap; MP globaliserar säkerhetskonceptet."
+    },
+    "V": {
+      "inramning": "V inramar NATO-anslutningen som ett principiellt misstag och DCA-avtalet med USA som ett suveränitetsunderskott — inte enbart en säkerhetsfråga. Trots NATO-kritiken accepteras värnplikt och ett eget starkt nationellt försvar som nödvändigt; alliansen ersätter inte nationell försvarsförmåga. Säkerhetspolitikens grundlogik ska vara fredsbevarande och diplomatisk, inte militärt avskräckande.",
+      "nyckelbegrepp": [
+        {
+          "term": "suveränitet",
+          "innebord": "Sveriges rätt att besluta om vad som sker på eget territorium — hotat av DCA-avtalet som tillåter amerikansk militär verksamhet med vilka ändamål som helst",
+          "underforstadd_premiss": "Militär allians innebär suveränitetsavstående; USA:s globala intressen är inte identiska med Sveriges"
+        },
+        {
+          "term": "fredliga lösningar",
+          "innebord": "Diplomatiska och förebyggande metoder som primär säkerhetspolitisk strategi — kontrast till militär avskräckning",
+          "underforstadd_premiss": "Militär upprustning eskalerar snarare än stabiliserar; fredsbevarande är mer effektivt än avskräckning"
+        },
+        {
+          "term": "kärnvapenfri zon",
+          "innebord": "Sverige ska varken ha kärnvapen på sitt territorium eller delta i NATO-övningar som inkluderar kärnvapenanvändning",
+          "underforstadd_premiss": "Kärnvapennedrustning är ett globalt ansvar som varje stat ska bidra till, oavsett allianslojalitet"
+        }
+      ],
+      "retoriska_strategier": [
+        {
+          "strategi": "Principfast opposition — NATO-motståndet som konsekvent hållen position",
+          "exempel": "Vänsterpartiet är emot att Sverige gick med i Nato.",
+          "kalla": "med anledning av prop. 2025/26:25 Svenskt bidrag till Natos avskräckning och försvar under 2026 (motion 2025/26:3826)"
+        },
+        {
+          "strategi": "Suveränitetsexponering — DCA-avtalet som avslöjad rättslig asymmetri",
+          "exempel": "Det faktum att avtalet går utöver Natosamarbetet innebär att amerikanska aktiviteter på svenskt territorium enligt DCA-avtalet kan komma att gälla amerikanska militära operationer var som helst med vilka ändamål som helst.",
+          "kalla": "Uppsägning av DCA-avtalet med USA (motion 2025/26:102)"
+        },
+        {
+          "strategi": "Komplementaritetsargument — alliansen ersätter inte nationellt försvarsansvar",
+          "exempel": "Medlemskapet i Nato kan inte ersätta uppbyggnaden av vårt eget försvar.",
+          "kalla": "Försvaret — Vänsterpartiets politik A–Ö"
+        }
+      ],
+      "galtan_kongruens": "V:s försvarsdiskurs är starkt kongruent med partiets GAL-position (1,9). NATO-kritiken, suveränitetsskyddet mot USA, kärnvapenförbudet och den diplomatiska grundlogiken är konsekvent GAL-kodade. Att V samtidigt stöder värnplikt och ett eget starkt försvar skapar en viss intern spänning — militärt engagemang är normalt TAN-kodat — men V hanterar det genom att koppla det nationella försvaret till suveränitet snarare än till nationalistisk lojalitet.",
+      "kontrast_med": "MP accepterar NATO mer pragmatiskt; V håller principfast opposition. S och M ser NATO som en strategisk vinst; V ser det som ett misstag. KD och M driver på alliansens förmåga; V fokuserar på dess suveränitetsrisker."
+    }
+  },
+  "flytande_signifikanter": {
+    "totalförsvar": {
+      "beskrivning": "Begreppet används av samtliga partier men med starkt varierande tyngdpunkt: militärt vs civilt, nationellt vs alliansbundet, demokratiskydd vs kapacitetsbehov vs pliktgrund. Termen är teknisk-juridisk till ursprunget men har laddats med djupt politisk innebörd.",
+      "per_parti": {
+        "SD": {
+          "innebord": "Civil robusthet — beredskapslager, skyddsrum, nationell självförsörjning som det försummade ledet",
+          "exempel": "Samtidigt behöver totalförsvaret återuppbyggas med ett starkt militärt försvar och bättre beredskap i hela landet.",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Parallell uppbyggnad av militärt och civilt försvar, med NATO som det strategiska säkerhetstaket",
+          "exempel": "Sverige ska ha ett starkt totalförsvar där det militära försvaret och civila försvaret stärks parallellt.",
+          "galtan_matchning": "TAN"
+        },
+        "KD": {
+          "innebord": "Totalförsvarsplikten som rättslig grund för obligatorisk samhällstjänst — bredare än militären, socialt normerande",
+          "exempel": "Ett obligatoriskt tjänstgöringsår för unga vuxna inom ramen för totalförsvarsplikten skulle kunna stärka samhällsgemenskapen, öka försvarsförmågan och bidra till viktiga samhällsfunktioner.",
+          "galtan_matchning": "TAN"
+        },
+        "L": {
+          "innebord": "Starkt och uthålligt totalförsvar som förutsättning för frihetens försvar — instrumentellt snarare än identitetsbärande",
+          "exempel": "Det kräver ett starkt och uthålligt totalförsvar",
+          "galtan_matchning": "Spänning"
+        },
+        "S": {
+          "innebord": "Demokratins yttersta skydd — folkligt förankrat, av folket och för folket, med demokratiskyddet som explicit syfte",
+          "exempel": "För oss socialdemokrater är det en självklarhet att Sverige ska ha ett totalförsvar av det svenska folket för det svenska folket.",
+          "galtan_matchning": "Glidning"
+        },
+        "C": {
+          "innebord": "Integrerat system där civilt och militärt försvar är likvärdiga — kommunerna som lokal ryggrad",
+          "exempel": "Det civila försvaret behöver ges mer uppmärksamhet då detta är helt avgörande för totalförsvarsplaneringen och för Sveriges säkerhet.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "MP": {
+          "innebord": "Defensivt instrument med normativa restriktioner — inga kärnvapen, inget offensivt mandat",
+          "exempel": "Sveriges försvar ska utformas för att avskräcka från angrepp och försvara Sverige, inte för att utgöra eller understödja ett militärt hot mot någon annan stat.",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Nationellt försvarsansvar som inte kan delegeras till alliansen — suveränitetsbärande och kompletterande till NATO",
+          "exempel": "Medlemskapet i Nato kan inte ersätta uppbyggnaden av vårt eget försvar.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Totalförsvar är ett begrepp samtliga riksdagspartier kan säga ja till, men med radikalt olika innebörder. TAN-partierna (SD, M, KD) fyller det med nationell kapacitet, plikttjänst och fysisk beredskap. GAL-partierna (MP, V) lyfter defensivt mandat, restriktioner och suveränitetslogik. Mittpartier (S, C, L) positionerar sig längs axeln: S betonar det folkliga kollektivet, C betonar det lokala och decentraliserade, L betonar det uthålliga och frihetsförsvarande. Begreppets politiska funktion är att möjliggöra skenbar enighet om försvarsuppbyggnad, medan de grundläggande frågorna — vad som ska försvaras, mot vad, med vilka medel och under vilka restriktioner — förblir diskursivt obesvarade."
+    },
+    "sakerhet": {
+      "beskrivning": "Säkerhetsbegreppet är djupt omstritt: huruvida det betecknar militärt skydd av territorium, skydd av demokratiska värden, eller ett bredare spektrum av hot inklusive klimat och pandemier. Partiernas definition av säkerhet avgör vilken politik som framstår som säkerhetspolitisk och vilka hot som kräver politisk respons.",
+      "per_parti": {
+        "SD": {
+          "innebord": "Civil och nationell säkerhet — fungerande skyddsrum, beredskapslager, nationell motståndskraft i det egna territoriet",
+          "exempel": "MSB måste få nya och utökade direktiv för att säkerställa tillgången på fungerande skyddsrum.",
+          "galtan_matchning": "TAN"
+        },
+        "M": {
+          "innebord": "Nationell säkerhet — territoriell integritet, medborgarnas säkerhet, avskräckningsförmåga",
+          "exempel": "Det finns ingen viktigare uppgift än att värna Sveriges och svenskars säkerhet.",
+          "galtan_matchning": "TAN"
+        },
+        "KD": {
+          "innebord": "Kollektiv säkerhet genom allians — Sverige klarar sig inte ensamt, NATO ger de nödvändiga garantierna",
+          "exempel": "Sverige kan inför vår tids nya och allvarliga hot inte klara sig på egen hand. Bara det fullvärdiga Natomedlemskapet ger Sverige de säkerhetsgarantier som krävs för att kunna försvara vårt land.",
+          "galtan_matchning": "TAN"
+        },
+        "L": {
+          "innebord": "Demokratisk säkerhet — skydd av fria samhällen mot auktoritärt hybridkrig, inklusive cybersäkerhet",
+          "exempel": "Kina, Ryssland, Iran och Nordkorea bedriver i dag ett systematiskt gråzonskrig mot öppna demokratier.",
+          "galtan_matchning": "Spänning"
+        },
+        "S": {
+          "innebord": "Säkerhetspolitisk stabilitet — geopolitisk ordning med avskräckande totalförsvar och NATO som kompletterande garanti",
+          "exempel": "Sverige befinner sig i det allvarligaste säkerhetspolitiska läget sedan andra världskriget.",
+          "galtan_matchning": "Glidning"
+        },
+        "C": {
+          "innebord": "Totalförsvarssäkerhet med civil tyngdpunkt — kommunal och regional kapacitet som lokal säkerhetsbas",
+          "exempel": "Kort och gott – kommunerna har en nyckelroll både i den fredstida krisberedskapen och i totalförsvaret.",
+          "galtan_matchning": "Mittfåra"
+        },
+        "MP": {
+          "innebord": "Bred säkerhet — militära hot är en del av ett större spektrum som inkluderar klimat, pandemier och naturkatastrofer",
+          "exempel": "Sverige bör ha en bred syn på säkerhet som tar i beaktande militära hot såväl som andra hot, exempelvis klimatförändringar, pandemier och naturkatastrofer.",
+          "galtan_matchning": "GAL"
+        },
+        "V": {
+          "innebord": "Säkerhet genom fredliga lösningar och krishantering — diplomatisk logik överordnar militär avskräckning",
+          "exempel": "Svensk säkerhetspolitik ska bygga på fredliga lösningar och på att förebygga kriser snarare än att förespråka militära alternativ.",
+          "galtan_matchning": "GAL"
+        }
+      },
+      "analytisk_kommentar": "Säkerhetsbegreppet fungerar som den djupaste skiljelinjen i försvarsdiskursen. TAN-partierna (SD, M, KD) definierar säkerhet som nationell och militär, om än med olika tyngdpunkter. L utvidgar det till demokratisk säkerhet mot hybridhot, vilket skapar en intern spänning kongruent med partiets gränsposition. S opererar med en geopolitisk säkerhetslogik som speglar sitt mittfåreläge. C betonar civila och lokala dimensioner. GAL-partierna (MP, V) utmanar den militära grundlogiken antingen genom att bredda begreppet (MP: klimat och pandemier som säkerhetshot) eller genom att byta ut avskräckningslogiken mot en diplomatilogik (V). Begreppets innebörd avgör i grunden om mer säkerhet kräver mer militär upprustning eller ett bredare politikpaket."
+    }
+  }
+}
