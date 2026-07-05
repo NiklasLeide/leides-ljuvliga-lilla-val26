@@ -5,6 +5,8 @@ Types: `feat` | `fix` | `refactor` | `docs` | `chore` | `perf`
 
 ---
 
+[2026-07-05] feat: scripts/verify-citat-verbatim.py — deterministisk ordagrann-verifiering (v3-mönstret, 0 tokens): hämtar varje källa (HTML + PDF via pypdf, lokal_fil-stöd), normaliserar (NBSP, mjuka bindestreck inkl. omgivande whitespace, typografiska tecken, PDF-avstavning), kräver varje …-segment ordagrant; elementvis fallback för DOM-interfolierade sidor
+[2026-07-05] data: citat-vard.json — Steg A slutförd enligt v3-mönstret (undantag 4): 56/56 deterministiskt verifierade; fyra kantfixar mot källform (SD[4] böjning, V[6] hopklippt mening, MP[4] versalisering, L[4] parafras ersatt med källmening); MP[2] verifierad via tvådelad kontroll (DOM-interfoliering på mp.se — extraktionsartefakt, ej citatfel); M[0] IVF-citat utbytt efter evaluatorrundans relevanskrav (äldreomsorgslöftet ur samma snapshot, grep-verifierat) — allt dokumenterat i drafts/discourse-vard-STEGD-NOTER.md
 [2026-07-05] feat: diskursbatch skola — citatkatalog sources/discourse/citat-skola.json (54 citat, evaluator PASS), två oberoende utkast (sonnet+opus) och divergensrapport drafts/discourse-skola-RAPPORT.md (6 divergenser); kostnad $20.849952; data/discourse.json orörd — Steg D efter Niklas granskning
 
 [2026-07-05] feat: scripts/start-batch-detached.sh — frikopplad batchstart via schtasks one-shot (förälder = Task Scheduler-tjänsten, överlever sessionsdöd; fallback cmd start /b); stabil logg .loop/batch-detached.log; run-discourse-batch.sh-headern kräver nu denna startmetod
