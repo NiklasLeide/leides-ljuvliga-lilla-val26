@@ -12,8 +12,8 @@
       "Fredén, Johansson & Saynova (2024) – Word embeddings on ideology from Swedish parliamentarians"
     ],
     "omfattning": "Alla 8 riksdagspartier om rättsväsende, migration, klimat/energi, ekonomi, demokrati/konstitution, försvar/säkerhet, skola och vård/omsorg",
-    "senast_uppdaterad": "2026-07-05",
-    "version": "0.5.0"
+    "senast_uppdaterad": "2026-07-07",
+    "version": "0.5.1"
   },
   "flytande_signifikanter": {
     "trygghet": {
@@ -106,7 +106,7 @@
           "galtan_matchning": "GAL"
         }
       },
-      "analytisk_kommentar": "Ansvarsbegreppet avslöjar partiernas grundläggande samhällssyn. SD och M riktar ansvaret nedåt (individen ska anpassa sig). KD riktar det till familjen som moralisk enhet. L pendlar mellan individ och samhälle. S och C fördelar ansvaret. MP och V riktar det uppåt (samhällets strukturer). Riktningen på ansvaret speglar GAL-TAN-axeln."
+      "analytisk_kommentar": "Ansvarsbegreppet synliggör partiernas grundläggande samhällssyn. SD och M riktar ansvaret nedåt (individen ska anpassa sig). KD riktar det till familjen som moralisk enhet. L pendlar mellan individ och samhälle. S och C fördelar ansvaret. MP och V riktar det uppåt (samhällets strukturer). Riktningen på ansvaret speglar GAL-TAN-axeln."
     },
     "gemenskap": {
       "beskrivning": "Gemenskap/tillhörighet — grunden för social sammanhållning skiljer sig radikalt",
@@ -152,7 +152,7 @@
           "galtan_matchning": "GAL"
         }
       },
-      "analytisk_kommentar": "Gemenskapsbegreppet avslöjar den djupaste ideologiska skiljelinjen. SD kräver kulturell homogenitet. M kräver prestation (arbete och språk). KD kräver delade värderingar. L och C betonar möjligheter och öppenhet. MP betonar inkludering. V bygger gemenskap på klasssolidaritet. Skalan från etnisk till universell gemenskap följer GAL-TAN-axeln exakt."
+      "analytisk_kommentar": "Gemenskapsbegreppet synliggör den djupaste ideologiska skiljelinjen. SD kräver kulturell homogenitet. M kräver prestation (arbete och språk). KD kräver delade värderingar. L och C betonar möjligheter och öppenhet. MP betonar inkludering. V bygger gemenskap på klasssolidaritet. Skalan från etnisk till universell gemenskap följer GAL-TAN-axeln exakt."
     },
     "omstallning": {
       "beskrivning": "Omställning — klimatpolitikens mest centrala begrepp, fylls med radikalt olika innehåll",
@@ -754,10 +754,10 @@
         ],
         "retoriska_strategier": [
           "Nostalgi och guldåldersretorik (Sverige ska bli bra igen)",
-          "Folk-mot-elit-antagonism (populistisk diskursiv struktur)",
+          "Folk–elit-antagonism",
           "Säkerhetisering av migration och kulturell mångfald",
-          "Eufemisering av exkludering (återvandring som human lösning)",
-          "Affektiv kontrast och förlöjligande av motståndare"
+          "Återvandring inramad som human lösning",
+          "Affektiv kontrast mot motståndare"
         ],
         "galtan_kongruens": {
           "bedomning": "hög",
@@ -879,7 +879,7 @@
             {
               "term": "politisk nedläggning",
               "innebord": "Kärnkraftsnedläggningen beskrivs som politisk trots kommersiella beslut",
-              "underforstadd_premiss": "S/MP bar ansvaret — kausalitet konstrueras retroaktivt"
+              "underforstadd_premiss": "Ansvaret för kärnkraftsnedläggningen tillskrivs S/MP i efterhand"
             },
             {
               "term": "energitrygghet",
@@ -1011,7 +1011,7 @@
           "kontrast_med": "SD delar transparensintresset (offentlig statistik i utskott) med S men saknar S:s inramning av dold påverkan; till skillnad från C:s och L:s \"liberala demokrati\" och rättighetsfokus vilar SD:s demokratidiskurs på lokal folkomröstning, institutionell \"effektivisering\" och religionens gräns mot politiken."
         },
         "forsvar": {
-          "inramning": "SD *Inramning, nyckelbegrepp, retoriska strategier och kontrast är samstämmiga.* SD ramar in försvaret främst som en fråga om beredskap och civil motståndskraft. Problembilden är ett totalförsvar som förfallit: under 2000-talet har beredskapslagren successivt skrotats och ett mycket stort antal skyddsrum är inte operativa. Diskursen bärs av en förfallsberättelse där tidigare avveckling ställs mot behovet att återuppbygga totalförsvaret med bättre beredskap i hela landet. Lösningen hämtas i stor utsträckning från Finland som normerande förebild — en beredskapslag likt den finska — kompletterat med utökade MSB-direktiv för skyddsrum och ett stärkt militärt försvar med Ukrainas drönarförmåga som referens.",
+          "inramning": "SD ramar in försvaret främst som en fråga om beredskap och civil motståndskraft. Problembilden är ett totalförsvar som förfallit: under 2000-talet har beredskapslagren successivt skrotats och ett mycket stort antal skyddsrum är inte operativa. Diskursen bärs av en förfallsberättelse där tidigare avveckling ställs mot behovet att återuppbygga totalförsvaret med bättre beredskap i hela landet. Lösningen hämtas i stor utsträckning från Finland som normerande förebild — en beredskapslag likt den finska — kompletterat med utökade MSB-direktiv för skyddsrum och ett stärkt militärt försvar med Ukrainas drönarförmåga som referens.",
           "nyckelbegrepp": [
             {
               "term": "återuppbyggas",
@@ -1161,7 +1161,7 @@
     },
     "M": {
       "diskursprofil": {
-        "overordnad_inramning": "Sverige behöver lag och ordning genom ett perspektivskifte, restriktiv men rättvis migrationspolitik, och en energipolitik där klimatmål nås genom fossilfri teknik utan att begränsa individuell frihet",
+        "overordnad_inramning": "Individuell frihet som legitimerande princip: lag och ordning genom ett perspektivskifte, restriktiv men rättvis migrationspolitik, och en energipolitik där klimatmål nås genom fossilfri teknik utan att begränsa friheten",
         "nodalpunkter": [
           "lag och ordning",
           "perspektivskifte",
@@ -1179,7 +1179,7 @@
         ],
         "galtan_kongruens": {
           "bedomning": "hög",
-          "forklaring": "TAN i praktik men med liberal retorisk fernissa. M undviker SD:s etnokulturella ramverk och använder individansvar, systemhållbarhet och frihet som legitimerande principer."
+          "forklaring": "TAN-lutning i sakinnehåll, liberal i retorik. M undviker SD:s etnokulturella ramverk och legitimerar i stället sina positioner via individansvar, systemhållbarhet och frihet."
         }
       },
       "per_omrade": {
@@ -1286,7 +1286,7 @@
             },
             {
               "term": "alla kraftslag",
-              "innebord": "Inkluderande formulering som döljer att kärnkraft prioriteras",
+              "innebord": "Inkluderande formulering där kärnkraft i praktiken prioriteras",
               "underforstadd_premiss": "Vindkraft och sol är bra men otillräckliga utan kärnkraft"
             },
             {
@@ -1479,7 +1479,7 @@
               "kalla": "Vallöften 2026 (kampanjsida, ögonblicksbild 2026-07-03)"
             }
           ],
-          "galtan_kongruens": "God kongruens med M:s TAN-position (galtan 6.8) och högerekonomiska profil (lrecon 7.5). Säkerhetsprimatet, Natobejakelsen och den kvantifierade resultat- och regeringsgärningsretoriken är förenliga med en TAN-lutning, men ramen hålls i huvudsak fri från etnokulturella inslag och vilar i stället på handlingskraft och effektivitet — samma liberalt fernissade TAN som präglar partiets övriga diskurs.",
+          "galtan_kongruens": "God kongruens med M:s TAN-position (galtan 6.8) och högerekonomiska profil (lrecon 7.5). Säkerhetsprimatet, Natobejakelsen och den kvantifierade resultat- och regeringsgärningsretoriken är förenliga med en TAN-lutning, men ramen hålls i huvudsak fri från etnokulturella inslag och vilar i stället på handlingskraft och effektivitet — samma kombination av liberal retorik och TAN-lutning som präglar partiets övriga diskurs.",
           "kontrast_med": "Delar starkt totalförsvar och Natolinje med KD, L och S, men äger regeringsgärningen och driver den mest kvantifierade resultatretoriken (128 miljarder, drönarvärn, regemente i Skåne). Saknar SD:s beredskapsnostalgi och står i tydlig kontrast till V:s och MP:s defensiva ram."
         },
         "skola": {
@@ -1584,7 +1584,7 @@
     },
     "KD": {
       "diskursprofil": {
-        "overordnad_inramning": "Brottslighet bekämpas genom starka familjer och tydliga normer; migration kräver ansvar och humanitet; energipolitik bygger på teknikneutralitet och förvaltarskap",
+        "overordnad_inramning": "Starka familjer och tydliga normer som samhällets grund: brottslighet bekämpas genom familj och normer, migration kräver ansvar och humanitet, energipolitik bygger på teknikneutralitet och förvaltarskap",
         "nodalpunkter": [
           "familjen",
           "upprättelse",
@@ -1987,7 +1987,7 @@
     },
     "L": {
       "diskursprofil": {
-        "overordnad_inramning": "Liberal kriminalpolitik som söker balans; Tidösamarbetets spänning som diskursiv utmaning; kärnkraft som klimatlösning",
+        "overordnad_inramning": "Individuell frihet och skolan som bildningsprojekt är Liberalernas bärande inramning; liberal kriminalpolitik som söker balans; Tidösamarbetets spänning som diskursiv utmaning; kärnkraft som klimatlösning",
         "nodalpunkter": [
           "stålhandske och lovikkavante",
           "utbildning",
@@ -2633,7 +2633,7 @@
           "kontrast_med": "S delar transparens- och insynsagenda med SD (offentlig statistik) men ramar hotet som dold påverkan (finansiering, \"trollarméer\", \"religiös fundamentalism\") snarare än institutionell effektivitet; till skillnad från V:s statsmaktsskepsis riktar S insynskraven mot privata och utländska aktörer."
         },
         "forsvar": {
-          "inramning": "S *Inramningens kärna, galtan_kongruens och kontrast är samstämmiga* (tilläggsdimensionen kring nyckelbegrepp/retorik redovisas ovan). S ramar in försvarsfrågan genom en historisk allvarsmarkering: Sverige befinner sig i \"det allvarligaste säkerhetspolitiska läget sedan andra världskriget\", med orsaken entydigt lokaliserad till Rysslands olagliga anfallskrig mot Ukraina och ett kraftigt försämrat närområde. Totalförsvaret beskrivs som demokratins yttersta skydd, inte enbart ett militärt instrument, och som ett folkförankrat projekt — \"av det svenska folket för det svenska folket\" — som ska stärkas på alla nivåer. NATO-medlemskapet accepteras som ett strategiskt tillskott till avskräckningsförmågan, men den nationella militära och civila förmågan måste byggas i grunden.",
+          "inramning": "S ramar in försvarsfrågan genom en historisk allvarsmarkering: Sverige befinner sig i \"det allvarligaste säkerhetspolitiska läget sedan andra världskriget\", med orsaken entydigt lokaliserad till Rysslands olagliga anfallskrig mot Ukraina och ett kraftigt försämrat närområde. Totalförsvaret beskrivs som demokratins yttersta skydd, inte enbart ett militärt instrument, och som ett folkförankrat projekt — \"av det svenska folket för det svenska folket\" — som ska stärkas på alla nivåer. NATO-medlemskapet accepteras som ett strategiskt tillskott till avskräckningsförmågan, men den nationella militära och civila förmågan måste byggas i grunden.",
           "nyckelbegrepp": [
             {
               "term": "totalförsvar av det svenska folket för det svenska folket",
@@ -2788,7 +2788,7 @@
     },
     "C": {
       "diskursprofil": {
-        "overordnad_inramning": "Pragmatisk kriminalpolitik utan enkla lösningar; öppen migrationspolitik med fokus på arbetskraft; marknadsdriven energiomställning med förnybart i centrum",
+        "overordnad_inramning": "Pragmatisk, icke-ideologisk hållning över områdena: kriminalpolitik utan enkla lösningar, öppen migrationspolitik med fokus på arbetskraft, marknadsdriven energiomställning med förnybart i centrum",
         "nodalpunkter": [
           "förebyggande",
           "hopp",
@@ -3191,7 +3191,7 @@
     },
     "MP": {
       "diskursprofil": {
-        "overordnad_inramning": "Brott förebyggs genom att bekämpa segregation; migration kräver mänskliga rättigheter och barnperspektiv; klimatkrisen kräver grön omställning med förnybar energi och energilagring — inte kärnkraft",
+        "overordnad_inramning": "Klimatkrisen som organiserande princip: grön omställning med förnybar energi och energilagring — inte kärnkraft; brott förebyggs genom att bekämpa segregation; migration kräver mänskliga rättigheter och barnperspektiv",
         "nodalpunkter": [
           "förebyggande",
           "barnperspektiv",

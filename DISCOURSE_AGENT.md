@@ -187,6 +187,28 @@ Utvidgar glidningsregeln ovan:
 - **Alla 8 partier** — SD, M, KD, L, S, C, MP, V — behandlas likvärdigt i omfång och djup
 - **Partiernas egna värdeladdade begrepp citattecknas alltid i beskrivande text** — analysen beskriver att partiet kallar något X, den påstår inte att det är X. Exempel: "ansvarsfull budgetpolitik" (SD), "rättvis skattesänkning" (S), "ett finanspolitiskt ramverk som respekteras" (C), "rättvisare skatter" (MP).
 
+### Symmetrisk etikettsättning (retoriska_strategier)
+
+Retoriska strategier ska namnges ur partiets EGEN logik, neutralt-beskrivande —
+aldrig ur en kritikers avslöjande perspektiv. Två tester före varje etikett:
+
+1. Skulle ett annat parti som använder samma sorts strategi få en etikett med
+   samma laddning? (t.ex. "Folk-mot-elit-antagonism" vs "Folklig förankring"
+   beskriver samma populistiska struktur — ge dem parallella neutrala namn.)
+2. Är etiketten formulerad ur partiets logik ("vad partiet försöker göra") eller
+   ur en kritikers ("vad strategin avslöjar/döljer")? Endast det förra.
+
+Verkligt innehåll som skiljer partier åt ska beskrivas — men en verklig skillnad
+i strategi rättfärdigar aldrig en skillnad i etikettens laddning. Beskriv vad
+partiet gör (t.ex. "Omdefiniering av återvandring som frivillig och human"), inte
+domen om det (t.ex. "Eufemisering av exkludering").
+
+Rot till varför detta krävs: (a) träningsdata innehåller tätare kritisk
+begreppsapparat om vissa partier än andra, så modellen når efter kritikerns
+vokabulär oftare för dem; (b) kritisk diskursanalys som metod har inbyggd
+slagsida mot att "avslöja" retorik som pekar utåt mot grupper. Båda är
+strukturella — de återkommer om de inte byggs bort explicit.
+
 ---
 
 ## Arbetsflöde per område

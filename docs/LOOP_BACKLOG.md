@@ -31,3 +31,11 @@ den implementeras.
   1M-kontext (kräver usage credits) → 429. Transient-retry med fresh session
   mildrar, men v3 bör överväga: sessionsrotation efter N turns, eller
   instruktion till workern att arbeta parti-för-parti med kompaktare kontext.
+
+- **Symmetrisk etikettkontroll (retoriska_strategier).** v3-prompten ska bära
+  symmetriregeln från `DISCOURSE_AGENT.md` explicit, plus ett efterkontroll-steg
+  som ställer alla partiers strateginamn bredvid varandra och flaggar
+  laddningsasymmetri (kritikerröst vs partilogik) innan draften går vidare.
+  Rot: strukturell bias i träningsdata + i CDA-metoden gör att detta återkommer
+  av sig självt. Fångades bara denna gång genom mänsklig läsning av vyn — ingen
+  maskinkontroll såg det.
