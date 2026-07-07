@@ -1,0 +1,179 @@
+/* ============================================================
+   val26 — shared shell (nav rail, mobile drawer, page header,
+   shared lens components). Reads tokens.css. Loaded on every page.
+   The nav MARKUP is single-sourced in app/_shell.html and synced
+   into pages by scripts/sync-shell.mjs — this file only styles it.
+   ============================================================ */
+* , *::before, *::after { box-sizing: border-box; }
+html { height: 100%; }
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+a { color: var(--ink); }
+a:hover { color: var(--secondary); }
+
+/* Accessibility: skip link */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--ink); color: #fff; padding: 8px 14px;
+  border-radius: 0 0 var(--radius-btn) 0; font: 600 13px var(--font-body);
+  text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------- Desktop rail (>=920px) ---------- */
+.rail {
+  position: fixed; left: 0; top: 0; bottom: 0; width: var(--rail-w);
+  background: var(--rail-bg); border-right: 1px solid var(--border);
+  padding: 22px 16px; overflow-y: auto; z-index: 40;
+}
+.rail__title {
+  display: block; font: 600 14px/1.3 var(--font-serif);
+  letter-spacing: -.01em; color: var(--ink);
+  margin-bottom: 20px; text-decoration: none;
+}
+.rail__title span { color: var(--muted); }
+.rail__eyebrow, .drawer__eyebrow {
+  font: 700 9px/1 var(--font-body); letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
+}
+.rail__items { display: flex; flex-direction: column; gap: 2px; }
+.navitem {
+  display: block; text-decoration: none; background: transparent;
+  border-radius: var(--radius-btn); padding: 9px 11px;
+  transition: background .15s;
+}
+.navitem:hover { background: var(--soft-border); }
+.navitem__q {
+  display: block; font: 600 13px/1.35 var(--font-serif); color: var(--body);
+}
+.navitem__lens {
+  display: block; font: 600 8.5px/1.2 var(--font-body); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--faint); margin-top: 4px;
+}
+/* Active lens */
+.navitem.is-active { background: var(--ink); }
+.navitem.is-active:hover { background: var(--ink); }
+.navitem.is-active .navitem__q,
+.navitem.is-active .navitem__lens { color: #fff; }
+.rail__method {
+  display: block; margin-top: 18px; padding: 6px 11px;
+  font: 600 11.5px var(--font-body); color: var(--secondary); text-decoration: none;
+}
+.rail__method.is-active { font-weight: 700; border-left: 3px solid var(--ink); }
+
+/* ---------- Mobile topbar + drawer (<920px) ---------- */
+.topbar {
+  display: none; background: var(--card); border-bottom: 1px solid var(--border);
+  padding: 11px 18px; align-items: center; gap: 14px;
+  position: sticky; top: 0; z-index: 45;
+}
+.topbar__burger {
+  appearance: none; border: none; background: none; cursor: pointer;
+  display: flex; flex-direction: column; gap: 4px; padding: 8px 6px;
+}
+.topbar__burger span { width: 20px; height: 2px; background: var(--ink); border-radius: 2px; }
+.topbar__title { font: 600 15px var(--font-serif); letter-spacing: -.01em; color: var(--ink); text-decoration: none; }
+.topbar__title span { color: var(--muted); }
+
+.drawer[hidden] { display: none; }
+.drawer__scrim { position: fixed; inset: 0; background: rgba(28,28,28,.3); z-index: 50; }
+.drawer__panel {
+  position: fixed; top: 0; bottom: 0; left: 0; width: min(320px, 84vw);
+  background: var(--rail-bg); border-right: 1px solid #e0dcd3;
+  box-shadow: var(--shadow-drawer); z-index: 51; padding: 22px 18px;
+  overflow-y: auto;
+}
+.drawer .navitem__q { font-size: 15px; }
+.drawer .navitem__lens { font-size: 9px; }
+
+/* ---------- Content wrapper ---------- */
+.shell-main { margin-left: var(--rail-w); min-height: 100vh; display: flex; flex-direction: column; }
+.shell-wrap {
+  width: 100%; max-width: var(--content-max); margin: 0 auto;
+  padding: 48px var(--side-pad) 56px;
+}
+.shell-main.is-wide .shell-wrap { max-width: var(--content-max-wide); }
+
+@media (max-width: 919.98px) {
+  .rail { display: none; }
+  .topbar { display: flex; }
+  .shell-main { margin-left: 0; }
+  .shell-wrap { padding: 28px var(--side-pad) 48px; }
+}
+
+/* ============================================================
+   Shared lens components (consumed by every phase)
+   ============================================================ */
+
+/* Page header band with area tone (crossfades on area change) */
+.lens-header {
+  background: var(--header-tone, var(--area-neutral));
+  transition: background var(--tone-fade) ease;
+  border-radius: var(--radius-card);
+  padding: 28px 28px 26px; margin-bottom: 28px;
+}
+.lens-pill {
+  display: inline-block; background: var(--card); color: var(--secondary);
+  font: 700 9.5px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase;
+  padding: 6px 12px; border-radius: var(--radius-pill);
+}
+.lens-updated { font: 500 11px var(--font-body); color: var(--muted); margin-left: 10px; }
+.lens-h1 {
+  margin: 16px 0 0; font: 600 clamp(26px, 5vw, 36px)/1.12 var(--font-serif);
+  letter-spacing: -.015em; text-wrap: pretty;
+}
+.lens-intro { margin: 12px 0 0; max-width: 620px; font: 400 15px/1.6 var(--font-body); color: var(--body); text-wrap: pretty; }
+
+/* Stat trio (count-up) */
+.stat-row { display: flex; gap: 36px; margin-top: 22px; flex-wrap: wrap; }
+.stat { display: flex; flex-direction: column; gap: 2px; }
+.stat__val { font: 700 34px/1 var(--font-body); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.stat__label { font: 500 11px var(--font-body); color: var(--muted); }
+
+/* Party chips (mirror graph nodes; multi-select filter/dim) */
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chip {
+  appearance: none; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
+  border: 2px solid var(--border); background: var(--card); color: var(--ink);
+  border-radius: var(--radius-pill); padding: 6px 12px;
+  font: 600 12px var(--font-body); transition: background .15s, border-color .15s, opacity .15s;
+}
+.chip__dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+.chip.is-selected { color: #fff; border-color: transparent; }
+.chip.is-dimmed { opacity: .18; }
+.chip-clear {
+  appearance: none; border: none; background: none; cursor: pointer;
+  font: 600 12px var(--font-body); color: var(--secondary); text-decoration: underline;
+}
+
+/* Area tabs */
+.area-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.area-tab {
+  appearance: none; cursor: pointer; border: 1px solid var(--border); background: var(--card);
+  color: var(--secondary); border-radius: var(--radius-btn); padding: 7px 12px;
+  font: 600 12.5px var(--font-body); transition: background .15s, color .15s;
+}
+.area-tab:hover { color: var(--ink); }
+.area-tab.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* Generic card + dimming for graph nodes */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-card); padding: var(--space-lg); }
+.is-dimmed { opacity: .18; }
+
+/* Placeholder note (Phase-0 scaffolding; removed as lenses are built) */
+.phase-stub {
+  border: 1px dashed var(--track); border-radius: var(--radius-card);
+  padding: 28px; color: var(--secondary); font: 400 14px/1.6 var(--font-body);
+  background: var(--rail-bg);
+}
+.phase-stub strong { color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

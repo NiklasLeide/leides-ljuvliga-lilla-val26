@@ -1,0 +1,88 @@
+/* ============================================================
+   val26 — design tokens (:root SSOT)
+   Evolved from handoff/design_handoff_val26/README.md token table
+   and design-tokens-original.md. All components read from here —
+   no hardcoded colours/spacing in page CSS.
+   ============================================================ */
+:root {
+  /* Fonts */
+  --font-serif: 'Source Serif 4', serif;
+  --font-body:  'DM Sans', system-ui, sans-serif;
+  --font-mono:  ui-monospace, Menlo, monospace;
+
+  /* Core neutrals */
+  --ink:          #211f1c;  /* headings, active nav, primary text */
+  --body:         #4d4942;  /* paragraphs */
+  --body-strong:  #3d3a34;
+  --secondary:    #68645d;  /* secondary text, labels */
+  --muted:        #94908a;  /* hints, eyebrows */
+  --faint:        #a8a49a;  /* source lines, ruler labels */
+  --page-bg:      #f8f7f4;
+  --rail-bg:      #faf8f3;  /* left nav, annotation panels */
+  --card:         #ffffff;
+  --border:       #e7e4de;
+  --soft-border:  #f0ede7;
+  --soft-border-2:#eeebe2;
+  --track:        #dcd8cf;  /* scale rails */
+  --ruler:        #d5d0c6;  /* axis lines */
+  --ruler-tick:   #a8a49a;
+  --ruler-stick:  #b5b0a6;  /* beeswarm sticks */
+
+  /* Party colours — the only saturated colours on the site */
+  --party-v:  #AF1D22;
+  --party-s:  #ED1B34;
+  --party-mp: #53A12B;
+  --party-c:  #009933;
+  --party-l:  #006AB3;
+  --party-kd: #231977;
+  --party-m:  #52BDEC;
+  --party-sd: #DDCF00;
+  --party-sd-text: #333;   /* SD node text (yellow bg) */
+
+  /* Status pastels — congruence words↔votes, NEVER political value */
+  --stammer-bg:   #d4f7dc;  --stammer-text:   #1a7a3a;
+  --delvis-bg:    #fff3cd;  --delvis-text:    #8a5700;  --delvis-accent: #e3b23c;
+  --invantar-bg:  #e0f2fe;  --invantar-text:  #075985;  --invantar-accent: #7aa7c7;
+
+  /* Area-tone hues (oklch(0.95 0.02 H)) — see area tokens below */
+  --area-rattsvasende: oklch(0.95 0.02 250);
+  --area-migration:    oklch(0.95 0.02 285);
+  --area-klimat:       oklch(0.95 0.02 155);
+  --area-ekonomi:      oklch(0.95 0.02 85);
+  --area-demokrati:    oklch(0.95 0.02 215);
+  --area-forsvar:      oklch(0.95 0.02 55);
+  --area-skola:        oklch(0.95 0.02 320);
+  --area-vard:         oklch(0.95 0.02 25);
+  --area-neutral:      oklch(0.945 0.008 85);  /* area-less lenses (GAL-TAN) */
+
+  /* Radii */
+  --radius-card:   14px;
+  --radius-inner:  10px;
+  --radius-btn:    8px;
+  --radius-pill:   99px;
+
+  /* Shadows */
+  --shadow-node:      0 2px 6px rgba(0,0,0,.18);
+  --shadow-node-sel:  0 3px 12px rgba(0,0,0,.28);
+  --shadow-drawer:    6px 0 24px rgba(0,0,0,.12);
+  --shadow-card-hover:0 4px 16px rgba(0,0,0,.08);
+
+  /* Spacing scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+
+  /* Layout */
+  --rail-w:        210px;
+  --content-max:   940px;
+  --content-max-wide: 1140px;  /* GAL-TAN */
+  --reading-max:   640px;      /* Om metoden */
+  --side-pad:      22px;
+  --breakpoint:    920px;      /* rail ↔ mobile drawer */
+
+  /* Motion */
+  --ease-spring: cubic-bezier(.34, 1.2, .4, 1);
+  --tone-fade:   400ms;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#f8f7f4;font-family:'DM Sans',system-ui,sans-serif;color:#211f1c}
+a{color:#211f1c}a:hover{color:#68645d}
+</style>
+</helmet>
+
+<sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;left:0;top:0;bottom:0;width:210px;background:#faf8f3;border-right:1px solid #e7e4de;box-sizing:border-box;padding:22px 16px;overflow-y:auto;z-index:40">
+    <a href="Startsida.dc.html" style="display:block;font:600 14px/1.3 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-bottom:20px;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    <div style="font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Din fråga</div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+        <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:9px 11px;transition:background .15s" style-hover="background:{{ n.hoverBg }}">
+          <span style="display:block;font:600 13px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+          <span style="display:block;font:600 8.5px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+        </a>
+      </sc-for>
+    </div>
+    <a href="Om metoden.dc.html" style="display:block;margin-top:18px;padding:6px 11px;font:600 11.5px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+  </div>
+</sc-if>
+<div style="min-height:100vh;display:flex;flex-direction:column;margin-left:{{ contentML }}">
+  <sc-if value="{{ showTopbar }}" hint-placeholder-val="{{ false }}">
+    <div style="background:#fff;border-bottom:1px solid #e7e4de;padding:11px 18px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:45">
+      <button onClick="{{ toggleMenu }}" style="appearance:none;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:8px 6px">
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+      </button>
+      <a href="Startsida.dc.html" style="font:600 15px 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closeMenu }}" style="position:fixed;inset:0;background:rgba(28,28,28,.3);z-index:50"></div>
+      <div style="position:fixed;top:0;bottom:0;left:0;width:min(320px,84vw);background:#faf8f3;border-right:1px solid #e0dcd3;box-shadow:6px 0 24px rgba(0,0,0,.12);z-index:51;padding:22px 18px;overflow-y:auto;box-sizing:border-box">
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#94908a;margin-bottom:14px">Välj din fråga</div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+            <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:11px 13px">
+              <span style="display:block;font:600 15px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+              <span style="display:block;font:600 9px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+            </a>
+          </sc-for>
+        </div>
+        <a href="Om metoden.dc.html" style="display:block;margin-top:16px;padding:8px 13px;font:600 13px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+      </div>
+    </sc-if>
+  </sc-if>
+
+  <!-- Header — tonas efter valt sakområde -->
+  <div style="background:{{ areaTone }};transition:background .4s">
+    <div style="max-width:940px;margin:0 auto;padding:30px 22px 26px">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <div style="background:#fff;color:#5a5344;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Lins · Position</div>
+        <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">Uppdaterad juli 2026</span>
+      </div>
+      <h1 style="margin:14px 0 0;font:600 clamp(26px,5vw,36px)/1.15 'Source Serif 4',serif;letter-spacing:-.01em;max-width:620px;text-wrap:pretty">Var står partierna i sakfrågorna?</h1>
+      <p style="margin:10px 0 0;font:400 14.5px/1.6 'DM Sans',sans-serif;color:#5a5648;max-width:620px;text-wrap:pretty">Varje fråga är en skala med sakligt formulerade ändpunkter — en mätsticka, inte ett betyg. Noderna är partiernas positioner; streckad ring betyder otydlig eller villkorad position.</p>
+      <div style="display:flex;gap:32px;margin-top:20px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statTopics }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">frågor i {{ areaLabelLower }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statPos }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">placerade positioner</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statUnclear }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">markerade som otydliga</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:940px;margin:0 auto;padding:20px 22px 48px;width:100%;box-sizing:border-box">
+
+    <!-- Sakområde -->
+    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px">
+      <sc-for list="{{ areaTabs }}" as="a" hint-placeholder-count="2">
+        <button onClick="{{ a.onClick }}" style="appearance:none;border:1px solid {{ a.border }};background:{{ a.bg }};color:{{ a.txt }};font:600 13px 'DM Sans',sans-serif;padding:7px 15px;border-radius:8px;cursor:pointer;transition:all .15s" style-hover="border-color:#94908a">{{ a.label }}</button>
+      </sc-for>
+    </div>
+
+    <!-- Partival -->
+    <div style="font:400 12px/1.5 'DM Sans',sans-serif;color:#94908a;margin-bottom:8px">{{ cmpLabel }}</div>
+    <div style="display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:20px">
+      <sc-for list="{{ chips }}" as="c" hint-placeholder-count="8">
+        <button onClick="{{ c.onClick }}" style="appearance:none;border:2px solid {{ c.border }};background:{{ c.bg }};color:{{ c.txt }};font:700 13px 'DM Sans',sans-serif;padding:7px 14px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:7px;transition:all .15s" style-hover="border-color:#94908a">
+          <span style="width:11px;height:11px;border-radius:50%;background:{{ c.color }};flex:none"></span>{{ c.code }}
+        </button>
+      </sc-for>
+      <sc-if value="{{ hasSelection }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ onClear }}" style="appearance:none;border:none;background:none;font:600 12px 'DM Sans',sans-serif;color:#68645d;cursor:pointer;padding:6px 8px;text-decoration:underline">Rensa</button>
+      </sc-if>
+    </div>
+
+    <!-- Frågor -->
+    <sc-for list="{{ topics }}" as="t" hint-placeholder-count="3">
+      <div style="background:#fff;border:1px solid #e7e4de;border-radius:14px;padding:20px 24px 18px;margin-bottom:16px">
+        <div style="font:600 17px/1.3 'Source Serif 4',serif;margin-bottom:2px">{{ t.name }}</div>
+        <div style="font:400 11.5px/1.5 'DM Sans',sans-serif;color:#94908a;margin-bottom:14px">Tryck på ett parti för att jämföra — håll pekaren över en nod för positionen.</div>
+        <div style="position:relative;height:{{ t.trackH }}px;margin:0 10px;transition:height .4s">
+          <div style="position:absolute;top:{{ t.lineY }}px;left:0;right:0;height:3px;border-radius:2px;background:#dcd8cf"></div>
+          <div style="position:absolute;top:{{ t.tickY }}px;left:0;width:2px;height:11px;background:#a8a49a"></div>
+          <div style="position:absolute;top:{{ t.tickY }}px;left:50%;width:2px;height:11px;background:#a8a49a"></div>
+          <div style="position:absolute;top:{{ t.tickY }}px;right:0;width:2px;height:11px;background:#a8a49a"></div>
+          <sc-for list="{{ t.sticks }}" as="s" hint-placeholder-count="0">
+            <div style="position:absolute;left:{{ s.left }}%;top:{{ s.top }}px;width:1px;height:{{ s.height }}px;background:#b5b0a6;opacity:{{ s.opacity }};transition:opacity .3s"></div>
+          </sc-for>
+          <sc-for list="{{ t.nodes }}" as="n" hint-placeholder-count="8">
+            <div onClick="{{ n.onClick }}" title="{{ n.tip }}" style="position:absolute;left:{{ n.left }}%;top:{{ n.top }}px;width:{{ n.size }}px;height:{{ n.size }}px;border-radius:50%;transform:translate(-50%,-50%);background:{{ n.color }};border:3px {{ n.borderStyle }} #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 {{ n.fontSize }}px 'DM Sans',sans-serif;color:{{ n.txt }};cursor:pointer;opacity:{{ n.opacity }};z-index:{{ n.z }};transition:left .8s cubic-bezier(.34,1.2,.4,1),top .8s cubic-bezier(.34,1.2,.4,1),opacity .3s" style-hover="transform:translate(-50%,-50%) scale(1.22);z-index:30">{{ n.code }}</div>
+          </sc-for>
+        </div>
+        <div style="display:flex;justify-content:space-between;gap:20px;font:600 11px 'DM Sans',sans-serif;color:#7a766e;margin-top:2px"><span>← {{ t.low }}</span><span style="text-align:right">{{ t.high }} →</span></div>
+        <sc-if value="{{ t.hasCards }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:14px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px">
+            <sc-for list="{{ t.cards }}" as="k" hint-placeholder-count="2">
+              <div style="border:1px solid #e7e4de;border-top:3px solid {{ k.color }};border-radius:8px;padding:11px 13px">
+                <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px">
+                  <span style="width:10px;height:10px;border-radius:50%;background:{{ k.color }};flex:none"></span>
+                  <span style="font:600 13px 'Source Serif 4',serif">{{ k.name }}</span>
+                  <sc-if value="{{ k.unclear }}" hint-placeholder-val="{{ false }}">
+                    <span style="font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#8a5700;background:#fff3cd;padding:3px 7px;border-radius:4px;margin-left:auto;flex:none">otydlig</span>
+                  </sc-if>
+                </div>
+                <div style="font:400 12.5px/1.45 'DM Sans',sans-serif;color:#4d4942;text-wrap:pretty">{{ k.text }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+    </sc-for>
+
+    <div style="font:400 11px/1.5 ui-monospace,Menlo,monospace;color:#a8a49a;margin-top:6px">Källa: partiprogram, budgetmotioner och voteringar 2022–2026 · skalvärden egen bedömning</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;nodStorlek&quot;: {&quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 36, &quot;min&quot;: 30, &quot;max&quot;: 48, &quot;step&quot;: 2, &quot;unit&quot;: &quot;px&quot;, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Diagram&quot;},
+  &quot;visaAllaCitat&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Innehåll&quot;}
+}">
+class Component extends DCLogic {
+  DATA = {
+    order: ["V","S","MP","C","L","KD","M","SD"],
+    colors: {S:"#ED1B34",M:"#52BDEC",SD:"#DDCF00",V:"#AF1D22",C:"#009933",KD:"#231977",L:"#006AB3",MP:"#53A12B"},
+    names: {S:"Socialdemokraterna",M:"Moderaterna",SD:"Sverigedemokraterna",V:"Vänsterpartiet",C:"Centerpartiet",KD:"Kristdemokraterna",L:"Liberalerna",MP:"Miljöpartiet"},
+    tones: { skola: "oklch(0.95 0.02 320)", ekonomi: "oklch(0.95 0.02 85)" },
+    positions: {
+      skola: { label: "Skola", topics: [
+        { name: "Fristående skolor", low: "Strikt reglering", high: "Fri etableringsrätt", pos: {
+          V:[5,"Avskaffa vinst, statligt huvudmannaskap",false], S:[18,"Förbjud vinstuttag, kommunalt veto",false],
+          MP:[22,"Etableringsstopp vinstdrivande",false], L:[30,"Fasa ut aktiebolag som driftsform",false],
+          SD:[55,"Skärp krav, ingen vinstbegränsning",true], KD:[72,"Värna valfrihet, kvalitetskrav",false],
+          M:[78,"Värna friskolereformen",false], C:[88,"Stark valfrihet, inga vinstgränser",false] } },
+        { name: "Vinstuttag i välfärden", low: "Förbjud vinstuttag", high: "Fri vinstutdelning", pos: {
+          V:[5,"Förbjud vinst helt",false], MP:[10,"Förbjud utdelning, fasa ut AB",false],
+          S:[12,"Förbjud vinstuttag i skolan",false], L:[18,"Fasa ut vinstintresset (landsmöte-25)",false],
+          C:[58,"Villkorad vinst vid kvalitet",true], KD:[75,"Nej till vinstförbud",false],
+          SD:[82,"Ingen vinstreglering",false], M:[85,"Avvisar vinstbegränsning",false] } },
+        { name: "Statlig styrning av skolan", low: "Kommunalt ansvar", high: "Statligt huvudmannaskap", pos: {
+          C:[15,"Emot förstatligande",false], M:[30,"Delat ansvar består",false],
+          KD:[40,"Delat ansvar, skolpengsnorm",false], S:[48,"Ökad statlig styrning",false],
+          MP:[50,"Statligt finansieringsansvar",false], V:[85,"Statligt huvudmannaskap",false],
+          SD:[88,"Statligt huvudmannaskap",false], L:[92,"Förstatliga offentliga skolor",false] } }
+      ]},
+      ekonomi: { label: "Ekonomi", topics: [
+        { name: "Skatt på arbete", low: "Höj skatten på höga inkomster", high: "Sänk skatten på arbete", pos: {
+          V:[8,"Återinför värnskatt, ~67% marginal",false], MP:[22,"Värnskatt för totalförsvar",false],
+          S:[25,"Höj för höga, behåll för låga",false], C:[62,"Sänk brett via skattereduktion",true],
+          KD:[75,"Förstärk jobbskatteavdrag",false], SD:[78,"Sänk brett",false],
+          M:[85,"Sänker mest, ~35 mdr",false], L:[88,"Sänk marginalskatter",false] } },
+        { name: "Välfärdens finansiering", low: "Höj skatter för välfärden", high: "Effektivisera utan höjning", pos: {
+          V:[5,"Höj skatter ~66 mdr",false], S:[18,"Nya resurser före sänkningar",false],
+          MP:[20,"Investera i välfärd/klimat",false], C:[55,"Effektivisera + stärk",true],
+          KD:[70,"Sänk skatt, effektivisera",false], SD:[72,"Effektivisera, sysselsättning",false],
+          L:[80,"Sänk + selektiva satsningar",false], M:[82,"Sänkta skatter stärker",false] } },
+        { name: "Arbetsmarknadsreglering", low: "Stärk anställningsskyddet", high: "Flexiblare arbetsmarknad", pos: {
+          V:[8,"Emot LAS-reformen",false], MP:[32,"Parternas modell",false],
+          S:[35,"Drev LAS via parterna",false], C:[65,"Flexibilitet + omställning",false],
+          SD:[68,"Partsmodellen",false], L:[70,"Moderniserad arbetsrätt",false],
+          KD:[72,"Flexibilitet med trygghet",false], M:[78,"Vill gå längre i flexibilitet",false] } }
+      ]}
+    }
+  };
+  state = { area: "skola", selected: [], aTopics: 0, aPos: 0, aUnclear: 0 };
+
+  NAV = [
+    { q: "Var står partierna i sakfrågorna?", lens: "Position", href: "Position - vy i full skala.dc.html", id: "position" },
+    { q: "Håller orden när det blir votering?", lens: "Säger vs gör", href: "Säger vs gör - vy i full skala.dc.html", id: "svg" },
+    { q: "Vad menar de egentligen med orden?", lens: "Språk", href: "Språk - vy i full skala.dc.html", id: "sprak" },
+    { q: "Vart är partierna på väg?", lens: "GAL-TAN", href: "GAL-TAN - vy i full skala.dc.html", id: "galtan" }
+  ];
+  LENS_ID = "position";
+  navVals() {
+    const narrow = !!this.state.narrow;
+    return {
+      showRail: !narrow, showTopbar: narrow,
+      contentML: narrow ? '0px' : '210px',
+      menuOpen: !!this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      navItems: this.NAV.map(n => {
+        const on = n.id === this.LENS_ID;
+        return { ...n, bg: on ? '#211f1c' : 'transparent', hoverBg: on ? '#211f1c' : '#f0ede7', qColor: on ? '#fff' : '#4d4942', lensColor: on ? '#b3ada0' : '#a8a49a' };
+      })
+    };
+  }
+  componentDidMount() {
+    this._onResize = () => this.setState({ narrow: window.innerWidth < 920 });
+    window.addEventListener('resize', this._onResize);
+    this._onResize();
+    this.animateStats();
+  }
+  componentWillUnmount() { cancelAnimationFrame(this._raf); window.removeEventListener('resize', this._onResize); }
+
+  animateStats() {
+    cancelAnimationFrame(this._raf);
+    const ad = this.DATA.positions[this.state.area];
+    const tTopics = ad.topics.length;
+    let tPos = 0, tUnclear = 0;
+    ad.topics.forEach(t => Object.values(t.pos).forEach(v => { tPos++; if (v[2]) tUnclear++; }));
+    const f = { t: this.state.aTopics, p: this.state.aPos, u: this.state.aUnclear };
+    const t0 = performance.now(), dur = 900;
+    const tick = (t) => {
+      const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      this.setState({
+        aTopics: Math.round(f.t + (tTopics - f.t) * e),
+        aPos: Math.round(f.p + (tPos - f.p) * e),
+        aUnclear: Math.round(f.u + (tUnclear - f.u) * e)
+      });
+      if (p < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+
+  setArea(a) { this.setState({ area: a }, () => this.animateStats()); }
+  toggle(p) {
+    const s = this.state.selected.slice(), i = s.indexOf(p);
+    if (i >= 0) s.splice(i, 1); else s.push(p);
+    this.setState({ selected: s });
+  }
+
+  renderVals() {
+    const D = this.DATA, st = this.state;
+    const sel = st.selected, has = sel.length > 0;
+    const ad = D.positions[st.area];
+    const size = this.props.nodStorlek ?? 36;
+    const visaAlla = this.props.visaAllaCitat ?? false;
+
+    const areaTabs = Object.keys(D.positions).map(a => ({
+      label: D.positions[a].label,
+      onClick: () => this.setArea(a),
+      bg: st.area === a ? '#211f1c' : '#fff',
+      txt: st.area === a ? '#fff' : '#68645d',
+      border: st.area === a ? '#211f1c' : '#e7e4de'
+    }));
+
+    const chips = D.order.map(p => {
+      const on = sel.includes(p);
+      return {
+        code: p, color: D.colors[p],
+        border: on ? D.colors[p] : '#e7e4de',
+        bg: on ? D.colors[p] : '#fff',
+        txt: on ? (p === 'SD' ? '#333' : '#fff') : '#68645d',
+        onClick: () => this.toggle(p)
+      };
+    });
+
+    const topics = ad.topics.map(t => {
+      const entries = D.order.filter(p => t.pos[p]).map(p => ({ p, v: t.pos[p] }));
+
+      // 3a bisvärm: krockande noder viker av till rader ovanför/under linjen
+      const availW = (window.innerWidth || 940) - (this.state.narrow ? 0 : 210);
+      const trackW = Math.max(240, Math.min(availW, 940) - 44 - 48 - 20);
+      const gap = ((size + 8) / trackW) * 100; // min-avstånd i % av faktisk spårbredd
+      const laneOrder = [0, -1, 1, -2, 2, -3, 3];
+      const placed = [];
+      entries.slice().sort((a, b) => a.v[0] - b.v[0]).forEach(e => {
+        const lane = laneOrder.find(l => !placed.some(q => q.lane === l && Math.abs(q.left - e.v[0]) < gap)) ?? 0;
+        placed.push({ p: e.p, left: e.v[0], lane });
+      });
+      const laneOf = {};
+      placed.forEach(q => { laneOf[q.p] = q.lane; });
+      const rowH = size - 2;
+      const upRows = Math.max(0, ...placed.map(q => -q.lane));
+      const downRows = Math.max(0, ...placed.map(q => q.lane));
+      const lineY = 14 + upRows * rowH + size / 2;
+      const trackH = lineY + downRows * rowH + size / 2 + 14;
+
+      const sticks = [];
+      const nodes = entries.map(({ p, v }) => {
+        const dim = has && !sel.includes(p);
+        const unclear = !!v[2];
+        const lane = laneOf[p] || 0;
+        const top = lineY + lane * rowH;
+        if (lane !== 0) sticks.push({ left: v[0], top: Math.min(top, lineY), height: Math.abs(top - lineY), opacity: dim ? 0.15 : 1 });
+        return {
+          code: p, color: D.colors[p], left: v[0], top,
+          size, fontSize: p.length > 1 ? Math.round(size * 0.27) : Math.round(size * 0.31),
+          txt: p === 'SD' ? '#333' : '#fff',
+          borderStyle: unclear ? 'dashed' : 'solid',
+          opacity: dim ? 0.16 : (unclear ? 0.8 : 1),
+          z: sel.includes(p) ? 8 : 3,
+          tip: `${D.names[p]}: ${v[1]}${unclear ? ' (otydlig/villkorad)' : ''}`,
+          onClick: () => this.toggle(p)
+        };
+      });
+      const cardParties = visaAlla ? entries.map(e => e.p) : entries.map(e => e.p).filter(p => sel.includes(p));
+      const cards = cardParties.map(p => ({
+        name: D.names[p], color: D.colors[p], text: t.pos[p][1], unclear: !!t.pos[p][2]
+      }));
+      return { name: t.name, low: t.low, high: t.high, nodes, sticks, cards, hasCards: cards.length > 0, trackH, lineY: lineY - 1, tickY: lineY - 5 };
+    });
+
+    return {
+      ...this.navVals(),
+      areaTone: D.tones[st.area],
+      areaLabelLower: ad.label.toLowerCase(),
+      statTopics: st.aTopics, statPos: st.aPos, statUnclear: st.aUnclear,
+      areaTabs, chips, topics,
+      hasSelection: has,
+      onClear: () => this.setState({ selected: [] }),
+      cmpLabel: has ? `Jämför ${sel.length}: ${sel.map(p => D.names[p]).join(', ')} — citatkort visas under varje skala.` : 'Tryck på partier för att jämföra — deras positioner får citatkort under varje skala.'
+    };
+  }
+}
+</script>
+</body>
+</html>

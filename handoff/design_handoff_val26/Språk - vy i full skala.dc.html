@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap">
+<script src="sprak-data.js"></script>
+<style>
+body{margin:0;background:#f8f7f4;font-family:'DM Sans',system-ui,sans-serif;color:#211f1c}
+a{color:#211f1c}a:hover{color:#68645d}
+</style>
+</helmet>
+
+<sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;left:0;top:0;bottom:0;width:210px;background:#faf8f3;border-right:1px solid #e7e4de;box-sizing:border-box;padding:22px 16px;overflow-y:auto;z-index:40">
+    <a href="Startsida.dc.html" style="display:block;font:600 14px/1.3 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-bottom:20px;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    <div style="font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Din fråga</div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+        <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:9px 11px;transition:background .15s" style-hover="background:{{ n.hoverBg }}">
+          <span style="display:block;font:600 13px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+          <span style="display:block;font:600 8.5px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+        </a>
+      </sc-for>
+    </div>
+    <a href="Om metoden.dc.html" style="display:block;margin-top:18px;padding:6px 11px;font:600 11.5px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+  </div>
+</sc-if>
+<div style="min-height:100vh;display:flex;flex-direction:column;margin-left:{{ contentML }}">
+  <sc-if value="{{ showTopbar }}" hint-placeholder-val="{{ false }}">
+    <div style="background:#fff;border-bottom:1px solid #e7e4de;padding:11px 18px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:45">
+      <button onClick="{{ toggleMenu }}" style="appearance:none;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:8px 6px">
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+      </button>
+      <a href="Startsida.dc.html" style="font:600 15px 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closeMenu }}" style="position:fixed;inset:0;background:rgba(28,28,28,.3);z-index:50"></div>
+      <div style="position:fixed;top:0;bottom:0;left:0;width:min(320px,84vw);background:#faf8f3;border-right:1px solid #e0dcd3;box-shadow:6px 0 24px rgba(0,0,0,.12);z-index:51;padding:22px 18px;overflow-y:auto;box-sizing:border-box">
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#94908a;margin-bottom:14px">Välj din fråga</div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+            <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:11px 13px">
+              <span style="display:block;font:600 15px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+              <span style="display:block;font:600 9px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+            </a>
+          </sc-for>
+        </div>
+        <a href="Om metoden.dc.html" style="display:block;margin-top:16px;padding:8px 13px;font:600 13px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+      </div>
+    </sc-if>
+  </sc-if>
+
+  <!-- Header — tonas efter sakområde -->
+  <div style="background:{{ areaTone }};transition:background .4s">
+    <div style="max-width:940px;margin:0 auto;padding:30px 22px 26px">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <div style="background:#fff;color:#5a5344;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Lins · Språk</div>
+        <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">Uppdaterad juli 2026</span>
+      </div>
+
+      <!-- Lägesväxling — två fullbredds-dörrar med flik-indikator -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px">
+        <sc-for list="{{ modeTabs }}" as="m" hint-placeholder-count="2">
+          <button onClick="{{ m.onClick }}" style="appearance:none;border:none;border-bottom:3px solid {{ m.indicator }};background:{{ m.bg }};text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:3px;padding:13px 18px 11px;border-radius:10px 10px 0 0;box-shadow:{{ m.shadow }};transition:all .15s" style-hover="background:#fff">
+            <span style="font:700 15px 'DM Sans',sans-serif;color:{{ m.txt }}">{{ m.label }}</span>
+            <span style="font:400 11.5px/1.35 'DM Sans',sans-serif;color:{{ m.sub }}">{{ m.subtitle }}</span>
+          </button>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ modeA }}" hint-placeholder-val="{{ true }}">
+        <h1 style="margin:14px 0 0;font:600 clamp(26px,5vw,36px)/1.15 'Source Serif 4',serif;letter-spacing:-.01em;max-width:620px;text-wrap:pretty">Samma ord — olika innebörd</h1>
+        <p style="margin:10px 0 0;font:400 14.5px/1.6 'DM Sans',sans-serif;color:#5a5648;max-width:620px;text-wrap:pretty">Politikens nyckelord är omstridda: alla säger "trygghet", ingen menar samma sak. Här läser du alla partiers definitioner sida vid sida — citaten är hämtade ur program, tal och voteringar.</p>
+      </sc-if>
+      <sc-if value="{{ modeC }}" hint-placeholder-val="{{ false }}">
+        <h1 style="margin:14px 0 0;font:600 clamp(26px,5vw,36px)/1.15 'Source Serif 4',serif;letter-spacing:-.01em;max-width:620px;text-wrap:pretty">Hur partierna laddar språket</h1>
+        <p style="margin:10px 0 0;font:400 14.5px/1.6 'DM Sans',sans-serif;color:#5a5648;max-width:620px;text-wrap:pretty">Varje parti har en diskursprofil: en övergripande inramning, återkommande nyckelord och retoriska strategier. Välj parti och område — exemplen är källhänvisade.</p>
+      </sc-if>
+
+      <div style="display:flex;gap:32px;margin-top:20px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ stat1 }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">{{ stat1Label }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ stat2 }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">{{ stat2Label }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ stat3 }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">{{ stat3Label }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:940px;margin:0 auto;padding:20px 22px 48px;width:100%;box-sizing:border-box">
+
+    <!-- ============ LÄGE A: BEGREPP ============ -->
+    <sc-if value="{{ modeA }}" hint-placeholder-val="{{ true }}">
+
+      <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px">
+        <sc-for list="{{ areaTabs }}" as="a" hint-placeholder-count="7">
+          <button onClick="{{ a.onClick }}" style="appearance:none;border:1px solid {{ a.border }};background:{{ a.bg }};color:{{ a.txt }};font:600 13px 'DM Sans',sans-serif;padding:7px 15px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:all .15s" style-hover="border-color:#94908a">{{ a.label }}</button>
+        </sc-for>
+      </div>
+      <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:20px">
+        <sc-for list="{{ conceptPills }}" as="p" hint-placeholder-count="3">
+          <button onClick="{{ p.onClick }}" style="appearance:none;border:1px solid {{ p.border }};background:{{ p.bg }};color:{{ p.txt }};font:500 12.5px 'DM Sans',sans-serif;padding:6px 13px;border-radius:20px;cursor:pointer;white-space:nowrap;transition:all .12s" style-hover="border-color:#94908a">"{{ p.label }}"</button>
+        </sc-for>
+      </div>
+
+      <!-- Uppslaget -->
+      <div style="border-bottom:1px solid #dcd8cf;padding-bottom:16px;margin-bottom:18px">
+        <div style="font:600 clamp(30px,6vw,44px)/1.1 'Source Serif 4',serif;letter-spacing:-.015em">"{{ conceptLabel }}"</div>
+        <div style="font:400 14px/1.6 'Source Serif 4',serif;font-style:italic;color:#5a5648;margin-top:8px;max-width:680px;text-wrap:pretty">{{ conceptDesc }}</div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font:500 11.5px 'DM Sans',sans-serif;color:#94908a">
+          <span>{{ coverage }}</span>
+        </div>
+      </div>
+
+      <!-- Citatvägg — tre kolumner efter laddning -->
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin-bottom:8px">
+        <sc-for list="{{ columns }}" as="col" hint-placeholder-count="3">
+          <div style="flex:1 1 250px;min-width:0;display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;align-items:baseline;gap:8px;border-bottom:2px solid #dcd8cf;padding-bottom:7px">
+              <span style="font:700 11px/1 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#68645d">{{ col.title }}</span>
+              <span style="font:600 11px 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;color:#a8a49a">{{ col.count }}</span>
+            </div>
+            <sc-if value="{{ col.empty }}" hint-placeholder-val="{{ false }}">
+              <div style="border:1px dashed #d5d0c6;border-radius:10px;padding:14px;font:400 12px/1.5 'DM Sans',sans-serif;color:#a8a49a;text-align:center">Inget parti laddar begreppet så i materialet.</div>
+            </sc-if>
+            <sc-for list="{{ col.cards }}" as="k" hint-placeholder-count="2">
+              <div style="background:#fff;border:1px solid #e7e4de;border-top:3px solid {{ k.color }};border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:9px">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="width:12px;height:12px;border-radius:50%;background:{{ k.color }};flex:none"></span>
+                  <span style="font:600 14.5px 'Source Serif 4',serif">{{ k.name }}</span>
+                  <span style="font:600 9.5px/1.3 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#94908a;margin-left:auto;text-align:right">{{ k.axis }}</span>
+                </div>
+                <sc-if value="{{ k.hasQuote }}" hint-placeholder-val="{{ true }}">
+                  <div style="font:400 16px/1.5 'Source Serif 4',serif;font-style:italic;color:#211f1c;text-wrap:pretty">"{{ k.quote }}"</div>
+                </sc-if>
+                <div style="font:400 12.5px/1.55 'DM Sans',sans-serif;color:#4d4942;text-wrap:pretty">{{ k.meaning }}</div>
+                <sc-if value="{{ k.adjacent }}" hint-placeholder-val="{{ false }}">
+                  <div><span style="font:700 8.5px/1 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#075985;background:#e0f2fe;padding:3px 7px;border-radius:4px">angränsande konstruktion</span></div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ hasMissing }}" hint-placeholder-val="{{ false }}">
+        <div style="font:400 12.5px/1.55 'DM Sans',sans-serif;color:#94908a;margin:6px 0 8px;text-wrap:pretty">{{ missingNote }}</div>
+      </sc-if>
+
+      <sc-if value="{{ visaKommentar }}" hint-placeholder-val="{{ true }}">
+        <div style="background:#faf8f3;border:1px solid #eeebe2;border-radius:10px;padding:16px 20px;margin-top:14px">
+          <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Analytisk kommentar</div>
+          <div style="font:400 13.5px/1.65 'Source Serif 4',serif;font-style:italic;color:#4d4942;text-wrap:pretty">{{ commentary }}</div>
+        </div>
+      </sc-if>
+
+      <div style="font:400 11px/1.5 ui-monospace,Menlo,monospace;color:#a8a49a;margin-top:16px;text-wrap:pretty">{{ sourceNote }}</div>
+    </sc-if>
+
+    <!-- ============ LÄGE C: PARTI ============ -->
+    <sc-if value="{{ modeC }}" hint-placeholder-val="{{ false }}">
+
+      <div style="font:400 12px/1.5 'DM Sans',sans-serif;color:#94908a;margin-bottom:8px">Välj ett parti — profilen byggs ur citatkatalogerna.</div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px">
+        <sc-for list="{{ partyChips }}" as="c" hint-placeholder-count="8">
+          <button onClick="{{ c.onClick }}" style="appearance:none;border:2px solid {{ c.border }};background:{{ c.bg }};color:{{ c.txt }};font:700 13px 'DM Sans',sans-serif;padding:7px 14px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:7px;transition:all .15s" style-hover="border-color:#94908a">
+            <span style="width:11px;height:11px;border-radius:50%;background:{{ c.color }};flex:none"></span>{{ c.code }}
+          </button>
+        </sc-for>
+      </div>
+
+      <!-- Profil -->
+      <div style="background:#fff;border:1px solid #e7e4de;border-top:4px solid {{ partyColor }};border-radius:14px;padding:24px 28px;margin-bottom:16px">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+          <span style="width:16px;height:16px;border-radius:50%;background:{{ partyColor }};flex:none"></span>
+          <span style="font:600 22px/1.2 'Source Serif 4',serif">{{ partyName }}</span>
+          <span style="font:600 10px/1 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#68645d;background:#f0ede7;padding:5px 10px;border-radius:99px">Kongruens ord–position: {{ kongruens }}</span>
+        </div>
+        <div style="font:400 16px/1.6 'Source Serif 4',serif;color:#211f1c;max-width:720px;text-wrap:pretty;margin-bottom:16px">{{ inramning }}</div>
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Nodalpunkter — orden allt kretsar kring</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px">
+          <sc-for list="{{ nodalpunkter }}" as="n" hint-placeholder-count="5">
+            <span style="font:600 12.5px 'DM Sans',sans-serif;color:#211f1c;border:1px solid #d5d0c6;padding:5px 12px;border-radius:20px">{{ n.term }}</span>
+          </sc-for>
+        </div>
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Retoriska strategier</div>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <sc-for list="{{ profilStrategier }}" as="s" hint-placeholder-count="4">
+            <div style="font:400 13px/1.5 'DM Sans',sans-serif;color:#4d4942">· {{ s.text }}</div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- Områdesval -->
+      <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:16px">
+        <sc-for list="{{ areaTabsC }}" as="a" hint-placeholder-count="8">
+          <button onClick="{{ a.onClick }}" style="appearance:none;border:1px solid {{ a.border }};background:{{ a.bg }};color:{{ a.txt }};font:600 13px 'DM Sans',sans-serif;padding:7px 15px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:all .15s" style-hover="border-color:#94908a">{{ a.label }}</button>
+        </sc-for>
+      </div>
+
+      <!-- Områdesinnehåll -->
+      <div style="background:#fff;border:1px solid #e7e4de;border-radius:14px;padding:22px 26px;margin-bottom:16px">
+        <div style="font:400 17px/1.55 'Source Serif 4',serif;font-style:italic;color:#211f1c;max-width:700px;text-wrap:pretty;margin-bottom:18px">{{ areaInramning }}</div>
+
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:10px">Nyckelbegrepp</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-bottom:20px">
+          <sc-for list="{{ nyckelbegrepp }}" as="b" hint-placeholder-count="4">
+            <div style="border:1px solid #e7e4de;border-radius:10px;padding:13px 15px">
+              <div style="font:600 14.5px 'Source Serif 4',serif;margin-bottom:5px">"{{ b.term }}"</div>
+              <div style="font:400 12.5px/1.5 'DM Sans',sans-serif;color:#4d4942;text-wrap:pretty">{{ b.innebord }}</div>
+              <sc-if value="{{ visaPremisser }}" hint-placeholder-val="{{ true }}">
+                <div style="font:400 11.5px/1.5 'DM Sans',sans-serif;color:#94908a;margin-top:7px;padding-top:7px;border-top:1px dashed #eeebe2;text-wrap:pretty"><b style="font-weight:600;color:#7a766e">Underförstådd premiss:</b> {{ b.premiss }}</div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:10px">Retoriska strategier i området</div>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:6px">
+          <sc-for list="{{ areaStrategier }}" as="s" hint-placeholder-count="3">
+            <div style="border-left:3px solid {{ partyColor }};padding:2px 0 2px 14px">
+              <div style="font:600 13.5px 'DM Sans',sans-serif;margin-bottom:3px">{{ s.strategi }}</div>
+              <sc-if value="{{ s.hasQuote }}" hint-placeholder-val="{{ true }}">
+                <div style="font:400 14px/1.5 'Source Serif 4',serif;font-style:italic;color:#4d4942;text-wrap:pretty">"{{ s.exempel }}"</div>
+              </sc-if>
+              <sc-if value="{{ visaKallor }}" hint-placeholder-val="{{ true }}">
+                <div style="font:400 10.5px/1.5 ui-monospace,Menlo,monospace;color:#a8a49a;margin-top:3px">— {{ s.kalla }}</div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <sc-if value="{{ hasKontrast }}" hint-placeholder-val="{{ false }}">
+          <div style="font:400 12.5px/1.6 'DM Sans',sans-serif;color:#68645d;margin-top:14px;padding-top:12px;border-top:1px solid #f0ede7;text-wrap:pretty"><b style="font-weight:600">Kontrast:</b> {{ kontrast }}</div>
+        </sc-if>
+      </div>
+
+      <sc-if value="{{ visaKommentar }}" hint-placeholder-val="{{ true }}">
+        <div style="background:#faf8f3;border:1px solid #eeebe2;border-radius:10px;padding:16px 20px">
+          <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Stämmer orden med positionen? (GAL-TAN-kongruens: {{ kongruens }})</div>
+          <div style="font:400 13.5px/1.65 'Source Serif 4',serif;font-style:italic;color:#4d4942;text-wrap:pretty">{{ kongruensForklaring }}</div>
+        </div>
+      </sc-if>
+
+      <div style="font:400 11px/1.5 ui-monospace,Menlo,monospace;color:#a8a49a;margin-top:16px">Källa: partiernas citatkataloger juli 2026 — profiler och kommentarer är egen diskursanalys.</div>
+    </sc-if>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;visaKallor&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Innehåll&quot;},
+  &quot;visaPremisser&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Innehåll&quot;},
+  &quot;visaKommentar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Innehåll&quot;}
+}">
+class Component extends DCLogic {
+  META = {
+    order: ["V","S","MP","C","L","KD","M","SD"],
+    colors: {S:"#ED1B34",M:"#52BDEC",SD:"#DDCF00",V:"#AF1D22",C:"#009933",KD:"#231977",L:"#006AB3",MP:"#53A12B"},
+    names: {S:"Socialdemokraterna",M:"Moderaterna",SD:"Sverigedemokraterna",V:"Vänsterpartiet",C:"Centerpartiet",KD:"Kristdemokraterna",L:"Liberalerna",MP:"Miljöpartiet"},
+    areas: [
+      { id: "rattsvasende", label: "Rättsväsende & migration", tone: "oklch(0.95 0.02 250)", concepts: ["trygghet","ansvar","gemenskap"] },
+      { id: "klimat", label: "Klimat & energi", tone: "oklch(0.95 0.02 155)", concepts: ["omstallning","energitrygghet"] },
+      { id: "ekonomi", label: "Ekonomi", tone: "oklch(0.95 0.02 85)", concepts: ["lägre skatt på arbete","ansvar (ekonomi)","vanligt folk"] },
+      { id: "demokrati", label: "Demokrati", tone: "oklch(0.95 0.02 215)", concepts: ["oberoende","grundlagsskydd","rattsstat"] },
+      { id: "forsvar", label: "Försvar & säkerhet", tone: "oklch(0.95 0.02 55)", concepts: ["totalforsvar","sakerhet","natomedlemskapet"] },
+      { id: "skola", label: "Skola", tone: "oklch(0.95 0.02 320)", concepts: ["likvärdighet","kunskap","ordning"] },
+      { id: "vard", label: "Vård & omsorg", tone: "oklch(0.95 0.02 25)", concepts: ["tillgänglighet","valfrihet","jämlik vård"] }
+    ],
+    areasC: [
+      { id: "rattsvasende", label: "Rättsväsende", tone: "oklch(0.95 0.02 250)" },
+      { id: "migration", label: "Migration", tone: "oklch(0.95 0.02 285)" },
+      { id: "klimat", label: "Klimat & energi", tone: "oklch(0.95 0.02 155)" },
+      { id: "ekonomi", label: "Ekonomi", tone: "oklch(0.95 0.02 85)" },
+      { id: "demokrati", label: "Demokrati", tone: "oklch(0.95 0.02 215)" },
+      { id: "forsvar", label: "Försvar", tone: "oklch(0.95 0.02 55)" },
+      { id: "skola", label: "Skola", tone: "oklch(0.95 0.02 320)" },
+      { id: "vard", label: "Vård", tone: "oklch(0.95 0.02 25)" }
+    ],
+    labels: { omstallning: "omställning", rattsstat: "rättsstat", totalforsvar: "totalförsvar", sakerhet: "säkerhet", natomedlemskapet: "Natomedlemskapet" }
+  };
+  state = { mode: "begrepp", area: "rattsvasende", concept: "trygghet", party: "S", partiArea: "rattsvasende", ready: false, s1: 0, s2: 0, s3: 0 };
+
+  NAV = [
+    { q: "Var står partierna i sakfrågorna?", lens: "Position", href: "Position - vy i full skala.dc.html", id: "position" },
+    { q: "Håller orden när det blir votering?", lens: "Säger vs gör", href: "Säger vs gör - vy i full skala.dc.html", id: "svg" },
+    { q: "Vad menar de egentligen med orden?", lens: "Språk", href: "Språk - vy i full skala.dc.html", id: "sprak" },
+    { q: "Vart är partierna på väg?", lens: "GAL-TAN", href: "GAL-TAN - vy i full skala.dc.html", id: "galtan" }
+  ];
+  LENS_ID = "sprak";
+  navVals() {
+    const narrow = !!this.state.narrow;
+    return {
+      showRail: !narrow, showTopbar: narrow,
+      contentML: narrow ? '0px' : '210px',
+      menuOpen: !!this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      navItems: this.NAV.map(n => {
+        const on = n.id === this.LENS_ID;
+        return { ...n, bg: on ? '#211f1c' : 'transparent', hoverBg: on ? '#211f1c' : '#f0ede7', qColor: on ? '#fff' : '#4d4942', lensColor: on ? '#b3ada0' : '#a8a49a' };
+      })
+    };
+  }
+  componentDidMount() {
+    this._onResize = () => this.setState({ narrow: window.innerWidth < 920 });
+    window.addEventListener('resize', this._onResize);
+    this._onResize();
+    const wait = () => {
+      if (window.SPRAK_DATA) { this.setState({ ready: true }, () => this.animateStats()); }
+      else this._poll = setTimeout(wait, 60);
+    };
+    wait();
+  }
+  componentWillUnmount() { cancelAnimationFrame(this._raf); clearTimeout(this._poll); window.removeEventListener('resize', this._onResize); }
+
+  sig() { return window.SPRAK_DATA ? window.SPRAK_DATA.signifiers : {}; }
+  dp() { return (window.SPRAK_DATA && window.SPRAK_DATA.discParties) || {}; }
+  axisPos(label) {
+    const m = window.SPRAK_DATA ? window.SPRAK_DATA.axisMap : {};
+    return m[label] !== undefined ? m[label] : 50;
+  }
+  label(c) { return this.META.labels[c] || c; }
+
+  targets() {
+    const st = this.state;
+    if (st.mode === "begrepp") {
+      const area = this.META.areas.find(a => a.id === st.area);
+      const s = this.sig()[st.concept] || {};
+      return [area.concepts.length, s.per_parti ? Object.keys(s.per_parti).length : 0, Object.keys(this.sig()).length];
+    }
+    const prof = (this.dp()[st.party] || {}).diskursprofil || {};
+    const areaO = ((this.dp()[st.party] || {}).per_omrade || {})[st.partiArea] || {};
+    return [(prof.nodalpunkter || []).length, ((areaO.nyckelbegrepp) || []).length, Object.keys((this.dp()[st.party] || {}).per_omrade || {}).length];
+  }
+
+  animateStats() {
+    cancelAnimationFrame(this._raf);
+    const [t1, t2, t3] = this.targets();
+    const f = { a: this.state.s1, b: this.state.s2, c: this.state.s3 };
+    const t0 = performance.now(), dur = 700;
+    const tick = (t) => {
+      const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      this.setState({
+        s1: Math.round(f.a + (t1 - f.a) * e),
+        s2: Math.round(f.b + (t2 - f.b) * e),
+        s3: Math.round(f.c + (t3 - f.c) * e)
+      });
+      if (p < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+
+  set(patch) { this.setState(patch, () => this.animateStats()); }
+
+  renderVals() {
+    const M = this.META, st = this.state;
+    const modeA = st.mode === "begrepp", modeC = !modeA;
+    const s = this.sig()[st.concept] || { per_parti: {}, beskrivning: "" };
+    const per = s.per_parti || {};
+    const area = M.areas.find(a => a.id === st.area);
+    const areaCMeta = M.areasC.find(a => a.id === st.partiArea);
+
+    const modeTabs = [
+      { label: "Begrepp", key: "begrepp", subtitle: "Ett ord — alla partiers innebörder sida vid sida" },
+      { label: "Parti", key: "parti", subtitle: "Ett partis hela språkprofil, med källor" }
+    ].map(m => {
+      const on = st.mode === m.key;
+      return {
+        label: m.label, subtitle: m.subtitle,
+        onClick: () => this.set({ mode: m.key }),
+        bg: on ? '#fff' : 'rgba(255,255,255,.4)',
+        txt: on ? '#211f1c' : '#68645d',
+        sub: on ? '#68645d' : '#94908a',
+        indicator: on ? '#211f1c' : 'transparent',
+        shadow: on ? '0 1px 3px rgba(0,0,0,.07)' : 'none'
+      };
+    });
+
+    // ---- Läge A ----
+    const areaTabs = M.areas.map(a => ({
+      label: a.label,
+      onClick: () => this.set({ area: a.id, concept: a.concepts[0] }),
+      bg: st.area === a.id ? '#211f1c' : '#fff',
+      txt: st.area === a.id ? '#fff' : '#68645d',
+      border: st.area === a.id ? '#211f1c' : '#e7e4de'
+    }));
+    const conceptPills = area.concepts.map(c => ({
+      label: this.label(c),
+      onClick: () => this.set({ concept: c }),
+      bg: st.concept === c ? '#211f1c' : '#fff',
+      txt: st.concept === c ? '#fff' : '#68645d',
+      border: st.concept === c ? '#211f1c' : '#e7e4de'
+    }));
+    const users = M.order.filter(p => per[p]);
+    const mkCard = (p) => ({
+      name: M.names[p], color: M.colors[p],
+      quote: per[p].exempel || '', hasQuote: !!per[p].exempel,
+      meaning: per[p].innebord, axis: per[p].galtan_matchning,
+      adjacent: !!per[p].markering
+    });
+    const buckets = { gal: [], mid: [], tan: [] };
+    users
+      .map(p => ({ p, pos: this.axisPos(per[p].galtan_matchning) }))
+      .sort((a, b) => a.pos - b.pos)
+      .forEach(({ p, pos }) => {
+        buckets[pos <= 35 ? 'gal' : pos >= 65 ? 'tan' : 'mid'].push(mkCard(p));
+      });
+    const columns = [
+      { title: 'GAL-laddning', cards: buckets.gal },
+      { title: 'Mitten · glidande · spänning', cards: buckets.mid },
+      { title: 'TAN-laddning', cards: buckets.tan }
+    ].map(c => ({ ...c, count: c.cards.length, empty: c.cards.length === 0 }));
+    const missing = M.order.filter(p => !per[p]);
+
+    // ---- Läge C ----
+    const pd = this.dp()[st.party] || {};
+    const prof = pd.diskursprofil || {};
+    const kong = prof.galtan_kongruens || {};
+    const areaO = (pd.per_omrade || {})[st.partiArea] || {};
+    const partyChips = M.order.map(p => {
+      const on = st.party === p;
+      return {
+        code: p, color: M.colors[p],
+        border: on ? M.colors[p] : '#e7e4de',
+        bg: on ? M.colors[p] : '#fff',
+        txt: on ? (p === 'SD' ? '#333' : '#fff') : '#68645d',
+        onClick: () => this.set({ party: p })
+      };
+    });
+    const areaTabsC = M.areasC.map(a => ({
+      label: a.label,
+      onClick: () => this.set({ partiArea: a.id }),
+      bg: st.partiArea === a.id ? '#211f1c' : '#fff',
+      txt: st.partiArea === a.id ? '#fff' : '#68645d',
+      border: st.partiArea === a.id ? '#211f1c' : '#e7e4de'
+    }));
+
+    const statLabels = modeA
+      ? [`begrepp i ${area.label.toLowerCase()}`, `av 8 partier använder "${this.label(st.concept)}"`, 'begrepp totalt i materialet']
+      : ['nodalpunkter i profilen', `nyckelbegrepp i ${areaCMeta.label.toLowerCase()}`, 'sakområden kartlagda'];
+
+    return {
+      ...this.navVals(),
+      modeA, modeC, modeTabs,
+      areaTone: modeA ? area.tone : areaCMeta.tone,
+      stat1: st.s1, stat2: st.s2, stat3: st.s3,
+      stat1Label: statLabels[0], stat2Label: statLabels[1], stat3Label: statLabels[2],
+
+      areaTabs, conceptPills,
+      conceptLabel: this.label(st.concept),
+      conceptDesc: s.beskrivning || '',
+      coverage: users.length < 8 ? `${users.length} av 8 partier använder begreppet i materialet` : 'Samtliga 8 partier använder begreppet',
+      columns,
+      hasMissing: missing.length > 0 && users.length < 8,
+      missingNote: missing.length ? `${missing.map(p => M.names[p]).join(', ')} använder inte "${this.label(st.concept)}" i materialet — att inte använda ett begrepp är också ett val.` : '',
+      commentary: s.analytisk_kommentar || '',
+      visaKommentar: (this.props.visaKommentar ?? true) && (modeA ? !!s.analytisk_kommentar : !!kong.forklaring),
+      sourceNote: s.tackningsnot ? `Källa: partiernas citatkataloger juli 2026. ${s.tackningsnot}` : 'Källa: partiernas citatkataloger juli 2026 — placeringar och kommentarer är egen diskursanalys.',
+
+      partyChips, areaTabsC,
+      partyName: M.names[st.party], partyColor: M.colors[st.party],
+      inramning: prof.overordnad_inramning || '',
+      nodalpunkter: (prof.nodalpunkter || []).map(t => ({ term: t })),
+      profilStrategier: (prof.retoriska_strategier || []).map(t => ({ text: t })),
+      kongruens: kong.bedomning || '—',
+      kongruensForklaring: kong.forklaring || '',
+      areaInramning: areaO.inramning || '',
+      nyckelbegrepp: (areaO.nyckelbegrepp || []).map(b => ({ term: b.term, innebord: b.innebord, premiss: b.underforstadd_premiss || '' })),
+      areaStrategier: (areaO.retoriska_strategier || []).map(x => ({ strategi: x.strategi, exempel: x.exempel || '', hasQuote: !!x.exempel, kalla: x.kalla || 'citatkatalog' })),
+      hasKontrast: !!areaO.kontrast_med,
+      kontrast: areaO.kontrast_med || '',
+      visaKallor: this.props.visaKallor ?? true,
+      visaPremisser: this.props.visaPremisser ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
