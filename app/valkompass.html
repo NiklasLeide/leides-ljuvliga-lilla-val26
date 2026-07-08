@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/shell.css">
+<link rel="stylesheet" href="css/valkompass.css">
 </head>
 <body data-lens="valkompass">
 <!-- SHELL:NAV START -->
@@ -49,21 +50,13 @@
 </div>
 <!-- SHELL:NAV END -->
 <div class="shell-main">
-  <main class="shell-wrap" id="main">
-    <header class="lens-header">
-      <span class="lens-pill">Lins · Valkompass</span><span class="lens-updated">Uppdaterad juli 2026</span>
-      <h1 class="lens-h1">Vilket parti ligger närmast dig?</h1>
-      <p class="lens-intro">Två oberoende linser — vad du tycker i sakfrågor och hur du tänker om politikens ord. Två separata grafer, aldrig ett sammanvägt "rätt" parti.</p>
-    </header>
-    <div class="phase-stub">
-      <strong>Valkompass-linsen byggs i Fas 5.</strong> Skelettet, navigeringen och den
-      delade jämför-mekaniken är på plats (Fas 0). Vyns innehåll återskapas från designens
-      handoff-fil mot riktig data i Fas 5.
-    </div>
+  <main id="main">
+    <div id="vk-root"></div>
   </main>
 </div>
 <script src="js/constants.js"></script>
 <script src="js/compare-state.js"></script>
 <script src="js/shell.js"></script>
+<script src="js/valkompass.js"></script>
 </body>
 </html>
