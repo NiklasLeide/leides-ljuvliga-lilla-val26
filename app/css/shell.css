@@ -111,7 +111,20 @@ a:hover { color: var(--secondary); }
    Shared lens components (consumed by every phase)
    ============================================================ */
 
-/* Page header band with area tone (crossfades on area change) */
+/* Full-bleed page header band with area tone (crossfades on area change).
+   Sits inside .shell-main (right of the rail), spans that width; inner
+   content is width-capped to match the lens body. */
+.lens-band {
+  background: var(--header-tone, var(--area-neutral));
+  transition: background var(--tone-fade) ease;
+}
+.lens-band__inner {
+  max-width: var(--content-max); margin: 0 auto;
+  padding: 30px var(--side-pad) 26px;
+}
+.shell-main.is-wide .lens-band__inner { max-width: var(--content-max-wide); }
+
+/* Rounded-card header variant (used by not-yet-built placeholder pages) */
 .lens-header {
   background: var(--header-tone, var(--area-neutral));
   transition: background var(--tone-fade) ease;
@@ -140,10 +153,11 @@ a:hover { color: var(--secondary); }
 .chip-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .chip {
   appearance: none; cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
-  border: 2px solid var(--border); background: var(--card); color: var(--ink);
-  border-radius: var(--radius-pill); padding: 6px 12px;
-  font: 600 12px var(--font-body); transition: background .15s, border-color .15s, opacity .15s;
+  border: 2px solid var(--border); background: var(--card); color: var(--secondary);
+  border-radius: 20px; padding: 7px 14px;
+  font: 700 13px var(--font-body); transition: background .15s, border-color .15s, opacity .15s;
 }
+.chip:hover { border-color: var(--muted); }
 .chip__dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
 .chip.is-selected { color: #fff; border-color: transparent; }
 .chip.is-dimmed { opacity: .18; }
