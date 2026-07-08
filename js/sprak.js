@@ -225,7 +225,7 @@
   }
 
   function boot() {
-    fetch('../data/discourse.json')
+    fetch('data/discourse.json')
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (json) { SIG = json.flytande_signifikanter; PARTY = json.partier; init(); })
       .catch(function (e) { console.error('Språk: kunde inte ladda data/discourse.json', e); });

@@ -180,7 +180,7 @@
   }
 
   function boot() {
-    fetch('../data/positions.json')
+    fetch('data/positions.json')
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (json) { DATA = json; init(); })
       .catch(function (e) { console.error('Position: kunde inte ladda data/positions.json', e); });

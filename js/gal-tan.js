@@ -211,7 +211,7 @@
   }
 
   function boot() {
-    fetch('../data/galtan-view.json')
+    fetch('data/galtan-view.json')
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (json) { DATA = json; init(); })
       .catch(function (e) { console.error('GAL-TAN: kunde inte ladda data/galtan-view.json', e); });

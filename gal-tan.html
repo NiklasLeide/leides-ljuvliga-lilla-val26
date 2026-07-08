@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GAL-TAN-positioner 2018–2026 — Val 2026</title>
-  <meta name="description" content="Riksdagspartiernas positioner på GAL-TAN-skalan och ekonomisk höger-vänsterskala 2018–2026, baserat på Chapel Hill Expert Survey.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://val26.leide.se/gal-tan.html">
-  <meta property="og:title" content="GAL-TAN-positioner 2018–2026 — Val 2026">
-  <meta property="og:description" content="Riksdagspartiernas positioner på GAL-TAN-skalan och ekonomisk höger-vänsterskala 2018–2026, baserat på Chapel Hill Expert Survey.">
-  <meta property="og:image" content="https://val26.leide.se/og-image.png">
-  <meta property="og:site_name" content="Val 2026 — Partiernas ståndpunkter">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GAL-TAN · Partiernas ståndpunkter 2026</title>
+<link rel="canonical" href="https://val26.leide.se/gal-tan.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/shell.css">
+<link rel="stylesheet" href="css/gal-tan.css">
 </head>
-<body>
+<body data-lens="gal-tan">
+<!-- SHELL:NAV START -->
+<a class="skip-link" href="#main">Hoppa till innehåll</a>
 
-  <div class="top-bar">
-    <header>
-      <div class="header-inner">
-        <div class="header-badge">Kunskapsyta · 2026 · Privatprojekt av Niklas Leide</div>
-        <h1>Partiernas ståndpunkter</h1>
-        <p>Neutral sammanställning inför valet 2026</p>
-      </div>
-    </header>
-
-    <nav class="tab-nav" aria-label="Vyer">
-      <button class="tab" data-view="spectrum">Spektrum</button>
-      <button class="tab" data-view="cluster">Kluster</button>
-      <button class="tab" data-view="sager-vs-gor">Säger vs gör</button>
-      <button class="tab active" data-view="gal-tan">GAL-TAN</button>
-      <button class="tab" data-view="diskurs">Diskurs</button>
-      <button class="tab" data-view="hitta-parti">Hitta ditt parti</button>
-      <button class="tab" data-view="metod">Om metoden</button>
-    </nav>
+<nav class="rail" aria-label="Linser">
+  <a class="rail__title" href="index.html">Partiernas ståndpunkter <span>2026</span></a>
+  <div class="rail__eyebrow">Din fråga</div>
+  <div class="rail__items">
+    <a class="navitem" data-lens-id="valkompass" href="valkompass.html"><span class="navitem__q">Vilket parti ligger närmast dig?</span><span class="navitem__lens">Valkompass</span></a>
+    <a class="navitem" data-lens-id="position" href="position.html"><span class="navitem__q">Var står partierna i sakfrågorna?</span><span class="navitem__lens">Position</span></a>
+    <a class="navitem" data-lens-id="sager-vs-gor" href="sager-vs-gor.html"><span class="navitem__q">Håller orden när det blir votering?</span><span class="navitem__lens">Säger vs gör</span></a>
+    <a class="navitem" data-lens-id="sprak" href="sprak.html"><span class="navitem__q">Vad menar de egentligen med orden?</span><span class="navitem__lens">Språk</span></a>
+    <a class="navitem" data-lens-id="gal-tan" href="gal-tan.html"><span class="navitem__q">Vart är partierna på väg?</span><span class="navitem__lens">GAL-TAN</span></a>
   </div>
+  <a class="rail__method" href="om-metoden.html">Om metoden →</a>
+</nav>
 
-  <main>
-    <div class="app-layout">
-      <aside class="app-left">
-        <div id="left-nav"></div>
-      </aside>
-      <div class="app-center">
-        <div id="gal-tan-container"></div>
+<header class="topbar">
+  <button class="topbar__burger" type="button" aria-label="Öppna meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="topbar__title" href="index.html">Partiernas ståndpunkter <span>2026</span></a>
+</header>
+
+<div class="drawer" hidden>
+  <div class="drawer__scrim" data-close></div>
+  <nav class="drawer__panel" aria-label="Linser">
+    <div class="drawer__eyebrow">Välj din fråga</div>
+    <div class="rail__items">
+      <a class="navitem" data-lens-id="valkompass" href="valkompass.html"><span class="navitem__q">Vilket parti ligger närmast dig?</span><span class="navitem__lens">Valkompass</span></a>
+      <a class="navitem" data-lens-id="position" href="position.html"><span class="navitem__q">Var står partierna i sakfrågorna?</span><span class="navitem__lens">Position</span></a>
+      <a class="navitem" data-lens-id="sager-vs-gor" href="sager-vs-gor.html"><span class="navitem__q">Håller orden när det blir votering?</span><span class="navitem__lens">Säger vs gör</span></a>
+      <a class="navitem" data-lens-id="sprak" href="sprak.html"><span class="navitem__q">Vad menar de egentligen med orden?</span><span class="navitem__lens">Språk</span></a>
+      <a class="navitem" data-lens-id="gal-tan" href="gal-tan.html"><span class="navitem__q">Vart är partierna på väg?</span><span class="navitem__lens">GAL-TAN</span></a>
+    </div>
+    <a class="drawer__method rail__method" href="om-metoden.html">Om metoden →</a>
+  </nav>
+</div>
+<!-- SHELL:NAV END -->
+<div class="shell-main is-wide">
+  <header class="lens-band" id="main">
+    <div class="lens-band__inner">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span class="lens-pill">Lins · GAL-TAN</span><span class="lens-updated">Uppdaterad juli 2026</span>
       </div>
-      <aside class="app-right">
-        <div id="detail-panel" aria-live="polite"></div>
-      </aside>
+      <h1 class="lens-h1" style="max-width:600px">Var står partierna — och vart är de på väg?</h1>
+      <p class="lens-intro">Lodrätt: GAL (grön, alternativ, frihetlig) mot TAN (traditionell, auktoritär, nationalistisk). Vågrätt: ekonomisk vänster mot höger. Axlarna är linjaler, inte betyg — ingen riktning är bättre än den andra.</p>
+      <div class="stat-row">
+        <div class="stat"><span class="stat__val">8<span style="color:var(--faint)">/8</span></span><span class="stat__label">partier placerade</span></div>
+        <div class="stat"><span class="stat__val" id="gt-stat-points">0</span><span class="stat__label">mätpunkter 2019–2026</span></div>
+        <div class="stat"><span class="stat__val" id="gt-stat-drift">+0,0</span><span class="stat__label" id="gt-stat-drift-label">största förflyttning</span></div>
+      </div>
+    </div>
+  </header>
+  <main class="shell-wrap">
+    <div class="gt-cmp-label">Tryck på partier — i grafen eller nedan — för att jämföra. Annars visas alla.</div>
+    <div class="chip-row gt-chips" id="gt-chips"></div>
+
+    <div class="gt-year-row">
+      <div class="gt-year-seg" id="gt-year-seg"></div>
+      <span class="gt-year-note" id="gt-year-note"></span>
+    </div>
+
+    <div class="gt-layout">
+      <div class="gt-chart-wrap">
+        <div class="gt-plot" id="gt-plot">
+          <span class="gt-axis gt-axis--top">GAL · frihetlig</span>
+          <span class="gt-axis gt-axis--bottom">TAN · auktoritär</span>
+          <span class="gt-axis gt-axis--left">← ekonomisk vänster</span>
+          <span class="gt-axis gt-axis--right">ekonomisk höger →</span>
+          <div class="gt-ruler-h"></div>
+          <div class="gt-ruler-v"></div>
+          <div class="gt-annot" id="gt-annot" style="display:none"></div>
+        </div>
+        <div class="gt-source">Källa: CHES 2019 &amp; 2024 (verifierad) · 2026 egen bedömning</div>
+      </div>
+      <div class="gt-panel" id="gt-panel"></div>
     </div>
   </main>
-
-  <footer>
-    Partipositioner baserade på partiprogram, valmanifest och riksdagsmotioner<br>
-    Kontrollera mot originaldokumenten. Dela gärna.<br>
-    <a href="metod.html#integritet">Ingen personlig data samlas in</a> · <a href="https://github.com/NiklasLeide/leides-ljuvliga-lilla-val26" target="_blank" rel="noopener noreferrer">Öppen källkod på GitHub</a> · © 2026 Niklas Leide
-  </footer>
-
-  <script src="gal-tan.js"></script>
-
-  <!-- Cloudflare Web Analytics -->
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "9d66c8f5b9da46078ca71ab819946f62"}'></script>
-
+</div>
+<script src="js/constants.js"></script>
+<script src="js/compare-state.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/gal-tan.js"></script>
 </body>
 </html>
