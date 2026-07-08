@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#f8f7f4;font-family:'DM Sans',system-ui,sans-serif;color:#211f1c}
+a{color:#211f1c}a:hover{color:#68645d}
+</style>
+</helmet>
+
+<sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;left:0;top:0;bottom:0;width:210px;background:#faf8f3;border-right:1px solid #e7e4de;box-sizing:border-box;padding:22px 16px;overflow-y:auto;z-index:40">
+    <a href="Startsida.dc.html" style="display:block;font:600 14px/1.3 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-bottom:20px;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    <div style="font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Din fråga</div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+        <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:9px 11px;transition:background .15s" style-hover="background:{{ n.hoverBg }}">
+          <span style="display:block;font:600 13px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+          <span style="display:block;font:600 8.5px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+        </a>
+      </sc-for>
+    </div>
+    <a href="Om metoden.dc.html" style="display:block;margin-top:18px;padding:6px 11px;font:600 11.5px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+  </div>
+</sc-if>
+<div style="min-height:100vh;display:flex;flex-direction:column;margin-left:{{ contentML }}">
+  <sc-if value="{{ showTopbar }}" hint-placeholder-val="{{ false }}">
+    <div style="background:#fff;border-bottom:1px solid #e7e4de;padding:11px 18px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:45">
+      <button onClick="{{ toggleMenu }}" style="appearance:none;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:8px 6px">
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+      </button>
+      <a href="Startsida.dc.html" style="font:600 15px 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closeMenu }}" style="position:fixed;inset:0;background:rgba(28,28,28,.3);z-index:50"></div>
+      <div style="position:fixed;top:0;bottom:0;left:0;width:min(320px,84vw);background:#faf8f3;border-right:1px solid #e0dcd3;box-shadow:6px 0 24px rgba(0,0,0,.12);z-index:51;padding:22px 18px;overflow-y:auto;box-sizing:border-box">
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#94908a;margin-bottom:14px">Välj din fråga</div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+            <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:11px 13px">
+              <span style="display:block;font:600 15px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+              <span style="display:block;font:600 9px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+            </a>
+          </sc-for>
+        </div>
+        <a href="Om metoden.dc.html" style="display:block;margin-top:16px;padding:8px 13px;font:600 13px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+      </div>
+    </sc-if>
+  </sc-if>
+
+  <!-- Header — lins-ton (sand), färg markerar lins/område, aldrig position -->
+  <div style="background:oklch(0.945 0.008 85)">
+    <div style="max-width:1140px;margin:0 auto;padding:30px 22px 26px">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <div style="background:#fff;color:#5a5344;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Lins · GAL-TAN</div>
+        <span style="font:500 11px 'DM Sans',sans-serif;color:#8a8272">Uppdaterad juli 2026</span>
+      </div>
+      <h1 style="margin:14px 0 0;font:600 clamp(26px,5vw,36px)/1.15 'Source Serif 4',serif;letter-spacing:-.01em;max-width:600px;text-wrap:pretty">Var står partierna — och vart är de på väg?</h1>
+      <p style="margin:10px 0 0;font:400 14.5px/1.6 'DM Sans',sans-serif;color:#5a5648;max-width:600px;text-wrap:pretty">Lodrätt: GAL (grön, alternativ, frihetlig) mot TAN (traditionell, auktoritär, nationalistisk). Vågrätt: ekonomisk vänster mot höger. Axlarna är linjaler, inte betyg — ingen riktning är bättre än den andra.</p>
+      <div style="display:flex;gap:32px;margin-top:20px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">8<span style="color:#b3a98f">/8</span></span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a8272">partier placerade</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statPoints }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a8272">mätpunkter 2019–2026</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statDrift }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a8272">största förflyttning (S, mot TAN)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1140px;margin:0 auto;padding:20px 22px 48px;width:100%;box-sizing:border-box">
+
+    <!-- Partival -->
+    <div style="font:400 12px/1.5 'DM Sans',sans-serif;color:#94908a;margin-bottom:8px">{{ cmpLabel }}</div>
+    <div style="display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:18px">
+      <sc-for list="{{ chips }}" as="c" hint-placeholder-count="8">
+        <button onClick="{{ c.onClick }}" style="appearance:none;border:2px solid {{ c.border }};background:{{ c.bg }};color:{{ c.txt }};font:700 13px 'DM Sans',sans-serif;padding:7px 14px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:7px;transition:all .15s" style-hover="border-color:#94908a">
+          <span style="width:11px;height:11px;border-radius:50%;background:{{ c.color }};flex:none"></span>{{ c.code }}
+        </button>
+      </sc-for>
+      <sc-if value="{{ hasSelection }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ onClear }}" style="appearance:none;border:none;background:none;font:600 12px 'DM Sans',sans-serif;color:#68645d;cursor:pointer;padding:6px 8px;text-decoration:underline">Rensa</button>
+      </sc-if>
+    </div>
+
+    <!-- Årsväxling -->
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:14px">
+      <div style="display:flex;gap:3px;background:#ece9e2;padding:3px;border-radius:9px">
+        <sc-for list="{{ years }}" as="y" hint-placeholder-count="3">
+          <button onClick="{{ y.onClick }}" style="appearance:none;border:none;background:{{ y.bg }};color:{{ y.txt }};font:700 13.5px 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;padding:7px 16px;border-radius:7px;cursor:pointer;box-shadow:{{ y.shadow }};transition:all .15s">{{ y.label }}</button>
+        </sc-for>
+      </div>
+      <span style="font:400 12px/1.4 'DM Sans',sans-serif;color:#94908a">{{ yearNote }}</span>
+    </div>
+
+    <!-- Scatter + sidopanel -->
+    <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start">
+    <div style="flex:1 1 480px;min-width:0;background:#fff;border:1px solid #e7e4de;border-radius:14px;padding:clamp(10px,3vw,22px)">
+      <div style="position:relative;aspect-ratio:1;max-width:640px;margin:0 auto;background:#fdfcfa;border:1px solid #eeebe4;border-radius:10px">
+        <span style="position:absolute;top:10px;left:50%;transform:translateX(-50%);font:700 10px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a">GAL · frihetlig</span>
+        <span style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font:700 10px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a">TAN · auktoritär</span>
+        <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%) rotate(-90deg);font:700 10px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a;white-space:nowrap">← ekonomisk vänster</span>
+        <span style="position:absolute;right:10px;top:50%;transform:translateY(-50%) rotate(90deg);font:700 10px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a;white-space:nowrap">ekonomisk höger →</span>
+        <div style="position:absolute;left:6%;right:6%;top:50%;height:1px;background:#d5d0c6"></div>
+        <div style="position:absolute;top:6%;bottom:6%;left:50%;width:1px;background:#d5d0c6"></div>
+
+        <sc-for list="{{ trails }}" as="t" hint-placeholder-count="0">
+          <div style="position:absolute;left:{{ t.left }}%;top:{{ t.top }}%;width:{{ t.width }}%;height:2px;border-radius:2px;background:{{ t.color }};opacity:.25;transform:rotate({{ t.angle }}deg);transform-origin:left center;transition:opacity .4s"></div>
+        </sc-for>
+        <sc-for list="{{ ghosts }}" as="g" hint-placeholder-count="0">
+          <div style="position:absolute;left:{{ g.left }}%;top:{{ g.top }}%;width:9px;height:9px;border-radius:50%;transform:translate(-50%,-50%);background:{{ g.color }};opacity:.35;border:1px solid #fff;transition:opacity .4s"></div>
+        </sc-for>
+        <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="8">
+          <div onClick="{{ n.onClick }}" style="position:absolute;left:{{ n.left }}%;top:{{ n.top }}%;width:{{ n.size }}px;height:{{ n.size }}px;border-radius:50%;transform:translate(-50%,-50%);background:{{ n.color }};border:3px solid #fff;box-shadow:{{ n.shadow }};display:flex;align-items:center;justify-content:center;font:700 {{ n.fontSize }}px 'DM Sans',sans-serif;color:{{ n.txt }};cursor:pointer;opacity:{{ n.opacity }};z-index:{{ n.z }};transition:left .9s cubic-bezier(.34,1.2,.4,1),top .9s cubic-bezier(.34,1.2,.4,1),opacity .3s,box-shadow .3s" style-hover="transform:translate(-50%,-50%) scale(1.12)">{{ n.code }}</div>
+        </sc-for>
+
+        <sc-if value="{{ annotationVisible }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;left:33%;top:53%;width:1px;height:15%;background:#a8a49a;transform:rotate(24deg);transform-origin:top"></div>
+          <div style="position:absolute;left:8%;top:70%;max-width:34%;font:400 clamp(10px,1.8vw,12.5px)/1.45 'Source Serif 4',serif;font-style:italic;background:#fff;border:1px solid #e0dcd3;padding:7px 11px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.05)"><b style="font-style:normal">S</b> — störst TAN-drift av alla partier sedan 2019.</div>
+        </sc-if>
+      </div>
+      <div style="font:400 11px/1.5 ui-monospace,Menlo,monospace;color:#a8a49a;margin-top:12px;text-align:center">Källa: CHES 2019 &amp; 2024 (verifierad) · 2026 egen bedömning</div>
+    </div>
+
+    <!-- Detaljkort — sidopanel bredvid grafen, hamnar under på mobil -->
+    <div style="flex:1 1 280px;max-width:420px;position:sticky;top:16px;display:flex;flex-direction:column;gap:12px;max-height:calc(100vh - 32px);overflow-y:auto">
+      <sc-if value="{{ noSelection }}" hint-placeholder-val="{{ true }}">
+        <div style="border:1px dashed #d5d0c6;border-radius:10px;padding:16px 18px;font:400 13px/1.55 'DM Sans',sans-serif;color:#94908a;text-wrap:pretty">Välj partier — i grafen eller via knapparna ovan — så visas detaljer här bredvid, medan du ser på kartan.</div>
+      </sc-if>
+      <sc-if value="{{ hasSelection }}" hint-placeholder-val="{{ false }}">
+        <sc-for list="{{ details }}" as="d" hint-placeholder-count="2">
+          <div style="background:#fff;border:1px solid #e7e4de;border-top:3px solid {{ d.color }};border-radius:10px;padding:14px 16px">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:7px">
+              <span style="width:12px;height:12px;border-radius:50%;background:{{ d.color }};flex:none"></span>
+              <span style="font:600 15px 'Source Serif 4',serif">{{ d.name }}</span>
+            </div>
+            <div style="font:600 11.5px/1.6 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;color:#68645d;margin-bottom:7px">{{ d.meta }}</div>
+            <div style="font:400 12.5px/1.55 'DM Sans',sans-serif;color:#4d4942;text-wrap:pretty">{{ d.mot }}</div>
+          </div>
+        </sc-for>
+        <div style="font:400 11px/1.5 'DM Sans',sans-serif;color:#94908a">Korten beskriver läget 2026. Förflyttningar anges mot 2019 års position.</div>
+      </sc-if>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;visaSpar&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Diagram&quot;},
+  &quot;visaAnnotering&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Diagram&quot;},
+  &quot;nodStorlek&quot;: {&quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 44, &quot;min&quot;: 34, &quot;max&quot;: 56, &quot;step&quot;: 2, &quot;unit&quot;: &quot;px&quot;, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Diagram&quot;}
+}">
+class Component extends DCLogic {
+  DATA = {
+    order: ["V","S","MP","C","L","KD","M","SD"],
+    colors: {S:"#ED1B34",M:"#52BDEC",SD:"#DDCF00",V:"#AF1D22",C:"#009933",KD:"#231977",L:"#006AB3",MP:"#53A12B"},
+    names: {S:"Socialdemokraterna",M:"Moderaterna",SD:"Sverigedemokraterna",V:"Vänsterpartiet",C:"Centerpartiet",KD:"Kristdemokraterna",L:"Liberalerna",MP:"Miljöpartiet"},
+    galtan: {
+      V:[[2019,1.31,1.69],[2024,1.89,2.42],[2026,1.2,1.9,"Stabil ekonomiskt. Marginell TAN-drift genom försvarsöverenskommelse och Ukraina-stöd, men förblir mest GAL-partiet."]],
+      S:[[2019,3.44,3.31],[2024,3.68,4.74],[2026,3.5,4.8,"Störst TAN-drift av alla partier. Röstat ja till visitationszoner, säkerhetsförvaring, tvångsmedel mot barn. Ekonomiskt tillbaka vänsterut med 13 mdr extra till välfärd."]],
+      MP:[[2019,2.23,1.46],[2024,3.16,1.95],[2026,2.2,1.4,"Mest stabila GAL-profilen. Konsekvent emot sänkt straffålder, emot kärnkraft, emot utökad övervakning."]],
+      C:[[2019,6.15,3.31],[2024,7.84,2.95],[2026,5.8,3.3,"Tillbaka till GAL efter Januariavtalets fall. Emot visitationszoner och sänkt straffålder. Marginellt vänsterut ekonomiskt via glesbygdssatsningar."]],
+      L:[[2019,6.62,2.85],[2024,7.32,4.47],[2026,6.3,4.8,"Stor TAN-drift genom Tidösamarbete men interna spänningar: landsmöte 2025 fasa ut vinstintresset, motion federalt Europa. Ekonomisk vänster via friskolefrågan."]],
+      KD:[[2019,6.38,6.62],[2024,7.26,7.79],[2026,6.0,7.0,"Stabil TAN. Ekonomiskt vänsterut genom statligt vårdansvar, bupmiljard, Äldreomsorgslyftet."]],
+      M:[[2019,7.69,5.62],[2024,7.89,6.47],[2026,7.5,6.8,"Konsekvent TAN-drift via Tidöavtalet: sänkt straffålder, säkerhetsförvaring, kärnkraftsprogram. Ekonomiskt stabil."]],
+      SD:[[2019,5.77,8.85],[2024,6.32,9.0],[2026,6.2,8.8,"Stabilt extremt TAN. Marginellt högerut ekonomiskt genom Tidö. Reserverade sig ensamt mot grundlagsreform om domstolsoberoende."]]
+    }
+  };
+  state = { year: 2019, selected: [], statPoints: 0, statDrift: 0, intro: true };
+
+  NAV = [
+    { q: "Var står partierna i sakfrågorna?", lens: "Position", href: "Position - vy i full skala.dc.html", id: "position" },
+    { q: "Håller orden när det blir votering?", lens: "Säger vs gör", href: "Säger vs gör - vy i full skala.dc.html", id: "svg" },
+    { q: "Vad menar de egentligen med orden?", lens: "Språk", href: "Språk - vy i full skala.dc.html", id: "sprak" },
+    { q: "Vart är partierna på väg?", lens: "GAL-TAN", href: "GAL-TAN - vy i full skala.dc.html", id: "galtan" }
+  ];
+  LENS_ID = "galtan";
+  navVals() {
+    const narrow = !!this.state.narrow;
+    return {
+      showRail: !narrow, showTopbar: narrow,
+      contentML: narrow ? '0px' : '210px',
+      menuOpen: !!this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      navItems: this.NAV.map(n => {
+        const on = n.id === this.LENS_ID;
+        return { ...n, bg: on ? '#211f1c' : 'transparent', hoverBg: on ? '#211f1c' : '#f0ede7', qColor: on ? '#fff' : '#4d4942', lensColor: on ? '#b3ada0' : '#a8a49a' };
+      })
+    };
+  }
+  componentDidMount() {
+    this._onResize = () => this.setState({ narrow: window.innerWidth < 920 });
+    window.addEventListener('resize', this._onResize);
+    this._onResize();
+    const t0 = performance.now(), dur = 1400;
+    const tick = (t) => {
+      const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      this.setState({ statPoints: Math.round(e * 24), statDrift: e * 1.5 });
+      if (p < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+    this._t1 = setTimeout(() => this.state.intro && this.setState({ year: 2024 }), 800);
+    this._t2 = setTimeout(() => this.state.intro && this.setState({ year: 2026, intro: false }), 1800);
+  }
+  componentWillUnmount() { cancelAnimationFrame(this._raf); clearTimeout(this._t1); clearTimeout(this._t2); window.removeEventListener('resize', this._onResize); }
+
+  setYear(y) { this.setState({ year: y, intro: false }); }
+  toggle(p) {
+    const s = this.state.selected.slice();
+    const i = s.indexOf(p);
+    if (i >= 0) s.splice(i, 1); else s.push(p);
+    this.setState({ selected: s, intro: false });
+  }
+
+  fmt(n) { return n.toFixed(1).replace('.', ','); }
+  pos(v) { return 6 + (v / 10) * 88; }
+
+  renderVals() {
+    const D = this.DATA, st = this.state;
+    const yi = { 2019: 0, 2024: 1, 2026: 2 }[st.year];
+    const sel = st.selected;
+    const has = sel.length > 0;
+    const visaSpar = this.props.visaSpar ?? true;
+    const base = this.props.nodStorlek ?? 44;
+    const size = this.state.narrow ? Math.min(base, 32) : base;
+    const visaAnnot = this.props.visaAnnotering ?? true;
+
+    const chips = D.order.map(p => {
+      const on = sel.includes(p);
+      return {
+        code: p, color: D.colors[p],
+        border: on ? D.colors[p] : '#e7e4de',
+        bg: on ? D.colors[p] : '#fff',
+        txt: on ? (p === 'SD' ? '#333' : '#fff') : '#68645d',
+        onClick: () => this.toggle(p)
+      };
+    });
+
+    const years = [2019, 2024, 2026].map(y => ({
+      label: y, onClick: () => this.setYear(y),
+      bg: st.year === y ? '#fff' : 'transparent',
+      txt: st.year === y ? '#211f1c' : '#94908a',
+      shadow: st.year === y ? '0 1px 3px rgba(0,0,0,.1)' : 'none'
+    }));
+
+    const trails = [], ghosts = [], nodes = [];
+    D.order.forEach(p => {
+      const pts = D.galtan[p];
+      const dim = has && !sel.includes(p);
+      const cur = pts[yi];
+      if (visaSpar && !dim) {
+        for (let i = 1; i <= yi; i++) {
+          const [, lr0, gt0] = pts[i - 1], [, lr1, gt1] = pts[i];
+          const x0 = this.pos(lr0), y0 = this.pos(gt0), x1 = this.pos(lr1), y1 = this.pos(gt1);
+          const dx = x1 - x0, dy = y1 - y0;
+          trails.push({ left: x0, top: y0, width: Math.sqrt(dx * dx + dy * dy), angle: Math.atan2(dy, dx) * 180 / Math.PI, color: D.colors[p] });
+        }
+        for (let i = 0; i < yi; i++) ghosts.push({ left: this.pos(pts[i][1]), top: this.pos(pts[i][2]), color: D.colors[p] });
+      }
+      nodes.push({
+        code: p, color: D.colors[p],
+        left: this.pos(cur[1]), top: this.pos(cur[2]),
+        size, fontSize: p.length > 1 ? Math.round(size * 0.26) : Math.round(size * 0.3),
+        txt: p === 'SD' ? '#333' : '#fff',
+        opacity: dim ? 0.18 : 1,
+        z: sel.includes(p) ? 8 : 3,
+        shadow: sel.includes(p) ? '0 3px 12px rgba(0,0,0,.28)' : '0 2px 6px rgba(0,0,0,.18)',
+        onClick: () => this.toggle(p)
+      });
+    });
+
+    const dir = (d, pos1, neg) => Math.abs(d) < 0.3 ? 'i stort sett stilla' : `${this.fmt(Math.abs(d))} ${d > 0 ? pos1 : neg}`;
+    const details = sel.map(p => {
+      const pts = D.galtan[p], cur = pts[2], first = pts[0];
+      return {
+        name: D.names[p], color: D.colors[p],
+        meta: `GAL-TAN ${this.fmt(cur[2])} (${dir(cur[2] - first[2], 'mot TAN', 'mot GAL')}) · vänster–höger ${this.fmt(cur[1])} (${dir(cur[1] - first[1], 'högerut', 'vänsterut')})`,
+        mot: cur[3]
+      };
+    });
+
+    const yearNotes = { 2019: 'CHES 2019 — verifierad forskardata', 2024: 'CHES 2024 — verifierad forskardata', 2026: 'Egen bedömning utifrån voteringar och program' };
+
+    return {
+      ...this.navVals(),
+      statPoints: st.statPoints,
+      statDrift: '+' + this.fmt(st.statDrift),
+      chips, years, trails, ghosts, nodes, details,
+      hasSelection: has,
+      noSelection: !has,
+      onClear: () => this.setState({ selected: [] }),
+      cmpLabel: has ? `Jämför ${sel.length}: ${sel.map(p => D.names[p]).join(', ')} — övriga tonas ner.` : 'Tryck på partier — i grafen eller nedan — för att jämföra. Annars visas alla.',
+      yearNote: yearNotes[st.year],
+      annotationVisible: visaAnnot && st.year === 2026 && !has
+    };
+  }
+}
+</script>
+</body>
+</html>

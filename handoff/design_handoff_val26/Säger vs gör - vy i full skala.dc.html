@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#f8f7f4;font-family:'DM Sans',system-ui,sans-serif;color:#211f1c}
+a{color:#211f1c}a:hover{color:#68645d}
+</style>
+</helmet>
+
+<sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;left:0;top:0;bottom:0;width:210px;background:#faf8f3;border-right:1px solid #e7e4de;box-sizing:border-box;padding:22px 16px;overflow-y:auto;z-index:40">
+    <a href="Startsida.dc.html" style="display:block;font:600 14px/1.3 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-bottom:20px;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    <div style="font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Din fråga</div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+        <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:9px 11px;transition:background .15s" style-hover="background:{{ n.hoverBg }}">
+          <span style="display:block;font:600 13px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+          <span style="display:block;font:600 8.5px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+        </a>
+      </sc-for>
+    </div>
+    <a href="Om metoden.dc.html" style="display:block;margin-top:18px;padding:6px 11px;font:600 11.5px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+  </div>
+</sc-if>
+<div style="min-height:100vh;display:flex;flex-direction:column;margin-left:{{ contentML }}">
+  <sc-if value="{{ showTopbar }}" hint-placeholder-val="{{ false }}">
+    <div style="background:#fff;border-bottom:1px solid #e7e4de;padding:11px 18px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:45">
+      <button onClick="{{ toggleMenu }}" style="appearance:none;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:8px 6px">
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+      </button>
+      <a href="Startsida.dc.html" style="font:600 15px 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;text-decoration:none">Partiernas ståndpunkter <span style="color:#94908a">2026</span></a>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closeMenu }}" style="position:fixed;inset:0;background:rgba(28,28,28,.3);z-index:50"></div>
+      <div style="position:fixed;top:0;bottom:0;left:0;width:min(320px,84vw);background:#faf8f3;border-right:1px solid #e0dcd3;box-shadow:6px 0 24px rgba(0,0,0,.12);z-index:51;padding:22px 18px;overflow-y:auto;box-sizing:border-box">
+        <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#94908a;margin-bottom:14px">Välj din fråga</div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+            <a href="{{ n.href }}" style="display:block;text-decoration:none;background:{{ n.bg }};border-radius:8px;padding:11px 13px">
+              <span style="display:block;font:600 15px/1.35 'Source Serif 4',serif;color:{{ n.qColor }}">{{ n.q }}</span>
+              <span style="display:block;font:600 9px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:{{ n.lensColor }};margin-top:4px">{{ n.lens }}</span>
+            </a>
+          </sc-for>
+        </div>
+        <a href="Om metoden.dc.html" style="display:block;margin-top:16px;padding:8px 13px;font:600 13px 'DM Sans',sans-serif;color:#68645d;text-decoration:none">Om metoden →</a>
+      </div>
+    </sc-if>
+  </sc-if>
+
+  <!-- Header — tonas efter valt sakområde, crossfade vid byte -->
+  <div style="background:{{ areaTone }};transition:background .4s">
+    <div style="max-width:940px;margin:0 auto;padding:30px 22px 26px">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <div style="background:#fff;color:#5a5344;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Lins · Säger vs gör</div>
+        <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">Uppdaterad juli 2026</span>
+      </div>
+      <h1 style="margin:14px 0 0;font:600 clamp(26px,5vw,36px)/1.15 'Source Serif 4',serif;letter-spacing:-.01em;max-width:620px;text-wrap:pretty">Håller orden när det blir votering?</h1>
+      <p style="margin:10px 0 0;font:400 14.5px/1.6 'DM Sans',sans-serif;color:#5a5648;max-width:620px;text-wrap:pretty">Vi jämför vad partierna säger i varje fråga med hur de faktiskt röstat i riksdagen. Det mesta stämmer — det intressanta är där ord och handling glappar.</p>
+      <div style="display:flex;gap:32px;margin-top:20px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statRows }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">jämförelser i {{ areaLabelLower }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statOk }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">stämmer</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ statDev }}</span>
+          <span style="font:500 11px 'DM Sans',sans-serif;color:#8a857c">avviker eller inväntar votering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:940px;margin:0 auto;padding:20px 22px 48px;width:100%;box-sizing:border-box">
+
+    <!-- Sakområde -->
+    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px">
+      <sc-for list="{{ areaTabs }}" as="a" hint-placeholder-count="2">
+        <button onClick="{{ a.onClick }}" style="appearance:none;border:1px solid {{ a.border }};background:{{ a.bg }};color:{{ a.txt }};font:600 13px 'DM Sans',sans-serif;padding:7px 15px;border-radius:8px;cursor:pointer;transition:all .15s" style-hover="border-color:#94908a">{{ a.label }}</button>
+      </sc-for>
+    </div>
+
+    <!-- Partival -->
+    <div style="font:400 12px/1.5 'DM Sans',sans-serif;color:#94908a;margin-bottom:8px">{{ cmpLabel }}</div>
+    <div style="display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:20px">
+      <sc-for list="{{ chips }}" as="c" hint-placeholder-count="8">
+        <button onClick="{{ c.onClick }}" style="appearance:none;border:2px solid {{ c.border }};background:{{ c.bg }};color:{{ c.txt }};font:700 13px 'DM Sans',sans-serif;padding:7px 14px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:7px;transition:all .15s" style-hover="border-color:#94908a">
+          <span style="width:11px;height:11px;border-radius:50%;background:{{ c.color }};flex:none"></span>{{ c.code }}
+        </button>
+      </sc-for>
+      <sc-if value="{{ hasSelection }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ onClear }}" style="appearance:none;border:none;background:none;font:600 12px 'DM Sans',sans-serif;color:#68645d;cursor:pointer;padding:6px 8px;text-decoration:underline">Rensa</button>
+      </sc-if>
+    </div>
+
+    <!-- Fördelning -->
+    <div style="background:#fff;border:1px solid #e7e4de;border-radius:14px;padding:20px 24px;margin-bottom:22px">
+      <div style="font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:14px">Ord mot handling i {{ areaLabelLower }}</div>
+      <div style="display:flex;height:38px;border-radius:9px;overflow:hidden;gap:2px">
+        <sc-for list="{{ distSegs }}" as="s" hint-placeholder-count="3">
+          <div style="width:{{ s.width }}%;background:{{ s.bg }};color:{{ s.txt }};display:flex;align-items:center;justify-content:center;font:700 13px 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;min-width:26px;transition:width .5s cubic-bezier(.22,1,.36,1)">{{ s.count }}</div>
+        </sc-for>
+      </div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px">
+        <sc-for list="{{ distLegend }}" as="l" hint-placeholder-count="3">
+          <span style="display:flex;align-items:center;gap:6px;font:400 12px 'DM Sans',sans-serif;color:#68645d"><span style="width:11px;height:11px;border-radius:3px;background:{{ l.bg }};border:1px solid rgba(0,0,0,.06)"></span>{{ l.label }}</span>
+        </sc-for>
+      </div>
+      <sc-if value="{{ visaNot }}" hint-placeholder-val="{{ true }}">
+        <div style="margin-top:14px;font:400 13px/1.55 'Source Serif 4',serif;font-style:italic;color:#4d4942;background:#faf8f3;border:1px solid #eeebe2;border-radius:8px;padding:10px 14px;text-wrap:pretty">Att det mesta stämmer är väntat — regeringspartier röstar för sin egen politik, och urvalet gäller frågor som nått votering. Det intressanta är avvikelserna.</div>
+      </sc-if>
+    </div>
+
+    <!-- Avvikelser -->
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+      <span style="background:#fff3cd;color:#8a5700;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;padding:4px 9px;border-radius:5px">Här skaver det</span>
+      <span style="font:600 18px/1.2 'Source Serif 4',serif">Avvikelser mellan ord och handling</span>
+    </div>
+    <sc-if value="{{ hasDeviations }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:26px">
+        <sc-for list="{{ deviations }}" as="d" hint-placeholder-count="4">
+          <div style="background:#fff;border:1px solid #e7e4de;border-left:4px solid {{ d.accent }};border-radius:10px;padding:15px 17px">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px">
+              <span style="width:12px;height:12px;border-radius:50%;background:{{ d.color }};flex:none"></span>
+              <span style="font:600 14px 'Source Serif 4',serif">{{ d.name }}</span>
+              <span style="font:500 11.5px 'DM Sans',sans-serif;color:#94908a;margin-left:auto">{{ d.topic }}</span>
+            </div>
+            <div style="font:400 13px/1.5 'DM Sans',sans-serif;color:#4d4942;margin-bottom:7px"><span style="font:700 10px 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#1a7a3a;margin-right:6px">Säger</span>{{ d.says }}</div>
+            <div style="font:400 13px/1.55 'DM Sans',sans-serif;color:#211f1c"><span style="font:700 10px 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:{{ d.doesColor }};margin-right:6px">{{ d.doesLabel }}</span>{{ d.does }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-if>
+    <sc-if value="{{ noDeviations }}" hint-placeholder-val="{{ false }}">
+      <div style="font:400 13px 'DM Sans',sans-serif;color:#94908a;text-align:center;padding:14px;margin-bottom:26px">Inga avvikelser bland de valda partierna i detta område.</div>
+    </sc-if>
+
+    <!-- Stämmer — ihopfälld, sektionerad per fråga -->
+    <sc-if value="{{ visaStammer }}" hint-placeholder-val="{{ true }}">
+      <div style="background:#fff;border:1px solid #e7e4de;border-radius:14px;overflow:hidden">
+        <button onClick="{{ toggleStammer }}" style="appearance:none;border:none;background:none;width:100%;display:flex;align-items:center;gap:10px;padding:15px 18px;cursor:pointer;text-align:left" style-hover="background:#faf8f3">
+          <span style="font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#68645d">Övriga — ord och handling stämmer</span>
+          <span style="background:#d4f7dc;color:#1a7a3a;font:700 11px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;padding:3px 9px;border-radius:99px;flex:none">{{ stammerCount }}</span>
+          <span style="font:600 12px 'DM Sans',sans-serif;color:#94908a;margin-left:auto;flex:none">{{ stammerToggleLabel }}</span>
+        </button>
+        <sc-if value="{{ stammerOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:0 18px 16px">
+            <sc-for list="{{ matchGroups }}" as="g" hint-placeholder-count="3">
+              <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#94908a;margin:14px 0 4px">{{ g.topic }}</div>
+              <sc-for list="{{ g.rows }}" as="m" hint-placeholder-count="4">
+                <div style="display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid {{ m.divider }}">
+                  <span style="width:10px;height:10px;border-radius:50%;background:{{ m.color }};flex:none"></span>
+                  <span style="font:600 13px 'DM Sans',sans-serif;min-width:34px;flex:none">{{ m.code }}</span>
+                  <span style="font:400 13px/1.45 'DM Sans',sans-serif;color:#4d4942;flex:1;min-width:0">{{ m.text }}</span>
+                </div>
+              </sc-for>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+    </sc-if>
+
+    <div style="font:400 11px/1.5 ui-monospace,Menlo,monospace;color:#a8a49a;margin-top:18px">Källa: riksdagens voteringar 2022–2026 · partiernas program och uttalanden</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;visaStammer&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Innehåll&quot;},
+  &quot;visaNot&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Innehåll&quot;}
+}">
+class Component extends DCLogic {
+  DATA = {
+    order: ["V","S","MP","C","L","KD","M","SD"],
+    colors: {S:"#ED1B34",M:"#52BDEC",SD:"#DDCF00",V:"#AF1D22",C:"#009933",KD:"#231977",L:"#006AB3",MP:"#53A12B"},
+    names: {S:"Socialdemokraterna",M:"Moderaterna",SD:"Sverigedemokraterna",V:"Vänsterpartiet",C:"Centerpartiet",KD:"Kristdemokraterna",L:"Liberalerna",MP:"Miljöpartiet"},
+    tones: { skola: "oklch(0.95 0.02 320)", ekonomi: "oklch(0.95 0.02 85)" },
+    voting: {
+      skola: { label: "Skola", topics: [
+        { name: "Fristående skolor", v: {
+          V:["Avskaffa vinstdrivande friskolor","Motionen avslogs; V röstade emot utskottet","stammer"],
+          S:["Kommunalt veto, offentlighetsprincip","Motioner avslagna; yrkade bifall reservation 12","stammer"],
+          MP:["Förbjud vinstutdelande aktiebolagsskolor","Motioner avslagna i UbU7","stammer"],
+          C:["Reformera men bevara friskolesystemet","Motioner avslagna i UbU7","stammer"],
+          L:["Helrenovera, inför offentlighetsprincip","Röstade NEJ till offentlighetsprincipen 2024-04-24 — dagarna efter att ha sagt sig stödja den","delvis"],
+          KD:["Värnar valfrihet","Röstade för avslag på oppositionens motioner","stammer"],
+          M:["Värnar friskolesystemet","Röstade för utskottet; Skolpengsutredningen uppges lagd åt sidan","delvis"],
+          SD:["Förbjud muslimska friskolor, stöd i övrigt","Röstade för utskottets förslag","stammer"] } },
+        { name: "Vinstuttag", v: {
+          V:["Förbjud vinstuttag helt","Avslogs i UbU7","stammer"],
+          S:["Förbjud vinstuttag","Avslogs i UbU7","stammer"],
+          MP:["Förbjud vinstutdelande AB","Avslogs i UbU7","stammer"],
+          C:["Villkorad vinst (oklart)","Lade reservation 27 om vinstuttag","stammer"],
+          L:["Fasa ut vinstintresset (landsmöte)","Röstade FÖR avslag på V/S/MP:s vinstförbud — trots landsmötesbeslutet att fasa ut vinst","delvis"],
+          KD:["Begränsat vinstförbud vid nystart","Röstade för utskottet","stammer"],
+          M:["Värnar valfrihet","Röstade för utskottet","stammer"],
+          SD:["Värnar valfrihet","Röstade för utskottet","stammer"] } },
+        { name: "Statlig styrning", v: {
+          V:["Statligt huvudmannaskap","Avslogs i UbU7","stammer"],
+          S:["Ökad statlig styrning","Avslogs i UbU7","stammer"],
+          MP:["Öka statens andel","Avslogs i UbU7","stammer"],
+          C:["Kommunalt ansvar","Avslogs i UbU7","stammer"],
+          L:["Vill återförstatliga skolan","Ingen proposition om förstatligande lagd denna mandatperiod","delvis"],
+          KD:["Delat ansvar","Genomför via propositioner","stammer"],
+          M:["Delat ansvar","Genomför via propositioner","stammer"],
+          SD:["Stöder förstatligande","Ingen proposition lagd — votering ej möjlig utan lagförslag","invantar"] } }
+      ]},
+      ekonomi: { label: "Ekonomi", topics: [
+        { name: "Skatt på arbete", v: {
+          V:["Trappa av jobbskatteavdrag","Avslogs i SkU13","stammer"],
+          S:["Höj för höga inkomster","Avslogs i FiU1","stammer"],
+          MP:["Grön skatteväxling","Avslogs i FiU1","stammer"],
+          C:["Sänk skatt på arbete","Avslogs i FiU1","stammer"],
+          L:["Sänkt skatt på arbete","Antagen via FiU1","stammer"],
+          KD:["Sänkt skatt","Antagen via FiU1","stammer"],
+          M:["Sänk skatt, jobbskatteavdrag","Antagen via FiU1","stammer"],
+          SD:["Sänkt skatt","Antagen via FiU1","stammer"] } },
+        { name: "Välfärdens finansiering", v: {
+          V:["Höj skatter för välfärden","Avslogs i FiU1","stammer"],
+          S:["Stärk välfärden","Avslogs i FiU1","stammer"],
+          MP:["Höj skatter","Avslogs i FiU1","stammer"],
+          C:["Effektivisera","Avslogs i FiU1","stammer"],
+          L:["Effektivisera","Antagen via FiU1","stammer"],
+          KD:["Effektivisera","Antagen via FiU1","stammer"],
+          M:["Effektivisera","Antagen via FiU1","stammer"],
+          SD:["Skydda välfärden — lovade ej sänka a-kassan","Stödde budget som sänkte a-kassan (dag 100–200). S påtalar diskrepansen","delvis"] } },
+        { name: "Arbetsmarknad", v: {
+          V:["Stärk anställningstrygghet","Röstade emot LAS-reformen; tre reservationer","stammer"],
+          S:["Stöder LAS-reformen","Drev igenom reformen — trots vallöfte 2018 att aldrig medverka till LAS-förändring. M påtalar kovändningen","delvis"],
+          MP:["Stöder partsmodellen","Reservation om sysselsättningsgrad avslogs","stammer"],
+          C:["Modern arbetsrätt","Röstade för LAS-reformen","stammer"],
+          L:["Flexibel arbetsmarknad","—","stammer"],
+          KD:["Flexibel med trygghet","Röstade för utskottet","stammer"],
+          M:["Flexibel arbetsmarknad","Röstade för LAS-reformen","stammer"],
+          SD:["Värnar partsmodellen","Stöder utskottet","stammer"] } },
+        { name: "Pension", v: {
+          V:["Emot höjda pensionsåldrar","Konsekvent emot; utanför Pensionsgruppen","stammer"],
+          S:["Accepterar Pensionsgruppen","Röstade för utskottet i SfU13","stammer"],
+          MP:["Stärk pensionärers ekonomi","—","stammer"],
+          C:["Accepterar Pensionsgruppen","—","stammer"],
+          L:["Höjd riktålder","—","stammer"],
+          KD:["Rättvist system","Röstade för utskottet","stammer"],
+          M:["Höjd riktålder","Antagen via FiU1","stammer"],
+          SD:["Var emot höjda pensionsåldrar","Bekräftar att de nu agerar i konsensus i Pensionsgruppen — trots tidigare kritik mot höjda åldrar","delvis"] } }
+      ]}
+    }
+  };
+  state = { area: "skola", selected: [], aRows: 0, aOk: 0, aDev: 0 };
+
+  NAV = [
+    { q: "Var står partierna i sakfrågorna?", lens: "Position", href: "Position - vy i full skala.dc.html", id: "position" },
+    { q: "Håller orden när det blir votering?", lens: "Säger vs gör", href: "Säger vs gör - vy i full skala.dc.html", id: "svg" },
+    { q: "Vad menar de egentligen med orden?", lens: "Språk", href: "Språk - vy i full skala.dc.html", id: "sprak" },
+    { q: "Vart är partierna på väg?", lens: "GAL-TAN", href: "GAL-TAN - vy i full skala.dc.html", id: "galtan" }
+  ];
+  LENS_ID = "svg";
+  navVals() {
+    const narrow = !!this.state.narrow;
+    return {
+      showRail: !narrow, showTopbar: narrow,
+      contentML: narrow ? '0px' : '210px',
+      menuOpen: !!this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      navItems: this.NAV.map(n => {
+        const on = n.id === this.LENS_ID;
+        return { ...n, bg: on ? '#211f1c' : 'transparent', hoverBg: on ? '#211f1c' : '#f0ede7', qColor: on ? '#fff' : '#4d4942', lensColor: on ? '#b3ada0' : '#a8a49a' };
+      })
+    };
+  }
+  componentDidMount() {
+    this._onResize = () => this.setState({ narrow: window.innerWidth < 920 });
+    window.addEventListener('resize', this._onResize);
+    this._onResize();
+    this.animateStats();
+  }
+  componentWillUnmount() { cancelAnimationFrame(this._raf); window.removeEventListener('resize', this._onResize); }
+
+  rows() {
+    const ad = this.DATA.voting[this.state.area], sel = this.state.selected;
+    const out = [];
+    ad.topics.forEach(t => Object.entries(t.v).forEach(([p, val]) => {
+      if (!sel.length || sel.includes(p)) out.push({ p, topic: t.name, says: val[0], does: val[1], match: val[2] });
+    }));
+    return out;
+  }
+
+  animateStats() {
+    cancelAnimationFrame(this._raf);
+    const all = this.rows();
+    const tRows = all.length, tOk = all.filter(r => r.match === 'stammer').length, tDev = tRows - tOk;
+    const f = { rows: this.state.aRows, ok: this.state.aOk, dev: this.state.aDev };
+    const t0 = performance.now(), dur = 900;
+    const tick = (t) => {
+      const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      this.setState({
+        aRows: Math.round(f.rows + (tRows - f.rows) * e),
+        aOk: Math.round(f.ok + (tOk - f.ok) * e),
+        aDev: Math.round(f.dev + (tDev - f.dev) * e)
+      });
+      if (p < 1) this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+
+  setArea(a) { this.setState({ area: a }, () => this.animateStats()); }
+  toggle(p) {
+    const s = this.state.selected.slice(), i = s.indexOf(p);
+    if (i >= 0) s.splice(i, 1); else s.push(p);
+    this.setState({ selected: s }, () => this.animateStats());
+  }
+
+  renderVals() {
+    const D = this.DATA, st = this.state;
+    const sel = st.selected, has = sel.length > 0;
+    const all = this.rows();
+    const ok = all.filter(r => r.match === 'stammer');
+    const delvis = all.filter(r => r.match === 'delvis');
+    const invantar = all.filter(r => r.match === 'invantar');
+    const tot = all.length || 1;
+
+    const areaTabs = Object.keys(D.voting).map(a => ({
+      label: D.voting[a].label,
+      onClick: () => this.setArea(a),
+      bg: st.area === a ? '#211f1c' : '#fff',
+      txt: st.area === a ? '#fff' : '#68645d',
+      border: st.area === a ? '#211f1c' : '#e7e4de'
+    }));
+
+    const chips = D.order.map(p => {
+      const on = sel.includes(p);
+      return {
+        code: p, color: D.colors[p],
+        border: on ? D.colors[p] : '#e7e4de',
+        bg: on ? D.colors[p] : '#fff',
+        txt: on ? (p === 'SD' ? '#333' : '#fff') : '#68645d',
+        onClick: () => this.toggle(p)
+      };
+    });
+
+    const segDefs = [
+      { count: ok.length, bg: '#d4f7dc', txt: '#1a7a3a', label: `Stämmer (${ok.length})` },
+      { count: delvis.length, bg: '#fff3cd', txt: '#8a5700', label: `Delvis / avviker (${delvis.length})` },
+      { count: invantar.length, bg: '#e0f2fe', txt: '#075985', label: `Inväntar votering (${invantar.length})` }
+    ];
+    const distSegs = segDefs.filter(s => s.count > 0).map(s => ({ ...s, width: s.count / tot * 100 }));
+
+    const devs = delvis.concat(invantar).map(r => {
+      const iv = r.match === 'invantar';
+      return {
+        name: D.names[r.p], color: D.colors[r.p], topic: r.topic,
+        says: r.says, does: r.does,
+        accent: iv ? '#7aa7c7' : '#e3b23c',
+        doesColor: iv ? '#075985' : '#8a5700',
+        doesLabel: iv ? 'Ingen votering' : 'Gör'
+      };
+    });
+
+    const matchGroups = this.DATA.voting[st.area].topics
+      .map(t => {
+        const rows = ok.filter(r => r.topic === t.name);
+        return {
+          topic: t.name,
+          rows: rows.map((r, i) => ({
+            code: r.p, color: D.colors[r.p], text: r.says,
+            divider: i === rows.length - 1 ? 'transparent' : '#f0ede7'
+          }))
+        };
+      })
+      .filter(g => g.rows.length > 0);
+
+    return {
+      ...this.navVals(),
+      areaTone: D.tones[st.area],
+      areaLabelLower: D.voting[st.area].label.toLowerCase(),
+      statRows: st.aRows, statOk: st.aOk, statDev: st.aDev,
+      areaTabs, chips, distSegs,
+      distLegend: segDefs.map(s => ({ bg: s.bg, label: s.label })),
+      deviations: devs,
+      hasDeviations: devs.length > 0,
+      noDeviations: devs.length === 0,
+      matchGroups,
+      stammerCount: ok.length,
+      stammerOpen: !!st.stammerOpen,
+      toggleStammer: () => this.setState(s => ({ stammerOpen: !s.stammerOpen })),
+      stammerToggleLabel: st.stammerOpen ? 'Dölj' : 'Visa',
+      hasSelection: has,
+      onClear: () => this.setState({ selected: [] }, () => this.animateStats()),
+      cmpLabel: has ? `Jämför ${sel.length}: ${sel.map(p => D.names[p]).join(', ')}.` : 'Tryck på partier för att filtrera — annars visas alla.',
+      visaStammer: this.props.visaStammer ?? true,
+      visaNot: this.props.visaNot ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

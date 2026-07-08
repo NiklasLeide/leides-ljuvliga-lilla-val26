@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#edeae4;font-family:'DM Sans',system-ui,sans-serif}
+a{color:#1c1c1c}a:hover{color:#555}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 'DM Sans',sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 'DM Sans',sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 'DM Sans',sans-serif;color:rgba(0,0,0,.5)}
+@keyframes drawX{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes popIn{0%{transform:translate(-50%,-50%) scale(0)}70%{transform:translate(-50%,-50%) scale(1.15)}100%{transform:translate(-50%,-50%) scale(1)}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(82,189,236,.55)}50%{box-shadow:0 0 0 9px rgba(82,189,236,0)}}
+@keyframes riseIn{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t6">
+<div class="dv-thd"><a class="dv-tid" href="#t6">6</a><span class="dv-tname">Var frågorna från <a class="dv-oid" href="#5c">5c</a> ska bo — tre placeringar</span></div>
+<div class="dv-opts">
+
+<!-- 6a Hamburgare + låda -->
+<div class="dv-opt" id="6a">
+<div class="dv-olabel"><a class="dv-oid" href="#6a">6a</a>Hamburgare vänster — frågorna i en utfällbar låda</div>
+<div class="dv-card" style="width:500px">
+  <div style="background:#fff;border-bottom:1px solid #e7e4de;padding:12px 20px;display:flex;align-items:center;gap:14px">
+    <div style="display:flex;flex-direction:column;gap:4px;cursor:pointer;padding:4px 2px"><span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span><span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span><span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span></div>
+    <div style="font:600 15px 'Source Serif 4',serif;letter-spacing:-.01em">Partiernas ståndpunkter <span style="color:#94908a">2026</span></div>
+  </div>
+  <div style="position:relative;height:290px;overflow:hidden">
+    <div style="position:absolute;inset:0;background:oklch(0.95 0.02 320);padding:18px 20px;filter:brightness(.92)">
+      <div style="font:600 22px/1.15 'Source Serif 4',serif;color:#211f1c;opacity:.5">Var står partierna i sakfrågorna?</div>
+    </div>
+    <div style="position:absolute;top:0;bottom:0;left:0;width:74%;background:#faf8f3;border-right:1px solid #e0dcd3;box-shadow:6px 0 24px rgba(0,0,0,.1);padding:20px 22px">
+      <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#94908a;margin-bottom:14px">Välj din fråga</div>
+      <div style="display:flex;flex-direction:column">
+        <div style="padding:10px 0;border-bottom:1px solid #eeebe2"><span style="font:600 16px/1.3 'Source Serif 4',serif;border-bottom:2px solid #211f1c">Var står partierna i sakfrågorna?</span><div style="font:600 9px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-top:4px">Position</div></div>
+        <div style="padding:10px 0;border-bottom:1px solid #eeebe2"><span style="font:600 16px/1.3 'Source Serif 4',serif;color:#5a5648">Håller orden när det blir votering?</span><div style="font:600 9px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-top:4px">Säger vs gör</div></div>
+        <div style="padding:10px 0;border-bottom:1px solid #eeebe2"><span style="font:600 16px/1.3 'Source Serif 4',serif;color:#5a5648">Vad menar de egentligen med orden?</span><div style="font:600 9px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-top:4px">Språk</div></div>
+        <div style="padding:10px 0"><span style="font:600 16px/1.3 'Source Serif 4',serif;color:#5a5648">Vart är partierna på väg?</span><div style="font:600 9px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-top:4px">GAL-TAN</div></div>
+      </div>
+    </div>
+  </div>
+  <div style="padding:14px 20px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">Slank topprad med hamburgare; lådan glider in från vänster med frågelistan i serif. <b>+</b> maximal yta åt innehållet, samma mönster på mobil och desktop · <b>−</b> navigationen är osynlig tills man öppnar; frågorna gör inte jobbet som lockbete.</div>
+</div>
+</div>
+
+<!-- 6b Vänsterspalt -->
+<div class="dv-opt" id="6b">
+<div class="dv-olabel"><a class="dv-oid" href="#6b">6b</a>Synlig vänsterspalt på desktop — hamburgare först på mobil</div>
+<div class="dv-card" style="width:500px">
+  <div style="display:flex;min-height:300px">
+    <div style="width:190px;flex:none;background:#faf8f3;border-right:1px solid #e7e4de;padding:18px 16px">
+      <div style="font:600 13px 'Source Serif 4',serif;letter-spacing:-.01em;margin-bottom:16px">Partiernas ståndpunkter <span style="color:#94908a">2026</span></div>
+      <div style="font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:10px">Din fråga</div>
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <div style="background:#211f1c;color:#fff;border-radius:8px;padding:9px 11px;cursor:pointer"><div style="font:600 12.5px/1.35 'Source Serif 4',serif">Var står partierna i sakfrågorna?</div><div style="font:600 8.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#b3ada0;margin-top:3px">Position</div></div>
+        <div style="padding:9px 11px;cursor:pointer;border-radius:8px"><div style="font:600 12.5px/1.35 'Source Serif 4',serif;color:#4d4942">Håller orden när det blir votering?</div><div style="font:600 8.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#a8a49a;margin-top:3px">Säger vs gör</div></div>
+        <div style="padding:9px 11px;cursor:pointer;border-radius:8px"><div style="font:600 12.5px/1.35 'Source Serif 4',serif;color:#4d4942">Vad menar de med orden?</div><div style="font:600 8.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#a8a49a;margin-top:3px">Språk</div></div>
+        <div style="padding:9px 11px;cursor:pointer;border-radius:8px"><div style="font:600 12.5px/1.35 'Source Serif 4',serif;color:#4d4942">Vart är partierna på väg?</div><div style="font:600 8.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#a8a49a;margin-top:3px">GAL-TAN</div></div>
+      </div>
+    </div>
+    <div style="flex:1;background:oklch(0.95 0.02 320);padding:18px 20px">
+      <div style="background:#fff;color:#5a5344;font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:99px;display:inline-block">Lins · Position</div>
+      <div style="font:600 20px/1.2 'Source Serif 4',serif;margin-top:10px">Var står partierna i sakfrågorna?</div>
+      <div style="font:400 11.5px/1.5 'DM Sans',sans-serif;color:#5a5648;margin-top:6px">Varje fråga är en skala med sakliga ändpunkter…</div>
+    </div>
+  </div>
+  <div style="padding:14px 20px 20px;border-top:1px solid #f0ede7;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">Frågorna alltid synliga i en lugn vänsterspalt (som en innehållsförteckning); på mobil viks spalten till <a class="dv-oid" href="#6a">6a</a>:s hamburgare. <b>+</b> frågorna säljer hela tiden, tydlig "här är jag" · <b>−</b> tar ~190px bredd från visualiseringarna.</div>
+</div>
+</div>
+
+<!-- 6c Rubriken är menyn -->
+<div class="dv-opt" id="6c">
+<div class="dv-olabel"><a class="dv-oid" href="#6c">6c</a>Rubriken är menyn — frågan i headern fäller ut de andra</div>
+<div class="dv-card" style="width:500px">
+  <div style="background:oklch(0.95 0.02 320);padding:18px 22px 20px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="font:600 13px 'Source Serif 4',serif;color:#5a5648">Partiernas ståndpunkter 2026</div>
+    </div>
+    <div style="display:inline-flex;align-items:center;gap:10px;margin-top:12px;cursor:pointer;background:rgba(255,255,255,.6);border-radius:12px;padding:10px 16px">
+      <span style="font:600 21px/1.2 'Source Serif 4',serif;letter-spacing:-.01em">Var står partierna i sakfrågorna?</span>
+      <span style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid #211f1c;margin-top:3px"></span>
+    </div>
+    <div style="margin-top:6px;margin-left:8px;background:#fff;border:1px solid #e0dcd3;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.1);padding:8px 0;max-width:340px">
+      <div style="padding:9px 18px;cursor:pointer"><span style="font:600 14.5px/1.3 'Source Serif 4',serif;color:#4d4942">Håller orden när det blir votering?</span> <span style="font:600 8.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#a8a49a;margin-left:6px">Säger vs gör</span></div>
+      <div style="padding:9px 18px;cursor:pointer;background:#faf8f3"><span style="font:600 14.5px/1.3 'Source Serif 4',serif;color:#4d4942">Vad menar de med orden?</span> <span style="font:600 8.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#a8a49a;margin-left:6px">Språk</span></div>
+      <div style="padding:9px 18px;cursor:pointer"><span style="font:600 14.5px/1.3 'Source Serif 4',serif;color:#4d4942">Vart är partierna på väg?</span> <span style="font:600 8.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#a8a49a;margin-left:6px">GAL-TAN</span></div>
+    </div>
+  </div>
+  <div style="padding:14px 20px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">Ingen separat meny alls: linsens rubrikfråga är klickbar och fäller ut de tre andra frågorna. <b>+</b> noll extra chrome, frågan står redan där stor · <b>−</b> otraditionellt, kräver tydlig pil-affordans; svårare hitta "startsida".</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Prova härnäst: "bygg <a class="dv-oid" href="#6b">6b</a> i alla fyra vyer" · "<a class="dv-oid" href="#6a">6a</a> men med <a class="dv-oid" href="#5b">5b</a>:s miniatyrer i lådan" · "fler placeringar"</p>
+</section>
+
+<section class="dv-turn" id="t5">
+<div class="dv-thd"><a class="dv-tid" href="#t5">5</a><span class="dv-tname">Lins-navigation för hela sajten — tre förslag</span></div>
+<div class="dv-opts">
+
+<!-- 5a Sektionsrad -->
+<div class="dv-opt" id="5a">
+<div class="dv-olabel"><a class="dv-oid" href="#5a">5a</a>Sektionsrad — tidningens huvudnav, sticky</div>
+<div class="dv-card" style="width:500px">
+  <div style="background:#fff;border-bottom:1px solid #e7e4de;padding:14px 24px 0">
+    <div style="font:600 17px/1 'Source Serif 4',serif;letter-spacing:-.01em">Partiernas ståndpunkter <span style="color:#94908a">2026</span></div>
+    <div style="display:flex;gap:20px;margin-top:12px">
+      <div style="font:700 13px 'DM Sans',sans-serif;color:#211f1c;border-bottom:3px solid #211f1c;padding-bottom:9px;cursor:pointer">Position</div>
+      <div style="font:600 13px 'DM Sans',sans-serif;color:#94908a;border-bottom:3px solid transparent;padding-bottom:9px;cursor:pointer">Säger vs gör</div>
+      <div style="font:600 13px 'DM Sans',sans-serif;color:#94908a;border-bottom:3px solid transparent;padding-bottom:9px;cursor:pointer">Språk</div>
+      <div style="font:600 13px 'DM Sans',sans-serif;color:#94908a;border-bottom:3px solid transparent;padding-bottom:9px;cursor:pointer">GAL-TAN</div>
+    </div>
+  </div>
+  <div style="background:oklch(0.95 0.02 320);padding:20px 24px">
+    <div style="background:#fff;color:#5a5344;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px;display:inline-block">Lins · Position</div>
+    <div style="font:600 24px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;margin-top:10px">Var står partierna i sakfrågorna?</div>
+  </div>
+  <div style="padding:14px 24px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">Sajtnamn i serif + fyra flikar med understruken aktiv, sticky vid scroll. Lägesväxlingen i Språk (Begrepp/Parti) bor kvar i lins-headern — nivåerna blandas aldrig. <b>+</b> beprövat, alltid synligt, byggt för att växa · <b>−</b> linsnamnen kräver att man redan förstår dem.</div>
+</div>
+</div>
+
+<!-- 5b Fyra dörrar -->
+<div class="dv-opt" id="5b">
+<div class="dv-olabel"><a class="dv-oid" href="#5b">5b</a>Startsida med fyra dörrar + kompakt pillrad inne i linserna</div>
+<div class="dv-card" style="width:500px">
+  <div style="background:#f8f7f4;padding:22px 24px">
+    <div style="font:600 20px/1.2 'Source Serif 4',serif;letter-spacing:-.01em;margin-bottom:14px">Fyra sätt att granska partierna</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="background:#fff;border:1px solid #e7e4de;border-top:3px solid oklch(0.82 0.06 320);border-radius:10px;padding:13px;cursor:pointer">
+        <div style="font:600 13.5px 'Source Serif 4',serif">Position</div>
+        <div style="position:relative;height:14px;margin:8px 0 6px"><div style="position:absolute;top:6px;left:0;right:0;height:2px;background:#dcd8cf"></div><span style="position:absolute;left:12%;top:0;width:12px;height:12px;border-radius:50%;background:#AF1D22;border:1.5px solid #fff"></span><span style="position:absolute;left:48%;top:0;width:12px;height:12px;border-radius:50%;background:#009933;border:1.5px solid #fff"></span><span style="position:absolute;left:80%;top:0;width:12px;height:12px;border-radius:50%;background:#52BDEC;border:1.5px solid #fff"></span></div>
+        <div style="font:400 10.5px/1.4 'DM Sans',sans-serif;color:#94908a">Var står de i sakfrågorna?</div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7e4de;border-top:3px solid oklch(0.82 0.06 85);border-radius:10px;padding:13px;cursor:pointer">
+        <div style="font:600 13.5px 'Source Serif 4',serif">Säger vs gör</div>
+        <div style="display:flex;height:12px;border-radius:4px;overflow:hidden;gap:1px;margin:9px 0 7px"><span style="width:70%;background:#d4f7dc"></span><span style="width:20%;background:#fff3cd"></span><span style="width:10%;background:#e0f2fe"></span></div>
+        <div style="font:400 10.5px/1.4 'DM Sans',sans-serif;color:#94908a">Håller orden vid votering?</div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7e4de;border-top:3px solid oklch(0.82 0.06 250);border-radius:10px;padding:13px;cursor:pointer">
+        <div style="font:600 13.5px 'Source Serif 4',serif">Språk</div>
+        <div style="font:400 12.5px/1.35 'Source Serif 4',serif;font-style:italic;color:#4d4942;margin:7px 0 5px">"trygghet" — åtta innebörder</div>
+        <div style="font:400 10.5px/1.4 'DM Sans',sans-serif;color:#94908a">Vad menar de egentligen?</div>
+      </div>
+      <div style="background:#fff;border:1px solid #e7e4de;border-top:3px solid oklch(0.82 0.06 155);border-radius:10px;padding:13px;cursor:pointer">
+        <div style="font:600 13.5px 'Source Serif 4',serif">GAL-TAN</div>
+        <div style="position:relative;height:26px;margin:6px 0 4px"><span style="position:absolute;left:30%;top:2px;width:11px;height:11px;border-radius:50%;background:#ED1B34;border:1.5px solid #fff"></span><span style="position:absolute;left:56%;top:12px;width:11px;height:11px;border-radius:50%;background:#231977;border:1.5px solid #fff"></span><span style="position:absolute;left:70%;top:5px;width:11px;height:11px;border-radius:50%;background:#DDCF00;border:1.5px solid #fff"></span><span style="position:absolute;left:14%;top:10px;width:11px;height:11px;border-radius:50%;background:#53A12B;border:1.5px solid #fff"></span></div>
+        <div style="font:400 10.5px/1.4 'DM Sans',sans-serif;color:#94908a">Vart är de på väg?</div>
+      </div>
+    </div>
+    <div style="margin-top:14px;font:600 10.5px 'DM Sans',sans-serif;color:#68645d">Inne i en lins: <span style="background:#211f1c;color:#fff;border-radius:99px;padding:4px 10px">Position</span> <span style="background:#fff;border:1px solid #e0dcd3;border-radius:99px;padding:4px 10px">Säger vs gör</span> <span style="background:#fff;border:1px solid #e0dcd3;border-radius:99px;padding:4px 10px">Språk</span> <span style="background:#fff;border:1px solid #e0dcd3;border-radius:99px;padding:4px 10px">GAL-TAN</span></div>
+  </div>
+  <div style="padding:14px 24px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">Startsidan förklarar varje lins med en levande miniatyr och en fråga; inne i linserna räcker en kompakt pillrad. <b>+</b> pedagogiskt för förstagångsbesökare, dörrarna säljer innehållet · <b>−</b> två navigationsmönster att underhålla.</div>
+</div>
+</div>
+
+<!-- 5c Fråge-nav -->
+<div class="dv-opt" id="5c">
+<div class="dv-olabel"><a class="dv-oid" href="#5c">5c</a>Fråge-navigation — frågorna är menyn, linsnamnen sekundära</div>
+<div class="dv-card" style="width:500px">
+  <div style="background:#f8f7f4;padding:24px">
+    <div style="font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#94908a;margin-bottom:12px">Partiernas ståndpunkter 2026 — välj din fråga</div>
+    <div style="display:flex;flex-direction:column">
+      <div style="display:flex;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid #e7e4de;cursor:pointer">
+        <span style="font:600 19px/1.25 'Source Serif 4',serif;color:#211f1c;border-bottom:2px solid #211f1c">Var står partierna i sakfrågorna?</span>
+        <span style="font:600 9.5px/1 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-left:auto;white-space:nowrap">Position</span>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid #e7e4de;cursor:pointer">
+        <span style="font:600 19px/1.25 'Source Serif 4',serif;color:#5a5648">Håller orden när det blir votering?</span>
+        <span style="font:600 9.5px/1 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-left:auto;white-space:nowrap">Säger vs gör</span>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid #e7e4de;cursor:pointer">
+        <span style="font:600 19px/1.25 'Source Serif 4',serif;color:#5a5648">Vad menar de egentligen med orden?</span>
+        <span style="font:600 9.5px/1 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-left:auto;white-space:nowrap">Språk</span>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:12px;padding:11px 0;cursor:pointer">
+        <span style="font:600 19px/1.25 'Source Serif 4',serif;color:#5a5648">Vart är partierna på väg?</span>
+        <span style="font:600 9.5px/1 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#94908a;margin-left:auto;white-space:nowrap">GAL-TAN</span>
+      </div>
+    </div>
+  </div>
+  <div style="padding:14px 24px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">Menyn är läsarens frågor i serif — linsnamnet står som liten etikett. Samma lista viks ihop till en kompakt frågerad inne i linserna. <b>+</b> jargongfritt, folkbildande, vackert typografiskt · <b>−</b> tar mer plats än flikar; frågorna måste hållas korta.</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Prova härnäst: "bygg <a class="dv-oid" href="#5a">5a</a> som riktig nav i alla fyra vyer" · "<a class="dv-oid" href="#5b">5b</a>:s startsida + <a class="dv-oid" href="#5a">5a</a>:s flikar inne i linserna" · "fler idéer"</p>
+</section>
+
+<section class="dv-turn" id="t4">
+<div class="dv-thd"><a class="dv-tid" href="#t4">4</a><span class="dv-tname">Växlingen Begrepp ↔ Parti i Språk-linsen — tre förslag</span></div>
+<div class="dv-opts">
+
+<!-- 4a Typografisk växling -->
+<div class="dv-opt" id="4a">
+<div class="dv-olabel"><a class="dv-oid" href="#4a">4a</a>Typografisk växling — rubriken ÄR växlingen</div>
+<div class="dv-card" style="width:480px">
+  <div style="background:oklch(0.95 0.02 250);padding:24px 26px 22px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="background:#fff;color:#4a5360;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Lins · Språk</div>
+      <span style="font:500 11px 'DM Sans',sans-serif;color:#8a8f99">Uppdaterad juli 2026</span>
+    </div>
+    <div style="margin-top:16px;cursor:pointer">
+      <div style="font:600 28px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;border-bottom:3px solid #211f1c;display:inline-block;padding-bottom:4px">Samma ord — olika innebörd</div>
+    </div>
+    <div style="margin-top:10px;cursor:pointer" title="Klicka för att byta läge">
+      <div style="font:600 18px/1.2 'Source Serif 4',serif;color:#9aa0ab;display:inline-flex;align-items:center;gap:8px">Hur partierna laddar språket <span style="font:600 10px 'DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#8a8f99;border:1px solid #c6cbd4;padding:3px 9px;border-radius:99px">växla →</span></div>
+    </div>
+    <p style="margin:14px 0 0;font:400 13px/1.55 'DM Sans',sans-serif;color:#5a5f68;max-width:400px">Politikens nyckelord är omstridda: alla säger "trygghet", ingen menar samma sak…</p>
+  </div>
+  <div style="padding:14px 26px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">De två lägena är två rubriker: den aktiva står i full grad med understrykning, den inaktiva ligger dämpad direkt under och byter plats vid klick (mjuk korsfad + glid). <b>+</b> elegantast, noll extra chrome · <b>−</b> växlingen måste upptäckas via "växla"-pillen.</div>
+</div>
+</div>
+
+<!-- 4b Flikbar över headern -->
+<div class="dv-opt" id="4b">
+<div class="dv-olabel"><a class="dv-oid" href="#4b">4b</a>Flikbar över headern — som en tidnings sektionsrad</div>
+<div class="dv-card" style="width:480px">
+  <div style="background:#f8f7f4;border-bottom:1px solid #e7e4de;padding:0 26px;display:flex;align-items:stretch;gap:24px">
+    <div style="display:flex;align-items:center;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;padding:14px 0">Lins · Språk</div>
+    <div style="display:flex;gap:22px;margin-left:auto">
+      <div style="display:flex;align-items:center;font:700 14px 'DM Sans',sans-serif;color:#211f1c;border-bottom:3px solid #211f1c;padding:14px 2px 11px;cursor:pointer">Begrepp</div>
+      <div style="display:flex;align-items:center;font:600 14px 'DM Sans',sans-serif;color:#94908a;border-bottom:3px solid transparent;padding:14px 2px 11px;cursor:pointer">Parti</div>
+    </div>
+  </div>
+  <div style="background:oklch(0.95 0.02 250);padding:22px 26px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="background:#fff;color:#4a5360;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Rättsväsende &amp; migration</div>
+    </div>
+    <div style="font:600 28px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-top:12px">Samma ord — olika innebörd</div>
+    <p style="margin:8px 0 0;font:400 13px/1.55 'DM Sans',sans-serif;color:#5a5f68;max-width:400px">Politikens nyckelord är omstridda: alla säger "trygghet"…</p>
+  </div>
+  <div style="padding:14px 26px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">En slank flikrad på papper <i>ovanför</i> den tonade headern — växlingen bor i navigationen, inte i innehållet. Skalar till fler lägen och kan senare även husera lins-bytet för hela sajten. <b>+</b> tydligast, konsekvent plats, sticky vid scroll · <b>−</b> en rad till i höjdled.</div>
+</div>
+</div>
+
+<!-- 4c Ingångsval -->
+<div class="dv-opt" id="4c">
+<div class="dv-olabel"><a class="dv-oid" href="#4c">4c</a>Ingångsval — två stora dörrar, växla via brödsmula</div>
+<div class="dv-card" style="width:480px">
+  <div style="background:oklch(0.95 0.02 250);padding:24px 26px">
+    <div style="background:#fff;color:#4a5360;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px;display:inline-block">Lins · Språk</div>
+    <div style="font:600 26px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-top:12px">Vad vill du utforska?</div>
+    <div style="display:flex;gap:12px;margin-top:16px">
+      <div style="flex:1;background:#fff;border:1px solid #e0dcd3;border-radius:12px;padding:16px;cursor:pointer">
+        <div style="font:600 16px 'Source Serif 4',serif;margin-bottom:5px">Ett begrepp</div>
+        <div style="font:400 15px/1.4 'Source Serif 4',serif;font-style:italic;color:#68645d">"trygghet"</div>
+        <div style="font:400 11.5px/1.45 'DM Sans',sans-serif;color:#94908a;margin-top:7px">Alla partiers innebörder sida vid sida</div>
+      </div>
+      <div style="flex:1;background:#fff;border:1px solid #e0dcd3;border-radius:12px;padding:16px;cursor:pointer">
+        <div style="font:600 16px 'Source Serif 4',serif;margin-bottom:5px">Ett parti</div>
+        <div style="display:flex;margin:4px 0 3px"><span style="width:18px;height:18px;border-radius:50%;background:#ED1B34;border:2px solid #fff"></span><span style="width:18px;height:18px;border-radius:50%;background:#52BDEC;border:2px solid #fff;margin-left:-6px"></span><span style="width:18px;height:18px;border-radius:50%;background:#DDCF00;border:2px solid #fff;margin-left:-6px"></span><span style="width:18px;height:18px;border-radius:50%;background:#009933;border:2px solid #fff;margin-left:-6px"></span></div>
+        <div style="font:400 11.5px/1.45 'DM Sans',sans-serif;color:#94908a;margin-top:7px">Hela språkprofilen, med källor</div>
+      </div>
+    </div>
+    <div style="margin-top:14px;font:600 11px 'DM Sans',sans-serif;color:#68645d">Inne i ett läge: <span style="background:#fff;border:1px solid #e0dcd3;border-radius:99px;padding:4px 10px">← Byt: Ett parti</span> uppe till vänster</div>
+  </div>
+  <div style="padding:14px 26px 20px;font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d">Första besöket möts av två dörrar med smakprov; därefter växlar man via en brödsmule-pill. <b>+</b> pedagogiskt, starkast på mobil · <b>−</b> ett extra steg, växlingen mindre synlig när man väl är inne.</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Prova härnäst: "implementera <a class="dv-oid" href="#4b">4b</a> i Språk-vyn" · "<a class="dv-oid" href="#4a">4a</a> men med tydligare växla-knapp" · "fler idéer"</p>
+</section>
+
+<section class="dv-turn" id="t3">
+<div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">Överlappande noder på skalan — tre lösningar, samma data (Arbetsmarknadsreglering, ekonomi)</span></div>
+<div class="dv-opts">
+
+<!-- 3a Bisvärm -->
+<div class="dv-opt" id="3a">
+<div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Bisvärm — krockar viker av uppåt/nedåt, exakt position bevaras</div>
+<div class="dv-card" style="width:490px;background:#fff;padding:22px 24px">
+  <div style="font:600 15px/1.3 'Source Serif 4',serif;margin-bottom:14px">Arbetsmarknadsreglering</div>
+  <div style="position:relative;height:124px;width:100%;max-width:420px;margin:0 auto">
+    <div style="position:absolute;top:63px;left:0;right:0;height:2px;border-radius:2px;background:#dcd8cf"></div>
+    <div style="position:absolute;top:59px;left:0;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;top:59px;left:50%;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;top:59px;right:0;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;left:35.9%;top:45px;width:1px;height:19px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:66.9%;top:45px;width:1px;height:19px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:76.3%;top:45px;width:1px;height:19px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:68.8%;top:64px;width:1px;height:19px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:10.5%;top:64px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">V</div>
+    <div style="position:absolute;left:33%;top:64px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#53A12B;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">MP</div>
+    <div style="position:absolute;left:35.9%;top:32px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">S</div>
+    <div style="position:absolute;left:64.1%;top:64px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#009933;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">C</div>
+    <div style="position:absolute;left:66.9%;top:32px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#DDCF00;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#333">SD</div>
+    <div style="position:absolute;left:68.8%;top:96px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#006AB3;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">L</div>
+    <div style="position:absolute;left:70.7%;top:64px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#231977;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">KD</div>
+    <div style="position:absolute;left:76.3%;top:32px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#52BDEC;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">M</div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font:600 10.5px 'DM Sans',sans-serif;color:#7a766e;margin-top:4px"><span>← Stärk anställningsskyddet</span><span>Flexiblare arbetsmarknad →</span></div>
+  <div style="font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d;margin-top:12px">Krockande noder viker av till en rad ovanför eller under linjen; ett fint streck pekar på den exakta positionen. <b>+</b> inget knuffas, alla värden sanna · <b>−</b> högre paneler när många krockar. Motion: noder fjädrar ut till sina rader vid inläsning.</div>
+</div>
+</div>
+
+<!-- 3b Knuff med positionsstreck -->
+<div class="dv-opt" id="3b">
+<div class="dv-olabel"><a class="dv-oid" href="#3b">3b</a>Knuff i sidled — min-avstånd på raden, prick markerar sann position</div>
+<div class="dv-card" style="width:490px;background:#fff;padding:22px 24px">
+  <div style="font:600 15px/1.3 'Source Serif 4',serif;margin-bottom:14px">Arbetsmarknadsreglering</div>
+  <div style="position:relative;height:110px;width:100%;max-width:420px;margin:0 auto">
+    <div style="position:absolute;top:73px;left:0;right:0;height:2px;border-radius:2px;background:#dcd8cf"></div>
+    <div style="position:absolute;top:69px;left:0;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;top:69px;left:50%;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;top:69px;right:0;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;top:73px;left:31.5%;width:1.5%;height:2px;background:#b5b0a6"></div>
+    <div style="position:absolute;top:73px;left:35.9%;width:1.6%;height:2px;background:#b5b0a6"></div>
+    <div style="position:absolute;top:73px;left:57.4%;width:6.7%;height:2px;background:#b5b0a6"></div>
+    <div style="position:absolute;top:73px;left:63.4%;width:3.5%;height:2px;background:#b5b0a6"></div>
+    <div style="position:absolute;top:73px;left:68.8%;width:0.6%;height:2px;background:#b5b0a6"></div>
+    <div style="position:absolute;top:73px;left:70.7%;width:4.7%;height:2px;background:#b5b0a6"></div>
+    <div style="position:absolute;top:73px;left:76.3%;width:5.1%;height:2px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:10.5%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:31.5%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:37.5%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:57.4%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:63.4%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:69.4%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:75.4%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:81.4%;top:47px;width:1px;height:27px;background:#b5b0a6"></div>
+    <div style="position:absolute;left:33%;top:74px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);background:#68645d"></div>
+    <div style="position:absolute;left:35.9%;top:74px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);background:#68645d"></div>
+    <div style="position:absolute;left:64.1%;top:74px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);background:#68645d"></div>
+    <div style="position:absolute;left:66.9%;top:74px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);background:#68645d"></div>
+    <div style="position:absolute;left:68.8%;top:74px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);background:#68645d"></div>
+    <div style="position:absolute;left:70.7%;top:74px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);background:#68645d"></div>
+    <div style="position:absolute;left:76.3%;top:74px;width:5px;height:5px;border-radius:50%;transform:translate(-50%,-50%);background:#68645d"></div>
+    <div style="position:absolute;left:10.5%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">V</div>
+    <div style="position:absolute;left:31.5%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#53A12B;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">MP</div>
+    <div style="position:absolute;left:37.5%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">S</div>
+    <div style="position:absolute;left:57.4%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#009933;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">C</div>
+    <div style="position:absolute;left:63.4%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#DDCF00;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#333">SD</div>
+    <div style="position:absolute;left:69.4%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#006AB3;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">L</div>
+    <div style="position:absolute;left:75.4%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#231977;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">KD</div>
+    <div style="position:absolute;left:81.4%;top:34px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#52BDEC;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">M</div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font:600 10.5px 'DM Sans',sans-serif;color:#7a766e;margin-top:4px"><span>← Stärk anställningsskyddet</span><span>Flexiblare arbetsmarknad →</span></div>
+  <div style="font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d;margin-top:12px">Noderna lyfts ovanför linjen och knuffas isär till ett min-avstånd; en grå prick på linjen markerar den sanna positionen. <b>+</b> en lugn rad, låg höjd · <b>−</b> nodens läge är inte exakt, pricken måste läsas. Motion: noder glider isär, prickarna tonar in sist.</div>
+</div>
+</div>
+
+<!-- 3c Kluster-kapsel -->
+<div class="dv-opt" id="3c">
+<div class="dv-olabel"><a class="dv-oid" href="#3c">3c</a>Kluster-kapsel — krockar samlas i en kapsel som fälls ut vid tryck</div>
+<div class="dv-card" style="width:490px;background:#fff;padding:22px 24px">
+  <div style="font:600 15px/1.3 'Source Serif 4',serif;margin-bottom:14px">Arbetsmarknadsreglering</div>
+  <div style="position:relative;height:64px;width:100%;max-width:420px;margin:0 auto">
+    <div style="position:absolute;top:31px;left:0;right:0;height:2px;border-radius:2px;background:#dcd8cf"></div>
+    <div style="position:absolute;top:27px;left:0;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;top:27px;left:50%;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;top:27px;right:0;width:2px;height:10px;background:#a8a49a"></div>
+    <div style="position:absolute;left:10.5%;top:32px;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">V</div>
+    <div style="position:absolute;left:34.5%;top:32px;transform:translate(-50%,-50%);display:flex;align-items:center;gap:5px;background:#fff;border:1.5px solid #cfcabf;border-radius:99px;padding:4px 9px;box-shadow:0 1px 4px rgba(0,0,0,.12);cursor:pointer">
+      <span style="display:flex"><span style="width:16px;height:16px;border-radius:50%;background:#53A12B;border:2px solid #fff"></span><span style="width:16px;height:16px;border-radius:50%;background:#ED1B34;border:2px solid #fff;margin-left:-6px"></span></span>
+      <span style="font:700 11px 'DM Sans',sans-serif;color:#4d4942">2</span>
+    </div>
+    <div style="position:absolute;left:69.4%;top:32px;transform:translate(-50%,-50%);display:flex;align-items:center;gap:5px;background:#fff;border:1.5px solid #cfcabf;border-radius:99px;padding:4px 9px;box-shadow:0 1px 4px rgba(0,0,0,.12);cursor:pointer">
+      <span style="display:flex"><span style="width:16px;height:16px;border-radius:50%;background:#009933;border:2px solid #fff"></span><span style="width:16px;height:16px;border-radius:50%;background:#DDCF00;border:2px solid #fff;margin-left:-6px"></span><span style="width:16px;height:16px;border-radius:50%;background:#006AB3;border:2px solid #fff;margin-left:-6px"></span><span style="width:16px;height:16px;border-radius:50%;background:#231977;border:2px solid #fff;margin-left:-6px"></span><span style="width:16px;height:16px;border-radius:50%;background:#52BDEC;border:2px solid #fff;margin-left:-6px"></span></span>
+      <span style="font:700 11px 'DM Sans',sans-serif;color:#4d4942">5</span>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font:600 10.5px 'DM Sans',sans-serif;color:#7a766e;margin-top:4px"><span>← Stärk anställningsskyddet</span><span>Flexiblare arbetsmarknad →</span></div>
+  <div style="margin-top:16px;background:#faf8f3;border:1px solid #eeebe2;border-radius:10px;padding:12px 14px">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#94908a;margin-bottom:10px">Utfälld kapsel (efter tryck)</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <span style="display:flex;align-items:center;gap:6px;font:600 12px 'DM Sans',sans-serif;color:#4d4942"><span style="width:20px;height:20px;border-radius:50%;background:#009933;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font:700 7.5px 'DM Sans',sans-serif;color:#fff">C</span>65</span>
+      <span style="display:flex;align-items:center;gap:6px;font:600 12px 'DM Sans',sans-serif;color:#4d4942"><span style="width:20px;height:20px;border-radius:50%;background:#DDCF00;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font:700 7px 'DM Sans',sans-serif;color:#333">SD</span>68</span>
+      <span style="display:flex;align-items:center;gap:6px;font:600 12px 'DM Sans',sans-serif;color:#4d4942"><span style="width:20px;height:20px;border-radius:50%;background:#006AB3;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font:700 7.5px 'DM Sans',sans-serif;color:#fff">L</span>70</span>
+      <span style="display:flex;align-items:center;gap:6px;font:600 12px 'DM Sans',sans-serif;color:#4d4942"><span style="width:20px;height:20px;border-radius:50%;background:#231977;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font:700 7px 'DM Sans',sans-serif;color:#fff">KD</span>72</span>
+      <span style="display:flex;align-items:center;gap:6px;font:600 12px 'DM Sans',sans-serif;color:#4d4942"><span style="width:20px;height:20px;border-radius:50%;background:#52BDEC;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font:700 7.5px 'DM Sans',sans-serif;color:#fff">M</span>78</span>
+    </div>
+  </div>
+  <div style="font:400 11.5px/1.6 'DM Sans',sans-serif;color:#68645d;margin-top:12px">Noder närmare än ett tröskelvärde samlas i en kapsel med antal; tryck fäller ut den till en rad (eller zoomar skalan). <b>+</b> kompaktast, tydligt "här trängs de", bäst på mobil · <b>−</b> kräver ett tryck för detaljerna. Motion: kapseln fjädrar isär till noder vid tryck.</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Prova härnäst: "implementera <a class="dv-oid" href="#3a">3a</a> i Position-vyn" · "gör <a class="dv-oid" href="#3c">3c</a> men fäll ut till bisvärm som <a class="dv-oid" href="#3a">3a</a>" · "fler idéer"</p>
+</section>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Syntes: <a class="dv-oid" href="#1c">1c</a> som grund + räknande tal från <a class="dv-oid" href="#1b">1b</a> + förklarande annoteringar från <a class="dv-oid" href="#1a">1a</a></span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Det sammanhängande språket — specimen i full bredd</div>
+<div class="dv-card" style="width:760px;background:#f8f7f4">
+
+  <!-- Områdesheader -->
+  <div style="padding:30px 34px 24px;background:oklch(0.95 0.02 155)">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="display:inline-block;background:#fff;color:#3a4a3e;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Klimat &amp; energi</div>
+      <span style="font:500 11px 'DM Sans',sans-serif;color:#6f7a70">Uppdaterad 3 juli 2026</span>
+    </div>
+    <div style="font:600 34px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-top:14px;max-width:560px;text-wrap:pretty">Vad tycker partierna om kärnkraften?</div>
+    <div style="font:400 14.5px/1.6 'DM Sans',sans-serif;color:#4d5a50;margin-top:10px;max-width:560px;text-wrap:pretty">Alla åtta riksdagspartier har en position — men avstånden är större än debatten låter påskina. Skalan nedan är en neutral mätsticka; bara partiernas egna färger bär färg.</div>
+    <!-- Räknande tal (1b) -->
+    <div style="display:flex;gap:36px;margin-top:20px">
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <span style="font:700 38px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:#211f1c">{{ liveCount }}</span>
+        <span style="font:500 11px 'DM Sans',sans-serif;color:#6f7a70">granskade voteringar</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <span style="font:700 38px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:#211f1c">{{ liveCount2 }}</span>
+        <span style="font:500 11px 'DM Sans',sans-serif;color:#6f7a70">källbelagda ståndpunkter</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <span style="font:700 38px/1 'DM Sans',sans-serif;letter-spacing:-.02em;color:#211f1c">8<span style="color:#a8b3a9">/8</span></span>
+        <span style="font:500 11px 'DM Sans',sans-serif;color:#6f7a70">partier har svarat</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mätsticka med annotering -->
+  <div style="padding:26px 34px;border-bottom:1px solid #e7e4de">
+    <div style="font:600 17px/1.3 'Source Serif 4',serif;color:#211f1c;margin-bottom:4px">Bygga ny kärnkraft?</div>
+    <div style="font:400 12px/1.5 'DM Sans',sans-serif;color:#94908a;margin-bottom:8px">Tryck på ett parti för källa och citat.</div>
+    <div style="position:relative;height:112px">
+      <!-- Annotering (1a) -->
+      <div style="position:absolute;left:2%;top:0;max-width:230px;font:400 12px/1.45 'Source Serif 4',serif;font-style:italic;color:#211f1c;background:#fff;border:1px solid #e0dcd3;padding:7px 11px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.05)"><b style="font-style:normal">V och MP</b> vill båda avveckla — men på olika lång sikt.</div>
+      <div style="position:absolute;left:8%;top:46px;width:1px;height:20px;background:#a8a49a"></div>
+      <div style="position:absolute;top:83px;left:2%;right:2%;height:3px;border-radius:2px;background:#dcd8cf"></div>
+      <div style="position:absolute;top:79px;left:2%;width:2px;height:11px;background:#a8a49a"></div>
+      <div style="position:absolute;top:79px;left:50%;width:2px;height:11px;background:#a8a49a"></div>
+      <div style="position:absolute;top:79px;right:2%;width:2px;height:11px;background:#a8a49a"></div>
+      <div style="position:absolute;left:8%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">V</div>
+      <div style="position:absolute;left:16%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#53A12B;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">MP</div>
+      <div style="position:absolute;left:34%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">S</div>
+      <div style="position:absolute;left:48%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#009933;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">C</div>
+      <div style="position:absolute;left:66%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#006AB3;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">L</div>
+      <div style="position:absolute;left:78%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#231977;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">KD</div>
+      <div style="position:absolute;left:88%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#52BDEC;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">M</div>
+      <div style="position:absolute;left:96%;top:84px;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#DDCF00;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#333;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.18)">SD</div>
+    </div>
+    <div style="display:flex;justify-content:space-between;font:600 10.5px 'DM Sans',sans-serif;color:#7a766e;margin-top:2px"><span>Avveckla</span><span>Behåll dagens</span><span>Bygg mer</span></div>
+    <div style="font:400 10.5px/1.5 'DM Sans',sans-serif;color:#a8a49a;margin-top:10px;font-family:ui-monospace,Menlo,monospace">Källa: partiprogram 2025 · votering 2024/25:NU12 · CHES 2024</div>
+  </div>
+
+  <!-- GAL-TAN i syntes-stil -->
+  <div style="padding:26px 34px;border-bottom:1px solid #e7e4de">
+    <div style="font:600 17px/1.3 'Source Serif 4',serif;color:#211f1c;margin-bottom:4px">Var partierna står — och hur de rört sig</div>
+    <div style="font:400 12px/1.5 'DM Sans',sans-serif;color:#94908a;margin-bottom:12px">Axlarna är neutrala linjaler — ingen riktning är "bra" eller "dålig". Bleka spår visar driften sedan 2019.</div>
+    <div style="position:relative;height:480px;border-radius:14px;background:#fdfcfa;border:1px solid #e7e4de">
+      <span style="position:absolute;top:10px;left:50%;transform:translateX(-50%);font:700 9.5px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a">GAL · frihetlig</span>
+      <span style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);font:700 9.5px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a">TAN · auktoritär</span>
+      <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%) rotate(-90deg);font:700 9.5px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a;white-space:nowrap">← vänster</span>
+      <span style="position:absolute;right:10px;top:50%;transform:translateY(-50%) rotate(90deg);font:700 9.5px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#a8a49a;white-space:nowrap">höger →</span>
+      <div style="position:absolute;left:8%;right:8%;top:50%;height:1px;background:#d5d0c6"></div>
+      <div style="position:absolute;top:8%;bottom:8%;left:50%;width:1px;background:#d5d0c6"></div>
+      <!-- spår S -->
+      <div style="position:absolute;left:36%;top:33%;width:9px;height:9px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;opacity:.35;border:1px solid #fff"></div>
+      <div style="position:absolute;left:38%;top:44%;width:9px;height:9px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;opacity:.35;border:1px solid #fff"></div>
+      <!-- noder -->
+      <div style="position:absolute;left:18%;top:24%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">V</div>
+      <div style="position:absolute;left:26%;top:20%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#53A12B;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">MP</div>
+      <div style="position:absolute;left:37%;top:48%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">S</div>
+      <div style="position:absolute;left:56%;top:36%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#009933;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">C</div>
+      <div style="position:absolute;left:61%;top:48%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#006AB3;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">L</div>
+      <div style="position:absolute;left:58%;top:67%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#231977;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">KD</div>
+      <div style="position:absolute;left:71%;top:65%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#52BDEC;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">M</div>
+      <div style="position:absolute;left:77%;top:82%;width:34px;height:34px;border-radius:50%;transform:translate(-50%,-50%);background:#DDCF00;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#333;cursor:pointer" style-hover="transform:translate(-50%,-50%) scale(1.15)">SD</div>
+      <!-- annotering (1a) -->
+      <div style="position:absolute;left:33%;top:53%;width:1px;height:78px;background:#a8a49a;transform:rotate(22deg);transform-origin:top"></div>
+      <div style="position:absolute;left:10%;top:70%;max-width:210px;font:400 12px/1.45 'Source Serif 4',serif;font-style:italic;color:#211f1c;background:#fff;border:1px solid #e0dcd3;padding:7px 11px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.05)"><b style="font-style:normal">S</b> — störst TAN-drift av alla partier sedan 2019.</div>
+    </div>
+  </div>
+
+  <!-- Systemregler -->
+  <div style="padding:24px 34px 28px;display:grid;grid-template-columns:1fr 1fr;gap:20px 28px">
+    <div>
+      <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Färgregler</div>
+      <ul style="margin:0;padding-left:16px;font:400 12px/1.7 'DM Sans',sans-serif;color:#4d4942">
+        <li>Områdeston: oklch, ljushet 0.95 / kroma 0.02 — märker område, aldrig position</li>
+        <li>Endast partifärger är mättade; axlar och linjaler alltid grå</li>
+        <li>Statuspastellerna (stämmer/delvis/avviker) behålls från dagens system</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Motion-principer</div>
+      <ul style="margin:0;padding-left:16px;font:400 12px/1.7 'DM Sans',sans-serif;color:#4d4942">
+        <li>Tal räknar upp vid inträde i bild (tabular-nums)</li>
+        <li>Noder och staplar sätter sig med mjuk fjädring, 120 ms stagger</li>
+        <li>Annoteringar tonar in sist — data före kommentar</li>
+        <li>Områdesbyte crossfadar bakgrundstonen, 400 ms</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Typografi</div>
+      <ul style="margin:0;padding-left:16px;font:400 12px/1.7 'DM Sans',sans-serif;color:#4d4942">
+        <li>Rubriker som frågor i Source Serif 4, 600</li>
+        <li>Förklarande ingress under varje rubrik — grafiken lämnas aldrig okommenterad</li>
+        <li>Annoteringar i serif kursiv; källrader i monospace</li>
+      </ul>
+    </div>
+    <div>
+      <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Neutralitet</div>
+      <ul style="margin:0;padding-left:16px;font:400 12px/1.7 'DM Sans',sans-serif;color:#4d4942">
+        <li>Skaländpunkter är sakliga formuleringar, aldrig laddade ord</li>
+        <li>GAL-TAN: grå linjaler, ingen färgkodning av riktning</li>
+        <li>Oklara positioner: partifärg 55 % opacitet + streckad ring</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Prova härnäst: "bygg GAL-TAN-vyn i full skala som interaktiv prototyp" · "visa mobilversionen av <a class="dv-oid" href="#2a">2a</a>" · "justera områdestonerna"</p>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Tre riktningar för det visuella språket — palett · typografi · diagramkänsla · motion</span></div>
+<div style="max-width:960px;margin:0 0 22px;font:400 12.5px/1.6 'DM Sans',sans-serif;color:rgba(0,0,0,.6)">Gemensamt för alla tre: DM Sans + Source Serif 4, partiernas officiella färger som enda mättade kulörer på data, och axlar som neutrala grå linjaler — färg värderar aldrig en position. Det som skiljer är temperatur, kontrast och hur mycket "liv" grafiken får ta.</div>
+<div class="dv-opts">
+
+<!-- ============ 1a REDAKTIONELL TIDNINGSGRAFIK ============ -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Tidningsgrafik — annoterad, hairlines, papper &amp; bläck</div>
+<div class="dv-card" style="width:460px;background:#faf8f3">
+  <div style="padding:26px 28px 20px;border-bottom:1px solid #e5e1d8">
+    <div style="font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#8a857c;margin-bottom:10px">Riktning A</div>
+    <div style="font:600 26px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#1a1917">Redaktionell tidningsgrafik</div>
+    <div style="font:400 13px/1.55 'DM Sans',sans-serif;color:#6b675f;margin-top:8px">Grafiken förklarar sig själv med annoteringar, hänvisningslinjer och fotnoter — som ett påkostat nyhetsgrafik-uppslag. Färgen kommer nästan uteslutande från partierna; allt annat är papper, bläck och hårfina linjer.</div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e5e1d8">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a857c;margin-bottom:10px">Palett</div>
+    <div style="display:flex;gap:6px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#1a1917"></div><span style="font:500 9px ui-monospace,monospace;color:#8a857c">bläck</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#faf8f3;border:1px solid #e5e1d8"></div><span style="font:500 9px ui-monospace,monospace;color:#8a857c">papper</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#efe9dd"></div><span style="font:500 9px ui-monospace,monospace;color:#8a857c">sand</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#b0a894"></div><span style="font:500 9px ui-monospace,monospace;color:#8a857c">linjal</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:linear-gradient(90deg,#ED1B34 12.5%,#52BDEC 12.5% 25%,#DDCF00 25% 37.5%,#AF1D22 37.5% 50%,#009933 50% 62.5%,#231977 62.5% 75%,#006AB3 75% 87.5%,#53A12B 87.5%)"></div><span style="font:500 9px ui-monospace,monospace;color:#8a857c">partier</span></div>
+    </div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e5e1d8">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a857c;margin-bottom:12px">Typografi</div>
+    <div style="font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#8a857c">Klimat &amp; energi · Uppdaterad 3 juli</div>
+    <div style="font:700 30px/1.1 'Source Serif 4',serif;letter-spacing:-.015em;color:#1a1917;margin-top:6px">Var partierna står — och hur de rört sig</div>
+    <div style="font:400 13.5px/1.6 'DM Sans',sans-serif;color:#4a463f;margin-top:8px;text-wrap:pretty">Serifen tar plats i rubriker med stor grad och tight radavstånd. Brödtexten är lugn DM Sans.</div>
+    <div style="display:flex;align-items:baseline;gap:8px;margin-top:12px"><span style="font:700 34px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;color:#1a1917">7,5</span><span style="font:400 11px 'DM Sans',sans-serif;color:#8a857c">datavärden i halvfet sans, tabular-nums</span></div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e5e1d8">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a857c;margin-bottom:12px">Diagram — GAL-TAN som linjal, inte värdering</div>
+    <div style="position:relative;height:300px;border:1px solid #dcd7cb;background:repeating-linear-gradient(0deg,transparent,transparent 29px,#eee9df 29px,#eee9df 30px),repeating-linear-gradient(90deg,transparent,transparent 39px,#eee9df 39px,#eee9df 40px),#fdfcf9">
+      <span style="position:absolute;top:7px;left:50%;transform:translateX(-50%);font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8a857c">GAL · frihetlig</span>
+      <span style="position:absolute;bottom:7px;left:50%;transform:translateX(-50%);font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8a857c">TAN · auktoritär</span>
+      <span style="position:absolute;left:7px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8a857c;white-space:nowrap">← vänster</span>
+      <span style="position:absolute;right:7px;top:50%;transform:translateY(-50%) rotate(90deg);transform-origin:center;font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8a857c;white-space:nowrap">höger →</span>
+      <div style="position:absolute;left:7%;right:7%;top:50%;height:1px;background:#b0a894"></div>
+      <div style="position:absolute;top:7%;bottom:7%;left:50%;width:1px;background:#b0a894"></div>
+      <div style="position:absolute;left:18%;top:24%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">V</div>
+      <div style="position:absolute;left:26%;top:20%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#53A12B;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 7px 'DM Sans',sans-serif;color:#fff">MP</div>
+      <div style="position:absolute;left:37%;top:48%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">S</div>
+      <div style="position:absolute;left:56%;top:36%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#009933;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">C</div>
+      <div style="position:absolute;left:61%;top:48%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#006AB3;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">L</div>
+      <div style="position:absolute;left:58%;top:67%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#231977;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 7px 'DM Sans',sans-serif;color:#fff">KD</div>
+      <div style="position:absolute;left:71%;top:65%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#52BDEC;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">M</div>
+      <div style="position:absolute;left:77%;top:82%;width:22px;height:22px;border-radius:50%;transform:translate(-50%,-50%);background:#DDCF00;border:2px solid #fdfcf9;box-shadow:0 1px 3px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;font:700 7px 'DM Sans',sans-serif;color:#333">SD</div>
+      <div style="position:absolute;left:37%;top:48%;width:1px;height:52px;background:#1a1917;transform:translate(14px,-64px) rotate(24deg);transform-origin:bottom"></div>
+      <div style="position:absolute;left:44%;top:9%;max-width:180px;font:400 11px/1.4 'Source Serif 4',serif;font-style:italic;color:#1a1917;background:#faf8f3;border:1px solid #dcd7cb;padding:6px 9px;border-radius:2px"><b style="font-style:normal">S rör sig mot TAN</b> — störst drift av alla sedan 2019.</div>
+    </div>
+    <div style="font:400 10.5px/1.5 'DM Sans',sans-serif;color:#8a857c;margin-top:8px">Fint rutnät, grå linjaler, annotering med hänvisningslinje i bläck. Källrad i marginalen: <span style="font-family:ui-monospace,monospace">CHES 2019/2024 · egen bedömning 2026</span></div>
+  </div>
+  <div style="padding:18px 28px 24px">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a857c;margin-bottom:10px">Motion</div>
+    <div style="display:flex;gap:14px;align-items:center;margin-bottom:12px">
+      <div style="flex:none;width:120px;height:6px;background:#eee9df;border-radius:3px;overflow:hidden"><div style="height:100%;width:72%;background:#1a1917;border-radius:3px;transform-origin:left;animation:drawX 1.4s cubic-bezier(.22,1,.36,1) infinite alternate"></div></div>
+      <span style="font:400 11px/1.4 'DM Sans',sans-serif;color:#6b675f">Bläcket "ritas" — linjer och staplar tecknas vänster→höger, 600 ms, ease-out</span>
+    </div>
+    <ul style="margin:0;padding-left:16px;font:400 11.5px/1.7 'DM Sans',sans-serif;color:#4a463f">
+      <li>Diagram tecknas in vid scroll: axlar först, sedan data med 40 ms stagger</li>
+      <li>Annoteringar tonar in sist — grafiken före kommentaren</li>
+      <li>Diskret och exakt: inget studsar, inget pulserar</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- ============ 1b VALVAKA ============ -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Valvaka — mörka datapaneler, lysande partifärger, räknande tal</div>
+<div class="dv-card" style="width:460px;background:#f7f6f3">
+  <div style="padding:26px 28px 20px;border-bottom:1px solid #e5e2dc">
+    <div style="font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#999;margin-bottom:10px">Riktning B</div>
+    <div style="font:600 26px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#16171d">Valvaka</div>
+    <div style="font:400 13px/1.55 'DM Sans',sans-serif;color:#66625a;margin-top:8px">Läsytorna behåller det varma papperet — men datamomenten byter till mörk studio-panel där partifärgerna lyser. Stora räknande tal, kicker-etiketter och en känsla av valnattssändning.</div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e5e2dc">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#999;margin-bottom:10px">Palett</div>
+    <div style="display:flex;gap:6px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#16171d"></div><span style="font:500 9px ui-monospace,monospace;color:#999">studio</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#23252e"></div><span style="font:500 9px ui-monospace,monospace;color:#999">panel</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#f7f6f3;border:1px solid #e5e2dc"></div><span style="font:500 9px ui-monospace,monospace;color:#999">papper</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:#8f93a3"></div><span style="font:500 9px ui-monospace,monospace;color:#999">linjal</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:linear-gradient(90deg,#ED1B34 12.5%,#52BDEC 12.5% 25%,#DDCF00 25% 37.5%,#AF1D22 37.5% 50%,#009933 50% 62.5%,#231977 62.5% 75%,#006AB3 75% 87.5%,#53A12B 87.5%)"></div><span style="font:500 9px ui-monospace,monospace;color:#999">partier</span></div>
+    </div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e5e2dc">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#999;margin-bottom:12px">Typografi</div>
+    <div style="display:inline-flex;align-items:center;gap:6px;background:#16171d;color:#fff;font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;padding:5px 10px;border-radius:4px"><span style="width:6px;height:6px;border-radius:50%;background:#DDCF00"></span>Lins · Säger vs gör</div>
+    <div style="font:600 28px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#16171d;margin-top:10px">Här skaver det: ord mot handling</div>
+    <div style="display:flex;align-items:baseline;gap:10px;margin-top:12px">
+      <span style="font:700 44px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:#16171d">{{ liveCount }}</span>
+      <span style="font:500 11px/1.4 'DM Sans',sans-serif;color:#999">granskade voteringar<br>— talet räknar upp live</span>
+    </div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e5e2dc">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#999;margin-bottom:12px">Diagram — mörk panel, lysande noder</div>
+    <div style="position:relative;height:300px;border-radius:10px;background:#16171d;overflow:hidden">
+      <span style="position:absolute;top:9px;left:50%;transform:translateX(-50%);font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8f93a3">GAL · frihetlig</span>
+      <span style="position:absolute;bottom:9px;left:50%;transform:translateX(-50%);font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8f93a3">TAN · auktoritär</span>
+      <span style="position:absolute;left:9px;top:50%;transform:translateY(-50%) rotate(-90deg);font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8f93a3;white-space:nowrap">← vänster</span>
+      <span style="position:absolute;right:9px;top:50%;transform:translateY(-50%) rotate(90deg);font:700 9px 'DM Sans',sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#8f93a3;white-space:nowrap">höger →</span>
+      <div style="position:absolute;left:8%;right:8%;top:50%;height:1px;background:rgba(255,255,255,.16)"></div>
+      <div style="position:absolute;top:8%;bottom:8%;left:50%;width:1px;background:rgba(255,255,255,.16)"></div>
+      <div style="position:absolute;left:18%;top:24%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;box-shadow:0 0 14px rgba(175,29,34,.55);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">V</div>
+      <div style="position:absolute;left:26%;top:20%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#53A12B;box-shadow:0 0 14px rgba(83,161,43,.55);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">MP</div>
+      <div style="position:absolute;left:37%;top:48%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;box-shadow:0 0 14px rgba(237,27,52,.55);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">S</div>
+      <div style="position:absolute;left:56%;top:36%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#009933;box-shadow:0 0 14px rgba(0,153,51,.55);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">C</div>
+      <div style="position:absolute;left:61%;top:48%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#006AB3;box-shadow:0 0 14px rgba(0,106,179,.55);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff">L</div>
+      <div style="position:absolute;left:58%;top:67%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#231977;box-shadow:0 0 14px rgba(35,25,119,.6);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#fff">KD</div>
+      <div style="position:absolute;left:71%;top:65%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#52BDEC;box-shadow:0 0 14px rgba(82,189,236,.55);display:flex;align-items:center;justify-content:center;font:700 9px 'DM Sans',sans-serif;color:#fff;animation:pulseGlow 2.4s ease-in-out infinite">M</div>
+      <div style="position:absolute;left:77%;top:82%;width:26px;height:26px;border-radius:50%;transform:translate(-50%,-50%);background:#DDCF00;box-shadow:0 0 14px rgba(221,207,0,.5);display:flex;align-items:center;justify-content:center;font:700 8px 'DM Sans',sans-serif;color:#333">SD</div>
+      <div style="position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:7px 10px;font:400 10.5px/1.45 'DM Sans',sans-serif;color:#c9ccd6"><b style="color:#fff">M</b> valt parti pulserar mjukt<br><span style="color:#8f93a3">axlar förblir grå linjaler</span></div>
+    </div>
+    <div style="font:400 10.5px/1.5 'DM Sans',sans-serif;color:#999;margin-top:8px">Mörkret är scenografi, aldrig värdering — samma grå linjaler, samma partifärger, bara högre kontrast och glöd.</div>
+  </div>
+  <div style="padding:18px 28px 24px">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#999;margin-bottom:10px">Motion</div>
+    <ul style="margin:0;padding-left:16px;font:400 11.5px/1.7 'DM Sans',sans-serif;color:#4a463f">
+      <li>Tal räknar upp när de kommer in i bild (tabular-nums — inget hoppar i bredd)</li>
+      <li>Noder landar med liten fjädring; valt parti får mjuk puls</li>
+      <li>Lins-byten glider som scenbyten: panelen tonar, datat flyttar sig dit det ska</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- ============ 1c FOLKBILDNING I FÄRG ============ -->
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Folkbildning i färg — tonade ytor per sakområde, rundare grafik</div>
+<div class="dv-card" style="width:460px;background:#f8f7f4">
+  <div style="padding:26px 28px 20px;border-bottom:1px solid #e7e4de">
+    <div style="font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#94908a;margin-bottom:10px">Riktning C</div>
+    <div style="font:600 26px/1.15 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c">Folkbildning i färg</div>
+    <div style="font:400 13px/1.55 'DM Sans',sans-serif;color:#68645d;margin-top:8px">Varje sakområde får en egen lågmätt bakgrundston — färg som orientering, aldrig som omdöme. Rundare former, större noder, generösare luft. Varmast och mest inbjudande av de tre.</div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e7e4de">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:10px">Palett — områdestoner (oklch, samma ljushet &amp; kroma)</div>
+    <div style="display:flex;gap:6px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:oklch(0.95 0.02 85)"></div><span style="font:500 9px ui-monospace,monospace;color:#94908a">ekonomi</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:oklch(0.95 0.02 155)"></div><span style="font:500 9px ui-monospace,monospace;color:#94908a">klimat</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:oklch(0.95 0.02 250)"></div><span style="font:500 9px ui-monospace,monospace;color:#94908a">rättsväs.</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:oklch(0.95 0.02 320)"></div><span style="font:500 9px ui-monospace,monospace;color:#94908a">skola</span></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:5px"><div style="height:34px;border-radius:5px;background:oklch(0.95 0.02 25)"></div><span style="font:500 9px ui-monospace,monospace;color:#94908a">vård</span></div>
+    </div>
+    <div style="font:400 10.5px/1.5 'DM Sans',sans-serif;color:#94908a;margin-top:8px">Tonerna märker <i>område</i>, inte position — alla har identisk ljushet och kroma, så ingen ton "vinner".</div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e7e4de">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:12px">Typografi</div>
+    <div style="display:inline-block;background:oklch(0.95 0.02 155);color:#3a4a3e;font:700 10px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px">Klimat &amp; energi</div>
+    <div style="font:600 28px/1.2 'Source Serif 4',serif;color:#211f1c;margin-top:10px">Vad tycker partierna om kärnkraften?</div>
+    <div style="font:400 13.5px/1.6 'DM Sans',sans-serif;color:#4d4942;margin-top:8px;text-wrap:pretty">Rubriker ställs som frågor — samma serif, men mjukare radavstånd och alltid ett svar direkt under.</div>
+  </div>
+  <div style="padding:18px 28px;border-bottom:1px solid #e7e4de">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:12px">Diagram — skala som mätsticka, stora noder</div>
+    <div style="background:oklch(0.95 0.02 155);border-radius:14px;padding:20px 18px 16px">
+      <div style="font:600 14px/1.3 'Source Serif 4',serif;color:#211f1c;margin-bottom:16px">Bygga ny kärnkraft?</div>
+      <div style="position:relative;height:56px">
+        <div style="position:absolute;top:27px;left:2%;right:2%;height:3px;border-radius:2px;background:#c8c4ba"></div>
+        <div style="position:absolute;top:23px;left:2%;width:2px;height:11px;background:#a8a49a"></div>
+        <div style="position:absolute;top:23px;left:50%;width:2px;height:11px;background:#a8a49a"></div>
+        <div style="position:absolute;top:23px;right:2%;width:2px;height:11px;background:#a8a49a"></div>
+        <div style="position:absolute;left:8%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#AF1D22;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff">V</div>
+        <div style="position:absolute;left:16%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#53A12B;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#fff">MP</div>
+        <div style="position:absolute;left:34%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#ED1B34;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff">S</div>
+        <div style="position:absolute;left:48%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#009933;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff">C</div>
+        <div style="position:absolute;left:66%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#006AB3;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff">L</div>
+        <div style="position:absolute;left:78%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#231977;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#fff">KD</div>
+        <div style="position:absolute;left:88%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#52BDEC;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 11px 'DM Sans',sans-serif;color:#fff">M</div>
+        <div style="position:absolute;left:96%;top:28px;width:32px;height:32px;border-radius:50%;transform:translate(-50%,-50%);background:#DDCF00;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;font:700 10px 'DM Sans',sans-serif;color:#333">SD</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font:600 10px 'DM Sans',sans-serif;color:#7a766e;margin-top:4px"><span>Avveckla</span><span>Behåll dagens</span><span>Bygg mer</span></div>
+    </div>
+    <div style="font:400 10.5px/1.5 'DM Sans',sans-serif;color:#94908a;margin-top:8px">Skalans ändpunkter är sakliga formuleringar, aldrig laddade ord. Noderna är stora nog för tummen (44 px träffyta på mobil).</div>
+  </div>
+  <div style="padding:18px 28px 24px">
+    <div style="font:700 9.5px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:10px">Motion</div>
+    <div style="display:flex;gap:14px;align-items:flex-end;margin-bottom:12px;height:40px">
+      <div style="width:14px;height:100%;border-radius:5px 5px 2px 2px;background:#ED1B34;transform-origin:bottom;animation:riseIn 1.2s cubic-bezier(.34,1.3,.44,1) infinite alternate"></div>
+      <div style="width:14px;height:70%;border-radius:5px 5px 2px 2px;background:#52BDEC;transform-origin:bottom;animation:riseIn 1.2s .12s cubic-bezier(.34,1.3,.44,1) infinite alternate"></div>
+      <div style="width:14px;height:45%;border-radius:5px 5px 2px 2px;background:#009933;transform-origin:bottom;animation:riseIn 1.2s .24s cubic-bezier(.34,1.3,.44,1) infinite alternate"></div>
+      <span style="font:400 11px/1.4 'DM Sans',sans-serif;color:#68645d;align-self:center">Staplar växer med mjuk fjädring och 120 ms stagger</span>
+    </div>
+    <ul style="margin:0;padding-left:16px;font:400 11.5px/1.7 'DM Sans',sans-serif;color:#4d4942">
+      <li>Element glider på plats och "sätter sig" — vänlig fjädring, aldrig studsigt</li>
+      <li>Områdesbyte tvättar bakgrundstonen mjukt (400 ms crossfade)</li>
+      <li>Noder växer under fingret/pekaren som direkt kvittens</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Prova härnäst: "gå vidare med <a class="dv-oid" href="#1a">1a</a> men med räknande tal från <a class="dv-oid" href="#1b">1b</a>" · "visa GAL-TAN-vyn i full skala i <a class="dv-oid" href="#1c">1c</a>:s stil" · "nya riktningar"</p>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { count: 0, count2: 0 };
+  componentDidMount() {
+    const dur = 1600, t0 = performance.now();
+    const tick = (t) => {
+      const p = Math.min((t - t0) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      this.setState({ count: Math.round(eased * 214), count2: Math.round(eased * 1042) });
+      if (p < 1) this._raf = requestAnimationFrame(tick);
+      else this._timer = setTimeout(() => { this.setState({ count: 0, count2: 0 }); this.componentDidMount(); }, 2600);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+  componentWillUnmount() { cancelAnimationFrame(this._raf); clearTimeout(this._timer); }
+  renderVals() { return { liveCount: this.state.count, liveCount2: this.state.count2 }; }
+}
+</script>
+</body>
+</html>

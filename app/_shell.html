@@ -1,0 +1,44 @@
+<!-- ============================================================
+     CANONICAL NAV BLOCK — single source of truth for the shell.
+     Edit here, then run:  node scripts/sync-shell.mjs
+     It copies everything between the SHELL:NAV markers into every
+     app/*.html page (between the same markers). Active state is set
+     at runtime by shell.js from <body data-lens="…">, so this markup
+     is identical on every page and links stay static (crawlable).
+     ============================================================ -->
+<!-- SHELL:NAV START -->
+<a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+<nav class="rail" aria-label="Linser">
+  <a class="rail__title" href="index.html">Partiernas ståndpunkter <span>2026</span></a>
+  <div class="rail__eyebrow">Din fråga</div>
+  <div class="rail__items">
+    <a class="navitem" data-lens-id="valkompass" href="valkompass.html"><span class="navitem__q">Vilket parti ligger närmast dig?</span><span class="navitem__lens">Valkompass</span></a>
+    <a class="navitem" data-lens-id="position" href="position.html"><span class="navitem__q">Var står partierna i sakfrågorna?</span><span class="navitem__lens">Position</span></a>
+    <a class="navitem" data-lens-id="sager-vs-gor" href="sager-vs-gor.html"><span class="navitem__q">Håller orden när det blir votering?</span><span class="navitem__lens">Säger vs gör</span></a>
+    <a class="navitem" data-lens-id="sprak" href="sprak.html"><span class="navitem__q">Vad menar de egentligen med orden?</span><span class="navitem__lens">Språk</span></a>
+    <a class="navitem" data-lens-id="gal-tan" href="gal-tan.html"><span class="navitem__q">Vart är partierna på väg?</span><span class="navitem__lens">GAL-TAN</span></a>
+  </div>
+  <a class="rail__method" href="om-metoden.html">Om metoden →</a>
+</nav>
+
+<header class="topbar">
+  <button class="topbar__burger" type="button" aria-label="Öppna meny" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="topbar__title" href="index.html">Partiernas ståndpunkter <span>2026</span></a>
+</header>
+
+<div class="drawer" hidden>
+  <div class="drawer__scrim" data-close></div>
+  <nav class="drawer__panel" aria-label="Linser">
+    <div class="drawer__eyebrow">Välj din fråga</div>
+    <div class="rail__items">
+      <a class="navitem" data-lens-id="valkompass" href="valkompass.html"><span class="navitem__q">Vilket parti ligger närmast dig?</span><span class="navitem__lens">Valkompass</span></a>
+      <a class="navitem" data-lens-id="position" href="position.html"><span class="navitem__q">Var står partierna i sakfrågorna?</span><span class="navitem__lens">Position</span></a>
+      <a class="navitem" data-lens-id="sager-vs-gor" href="sager-vs-gor.html"><span class="navitem__q">Håller orden när det blir votering?</span><span class="navitem__lens">Säger vs gör</span></a>
+      <a class="navitem" data-lens-id="sprak" href="sprak.html"><span class="navitem__q">Vad menar de egentligen med orden?</span><span class="navitem__lens">Språk</span></a>
+      <a class="navitem" data-lens-id="gal-tan" href="gal-tan.html"><span class="navitem__q">Vart är partierna på väg?</span><span class="navitem__lens">GAL-TAN</span></a>
+    </div>
+    <a class="drawer__method rail__method" href="om-metoden.html">Om metoden →</a>
+  </nav>
+</div>
+<!-- SHELL:NAV END -->

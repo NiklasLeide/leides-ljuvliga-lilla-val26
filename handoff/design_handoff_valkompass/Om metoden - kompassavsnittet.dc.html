@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#f8f7f4;font-family:'DM Sans',system-ui,sans-serif;color:#211f1c}
+a{color:#211f1c}a:hover{color:#68645d}
+</style>
+</helmet>
+
+<sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;left:0;top:0;bottom:0;width:210px;background:#faf8f3;border-right:1px solid #e7e4de;box-sizing:border-box;padding:22px 16px;overflow-y:auto;z-index:40">
+    <div style="font:600 14px/1.3 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin-bottom:20px">Partiernas ståndpunkter <span style="color:#94908a">2026</span></div>
+    <div style="font:700 9px/1 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#94908a;margin-bottom:8px">Din fråga</div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <sc-for list="{{ rail }}" as="n" hint-placeholder-count="5">
+        <div style="border-radius:8px;padding:9px 11px">
+          <span style="display:block;font:600 13px/1.35 'Source Serif 4',serif;color:#4d4942">{{ n.q }}</span>
+          <span style="display:block;font:600 8.5px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#a8a49a;margin-top:4px">{{ n.lens }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="margin-top:18px;padding:6px 11px 6px 8px;border-left:3px solid #211f1c;font:700 11.5px 'DM Sans',sans-serif;color:#211f1c">Om metoden →</div>
+  </div>
+</sc-if>
+
+<div style="min-height:100vh;margin-left:{{ contentML }}">
+  <sc-if value="{{ showTopbar }}" hint-placeholder-val="{{ false }}">
+    <div style="background:#ffffff;border-bottom:1px solid #e7e4de;padding:11px 18px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:45">
+      <div style="display:flex;flex-direction:column;gap:4px;padding:8px 6px">
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+        <span style="width:20px;height:2px;background:#211f1c;border-radius:2px"></span>
+      </div>
+      <span style="font:600 15px 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c">Partiernas ståndpunkter <span style="color:#94908a">2026</span></span>
+    </div>
+  </sc-if>
+
+  <div style="max-width:760px;padding:40px clamp(20px,4vw,44px) 64px;box-sizing:border-box">
+    <div style="max-width:640px">
+      <h1 style="font:600 clamp(26px,5vw,34px)/1.2 'Source Serif 4',serif;letter-spacing:-.015em;color:#211f1c;margin:0">Om metoden</h1>
+      <div style="margin:14px 0 34px;font:10.5px ui-monospace,Menlo,monospace;color:#a8a49a">nytt avsnitt nedan — infogas efter &quot;Fyra linser&quot; på metodsidan</div>
+
+      <h2 id="kompassen" style="font:600 22px/1.3 'Source Serif 4',serif;letter-spacing:-.01em;color:#211f1c;margin:0">Hur valkompassen räknar</h2>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:12px 0 0">Kompassen är en glaslåda: allt som påverkar dina siffror står här. Den mäter dig genom två oberoende linser och ger två separata grafer. De vägs aldrig ihop till en samlad siffra — en hopvägning skulle kräva en godtycklig viktning av vad som &quot;räknas mest&quot;, och den värderingen gör sajten inte åt dig.</p>
+
+      <h3 style="font:600 16px/1.35 'Source Serif 4',serif;color:#211f1c;margin:28px 0 0">Tycker som du — avstånd på samma linjal</h3>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:10px 0 0">Varje sakfråga är en skala 0–100 med namngivna ändpunkter, samma skala som i Positionslinsen. Ditt svar på den femgradiga skalan placeras på axeln (0, 25, 50, 75 eller 100). Närheten till ett parti är 100 minus det viktade medelavståndet över de frågor du besvarat:</p>
+      <div style="background:#faf8f3;border:1px solid #eeebe2;border-radius:10px;padding:14px 18px;margin:14px 0 0;font:12px/1.7 ui-monospace,Menlo,monospace;color:#4d4942;overflow-x:auto">närhet = 100 − ( Σ vikt<sub>område</sub> · |ditt svar − partiets position| ) / Σ vikt<sub>område</sub></div>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:12px 0 0">Exempel: du svarar &quot;instämmer helt&quot; (100) på en fråga där ett parti står på 78. Avståndet är 22, så den frågan bidrar med närheten 78 för det partiet. Samma linjal, samma formel, för alla åtta partier.</p>
+
+      <h3 style="font:600 16px/1.35 'Source Serif 4',serif;color:#211f1c;margin:28px 0 0">Tänker som du — delad innebörd</h3>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:10px 0 0">Begreppsfrågornas svarsalternativ speglar de innebörder partierna själva lägger i ordet — de är hämtade ur Språklinsens underlag och skrivs inte om. Ditt val motsvarar en innebörd, och poängen är andelen besvarade begrepp där partiet delar din:</p>
+      <div style="background:#faf8f3;border:1px solid #eeebe2;border-radius:10px;padding:14px 18px;margin:14px 0 0;font:12px/1.7 ui-monospace,Menlo,monospace;color:#4d4942;overflow-x:auto">närhet = begrepp där ni delar innebörd / besvarade begrepp där partiet använder ordet × 100</div>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:12px 0 0">Nämnaren är viktig: ett parti som inte använder ett begrepp kan inte matchas på det, och därför räknas varje partis poäng bara över de begrepp där partiet faktiskt har en innebörd. Annars skulle partier med smalare ordförråd straffas godtyckligt. Att inte använda ett ord är också ett val — men det redovisas i Språklinsen, det bestraffas inte i kompassen.</p>
+
+      <h3 style="font:600 16px/1.35 'Source Serif 4',serif;color:#211f1c;margin:28px 0 0">Hoppade frågor räknas inte alls</h3>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:10px 0 0">&quot;Vet inte / hoppa över&quot; utesluter frågan helt ur din poäng, i båda linserna. Alternativet — att räkna ett hopp som ett mittensvar — skulle godtyckligt gynna partier nära mitten. Din närhet räknas bara på det du faktiskt tagit ställning till.</p>
+
+      <h3 style="font:600 16px/1.35 'Source Serif 4',serif;color:#211f1c;margin:28px 0 0">Viktningen</h3>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:10px 0 0">Efter frågorna väger du de åtta politikområdena efter vad du bryr dig om. Vikten multiplicerar frågorna i området i Tycker-formeln ovan. Begreppsfrågorna viktas inte — de tillhör inga områden. Alla områden väger lika tills du själv ändrar.</p>
+
+      <h3 style="font:600 16px/1.35 'Source Serif 4',serif;color:#211f1c;margin:28px 0 0">Vad kompassen inte väger in</h3>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:10px 0 0">Säger vs gör-linsen ingår inte i matchningen. Att väga in röstkongruens vore att implicit betygsätta partiers trovärdighet — en värdering en neutralitetssajt inte ska göra åt dig. Linsen finns kvar som egen utforskningsvy, länkad från resultatet.</p>
+
+      <h3 style="font:600 16px/1.35 'Source Serif 4',serif;color:#211f1c;margin:28px 0 0">Hur frågorna väljs</h3>
+      <p style="font:400 14px/1.65 'DM Sans',sans-serif;color:#3d3a34;margin:10px 0 0">Sakfrågorna väljs för att täcka alla åtta politikområden och för att vara särskiljande — frågor där partierna är spridda över skalan, inte där alla tycker lika. Frågor där flera partier har otydlig position används inte. Begreppsfrågor byggs bara på ord med bred täckning (minst sex partier använder ordet) och verklig spridning i innebörd (minst tre olika laddningar) — annars kan de inte skilja partier åt på ett rättvist sätt.</p>
+
+      <div style="background:#faf8f3;border-radius:10px;padding:16px 20px;margin:28px 0 0;font:italic 400 14px/1.6 'Source Serif 4',serif;color:#4d4942">Två ärliga grafer slår en skenbart exakt sammanvägd siffra. När de pekar åt olika håll har du lärt dig något om dig själv — inte hittat ett fel i kompassen.</div>
+
+      <div style="margin-top:26px;font:10.5px ui-monospace,Menlo,monospace;color:#a8a49a">underlag: positions.json (42 sakfrågor, 8 områden) · discourse.json (flytande signifikanter) · formler och urval i sin helhet i metodikdokumentet v1</div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  RAIL = [
+    { q: 'Vilket parti ligger närmast dig?', lens: 'Valkompass' },
+    { q: 'Var står partierna i sakfrågorna?', lens: 'Position' },
+    { q: 'Håller orden när det blir votering?', lens: 'Säger vs gör' },
+    { q: 'Vad menar de egentligen med orden?', lens: 'Språk' },
+    { q: 'Vart är partierna på väg?', lens: 'GAL-TAN' }
+  ];
+  state = { narrow: false };
+  componentDidMount() {
+    this._onResize = () => this.setState({ narrow: window.innerWidth < 920 });
+    window.addEventListener('resize', this._onResize);
+    this._onResize();
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this._onResize); }
+  renderVals() {
+    const narrow = !!this.state.narrow;
+    return {
+      showRail: !narrow,
+      showTopbar: narrow,
+      contentML: narrow ? '0px' : '210px',
+      rail: this.RAIL
+    };
+  }
+}
+</script>
+</body>
+</html>
