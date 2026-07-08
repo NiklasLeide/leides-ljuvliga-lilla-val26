@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "note": "Valkompassens frågeuppsättning. SEED-set (v1): 6 sakfrågor + 4 begreppsfrågor, ordagrant ur designens prototyp. Sakfrågornas partivärden hämtas LIVE ur positions.json via topicId (enda källa); här ligger bara påstående, område och agreeAt (vilken skalända 'instämmer helt' pekar mot). Begreppsalternativens formuleringar speglar discourse.json innebord neutralt (metodik-regel 4). FULL uppsättning (upp till 42 sakfrågor + 8 kvalificerade begrepp) kräver författade neutrala påståenden/alternativ — copy-pass-spår, se CHANGELOG. Motorn skalar utan kodändring när fler poster läggs här.",
+  "questions": [
+    { "id": "p1", "kind": "pos", "topicId": "vinstuttag", "area": "skola", "agreeAt": 0,
+      "statement": "Vinstuttag från friskolor ska förbjudas" },
+    { "id": "d1", "kind": "disc", "concept": "trygghet",
+      "statement": "När du hör ”trygghet” i politiken — vad tänker du främst på?",
+      "options": [
+        { "label": "Skydd mot brott och säkerhet i vardagen", "parties": ["SD", "S"] },
+        { "label": "En förutsättning för individens frihet", "parties": ["M"] },
+        { "label": "Trygga familjer som grund för ett tryggt samhälle", "parties": ["KD"] },
+        { "label": "Utbildning, rehabilitering och rättssäkerhet", "parties": ["L"] },
+        { "label": "Arbete, bostad och social välfärd", "parties": ["V"] },
+        { "label": "Samhörighet och delaktighet som förebygger brott", "parties": ["MP", "C"] }
+      ] },
+    { "id": "p2", "kind": "pos", "topicId": "skatt-arbete", "area": "ekonomi", "agreeAt": 100,
+      "statement": "Skatten på arbete ska sänkas" },
+    { "id": "d2", "kind": "disc", "concept": "ansvar",
+      "statement": "När du hör ”ansvar” i politiken — vad tänker du främst på?",
+      "options": [
+        { "label": "Individens ansvar att göra rätt för sig", "parties": ["M", "SD"] },
+        { "label": "Familjens ansvar för varandra", "parties": ["KD"] },
+        { "label": "Samhällets ansvar att ge alla möjligheter", "parties": ["MP", "L"] },
+        { "label": "Statens ansvar för jämlikhet", "parties": ["V"] },
+        { "label": "Ett delat ansvar mellan stat, kommun och individ", "parties": ["C", "S"] }
+      ] },
+    { "id": "p3", "kind": "pos", "topicId": "statlig-styrning", "area": "skola", "agreeAt": 100,
+      "statement": "Staten ska ta över huvudansvaret för skolan från kommunerna" },
+    { "id": "d3", "kind": "disc", "concept": "omstallning",
+      "statement": "När du hör ”omställning” i klimatpolitiken — vad tänker du främst på?",
+      "options": [
+        { "label": "Kärnkraft och planerbar el", "parties": ["SD", "L"] },
+        { "label": "Alla kraftslag och tekniker, utan att vardagen begränsas", "parties": ["M", "KD"] },
+        { "label": "En rättvis omställning som fungerar för vanligt folk", "parties": ["S", "V"] },
+        { "label": "Förnybar energi och energilagring", "parties": ["MP", "C"] }
+      ] },
+    { "id": "p4", "kind": "pos", "topicId": "valfard-finansiering", "area": "ekonomi", "agreeAt": 0,
+      "statement": "Skatterna ska höjas för att ge välfärden mer resurser" },
+    { "id": "p5", "kind": "pos", "topicId": "friskolor", "area": "skola", "agreeAt": 100,
+      "statement": "Det ska råda fri etableringsrätt för fristående skolor" },
+    { "id": "d4", "kind": "disc", "concept": "gemenskap",
+      "statement": "När du hör ”gemenskap” i politiken — vad bygger den främst på?",
+      "options": [
+        { "label": "Delad kultur, historia och nationell identitet", "parties": ["SD"] },
+        { "label": "Arbete, språk och att göra rätt för sig", "parties": ["M", "C"] },
+        { "label": "Delade normer, värderingar och familj", "parties": ["KD"] },
+        { "label": "Deltagande, utbildning och gemensamma institutioner", "parties": ["L", "S"] },
+        { "label": "Delaktighet och samhörighet för alla", "parties": ["MP"] },
+        { "label": "Solidaritet över etniska och nationella gränser", "parties": ["V"] }
+      ] },
+    { "id": "p6", "kind": "pos", "topicId": "arbetsmarknad", "area": "ekonomi", "agreeAt": 100,
+      "statement": "Arbetsmarknaden ska göras mer flexibel" }
+  ]
+}
