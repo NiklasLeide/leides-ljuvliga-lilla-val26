@@ -6,10 +6,10 @@
 
 ## Sammanfattning
 
-- **45 frågor totalt** = 37 sakfrågor + 8 begreppsfrågor.
-- Sakfrågor: 37 av 42 topics i `positions.json`. **5 uteslutna** för otillräcklig partispridning (differentierar inte — se nedan).
+- **v3 (granskad):** **43 frågor totalt** = 35 sakfrågor + 8 begreppsfrågor. (v2 var 45 = 37+8; pension och eu-ekonomi borttagna i granskningen — se FIX-LOG längst ned.)
+- Sakfrågor: 35 av 42 topics i `positions.json`. **7 uteslutna** (5 för spridning <40 + pension + eu-ekonomi, se FIX-LOG).
 - Begreppsfrågor: de **8 kvalificerade signifikanterna** i `VALKOMPASS_metodik_v1.md` (≥6 partier, ≥3 laddningar). Alla trösklar verifierade mot data.
-- ⚠️ **45 frågor är en lång kompass.** Överväg att korta (t.ex. 2–3 sakfrågor/område). Motorn klarar valfritt antal; hoppade frågor räknas inte.
+- ⚠️ **43 frågor är fortfarande en lång kompass.** Överväg att korta ytterligare (t.ex. 2–3 sakfrågor/område). Motorn klarar valfritt antal; hoppade frågor räknas inte.
 
 ## Evaluator-kriterier (binära, per fråga)
 
@@ -125,4 +125,34 @@ Partier utan laddning i ett begrepp matchas inte på den frågan (metodik-regel 
 
 ---
 
-*Stoppar här enligt instruktion — inget mergas förrän du godkänt formuleringarna. PR öppnad för granskning.*
+## FIX-LOG — v2 → v3 (granskningsbeslut tillämpade 2026-07-08)
+
+Niklas + Claude chat granskade flaggorna ovan och beslutade följande. Alla ändringar gjorda i `data/compass-questions.json`; evaluator-checkarna körda om på de ändrade frågorna.
+
+### Sakfrågor
+
+| # | Post | Beslut | Före → Efter |
+|---|---|---|---|
+| 1 | pos-elpriser | Omformulerad (tog bort inbakat utfall) | "Elpriserna ska **hållas nere** genom statlig priskontroll" → "Elpriserna ska **regleras** genom statlig priskontroll" |
+| 2 | pos-pension | **BORTTAGEN** | Sammansatt skala (reformera+höj pensioner vs bevara+höj pensionsålder); påståendet fångade bara ena änden. Bättre frånvarande än halvmätt — kan få egen riktig fråga senare. |
+| 3 | EU-dubbelräkning | **Behöll eu-demokrati, tog bort eu-ekonomi** | Valt "behåll en" framför "slå ihop": en sakfråga binder till EXAKT ETT topicId (partivärden hämtas live från den topicen), så två topics kan inte slås ihop till en ren live-hämtad skala. eu-demokrati har bredare spridning (80 > 74). Kvarvarande statement generaliserad: "Sverige ska fördjupa EU-samarbetet **politiskt**" → "Sverige ska fördjupa EU-samarbetet" (nu enda EU-dimensionen). |
+| 4 | Starka poler | Mildrade (respondent kan instämma utan ytterlighet) | asylpolitik: "**kraftigt** begränsa" → "begränsa" · fornybart: "byggas ut **kraftigt**" → "byggas ut" · nato: "**så aktivt som möjligt**" → "aktivt" · fossila-branslen: "fasas ut **snabbt**" → "fasas ut" · infrastruktur: "satsa **stort** på" → "satsa på" · klimatanpassning: "**stora** gröna investeringar" → "gröna investeringar". karnkraft ("byggas ut") lämnad som den var. *Obs: mildringen påverkar inte differentieringen — partispridningen kommer från numeriska positioner, inte från påståendets ordval.* |
+| 5 | pos-digitalisering-skolan | **Behållen** med 2-unclear-noten | Ingen ändring. |
+
+### Begreppsfrågor
+
+| # | Post | Beslut | Utfall |
+|---|---|---|---|
+| 6 | disc-ansvar / SD | **Trimning bekräftad** | Behåller "Individens ansvar att anpassa sig", slopar "tidigare regeringars skuld"-satsen (skuldtillskrivning mot andra partier, inte en innebörd av "ansvar"). Var redan så i v2 — nu bekräftat. Grep: "anpassa sig" finns i innebord. |
+| 7 | disc-trygghet / S | **Omformulerad till statisk innebörd** | "Välfärdstrygghet som **allt mer handlar om** skydd mot brott" (riktning/rörelse) → "**Både** social välfärd **och** fysisk säkerhet mot brott" (håller båda, utan att döma en drift). S-alternativet är inte längre det enda som beskriver rörelse. Grep: både "social välfärd" och "fysisk säkerhet" finns i S:s innebord. |
+
+### Omkörda evaluator-checkar (endast ändrade frågor)
+
+- **Antal:** 35 sakfrågor + 8 begrepp = **43** (var 45).
+- **Härledning:** alla kvarvarande topicId greppar fortfarande till `positions.json`; pension/eu-ekonomi inte längre närvarande. ✅
+- **Differentiering:** alla kvarvarande sakfrågor spridning ≥40; eu-demokrati = 80. ✅
+- **Begreppstrimmar:** SD "anpassa sig", S "social välfärd" + "fysisk säkerhet" greppar alla till `discourse.json` innebord. ✅
+- **Symmetri:** inget alternativ beskriver längre rörelse (S-utliggaren åtgärdad); loadedness oförändrad (option-antal = laddade partier per begrepp: 8/8/8/8/8/6/6/7). ✅
+- **Superlativsvep:** inga flaggade superlativ kvar i något påstående. ✅
+
+*v3 tillämpar de granskade besluten. Mergas fortfarande inte — väntar ditt slutgodkännande.*
