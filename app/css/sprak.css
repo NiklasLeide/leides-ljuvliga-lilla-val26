@@ -1,0 +1,82 @@
+/* Språk lens — two modes. GAL/Mitt/TAN columns are a neutral descriptive axis:
+   headers grey, no saturated column tones. Party colours only identify parties. */
+
+/* Mode doors */
+.sprak-doors { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
+.sprak-door {
+  appearance: none; border: none; border-bottom: 3px solid transparent; background: var(--rail-bg);
+  text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 3px;
+  padding: 13px 18px 11px; border-radius: 10px 10px 0 0; transition: all .15s;
+}
+.sprak-door:hover { background: var(--card); }
+.sprak-door.is-active { background: var(--card); border-bottom-color: var(--ink); box-shadow: var(--shadow-node); }
+.sprak-door__label { font: 700 15px var(--font-body); color: var(--secondary); }
+.sprak-door.is-active .sprak-door__label { color: var(--ink); }
+.sprak-door__sub { font: 400 11.5px/1.35 var(--font-body); color: var(--muted); }
+
+/* Mode A — concept pills + spectrum wall */
+.sprak-pill-row { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 20px; }
+.sprak-pill {
+  appearance: none; border: 1px solid var(--border); background: var(--card); color: var(--secondary);
+  font: 500 12.5px var(--font-body); padding: 6px 13px; border-radius: var(--radius-pill);
+  cursor: pointer; white-space: nowrap; transition: all .12s;
+}
+.sprak-pill:hover { border-color: var(--muted); }
+.sprak-pill.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+.sprak-concept-head { border-bottom: 1px solid var(--track); padding-bottom: 16px; margin-bottom: 18px; }
+.sprak-concept-word { font: 600 clamp(30px, 6vw, 44px)/1.1 var(--font-serif); letter-spacing: -.015em; }
+.sprak-concept-desc { font: 400 14px/1.6 var(--font-serif); font-style: italic; color: var(--body); margin-top: 8px; max-width: 680px; text-wrap: pretty; }
+.sprak-coverage { margin-top: 10px; font: 500 11.5px var(--font-body); color: var(--muted); }
+
+.sprak-columns { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 8px; }
+.sprak-col { flex: 1 1 250px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.sprak-col__head { display: flex; align-items: baseline; gap: 8px; border-bottom: 2px solid var(--track); padding-bottom: 7px; }
+.sprak-col__title { font: 700 11px/1 var(--font-body); letter-spacing: .07em; text-transform: uppercase; color: var(--secondary); }
+.sprak-col__count { font: 600 11px var(--font-body); font-variant-numeric: tabular-nums; color: var(--faint); }
+.sprak-col__empty { border: 1px dashed var(--ruler); border-radius: var(--radius-inner); padding: 14px; font: 400 12px/1.5 var(--font-body); color: var(--faint); text-align: center; }
+
+.sprak-qcard { background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--ink); border-radius: var(--radius-inner); padding: 16px 18px; display: flex; flex-direction: column; gap: 9px; }
+.sprak-qcard__head { display: flex; align-items: center; gap: 8px; }
+.sprak-qcard__dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.sprak-qcard__name { font: 600 14.5px var(--font-serif); }
+.sprak-qcard__axis { font: 600 9.5px/1.3 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-left: auto; text-align: right; }
+.sprak-qcard__quote { font: 400 16px/1.5 var(--font-serif); font-style: italic; color: var(--ink); text-wrap: pretty; }
+.sprak-qcard__meaning { font: 400 12.5px/1.55 var(--font-body); color: var(--body); text-wrap: pretty; }
+
+.sprak-missing { font: 400 12.5px/1.55 var(--font-body); color: var(--muted); margin: 8px 0; text-wrap: pretty; }
+
+.sprak-commentary, .sprak-kong-note { background: var(--rail-bg); border: 1px solid var(--soft-border-2); border-radius: var(--radius-inner); padding: 16px 20px; margin-top: 14px; }
+.sprak-commentary__text, .sprak-kong-note__text { font: 400 13.5px/1.65 var(--font-serif); font-style: italic; color: var(--body); text-wrap: pretty; }
+
+.sprak-label { font: 700 9.5px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 16px 0 8px; }
+.sprak-source { font: 400 11px/1.5 var(--font-mono); color: var(--faint); margin-top: 16px; text-wrap: pretty; }
+
+/* Mode C — party profile */
+.sprak-cmp-label { font: 400 12px/1.5 var(--font-body); color: var(--muted); margin-bottom: 8px; }
+.sprak-profile { background: var(--card); border: 1px solid var(--border); border-top: 4px solid var(--ink); border-radius: var(--radius-card); padding: 24px 28px; margin-bottom: 16px; }
+.sprak-prof__head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.sprak-prof__dot { width: 16px; height: 16px; border-radius: 50%; flex: none; }
+.sprak-prof__name { font: 600 22px/1.2 var(--font-serif); }
+.sprak-prof__kong { font: 600 10px/1 var(--font-body); letter-spacing: .05em; text-transform: uppercase; color: var(--secondary); background: var(--soft-border); padding: 5px 10px; border-radius: var(--radius-pill); }
+.sprak-prof__framing { font: 400 16px/1.6 var(--font-serif); color: var(--ink); max-width: 720px; text-wrap: pretty; }
+.sprak-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.sprak-tag { font: 600 12.5px var(--font-body); color: var(--ink); border: 1px solid var(--ruler); padding: 5px 12px; border-radius: var(--radius-pill); }
+.sprak-strat-list { display: flex; flex-direction: column; gap: 4px; }
+.sprak-strat-line { font: 400 13px/1.5 var(--font-body); color: var(--body); }
+.sprak-kong-note .sprak-label { margin-top: 0; }
+
+.sprak-area__framing { font: 400 17px/1.55 var(--font-serif); font-style: italic; color: var(--ink); max-width: 700px; text-wrap: pretty; margin-bottom: 18px; }
+.sprak-area-content { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 22px 26px; margin-bottom: 16px; }
+.sprak-area-content .sprak-label:first-child { margin-top: 0; }
+.sprak-key-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.sprak-key { border: 1px solid var(--border); border-radius: var(--radius-inner); padding: 13px 15px; }
+.sprak-key__term { font: 600 14.5px var(--font-serif); margin-bottom: 5px; }
+.sprak-key__meaning { font: 400 12.5px/1.5 var(--font-body); color: var(--body); text-wrap: pretty; }
+.sprak-key__premiss { font: 400 11.5px/1.5 var(--font-body); color: var(--muted); margin-top: 7px; padding-top: 7px; border-top: 1px dashed var(--soft-border-2); text-wrap: pretty; }
+.sprak-key__premiss b { font-weight: 600; color: #7a766e; }
+.sprak-area-strat { display: flex; flex-direction: column; gap: 12px; }
+.sprak-area-strat__row { border-left: 3px solid var(--ink); padding: 2px 0 2px 14px; }
+.sprak-area-strat__name { font: 600 13.5px var(--font-body); margin-bottom: 3px; }
+.sprak-area-strat__ex { font: 400 14px/1.5 var(--font-serif); font-style: italic; color: var(--body); text-wrap: pretty; }
+.sprak-area-strat__src { font: 400 10.5px/1.5 var(--font-mono); color: var(--faint); margin-top: 3px; }
