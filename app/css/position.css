@@ -1,0 +1,51 @@
+/* Position lens — question cards with beeswarm scales + citation cards.
+   Neutrality: rails/ticks grey; only party nodes saturated; unclear = dashed. */
+
+.pos-area-tabs { margin-bottom: 14px; }
+.pos-cmp-label { font: 400 12px/1.5 var(--font-body); color: var(--muted); margin-bottom: 8px; }
+.pos-chips { margin-bottom: 20px; }
+
+.pos-topic {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius-card); padding: 20px 24px 18px; margin-bottom: 16px;
+}
+.pos-topic__name { font: 600 17px/1.3 var(--font-serif); margin-bottom: 2px; }
+.pos-topic__hint { font: 400 11.5px/1.5 var(--font-body); color: var(--muted); margin-bottom: 14px; }
+
+/* Beeswarm track (height + line/tick offsets set inline by JS) */
+.pos-track { position: relative; margin: 0 10px; transition: height .4s; }
+.pos-line { position: absolute; left: 0; right: 0; height: 3px; border-radius: 2px; background: var(--track); }
+.pos-tick { position: absolute; width: 2px; height: 11px; background: var(--ruler-tick); }
+.pos-stick { position: absolute; width: 1px; background: var(--ruler-stick); transition: opacity .3s; }
+.pos-node {
+  position: absolute; border-radius: 50%; transform: translate(-50%, -50%);
+  border: 3px solid #fff; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-body); font-weight: 700; cursor: pointer; box-shadow: var(--shadow-node);
+  z-index: 3;
+  transition: left .8s var(--ease-spring), top .8s var(--ease-spring), opacity .3s;
+}
+.pos-node:hover { transform: translate(-50%, -50%) scale(1.22); z-index: 30; }
+.pos-node.is-unclear { border-style: dashed; opacity: .8; }
+.pos-node.is-selected { z-index: 8; }
+.pos-node.is-dimmed { opacity: .16; }
+
+.pos-ends {
+  display: flex; justify-content: space-between; gap: 20px;
+  font: 600 11px var(--font-body); color: #7a766e; margin-top: 2px;
+}
+.pos-ends span:last-child { text-align: right; }
+
+/* Citation ("quote") cards under a scale, for selected parties */
+.pos-cards { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.pos-card { border: 1px solid var(--border); border-top: 3px solid var(--dc, var(--ink)); border-radius: var(--radius-btn); padding: 11px 13px; }
+.pos-card__head { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; }
+.pos-card__dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.pos-card__name { font: 600 13px var(--font-serif); }
+.pos-card__badge {
+  font: 700 9px/1 var(--font-body); letter-spacing: .05em; text-transform: uppercase;
+  color: var(--delvis-text); background: var(--delvis-bg); padding: 3px 7px;
+  border-radius: 4px; margin-left: auto; flex: none;
+}
+.pos-card__text { font: 400 12.5px/1.45 var(--font-body); color: var(--body); text-wrap: pretty; }
+
+.pos-source { font: 400 11px/1.5 var(--font-mono); color: var(--faint); margin-top: 6px; }
