@@ -1,0 +1,80 @@
+/* GAL-TAN lens — scatter, trails/nodes, year toggle, side panel.
+   Neutrality: rulers/labels are grey; only party nodes are saturated. */
+
+.gt-cmp-label { font: 400 12px/1.5 var(--font-body); color: var(--muted); margin-bottom: 8px; }
+.gt-chips { margin-bottom: 18px; }
+
+/* Year segmented control */
+.gt-year-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
+.gt-year-seg { display: flex; gap: 3px; background: #ece9e2; padding: 3px; border-radius: 9px; }
+.gt-year-btn {
+  appearance: none; border: none; background: transparent; color: var(--muted);
+  font: 700 13.5px var(--font-body); font-variant-numeric: tabular-nums;
+  padding: 7px 16px; border-radius: 7px; cursor: pointer; transition: background .15s, color .15s, box-shadow .15s;
+}
+.gt-year-btn.is-active { background: var(--card); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.gt-year-note { font: 400 12px/1.4 var(--font-body); color: var(--muted); }
+
+/* Layout: scatter + side panel */
+.gt-layout { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+.gt-chart-wrap {
+  flex: 1 1 480px; min-width: 0; background: var(--card);
+  border: 1px solid var(--border); border-radius: var(--radius-card);
+  padding: clamp(10px, 3vw, 22px);
+}
+.gt-plot {
+  position: relative; aspect-ratio: 1; max-width: 640px; margin: 0 auto;
+  background: #fdfcfa; border: 1px solid #eeebe4; border-radius: var(--radius-inner);
+}
+.gt-axis {
+  position: absolute; font: 700 10px var(--font-body); letter-spacing: .07em;
+  text-transform: uppercase; color: var(--faint); white-space: nowrap;
+}
+.gt-axis--top { top: 10px; left: 50%; transform: translateX(-50%); }
+.gt-axis--bottom { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.gt-axis--left { left: 10px; top: 50%; transform: translateY(-50%) rotate(-90deg); }
+.gt-axis--right { right: 10px; top: 50%; transform: translateY(-50%) rotate(90deg); }
+.gt-ruler-h { position: absolute; left: 6%; right: 6%; top: 50%; height: 1px; background: var(--ruler); }
+.gt-ruler-v { position: absolute; top: 6%; bottom: 6%; left: 50%; width: 1px; background: var(--ruler); }
+
+.gt-trail {
+  position: absolute; height: 2px; border-radius: 2px; opacity: .25;
+  transform-origin: left center; transition: opacity .4s;
+}
+.gt-ghost {
+  position: absolute; width: 9px; height: 9px; border-radius: 50%;
+  transform: translate(-50%, -50%); opacity: .35; border: 1px solid #fff; transition: opacity .4s;
+}
+.gt-node {
+  position: absolute; border-radius: 50%; transform: translate(-50%, -50%);
+  border: 3px solid #fff; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-body); font-weight: 700; cursor: pointer;
+  box-shadow: var(--shadow-node); z-index: 3;
+  transition: left .9s var(--ease-spring), top .9s var(--ease-spring), opacity .3s, box-shadow .3s;
+}
+.gt-node:hover { transform: translate(-50%, -50%) scale(1.12); }
+.gt-node.is-selected { z-index: 8; box-shadow: var(--shadow-node-sel); }
+.gt-node.is-dimmed { opacity: .18; }
+
+/* 2026 annotation */
+.gt-annot-leader { position: absolute; left: 33%; top: 53%; width: 1px; height: 15%; background: var(--ruler-tick); transform: rotate(24deg); transform-origin: top; }
+.gt-annot {
+  position: absolute; left: 8%; top: 70%; max-width: 34%;
+  font: 400 clamp(10px, 1.8vw, 12.5px)/1.45 var(--font-serif); font-style: italic;
+  background: var(--card); border: 1px solid #e0dcd3; padding: 7px 11px;
+  border-radius: var(--radius-btn); box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+.gt-annot b { font-style: normal; }
+
+.gt-source { font: 400 11px/1.5 var(--font-mono); color: var(--faint); margin-top: 12px; text-align: center; }
+
+/* Side panel */
+.gt-panel { flex: 1 1 280px; max-width: 420px; position: sticky; top: 16px; display: flex; flex-direction: column; gap: 12px; max-height: calc(100vh - 32px); overflow-y: auto; }
+.gt-hint { border: 1px dashed var(--ruler); border-radius: var(--radius-inner); padding: 16px 18px; font: 400 13px/1.55 var(--font-body); color: var(--muted); text-wrap: pretty; }
+.gt-detail { background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--dc, var(--ink)); border-radius: var(--radius-inner); padding: 14px 16px; }
+.gt-detail__head { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+.gt-detail__dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.gt-detail__name { font: 600 15px var(--font-serif); }
+.gt-detail__meta { font: 600 11.5px/1.6 var(--font-body); font-variant-numeric: tabular-nums; color: var(--secondary); margin-bottom: 7px; }
+.gt-detail__mot { font: 400 12.5px/1.55 var(--font-body); color: var(--body); text-wrap: pretty; }
+.gt-panel-foot { font: 400 11px/1.5 var(--font-body); color: var(--muted); }
