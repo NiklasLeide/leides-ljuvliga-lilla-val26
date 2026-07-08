@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/shell.css">
+<link rel="stylesheet" href="css/sager-vs-gor.css">
 </head>
 <body data-lens="sager-vs-gor">
 <!-- SHELL:NAV START -->
@@ -49,21 +50,53 @@
 </div>
 <!-- SHELL:NAV END -->
 <div class="shell-main">
-  <main class="shell-wrap" id="main">
-    <header class="lens-header">
-      <span class="lens-pill">Lins · Säger vs gör</span><span class="lens-updated">Uppdaterad juli 2026</span>
-      <h1 class="lens-h1">Håller orden när det blir votering?</h1>
-      <p class="lens-intro">Uttalanden ställda mot faktiska riksdagsvoteringar. Fördelning och avvikelser framlyfta — det intressanta är där det glappar.</p>
-    </header>
-    <div class="phase-stub">
-      <strong>Säger vs gör-linsen byggs i Fas 3.</strong> Skelettet, navigeringen och den
-      delade jämför-mekaniken är på plats (Fas 0). Vyns innehåll återskapas från designens
-      handoff-fil mot riktig data i Fas 3.
+  <header class="lens-band" id="svg-header">
+    <div class="lens-band__inner" id="main">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span class="lens-pill">Lins · Säger vs gör</span><span class="lens-updated">Uppdaterad juli 2026</span>
+      </div>
+      <h1 class="lens-h1" style="max-width:620px">Håller orden när det blir votering?</h1>
+      <p class="lens-intro">Vi jämför vad partierna säger i varje fråga med hur de faktiskt röstat i riksdagen. Det mesta stämmer — det intressanta är där ord och handling glappar.</p>
+      <div class="stat-row">
+        <div class="stat"><span class="stat__val" id="svg-stat-rows">0</span><span class="stat__label">jämförelser i <span id="svg-stat-area">skola</span></span></div>
+        <div class="stat"><span class="stat__val" id="svg-stat-ok">0</span><span class="stat__label">stämmer</span></div>
+        <div class="stat"><span class="stat__val" id="svg-stat-dev">0</span><span class="stat__label">avviker eller inväntar votering</span></div>
+      </div>
     </div>
+  </header>
+  <main class="shell-wrap">
+    <div class="area-tabs svg-area-tabs" id="svg-area-tabs"></div>
+    <div class="svg-cmp-label">Tryck på partier för att filtrera — annars visas alla.</div>
+    <div class="chip-row svg-chips" id="svg-chips"></div>
+
+    <div class="svg-dist">
+      <div class="svg-dist__eyebrow" id="svg-dist-eyebrow">Ord mot handling</div>
+      <div class="svg-bar" id="svg-bar"></div>
+      <div class="svg-legend" id="svg-legend"></div>
+      <div class="svg-note">Att det mesta stämmer är väntat — regeringspartier röstar för sin egen politik, och urvalet gäller frågor som nått votering. Det intressanta är avvikelserna.</div>
+    </div>
+
+    <div class="svg-dev-head">
+      <span class="svg-dev-badge">Här skaver det</span>
+      <span class="svg-dev-title">Avvikelser mellan ord och handling</span>
+    </div>
+    <div id="svg-deviations"></div>
+
+    <div class="svg-stammer">
+      <button class="svg-stammer__btn" type="button" id="svg-stammer-btn" aria-controls="svg-stammer-body">
+        <span class="svg-stammer__eyebrow">Övriga — ord och handling stämmer</span>
+        <span class="svg-stammer__count" id="svg-stammer-count">0</span>
+        <span class="svg-stammer__toggle" id="svg-stammer-toggle">Visa</span>
+      </button>
+      <div class="svg-stammer__body" id="svg-stammer-body" hidden></div>
+    </div>
+
+    <div class="svg-source">Källa: riksdagens voteringar 2022–2026 · partiernas program och uttalanden</div>
   </main>
 </div>
 <script src="js/constants.js"></script>
 <script src="js/compare-state.js"></script>
 <script src="js/shell.js"></script>
+<script src="js/sager-vs-gor.js"></script>
 </body>
 </html>

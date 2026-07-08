@@ -1,0 +1,66 @@
+/* Säger vs gör — distribution bar + surfaced deviations + collapsed "stämmer".
+   Status colours describe congruence words↔votes ONLY, never political direction. */
+
+.svg-area-tabs { margin-bottom: 14px; }
+.svg-cmp-label { font: 400 12px/1.5 var(--font-body); color: var(--muted); margin-bottom: 8px; }
+.svg-chips { margin-bottom: 20px; }
+
+/* Distribution card */
+.svg-dist { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 20px 24px; margin-bottom: 22px; }
+.svg-dist__eyebrow { font: 700 10px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+.svg-bar { display: flex; height: 38px; border-radius: 9px; overflow: hidden; gap: 2px; }
+.svg-seg {
+  display: flex; align-items: center; justify-content: center; min-width: 26px;
+  font: 700 13px var(--font-body); font-variant-numeric: tabular-nums;
+  transition: width .5s cubic-bezier(.22, 1, .36, 1);
+}
+.svg-legend { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+.svg-legend span.item { display: flex; align-items: center; gap: 6px; font: 400 12px var(--font-body); color: var(--secondary); }
+.svg-legend .sw { width: 11px; height: 11px; border-radius: 3px; border: 1px solid rgba(0,0,0,.06); }
+.svg-note {
+  margin-top: 14px; font: 400 13px/1.55 var(--font-serif); font-style: italic; color: var(--body);
+  background: var(--rail-bg); border: 1px solid var(--soft-border-2); border-radius: var(--radius-btn);
+  padding: 10px 14px; text-wrap: pretty;
+}
+
+/* Deviations — surfaced, not buried */
+.svg-dev-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.svg-dev-badge {
+  background: var(--delvis-bg); color: var(--delvis-text);
+  font: 700 10px/1 var(--font-body); letter-spacing: .05em; text-transform: uppercase;
+  padding: 4px 9px; border-radius: 5px;
+}
+.svg-dev-title { font: 600 18px/1.2 var(--font-serif); }
+.svg-dev-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; margin-bottom: 26px; }
+.svg-dev {
+  background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent, var(--delvis-accent));
+  border-radius: var(--radius-inner); padding: 15px 17px;
+}
+.svg-dev__head { display: flex; align-items: center; gap: 9px; margin-bottom: 10px; }
+.svg-dev__dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+.svg-dev__name { font: 600 14px var(--font-serif); }
+.svg-dev__topic { font: 500 11.5px var(--font-body); color: var(--muted); margin-left: auto; text-align: right; }
+.svg-row { font: 400 13px/1.5 var(--font-body); color: var(--body); margin-bottom: 7px; }
+.svg-row:last-child { margin-bottom: 0; color: var(--ink); line-height: 1.55; }
+.svg-row__label { font: 700 10px var(--font-body); letter-spacing: .05em; text-transform: uppercase; margin-right: 6px; }
+.svg-empty { font: 400 13px var(--font-body); color: var(--muted); text-align: center; padding: 14px; margin-bottom: 26px; }
+
+/* Collapsed "stämmer" panel */
+.svg-stammer { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-card); overflow: hidden; }
+.svg-stammer__btn {
+  appearance: none; border: none; background: none; width: 100%; display: flex; align-items: center; gap: 10px;
+  padding: 15px 18px; cursor: pointer; text-align: left;
+}
+.svg-stammer__btn:hover { background: var(--rail-bg); }
+.svg-stammer__eyebrow { font: 700 10px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--secondary); }
+.svg-stammer__count { background: var(--stammer-bg); color: var(--stammer-text); font: 700 11px/1 var(--font-body); font-variant-numeric: tabular-nums; padding: 3px 9px; border-radius: var(--radius-pill); flex: none; }
+.svg-stammer__toggle { font: 600 12px var(--font-body); color: var(--muted); margin-left: auto; flex: none; }
+.svg-stammer__body { padding: 0 18px 16px; }
+.svg-stammer__group { font: 700 9.5px/1 var(--font-body); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin: 14px 0 4px; }
+.svg-stammer__row { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--soft-border); }
+.svg-stammer__row:last-child { border-bottom: none; }
+.svg-stammer__dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.svg-stammer__code { font: 600 13px var(--font-body); min-width: 34px; flex: none; }
+.svg-stammer__text { font: 400 13px/1.45 var(--font-body); color: var(--body); flex: 1; min-width: 0; }
+
+.svg-source { font: 400 11px/1.5 var(--font-mono); color: var(--faint); margin-top: 18px; }
