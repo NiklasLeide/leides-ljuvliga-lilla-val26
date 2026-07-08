@@ -27,6 +27,12 @@
   --ruler:        #d5d0c6;  /* axis lines */
   --ruler-tick:   #a8a49a;
   --ruler-stick:  #b5b0a6;  /* beeswarm sticks */
+  --border-strong:#e0dcd3;  /* slightly darker hairline (rail edge, cards) */
+  --label-strong: #7a766e;  /* strong-muted label text */
+  --seg-track:    #ece9e2;  /* segmented-control track */
+  --plot-bg:      #fdfcfa;  /* neutral plot surface */
+  --plot-border:  #eeebe4;  /* neutral plot border */
+  --on-dark-muted:#cfcabf;  /* muted text on dark (ink) surfaces */
 
   /* Party colours — the only saturated colours on the site */
   --party-v:  #AF1D22;

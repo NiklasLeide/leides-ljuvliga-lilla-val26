@@ -85,7 +85,7 @@ a:hover { color: var(--secondary); }
 .drawer__scrim { position: fixed; inset: 0; background: rgba(28,28,28,.3); z-index: 50; }
 .drawer__panel {
   position: fixed; top: 0; bottom: 0; left: 0; width: min(320px, 84vw);
-  background: var(--rail-bg); border-right: 1px solid #e0dcd3;
+  background: var(--rail-bg); border-right: 1px solid var(--border-strong);
   box-shadow: var(--shadow-drawer); z-index: 51; padding: 22px 18px;
   overflow-y: auto;
 }

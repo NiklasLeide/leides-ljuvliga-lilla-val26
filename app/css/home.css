@@ -15,7 +15,7 @@
 .home-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.14); }
 .home-primary__eyebrow { font: 700 9.5px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
 .home-primary__q { display: block; font: 600 22px/1.25 var(--font-serif); color: #fff; margin-top: 8px; text-wrap: pretty; }
-.home-primary__sub { display: block; font: 400 13.5px/1.5 var(--font-body); color: #cfcabf; margin-top: 6px; max-width: 460px; }
+.home-primary__sub { display: block; font: 400 13.5px/1.5 var(--font-body); color: var(--on-dark-muted); margin-top: 6px; max-width: 460px; }
 .home-primary__cta { font: 600 14px var(--font-body); color: #fff; white-space: nowrap; border: 1.5px solid rgba(255,255,255,.35); border-radius: var(--radius-btn); padding: 11px 18px; flex: none; }
 
 /* Exploration door grid */

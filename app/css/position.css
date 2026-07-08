@@ -31,7 +31,7 @@
 
 .pos-ends {
   display: flex; justify-content: space-between; gap: 20px;
-  font: 600 11px var(--font-body); color: #7a766e; margin-top: 2px;
+  font: 600 11px var(--font-body); color: var(--label-strong); margin-top: 2px;
 }
 .pos-ends span:last-child { text-align: right; }
 
