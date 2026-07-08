@@ -74,7 +74,7 @@
 .sprak-key__term { font: 600 14.5px var(--font-serif); margin-bottom: 5px; }
 .sprak-key__meaning { font: 400 12.5px/1.5 var(--font-body); color: var(--body); text-wrap: pretty; }
 .sprak-key__premiss { font: 400 11.5px/1.5 var(--font-body); color: var(--muted); margin-top: 7px; padding-top: 7px; border-top: 1px dashed var(--soft-border-2); text-wrap: pretty; }
-.sprak-key__premiss b { font-weight: 600; color: #7a766e; }
+.sprak-key__premiss b { font-weight: 600; color: var(--label-strong); }
 .sprak-area-strat { display: flex; flex-direction: column; gap: 12px; }
 .sprak-area-strat__row { border-left: 3px solid var(--ink); padding: 2px 0 2px 14px; }
 .sprak-area-strat__name { font: 600 13.5px var(--font-body); margin-bottom: 3px; }

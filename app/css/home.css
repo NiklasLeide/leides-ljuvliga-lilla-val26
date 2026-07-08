@@ -1,0 +1,48 @@
+/* Startsida — hero, lens doors with neutral mini-previews, method teaser.
+   Preview vizzes use party colours to identify parties only; rails/axes grey. */
+
+.home-hero { max-width: 680px; }
+.home-hero h1 { margin: 16px 0 0; font: 600 clamp(32px, 6vw, 50px)/1.1 var(--font-serif); letter-spacing: -.015em; text-wrap: pretty; }
+.home-hero p { margin: 14px 0 0; font: 400 16px/1.65 var(--font-body); color: var(--body); text-wrap: pretty; }
+.home-hero .stat-row { margin-top: 24px; }
+
+/* Valkompass primary door */
+.home-primary {
+  display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;
+  background: var(--ink); border-radius: var(--radius-card); padding: 24px 26px; margin-top: 40px;
+  text-decoration: none; transition: transform .2s, box-shadow .2s;
+}
+.home-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.14); }
+.home-primary__eyebrow { font: 700 9.5px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+.home-primary__q { display: block; font: 600 22px/1.25 var(--font-serif); color: #fff; margin-top: 8px; text-wrap: pretty; }
+.home-primary__sub { display: block; font: 400 13.5px/1.5 var(--font-body); color: var(--on-dark-muted); margin-top: 6px; max-width: 460px; }
+.home-primary__cta { font: 600 14px var(--font-body); color: #fff; white-space: nowrap; border: 1.5px solid rgba(255,255,255,.35); border-radius: var(--radius-btn); padding: 11px 18px; flex: none; }
+
+/* Exploration door grid */
+.home-doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; margin-top: 16px; }
+.home-door { display: flex; flex-direction: column; gap: 10px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 22px 24px; text-decoration: none; transition: box-shadow .2s, transform .2s; }
+.home-door:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateY(-2px); }
+.home-door__eyebrow { font: 700 9.5px/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.home-door__q { font: 600 19px/1.3 var(--font-serif); color: var(--ink); text-wrap: pretty; }
+.home-door__desc { font: 400 13px/1.55 var(--font-body); color: var(--secondary); text-wrap: pretty; }
+
+/* mini previews */
+.viz-pos { position: relative; display: block; height: 30px; }
+.viz-pos__line { position: absolute; top: 13px; left: 2%; right: 2%; height: 2px; border-radius: 2px; background: var(--track); }
+.viz-pos__dot { position: absolute; top: 14px; width: 16px; height: 16px; border-radius: 50%; transform: translate(-50%, -50%); border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.viz-bar { display: flex; height: 22px; border-radius: 6px; overflow: hidden; gap: 2px; }
+.viz-bar span:nth-child(1) { width: 72%; background: var(--stammer-bg); }
+.viz-bar span:nth-child(2) { width: 19%; background: var(--delvis-bg); }
+.viz-bar span:nth-child(3) { width: 9%; background: var(--invantar-bg); }
+.viz-sprak { font: 400 15px/1.45 var(--font-serif); font-style: italic; color: var(--body); }
+.viz-galtan { position: relative; display: block; height: 52px; background: var(--card); border: 1px solid var(--soft-border-2); border-radius: var(--radius-btn); }
+.viz-galtan__h { position: absolute; left: 10%; right: 10%; top: 50%; height: 1px; background: var(--ruler); }
+.viz-galtan__v { position: absolute; top: 15%; bottom: 15%; left: 50%; width: 1px; background: var(--ruler); }
+.viz-galtan__dot { position: absolute; width: 13px; height: 13px; border-radius: 50%; transform: translate(-50%, -50%); border: 1.5px solid #fff; }
+
+.home-teaser { display: block; background: var(--rail-bg); border: 1px solid var(--soft-border-2); border-radius: var(--radius-card); padding: 20px 24px; margin-top: 24px; text-decoration: none; }
+.home-teaser:hover { border-color: var(--ruler); }
+.home-teaser__h { font: 600 16px/1.3 var(--font-serif); color: var(--ink); }
+.home-teaser__p { display: block; font: 400 13px/1.6 var(--font-body); color: var(--secondary); margin-top: 6px; max-width: 640px; text-wrap: pretty; }
+.home-teaser__p b { font-weight: 600; color: var(--ink); }
+.home-source { font: 400 11px/1.5 var(--font-mono); color: var(--faint); margin-top: 28px; }

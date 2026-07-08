@@ -1,20 +1,34 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
-> **Last updated:** 2026-07-03
-> **Current sprint:** Sprint 3.2 – Polish, SEO, public launch
-> **Sprint dates:** 2026-04-06 → TBD
+> **Last updated:** 2026-07-08
+> **Current sprint:** Redesign 2026 — lens-based rebuild (Fas 0–6) ✅ klar, mergad till master
+> **Sprint dates:** 2026-07-06 → 2026-07-08
 
 ---
 
-## Current Sprint: Sprint 3.2 – Polish, SEO, public launch
+## Current Sprint: Redesign 2026 — lins-baserad ombyggnad (Fas 0–6) ✅
 
-| #   | Task                                          | Status  | Notes |
-|-----|-----------------------------------------------|---------|-------|
-| 3.2 | Polish, SEO, public launch before Sept 2026   | 🔄 In Progress | Scope TBD |
-| 8.1 | Diskurs view — fas 1 pilot                    | ✅ Done | diskurs.html + diskurs.js; SD/S/V on rättsväsende + migration; floating signifier comparison panel |
-| 9.1 | Pilotloop: evaluator-optimizer för datauppdatering | ✅ Done | scripts/data-loop.sh — 13 voting.json-poster uppdaterade, PASS iter 8/8, $8.54 av $10; PR mot master (granskas av Niklas, ej mergad); DEC-007 |
+Hela sajten återskapad ur den designgodkända omdesignen (handoff/-prototyperna) i den befintliga
+vanilla-stacken, som en översättning — inte en nygenerering. Levererad som en PR per fas (#22–#27),
+mergad i ordning. Nya sajten bor under `app/`; rot-`index.html` omdirigerar dit.
 
-**Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
+| Fas | Lins / yta | Status | PR | Notiser |
+|-----|-----------|--------|----|---------|
+| 0 | Skelett: shell, tokens, delad jämför-mekanik, nav-synk | ✅ Done | (tidigare) | constants.js, tokens.css, shell.css/js, compare-state.js, _shell.html + sync-shell.mjs |
+| 1 | GAL-TAN-lins | ✅ Done | #22 | data/galtan-view.json; spår+ghost+intro-svep; **stat/annotering data-härledd (L störst drift, ej S)** |
+| 2 | Position-lins | ✅ Done | #23 | bisvärm-kollision "3a", otydlig=streckad ring, citatkort; data/positions.json |
+| 3 | Säger vs gör-lins | ✅ Done | #24 | trovärdighetsfix: synlig fördelning + framlyfta avvikelser; data/voting.json |
+| 4 | Språk-lins | ✅ Done | #25 | Begrepp↔Parti, neutral GAL-Mitt-TAN-spektrum; städade discourse.json (v0.5.1) |
+| 5 | Valkompass | ✅ Done | #26 | två-lins-matchning (metodik v1); **seed-set 10 frågor, full 42+8 = copy-pass** |
+| 6 | Startsida + Om metoden + korslänkar + silo-retirering | ✅ Done | #27 | rot→/app/-omdirigering; **full app/→rot-promotion = avsiktligt efterföljande cutover** |
+
+**Öppna beslut (kräver Niklas):**
+1. **Fas 1** — S:s motiveringsprosa i galtan-view.json säger "störst TAN-drift", men koordinaterna ger L. Justera koordinater eller prosa (copy-pass).
+2. **Fas 5** — full frågeuppsättning (42 sakfrågor + 8 begrepp) kräver författade neutrala påståenden/alternativ; engine skalar via data/compass-questions.json.
+3. **Fas 6** — full promotion app/→rot (släppa /app/-prefix + skriva om ../data-sökvägar) + omdirigering av 6 kvarvarande gamla silo-filer.
+
+Tidigare löpande spår (Diskurs-pilot 8.1, datauppdateringsloop 9.1) är kvar i historiken nedan; den
+gamla flik-baserade sajten (spektrum/kluster/diskurs/hitta-parti/metod) är ersatt av de fem linserna.
 
 **Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
@@ -85,20 +99,24 @@
 
 ## What's Working Now
 
-Open `index.html` directly in browser — no server needed.
+Servera repo-roten (t.ex. `python -m http.server`) — linserna hämtar `../data/*.json`, så `file://` blockeras. `./commit.sh` stager inte `app/` automatiskt; `git add app/` manuellt före commit.
 
-- Site live at https://val26.leide.se
-- **6 vyer:** Spektrum, Kluster, Säger vs gör, GAL-TAN, Diskurs, Om metoden
-- **Diskurs-vy** (diskurs.html) — diskursprofiler per parti, nyckelbegrepp med laddningsanalys, jämförelse av flytande signifikanter (trygghet/ansvar/gemenskap) mellan SD, S, V; fas 1 pilot täcker rättsväsende + migration
-- **7 politikområden:** skola (6 ämnen), ekonomi (7), migration (5), försvar (6), klimat (6), vård (6), demokrati (6) — totalt 42 ämnen, 336 partipositioner
-- **GAL-TAN-vy** (gal-tan.html) — SVG scatter plot med rörelsestigar, klicka parti för att dimma övriga + visa detaljpanel med CHES-data
-- **Säger vs gör-vy** (sager-vs-gor.html) — jämför partiernas löften med riksdagsvoteringar, per fråga och per parti
-- **voting.json** med full täckning: 7 areas × alla topics × 8 partier = 336 entries, noll ej-granskat
-- **Analystext** för alla 7 areas — visas som punktlista ovan innehållet i spektrum- och klustervyerna
-- Spektrum-vy med horisontella skalor, hover-tooltip, klickbar detaljpanel med källlänkar
-- Kluster-vy med animerade grupperingar, dynamiska grupper per fråga
-- Mobilvänlig layout (375px+)
-- Reformkarta design language (mörk header, DM Sans + Source Serif 4)
+- Site live at https://val26.leide.se — rot omdirigerar till `/app/` (nya lins-sajten)
+- **Startsida** (`app/index.html`) — hero med statistik, Valkompass som primär ingång + fyra lins-dörrar med neutrala mini-förhandsvisningar, Om metoden-teaser
+- **Fem linser** (nav "Din fråga", Valkompass först):
+  - **Valkompass** (`app/valkompass.html`) — två-lins-matchning (Tycker/Tänker), 5-gradig skala, områdesviktning, två resultatgrafer, korslänk → Position/Språk, inga svar sparas. Motor i `app/js/valkompass.js`, frågor i `data/compass-questions.json` (seed 6+4)
+  - **Position** (`app/position.html`) — frågespecifika 0–100-skalor, bisvärm-kollision, otydlig=streckad, citatkort; `data/positions.json`
+  - **Säger vs gör** (`app/sager-vs-gor.html`) — fördelningsstapel + framlyfta avvikelser (Säger↔Gör); `data/voting.json`
+  - **Språk** (`app/sprak.html`) — Begrepp↔Parti, neutral GAL-Mitt-TAN-spektrum, diskursprofiler; `data/discourse.json` v0.5.1
+  - **GAL-TAN** (`app/gal-tan.html`) — scatter 2019–2026 med spår/ghost/intro-svep; `data/galtan-view.json`
+- **Om metoden** (`app/om-metoden.html`) — neutralitetsprinciper, områdes-toner, datakällor, förbehåll, och kompassens formler öppet redovisade (glaslåda)
+- **Delad jämför-mekanik** — CompareState (sessionStorage) speglar valda partier mellan linser
+- **Delade moduler:** `app/js/constants.js` (VAL26: partier/områden/nav), `app/css/tokens.css` (SSOT-tokens), `app/css/shell.css` + `shell.js` (rail/nav/count-up/toner), nav-synk via `_shell.html` + `scripts/sync-shell.mjs --check`
+- **Data:** 8 partier, 7 politikområden × 42 ämnen (positions.json), voting.json 336 entries (0 ej-granskat), discourse.json 20 flytande signifikanter, galtan-view.json CHES 2019/2024 + 2026 egen bedömning
+- Neutralitet: endast partifärger mättade; axlar/linjaler/områdes-toner grå; otydligt märks; inga betygsgradienter
+- Mobilvänlig (rail → drawer under 920px)
+
+**Ersatt (gamla flik-sajten, oänkt från nya navet):** spektrum/kluster/diskurs/hitta-parti/metod (`index.html` gamla SPA, `kluster.html`, `diskurs.html`, `hitta-parti.html`, `metod.html`). Full borttagning/omdirigering av dessa + app/→rot-promotion är öppet beslut 3 ovan.
 
 ---
 

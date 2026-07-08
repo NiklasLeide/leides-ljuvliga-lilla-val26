@@ -6,7 +6,7 @@
 
 /* Year segmented control */
 .gt-year-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
-.gt-year-seg { display: flex; gap: 3px; background: #ece9e2; padding: 3px; border-radius: 9px; }
+.gt-year-seg { display: flex; gap: 3px; background: var(--seg-track); padding: 3px; border-radius: 9px; }
 .gt-year-btn {
   appearance: none; border: none; background: transparent; color: var(--muted);
   font: 700 13.5px var(--font-body); font-variant-numeric: tabular-nums;
@@ -24,7 +24,7 @@
 }
 .gt-plot {
   position: relative; aspect-ratio: 1; max-width: 640px; margin: 0 auto;
-  background: #fdfcfa; border: 1px solid #eeebe4; border-radius: var(--radius-inner);
+  background: var(--plot-bg); border: 1px solid var(--plot-border); border-radius: var(--radius-inner);
 }
 .gt-axis {
   position: absolute; font: 700 10px var(--font-body); letter-spacing: .07em;
@@ -61,7 +61,7 @@
 .gt-annot {
   position: absolute; left: 8%; top: 70%; max-width: 34%;
   font: 400 clamp(10px, 1.8vw, 12.5px)/1.45 var(--font-serif); font-style: italic;
-  background: var(--card); border: 1px solid #e0dcd3; padding: 7px 11px;
+  background: var(--card); border: 1px solid var(--border-strong); padding: 7px 11px;
   border-radius: var(--radius-btn); box-shadow: 0 1px 3px rgba(0,0,0,.05);
 }
 .gt-annot b { font-style: normal; }

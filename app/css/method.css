@@ -1,0 +1,26 @@
+/* Om metoden — prose page. The compass is a glass box: every formula is shown. */
+.method { max-width: 760px; }
+.method h1 { margin-top: 0; }
+.method h2 { margin: 40px 0 12px; font: 600 22px/1.25 var(--font-serif); letter-spacing: -.01em; }
+.method p { font: 400 14.5px/1.7 var(--font-body); color: var(--ink-2, #3d3a34); max-width: 640px; text-wrap: pretty; }
+.method ul { margin: 0; padding-left: 20px; font: 400 14.5px/1.8 var(--font-body); color: var(--ink-2, #3d3a34); max-width: 640px; }
+.method b { font-weight: 600; }
+.method .lens-intro { margin: 12px 0 0; max-width: 640px; }
+
+.method-tones { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.method-tone { display: flex; flex-direction: column; gap: 5px; width: 104px; }
+.method-tone__sw { height: 40px; border-radius: var(--radius-btn); border: 1px solid rgba(0,0,0,.05); }
+.method-tone__label { font: 500 10px var(--font-body); color: var(--secondary); }
+.method-status { margin: 16px 0 0; }
+.status-chip { font-weight: 700; font-size: 11px; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: .04em; }
+.status-chip--ok { background: var(--stammer-bg); color: var(--stammer-text); }
+.status-chip--partial { background: var(--delvis-bg); color: var(--delvis-text); }
+.status-chip--wait { background: var(--invantar-bg); color: var(--invantar-text); }
+
+.method-lenses { display: flex; flex-direction: column; gap: 10px; max-width: 640px; }
+.method-lens { display: flex; align-items: baseline; gap: 12px; text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.method-lens__q { font: 600 16px/1.35 var(--font-serif); color: var(--ink); }
+.method-lens__lens { font: 600 9.5px/1 var(--font-body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-left: auto; white-space: nowrap; flex: none; }
+
+.method-formula { background: var(--rail-bg); border: 1px solid var(--soft-border-2); border-radius: var(--radius-inner); padding: 14px 16px; margin: 12px 0; font: 400 12.5px/1.6 var(--font-mono); color: var(--body); }
+.method-source { font: 400 11px/1.5 var(--font-mono); color: var(--faint); margin-top: 44px; }
