@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const APP = join(ROOT, 'app');
+const APP = ROOT;   // pages promoted app/ → root (2026-07-08)
 const START = '<!-- SHELL:NAV START -->';
 const END = '<!-- SHELL:NAV END -->';
 const check = process.argv.includes('--check');
@@ -25,15 +25,17 @@ function block(text, file) {
   return { i, j: j + END.length, inner: text.slice(i, j + END.length) };
 }
 
-const shell = readFileSync(join(APP, '_shell.html'), 'utf8');
+const rd = (f) => readFileSync(f, 'utf8').replace(/\r\n/g, '\n');  // normalize CRLF (Windows/autocrlf)
+const shell = rd(join(APP, '_shell.html'));
 const nav = block(shell, '_shell.html').inner;
 
-const pages = readdirSync(APP).filter((f) => f.endsWith('.html') && f !== '_shell.html');
+const pages = readdirSync(APP).filter((f) =>
+  f.endsWith('.html') && f !== '_shell.html' && rd(join(APP, f)).includes(START));
 let changed = 0, stale = [];
 
 for (const page of pages) {
   const p = join(APP, page);
-  const text = readFileSync(p, 'utf8');
+  const text = rd(p);
   const b = block(text, page);
   if (b.inner === nav) continue;
   stale.push(page);

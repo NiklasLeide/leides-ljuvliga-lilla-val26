@@ -10,7 +10,8 @@
 
 Hela sajten återskapad ur den designgodkända omdesignen (handoff/-prototyperna) i den befintliga
 vanilla-stacken, som en översättning — inte en nygenerering. Levererad som en PR per fas (#22–#27),
-mergad i ordning. Nya sajten bor under `app/`; rot-`index.html` omdirigerar dit.
+mergad i ordning. **Cutover klar (2026-07-08):** sajten bor nu i repo-roten (app/→rot-promotion);
+gamla silos omdirigerar till motsvarande lins.
 
 | Fas | Lins / yta | Status | PR | Notiser |
 |-----|-----------|--------|----|---------|
@@ -20,12 +21,12 @@ mergad i ordning. Nya sajten bor under `app/`; rot-`index.html` omdirigerar dit.
 | 3 | Säger vs gör-lins | ✅ Done | #24 | trovärdighetsfix: synlig fördelning + framlyfta avvikelser; data/voting.json |
 | 4 | Språk-lins | ✅ Done | #25 | Begrepp↔Parti, neutral GAL-Mitt-TAN-spektrum; städade discourse.json (v0.5.1) |
 | 5 | Valkompass | ✅ Done | #26 | två-lins-matchning (metodik v1); **seed-set 10 frågor, full 42+8 = copy-pass** |
-| 6 | Startsida + Om metoden + korslänkar + silo-retirering | ✅ Done | #27 | rot→/app/-omdirigering; **full app/→rot-promotion = avsiktligt efterföljande cutover** |
+| 6 | Startsida + Om metoden + korslänkar + silo-retirering | ✅ Done | #27 | **cutover klar: app/→rot-promotion + silo-omdirigeringar (2026-07-08)** |
 
 **Öppna beslut (kräver Niklas):**
-1. **Fas 1** — S:s motiveringsprosa i galtan-view.json säger "störst TAN-drift", men koordinaterna ger L. Justera koordinater eller prosa (copy-pass).
-2. **Fas 5** — full frågeuppsättning (42 sakfrågor + 8 begrepp) kräver författade neutrala påståenden/alternativ; engine skalar via data/compass-questions.json.
-3. **Fas 6** — full promotion app/→rot (släppa /app/-prefix + skriva om ../data-sökvägar) + omdirigering av 6 kvarvarande gamla silo-filer.
+1. ~~**Fas 1** — S:s "störst TAN-drift"-prosa vs koordinaterna~~ ✅ **LÖST 2026-07-08** — faktafel (ej copy-pass): prosan rättad, störst-etiketten flyttad till L (som koordinaterna ger). Stat var redan data-härledd korrekt.
+2. **Fas 5** — full frågeuppsättning: ✅ **genererad, väntar din granskning** — 37 sakfrågor + 8 begrepp i PR #28 (branch `kompass-fragor-full`), 8 neutralitetsposter flaggade i drafts/KOMPASS-fragor-granskning.md. Mergas ej förrän du godkänt formuleringarna.
+3. ~~**Fas 6** — full app/→rot-promotion + silo-omdirigering~~ ✅ **KLAR 2026-07-08** — sajten flyttad till rot, ../data→data, 4 silos (diskurs/hitta-parti/kluster/metod) omdirigerar; gamla gal-tan/sager-vs-gor/index överskrivna av nya linser.
 
 Tidigare löpande spår (Diskurs-pilot 8.1, datauppdateringsloop 9.1) är kvar i historiken nedan; den
 gamla flik-baserade sajten (spektrum/kluster/diskurs/hitta-parti/metod) är ersatt av de fem linserna.
@@ -99,9 +100,9 @@ gamla flik-baserade sajten (spektrum/kluster/diskurs/hitta-parti/metod) är ersa
 
 ## What's Working Now
 
-Servera repo-roten (t.ex. `python -m http.server`) — linserna hämtar `../data/*.json`, så `file://` blockeras. `./commit.sh` stager inte `app/` automatiskt; `git add app/` manuellt före commit.
+Servera repo-roten (t.ex. `python -m http.server`) — linserna hämtar `data/*.json`, så `file://` blockeras. `./commit.sh` stager inte underkataloger (`css/`, `js/`, `scripts/`) automatiskt; `git add css/ js/` manuellt före commit.
 
-- Site live at https://val26.leide.se — rot omdirigerar till `/app/` (nya lins-sajten)
+- Site live at https://val26.leide.se — roten serverar nya lins-sajten direkt (ingen /app/-omdirigering längre)
 - **Startsida** (`app/index.html`) — hero med statistik, Valkompass som primär ingång + fyra lins-dörrar med neutrala mini-förhandsvisningar, Om metoden-teaser
 - **Fem linser** (nav "Din fråga", Valkompass först):
   - **Valkompass** (`app/valkompass.html`) — två-lins-matchning (Tycker/Tänker), 5-gradig skala, områdesviktning, två resultatgrafer, korslänk → Position/Språk, inga svar sparas. Motor i `app/js/valkompass.js`, frågor i `data/compass-questions.json` (seed 6+4)
@@ -116,7 +117,7 @@ Servera repo-roten (t.ex. `python -m http.server`) — linserna hämtar `../data
 - Neutralitet: endast partifärger mättade; axlar/linjaler/områdes-toner grå; otydligt märks; inga betygsgradienter
 - Mobilvänlig (rail → drawer under 920px)
 
-**Ersatt (gamla flik-sajten, oänkt från nya navet):** spektrum/kluster/diskurs/hitta-parti/metod (`index.html` gamla SPA, `kluster.html`, `diskurs.html`, `hitta-parti.html`, `metod.html`). Full borttagning/omdirigering av dessa + app/→rot-promotion är öppet beslut 3 ovan.
+**Ersatt (gamla flik-sajten):** gamla `index.html`-SPA, `gal-tan.html`, `sager-vs-gor.html` överskrivna av de nya linserna (samma filnamn); `diskurs.html`→sprak, `hitta-parti.html`→valkompass, `kluster.html`→position, `metod.html`→om-metoden omdirigerar. Gamla assets (`app.js`, `style.css`, `diskurs.js`, `hitta-parti.js`, `kluster.js`) kvar i repot men orefererade — kan städas separat.
 
 ---
 

@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Språk · Partiernas ståndpunkter 2026</title>
-<link rel="canonical" href="https://val26.leide.se/app/sprak.html">
+<title>Position · Partiernas ståndpunkter 2026</title>
+<link rel="canonical" href="https://val26.leide.se/position.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/shell.css">
-<link rel="stylesheet" href="css/sprak.css">
+<link rel="stylesheet" href="css/position.css">
 </head>
-<body data-lens="sprak">
+<body data-lens="position">
 <!-- SHELL:NAV START -->
 <a class="skip-link" href="#main">Hoppa till innehåll</a>
 
@@ -50,62 +50,31 @@
 </div>
 <!-- SHELL:NAV END -->
 <div class="shell-main">
-  <header class="lens-band" id="sprak-header">
+  <header class="lens-band" id="pos-header">
     <div class="lens-band__inner" id="main">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-        <span class="lens-pill">Lins · Språk</span><span class="lens-updated">Uppdaterad juli 2026</span>
+        <span class="lens-pill">Lins · Position</span><span class="lens-updated">Uppdaterad juli 2026</span>
       </div>
-      <div class="sprak-doors">
-        <button class="sprak-door" type="button" data-mode="begrepp">
-          <span class="sprak-door__label">Utgå från ett begrepp</span>
-          <span class="sprak-door__sub">Ett omstritt ord → alla partiers innebörd</span>
-        </button>
-        <button class="sprak-door" type="button" data-mode="parti">
-          <span class="sprak-door__label">Utgå från ett parti</span>
-          <span class="sprak-door__sub">Ett partis diskursprofil per sakområde</span>
-        </button>
-      </div>
-      <h1 class="lens-h1" id="sprak-h1" style="max-width:620px">Samma ord — olika innebörd</h1>
-      <p class="lens-intro" id="sprak-intro"></p>
+      <h1 class="lens-h1" style="max-width:620px">Var står partierna i sakfrågorna?</h1>
+      <p class="lens-intro">Varje fråga är en skala med sakligt formulerade ändpunkter — en mätsticka, inte ett betyg. Noderna är partiernas positioner; streckad ring betyder otydlig eller villkorad position.</p>
       <div class="stat-row">
-        <div class="stat"><span class="stat__val" id="sprak-stat1">0</span><span class="stat__label" id="sprak-stat1-label"></span></div>
-        <div class="stat"><span class="stat__val" id="sprak-stat2">0</span><span class="stat__label" id="sprak-stat2-label"></span></div>
-        <div class="stat"><span class="stat__val" id="sprak-stat3">0</span><span class="stat__label" id="sprak-stat3-label"></span></div>
+        <div class="stat"><span class="stat__val" id="pos-stat-topics">0</span><span class="stat__label">frågor i <span id="pos-stat-area">skola</span></span></div>
+        <div class="stat"><span class="stat__val" id="pos-stat-pos">0</span><span class="stat__label">placerade positioner</span></div>
+        <div class="stat"><span class="stat__val" id="pos-stat-unclear">0</span><span class="stat__label">markerade som otydliga</span></div>
       </div>
     </div>
   </header>
   <main class="shell-wrap">
-
-    <div id="sprak-mode-a">
-      <div class="sprak-pill-row" id="sprak-concept-pills"></div>
-      <div class="sprak-concept-head">
-        <div class="sprak-concept-word" id="sprak-concept-word"></div>
-        <div class="sprak-concept-desc" id="sprak-concept-desc"></div>
-        <div class="sprak-coverage" id="sprak-concept-coverage"></div>
-      </div>
-      <div class="sprak-columns" id="sprak-columns"></div>
-      <div class="sprak-missing" id="sprak-missing" hidden></div>
-      <div class="sprak-commentary" id="sprak-commentary" hidden>
-        <div class="sprak-label" style="margin-top:0">Analytisk kommentar</div>
-        <div class="sprak-commentary__text" id="sprak-commentary-text"></div>
-      </div>
-      <div class="sprak-source">Källa: partiernas program, tal och voteringar · begreppsanalys egen diskursanalys (v0.5.1).</div>
-    </div>
-
-    <div id="sprak-mode-c" hidden>
-      <div class="sprak-cmp-label">Välj ett parti — profilen byggs ur citatkatalogerna.</div>
-      <div class="chip-row" id="sprak-party-chips"></div>
-      <div class="sprak-profile" id="sprak-profile"></div>
-      <div class="area-tabs" id="sprak-area-tabs-c"></div>
-      <div class="sprak-area-content" id="sprak-area-content"></div>
-      <div class="sprak-source">Källa: partiernas citatkataloger juli 2026 — profiler och kommentarer är egen diskursanalys.</div>
-    </div>
-
+    <div class="area-tabs pos-area-tabs" id="pos-area-tabs"></div>
+    <div class="pos-cmp-label">Tryck på partier för att jämföra — deras positioner får citatkort under varje skala.</div>
+    <div class="chip-row pos-chips" id="pos-chips"></div>
+    <div id="pos-topics"></div>
+    <div class="pos-source">Källa: partiprogram, budgetmotioner och voteringar 2022–2026 · skalvärden egen bedömning</div>
   </main>
 </div>
 <script src="js/constants.js"></script>
 <script src="js/compare-state.js"></script>
 <script src="js/shell.js"></script>
-<script src="js/sprak.js"></script>
+<script src="js/position.js"></script>
 </body>
 </html>
