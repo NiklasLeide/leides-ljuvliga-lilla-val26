@@ -168,8 +168,8 @@
 
   function boot() {
     Promise.all([
-      fetch('../data/voting.json').then(function (r) { if (!r.ok) throw new Error('voting ' + r.status); return r.json(); }),
-      fetch('../data/positions.json').then(function (r) { if (!r.ok) throw new Error('positions ' + r.status); return r.json(); })
+      fetch('data/voting.json').then(function (r) { if (!r.ok) throw new Error('voting ' + r.status); return r.json(); }),
+      fetch('data/positions.json').then(function (r) { if (!r.ok) throw new Error('positions ' + r.status); return r.json(); })
     ]).then(function (res) {
       VOTING = res[0].data;
       res[1].areas.forEach(function (a) {

@@ -327,8 +327,8 @@
 
   function boot() {
     Promise.all([
-      fetch('../data/compass-questions.json').then(function (r) { if (!r.ok) throw new Error('questions ' + r.status); return r.json(); }),
-      fetch('../data/positions.json').then(function (r) { if (!r.ok) throw new Error('positions ' + r.status); return r.json(); })
+      fetch('data/compass-questions.json').then(function (r) { if (!r.ok) throw new Error('questions ' + r.status); return r.json(); }),
+      fetch('data/positions.json').then(function (r) { if (!r.ok) throw new Error('positions ' + r.status); return r.json(); })
     ]).then(function (res) {
       QUESTIONS = res[0].questions;
       res[1].areas.forEach(function (a) {
