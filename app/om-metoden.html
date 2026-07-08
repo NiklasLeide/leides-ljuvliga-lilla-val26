@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/shell.css">
+<link rel="stylesheet" href="css/method.css">
 </head>
 <body data-lens="om-metoden">
 <!-- SHELL:NAV START -->
@@ -49,18 +50,90 @@
 </div>
 <!-- SHELL:NAV END -->
 <div class="shell-main">
-  <main class="shell-wrap" id="main" style="max-width:760px">
-    <h1 class="lens-h1" style="margin-top:0">Om metoden</h1>
-    <p class="lens-intro">Neutralitetsprinciper, områdes-toner, datakällor, förbehåll och
-      valkompassens formler. Den fullständiga metodsidan byggs i Fas 6.</p>
-    <div class="phase-stub" style="margin-top:24px">
-      <strong>Om metoden byggs i Fas 6.</strong> Innehållet återskapas från
-      <em>Om metoden.dc.html</em> och kompassens metodavsnitt, med alla formler öppet redovisade.
+  <main class="shell-wrap method" id="main">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <span class="lens-pill" style="background:var(--ink);color:#fff">Om metoden</span>
+      <span class="lens-updated">Uppdaterad juli 2026</span>
     </div>
+    <h1 class="lens-h1">Så är guiden gjord</h1>
+    <p class="lens-intro">Guiden redovisar vad riksdagspartierna säger och gör — den betygsätter inte, rekommenderar inget parti och drar inga slutsatser åt dig. Här är källorna, principerna och gränserna.</p>
+
+    <h2>Neutralitetsprinciper</h2>
+    <ul>
+      <li><b>Färg värderar aldrig en position.</b> Endast partiernas officiella färger är mättade; axlar och linjaler är alltid grå.</li>
+      <li><b>Axlar är linjaler, inte betyg.</b> På GAL-TAN-skalan är ingen riktning bättre än den andra.</li>
+      <li><b>Skaländpunkter är sakliga formuleringar</b> — aldrig laddade ord.</li>
+      <li><b>Frånvaro redovisas.</b> Att ett parti inte använder ett begrepp, eller att en fråga inte nått votering, sägs uttryckligen.</li>
+      <li><b>Otydliga positioner märks</b> med streckad ring och sänkt ton — de döljs inte och gissas inte.</li>
+      <li><b>Citat är källhänvisade</b> ned på uttalandenivå där materialet tillåter.</li>
+    </ul>
+
+    <h2>Färg som orientering</h2>
+    <p>Varje sakområde har en egen lågmätt bakgrundston som följer med genom alla linser. Tonerna har identisk ljushet och färgmättnad — ingen ton "vinner". Linser utan sakområde (som GAL-TAN-kartan) är neutralt tonade.</p>
+    <div class="method-tones" id="method-tones"></div>
+    <p class="method-status">Utöver det används tre statusfärger med fast innebörd i hela guiden:
+      <span class="status-chip status-chip--ok">stämmer</span>
+      <span class="status-chip status-chip--partial">delvis / avviker</span>
+      <span class="status-chip status-chip--wait">inväntar votering</span>
+      — de beskriver kongruens mellan ord och handling, aldrig politisk riktning.</p>
+
+    <h2>Fem linser</h2>
+    <div class="method-lenses" id="method-lenses"></div>
+
+    <h2>Valkompassen — formlerna öppet</h2>
+    <p>Kompassen är en glaslåda: två oberoende linser ger två separata resultatgrafer, aldrig ett sammanvägt "rätt" parti. Säger-vs-gör ingår inte i matchningen — att väga in röstkonsekvens vore att implicit värdera trovärdighet.</p>
+    <p><b>Tycker som du (position).</b> Ditt 5-gradiga svar placeras på samma 0–100-skala som partiernas positioner. Per fråga mäts avståndet, områdesviktat, och summan vänds till närhet:</p>
+    <div class="method-formula">närhet(parti) = 100 − Σ( vikt&#8202;·&#8202;|ditt&nbsp;svar − partiets&nbsp;position| ) / Σ&nbsp;vikt</div>
+    <p><b>Tänker som du (diskurs).</b> Ditt svar motsvarar en innebörd. Partiets poäng = andelen av dina besvarade begreppsfrågor där partiet delar din valda innebörd — räknat <b>endast</b> över begrepp partiet självt laddar:</p>
+    <div class="method-formula">närhet(parti) = matchande begrepp / begrepp&nbsp;partiet&nbsp;laddar&nbsp;·&nbsp;100</div>
+    <ul>
+      <li><b>Symmetrisk matematik.</b> Samma linjal för alla partier — inget parti gynnas av hur poängen räknas.</li>
+      <li><b>"Vet inte / hoppa över" utesluts helt.</b> En hoppad fråga räknas inte alls — annars skulle hopp godtyckligt gynna mittenpartier.</li>
+      <li><b>Partier utan laddning räknas rättvist.</b> Ett parti som inte använder ett begrepp matchas inte på den frågan; 0&nbsp;% betyder äkta icke-överlapp, inte tunn täckning.</li>
+      <li><b>Områdesviktning</b> påverkar bara Tycker-grafen. Begreppsfrågorna viktas inte.</li>
+      <li><b>Inga svar sparas.</b> Matchningen sker i din webbläsare; delningslänken bär bara kompassen, aldrig dina enskilda svar.</li>
+    </ul>
+
+    <h2>Datakällor</h2>
+    <ul>
+      <li><b>CHES</b> (Chapel Hill Expert Survey) 2019 och 2024 — verifierad forskardata för partiernas GAL-TAN- och vänster–höger-positioner.</li>
+      <li><b>Riksdagens voteringar 2022–2026</b> — utskottsbetänkanden och kammarens omröstningar, för jämförelsen mellan ord och handling.</li>
+      <li><b>Partiernas egna texter</b> — program, budgetmotioner, tal och webbtexter, samlade i citatkataloger (juli 2026).</li>
+      <li><b>Egen bedömning 2026</b> — positioner och analyser för 2026 är redaktionens bedömning utifrån ovanstående. De märks alltid som sådana och blandas aldrig ihop med forskardatat.</li>
+    </ul>
+
+    <h2>Gränser och förbehåll</h2>
+    <ul>
+      <li>Jämförelsen ord–handling gäller frågor som faktiskt nått votering — att det mesta "stämmer" är väntat, eftersom regeringspartier röstar för sin egen politik.</li>
+      <li>Citatkatalogerna är ett urval. Att ett parti inte använder ett begrepp betyder "inte i detta material", inte att partiet aldrig använder det — täckningsnoter anger urvalet per begrepp.</li>
+      <li>Diskursanalysen (Språk-linsen) är tolkande till sin natur. Placeringar och kommentarer är redaktionens, med citaten öppet redovisade så att du kan göra en annan tolkning.</li>
+    </ul>
+
+    <div class="method-source">Kontakt och rättelser: via val26.leide.se</div>
   </main>
 </div>
 <script src="js/constants.js"></script>
 <script src="js/compare-state.js"></script>
 <script src="js/shell.js"></script>
+<script>
+  (function () {
+    var V = window.VAL26, d = document;
+    var toneHost = d.getElementById('method-tones');
+    ['rattsvasende','migration','klimat','ekonomi','demokrati','forsvar','skola','vard'].forEach(function (id) {
+      var a = V.AREAS[id]; if (!a) return;
+      var cell = d.createElement('div'); cell.className = 'method-tone';
+      var sw = d.createElement('div'); sw.className = 'method-tone__sw'; sw.style.background = V.areaTone(id);
+      var lb = d.createElement('span'); lb.className = 'method-tone__label'; lb.textContent = a.label;
+      cell.appendChild(sw); cell.appendChild(lb); toneHost.appendChild(cell);
+    });
+    var lensHost = d.getElementById('method-lenses');
+    V.NAV.forEach(function (n) {
+      var a = d.createElement('a'); a.className = 'method-lens'; a.href = n.href;
+      var q = d.createElement('span'); q.className = 'method-lens__q'; q.textContent = n.q;
+      var l = d.createElement('span'); l.className = 'method-lens__lens'; l.textContent = n.lens;
+      a.appendChild(q); a.appendChild(l); lensHost.appendChild(a);
+    });
+  })();
+</script>
 </body>
 </html>

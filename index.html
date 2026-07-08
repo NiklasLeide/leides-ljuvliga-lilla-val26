@@ -3,70 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partiernas ståndpunkter i 42 sakfrågor — Val 2026</title>
-  <meta name="description" content="Neutral sammanställning av riksdagspartiernas ståndpunkter i 42 sakfrågor — skola, ekonomi, migration, försvar, klimat, vård och demokrati. Inför valet 2026.">
+  <title>Partiernas ståndpunkter — Val 2026</title>
+  <meta name="description" content="Neutral guide till riksdagspartiernas ståndpunkter inför valet 2026 — sett genom fem linser.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://val26.leide.se/">
-  <meta property="og:title" content="Partiernas ståndpunkter i 42 sakfrågor — Val 2026">
-  <meta property="og:description" content="Neutral sammanställning av riksdagspartiernas ståndpunkter i 42 sakfrågor — skola, ekonomi, migration, försvar, klimat, vård och demokrati. Inför valet 2026.">
+  <meta property="og:title" content="Partiernas ståndpunkter — Val 2026">
+  <meta property="og:description" content="Neutral guide till riksdagspartiernas ståndpunkter inför valet 2026 — sett genom fem linser.">
   <meta property="og:image" content="https://val26.leide.se/og-image.png">
   <meta property="og:site_name" content="Val 2026 — Partiernas ståndpunkter">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- Omdesignen (2026) bor under /app/. Denna sida omdirigerar dit. De gamla
+       silo-vyerna (spektrum/kluster/diskurs/hitta-parti/metod m.fl.) är ersatta
+       av de fem linserna där. Full promotion app/ → rot är ett avsiktligt
+       efterföljande steg (se PR), inte gjort här för att undvika massiv
+       sökvägsomskrivning mitt i granskningen. -->
+  <link rel="canonical" href="https://val26.leide.se/app/">
+  <meta http-equiv="refresh" content="0; url=app/index.html">
+  <script>location.replace('app/index.html' + location.search + location.hash);</script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px;
+      background: #f8f7f4; color: #211f1c; font: 400 16px/1.6 'DM Sans', system-ui, sans-serif; text-align: center; }
+    a { color: #211f1c; font-weight: 600; }
+  </style>
 </head>
 <body>
+  <p>Guiden har flyttat.<br><a href="app/index.html">Fortsätt till Partiernas ståndpunkter 2026 →</a></p>
 
-  <div class="top-bar">
-    <header>
-      <div class="header-inner">
-        <div class="header-badge">Kunskapsyta · 2026 · Privatprojekt av Niklas Leide</div>
-        <h1>Partiernas ståndpunkter</h1>
-        <p>Neutral sammanställning inför valet 2026</p>
-      </div>
-    </header>
-
-    <nav class="tab-nav" aria-label="Vyer">
-      <button class="tab active" data-view="spectrum">Spektrum</button>
-      <button class="tab" data-view="cluster">Kluster</button>
-      <button class="tab" data-view="sager-vs-gor">Säger vs gör</button>
-      <button class="tab" data-view="gal-tan">GAL-TAN</button>
-      <button class="tab" data-view="diskurs">Diskurs</button>
-      <button class="tab" data-view="hitta-parti">Hitta ditt parti</button>
-      <button class="tab" data-view="metod">Om metoden</button>
-    </nav>
-  </div>
-
-  <main>
-    <div class="app-layout">
-      <aside class="app-left">
-        <div id="left-nav"></div>
-      </aside>
-      <div class="app-center">
-        <div id="area-analysis"></div>
-        <div id="spectrum-container"></div>
-      </div>
-      <aside class="app-right">
-        <div id="detail-panel" aria-live="polite"></div>
-      </aside>
-    </div>
-  </main>
-
-  <footer>
-    Partipositioner baserade på partiprogram, valmanifest och riksdagsmotioner<br>
-    Kontrollera mot originaldokumenten. Dela gärna.<br>
-    <a href="metod.html#integritet">Ingen personlig data samlas in</a> · <a href="https://github.com/NiklasLeide/leides-ljuvliga-lilla-val26" target="_blank" rel="noopener noreferrer">Öppen källkod på GitHub</a> · © 2026 Niklas Leide
-  </footer>
-
-  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
-
-  <script src="app.js"></script>
-
-  <!-- Cloudflare Web Analytics -->
+  <!-- Cloudflare Web Analytics (bevarad från gamla sajten) -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
           data-cf-beacon='{"token": "9d66c8f5b9da46078ca71ab819946f62"}'></script>
-
 </body>
 </html>

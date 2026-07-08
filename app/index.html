@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/shell.css">
+<link rel="stylesheet" href="css/home.css">
 </head>
 <body data-lens="">
 <!-- SHELL:NAV START -->
@@ -51,25 +52,90 @@
 <!-- SHELL:NAV END -->
 <div class="shell-main">
   <main class="shell-wrap" id="main">
-    <div style="max-width:680px">
+    <div class="home-hero">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
         <span class="lens-pill" style="background:var(--ink);color:#fff">Valet 2026</span>
         <span class="lens-updated">Uppdaterad juli 2026</span>
       </div>
-      <h1 style="margin:16px 0 0;font:600 clamp(32px,6vw,50px)/1.1 var(--font-serif);letter-spacing:-.015em;text-wrap:pretty">Vad partierna säger — och vad de gör</h1>
-      <p style="margin:14px 0 0;font:400 16px/1.65 var(--font-body);color:var(--body);text-wrap:pretty">En neutral guide till riksdagspartiernas ståndpunkter. Inga betyg, inga rekommendationer — partiernas egna färger är de enda värdeladdade färgerna här. Välj en fråga och granska själv.</p>
+      <h1>Vad partierna säger — och vad de gör</h1>
+      <p>En neutral guide till riksdagspartiernas ståndpunkter. Inga betyg, inga rekommendationer — partiernas egna färger är de enda värdeladdade färgerna här. Välj en fråga och granska själv.</p>
+      <div class="stat-row">
+        <div class="stat"><span class="stat__val" id="home-s1">8</span><span class="stat__label">riksdagspartier granskade</span></div>
+        <div class="stat"><span class="stat__val" id="home-s2">336</span><span class="stat__label">voteringar jämförda med orden</span></div>
+        <div class="stat"><span class="stat__val" id="home-s3">20</span><span class="stat__label">politiska begrepp analyserade</span></div>
+      </div>
     </div>
 
-    <div class="phase-stub" style="margin-top:36px">
-      <strong>Skelett på plats (Fas 0).</strong> Vänsterrads-navigationen, områdes-toner,
-      design-tokens och den delade jämför-mekaniken är byggda. Startsidans dörr-rutnät,
-      förhandsvisningar och statistik byggs i <strong>Fas 6</strong>. Välj en fråga i
-      navigeringen för att se respektive lins-skelett.
+    <a class="home-primary" href="valkompass.html">
+      <span>
+        <span class="home-primary__eyebrow">Din fråga · Valkompass</span>
+        <span class="home-primary__q">Vilket parti ligger närmast dig?</span>
+        <span class="home-primary__sub">Tio frågor, två oberoende linser — vad du tycker i sakfrågorna och hur du tänker om orden. Två grafer, aldrig ett enda svar.</span>
+      </span>
+      <span class="home-primary__cta">Starta kompassen →</span>
+    </a>
+
+    <div class="home-doors">
+      <a class="home-door" href="position.html">
+        <span class="home-door__eyebrow">Lins · Position</span>
+        <span class="home-door__q">Var står partierna i sakfrågorna?</span>
+        <span class="viz-pos" aria-hidden="true">
+          <span class="viz-pos__line"></span>
+          <span class="viz-pos__dot" style="left:10%;background:var(--party-v)"></span>
+          <span class="viz-pos__dot" style="left:26%;background:var(--party-s)"></span>
+          <span class="viz-pos__dot" style="left:52%;background:var(--party-c)"></span>
+          <span class="viz-pos__dot" style="left:78%;background:var(--party-m)"></span>
+          <span class="viz-pos__dot" style="left:92%;background:var(--party-sd)"></span>
+        </span>
+        <span class="home-door__desc">Skalor med sakliga ändpunkter, fråga för fråga — med partiernas egna formuleringar som källa.</span>
+      </a>
+      <a class="home-door" href="sager-vs-gor.html">
+        <span class="home-door__eyebrow">Lins · Säger vs gör</span>
+        <span class="home-door__q">Håller orden när det blir votering?</span>
+        <span class="viz-bar" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="home-door__desc">Uttalanden ställda mot faktiska riksdagsvoteringar — det intressanta är där det glappar.</span>
+      </a>
+      <a class="home-door" href="sprak.html">
+        <span class="home-door__eyebrow">Lins · Språk</span>
+        <span class="home-door__q">Vad menar de egentligen med orden?</span>
+        <span class="viz-sprak" aria-hidden="true">"trygghet" — samma ord, åtta innebörder</span>
+        <span class="home-door__desc">Politikens nyckelord sida vid sida, med källhänvisade citat och partiernas språkprofiler.</span>
+      </a>
+      <a class="home-door" href="gal-tan.html">
+        <span class="home-door__eyebrow">Lins · GAL-TAN</span>
+        <span class="home-door__q">Vart är partierna på väg?</span>
+        <span class="viz-galtan" aria-hidden="true">
+          <span class="viz-galtan__h"></span><span class="viz-galtan__v"></span>
+          <span class="viz-galtan__dot" style="left:22%;top:30%;background:var(--party-v)"></span>
+          <span class="viz-galtan__dot" style="left:38%;top:55%;background:var(--party-s)"></span>
+          <span class="viz-galtan__dot" style="left:62%;top:72%;background:var(--party-kd)"></span>
+          <span class="viz-galtan__dot" style="left:74%;top:66%;background:var(--party-m)"></span>
+          <span class="viz-galtan__dot" style="left:80%;top:82%;background:var(--party-sd)"></span>
+        </span>
+        <span class="home-door__desc">Kartan över det politiska landskapet 2019–2026 — axlarna är linjaler, inte betyg.</span>
+      </a>
     </div>
+
+    <a class="home-teaser" href="om-metoden.html">
+      <span class="home-teaser__h">Hur vet vi det här?</span>
+      <span class="home-teaser__p">Om datakällorna (CHES, riksdagens voteringar, partiernas egna texter), vad som är verifierad forskardata respektive egen bedömning — och principerna som håller guiden neutral. <b>Läs om metoden →</b></span>
+    </a>
+
+    <div class="home-source">Källor: CHES 2019 &amp; 2024 · riksdagens voteringar 2022–2026 · partiernas program, motioner och uttalanden</div>
   </main>
 </div>
 <script src="js/constants.js"></script>
 <script src="js/compare-state.js"></script>
 <script src="js/shell.js"></script>
+<script>
+  (function () {
+    var SH = window.VAL26Shell;
+    if (SH && SH.countUp) {
+      SH.countUp(document.getElementById('home-s1'), 8, 1400);
+      SH.countUp(document.getElementById('home-s2'), 336, 1400);
+      SH.countUp(document.getElementById('home-s3'), 20, 1400);
+    }
+  })();
+</script>
 </body>
 </html>
