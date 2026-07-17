@@ -4,6 +4,19 @@
 
 ---
 
+## Mål (mål-format)
+
+> Konventionsövergång pågår: nya poster scopas som mål (Outcome / Done-when binärt / Budget / Depends on), inte sprintar. Sprint-avsnitten nedan bevaras tills G1 migrerat dem.
+
+### G1 — Migrera docs till mål-format 🔄
+
+- **Outcome:** `PROJECT_STATUS.md` och `ROADMAP.md` följer mål-konventionen; avslutad historik bevarad; öppet/framtida arbete uttryckt som mål.
+- **Budget:** 1 pass / 1 PR (docs-only).
+- **Depends on:** —
+- **Done when:** se full Done-when-lista i `docs/PROJECT_STATUS.md` (G1).
+
+---
+
 ## Sprint 0 — Setup ✅
 
 - [x] 0.1 Create GitHub issue for spectrum view MVP *(manuellt — gh CLI saknas)*

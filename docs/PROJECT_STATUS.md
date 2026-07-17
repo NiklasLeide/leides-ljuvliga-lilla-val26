@@ -1,8 +1,33 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
-> **Last updated:** 2026-07-08
+> **Last updated:** 2026-07-17
 > **Current sprint:** Redesign 2026 — lens-based rebuild (Fas 0–6) ✅ klar, mergad till master
 > **Sprint dates:** 2026-07-06 → 2026-07-08
+
+---
+
+## Mål (mål-format)
+
+> Ny konvention (per `/project:scope`): arbete scopas som **mål**, inte sprintar.
+> Varje öppet mål har Outcome / Done-when (binärt) / Budget / Depends on.
+> Avslutade sprintar ligger bevarade under **Arkiv / Historik** längre ned.
+
+| Mål | Outcome (kort) | Status | Budget | Depends on |
+|-----|----------------|--------|--------|-----------|
+| G1 Docs → mål-format | Status + Roadmap följer mål-konventionen; historik bevarad | 🔄 In Progress | 1 pass / 1 PR | — |
+
+### G1 — Migrera docs till mål-format 🔄
+
+- **Outcome:** `PROJECT_STATUS.md` och `ROADMAP.md` följer den mål-baserade konventionen (måltabell + Outcome / Done-when binärt / Budget / Depends on). All avslutad historik bevarad oförändrad under ett arkiv. Framtida arbete uttrycks som mål, inte sprintar.
+- **Budget:** 1 arbetspass, en PR. Docs-only, ingen API-kostnad, ingen kod-risk.
+- **Depends on:** Inget.
+- **Done when:**
+  - [ ] `PROJECT_STATUS.md` har en måltabell (rubrik `## Mål` + tabellhuvud med Outcome/Status/Budget/Depends on)
+  - [ ] Varje öppet/framtida mål har alla fyra fält ifyllda (Outcome, Done-when, Budget, Depends on)
+  - [ ] Alla avslutade sprintar (0–6 + redesign 2026) finns oförändrade under `## Arkiv / Historik`
+  - [ ] `ROADMAP.md` uttrycker öppet/framtida arbete i mål-format (`Sprint ` endast under arkiv-/klar-rubrik)
+  - [ ] Öppna poster idag (3.2 launch-polish, Sprint 7 polling, backlog SOM/CMP) omgjorda till mål med Done-when-checkboxar
+  - [ ] Run DoD review (goal closure) via dod-reviewer
 
 ---
 
