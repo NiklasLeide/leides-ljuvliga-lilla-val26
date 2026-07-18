@@ -1,20 +1,24 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
 > **Last updated:** 2026-07-17
-> **Current sprint:** Redesign 2026 — lens-based rebuild (Fas 0–6) ✅ klar, mergad till master
-> **Sprint dates:** 2026-07-06 → 2026-07-08
+> **Format:** mål-baserat (per `/project:scope`). Öppet/framtida arbete uttrycks som **mål**;
+> avslutade sprintar är bevarade oförändrade under **Arkiv / Historik** längst ned.
 
 ---
 
 ## Mål (mål-format)
 
-> Ny konvention (per `/project:scope`): arbete scopas som **mål**, inte sprintar.
-> Varje öppet mål har Outcome / Done-when (binärt) / Budget / Depends on.
-> Avslutade sprintar ligger bevarade under **Arkiv / Historik** längre ned.
+> Varje öppet mål har **Outcome / Done-when (binärt) / Budget / Depends on**.
+> Sista Done-when för varje mål är alltid: "Run DoD review (goal closure)" via dod-reviewer.
 
 | Mål | Outcome (kort) | Status | Budget | Depends on |
 |-----|----------------|--------|--------|-----------|
 | G1 Docs → mål-format | Status + Roadmap följer mål-konventionen; historik bevarad | 🔄 In Progress | 1 pass / 1 PR | — |
+| G2 Publik lansering | Sajten lanseringsklar inför valet sept 2026 (SEO, polish, trovärdighet) | 🔄 In Progress | Flera pass — **bör splittas** | — |
+| G3 Opinionstrender | Aggregerade opinionsmätningar + viktad trend, ev. kopplad till GAL-TAN | ⏸️ Paused | TBD — kräver scoping | — |
+| G4 SOM/CMP-validering | Positions-/GAL-TAN-data korsvaliderad mot SOM + CMP | ⬜ Backlog | TBD — kräver scoping | — |
+
+**Status legend:** ⬜ Todo/Backlog | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
 ### G1 — Migrera docs till mål-format 🔄
 
@@ -22,104 +26,46 @@
 - **Budget:** 1 arbetspass, en PR. Docs-only, ingen API-kostnad, ingen kod-risk.
 - **Depends on:** Inget.
 - **Done when:**
-  - [ ] `PROJECT_STATUS.md` har en måltabell (rubrik `## Mål` + tabellhuvud med Outcome/Status/Budget/Depends on)
-  - [ ] Varje öppet/framtida mål har alla fyra fält ifyllda (Outcome, Done-when, Budget, Depends on)
-  - [ ] Alla avslutade sprintar (0–6 + redesign 2026) finns oförändrade under `## Arkiv / Historik`
-  - [ ] `ROADMAP.md` uttrycker öppet/framtida arbete i mål-format (`Sprint ` endast under arkiv-/klar-rubrik)
-  - [ ] Öppna poster idag (3.2 launch-polish, Sprint 7 polling, backlog SOM/CMP) omgjorda till mål med Done-when-checkboxar
+  - [x] `PROJECT_STATUS.md` har en måltabell (rubrik `## Mål` + tabellhuvud med Outcome/Status/Budget/Depends on)
+  - [x] Varje öppet/framtida mål har alla fyra fält ifyllda (Outcome, Done-when, Budget, Depends on)
+  - [x] Alla avslutade sprintar (0–6 + redesign 2026) finns oförändrade under `## Arkiv / Historik`
+  - [x] `ROADMAP.md` uttrycker öppet/framtida arbete i mål-format (`Sprint ` endast under arkiv-/klar-rubrik)
+  - [x] Öppna poster idag (3.2 launch-polish → G2, Sprint 7 polling → G3, backlog SOM/CMP → G4) omgjorda till mål med Done-when-checkboxar
   - [ ] Run DoD review (goal closure) via dod-reviewer
 
----
+### G2 — Publik lansering före valet (sept 2026) 🔄
 
-## Current Sprint: Redesign 2026 — lins-baserad ombyggnad (Fas 0–6) ✅
+- **Outcome:** Sajten är lanseringsklar och tål kampanjintensitet: SEO/meta/OG/canonical kompletta, mobil/surfplatta verifierad på riktig enhet, och kvarvarande trovärdighetsfynd (SITE_BACKLOG spår A) antingen åtgärdade eller beslutade av Niklas.
+- **Budget:** Flera pass. **Bör splittas** i egna mål via `/project:scope` (SEO-pass, trovärdighetspass, mobil/enhet-pass) — Done-when nedan är utkast, inte ratificerade acceptanskriterier.
+- **Depends on:** Inget hårt (docs-only G1 är oberoende).
+- **Done when (UTKAST — kräver egen scoping; poster i `docs/SITE_BACKLOG.md`):**
+  - [ ] A1: sakfråge-antalet konsekvent i all copy (metod-sidans "23 av 49" rättad mot bekräftad siffra)
+  - [ ] SEO: title/meta/OG/canonical verifierade på samtliga sidor
+  - [ ] Mobil + surfplatta verifierad på riktig enhet (SITE_BACKLOG C4/C5)
+  - [ ] SITE_BACKLOG spår A (A2 "säger vs gör"-bett, A3 senast-granskad-datum) triage-beslutade av Niklas
+  - [ ] Run DoD review (goal closure) via dod-reviewer
 
-Hela sajten återskapad ur den designgodkända omdesignen (handoff/-prototyperna) i den befintliga
-vanilla-stacken, som en översättning — inte en nygenerering. Levererad som en PR per fas (#22–#27),
-mergad i ordning. **Cutover klar (2026-07-08):** sajten bor nu i repo-roten (app/→rot-promotion);
-gamla silos omdirigerar till motsvarande lins.
+### G3 — Opinionstrender (polling) ⏸️
 
-| Fas | Lins / yta | Status | PR | Notiser |
-|-----|-----------|--------|----|---------|
-| 0 | Skelett: shell, tokens, delad jämför-mekanik, nav-synk | ✅ Done | (tidigare) | constants.js, tokens.css, shell.css/js, compare-state.js, _shell.html + sync-shell.mjs |
-| 1 | GAL-TAN-lins | ✅ Done | #22 | data/galtan-view.json; spår+ghost+intro-svep; **stat/annotering data-härledd (L störst drift, ej S)** |
-| 2 | Position-lins | ✅ Done | #23 | bisvärm-kollision "3a", otydlig=streckad ring, citatkort; data/positions.json |
-| 3 | Säger vs gör-lins | ✅ Done | #24 | trovärdighetsfix: synlig fördelning + framlyfta avvikelser; data/voting.json |
-| 4 | Språk-lins | ✅ Done | #25 | Begrepp↔Parti, neutral GAL-Mitt-TAN-spektrum; städade discourse.json (v0.5.1) |
-| 5 | Valkompass | ✅ Done | #26 | två-lins-matchning (metodik v1); **seed-set 10 frågor, full 42+8 = copy-pass** |
-| 6 | Startsida + Om metoden + korslänkar + silo-retirering | ✅ Done | #27 | **cutover klar: app/→rot-promotion + silo-omdirigeringar (2026-07-08)** |
+- **Outcome:** Sajten visar aggregerade opinionsmätningar från stora svenska institut med viktad trendanalys, ev. kopplad till GAL-TAN-rörelse.
+- **Budget:** TBD — kräver egen `/project:scope` innan start.
+- **Depends on:** Inget.
+- **Done when (UTKAST — kräver egen scoping):**
+  - [ ] Aggregera opinionsdata från stora svenska institut
+  - [ ] Viktad analys som visar trender
+  - [ ] Ev. koppling till GAL-TAN-rörelse
+  - [ ] UI polish pass
+  - [ ] Run DoD review (goal closure) via dod-reviewer
 
-**Öppna beslut (kräver Niklas):**
-1. ~~**Fas 1** — S:s "störst TAN-drift"-prosa vs koordinaterna~~ ✅ **LÖST 2026-07-08** — faktafel (ej copy-pass): prosan rättad, störst-etiketten flyttad till L (som koordinaterna ger). Stat var redan data-härledd korrekt.
-2. **Fas 5** — full frågeuppsättning: ✅ **genererad, väntar din granskning** — 37 sakfrågor + 8 begrepp i PR #28 (branch `kompass-fragor-full`), 8 neutralitetsposter flaggade i drafts/KOMPASS-fragor-granskning.md. Mergas ej förrän du godkänt formuleringarna.
-3. ~~**Fas 6** — full app/→rot-promotion + silo-omdirigering~~ ✅ **KLAR 2026-07-08** — sajten flyttad till rot, ../data→data, 4 silos (diskurs/hitta-parti/kluster/metod) omdirigerar; gamla gal-tan/sager-vs-gor/index överskrivna av nya linser.
+### G4 — SOM/CMP-datavalidering ⬜
 
-Tidigare löpande spår (Diskurs-pilot 8.1, datauppdateringsloop 9.1) är kvar i historiken nedan; den
-gamla flik-baserade sajten (spektrum/kluster/diskurs/hitta-parti/metod) är ersatt av de fem linserna.
-
-**Status legend:** ⬜ Todo | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
-
----
-
-## Completed Sprints
-
-### Sprint 6 — GAL-TAN scale ✅
-
-| #   | Task                                                         | Notes |
-|-----|--------------------------------------------------------------|-------|
-| 6.1 | GAL-TAN scatter plot view                                    | gal-tan.html + gal-tan.js, SVG scatter plot with quadrant shading |
-| 6.2 | Data from Chapel Hill Expert Survey + own assessment         | galtan.json — CHES 2019 + 2024 verified exact values, 2026 own assessment |
-| 6.3 | Movement trails since 2019 and 2024                          | Movement lines, year toggles, delta badges in detail panel |
-| 6.4 | UI polish pass                                               | Mobile-responsive dot scaling, party selection with dimming, full trail clickable, year labels |
-
-### Sprint 5 — "Says vs does" view ✅
-
-| #   | Task                                                         | Notes |
-|-----|--------------------------------------------------------------|-------|
-| 5.1 | New view comparing stated positions with voting records      | sager-vs-gor.html + sager-vs-gor.js |
-| 5.2 | Riksdag voting data integration                              | voting.json, 7 areas × 42 topics × 8 parties, zero ej-granskat |
-| 5.3 | UI polish pass                                               | Match badges, inväntar-votering, per-fråga + per-parti toggle |
-
-### Sprint 3 — Expand ✅
-
-| #   | Task                                          | Notes |
-|-----|-----------------------------------------------|-------|
-| 3.1 | Add more policy areas beyond school           | 7 areas: skola, ekonomi, migration, försvar, klimat, vård, demokrati — 42 ämnen, 336 partipositioner |
-| 3.2 | Polish, SEO, public launch                    | Privacy notice, open source footer, methodology page expanded |
-
-### Sprint 2 — Real content ✅
-
-| #   | Task                                                        | Notes |
-|-----|-------------------------------------------------------------|-------|
-| 2.1 | Research and fill in actual party positions for school topics | 5/5 school topics, 8 parties each, verified sources |
-| 2.2 | Methodology page ("Om metoden")                             | metod.html — sources, scale, groups, unclear positions, neutrality |
-| 2.3 | Source links and citation for every position                | All source fields have verifiable https:// URLs; clickable in detail panels |
-
-### Sprint 1 — Cluster view ✅
-
-| #   | Task                                              | Notes                                                              |
-|-----|---------------------------------------------------|--------------------------------------------------------------------|
-| 1.1 | Build cluster view with animated groupings        | kluster.html + kluster.js — SVG circles, dynamic groups per topic  |
-| 1.2 | Tab navigation between spectrum and cluster       | Activated Kluster tab in index.html, navigates to kluster.html     |
-| 1.3 | Detail panel on click (party card with source)    | Slides in from right (desktop), stacks below (mobile); clickable source links |
-
-### Sprint 0 — Setup ✅
-| #   | Task                                              | Notes                                            |
-|-----|---------------------------------------------------|--------------------------------------------------|
-| 0.1 | Create GitHub issue for spectrum view MVP         | Manuellt — gh CLI saknas                         |
-| 0.2 | Log architectural decisions in DECISIONS.md       | DEC-001 – DEC-006 inloggade                      |
-| 0.3 | Build spectrum view with placeholder data         | index.html + style.css + app.js + positions.json |
-| 0.4 | Test desktop + 375px mobile                       | Manuellt verifierat av Niklas                    |
-
-### Sprint 0.5 — Infrastructure ✅
-| #     | Task                                                    | Notes                              |
-|-------|---------------------------------------------------------|------------------------------------|
-| 0.5.1 | Add CNAME file (val26.leide.se)                         | ✅                                 |
-| 0.5.2 | Create commit.sh                                        | ✅                                 |
-| 0.5.3 | Create deploy.sh                                        | ✅                                 |
-| 0.5.4 | Enable GitHub Pages on repo                             | ✅ Manual — Niklas                 |
-| 0.5.5 | Configure Cloudflare DNS CNAME                          | ✅ Manual — Niklas                 |
-| 0.5.6 | Add Cloudflare Web Analytics (token: set in index.html) | ✅ Manual — Niklas                 |
-| 0.5.7 | Verify site is live at val26.leide.se                   | ✅ Live at val26.leide.se          |
+- **Outcome:** Positions- och GAL-TAN-data är korsvaliderad mot SOM- och CMP-datauppsättningarna, med avvikelser dokumenterade.
+- **Budget:** TBD — kräver egen `/project:scope` innan start.
+- **Depends on:** Inget.
+- **Done when (UTKAST — kräver egen scoping):**
+  - [ ] SOM/CMP-datauppsättningar identifierade och inlästa
+  - [ ] Korsvalidering körd; avvikelser dokumenterade
+  - [ ] Run DoD review (goal closure) via dod-reviewer
 
 ---
 
@@ -152,13 +98,6 @@ None.
 
 ---
 
-## Sprint Backlog
-
-### Sprint 7 — Polling trends ⏸️ Paused
-*(See ROADMAP.md for full task breakdowns)*
-
----
-
 ## Key Metrics
 - Renderas korrekt i Chrome/Firefox/Safari på desktop och 375px mobil
 - Alla 8 partier synliga i alla 42 ämnen (7 areas)
@@ -166,3 +105,97 @@ None.
 - voting.json: 336 entries, 0 ej-granskat
 - Hover-tooltip visar korrekt partinamn och sammanfattning
 - Klick på parti öppnar detaljpanel med källlänkar
+
+---
+
+## Arkiv / Historik
+
+> Bevarat **oförändrat** vid mål-format-migreringen (G1, 2026-07-17). Sprint-format. Alla poster nedan är avslutade (✅) om inget annat anges.
+
+### Redesign 2026 — lins-baserad ombyggnad (Fas 0–6) ✅
+
+> Sprintdatum: 2026-07-06 → 2026-07-08.
+
+Hela sajten återskapad ur den designgodkända omdesignen (handoff/-prototyperna) i den befintliga
+vanilla-stacken, som en översättning — inte en nygenerering. Levererad som en PR per fas (#22–#27),
+mergad i ordning. **Cutover klar (2026-07-08):** sajten bor nu i repo-roten (app/→rot-promotion);
+gamla silos omdirigerar till motsvarande lins.
+
+| Fas | Lins / yta | Status | PR | Notiser |
+|-----|-----------|--------|----|---------|
+| 0 | Skelett: shell, tokens, delad jämför-mekanik, nav-synk | ✅ Done | (tidigare) | constants.js, tokens.css, shell.css/js, compare-state.js, _shell.html + sync-shell.mjs |
+| 1 | GAL-TAN-lins | ✅ Done | #22 | data/galtan-view.json; spår+ghost+intro-svep; **stat/annotering data-härledd (L störst drift, ej S)** |
+| 2 | Position-lins | ✅ Done | #23 | bisvärm-kollision "3a", otydlig=streckad ring, citatkort; data/positions.json |
+| 3 | Säger vs gör-lins | ✅ Done | #24 | trovärdighetsfix: synlig fördelning + framlyfta avvikelser; data/voting.json |
+| 4 | Språk-lins | ✅ Done | #25 | Begrepp↔Parti, neutral GAL-Mitt-TAN-spektrum; städade discourse.json (v0.5.1) |
+| 5 | Valkompass | ✅ Done | #26 | två-lins-matchning (metodik v1); **seed-set 10 frågor, full 42+8 = copy-pass** |
+| 6 | Startsida + Om metoden + korslänkar + silo-retirering | ✅ Done | #27 | **cutover klar: app/→rot-promotion + silo-omdirigeringar (2026-07-08)** |
+
+**Öppna beslut (kräver Niklas):**
+1. ~~**Fas 1** — S:s "störst TAN-drift"-prosa vs koordinaterna~~ ✅ **LÖST 2026-07-08** — faktafel (ej copy-pass): prosan rättad, störst-etiketten flyttad till L (som koordinaterna ger). Stat var redan data-härledd korrekt.
+2. **Fas 5** — full frågeuppsättning: ✅ **genererad, väntar din granskning** — 37 sakfrågor + 8 begrepp i PR #28 (branch `kompass-fragor-full`), 8 neutralitetsposter flaggade i drafts/KOMPASS-fragor-granskning.md. Mergas ej förrän du godkänt formuleringarna.
+3. ~~**Fas 6** — full app/→rot-promotion + silo-omdirigering~~ ✅ **KLAR 2026-07-08** — sajten flyttad till rot, ../data→data, 4 silos (diskurs/hitta-parti/kluster/metod) omdirigerar; gamla gal-tan/sager-vs-gor/index överskrivna av nya linser.
+
+Tidigare löpande spår (Diskurs-pilot 8.1, datauppdateringsloop 9.1) är kvar i historiken nedan; den
+gamla flik-baserade sajten (spektrum/kluster/diskurs/hitta-parti/metod) är ersatt av de fem linserna.
+
+### Completed Sprints
+
+#### Sprint 6 — GAL-TAN scale ✅
+
+| #   | Task                                                         | Notes |
+|-----|--------------------------------------------------------------|-------|
+| 6.1 | GAL-TAN scatter plot view                                    | gal-tan.html + gal-tan.js, SVG scatter plot with quadrant shading |
+| 6.2 | Data from Chapel Hill Expert Survey + own assessment         | galtan.json — CHES 2019 + 2024 verified exact values, 2026 own assessment |
+| 6.3 | Movement trails since 2019 and 2024                          | Movement lines, year toggles, delta badges in detail panel |
+| 6.4 | UI polish pass                                               | Mobile-responsive dot scaling, party selection with dimming, full trail clickable, year labels |
+
+#### Sprint 5 — "Says vs does" view ✅
+
+| #   | Task                                                         | Notes |
+|-----|--------------------------------------------------------------|-------|
+| 5.1 | New view comparing stated positions with voting records      | sager-vs-gor.html + sager-vs-gor.js |
+| 5.2 | Riksdag voting data integration                              | voting.json, 7 areas × 42 topics × 8 parties, zero ej-granskat |
+| 5.3 | UI polish pass                                               | Match badges, inväntar-votering, per-fråga + per-parti toggle |
+
+#### Sprint 3 — Expand ✅
+
+| #   | Task                                          | Notes |
+|-----|-----------------------------------------------|-------|
+| 3.1 | Add more policy areas beyond school           | 7 areas: skola, ekonomi, migration, försvar, klimat, vård, demokrati — 42 ämnen, 336 partipositioner |
+| 3.2 | Polish, SEO, public launch                    | Privacy notice, open source footer, methodology page expanded *(löpande launch-arbete migrerat till mål **G2**)* |
+
+#### Sprint 2 — Real content ✅
+
+| #   | Task                                                        | Notes |
+|-----|-------------------------------------------------------------|-------|
+| 2.1 | Research and fill in actual party positions for school topics | 5/5 school topics, 8 parties each, verified sources |
+| 2.2 | Methodology page ("Om metoden")                             | metod.html — sources, scale, groups, unclear positions, neutrality |
+| 2.3 | Source links and citation for every position                | All source fields have verifiable https:// URLs; clickable in detail panels |
+
+#### Sprint 1 — Cluster view ✅
+
+| #   | Task                                              | Notes                                                              |
+|-----|---------------------------------------------------|--------------------------------------------------------------------|
+| 1.1 | Build cluster view with animated groupings        | kluster.html + kluster.js — SVG circles, dynamic groups per topic  |
+| 1.2 | Tab navigation between spectrum and cluster       | Activated Kluster tab in index.html, navigates to kluster.html     |
+| 1.3 | Detail panel on click (party card with source)    | Slides in from right (desktop), stacks below (mobile); clickable source links |
+
+#### Sprint 0 — Setup ✅
+| #   | Task                                              | Notes                                            |
+|-----|---------------------------------------------------|--------------------------------------------------|
+| 0.1 | Create GitHub issue for spectrum view MVP         | Manuellt — gh CLI saknas                         |
+| 0.2 | Log architectural decisions in DECISIONS.md       | DEC-001 – DEC-006 inloggade                      |
+| 0.3 | Build spectrum view with placeholder data         | index.html + style.css + app.js + positions.json |
+| 0.4 | Test desktop + 375px mobile                       | Manuellt verifierat av Niklas                    |
+
+#### Sprint 0.5 — Infrastructure ✅
+| #     | Task                                                    | Notes                              |
+|-------|---------------------------------------------------------|------------------------------------|
+| 0.5.1 | Add CNAME file (val26.leide.se)                         | ✅                                 |
+| 0.5.2 | Create commit.sh                                        | ✅                                 |
+| 0.5.3 | Create deploy.sh                                        | ✅                                 |
+| 0.5.4 | Enable GitHub Pages on repo                             | ✅ Manual — Niklas                 |
+| 0.5.5 | Configure Cloudflare DNS CNAME                          | ✅ Manual — Niklas                 |
+| 0.5.6 | Add Cloudflare Web Analytics (token: set in index.html) | ✅ Manual — Niklas                 |
+| 0.5.7 | Verify site is live at val26.leide.se                   | ✅ Live at val26.leide.se          |
