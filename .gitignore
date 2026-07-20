@@ -28,3 +28,4 @@ loop-state-discourse.json
 # diskursbatch: per-område- och batch-state (scripts/run-discourse-batch.sh)
 loop-state-*.json
 batch-state.json
+.manifest-text/
