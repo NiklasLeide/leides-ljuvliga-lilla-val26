@@ -2,7 +2,8 @@
 
 Källmaterial för kommande diskursanalys och löftesextraktion. Endast insamling —
 ingen tolkning, inga ståndpunkter extraherade. Alla dokument hämtade från
-partiernas egna webbplatser. Hämtdatum för samtliga rader: **2026-07-03**.
+partiernas egna webbplatser. Ursprungligt hämtdatum för samtliga rader:
+**2026-07-03**. Senaste avsökning: **2026-07-20** (se Revisionshistorik).
 
 Statusvärden: `slutgiltigt` / `preliminärt` / `saknas`.
 
@@ -10,8 +11,8 @@ Statusvärden: `slutgiltigt` / `preliminärt` / `saknas`.
 |---|---|---|---|---|---|---|---|
 | S | Plan för Sverige (Valplattform) | pdf | 4 | Presenterad av partiledningen 2026-02-05 (presskonferens); beslutsorgan ej angivet | https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf | 2026-07-03 | slutgiltigt |
 | M | — | — | — | — | — | 2026-07-03 | saknas |
-| M | Vallöften 2026 — sparad som `M-valloften-2026_snapshot-2026-07-03.md` (se avsnittet Ögonblicksbilder) | kampanjsida (ögonblicksbild) | — | Löpande uppdaterad t.o.m. 2026-09-13; ej beslutad som dokument | https://moderaterna.se/valloften-2026/ | 2026-07-03 | — |
-| SD | — | — | — | — | — | 2026-07-03 | saknas |
+| M | Vallöften 2026 — senaste ögonblicksbild `M-valloften-2026_snapshot-2026-07-20.md` (se avsnittet Ögonblicksbilder) | kampanjsida (ögonblicksbild) | — | Löpande uppdaterad t.o.m. 2026-09-13; ej beslutad som dokument | https://moderaterna.se/valloften-2026/ | 2026-07-20 | — |
+| SD | Valplattform 2026 | pdf | 12 | Beslutsorgan och beslutsdatum ej angivna i dokumentet; publicerad av partiet 2026-07 (fil uppladdad 2026-07-10) | https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf | 2026-07-20 | slutgiltigt |
 | C | Sverige kan mer. Valmanifest 2026 | pdf | 96 | Presenterad 2026-06-16 av partiledaren och partisekreteraren; beslutsorgan ej angivet | https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf | 2026-07-03 | slutgiltigt |
 | V | Vänsterpartiets valplattform efter beslut på kongressen 2026 | pdf | 4 | Kongressen i Örebro 2026-04-17–19 | https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf | 2026-07-03 | preliminärt |
 | KD | — | — | — | — | — | 2026-07-03 | saknas |
@@ -26,7 +27,8 @@ Statusvärden: `slutgiltigt` / `preliminärt` / `saknas`.
 | C | kapitlet "Jobben ska bli fler med en nystart för Sveriges ekonomi", s. 7–21 |
 | V | dokumentet saknar områdesrubriker; ekonomi (skatter, välfärdsinvesteringar, pensioner, arbetstid) löper genom s. 1–3 |
 | L | kapitel 3 "Ett samhälle där ansträngning lönar sig. Politik för flit och företagsamhet", s. 15–18 |
-| M/SD/KD/MP | — (dokument saknas) |
+| SD | ej fastställd — dokumentet upptäcktes 2026-07-20 och är ännu inte genomläst (scopas separat) |
+| M/KD/MP | — (dokument saknas) |
 
 ## Ögonblicksbilder
 
@@ -68,17 +70,36 @@ uppdateras löpande fram till valdagen — kampanjlandningssida, ej dokument),
 "Handlingsprogram för 2030-talet" (antaget på arbetsstämman i Västerås okt 2025 —
 handlingsprogram, ej valmanifest) samt Moderatkvinnornas valmanifest 2026
 (kvinnoförbundets, ej partiets). Kampanjsidan "Vallöften 2026" är sparad som
-daterad ögonblicksbild: `M-valloften-2026_snapshot-2026-07-03.md` (se avsnittet
-Ögonblicksbilder).
+daterade ögonblicksbilder (se avsnittet Ögonblicksbilder):
+`M-valloften-2026_snapshot-2026-07-03.md` och
+`M-valloften-2026_snapshot-2026-07-20.md`.
 
-### SD — saknas
-Sidan sd.se/dokument/ listar fortfarande "Valplattform 2022" som senaste
-riksdagsvalsplattform (kontrollerat även /vad-vi-vill/ och startsidan).
-Landsdagarna i Örebro (nov 2025) förklarade äldre program obsoleta och sköt
-valplattformen till en särskild valkonferens våren 2026; det enda offentliga
-dokumentet är "Inriktning för Valplattform 2026 samt partiordförandens
-förhandlingsmandat" (event.sd.se, sept 2025 — riktlinjedokument, ej plattform).
-Ingen slutgiltig valplattform 2026 publicerad på sd.se per hämtdatum.
+**Omkontroll 2026-07-20:** fortfarande inget dokument. Kontrollerat
+moderaterna.se/valplattform/, /valloften-2026/ samt sökning efter PDF på
+domänen — de enda 2026-PDF:erna är Moderatkvinnornas valmanifest och regionala
+valprogram. Plattformen som presenterades 2026-06-22 finns alltjämt bara som
+presskonferens och kampanjsida. Sidans `Last-Modified` hade ändrats sedan
+föregående ögonblicksbild, men sakinnehållet var oförändrat (samma 16 vallöften;
+enda skillnaderna två redaktionella detaljer, se filhuvudet i 07-20-bilden).
+
+### SD — slutgiltigt
+**Statusändring 2026-07-20 (tidigare `saknas`).** "Valplattform 2026" är nu
+publicerad på sd.se och listad under Partidokument på sd.se/dokument/ med
+datum 2026-07. "Valplattform 2022" är samtidigt **borttagen** från den listan,
+dvs. partiet har självt ersatt den som gällande plattform — dokumentet är
+alltså inte en föräldralös filuppladdning. PDF:en saknar utkasts- eller
+preliminärmärkning i filnamn och sidhuvud.
+
+Datering: HTTP `Last-Modified` på filen är 2026-07-10; PDF-metadata anger
+`CreationDate` 2026-07-07 och `/Created` 2026-04-20 (Word-fältet, sannolikt
+när underlagsdokumentet påbörjades). Dokumentet anger inget formellt
+beslutsdatum eller beslutsorgan i sig; bakgrunden är den valkonferens som
+Landsdagarna i Örebro (nov 2025) sköt plattformen till. Föregångaren
+"Inriktning för Valplattform 2026 samt partiordförandens förhandlingsmandat"
+(event.sd.se, sept 2025) är ett riktlinjedokument, inte plattformen.
+
+Sparad som `SD-valplattform-2026.pdf`. **Innehållet är ännu inte genomläst** —
+ekonomiavsnittets placering är därför inte fastställd (scopas separat).
 
 ### V — preliminärt
 Innehållet beslutat av kongressen i Örebro 2026-04-17–19, men den publicerade
@@ -106,6 +127,29 @@ Nationellt valmanifest 2026 finns endast som lösenordsskyddat utkast
 "Politiskt handlingsprogram 2026" (antaget, grund för mandatperioden 2026–2030 —
 handlingsprogram, ej valmanifest) och valbudskapet "Sverige vinner på grön
 politik" (publicerat 2026-04-16 — kampanjbudskap, ej dokument).
+
+## Revisionshistorik
+
+### 2026-07-20 — avsökning av samtliga åtta partier
+Endast detektion (förekomst, URL, datering, format). Inga dokument lästa för
+innehåll, inga ståndpunkter extraherade.
+
+- **SD: `saknas` → `slutgiltigt`.** "Valplattform 2026" publicerad på sd.se
+  (uppladdad 2026-07-10), 12 s. Se noten för SD. Enda statusändringen.
+- **M: oförändrad (`saknas`).** Fortfarande inget dokument; ny ögonblicksbild
+  av kampanjsidan tagen (sakinnehåll oförändrat).
+- **V: oförändrad (`preliminärt`).** vansterpartiet.se/kongress2026/ länkar
+  fortfarande enbart den preliminärmärkta versionen; ingen slutjusterad utgåva.
+- **KD: oförändrad (`saknas`).** Partiledaren lanserade i juli "Sverigedrömmen"
+  (fyra grundkrav för KD:s stöd efter valet) — förhandlingsvillkor, inte ett
+  manifestdokument, och räknas därför inte enligt metodreglerna nedan.
+- **MP: oförändrad (`saknas`).** mp.se/valmanifest-2026-utkast/ är fortfarande
+  lösenordsskyddad.
+- **S, C, L: oförändrade (`slutgiltigt`).** Käll-URL:erna svarar 200 med
+  oförändrad `Last-Modified` (2026-02-20, 2026-06-16, 2026-06-02).
+- **riksdagen.se:** kontrollerat — publicerar ingen samlad manifestsamling.
+  Motsvarande arkiv är SND "Vi vill" (snd.se/sv/vivill), som inte innehöll
+  något 2026-dokument utöver de ovan.
 
 ## Metod
 
