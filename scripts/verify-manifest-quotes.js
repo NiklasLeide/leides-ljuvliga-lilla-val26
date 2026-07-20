@@ -3,7 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 const DIR = __dirname;
-const EX = path.join(DIR, 'extract');
+// Facit-katalogen regenereras med scripts/extract-manifest-text.py.
+const EX = process.env.MANIFEST_TEXT_DIR || path.join(DIR, '..', '.manifest-text');
 
 const norm = s => s
   .replace(/­/g, '')        // soft hyphen
@@ -64,4 +65,4 @@ if (failed.length) {
   console.log('\n--- EJ VERIFIERADE CITAT (korrigeras eller kastas) ---');
   failed.forEach(r => console.log(' ', r.party, '|', r.topic, '| s.' + r.page, '|', r.quote.slice(0, 90)));
 }
-fs.writeFileSync(path.join(DIR, 'verified.json'), JSON.stringify(rows, null, 1));
+fs.writeFileSync(path.join(EX, 'verified.json'), JSON.stringify(rows, null, 1));
