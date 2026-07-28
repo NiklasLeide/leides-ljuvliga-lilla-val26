@@ -25,7 +25,10 @@ const { execFileSync } = require('child_process');
 
 const DIR = process.env.BEVAKNING_DIR || '.bevakning';
 const WATCHLIST = process.env.WATCHLIST || 'data/watchlist.json';
-const STATE_FILE = path.join(DIR, 'state.json');
+// STATE_FILE är frikopplad från arbetskatalogen så att GitHub Actions kan peka
+// den på en COMMITTAD fil (persisteras mellan körningar via commit) medan
+// delta.json ligger i en efemär arbetskatalog. Lokalt: $BEVAKNING_DIR/state.json.
+const STATE_FILE = process.env.BEVAKNING_STATE_FILE || path.join(DIR, 'state.json');
 const DELTA_FILE = path.join(DIR, 'delta.json');
 const FETCH_MODE = process.env.BEVAKNING_FETCH || 'live';
 const FETCH_TIMEOUT_S = Number(process.env.BEVAKNING_FETCH_TIMEOUT_S || 25);
@@ -89,7 +92,8 @@ function loadState() {
 }
 function saveState(s) {
   s.updated = new Date().toISOString();
-  fs.mkdirSync(DIR, { recursive: true });
+  const dir = path.dirname(STATE_FILE);
+  if (dir && dir !== '.') fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(STATE_FILE, JSON.stringify(s, null, 2) + '\n');
 }
 

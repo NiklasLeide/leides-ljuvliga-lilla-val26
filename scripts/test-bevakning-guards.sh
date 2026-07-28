@@ -188,6 +188,37 @@ ok=1
 check "$ok" "media=trigger: media-baserat förslag demoteras till Kräver beslut, aldrig förslag"
 grep -q "citatet greppar inte\|saknar bekräftelse" "$SB/report.md"; check $? "grep-verifiering: obekräftat/ogreppbart citat redovisas under Kräver beslut"
 
+# --- Test 13-15: bevakning-ci.sh (Actions Lager-1-only) -----------------------
+CIST="$STUBS/committed-state.json"   # frikopplad committad statefil (ej i $SB)
+ci_run() { BEVAKNING_FETCH=stub BEVAKNING_DIR="$SB" BEVAKNING_STATE_FILE="$CIST" WATCHLIST="$WL" GH_BIN="$STUB_GH" bash scripts/bevakning-ci.sh; }
+
+# 13: baslinje (första körningen) -> TYST (ingen issue), exit 0, committad state skriven
+reset; mini_watchlist; fx_riksdagen_empty; fx_site "$SITE_V1"; fx_rss_empty
+rm -f "$CIST" "$STUBS/gh.log"
+rc=0; ci_run > "$SB/ci13.log" 2>&1 || rc=$?
+ok=1; [[ $rc -eq 0 ]] && [[ ! -f "$STUBS/gh.log" ]] && [[ -f "$CIST" ]] && grep -q "Tyst per policy" "$SB/ci13.log" && ok=0
+check "$ok" "ci: baslinjekörning tyst (ingen issue), exit 0, committad statefil skriven"
+
+# 14: verkligt sakinnehållsbyte -> issue med antal i titeln, exit 0
+fx_site "$SITE_V2"
+rc=0; ci_run > "$SB/ci14.log" 2>&1 || rc=$?
+ok=1; [[ $rc -eq 0 ]] && grep -q "issue create --title Bevakning: 1 ändring" "$STUBS/gh.log" && ok=0
+check "$ok" "ci: icke-tom delta -> issue med datum + antal i titeln, exit 0"
+
+# 15: fel (obefintlig watchlist) -> issue filas, ingen tyst körning
+rm -f "$STUBS/gh.log"
+rc=0; BEVAKNING_FETCH=stub BEVAKNING_DIR="$SB" BEVAKNING_STATE_FILE="$CIST" WATCHLIST="$SB/does-not-exist.json" GH_BIN="$STUB_GH" bash scripts/bevakning-ci.sh > "$SB/ci15.log" 2>&1 || rc=$?
+ok=1; [[ $rc -ne 0 ]] && grep -q "issue create --title Bevakning (Actions): körningen misslyckades" "$STUBS/gh.log" && ok=0
+check "$ok" "ci: fel (saknad watchlist) -> issue filas, ingen tyst körning"
+
+# --- Test 16: loop SKIP_DETECT utan delta -> exit 1, ingen detektering ---------
+on_branch
+reset
+rc=0; BEVAKNING_SKIP_DETECT=1 BEVAKNING_DIR="$SB" CLAUDE_BIN="$STUB_CLAUDE_FAIL" GH_BIN="$STUB_GH" WATCHLIST="$WL" bash scripts/bevakning-loop.sh > "$SB/run16.log" 2>&1 || rc=$?
+ok=1; [[ $rc -eq 1 ]] && grep -q "delta.json saknas" "$SB/run16.log" && [[ ! -f "$STUBS/claude-called.log" ]] && ok=0
+check "$ok" "loop SKIP_DETECT: utan delta.json -> exit 1, ingen detektering, ingen modell"
+off_branch
+
 # --- Test 12: HEAD-vakt — modell som committar under sin tur -> exit 7 ---------
 on_branch
 reset; mini_watchlist; fx_riksdagen_empty; fx_site "$SITE_V1"; fx_rss_empty

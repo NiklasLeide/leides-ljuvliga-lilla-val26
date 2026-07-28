@@ -78,9 +78,21 @@ if [[ "$prev_status" == "budget_stop" || "$prev_status" == "usage_limit_stop" ]]
 fi
 
 # ---------------------------------------------------------------- LAGER 1
-heartbeat "Lager 1: deterministisk detektering (noll tokens)"
-node scripts/bevakning-lib.js detect
-first_run="$(node -e "console.log(require('./'+process.env.BEVAKNING_DIR+'/delta.json').first_run)")"
+# BEVAKNING_SKIP_DETECT=1 hoppar över detekteringen och använder ett befintligt
+# $BDIR/delta.json — så att Lager 2/3 kan köras lokalt mot ett delta som
+# producerats av Actions (Lager 1 i molnet). Utan flaggan körs full pipeline.
+if [[ "${BEVAKNING_SKIP_DETECT:-0}" == "1" ]]; then
+  if [[ ! -f "$BDIR/delta.json" ]]; then
+    heartbeat "BEVAKNING_SKIP_DETECT=1 men $BDIR/delta.json saknas. Hämta Actions-deltat först (gh run download --name bevakning-delta --dir $BDIR)."
+    exit 1
+  fi
+  heartbeat "Lager 1 hoppas över (BEVAKNING_SKIP_DETECT=1) — använder befintlig $BDIR/delta.json."
+  first_run=false
+else
+  heartbeat "Lager 1: deterministisk detektering (noll tokens)"
+  node scripts/bevakning-lib.js detect
+  first_run="$(node -e "console.log(require('./'+process.env.BEVAKNING_DIR+'/delta.json').first_run)")"
+fi
 delta_n="$(node -e "console.log(require('./'+process.env.BEVAKNING_DIR+'/delta.json').delta.length)")"
 cov="$(node -e "const d=require('./'+process.env.BEVAKNING_DIR+'/delta.json').coverage;console.log(d.riksdagen+' riksdagen-frågor, '+d.sites+' sajter, '+d.rss+' rss')")"
 

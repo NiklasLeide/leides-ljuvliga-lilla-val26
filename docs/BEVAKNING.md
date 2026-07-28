@@ -9,15 +9,70 @@ dagar innan en manuell avsökning fann den (2026-07-20).
 **Loopen skriver aldrig i `data/`.** Den föreslår; Niklas beslutar; en godkänd
 ändring skrivs i en separat runda (samma mönster som manifestrundan).
 
-## Tre lager
+## Tre lager — och var de körs
 
-| Lager | Vad | Modell | Kostnad |
-|---|---|---|---|
-| 1 | Deterministisk detektering: riksdagens API, hash på partisajter, media-RSS | ingen | **noll tokens** |
-| 2 | Sållar deltat: substantiell ändring vs brus | Haiku | billigast |
-| 3 | Verifierar substantiella fynd, formulerar ändringsförslag med grep-verifierat citat | Sonnet | tak $10/vecka |
+| Lager | Vad | Modell | Var | Kostnad |
+|---|---|---|---|---|
+| 1 | Deterministisk detektering: riksdagens API, hash på partisajter, media-RSS | ingen | **GitHub Actions** (veckocron) | **noll tokens** |
+| 2 | Sållar deltat: substantiell ändring vs brus | Haiku | **lokalt** | billigast |
+| 3 | Verifierar substantiella fynd, formulerar ändringsförslag med grep-verifierat citat | Sonnet | **lokalt** | tak $10/vecka |
 
-Lager 2 och 3 körs **bara om Lager 1 gav ett delta**. En tom körning kostar $0.
+Lagren är splittade efter **var de kan köra**. Lager 1 är ren fetch/hash/API-poll
+utan modellåtkomst — det körs på GitHubs infrastruktur (oberoende av dev-maskinen;
+`schtasks` var lokalt och kördes inte om maskinen sov). Lager 2/3 kräver
+modellåtkomst och körs medvetet **lokalt** på Max-planen — ingen API-nyckel ligger
+i Actions (separat billing, ej beslutat). Att flytta Lager 2/3 till Actions senare
+är en config-ändring (secret + ett jobb som kör `BEVAKNING_SKIP_DETECT=1`), inte en
+omskrivning.
+
+## Lager 1 i GitHub Actions
+
+Workflow: `.github/workflows/bevakning.yml`, kör `scripts/bevakning-ci.sh`.
+
+- **Schema:** cron `7 4 * * 0` = **söndag 04:07 UTC** (GitHub-cron är alltid UTC;
+  Sverige 06:07 CEST sommar / 05:07 CET vinter). Några minuter över hel timme för
+  att undvika den mest belastade schemaslotten. Kör även på `workflow_dispatch`
+  (manuellt via Actions-fliken eller `gh workflow run bevakning.yml`).
+- **Notifiering:** tom delta ⇒ tyst (bara logg, exit 0), inkl. första
+  baslinjekörningen. Icke-tom delta ⇒ **GitHub-issue** (datum + antal i titeln, rå
+  delta i body) — det är din notifiering. Fel eller otillgänglig källa ⇒ issue.
+  Ingen körning slutar tyst.
+- **Aktivering:** schedule/dispatch triggar först när workflow-filen ligger på
+  **default-grenen** (GitHub-plattformsvillkor). Den aktiveras alltså när denna
+  PR mergas.
+
+### State — committas till repot (inte Actions-cache)
+
+Lager 1-state (hashar, sedda riksdagen-id, sedda RSS-rubriker) ligger i den
+**committade** filen `bevakning-state.json` (repo-roten). Workflow:en committar
+tillbaka den efter varje körning (`permissions: contents: write`).
+
+**Varför commit och inte cache:** Actions-cache vräks efter 7 dagar utan träff —
+precis veckoschemats gräns. En missad eller försenad körning skulle nollställa
+baslinjen och tyst missa allt som hänt sedan sist — oacceptabelt för den del som
+"aldrig får missa något". Committad state är permanent, auditbar (git-historik
+visar varje baslinjeändring), och en `concurrency`-grupp + `git pull --rebase`
+före push serialiserar skrivningar så en manuell dispatch och cronen aldrig
+klobbar varandra.
+
+`bevakning-state.json` är därför **inte** gitignorerad. Lokala körningar rör den
+aldrig — de använder `.bevakning/state.json` (gitignorerad) eftersom de inte
+sätter `BEVAKNING_STATE_FILE`. Sätt aldrig den env-variabeln lokalt om du inte
+vill skriva den committade filen.
+
+## Köra Lager 2/3 lokalt mot ett delta (från Actions)
+
+När Actions filat en delta-issue:
+
+```bash
+# på grenen bevakning:
+gh run download --name bevakning-delta --dir .bevakning   # hämtar delta.json från körningen
+BEVAKNING_SKIP_DETECT=1 bash scripts/bevakning-loop.sh     # Lager 2→3→PR mot detta delta
+```
+
+`BEVAKNING_SKIP_DETECT=1` hoppar över Lager 1 och kör Haiku→Sonnet→rapport→PR mot
+det befintliga `.bevakning/delta.json`. Utan flaggan kör `bevakning-loop.sh` hela
+pipelinen lokalt (Lager 1 + 2 + 3), oförändrat.
 
 ## Köra
 
