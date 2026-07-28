@@ -14,12 +14,6 @@ on:
     # köa/försenas). Sverige: 06:07 CEST (sommar) / 05:07 CET (vinter).
     - cron: '7 4 * * 0'
   workflow_dispatch: {}   # manuell körning på begäran (Actions-fliken / gh)
-  # TILLFÄLLIG testtrigger (tas bort i nästa commit): låter en verklig körning
-  # ske på GitHubs infra på denna gren innan filen finns på default-grenen.
-  # paths-ignore på statefilen så bottens state-commit aldrig re-triggar en loop.
-  push:
-    branches: [bevakning]
-    paths-ignore: ['bevakning-state.json']
 
 permissions:
   contents: write   # committa tillbaka Lager 1-state (bevakning-state.json)
@@ -42,7 +36,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Lager 1 — detektering + notifiering (noll tokens)
         env:
