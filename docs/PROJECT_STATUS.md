@@ -1,6 +1,6 @@
 # Project Status — leides-ljuvliga-lilla-val26
 
-> **Last updated:** 2026-07-17
+> **Last updated:** 2026-07-28
 > **Format:** mål-baserat (per `/project:scope`). Öppet/framtida arbete uttrycks som **mål**;
 > avslutade sprintar är bevarade oförändrade under **Arkiv / Historik** längst ned.
 
@@ -17,6 +17,9 @@
 | G2 Publik lansering | Sajten lanseringsklar inför valet sept 2026 (SEO, polish, trovärdighet) | 🔄 In Progress | Flera pass — **bör splittas** | — |
 | G3 Opinionstrender | Aggregerade opinionsmätningar + viktad trend, ev. kopplad till GAL-TAN | ⏸️ Paused | TBD — kräver scoping | — |
 | G4 SOM/CMP-validering | Positions-/GAL-TAN-data korsvaliderad mot SOM + CMP | ⬜ Backlog | TBD — kräver scoping | — |
+| G5 Bevakning | Sajten upptäcker själv nya/ändrade partiståndpunkter, levererar granskningsbara ändringsförslag | ⬜ Backlog | 2–3 pass (bygge) + löpande drift | — |
+| G6 Källkvalitet | Varje source-fält lever upp till RESEARCH_AGENT.md | ⬜ Backlog | 1 looppass + 1 skrivpass, 2 PR | Bör ligga efter G5 |
+| G7 Valkompass v1.1 | Väljaren förstår varje fråga; områdestillhörighet syns | ⬜ Backlog | 1 looppass + 1 designpass, 2 PR | G5 |
 
 **Status legend:** ⬜ Todo/Backlog | 🔄 In Progress | ✅ Done | 🚫 Blocked | ⏸️ Paused
 
@@ -65,6 +68,45 @@
 - **Done when (UTKAST — kräver egen scoping):**
   - [ ] SOM/CMP-datauppsättningar identifierade och inlästa
   - [ ] Korsvalidering körd; avvikelser dokumenterade
+  - [ ] Run DoD review (goal closure) via dod-reviewer
+
+### G5 — Bevakning: automatiserad scanning + ändringsförslag ⬜
+
+- **Outcome:** Sajten upptäcker själv när partierna publicerar nytt eller ändrar sig, och levererar granskningsbara ändringsförslag i stället för att ändringar hittas manuellt. SD:s valplattform låg publicerad i 10 dagar innan en manuell avsökning fann den (2026-07-20) — det ska inte kunna upprepas under valrörelsen.
+- **Budget:** 2–3 pass för bygget, därefter löpande drift.
+- **Depends on:** Inget. Nästa i kön.
+- **Done when:**
+  - [ ] Lager 1 — deterministisk ändringsdetektering, noll tokens: riksdagens öppna API (data.riksdagen.se) mot `data/watchlist.json`, innehållshash på de 8 partisajterna, RSS från DN/SvD/Aftonbladet/Expressen/SVT Nyheter/SR Ekot. Hasha **alltid extraherad text**, aldrig HTTP-headers eller rå HTML — verifierat 2026-07-20: moderaterna.se ändrade Last-Modified utan att sakinnehållet ändrades, header-baserad detektering ger falska positiva hela valrörelsen
+  - [ ] Lager 2 — Haiku sållar deltat (substantiell ändring vs brus)
+  - [ ] Lager 3 — Sonnet verifierar och formulerar ändringsförslag endast på substantiella fynd
+  - [ ] Neutralitetsregler i kod: medieuppgift är **trigger, aldrig källa** — verifieras mot partiets egen kanal eller riksdagen, annars "Kräver beslut" som obekräftat utspel. Fynd viktas **aldrig** efter medievolym (tio artiklar om ett utspel är fortfarande ett utspel)
+  - [ ] Guardrails i kod enligt v3-mönstret: veckotak ~$15 hårt i kod, detached launch (överlever föräldradöd — batchen dog 2× som barnprocess), resume-vakt som endast återupptar `usage_interrupted`, semantiska exit-koder aldrig limit-klassificerade
+  - [ ] Leverans: PR = leverans, issue = fel, ingen körning slutar tyst
+  - [ ] Run DoD review (goal closure) via dod-reviewer
+
+### G6 — Källkvalitet: genomlysning av source-fälten ⬜
+
+- **Outcome:** Varje position vilar på en källa som lever upp till `RESEARCH_AGENT.md` — klickbar URL, primärkälla där sådan finns, inga intresseorganisationer som sakkälla.
+- **Bakgrund:** Problemen har hittats en och en, av slump — inte systematiskt. Kända fynd: 71 positioner saknar klickbar URL (var 126 före manifestrundan) trots att `RESEARCH_AGENT.md` säger att ståndpunkter utan verifierbar URL inte accepteras; S:s A–Ö-sida om migration ger 404 och citeras av 5 positioner; Hyresgästföreningens granskning (intresseorganisation, uttryckligen "Undvik") och Wikipedia användes som sakkällor tills manifestrundan bytte dem; "Parlamentarisk överenskommelse" saknade både datum och URL. Auditen räknade 111 citat under media/tredjepart — andelen svaga bland dem är okänd.
+- **Budget:** 1 looppass (flag-and-propose) + 1 skrivpass, 2 PR.
+- **Depends on:** Inget, men bör ligga **efter G5** så att bevakningen inte introducerar nya källor mitt i genomlysningen.
+- **Done when:**
+  - [ ] Systematisk genomlysning av samtliga source-fält i `data/positions.json`: (a) saknad eller trasig URL — automatisk länkkontroll, (b) intresseorganisationer och andra källtyper listade under "Undvik" i `RESEARCH_AGENT.md`, (c) sekundärkällor där primärkälla finns tillgänglig, (d) odaterade källor
+  - [ ] Flag-and-propose i ett granskningsdokument strukturerat per feltyp (samma mönster som `GRANSKNING-4-omraden.md`) — ersättningar föreslås, ingen data skrivs före godkännande
+  - [ ] Efter godkännande: skrivning + PR
+  - [ ] Run DoD review (goal closure) via dod-reviewer
+
+### G7 — Valkompass v1.1: begriplighet och läsbarhet ⬜
+
+- **Outcome:** Väljaren förstår varje fråga och vad valet står mellan; områdestillhörighet syns genom hela kompassen.
+- **Bakgrund:** Användartestning visar att flera frågor inte går att förstå — vare sig vad frågan gäller eller vad man väljer mellan. Obegriplighet är ett **neutralitetsproblem**, inte bara ett UX-problem: en fråga folk inte förstår ger slumpsvar, och slumpsvar förorenar matchningen. Områdestonerna (oklch 0.95 0.02 H) är i praktiken osynliga mot bakgrunden och fyller därför inte sin orienterande funktion.
+- **Budget:** 1 looppass (texter) + 1 designpass, 2 PR.
+- **Depends on:** **G5** — kompassen byggs inte om medan bevakningen kan ändra positionsdata under fötterna.
+- **Done when:**
+  - [ ] Kontexttext per fråga: kort bakgrund om sakläget + vad skalans ändlägen konkret innebär. Beskriv sakläget och ändlägena — **aldrig** varför någon vill det ena eller andra, och aldrig en förespråkare/kritiker-struktur där formuleringen avgör vem som låter rimligast
+  - [ ] Texterna genereras i loop och granskas med samma neutralitetsprocess som frågeformuleringarna fick: grep-verifierad härledning ur `positions.json`:s namngivna ändpunkter, evaluator prövar symmetri, Niklas läser före live
+  - [ ] Områdesmarkeringen syns: större färgyta (tonad kortbakgrund eller fylligt sidhuvud i stället för tunn remsa) plus justerad ton. Chroma och/eller ljushet ändras **lika för alla åtta områden** — invarianten (identisk ljushet + mättnad, endast hue varierar, ingen ton vinner) måste bestå och verifieras
+  - [ ] UI polish pass
   - [ ] Run DoD review (goal closure) via dod-reviewer
 
 ---

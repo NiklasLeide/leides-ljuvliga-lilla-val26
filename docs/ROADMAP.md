@@ -16,11 +16,17 @@
 | **G2** Publik lansering | Sajten lanseringsklar inför valet sept 2026 (SEO, polish, trovärdighet) | 🔄 In Progress | Flera pass — bör splittas |
 | **G3** Opinionstrender | Aggregerade opinionsmätningar + viktad trend, ev. kopplad till GAL-TAN | ⏸️ Paused | TBD — kräver scoping |
 | **G4** SOM/CMP-validering | Positions-/GAL-TAN-data korsvaliderad mot SOM + CMP | ⬜ Backlog | TBD — kräver scoping |
+| **G5** Bevakning | Sajten upptäcker själv nya/ändrade partiståndpunkter och levererar granskningsbara ändringsförslag | ⬜ Backlog | 2–3 pass (bygge) + löpande drift |
+| **G6** Källkvalitet | Varje source-fält lever upp till RESEARCH_AGENT.md (klickbar URL, primärkälla, inga intresseorg.) | ⬜ Backlog | 1 looppass + 1 skrivpass, 2 PR |
+| **G7** Valkompass v1.1 | Väljaren förstår varje fråga och vad valet står mellan; områdestillhörighet syns | ⬜ Backlog | 1 looppass + 1 designpass, 2 PR |
 
 - **G1** — Migrera docs till mål-format. → `docs/PROJECT_STATUS.md` (G1)
 - **G2** — Publik lansering före valet (sept 2026). Ersätter gamla Sprint 3.2 "Polish, SEO, public launch". Bör splittas i SEO-/trovärdighets-/mobilpass via `/project:scope`; öppna poster i `docs/SITE_BACKLOG.md`. → `docs/PROJECT_STATUS.md` (G2)
 - **G3** — Opinionstrender (polling). Ersätter gamla Sprint 7. Kräver egen `/project:scope` innan start. → `docs/PROJECT_STATUS.md` (G3)
 - **G4** — SOM/CMP-datavalidering. Från backlog. Kräver egen `/project:scope` innan start. → `docs/PROJECT_STATUS.md` (G4)
+- **G5** — Bevakning: automatiserad scanning + ändringsförslag. Tre lager (deterministisk detektering → Haiku-sållning → Sonnet-verifiering), neutralitetsregler och guardrails i kod. Nästa i kön. Föranlett av att SD:s valplattform låg publicerad i 10 dagar innan en manuell avsökning fann den. → `docs/PROJECT_STATUS.md` (G5)
+- **G6** — Källkvalitet: systematisk genomlysning av alla source-fält (trasiga URL:er, intresseorganisationer, sekundär- och odaterade källor). Flag-and-propose → skrivning. Bör ligga efter G5. → `docs/PROJECT_STATUS.md` (G6)
+- **G7** — Valkompass v1.1: kontexttext per fråga + synlig områdesmarkering. Obegriplighet är ett neutralitetsproblem (slumpsvar förorenar matchningen), inte bara UX. Beror på G5. → `docs/PROJECT_STATUS.md` (G7)
 
 > **Standing rule:** varje mål med UI-yta inkluderar en UI polish pass som Done-when-punkt.
 
