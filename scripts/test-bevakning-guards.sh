@@ -90,21 +90,19 @@ WATCHLIST="$WL" node scripts/bevakning-lib.js detect > "$SB/detect1.log" 2>&1
 [[ -f "$SB/delta.json" ]] && grep -q "first_run=true" "$SB/detect1.log"; check $? "Lager 1: detect kör utan claude (noll tokens) och skriver delta.json"
 
 # --- Test 7: branch-vakt — kör wrappern från en annan branch -> exit 3 --------
-# Ovillkorligt: växla tillfälligt till master (otäckta filer följer med), kör,
-# förvänta exit 3, växla tillbaka. Kräver ren nog tree för branch-växling.
+# Skär en wegwerf-branch från AKTUELL HEAD (som garanterat har skriptet — vi kör
+# ju det just nu). Att växla till master funkar inte: skriptet är spårat på
+# denna gren och FÖRSVINNER ur arbetsträdet vid checkout master (bash -> 127,
+# inte 3). Testet får aldrig anta att skriptet finns på jämförelsegrenen.
 b7_from="$(git branch --show-current)"
-b7_other="master"; [[ "$b7_from" == "master" ]] && b7_other="$b7_from"
-if [[ "$b7_from" != "master" ]] && git checkout -q master 2>/dev/null; then
+b7_tmp="bevakning-guardtest-tmp"
+git rev-parse --verify -q "$b7_tmp" >/dev/null && git branch -q -D "$b7_tmp"
+if git checkout -q -b "$b7_tmp" 2>/dev/null; then
   rc=0; CLAUDE_BIN=false GH_BIN=false WATCHLIST="$WL" bash scripts/bevakning-loop.sh >/dev/null 2>&1 || rc=$?
-  git checkout -q "$b7_from"
-  [[ $rc -eq 3 ]]; check $? "branch-vakt: exit 3 utanför 'bevakning'"
+  git checkout -q "$b7_from"; git branch -q -D "$b7_tmp"
+  [[ $rc -eq 3 ]]; check $? "branch-vakt: exit 3 utanför 'bevakning' (skriptet finns på testgrenen)"
 else
-  # Redan på master, eller växling nekades — testa via en wegwerf-branch.
-  git checkout -q -b bevakning-guardtest-tmp 2>/dev/null && {
-    rc=0; CLAUDE_BIN=false GH_BIN=false WATCHLIST="$WL" bash scripts/bevakning-loop.sh >/dev/null 2>&1 || rc=$?
-    git checkout -q "$b7_from"; git branch -q -D bevakning-guardtest-tmp
-    [[ $rc -eq 3 ]]; check $? "branch-vakt: exit 3 utanför 'bevakning'"
-  } || check 1 "branch-vakt: kunde inte skapa testbranch"
+  check 1 "branch-vakt: kunde inte skapa testgren"
 fi
 
 # Stubbar för wrapper-tester
