@@ -28,3 +28,9 @@ loop-state-discourse.json
 # diskursbatch: per-område- och batch-state (scripts/run-discourse-batch.sh)
 loop-state-*.json
 batch-state.json
+# bevakningsloop runtime state (scripts/bevakning-loop.sh) — aldrig committad
+.bevakning/
+.bevakning-test/
+.bevakning-test-stubs/
+# regenererbar extraherad manifesttext (scripts/extract-manifest-text.py)
+.manifest-text/

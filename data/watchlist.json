@@ -1,0 +1,41 @@
+{
+  "note": "Bevakningskonfiguration för G5-loopen (scripts/bevakning-loop.sh). LÄSES av loopen, skrivs ALDRIG av den — nya bevakningsobjekt föreslås i rapporten, inte auto-skrivna. Detta är watch-config, inte sajtdata; positions/voting/discourse/galtan rörs aldrig av bevakningen.",
+  "schemaVersion": 1,
+  "riksdagen": [
+    { "id": "prop-skola", "area": "skola", "doktyp": "prop", "sok": "skola OR friskola OR betyg OR skolpeng" },
+    { "id": "bet-skola", "area": "skola", "doktyp": "bet", "sok": "skola OR utbildning" },
+    { "id": "prop-ekonomi", "area": "ekonomi", "doktyp": "prop", "sok": "skatt OR budget OR arbetsmarknad OR bostad OR pension" },
+    { "id": "bet-ekonomi", "area": "ekonomi", "doktyp": "bet", "sok": "skatt OR finans OR arbetsmarknad OR bostad" },
+    { "id": "prop-migration", "area": "migration", "doktyp": "prop", "sok": "migration OR asyl OR medborgarskap OR uppehållstillstånd" },
+    { "id": "bet-migration", "area": "migration", "doktyp": "bet", "sok": "migration OR medborgarskap" },
+    { "id": "prop-forsvar", "area": "forsvar", "doktyp": "prop", "sok": "försvar OR totalförsvar OR värnplikt OR Nato" },
+    { "id": "bet-forsvar", "area": "forsvar", "doktyp": "bet", "sok": "försvar OR säkerhetspolitik" },
+    { "id": "prop-klimat", "area": "klimat", "doktyp": "prop", "sok": "klimat OR energi OR kärnkraft OR reduktionsplikt OR elpris" },
+    { "id": "bet-klimat", "area": "klimat", "doktyp": "bet", "sok": "klimat OR energi OR miljö" },
+    { "id": "prop-vard", "area": "vard", "doktyp": "prop", "sok": "vård OR sjukvård OR äldreomsorg OR psykiatri" },
+    { "id": "bet-vard", "area": "vard", "doktyp": "bet", "sok": "hälso- och sjukvård OR socialtjänst" },
+    { "id": "prop-demokrati", "area": "demokrati", "doktyp": "prop", "sok": "grundlag OR yttrandefrihet OR public service OR domstol" },
+    { "id": "bet-demokrati", "area": "demokrati", "doktyp": "bet", "sok": "konstitution OR yttrandefrihet OR public service" },
+    { "id": "lagradsremiss-alla", "area": "alla", "doktyp": "lr", "sok": "" }
+  ],
+  "sites": [
+    { "id": "s-dok", "party": "S", "kind": "dokumentlista", "label": "socialdemokraterna.se — politik A–Ö", "url": "https://www.socialdemokraterna.se/var-politik/a-till-o" },
+    { "id": "s-start", "party": "S", "kind": "startsida", "label": "socialdemokraterna.se — val 2026", "url": "https://www.socialdemokraterna.se/val-2026" },
+    { "id": "m-dok", "party": "M", "kind": "dokumentlista", "label": "moderaterna.se — vår politik", "url": "https://moderaterna.se/var-politik/" },
+    { "id": "m-valloften", "party": "M", "kind": "kampanjsida", "label": "moderaterna.se — vallöften 2026", "url": "https://moderaterna.se/valloften-2026/" },
+    { "id": "sd-dok", "party": "SD", "kind": "dokumentlista", "label": "sd.se — dokument", "url": "https://www.sd.se/dokument/" },
+    { "id": "v-dok", "party": "V", "kind": "dokumentlista", "label": "vansterpartiet.se — kongress 2026", "url": "https://www.vansterpartiet.se/kongress2026/" },
+    { "id": "c-dok", "party": "C", "kind": "dokumentlista", "label": "centerpartiet.se — politik A–Ö", "url": "https://www.centerpartiet.se/var-politik/politik-a-o" },
+    { "id": "kd-dok", "party": "KD", "kind": "dokumentlista", "label": "kristdemokraterna.se — vår politik", "url": "https://kristdemokraterna.se/var-politik" },
+    { "id": "l-dok", "party": "L", "kind": "dokumentlista", "label": "liberalerna.se — politik A–Ö", "url": "https://www.liberalerna.se/politik/" },
+    { "id": "mp-dok", "party": "MP", "kind": "dokumentlista", "label": "mp.se — politik", "url": "https://www.mp.se/politik" }
+  ],
+  "rss": [
+    { "id": "dn", "outlet": "DN", "url": "https://www.dn.se/rss/" },
+    { "id": "svd", "outlet": "SvD", "url": "https://www.svd.se/feed/articles.rss" },
+    { "id": "aftonbladet", "outlet": "Aftonbladet", "url": "https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/" },
+    { "id": "expressen", "outlet": "Expressen", "url": "https://feeds.expressen.se/nyheter/" },
+    { "id": "svt", "outlet": "SVT Nyheter", "url": "https://www.svt.se/nyheter/rss.xml" },
+    { "id": "ekot", "outlet": "SR Ekot", "url": "https://api.sr.se/api/rss/program/83?format=145" }
+  ]
+}
