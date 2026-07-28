@@ -18,6 +18,16 @@ Record of key decisions made during the project. **Newest first.**
 
 ---
 
+### DEC-008: positions.json schemaVersion 2 — färskhetsfält `senast_granskad`
+**Date:** 2026-07-21
+**Decision:** `data/positions.json` bumpas från schemaVersion 1 till 2. Nytt valfritt fält per position: `senast_granskad` (YYYY-MM-DD), satt på de 150 positioner som citerar ett 2026-valdokument. Fältet är rent data i denna runda — ingen UI-rendering. Ny kontraktsvalidator `scripts/validate-positions.js` (noll tokens) kontrollerar 8 partier × 42 sakfrågor, position 0–100, obligatoriska fält och datumformat.
+**Reasoning:** CLAUDE.md kräver migration och versionsbump vid varje datastrukturändring. Fältet är valfritt (`undefined` tillåts) så att äldre poster förblir giltiga tills de backfillas — en hård kravsättning hade tvingat fram antingen påhittade granskningsdatum eller en engångsbackfill av alla 336 positioner utan verkligt underlag. Ingen konsument läser `positions.json`s schemaVersion (verifierat med grep över js/, html och scripts/), så bumpen är bakåtkompatibel för sajten.
+**Alternatives considered:** (a) Inget fält alls — förkastat, SITE_BACKLOG A3 kräver färskhetsmarkering och den blir meningsfull först nu när manifesten är inne. (b) Obligatoriskt fält på alla 336 — förkastat, se ovan. (c) Fält på områdesnivå i stället för positionsnivå — förkastat, granskning sker per position och per källa, inte per område.
+
+**Sidofynd (ej åtgärdat i denna runda):** validatorn ställer RESEARCH_AGENT.md:s URL-krav hårt endast på granskade positioner. 71 ogranskade positioner saknar klickbar URL (var 126 före denna runda; 55 åtgärdades som sidoeffekt av manifestkällorna). Redovisas som varning, inte brott — annars blockerar befintlig skuld all vidare validering. Backfill är eget arbete.
+
+---
+
 ### DEC-007: Evaluator-optimizer-loop med modellrouting för datauppdateringar
 **Date:** 2026-07-03
 **Decision:** Bounded datauppdateringar i voting.json körs som en evaluator-optimizer-loop (`scripts/data-loop.sh`): Sonnet-worker (resumable session) + separat Sonnet-evaluator (färsk session per runda, domare ≠ utförare) via `claude -p`, med noll-token schemavalidering i node (`scripts/validate-voting.js`) före varje evaluatoranrop. Fem guardrails ligger i loopskriptet, inte i hooks eller promptar: (1) binärt exitvillkor = validering OK + evaluatorns första rad PASS, (2) MAX_ITERS=8 hårdkodat, (3) budgettak $10 kontrollerat i node före varje API-anrop, fail-closed exit 4 om `total_cost_usd` saknas/inte kan parsas, (4) branch-sandbox — skriptet vägrar köra utanför `loop-pilot` (exit 3), (5) mänsklig checkpoint — loopen committar/mergar aldrig; resultatet går som PR mot master som Niklas granskar. Fable 5 (huvudtråden) används endast utanför loopkroppen: design, slutgranskning av diffen, syntes. All state (spent, session_id, verdict) persisteras i gitignorerad `loop-state.json` efter varje steg — avbruten körning återupptas, startas inte om.

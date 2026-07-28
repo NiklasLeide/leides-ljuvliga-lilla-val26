@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "parties": {
     "S": {
       "name": "Socialdemokraterna",
@@ -67,15 +67,17 @@
               "position": 5,
               "group": "Avskaffa",
               "summary": "Vinstförbud för all skolverksamhet. Vill avskaffa det fria skolvalet och införa statligt huvudmannaskap.",
-              "source": "V:s skolpolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/ · Motion 'Skolan ska inte vara en marknad', https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/skolan-ska-inte-vara-en-marknad_hd02973/ · V:s genomförandeplan 2022, https://www.vansterpartiet.se/wp-content/uploads/2022/07/genomforandeplan-skolan-v-220704.pdf",
-              "unclear": false
+              "source": "V:s skolpolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/ · Motion 'Skolan ska inte vara en marknad', https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/skolan-ska-inte-vara-en-marknad_hd02973/ · V:s genomförandeplan 2022, https://www.vansterpartiet.se/wp-content/uploads/2022/07/genomforandeplan-skolan-v-220704.pdf · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 18,
               "group": "Begränsa starkt",
               "summary": "Vill förbjuda vinstuttag i skolan. Skattepengar ska stanna i skolan. Kommunalt veto vid nyetablering.",
-              "source": "S om friskolor, https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor · S reformagenda jan 2025, https://www.socialdemokraterna.se/nyheter/nyheter/2025-01-27-s-staten-ska-ta-tillbaka-kontrollen-over-skolan",
-              "unclear": false
+              "source": "S om friskolor, https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor · S reformagenda jan 2025, https://www.socialdemokraterna.se/nyheter/nyheter/2025-01-27-s-staten-ska-ta-tillbaka-kontrollen-over-skolan · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 22,
@@ -88,8 +90,9 @@
               "position": 30,
               "group": "Begränsa starkt",
               "summary": "Vill fasa ut aktiebolag som driftsform för friskolor. Ny associationsform utan vinstsyfte. Stor kursändring klubbad på landsmöte nov 2025.",
-              "source": "L om friskolor, https://www.liberalerna.se/politik/friskolor · L landsmötesbeslut 2025, https://www.liberalerna.se/nyheter/beslut-fran-landsmotet-2025",
-              "unclear": false
+              "source": "L om friskolor, https://www.liberalerna.se/politik/friskolor · L landsmötesbeslut 2025, https://www.liberalerna.se/nyheter/beslut-fran-landsmotet-2025 · För din frihet. Liberalernas valmanifest 2026, s. 10, 11, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 55,
@@ -116,8 +119,9 @@
               "position": 88,
               "group": "Stark valfrihet",
               "summary": "Stark valfrihet. Friskolor utan kvalitetsbrister ska kunna fortsätta. Inga vinstbegränsningar.",
-              "source": "C om valfrihet i skolan, https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan · SVT om C:s sväng maj 2023, https://www.svt.se/nyheter/inrikes/centerpartiet-svanger-vill-begransa-friskolornas-vinster",
-              "unclear": false
+              "source": "C om valfrihet i skolan, https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan · SVT om C:s sväng maj 2023, https://www.svt.se/nyheter/inrikes/centerpartiet-svanger-vill-begransa-friskolornas-vinster · Sverige kan mer. Centerpartiets valmanifest 2026, s. 45, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -134,8 +138,9 @@
               "position": 5,
               "group": "Förbjud vinstuttag",
               "summary": "Vill avskaffa möjligheten att gå med vinst i skolan helt. Bara icke-vinstdrivande organisationsformer ska få driva friskolor. Detaljerad genomförandeplan med vinstförbud fullt infört 2026.",
-              "source": "V:s skolpolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/ · Motion 'Skolan ska inte vara en marknad', https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/skolan-ska-inte-vara-en-marknad_hd02973/ · V:s genomförandeplan 2022, https://www.vansterpartiet.se/wp-content/uploads/2022/07/genomforandeplan-skolan-v-220704.pdf",
-              "unclear": false
+              "source": "V:s skolpolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skolan/ · Motion 'Skolan ska inte vara en marknad', https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/skolan-ska-inte-vara-en-marknad_hd02973/ · V:s genomförandeplan 2022, https://www.vansterpartiet.se/wp-content/uploads/2022/07/genomforandeplan-skolan-v-220704.pdf · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 10,
@@ -148,22 +153,25 @@
               "position": 12,
               "group": "Förbjud vinstuttag",
               "summary": "Vill förbjuda vinstuttag i skolan, förskolan och gymnasiet samt stoppa etablering av nya vinstdrivande skolor. Kongressbeslut 2021. Reformagenda januari 2025 med vinstförbud som ett av tre ben. Fyra konkreta förslag som utskottsinitiativ oktober 2025.",
-              "source": "S om friskolor, https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor · Motion 2025/26:1808 Förbud mot vinstuttag i skolan, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/forbud-mot-vinstuttag-i-skolan_hd021808/ · S kräver vinstförbud okt 2025, https://www.socialdemokraterna.se/nyheter/nyheter/2025-10-29-s-kraver-vinstforbud-i-skolan---presenterar-fyra-konkreta-forslag · S reformagenda jan 2025, https://www.socialdemokraterna.se/nyheter/nyheter/2025-01-27-s-staten-ska-ta-tillbaka-kontrollen-over-skolan",
-              "unclear": false
+              "source": "S om friskolor, https://www.socialdemokraterna.se/var-politik/a-till-o/friskolor · Motion 2025/26:1808 Förbud mot vinstuttag i skolan, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/forbud-mot-vinstuttag-i-skolan_hd021808/ · S kräver vinstförbud okt 2025, https://www.socialdemokraterna.se/nyheter/nyheter/2025-10-29-s-kraver-vinstforbud-i-skolan---presenterar-fyra-konkreta-forslag · S reformagenda jan 2025, https://www.socialdemokraterna.se/nyheter/nyheter/2025-01-27-s-staten-ska-ta-tillbaka-kontrollen-over-skolan · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 18,
               "group": "Förbjud vinstuttag",
               "summary": "Historisk sväng: landsmötet november 2025 beslutade att vinstintresset ska fasas ut ur skolväsendet och att vinstdrivande aktiebolag ska omvandlas till associationsformer utan vinstsyfte. Internt splittrat men beslutet är fattat. Har som skolminister infört vinststopp vid nystart, ägarbyte och kvalitetsbrister.",
-              "source": "L landsmötesbeslut 2025, https://www.liberalerna.se/nyheter/beslut-fran-landsmotet-2025 · L om friskolor, https://www.liberalerna.se/politik/friskolor · ETC om L:s landsmöte nov 2025, https://www.etc.se/inrikes/klubbat-liberalerna-vill-foerbjuda-aktiebolag-i-skolan",
-              "unclear": false
+              "source": "L landsmötesbeslut 2025, https://www.liberalerna.se/nyheter/beslut-fran-landsmotet-2025 · L om friskolor, https://www.liberalerna.se/politik/friskolor · ETC om L:s landsmöte nov 2025, https://www.etc.se/inrikes/klubbat-liberalerna-vill-foerbjuda-aktiebolag-i-skolan · För din frihet. Liberalernas valmanifest 2026, s. 10, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 58,
               "group": "Villkorad vinst",
               "summary": "Vinstutdelning ska stoppas vid allvarliga kvalitetsbrister, men vinst tillåts för skolor som uppfyller kvalitetskrav. Svängde 2023 under Demirok mot vinstbegränsning men nuvarande partiledare Hatt har friskole-bakgrund. Vill inte avskaffa aktiebolagsformen. Vill ha obligatoriskt skolval och samordnad antagning.",
-              "source": "C om valfrihet i skolan, https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan · SVT om C:s sväng maj 2023, https://www.svt.se/nyheter/inrikes/centerpartiet-svanger-vill-begransa-friskolornas-vinster",
-              "unclear": true
+              "source": "C om valfrihet i skolan, https://www.centerpartiet.se/var-politik/politik-a-o/utbildning/valfrihet-i-skolan · SVT om C:s sväng maj 2023, https://www.svt.se/nyheter/inrikes/centerpartiet-svanger-vill-begransa-friskolornas-vinster · Sverige kan mer. Centerpartiets valmanifest 2026, s. 45, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 75,
@@ -335,8 +343,9 @@
               "position": 15,
               "group": "Kommunalt ansvar",
               "summary": "Emot statligt huvudmannaskap. Menar att lokala beslut fattas bäst lokalt. Vill att staten tar större finansiellt ansvar för nya krav men att huvudmannaskapet ska kvarstå hos kommunerna.",
-              "source": "Vi Lärares partienkät sept 2025, https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/ · Statlig skola — politikerna svarar (Vi Lärare), https://www.vilarare.se/nyheter/fackligt/statlig-skola-sa-sager-politikerna/",
-              "unclear": false
+              "source": "Vi Lärares partienkät sept 2025, https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/ · Statlig skola — politikerna svarar (Vi Lärare), https://www.vilarare.se/nyheter/fackligt/statlig-skola-sa-sager-politikerna/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 40, 52, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 30,
@@ -384,8 +393,9 @@
               "position": 92,
               "group": "Statligt huvudmannaskap",
               "summary": "Mest drivande för förstatligande sedan Björklunds tid. Vill att staten tar över ansvaret för offentligt drivna skolor. Fick in utredning om statligt huvudmannaskap i januariavtalet. Mohamsson driver vidare som skolminister.",
-              "source": "L om friskolor (förstatligande), https://www.liberalerna.se/politik/friskolor · Familjeliv partienkät 2022, https://www.familjeliv.se/allmant/1330580-har-ar-riksdagspartierna-som-vill-forstatliga-skolan-och-de-som-sager-nej-till-forslaget · Vi Lärares partienkät sept 2025, https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/ · Björklund-motion om förstatligande, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/forstatliga-skolan_h3021467/",
-              "unclear": false
+              "source": "L om friskolor (förstatligande), https://www.liberalerna.se/politik/friskolor · Familjeliv partienkät 2022, https://www.familjeliv.se/allmant/1330580-har-ar-riksdagspartierna-som-vill-forstatliga-skolan-och-de-som-sager-nej-till-forslaget · Vi Lärares partienkät sept 2025, https://www.vilarare.se/nyheter/skolpolitik/22-heta-valfragor-for-skolan--sa-svarar-partierna/ · Björklund-motion om förstatligande, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/forstatliga-skolan_h3021467/ · För din frihet. Liberalernas valmanifest 2026, s. 11, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -422,9 +432,10 @@
             "C": {
               "position": 45,
               "group": "Balanserad hållning",
-              "summary": "Generellt positivt till digitalisering och har digitaliseringsprogram. Vill balansera digital kompetens med ansvarsfull användning. Har inte drivit skärmfrågan lika starkt som varken regeringen eller oppositionen.",
-              "source": "Techtidningen techvalet 2026, https://techtidningen.se/techvalet-2026-sa-ser-sveriges-riksdagspartier-pa-techfragan/ · SVT om partierna och AI, https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-ai-utvecklingen",
-              "unclear": true
+              "summary": "Generellt positivt till digitalisering och har digitaliseringsprogram. Vill balansera digital kompetens med ansvarsfull användning. Valmanifestet 2026 vill att alla elever får grundläggande kunskap i AI och källkritik och att teknik ska förenkla, men tar inte ställning i frågan om skärmar kontra läroböcker som skalan mäter. Positionen är därför fortsatt otydlig.",
+              "source": "Techtidningen techvalet 2026, https://techtidningen.se/techvalet-2026-sa-ser-sveriges-riksdagspartier-pa-techfragan/ · SVT om partierna och AI, https://www.svt.se/nyheter/inrikes/sa-tycker-partierna-om-ai-utvecklingen · Sverige kan mer. Centerpartiets valmanifest 2026, s. 39, 44, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": true,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 72,
@@ -451,8 +462,9 @@
               "position": 88,
               "group": "Begränsa skärmar",
               "summary": "Mest drivande partiet: Lotta Edholm (L) som skolminister myntade 'från skärm till pärm', drev mobilförbudet, ändrade förskolans läroplan, införde läroboksstöd och principen en lärobok per elev och ämne. Mohamsson (L) driver vidare som skolminister.",
-              "source": "Regeringen om lästid/skärmtid, https://www.regeringen.se/artiklar/2024/01/regeringen-satsar-pa-okad-lastid-och-minskad-skarmtid/ · Debattartikel 'Digitaliseringen har varit ett experiment', https://www.regeringen.se/debattartiklar/2022/12/digitaliseringen-i-skolan-har-varit-ett-experiment/",
-              "unclear": false
+              "source": "Regeringen om lästid/skärmtid, https://www.regeringen.se/artiklar/2024/01/regeringen-satsar-pa-okad-lastid-och-minskad-skarmtid/ · Debattartikel 'Digitaliseringen har varit ett experiment', https://www.regeringen.se/debattartiklar/2022/12/digitaliseringen-i-skolan-har-varit-ett-experiment/ · För din frihet. Liberalernas valmanifest 2026, s. 10, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         }
@@ -487,8 +499,9 @@
               "position": 8,
               "group": "Höj för höga inkomster",
               "summary": "Vill höja skatterna med ca 66 miljarder netto. Vill återinföra värnskatt plus ytterligare värnskattesteg — högsta marginalskatt skulle bli ca 67%. Vill sänka skatten för låg- och medelinkomsttagare (under 40 000 kr/mån) men kraftigt höja för höga inkomster. Vill avskaffa rutavdraget och begränsa 3:12-reglerna.",
-              "source": "V:s skattepolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/ · Motion 2025/26:2783 Ett rättvist skattesystem, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-rattvist-skattesystem_hd022783/html/ · Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/",
-              "unclear": false
+              "source": "V:s skattepolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/ · Motion 2025/26:2783 Ett rättvist skattesystem, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/ett-rattvist-skattesystem_hd022783/html/ · Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 22,
@@ -501,15 +514,17 @@
               "position": 25,
               "group": "Höj för höga inkomster",
               "summary": "Prioriterar välfärdsinvesteringar före skattesänkningar. Avvisar regeringens skattesänkningar för höginkomsttagare. Vill att jobbskatteavdraget helt upphör vid inkomster över 1,2 mkr/år. Föreslår skattereduktion för låga/medelhöga inkomster. Vill höja beskattningen av kapital.",
-              "source": "S om skatter, https://www.socialdemokraterna.se/var-politik/a-till-o/skatter · Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/",
-              "unclear": false
+              "source": "S om skatter, https://www.socialdemokraterna.se/var-politik/a-till-o/skatter · Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 62,
               "group": "Sänk skatten brett",
-              "summary": "Vill sänka skatten brett genom allmän skattereduktion som inkluderar löntagare, pensionärer och sjukskrivna. Vill stärka drivkrafter till arbete men med annorlunda utformning än regeringens jobbskatteavdrag. Inte lika fokuserat på marginalskattesänkningar som M/L.",
-              "source": "Skatteutskottets yttrande 2024/25:SkU1y (C:s avvikande mening), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/",
-              "unclear": true
+              "summary": "Vill sänka skatten brett genom allmän skattereduktion som inkluderar löntagare, pensionärer och sjukskrivna. Inte lika fokuserat på marginalskattesänkningar som M/L. Valmanifestet 2026 bekräftar linjen: sänk inkomstskatten särskilt för de med låga inkomster — prioriterat att sänka skatten underifrån.",
+              "source": "Skatteutskottets yttrande 2024/25:SkU1y (C:s avvikande mening), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 17, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 75,
@@ -522,22 +537,25 @@
               "position": 78,
               "group": "Sänk skatten på arbete",
               "summary": "Stöder förstärkt jobbskatteavdrag och slopad avtrappning vid höga inkomster. Finansierade de stora skattesänkningarna 2024-2026 genom budgetöverenskommelser med regeringen. Vill sänka skatten brett.",
-              "source": "Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/",
-              "unclear": false
+              "source": "Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Valplattform 2026, s. 8, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 85,
               "group": "Sänk skatten på arbete",
               "summary": "Sänker skatterna mest av alla partier — ca 35 mdr netto. Största sänkningen är förstärkt jobbskatteavdrag. Slopade avtrappningen vid höga inkomster 2025. Vill sänka marginalskatter och höja brytpunkten för statlig skatt.",
-              "source": "Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Budgetpropositionen för 2026, https://blogg.pwc.se/taxmatters/budgetpropositionen",
-              "unclear": false
+              "source": "Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Budgetpropositionen för 2026, https://blogg.pwc.se/taxmatters/budgetpropositionen · Vallöften 2026 (kampanjsida, ej manifest), hämtad 2026-07-20, https://moderaterna.se/valloften-2026/",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 88,
               "group": "Sänk skatten på arbete",
               "summary": "Tydligast för sänkta marginalskatter även för höga inkomster. Vill kraftigt höja brytpunkten för statlig skatt. Drev avskaffandet av värnskatten (genomfört 2020). Ingår i regeringen som driver skattesänkningarna.",
-              "source": "Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Smedjan/Timbro partianalys, https://timbro.se/smedjan/smedjan-ekonomi/har-ar-partiernas-basta-och-samsta-skatteforslag/",
-              "unclear": false
+              "source": "Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Smedjan/Timbro partianalys, https://timbro.se/smedjan/smedjan-ekonomi/har-ar-partiernas-basta-och-samsta-skatteforslag/ · För din frihet. Liberalernas valmanifest 2026, s. 16, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -554,8 +572,9 @@
               "position": 5,
               "group": "Höj skatter, stärk välfärden",
               "summary": "Vill höja skatterna med ca 66 mdr för att finansiera kraftigt ökade generella statsbidrag till kommuner och regioner, stärkt sjukvård, fler anställda i välfärden. Föreslår bankskatt, höjda kapitalskatter, avskaffat rutavdrag.",
-              "source": "V:s budgetmotion 2025/26:2792, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-ny-regering-for-ett-starkare-och-tryggare_hd022792/html/ · V:s skattepolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/",
-              "unclear": false
+              "source": "V:s budgetmotion 2025/26:2792, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-ny-regering-for-ett-starkare-och-tryggare_hd022792/html/ · V:s skattepolitik, https://www.vansterpartiet.se/var-politik/politik-a-o/skattepolitik/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 20,
@@ -568,15 +587,17 @@
               "position": 18,
               "group": "Höj skatter, stärk välfärden",
               "summary": "Nya resurser till välfärden går före skattesänkningar. Vill ha sektorsbidrag till skolan, tillfällig bankskatt, höjd kapitalbeskattning. Varje åtgärd finansierad. Kritiserar regeringens 53 mdr i skattesänkningar 2026.",
-              "source": "S om skatter, https://www.socialdemokraterna.se/var-politik/a-till-o/skatter · Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/",
-              "unclear": false
+              "source": "S om skatter, https://www.socialdemokraterna.se/var-politik/a-till-o/skatter · Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 55,
               "group": "Balanserad linje",
-              "summary": "Vill ha bred skattereduktion men också stärkt välfärd. Betonar effektivisering och strukturreformer snarare än höjda skatter. Vill att staten tar större finansiellt ansvar vid nya krav på kommunerna.",
-              "source": "Skatteutskottets yttrande 2024/25:SkU1y (C:s avvikande mening), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/",
-              "unclear": true
+              "summary": "Vill ha bred skattereduktion men också stärkt välfärd. Betonar effektivisering och strukturreformer snarare än höjda skatter. Valmanifestet 2026 kombinerar ett stort utgiftsåtagande — 50 miljarder till landsbygderna under mandatperioden — med effektivisering genom att befria kommuner och regioner från riktade statsbidrag.",
+              "source": "Skatteutskottets yttrande 2024/25:SkU1y (C:s avvikande mening), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 44, 51, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 70,
@@ -589,22 +610,25 @@
               "position": 72,
               "group": "Effektivisera, sänk skatter",
               "summary": "Finansierar skattesänkningar genom budgetöverenskommelser. Vill effektivisera offentlig sektor. Anser att sänkta skatter stimulerar ekonomin och att välfärden finansieras genom ökad sysselsättning snarare än skattehöjningar.",
-              "source": "Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/",
-              "unclear": false
+              "source": "Skatteutskottets yttrande 2024/25:SkU1y, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/yttrande/skattefragor-i-budgetpropositionen-for-2025_hc05sku1y/html/ · Valplattform 2026, s. 4, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 80,
               "group": "Effektivisera, sänk skatter",
               "summary": "Del av regeringen med skattesänkarlinje. Betonar dock att välfärden ska fungera — driver parallellt stora skolreformer med ny finansiering. Kombinerar skattesänkningar med selektiva välfärdssatsningar.",
-              "source": "Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Regeringens reformpaket för skolan, https://www.regeringen.se/artiklar/2026/02/regeringen-genomfor-de-storsta-reformerna-for-skolan-pa-30-ar/",
-              "unclear": false
+              "source": "Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Regeringens reformpaket för skolan, https://www.regeringen.se/artiklar/2026/02/regeringen-genomfor-de-storsta-reformerna-for-skolan-pa-30-ar/ · För din frihet. Liberalernas valmanifest 2026, s. 16, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 82,
               "group": "Effektivisera, sänk skatter",
               "summary": "Leder regeringen som genomför de största skattesänkningarna. Menar att sänkta skatter ökar drivkrafter, sysselsättning och skattebasen. Prioriterar skattesänkningar framför ökade offentliga utgifter.",
-              "source": "Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Budgetpropositionen för 2026, https://blogg.pwc.se/taxmatters/budgetpropositionen",
-              "unclear": false
+              "source": "Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Budgetpropositionen för 2026, https://blogg.pwc.se/taxmatters/budgetpropositionen · Vallöften 2026 (kampanjsida, ej manifest), hämtad 2026-07-20, https://moderaterna.se/valloften-2026/",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -621,8 +645,9 @@
               "position": 8,
               "group": "Stärk anställningsskyddet",
               "summary": "Röstade emot LAS-reformen 2022. Anser att den kraftigt försämrade anställningsskyddet. Vill stärka arbetsrätten: begränsa intermittenta anställningar, stärka provanställdas skydd, riva upp inskränkningarna i konflikträtten.",
-              "source": "V:s reservation i betänkande 2021/22:AU12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/flexibilitet-omstallningsformaga-och-trygghet-pa_H901AU12/ · V:s motion om starkare arbetsrätt, https://data.riksdagen.se/dokument/H802176",
-              "unclear": false
+              "source": "V:s reservation i betänkande 2021/22:AU12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/flexibilitet-omstallningsformaga-och-trygghet-pa_H901AU12/ · V:s motion om starkare arbetsrätt, https://data.riksdagen.se/dokument/H802176 · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 3, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 32,
@@ -635,29 +660,33 @@
               "position": 35,
               "group": "Parternas modell",
               "summary": "Drev LAS-reformen som regeringsparti baserat på parternas principöverenskommelse. Accepterade ökad flexibilitet i utbyte mot omställningsstudiestöd. Betonar den svenska modellen. Vill inte riva upp reformen.",
-              "source": "Prop. 2021/22:176, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/flexibilitet-omstallningsformaga-och-trygghet-pa_h903176/html/ · Betänkande 2021/22:AU12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/flexibilitet-omstallningsformaga-och-trygghet-pa_H901AU12/",
-              "unclear": false
+              "source": "Prop. 2021/22:176, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/flexibilitet-omstallningsformaga-och-trygghet-pa_h903176/html/ · Betänkande 2021/22:AU12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/flexibilitet-omstallningsformaga-och-trygghet-pa_H901AU12/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 65,
               "group": "Flexibilitet med omställning",
               "summary": "Drev LAS-reformen via januariavtalet. Ser reformerad arbetsrätt med ökad flexibilitet och omställningsstudiestöd som en balanserad lösning. Vill att arbetsmarknaden anpassas till moderna förhållanden.",
-              "source": "Betänkande 2021/22:AU12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/flexibilitet-omstallningsformaga-och-trygghet-pa_H901AU12/",
-              "unclear": false
+              "source": "Betänkande 2021/22:AU12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/flexibilitet-omstallningsformaga-och-trygghet-pa_H901AU12/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 14, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 68,
               "group": "Flexibilitet med omställning",
               "summary": "Stöder den svenska arbetsmarknadsmodellen och LAS-reformen. Betonar att frågor om lönebildning och arbetstider hanteras bäst av parterna. Vill inte ha lagstadgad arbetstidsförkortning.",
-              "source": "SD:s särskilda yttrande i betänkande 2025/26:AU10, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/arbetsratt-och-arbetstid_hd01au10/",
-              "unclear": false
+              "source": "SD:s särskilda yttrande i betänkande 2025/26:AU10, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/arbetsratt-och-arbetstid_hd01au10/ · Valplattform 2026, s. 7, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 70,
               "group": "Flexibilitet med omställning",
               "summary": "Drev LAS-reformen via januariavtalet, sedan som regeringsparti. Pehrson (L) som arbetsmarknadsminister implementerade omställningsstödet. Stöder moderniserad arbetsrätt med flexibilitet.",
-              "source": "Pehrson (L) svar om svenska modellen, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/den-svenska-modellen-for-arbetsmarknaden_ha12890/",
-              "unclear": false
+              "source": "Pehrson (L) svar om svenska modellen, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svar-pa-skriftlig-fraga/den-svenska-modellen-for-arbetsmarknaden_ha12890/ · För din frihet. Liberalernas valmanifest 2026, s. 17, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 72,
@@ -688,15 +717,17 @@
               "position": 5,
               "group": "Reglera och bygg allmännyttigt",
               "summary": "Vill värna bruksvärdessystemet och motsätter sig alla steg mot marknadshyror. Kritiserar Prop. 2025/26:187 om flexiblare hyresmarknad som ideologiskt drivna marknadshyror bakvägen. Vill ha statligt byggbolag för billiga hyresrätter, investeringsstöd, stärkt allmännytta.",
-              "source": "V:s bostadsmotion 2025/26:2821, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/bostadspolitik-planering-och-byggande_hd022821/html/ · V mot Prop. 2025/26:187, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526187-en-mer-flexibel_hd023995/",
-              "unclear": false
+              "source": "V:s bostadsmotion 2025/26:2821, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/bostadspolitik-planering-och-byggande_hd022821/html/ · V mot Prop. 2025/26:187, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-prop-202526187-en-mer-flexibel_hd023995/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 1, 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 18,
               "group": "Reglera och bygg allmännyttigt",
               "summary": "Avvisar alla förslag om marknadshyror. Vill stärka den svenska hyresmodellen. Vill ha investeringsstöd för hyresrätter, upprustning av miljonprogrammet, stärkt allmännytta. Politik för både ägt och hyrt boende.",
-              "source": "Betänkande hyresrätt 2024/25:CU9, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/hyresratt-m-m_hc01cu9/html/ · Hyresgästföreningens granskning (Dagens Arena), https://www.dagensarena.se/innehall/ny-rapport-riktar-skarp-kritik-mot-partiernas-bostadspolitik/",
-              "unclear": false
+              "source": "Betänkande hyresrätt 2024/25:CU9, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/hyresratt-m-m_hc01cu9/html/ · Hyresgästföreningens granskning (Dagens Arena), https://www.dagensarena.se/innehall/ny-rapport-riktar-skarp-kritik-mot-partiernas-bostadspolitik/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 22,
@@ -706,18 +737,20 @@
               "unclear": false
             },
             "SD": {
-              "position": 60,
-              "group": "Underhåll före avreglering",
-              "summary": "Prioriterar underhåll av befintligt bestånd. Fokus på trygghet i boendemiljöer och vräkning av kriminella. Har inte drivit marknadshyror lika aktivt som M/L/C men stöder regeringens flexiblare hyresmarknad.",
-              "source": "Betänkande bostadspolitik 2025/26:CU18, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/bostadspolitik_hd01cu18/",
-              "unclear": true
+              "position": 65,
+              "group": "Enklare regler och ökat ägande",
+              "summary": "Valplattformen 2026 vill ha enklare bygg- och låneregler så att fler kan äga och utveckla sin bostad, och pekar ut pålagor, regelkrångel och högt skattetryck som orsak till trångboddhet och bostadsbrist. Plattformen nämner inte marknadshyror.",
+              "source": "Betänkande bostadspolitik 2025/26:CU18, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/bostadspolitik_hd01cu18/ · Valplattform 2026, s. 8, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
-              "position": 68,
-              "group": "Marknadsorientering",
-              "summary": "Ser hyresrätten som tillfälligt boende. Vill ha marknadshyror i nyproduktion och att läget får större genomslag i hyressättningen. Saknar politik för att förbättra hyresmarknaden utöver avreglering.",
-              "source": "Hyresgästföreningens granskning (Dagens Arena), https://www.dagensarena.se/innehall/ny-rapport-riktar-skarp-kritik-mot-partiernas-bostadspolitik/",
-              "unclear": false
+              "position": 58,
+              "group": "Marknad med socialt inslag",
+              "summary": "Valmanifestet 2026 innehåller en bostadssocial reform som ska ge hushåll med svag ekonomi tillgång till bostäder med rimliga hyror, tillsammans med enklare byggregler och kommunala bygglovsundantag. Manifestet nämner inte marknadshyror.",
+              "source": "Sverige kan mer. Centerpartiets valmanifest 2026, s. 19, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 72,
@@ -730,15 +763,17 @@
               "position": 75,
               "group": "Marknadsorientering",
               "summary": "Vill införa trygghetshyror i nyproduktion — hyresvärd och hyresgäst förhandlar vid inflyttning. Inte formellt marknadshyror men ett steg i den riktningen. Fokus på regelförenklingar, höjt bolånetak, slopad strandskydd.",
-              "source": "M om bostadspolitik, https://moderaterna.se/var-politik/bostadspolitik/ · Bostadspolitik.se om M:s trygghetshyror, https://bostadspolitik.se/moderaterna-vill-ateruppratta-samhallskontraktet-och-skapa-trygghet-med-ny-hyresmodell/",
-              "unclear": false
+              "source": "M om bostadspolitik, https://moderaterna.se/var-politik/bostadspolitik/ · Bostadspolitik.se om M:s trygghetshyror, https://bostadspolitik.se/moderaterna-vill-ateruppratta-samhallskontraktet-och-skapa-trygghet-med-ny-hyresmodell/ · Vallöften 2026 (kampanjsida, ej manifest), hämtad 2026-07-20, https://moderaterna.se/valloften-2026/",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 78,
               "group": "Marknadsorientering",
               "summary": "Kritisk mot bruksvärdessystemet som stelbent. Vill ha marknadshyror som lösning. Politik helt inriktad på bostadsägare: startlån, ombildningar. Behovsprövade bostäder för de som inte kan köpa.",
-              "source": "Hyresgästföreningens granskning (Dagens Arena), https://www.dagensarena.se/innehall/ny-rapport-riktar-skarp-kritik-mot-partiernas-bostadspolitik/",
-              "unclear": false
+              "source": "Hyresgästföreningens granskning (Dagens Arena), https://www.dagensarena.se/innehall/ny-rapport-riktar-skarp-kritik-mot-partiernas-bostadspolitik/ · För din frihet. Liberalernas valmanifest 2026, s. 20, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -762,8 +797,9 @@
               "position": 15,
               "group": "Nationell kontroll",
               "summary": "Emot euron och bankunionen. Vill bevara svensk ekonomisk suveränitet och penningpolitisk självständighet. Historiskt EU-skeptiskt parti.",
-              "source": "Realtid.se partienkät bankunionen, https://www.realtid.se/politikerna-om-bankunionen-och-nordeas-flytt · Wikipedia bankunionen, https://sv.wikipedia.org/wiki/Bankunionen",
-              "unclear": false
+              "source": "Realtid.se partienkät bankunionen, https://www.realtid.se/politikerna-om-bankunionen-och-nordeas-flytt · Wikipedia bankunionen, https://sv.wikipedia.org/wiki/Bankunionen · Valplattform 2026, s. 9, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 40,
@@ -787,11 +823,12 @@
               "unclear": false
             },
             "C": {
-              "position": 55,
-              "group": "Försiktigt öppen",
-              "summary": "Har ännu inte tagit tydlig ställning till bankunionen. Generellt EU-positiva. Betonar den inre marknaden och gränsöverskridande samarbete.",
-              "source": "Wikipedia bankunionen, https://sv.wikipedia.org/wiki/Bankunionen",
-              "unclear": true
+              "position": 60,
+              "group": "Öppen för fördjupning",
+              "summary": "Valmanifestet 2026 vill tillsätta en statlig utredning om ett svenskt euromedlemskap, med motiveringen att över 20 år gått sedan folkomröstningen och att det säkerhetspolitiska läget förändrats. Det är en öppning, inte en utfästelse om medlemskap. Partiet har fortfarande inte tagit ställning till bankunionen.",
+              "source": "Sverige kan mer. Centerpartiets valmanifest 2026, s. 87, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 62,
@@ -804,8 +841,9 @@
               "position": 82,
               "group": "Fördjupa EU-samarbetet",
               "summary": "Enda partiet som tydligt stöder svenskt deltagande i bankunionen. Har länge drivit eurofrågan. Ser EU-integration som ekonomisk styrka. Sverige betalar priset för att inte vara fullvärdig medlem.",
-              "source": "Realtid.se partienkät, https://www.realtid.se/politikerna-om-bankunionen-och-nordeas-flytt · Wikipedia bankunionen, https://sv.wikipedia.org/wiki/Bankunionen",
-              "unclear": false
+              "source": "Realtid.se partienkät, https://www.realtid.se/politikerna-om-bankunionen-och-nordeas-flytt · Wikipedia bankunionen, https://sv.wikipedia.org/wiki/Bankunionen · För din frihet. Liberalernas valmanifest 2026, s. 16, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -822,8 +860,9 @@
               "position": 10,
               "group": "Reformera och höj",
               "summary": "Vill höja pensionerna med 13,4% genom höjd pensionsavgift. Har drivit på för höjd garantipension (+1000 kr/mån). Vill avskaffa premiepensionen och överföra till inkomstpensionen. Kritisk till höjda pensionsåldrar.",
-              "source": "V:s pensionsrapport, https://www.vansterpartiet.se/wp-content/uploads/2022/08/pensionssystemet.pdf · Pensionsålders-betänkande reservation V, https://data.riksdagen.se/dokument/H901SfU25.html",
-              "unclear": false
+              "source": "V:s pensionsrapport, https://www.vansterpartiet.se/wp-content/uploads/2022/08/pensionssystemet.pdf · Pensionsålders-betänkande reservation V, https://data.riksdagen.se/dokument/H901SfU25.html · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 3, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 30,
@@ -836,15 +875,17 @@
               "position": 35,
               "group": "Stärk pensionerna inom systemet",
               "summary": "Ingår i Pensionsgruppen. Stöder höjda pensionsåldrar (riktålder från 2026). Har drivit höjd garantipension. Positiv till gasen i pensionssystemet. Sänkte skatteklyftan pension-lön till noll.",
-              "source": "Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/",
-              "unclear": false
+              "source": "Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 50,
               "group": "Stärk pensionerna inom systemet",
               "summary": "Ingår i Pensionsgruppen sedan 2025. Reserverade mot höjda pensionsåldrar (tillsammans med V). Stöder gasen. Vill stärka pensionärernas ekonomi utan att nödvändigtvis höja pensionsåldern.",
-              "source": "Pensionsålders-betänkande reservation SD, https://data.riksdagen.se/dokument/H901SfU25.html · Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/",
-              "unclear": false
+              "source": "Pensionsålders-betänkande reservation SD, https://data.riksdagen.se/dokument/H901SfU25.html · Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/ · Valplattform 2026, s. 7, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 55,
@@ -864,15 +905,17 @@
               "position": 65,
               "group": "Bevara systemet",
               "summary": "Leder Pensionsgruppen genom Anna Tenje (M). Driver höjda pensionsåldrar och riktålder. Stöder gasen. Betonar att sänkt skatt på pension stärker pensionärernas ekonomi.",
-              "source": "Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/ · Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/",
-              "unclear": false
+              "source": "Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/ · Prop. 2025/26:32, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/sankt-skatt-pa-arbetsinkomster-pension-och-sjuk-_hd0332/html/ · Vallöften 2026 (kampanjsida, ej manifest), hämtad 2026-07-20, https://moderaterna.se/valloften-2026/",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 68,
               "group": "Bevara systemet",
               "summary": "Ingår i Pensionsgruppen. Stöder höjda pensionsåldrar. Betonar att det ska löna sig att arbeta längre. Förhöjt jobbskatteavdrag för äldre.",
-              "source": "Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/",
-              "unclear": false
+              "source": "Senioren.se om gasen, https://www.senioren.se/nyheter/besked-gas-infors-i-pensionssystemet/ · För din frihet. Liberalernas valmanifest 2026, s. 28, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -889,8 +932,9 @@
               "position": 5,
               "group": "Bygg nya stambanor",
               "summary": "Vill bygga nya stambanor för snabba tåg, lånefinansierade. Norrbotniabanan och Nya Ostkustbanan klara 2030. Ökade anslag till järnväg. Avståndsbaserad skatt på lastbilar.",
-              "source": "V-motion en järnväg för framtiden, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-jarnvag-for-framtiden_hc02193/html/ · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/",
-              "unclear": false
+              "source": "V-motion en järnväg för framtiden, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-jarnvag-for-framtiden_hc02193/html/ · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 1, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 10,
@@ -903,22 +947,25 @@
               "position": 25,
               "group": "Nya stambanor utan hastighetskrav",
               "summary": "Har släppt kravet på höghastighetståg specifikt men vill bygga nya stambanor för ökad kapacitet. Hastigheten helt oviktig — det viktiga är mer kapacitet. Vill att staten tar tillbaka kontrollen över järnvägsunderhållet.",
-              "source": "S släpper höghastighetståg (Nyheter24), https://nyheter24.se/nyheter/inrikes/1226706-s-staten-har-tappat-kontroll-over-jarnvagen · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/",
-              "unclear": false
+              "source": "S släpper höghastighetståg (Nyheter24), https://nyheter24.se/nyheter/inrikes/1226706-s-staten-har-tappat-kontroll-over-jarnvagen · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/ · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 35,
               "group": "Nya stambanor utan hastighetskrav",
               "summary": "Positiv till nya moderna stambanor integrerade i befintligt nät. Vill satsa på regionala banor. Prioriterar Nya Ostkustbanan. Balans mellan nya stambanor och underhåll.",
-              "source": "Byggkoll partisammanställning, https://byggkoll.byggtjanst.se/artiklar/2022/augusti/det-tycker-partierna-i-fyra-infrastrukturfragor · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/",
-              "unclear": false
+              "source": "Byggkoll partisammanställning, https://byggkoll.byggtjanst.se/artiklar/2022/augusti/det-tycker-partierna-i-fyra-infrastrukturfragor · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 56, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 70,
               "group": "Underhåll framför stambanor",
               "summary": "Vill satsa stort på järnväg men rusta upp befintligt nät framför nya stambanor. Anser att upprustning skapar större nytta. Ingen realistisk finansiering finns för höghastighetsjärnväg.",
-              "source": "Byggkoll partisammanställning, https://byggkoll.byggtjanst.se/artiklar/2022/augusti/det-tycker-partierna-i-fyra-infrastrukturfragor · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/",
-              "unclear": false
+              "source": "Byggkoll partisammanställning, https://byggkoll.byggtjanst.se/artiklar/2022/augusti/det-tycker-partierna-i-fyra-infrastrukturfragor · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/ · För din frihet. Liberalernas valmanifest 2026, s. 20, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 75,
@@ -931,8 +978,9 @@
               "position": 78,
               "group": "Underhåll framför stambanor",
               "summary": "Vill avsluta satsningen på nya stambanor/höghastighetståg. Fokus på underhåll och samhällsekonomisk nytta. Styr infrastrukturpolitiken som regeringsparti.",
-              "source": "Tidö-motion mot stambanor (SD+M+KD+L), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-skr.-202122261-nationell_ha026/ · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/",
-              "unclear": false
+              "source": "Tidö-motion mot stambanor (SD+M+KD+L), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/med-anledning-av-skr.-202122261-nationell_ha026/ · Tågföretagens partisammanställning, https://www.tagforetagen.se/2022/09/sammanstallning-av-riksdagspartiernas-jarnvagspolitik/ · Vallöften 2026 (kampanjsida, ej manifest), hämtad 2026-07-20, https://moderaterna.se/valloften-2026/",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 80,
@@ -973,8 +1021,9 @@
               "position": 5,
               "group": "Generös asylpolitik",
               "summary": "Vill ta emot 5 000 kvotflyktingar/år (nu 900). Vill riva upp Tidöpartiernas lagändringar. Försvarar asylrätten och vill ha legala vägar till EU. Vill ha amnesti för ensamkommande. Röstade emot EU:s migrationspakt.",
-              "source": "V-motion 2025/26:2798 Svensk flyktingpolitik, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hd022798/html/ · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
-              "unclear": false
+              "source": "V-motion 2025/26:2798 Svensk flyktingpolitik, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hd022798/html/ · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 3, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 10,
@@ -987,22 +1036,25 @@
               "position": 30,
               "group": "Reglerad invandring med rättssäkerhet",
               "summary": "Vill stärka rättssäkerheten i asylprocessen. Vill att barn med stark anknytning till Sverige ska kunna få uppehållstillstånd. Begränsa EBO under asyl. Stödde EU:s migrationspakt. Solidarisk fördelning inom EU.",
-              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/ · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
-              "unclear": false
+              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/ · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet · Sverige kan mer. Centerpartiets valmanifest 2026, s. 93, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 42,
               "group": "Reglerad invandring med rättssäkerhet",
-              "summary": "Värnar reglerad invandring. Lade om lagstiftningen för att färre ska söka sig till Sverige. Solidarisk fördelning inom EU. Stödde EU:s migrationspakt. Deltog inte i Asylrättsforum 2025.",
-              "source": "S om migration, https://www.socialdemokraterna.se/var-politik/a-till-o/migration-asyl--och-flyktingpolitik · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet",
-              "unclear": true
+              "summary": "Värnar reglerad invandring. Lade om lagstiftningen för att färre ska söka sig till Sverige. Solidarisk fördelning inom EU. Stödde EU:s migrationspakt. Deltog inte i Asylrättsforum 2025. Valplattformen 2026 slår fast att den strama migrationspolitiken ligger fast — ett kontinuitetsbesked som bekräftar nuvarande linje.",
+              "source": "S om migration, https://www.socialdemokraterna.se/var-politik/a-till-o/migration-asyl--och-flyktingpolitik · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 68,
               "group": "Restriktiv med EU-rätt",
               "summary": "Del av Tidösamarbetet. Stöder miniminivå enligt EU-rätten. Stödde EU:s migrationspakt. Betonar rättssäkerhet — ett ja ska vara ja, ett nej ska vara nej. Mindre restriktiv retorik än M/SD.",
-              "source": "Asylrättsforum 2025, https://www.mynewsdesk.com/se/ingrid-eckerman/pressreleases/ett-ja-ska-vara-ett-ja-ingen-regering-ska-foerfoelja-flyktingar-3406904 · SR partienkät, https://www.sverigesradio.se/artikel/partierna-till-hoger-ar-overens-om-hardare-regler-for-invandrare",
-              "unclear": false
+              "source": "Asylrättsforum 2025, https://www.mynewsdesk.com/se/ingrid-eckerman/pressreleases/ett-ja-ska-vara-ett-ja-ingen-regering-ska-foerfoelja-flyktingar-3406904 · SR partienkät, https://www.sverigesradio.se/artikel/partierna-till-hoger-ar-overens-om-hardare-regler-for-invandrare · För din frihet. Liberalernas valmanifest 2026, s. 36, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 75,
@@ -1022,8 +1074,9 @@
               "position": 92,
               "group": "Minimera asylinvandringen",
               "summary": "Sätter agendan i migrationsfrågan. Vill ha absoluta miniminivåer — målet att inga längre söker asyl i Sverige. Kallar EU:s pakt ett fikonlöv. Vill att så många som möjligt återvandrar.",
-              "source": "SD-motion 2022/23:915, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/asylpolitik_ha02915/ · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet · Asylrättsforum 2025, https://www.mynewsdesk.com/se/ingrid-eckerman/pressreleases/ett-ja-ska-vara-ett-ja-ingen-regering-ska-foerfoelja-flyktingar-3406904",
-              "unclear": false
+              "source": "SD-motion 2022/23:915, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/asylpolitik_ha02915/ · EU-paktomröstning, https://www.europaportalen.se/2024/04/svag-majoritet-ny-migrationspakt-i-eu-parlamentet · Asylrättsforum 2025, https://www.mynewsdesk.com/se/ingrid-eckerman/pressreleases/ett-ja-ska-vara-ett-ja-ingen-regering-ska-foerfoelja-flyktingar-3406904 · Valplattform 2026, s. 10, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -1040,8 +1093,9 @@
               "position": 10,
               "group": "Underlätta",
               "summary": "Vill ta bort lönekravet för arbetskraftsinvandrare helt. Vill motverka fusk och utnyttjande men utan att strypa inflödet. Ser arbetskraftsinvandring som tillväxtmotor.",
-              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/",
-              "unclear": false
+              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 93, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "V": {
               "position": 25,
@@ -1065,11 +1119,12 @@
               "unclear": true
             },
             "L": {
-              "position": 62,
-              "group": "Begränsa med undantag",
-              "summary": "Del av Tidösamarbetet som höjt lönekrav. Men betonar att högkvalificerad arbetskraftsinvandring ska underlättas — snabbare handläggning, bättre villkor för forskare och experter.",
-              "source": "Regeringen om arbetskraftsinvandring, https://www.regeringen.se/pressmeddelanden/2025/10/ny-loneniva-for-arbetskraftsinvandring-och-skarpta-krav-for-anhoriginvandring/",
-              "unclear": false
+              "position": 35,
+              "group": "Underlätta med kontroll",
+              "summary": "Valmanifestet 2026 vill sänka den lönenivå som krävs för arbetstillstånd och införa start-up-visum och ett poängsystem, samtidigt som luckor som leder till missbruk ska täppas till. Detta går emot vad partiet genomfört i regering: som del av Tidösamarbetet höjdes lönekravet 2025. Diskrepansen mellan valmanifest och regeringsbeslut är noterad och är material för säger-vs-gör-linsen.",
+              "source": "Regeringen om arbetskraftsinvandring, https://www.regeringen.se/pressmeddelanden/2025/10/ny-loneniva-for-arbetskraftsinvandring-och-skarpta-krav-for-anhoriginvandring/ · För din frihet. Liberalernas valmanifest 2026, s. 17, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 72,
@@ -1135,8 +1190,9 @@
               "position": 68,
               "group": "Höga krav",
               "summary": "Vill ha språkkrav för medborgarskap men inte för PUT. Betonar att Sverige välkomnar alla bakgrunder. Del av regeringen som driver Prop. 2025/26:175 om skärpta medborgarskapskrav.",
-              "source": "Integrationsvalet.se, https://integrationsvalet.se/ · SR partienkät, https://www.sverigesradio.se/artikel/partierna-till-hoger-ar-overens-om-hardare-regler-for-invandrare · Prop. 2025/26:175, https://www.regeringen.se/regeringens-politik/migration-och-asyl/",
-              "unclear": false
+              "source": "Integrationsvalet.se, https://integrationsvalet.se/ · SR partienkät, https://www.sverigesradio.se/artikel/partierna-till-hoger-ar-overens-om-hardare-regler-for-invandrare · Prop. 2025/26:175, https://www.regeringen.se/regeringens-politik/migration-och-asyl/ · För din frihet. Liberalernas valmanifest 2026, s. 36, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 78,
@@ -1156,8 +1212,9 @@
               "position": 92,
               "group": "Mycket höga krav",
               "summary": "Vill ha de strängaste kraven. Vill att PUT ska avskaffas helt — enda permanenta uppehållstillståndet ska vara medborgarskap. Driver att medborgarskap ska kunna återkallas vid grova brott och dubbla medborgarskap.",
-              "source": "Integrationsvalet.se, https://integrationsvalet.se/ · SD-motion 2022/23:915, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/asylpolitik_ha02915/",
-              "unclear": false
+              "source": "Integrationsvalet.se, https://integrationsvalet.se/ · SD-motion 2022/23:915, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/asylpolitik_ha02915/ · Valplattform 2026, s. 10, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -1174,8 +1231,9 @@
               "position": 8,
               "group": "Stöd och rättigheter",
               "summary": "Robust och solidarisk välfärd är förutsättning för lyckad integration. Emot bidragstak och kvalificeringsregler. Vill att alla omfattas av välfärden oavsett bakgrund.",
-              "source": "V-motion 2025/26:2798, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hd022798/html/ · Integrationsvalet.se, https://integrationsvalet.se/",
-              "unclear": false
+              "source": "V-motion 2025/26:2798, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hd022798/html/ · Integrationsvalet.se, https://integrationsvalet.se/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 3, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 12,
@@ -1185,25 +1243,28 @@
               "unclear": false
             },
             "C": {
-              "position": 35,
-              "group": "Rättigheter med incitament",
-              "summary": "Vill ha snabb väg in i arbete. Egenförsörjning som nyckel — den som tjänat 500 000 kr på 5 år ska bli medborgare snabbare. Vill inte ha informationsplikt med straffansvar. Integration genom arbete.",
-              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/",
-              "unclear": false
+              "position": 50,
+              "group": "Krav kombinerat med stöd",
+              "summary": "Vill ha snabb väg in i arbete med egenförsörjning som nyckel. Valmanifestet 2026 skärper kravdelen: obligatoriskt nystartsår där utebliven medverkan ger påtagligt lägre bidrag, och fler bidrag och ersättningar villkorade av deltagande i integrationsinsatser.",
+              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 14, 93, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 45,
               "group": "Rättigheter med incitament",
               "summary": "Reglerad invandring med krav på att integreras. Betonar att det ska löna sig att arbeta. Solidarisk fördelning av nyanlända i alla kommuner. Balans mellan krav och stöd.",
-              "source": "S om migration, https://www.socialdemokraterna.se/var-politik/a-till-o/migration-asyl--och-flyktingpolitik",
-              "unclear": false
+              "source": "S om migration, https://www.socialdemokraterna.se/var-politik/a-till-o/migration-asyl--och-flyktingpolitik · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 68,
               "group": "Krav och egenansvar",
               "summary": "Del av Tidösamarbetet. Driver kvalificering till välfärden. Betonar att svenska språket är nyckeln. Tolkavgifter ska ge incitament att lära sig svenska.",
-              "source": "Regeringen integration, https://www.regeringen.se/regeringens-politik/regeringens-prioriteringar/migration-och-integration/om-regeringens-prioritering-migration-och-integration/ · Integrationsvalet.se, https://integrationsvalet.se/",
-              "unclear": false
+              "source": "Regeringen integration, https://www.regeringen.se/regeringens-politik/regeringens-prioriteringar/migration-och-integration/om-regeringens-prioritering-migration-och-integration/ · Integrationsvalet.se, https://integrationsvalet.se/ · För din frihet. Liberalernas valmanifest 2026, s. 36, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 75,
@@ -1223,8 +1284,9 @@
               "position": 90,
               "group": "Krav och egenansvar",
               "summary": "Mest restriktiv. Vill minska invandringen som förutsättning för integration. Vill avskaffa PUT — bara medborgarskap som permanent tillstånd. Kvalificering till välfärden. Återvandringsbidrag som central åtgärd.",
-              "source": "SD-motion 2022/23:915, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/asylpolitik_ha02915/ · Asylrättsforum 2025, https://www.mynewsdesk.com/se/ingrid-eckerman/pressreleases/ett-ja-ska-vara-ett-ja-ingen-regering-ska-foerfoelja-flyktingar-3406904",
-              "unclear": false
+              "source": "SD-motion 2022/23:915, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/asylpolitik_ha02915/ · Asylrättsforum 2025, https://www.mynewsdesk.com/se/ingrid-eckerman/pressreleases/ett-ja-ska-vara-ett-ja-ingen-regering-ska-foerfoelja-flyktingar-3406904 · Valplattform 2026, s. 10, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -1241,8 +1303,9 @@
               "position": 5,
               "group": "PUT som norm",
               "summary": "Vill ge PUT direkt till skyddsbehövande. Vill riva upp lagändringarna som gör TUT till norm. Vill ha amnesti för ensamkommande — PUT direkt.",
-              "source": "V-motion 2025/26:2798, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hd022798/html/ · Integrationsvalet.se, https://integrationsvalet.se/",
-              "unclear": false
+              "source": "V-motion 2025/26:2798, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/svensk-flyktingpolitik_hd022798/html/ · Integrationsvalet.se, https://integrationsvalet.se/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 3, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 8,
@@ -1255,8 +1318,9 @@
               "position": 32,
               "group": "PUT med villkor",
               "summary": "Vill inte ha språkkrav för PUT (till skillnad från KD/M). Vill att barn med stark anknytning ska kunna få uppehållstillstånd. Accepterar TUT som standard men vill ha rimliga vägar till PUT.",
-              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/ · Integrationsvalet.se, https://integrationsvalet.se/",
-              "unclear": false
+              "source": "C-motion 2025/26:3190, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/migration-och-integration_hd023190/ · Integrationsvalet.se, https://integrationsvalet.se/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 93, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 48,
@@ -1346,15 +1410,17 @@
               "position": 78,
               "group": "Stöder fullt",
               "summary": "Drev tidigt på för Nato-medlemskap. Stöder fullt engagemang.",
-              "source": "Prop. 2022/23:74",
-              "unclear": false
+              "source": "Prop. 2022/23:74 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 89, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 82,
               "group": "Stöder fullt",
               "summary": "Historiskt starkaste Nato-förespråkaren. Stöder fullt engagemang inklusive kärnvapendelning.",
-              "source": "Prop. 2022/23:74",
-              "unclear": false
+              "source": "Prop. 2022/23:74 · För din frihet. Liberalernas valmanifest 2026, s. 31, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 85,
@@ -1374,8 +1440,9 @@
               "position": 85,
               "group": "Stöder fullt",
               "summary": "Gjorde stor sväng från neutralitetslinje till stark Nato-förespråkare. Stöder fullt engagemang, betonar nationell kontroll. Stöder avskräckning inklusive icke-konventionell.",
-              "source": "Prop. 2022/23:74, bet. 2025/26:UFöU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-tydlig-beslutsordning-for-deltagande-i-natos_hd01uf%C3%B6u1/",
-              "unclear": false
+              "source": "Prop. 2022/23:74, bet. 2025/26:UFöU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-tydlig-beslutsordning-for-deltagande-i-natos_hd01uf%C3%B6u1/ · Valplattform 2026, s. 3, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -1406,22 +1473,25 @@
               "position": 75,
               "group": "Snabb upprustning",
               "summary": "Vill nå 3.5% av BNP snabbt. Betonar personalförsörjning och värnplikt — mål 12 000 värnpliktiga/år till 2030, 20 000 på sikt.",
-              "source": "Parlamentarisk överenskommelse, Motion 2024/25:3023, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/",
-              "unclear": false
+              "source": "Parlamentarisk överenskommelse, Motion 2024/25:3023, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/ · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
-              "position": 72,
-              "group": "Snabb upprustning",
-              "summary": "Stöder snabb upprustning. Betonar civilförsvar, glesbygd och försörjningsberedskap.",
-              "source": "Parlamentarisk överenskommelse, bet. 2024/25:FöU2",
-              "unclear": false
+              "position": 85,
+              "group": "Maximal upprustning",
+              "summary": "Valmanifestet 2026: upprustningen måste fullföljas upp till fem procent av BNP. Betonar civilförsvar, glesbygd och försörjningsberedskap.",
+              "source": "Parlamentarisk överenskommelse, bet. 2024/25:FöU2 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 89, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
-              "position": 82,
+              "position": 90,
               "group": "Maximal upprustning",
-              "summary": "Stöder maximal upprustning som regeringsparti.",
-              "source": "Parlamentarisk överenskommelse",
-              "unclear": false
+              "summary": "Valmanifestet 2026: höjningen till 5 procent av BNP ska genomföras, och partiet är berett att gå längre om det krävs. Konkret eget åtagande utöver regeringens linje.",
+              "source": "För din frihet. Liberalernas valmanifest 2026, s. 32, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 88,
@@ -1441,8 +1511,9 @@
               "position": 88,
               "group": "Maximal upprustning",
               "summary": "Driver på för snabb upprustning. Vill se intensivutbildning av värnpliktiga. Prioriterar svensk försvarsindustri.",
-              "source": "Parlamentarisk överenskommelse, bet. 2023/24:FöU6, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/forsvarspolitik-och-totalforsvar_hb01f%C3%B6u6/",
-              "unclear": false
+              "source": "Parlamentarisk överenskommelse, bet. 2023/24:FöU6, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/forsvarspolitik-och-totalforsvar_hb01f%C3%B6u6/ · Valplattform 2026, s. 6, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -1473,15 +1544,17 @@
               "position": 80,
               "group": "Bred värnplikt",
               "summary": "Vill öka till 12 000 värnpliktiga/år till 2030, 20 000 på sikt. Krigsorganisation minst 115 000 personer.",
-              "source": "Motion 2024/25:3023 (S), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/",
-              "unclear": false
+              "source": "Motion 2024/25:3023 (S), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/ · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 70,
               "group": "Bred värnplikt",
               "summary": "Stöder bred värnplikt. Vill bredda civilplikten till gröna näringarna. Vapenfri tjänst ska finnas.",
-              "source": "Motion 2024/25:2953 (C), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/personalfragor_hc01f%C3%B6u6/",
-              "unclear": false
+              "source": "Motion 2024/25:2953 (C), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/personalfragor_hc01f%C3%B6u6/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 89, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 75,
@@ -1540,8 +1613,9 @@
               "position": 58,
               "group": "Balanserad",
               "summary": "Stöder internationellt samarbete och svensk försvarsindustri i balans.",
-              "source": "bet. 2024/25:FöU2",
-              "unclear": false
+              "source": "bet. 2024/25:FöU2 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 89, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 62,
@@ -1554,8 +1628,9 @@
               "position": 65,
               "group": "Balanserad",
               "summary": "Stöder internationellt samarbete inom Nato och EU. Vill stärka europeisk försvarsindustri.",
-              "source": "bet. 2024/25:FöU2",
-              "unclear": false
+              "source": "bet. 2024/25:FöU2 · För din frihet. Liberalernas valmanifest 2026, s. 32, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 72,
@@ -1607,22 +1682,25 @@
               "position": 75,
               "group": "Stärk civilförsvaret",
               "summary": "Betonar civil beredskap parallellt med militär upprustning. Vill att både militärt och civilt försvar stärks.",
-              "source": "bet. 2024/25:FöU2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/",
-              "unclear": false
+              "source": "bet. 2024/25:FöU2, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/totalforsvaret-2025-2030_hc01f%C3%B6u2/ · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 78,
               "group": "Stärk civilförsvaret",
               "summary": "Betonar försörjningsberedskap i hela Sverige, glesbygd och gröna näringarna. Civilplikt för lantbruk.",
-              "source": "Motion 2024/25:2953 (C)",
-              "unclear": false
+              "source": "Motion 2024/25:2953 (C) · Sverige kan mer. Centerpartiets valmanifest 2026, s. 90, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 75,
               "group": "Bred beredskap",
               "summary": "Stöder bred beredskap som regeringsparti.",
-              "source": "Prop. 2024/25:34",
-              "unclear": false
+              "source": "Prop. 2024/25:34 · För din frihet. Liberalernas valmanifest 2026, s. 32, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 78,
@@ -1635,15 +1713,17 @@
               "position": 80,
               "group": "Bred beredskap",
               "summary": "Driver som regeringsparti bred totalförsvarsberedskap. Prop. 2024/25:34 med stora civilförsvarsanslag.",
-              "source": "Prop. 2024/25:34, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/totalforsvaret-2025-2030_hc0334/",
-              "unclear": false
+              "source": "Prop. 2024/25:34, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/totalforsvaret-2025-2030_hc0334/ · Vallöften 2026 (kampanjsida, ej manifest), hämtad 2026-07-20, https://moderaterna.se/valloften-2026/",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 80,
               "group": "Bred beredskap",
               "summary": "Stöder bred totalförsvarsberedskap. Betonar försörjningstrygghet och energiberedskap.",
-              "source": "Prop. 2024/25:34",
-              "unclear": false
+              "source": "Prop. 2024/25:34 · Valplattform 2026, s. 6, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -1660,8 +1740,9 @@
               "position": 88,
               "group": "Maximera stödet",
               "summary": "Stöder militärt stöd och vill tredubbla det till 1% av BNP (75 mdr/år). Har röstat för alla 21 stödpaket.",
-              "source": "bet. 2024/25:FiU29, FiU31, 2025/26:FiU8, FiU46, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/extra-andringsbudget-for-2025-stod-till-ukraina_hc01fiu29/",
-              "unclear": false
+              "source": "bet. 2024/25:FiU29, FiU31, 2025/26:FiU8, FiU46, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/extra-andringsbudget-for-2025-stod-till-ukraina_hc01fiu29/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 1, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 82,
@@ -1681,15 +1762,17 @@
               "position": 85,
               "group": "Maximera stödet",
               "summary": "Stöder omfattande stöd. Har röstat för alla paket.",
-              "source": "FiU29, FiU31, FiU8, FiU46",
-              "unclear": false
+              "source": "FiU29, FiU31, FiU8, FiU46 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 88, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "L": {
               "position": 88,
               "group": "Maximera stödet",
               "summary": "Stöder omfattande stöd som regeringsparti.",
-              "source": "Alla extra ändringsbudgetar",
-              "unclear": false
+              "source": "Alla extra ändringsbudgetar · För din frihet. Liberalernas valmanifest 2026, s. 32, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 88,
@@ -1709,8 +1792,9 @@
               "position": 90,
               "group": "Maximera stödet",
               "summary": "Stark förespråkare av militärt stöd. Överenskommelse med regeringen om 40 mdr/år. Betonar att 75% av stödet nu är nytillverkad svensk materiel.",
-              "source": "bet. 2025/26:FiU8, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/extra-andringsbudget-for-2025-forsvarsmateriel_hd01fiu8/",
-              "unclear": false
+              "source": "bet. 2025/26:FiU8, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/extra-andringsbudget-for-2025-forsvarsmateriel_hd01fiu8/ · Valplattform 2026, s. 3, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         }
@@ -1758,8 +1842,9 @@
               "position": 40,
               "group": "Ambivalent",
               "summary": "Röstade emot Prop. 150. Kritiserar M för att ha vägrat energiöverenskommelse. Vill ha teknikneutral energipolitik men prioriterar förnybart i närtid.",
-              "source": "Prop. 2024/25:150, bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/energipolitik_hd01nu13/",
-              "unclear": false
+              "source": "Prop. 2024/25:150, bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/energipolitik_hd01nu13/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 28, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 45,
@@ -1772,8 +1857,9 @@
               "position": 82,
               "group": "Bygg nytt",
               "summary": "Stöder ny kärnkraft som regeringsparti. Röstade för Prop. 150.",
-              "source": "Prop. 2024/25:150",
-              "unclear": false
+              "source": "Prop. 2024/25:150 · För din frihet. Liberalernas valmanifest 2026, s. 16, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 88,
@@ -1811,8 +1897,9 @@
               "position": 15,
               "group": "Sänk krav",
               "summary": "Drivande bakom sänkt reduktionsplikt. Vill sänka drivmedelspriser maximalt. Betonar att svenska utsläpp är marginella globalt.",
-              "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/ · Valplattform 2026, s. 9, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 22,
@@ -1832,15 +1919,17 @@
               "position": 30,
               "group": "Sänk krav",
               "summary": "Stöder sänkt reduktionsplikt som del av Tidösamarbetet. Betonar elektrifiering som långsiktig lösning.",
-              "source": "bet. 2025/26:MJU16",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16 · För din frihet. Liberalernas valmanifest 2026, s. 33, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 65,
               "group": "Balanserad utfasning",
               "summary": "Vill ha grön skatteväxling och svensk biodrivmedelsproduktion. Betonar att elektrifiering och biodrivmedel ska komplettera varandra.",
-              "source": "bet. 2025/26:MJU16, NU13",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16, NU13 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 26, 27, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 72,
@@ -1853,8 +1942,9 @@
               "position": 85,
               "group": "Snabb utfasning",
               "summary": "Vill höja reduktionsplikten, satsa på elektrifiering och svensk biodrivmedelsproduktion. Kritiserar att sänkt reduktionsplikt lett till att mer fossilt såldes 2024 än på tio år.",
-              "source": "Motion 2025/26:2792, bet. 2025/26:MJU16",
-              "unclear": false
+              "source": "Motion 2025/26:2792, bet. 2025/26:MJU16 · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 92,
@@ -1878,8 +1968,9 @@
               "position": 20,
               "group": "Sänk ambitionerna",
               "summary": "Mest skeptiska till ambitiösa klimatmål. Betonar att svenska utsläpp är marginella globalt. Ifrågasätter kostnaden för omställningen.",
-              "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/klimatpolitik_hd01mju16/ · Valplattform 2026, s. 4, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 40,
@@ -1899,15 +1990,17 @@
               "position": 48,
               "group": "Pragmatisk",
               "summary": "Stöder nettonoll 2045. Betonar kärnkraft som klimatlösning. Mer ambitiösa än M och KD men kompromissar i Tidö.",
-              "source": "bet. 2025/26:MJU16",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16 · För din frihet. Liberalernas valmanifest 2026, s. 33, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 68,
-              "group": "Behåll nuvarande mål",
+              "group": "Behåll mål, driv på i EU",
               "summary": "Stöder nettonoll 2045. Betonar grön skatteväxling och att omställningen ska vara lönsam.",
-              "source": "bet. 2025/26:MJU16",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 25, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 72,
@@ -1966,15 +2059,17 @@
               "position": 45,
               "group": "Balanserad",
               "summary": "Stöder förnybart som komplement till kärnkraft. Mer positiv till vindkraft än M och KD inom Tidö.",
-              "source": "bet. 2025/26:NU13",
-              "unclear": false
+              "source": "bet. 2025/26:NU13 · För din frihet. Liberalernas valmanifest 2026, s. 16, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 72,
               "group": "Bred utbyggnad",
               "summary": "Stöder vindkraft och förnybart. Kritiserar att M vägrat energiöverenskommelse. Vill ha teknikneutral politik.",
-              "source": "bet. 2025/26:NU13",
-              "unclear": false
+              "source": "bet. 2025/26:NU13 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 28, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 75,
@@ -1987,8 +2082,9 @@
               "position": 88,
               "group": "Maximal utbyggnad",
               "summary": "Vill ha 70 TWh ny förnybar el. Satsa på vindkraft, rättssäkert kommunalt veto. Emot att Försvarsmakten blockerar havsbaserad vindkraft.",
-              "source": "Motion 2025/26:2797, bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/energipolitik-for-mer-och-fornybar-el-till-rimliga_hd022797/",
-              "unclear": false
+              "source": "Motion 2025/26:2797, bet. 2025/26:NU13, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/energipolitik-for-mer-och-fornybar-el-till-rimliga_hd022797/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 95,
@@ -2012,8 +2108,9 @@
               "position": 22,
               "group": "Marknadslösningar",
               "summary": "Vill ha lägsta möjliga elpriser. Sänkt energiskatt. Kärnkraft som bas. Skeptisk till EU:s elmarknadsregler.",
-              "source": "bet. 2025/26:NU13",
-              "unclear": false
+              "source": "bet. 2025/26:NU13 · Valplattform 2026, s. 9, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 28,
@@ -2033,15 +2130,17 @@
               "position": 35,
               "group": "Marknadslösningar",
               "summary": "Stöder marknadslösningar med kärnkraft som bas. Sänkt energiskatt.",
-              "source": "bet. 2025/26:NU13",
-              "unclear": false
+              "source": "bet. 2025/26:NU13 · För din frihet. Liberalernas valmanifest 2026, s. 20, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 50,
               "group": "Reformera marknaden",
               "summary": "Vill ha reformerad elmarknad. Betonar konkurrens och teknikneutralitet.",
-              "source": "bet. 2025/26:NU13",
-              "unclear": false
+              "source": "bet. 2025/26:NU13 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 28, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 55,
@@ -2054,15 +2153,17 @@
               "position": 65,
               "group": "Reformera marknaden",
               "summary": "Vill ha ökat statligt ansvar. Kritiserar prisskillnader mellan elområden. Stöder elstöd till hushåll.",
-              "source": "bet. 2025/26:NU13 res. 1",
-              "unclear": false
+              "source": "bet. 2025/26:NU13 res. 1 · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "V": {
               "position": 78,
               "group": "Statlig styrning",
               "summary": "Vill ha mer statligt ansvar för elproduktion. Rimliga priser i hela landet. Kritiserar elmarknadens utformning.",
-              "source": "Motion 2025/26:2797",
-              "unclear": false
+              "source": "Motion 2025/26:2797 · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 1, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -2079,8 +2180,9 @@
               "position": 25,
               "group": "Begränsade satsningar",
               "summary": "Mest skeptisk till stora klimatinvesteringar. Betonar kostnadseffektivitet och att Sverige inte ska gå före internationellt.",
-              "source": "bet. 2025/26:MJU16",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16 · Valplattform 2026, s. 4, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 42,
@@ -2100,29 +2202,33 @@
               "position": 50,
               "group": "Teknikdriven",
               "summary": "Stöder klimatinvesteringar. Mer ambitiös än M och KD inom Tidö.",
-              "source": "bet. 2025/26:MJU16",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16 · För din frihet. Liberalernas valmanifest 2026, s. 20, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "C": {
               "position": 65,
               "group": "Grön tillväxt",
               "summary": "Stöder grön omställning genom marknadsinstrument och grön skatteväxling.",
-              "source": "bet. 2025/26:MJU16",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 25, 27, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 72,
               "group": "Stora investeringar",
               "summary": "Stöder Industriklivet, CCS, grön omställning. Vill ha statligt ledarskap.",
-              "source": "bet. 2025/26:MJU16, MJU1",
-              "unclear": false
+              "source": "bet. 2025/26:MJU16, MJU1 · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "V": {
               "position": 85,
               "group": "Stora investeringar",
               "summary": "Vill ha massiva gröna investeringar. Industriklivet, CCS, grön industriomställning. Kritiserar att regeringen minskat klimatinvesteringar.",
-              "source": "Motion 2025/26:2792, bet. 2025/26:MJU1",
-              "unclear": false
+              "source": "Motion 2025/26:2792, bet. 2025/26:MJU1 · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 1, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 92,
@@ -2164,15 +2270,17 @@
               "position": 10,
               "group": "Långsiktiga resurser",
               "summary": "Emot prestationsbundna medel. Vill ha långsiktig stabil finansiering till regionerna. Fler vårdplatser baserat på Socialstyrelsens rekommendationer.",
-              "source": "Motion 2025/26:2777, bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/",
-              "unclear": false
+              "source": "Motion 2025/26:2777, bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 18,
               "group": "Långsiktiga resurser",
               "summary": "Dubbla anslag jämfört med Tidöpartierna. 13 mdr extra till välfärd i budget 2026. Kritiserar prestationsbundna medel — Vårdförbundet och SKR stöder S:s linje. Vill ha indexering som värdesäkrar anslagen.",
-              "source": "bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-9-halsovard-sjukvard-och-social_hd01sou1/",
-              "unclear": false
+              "source": "bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/utgiftsomrade-9-halsovard-sjukvard-och-social_hd01sou1/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 15,
@@ -2185,8 +2293,9 @@
               "position": 45,
               "group": "Balanserad",
               "summary": "Stöder nationell vårdförmedling och skärpt vårdgaranti. Vill ha fritt val av utförare även i slutenvården. Kritiserar att mer pengar till ett system som inte fungerar sällan hjälper.",
-              "source": "Motion 2025/26:3179, bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/",
-              "unclear": false
+              "source": "Motion 2025/26:3179, bet. 2025/26:SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 36, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 85,
@@ -2206,15 +2315,17 @@
               "position": 78,
               "group": "Prestationskrav",
               "summary": "Stöder kömiljarder och skärpt vårdgaranti som regeringsparti.",
-              "source": "bet. 2025/26:SoU1",
-              "unclear": false
+              "source": "bet. 2025/26:SoU1 · För din frihet. Liberalernas valmanifest 2026, s. 28, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 82,
               "group": "Prestationskrav",
               "summary": "Stöder Tidöpartiernas vårdpolitik. Inga reservationer i SoU22. Betonar att de ska vara garanten för välfärden.",
-              "source": "bet. 2025/26:SoU1, SoU22",
-              "unclear": false
+              "source": "bet. 2025/26:SoU1, SoU22 · Valplattform 2026, s. 7, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -2231,15 +2342,17 @@
               "position": 75,
               "group": "Statlig styrning",
               "summary": "Vill ha nationellt basuppdrag för primärvården. Max 1 100 patienter per läkare. Fast läkarkontakt. Stärk primärvården i områden med större utmaningar.",
-              "source": "Motion 2025/26:2777, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/",
-              "unclear": false
+              "source": "Motion 2025/26:2777, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 70,
               "group": "Statlig styrning",
               "summary": "Vill att staten tar ökat ansvar. Kritiserar att regionerna inte byggt ut primärvården trots 16 mdr. Stöder Vårdansvarskommitténs slutsatser.",
-              "source": "bet. 2025/26:SoU22, SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/",
-              "unclear": false
+              "source": "bet. 2025/26:SoU22, SoU1, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 62,
@@ -2252,8 +2365,9 @@
               "position": 68,
               "group": "Stärk och reformera",
               "summary": "Statlig medfinansiering av glesbygdsprimärvård. Ny vårdform för primärvård i landsbygd. Stöder Vårdansvarskommittén. Vill ha Norges fastlegemodell.",
-              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/",
-              "unclear": false
+              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 36, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 65,
@@ -2273,15 +2387,17 @@
               "position": 60,
               "group": "Stärk och reformera",
               "summary": "Stöder primärvårdsreformen som regeringsparti.",
-              "source": "bet. 2025/26:SoU22",
-              "unclear": false
+              "source": "bet. 2025/26:SoU22 · För din frihet. Liberalernas valmanifest 2026, s. 28, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 72,
               "group": "Statlig styrning",
               "summary": "Vill att staten stöttar landsbygden direkt. Anser att mer pengar till ett system som inte fungerar sällan leder till bättre resultat.",
-              "source": "bet. 2025/26:SoU22 debatt, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/",
-              "unclear": false
+              "source": "bet. 2025/26:SoU22 debatt, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/ · Valplattform 2026, s. 7, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -2298,15 +2414,17 @@
               "position": 12,
               "group": "Stärk offentlig omsorg",
               "summary": "Krävde kriskommission i äldreomsorgen — oppositionen bakom men avslogs. Kvaliteten sämst på tio år enligt Socialstyrelsen. Vill ha äldrekonvention.",
-              "source": "bet. 2025/26:SoU21 res. 8, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/",
-              "unclear": false
+              "source": "bet. 2025/26:SoU21 res. 8, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 22,
               "group": "Stärk offentlig omsorg",
               "summary": "Äldreomsorgen underfinansierad. Vill ha ordning och reda bland privata utförare — tickande bomb med välfärdsbrottslighet. Stöder språkkrav (SoU26) med särskilt yttrande.",
-              "source": "bet. 2025/26:SoU21, SoU26, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/",
-              "unclear": false
+              "source": "bet. 2025/26:SoU21, SoU26, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/ · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 18,
@@ -2319,15 +2437,17 @@
               "position": 55,
               "group": "Valfrihet med kvalitet",
               "summary": "Vill ha äldreboendegaranti — flytta in på trygghetsboende utan biståndsprövning. Stärk valfrihet. Utbildningsprogram chefer äldreomsorg.",
-              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/",
-              "unclear": false
+              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 43, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 72,
               "group": "Valfrihet med kvalitet",
               "summary": "Stärk valfrihet. Skärpta verktyg till IVO (SoU8) mot oseriösa aktörer. Språkkrav i äldreomsorgen. Äldreomsorgslyftet 1,7 mdr/år.",
-              "source": "bet. 2025/26:SoU8, SoU26, SoU21",
-              "unclear": false
+              "source": "bet. 2025/26:SoU8, SoU26, SoU21 · Vallöften 2026 (kampanjsida, ej manifest), hämtad 2026-07-20, https://moderaterna.se/valloften-2026/",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "KD": {
               "position": 75,
@@ -2340,15 +2460,17 @@
               "position": 65,
               "group": "Valfrihet med kvalitet",
               "summary": "Stöder valfrihet och kvalitetskontroll som regeringsparti. Politik mot äldres ensamhet.",
-              "source": "bet. 2025/26:SoU21, Motion 2025/26:3758",
-              "unclear": false
+              "source": "bet. 2025/26:SoU21, Motion 2025/26:3758 · För din frihet. Liberalernas valmanifest 2026, s. 28, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 70,
               "group": "Valfrihet med kvalitet",
               "summary": "Vill stärka valfrihet och kvalitet. Dåliga verksamheter ska kunna väljas bort. Betonar språkkrav.",
-              "source": "bet. 2025/26:SoU21, SoU26",
-              "unclear": false
+              "source": "bet. 2025/26:SoU21, SoU26 · Valplattform 2026, s. 7, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -2372,8 +2494,9 @@
               "position": 40,
               "group": "Bred ansats",
               "summary": "Stöder bupmiljarden men vill ha bredare insatser. Fler ingångar för barn och unga — inte bara bup. Samsjuklighetsutredningen måste leda till proposition.",
-              "source": "bet. 2023/24:SoU14, SoU1",
-              "unclear": false
+              "source": "bet. 2023/24:SoU14, SoU1 · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 30,
@@ -2386,8 +2509,9 @@
               "position": 42,
               "group": "Bred ansats",
               "summary": "Vill utreda kompetensförsörjning psykoterapeuter i primärvården. Suicidprevention i kommuner. Fler hälsosamtal.",
-              "source": "Motion 2025/26:3179",
-              "unclear": false
+              "source": "Motion 2025/26:3179 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 37, 38, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 65,
@@ -2407,8 +2531,9 @@
               "position": 58,
               "group": "Bred ansats",
               "summary": "Stöder bupmiljarden som regeringsparti.",
-              "source": "bet. 2025/26:SoU1",
-              "unclear": false
+              "source": "bet. 2025/26:SoU1 · För din frihet. Liberalernas valmanifest 2026, s. 28, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 60,
@@ -2432,15 +2557,17 @@
               "position": 8,
               "group": "Begränsa",
               "summary": "Vill stoppa privata sjukvårdsförsäkringar i offentlig vård. Granska LOV:s roll i välfärdsbrottsligheten. Ersätt effektivitetsdelegationen med jämlikhetsdelegation.",
-              "source": "Motion 2025/26:2777, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/",
-              "unclear": false
+              "source": "Motion 2025/26:2777, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-battre-halso-och-sjukvard_hd022777/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 25,
               "group": "Reglera",
               "summary": "Ingenting emot valfrihet om det sker på bra villkor. Tickande bomb med privata utförare — svart marknad 100 mdr. Vill ha ordning och reda före mer valfrihet.",
-              "source": "bet. 2025/26:SoU21 debatt, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/",
-              "unclear": false
+              "source": "bet. 2025/26:SoU21 debatt, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/aldreomsorg_hd01sou21/ · Plan för Sverige (Valplattform) 2026-02-05, s. 2, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 15,
@@ -2453,8 +2580,9 @@
               "position": 82,
               "group": "Maximal valfrihet",
               "summary": "Vill ha fritt val av utförare även i slutenvården. Värnar LOV och konkurrensneutralitet. Äldreboendegaranti.",
-              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/",
-              "unclear": false
+              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 36, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 88,
@@ -2474,8 +2602,9 @@
               "position": 78,
               "group": "Maximal valfrihet",
               "summary": "Stöder valfrihet som liberalt kärnvärde.",
-              "source": "bet. 2025/26:SoU1",
-              "unclear": false
+              "source": "bet. 2025/26:SoU1 · För din frihet. Liberalernas valmanifest 2026, s. 27, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 65,
@@ -2499,15 +2628,17 @@
               "position": 10,
               "group": "Resurser och villkor",
               "summary": "Vill ha stabil långsiktig finansiering. Betonar arbetsmiljö — 73% av granskade arbetsplatser fick krav på åtgärder. Stärkt skydd ambulanssjukvårdare.",
-              "source": "Motion 2025/26:974 (V), bet. 2025/26:SoU22, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/",
-              "unclear": false
+              "source": "Motion 2025/26:974 (V), bet. 2025/26:SoU22, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 2, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 15,
               "group": "Resurser och villkor",
               "summary": "Kompetensförsörjningen är vårdens största utmaning. 80% av akutsjukhus brister i arbetsmiljö. Vill ha nationell kompetensförsörjning per Vårdansvarskommittén.",
-              "source": "bet. 2025/26:SoU22, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/",
-              "unclear": false
+              "source": "bet. 2025/26:SoU22, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/kompetensforsorjning-e-halsa-och-beredskap_hd01sou22/ · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 12,
@@ -2520,8 +2651,9 @@
               "position": 45,
               "group": "Balanserad",
               "summary": "Satsa på seniora medarbetare 60+. Karriärutveckling undersköterskor. Nationell samordning utbildningsdimensionering. Nationellt ledarskapsprogram chefer.",
-              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/",
-              "unclear": false
+              "source": "Motion 2025/26:3179, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/motion/en-tillganglig-vard-och-omsorg-i-hela-landet_hd023179/ · Sverige kan mer. Centerpartiets valmanifest 2026, s. 42, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 60,
@@ -2541,15 +2673,17 @@
               "position": 55,
               "group": "Balanserad",
               "summary": "Stöder kompetensförsörjning som regeringsparti.",
-              "source": "bet. 2025/26:SoU22",
-              "unclear": false
+              "source": "bet. 2025/26:SoU22 · För din frihet. Liberalernas valmanifest 2026, s. 28, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 62,
               "group": "Effektivisering",
               "summary": "Stöder språkkrav och effektivisering. Kritiserar att äldreomsorgens personal riskerar utvisning pga lönegolv.",
-              "source": "bet. 2025/26:SoU22 debatt, SoU26",
-              "unclear": false
+              "source": "bet. 2025/26:SoU22 debatt, SoU26 · Valplattform 2026, s. 7, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         }
@@ -2591,8 +2725,9 @@
               "position": 85,
               "group": "Stärk oberoende",
               "summary": "Vill grundlagsskydda public service (Motion 2025/26:861). Gemensam reservation i KrU2 om innehållsuppdrag och uppföljning.",
-              "source": "bet. 2025/26:KrU2 res. 1-2, Motion 2025/26:861, bet. 2025/26:KU30, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-lag-om-public-service-och-riktlinjer-for_hd01kru2/",
-              "unclear": false
+              "source": "bet. 2025/26:KrU2 res. 1-2, Motion 2025/26:861, bet. 2025/26:KU30, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/en-lag-om-public-service-och-riktlinjer-for_hd01kru2/ · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 90,
@@ -2605,8 +2740,9 @@
               "position": 82,
               "group": "Stärk oberoende",
               "summary": "Stöder starkt public service-oberoende. Reservationer i KrU2 om innehåll, uppföljning och ekonomi.",
-              "source": "bet. 2025/26:KrU2 res. 1-3",
-              "unclear": false
+              "source": "bet. 2025/26:KrU2 res. 1-3 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 81, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 50,
@@ -2623,11 +2759,12 @@
               "unclear": false
             },
             "L": {
-              "position": 60,
-              "group": "Reformera",
-              "summary": "Stöder public service men vill ha tydligare oberoende inom Tidö.",
-              "source": "bet. 2025/26:KrU2",
-              "unclear": false
+              "position": 80,
+              "group": "Stärk oberoende",
+              "summary": "Valmanifestet 2026 vill öka resurserna till SVT, SR och UR och värna deras oberoende i grundlagen. Det står i spänning mot partiets linje inom Tidösamarbetet (bet. 2025/26:KrU2), där L drivit tydligare ramar för public service.",
+              "source": "bet. 2025/26:KrU2 · För din frihet. Liberalernas valmanifest 2026, s. 37, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 25,
@@ -2672,8 +2809,9 @@
               "position": 88,
               "group": "Stärkt oberoende",
               "summary": "Stöder Prop. 165. Betonar demokrati och rättsstatsprincipen. Reservation i KU30 om ytterligare förstärkningar.",
-              "source": "bet. 2025/26:KU2, KU30 res. 4",
-              "unclear": false
+              "source": "bet. 2025/26:KU2, KU30 res. 4 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 74, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 80,
@@ -2693,8 +2831,9 @@
               "position": 85,
               "group": "Stärkt oberoende",
               "summary": "Vill ha stark författningsdomstol och oberoende domstolsråd (Motion 2025/26:3143).",
-              "source": "bet. 2025/26:KU2, Motion 2025/26:3143",
-              "unclear": false
+              "source": "bet. 2025/26:KU2, Motion 2025/26:3143 · För din frihet. Liberalernas valmanifest 2026, s. 36, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 30,
@@ -2739,8 +2878,9 @@
               "position": 75,
               "group": "Aktiv reglering",
               "summary": "Starkast förespråkare av reglering av techjättar. Varnar för att USA kan stänga Sverige digitalt. Reservation i KU18.",
-              "source": "bet. 2025/26:KU18 res. 2 och 5 och 7",
-              "unclear": false
+              "source": "bet. 2025/26:KU18 res. 2 och 5 och 7 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 74, 75, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 35,
@@ -2757,11 +2897,12 @@
               "unclear": false
             },
             "L": {
-              "position": 42,
-              "group": "Frivillighet först",
-              "summary": "Betonar yttrandefrihet men vill skydda mot diktaturernas lobbyister (Motion 2025/26:3144).",
-              "source": "bet. 2025/26:KU18, Motion 2025/26:3144",
-              "unclear": false
+              "position": 50,
+              "group": "Reglering i utvalda frågor",
+              "summary": "Betonar yttrandefrihet men vill skydda mot diktaturernas lobbyister (Motion 2025/26:3144). Valmanifestet 2026 kräver hårdare EU-tryck på techbolagen i avgränsade frågor — barns säkerhet online och skydd av personuppgifter — men tar inte ställning för plattformsreglering generellt.",
+              "source": "bet. 2025/26:KU18, Motion 2025/26:3144 · För din frihet. Liberalernas valmanifest 2026, s. 24, 32, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 30,
@@ -2806,8 +2947,9 @@
               "position": 72,
               "group": "Fördjupa",
               "summary": "Stöder EU. Vill fördjupa samarbetet. Driver demokrati och rättsstatsprincipen inom EU.",
-              "source": "Motion 2025/26:3583, bet. 2025/26:KU30 res. 4",
-              "unclear": false
+              "source": "Motion 2025/26:3583, bet. 2025/26:KU30 res. 4 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 87, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 55,
@@ -2827,15 +2969,17 @@
               "position": 88,
               "group": "Federalt",
               "summary": "Mest EU-positiva. Motion 2025/26:3488 om ett federalt Europa.",
-              "source": "Motion 2025/26:3488",
-              "unclear": false
+              "source": "Motion 2025/26:3488 · För din frihet. Liberalernas valmanifest 2026, s. 32, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 8,
               "group": "Mest EU-skeptisk",
               "summary": "Vill ta bort grundlagens bestämmelse om EU-medlemskap. Reserverar sig konsekvent mot fördjupad integration.",
-              "source": "bet. 2025/26:KU30 reservation (SD)",
-              "unclear": false
+              "source": "bet. 2025/26:KU30 reservation (SD) · Valplattform 2026, s. 8, https://www.sd.se/wp-content/uploads/2026/07/valplattform-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             }
           }
         },
@@ -2852,15 +2996,17 @@
               "position": 85,
               "group": "Stärk",
               "summary": "Betonar att civilsamhällets demokratiska utrymme krymper — 80% av barn/ungdomsorganisationer upplever minskat utrymme. Vill skydda akademisk frihet i grundlag.",
-              "source": "bet. 2025/26:KU28 res. 11 och 12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/fri-och-rattigheter-m-m_hd01ku28/",
-              "unclear": false
+              "source": "bet. 2025/26:KU28 res. 11 och 12, https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/fri-och-rattigheter-m-m_hd01ku28/ · Vänsterpartiets valplattform efter kongressbeslut 2026 (preliminär version), s. 3, https://www.vansterpartiet.se/wp-content/uploads/2026/04/Preliminar-Valplattform-efter-beslut-pa-kongressen-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "S": {
               "position": 72,
               "group": "Stärk",
               "summary": "Stöder civilsamhällets roll. Vill säkerställa statlig service i hela landet.",
-              "source": "bet. 2025/26:KU29",
-              "unclear": false
+              "source": "bet. 2025/26:KU29 · Plan för Sverige (Valplattform) 2026-02-05, s. 3, https://www.socialdemokraterna.se/download/18.68544bb219c4794c4a4684c/1771599906618/Valplattform.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "MP": {
               "position": 80,
@@ -2873,8 +3019,9 @@
               "position": 75,
               "group": "Stärk",
               "summary": "Betonar föreningsfrihet och civilsamhällets demokratiska roll. Avskaffa anonyma partibidrag.",
-              "source": "Motion 2025/26:420, Motion 2025/26:3583",
-              "unclear": false
+              "source": "Motion 2025/26:420, Motion 2025/26:3583 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 81, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 45,
@@ -2894,8 +3041,9 @@
               "position": 50,
               "group": "Balanserad",
               "summary": "Stöder civilsamhället men vill ha antikorruptionsmyndighet för kommuner.",
-              "source": "Motion 2025/26:2663, bet. 2025/26:KU29",
-              "unclear": false
+              "source": "Motion 2025/26:2663, bet. 2025/26:KU29 · För din frihet. Liberalernas valmanifest 2026, s. 36, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 28,
@@ -2940,8 +3088,9 @@
               "position": 85,
               "group": "Stärkt skydd",
               "summary": "Stöder Prop. 165. Betonar demokrati och rättsstatsprincipen.",
-              "source": "bet. 2025/26:KU2, KU30 res. 4",
-              "unclear": false
+              "source": "bet. 2025/26:KU2, KU30 res. 4 · Sverige kan mer. Centerpartiets valmanifest 2026, s. 74, 76, https://val2026.centerpartiet.se/wp-content/uploads/2026/06/Valmanifest-2026.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "M": {
               "position": 75,
@@ -2961,8 +3110,9 @@
               "position": 82,
               "group": "Stärkt skydd",
               "summary": "Stöder Prop. 165. Vill ha stark författningsdomstol.",
-              "source": "bet. 2025/26:KU2, Motion 2025/26:3143",
-              "unclear": false
+              "source": "bet. 2025/26:KU2, Motion 2025/26:3143 · För din frihet. Liberalernas valmanifest 2026, s. 36, https://www.liberalerna.se/wp-content/uploads/liberalernas-valmanifest-2026-40s-komprimerad.pdf",
+              "unclear": false,
+              "senast_granskad": "2026-07-21"
             },
             "SD": {
               "position": 20,
