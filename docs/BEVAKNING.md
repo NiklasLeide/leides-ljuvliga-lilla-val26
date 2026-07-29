@@ -145,6 +145,27 @@ starten kör loopen under Task Scheduler-tjänsten (förälder = `svchost`, **in
 claude/terminalen), så körningen överlever att harnessen dör. Fallback
 `cmd start /b` bryter ur anroparens jobbobjekt men ger svagare garanti.
 
+## Riksdagen — datumfönster + paginering (får aldrig missa något)
+
+Riksdagens `dokumentlista` sorterar datum desc och ger 20 dokument per sida.
+Utan bud skulle sida 1 bara täcka de 20 senaste av ibland tusentals träffar — och
+om >20 nya dokument dyker upp i en frågas scope mellan två veckokörningar hamnar
+överskottet på sida 2+ och missas. Därför:
+
+- varje riksdagen-fråga begränsas till ett **datumfönster** (`from` = idag − 60
+  dygn) så träffmängden blir liten och fullständigt hämtbar (i praktiken 0–15
+  dokument/fråga — långt under en sida);
+- resultatet **pagineras** (sz=100, följ `@nasta_sida` upp till 20 sidor) så hela
+  fönstret hämtas även om det någon gång skulle spänna flera sidor.
+
+60 dygn är vida mer än veckokadensen: även ~8 missade körningar i rad tappar
+inget. **Två tal, två enheter** (syns i loggen som "15 riksdagen-frågor -> N
+dokument"): 15 = antal watchlist-**frågor** som pollas; N = antal unika
+**dokument** de returnerar och som seedas i baslinjen. De är inte samma sak och
+ska inte jämföras. Residual: ett dokument bakdaterat (datum) mer än 60 dygn
+tillbaka faller utanför fönstret — samma begränsning som riksdagens egen
+datumsortering redan hade.
+
 ## Watchlist
 
 `data/watchlist.json` styr vad som bevakas (riksdagen-frågor per område,

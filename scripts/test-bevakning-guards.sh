@@ -89,6 +89,17 @@ reset; mini_watchlist; fx_riksdagen_empty; fx_site "$SITE_V1"; fx_rss_empty
 WATCHLIST="$WL" node scripts/bevakning-lib.js detect > "$SB/detect1.log" 2>&1
 [[ -f "$SB/delta.json" ]] && grep -q "first_run=true" "$SB/detect1.log"; check $? "Lager 1: detect kör utan claude (noll tokens) och skriver delta.json"
 
+# --- Test 4b: riksdagen-paginering — sida 2 hämtas (får aldrig missa något) ---
+# Sida 1 har ETT dokument + @nasta_sida; sida 2 har ett ANNAT dokument utan
+# nästa-sida. Baslinjen ska seeda BÅDA (bevisar att sida 2 hämtas, inte bara
+# sida 1 — annars missas dokument som trängts av sida-1-fönstret).
+reset; mini_watchlist; fx_site "$SITE_V1"; fx_rss_empty
+echo '{"dokumentlista":{"@nasta_sida":"http://x/p2","dokument":[{"id":"DOC-SIDA1","titel":"s1","doktyp":"prop","datum":"2026-07-20"}]}}' > "$SB/fixtures/riksdagen-prop-skola.json"
+echo '{"dokumentlista":{"@nasta_sida":"","dokument":[{"id":"DOC-SIDA2","titel":"s2","doktyp":"prop","datum":"2026-07-19"}]}}' > "$SB/fixtures/riksdagen-prop-skola-p2.json"
+WATCHLIST="$WL" node scripts/bevakning-lib.js detect > "$SB/detectpag.log" 2>&1
+seeded="$(node -e "console.log(require('./$SB/state.json').riksdagen.seen_ids.sort().join(','))")"
+[[ "$seeded" == "DOC-SIDA1,DOC-SIDA2" ]]; check $? "Lager 1: paginering hämtar sida 2 (baslinje seedar dokument från BÅDA sidorna: $seeded)"
+
 # --- Test 7: branch-vakt — kör wrappern från en annan branch -> exit 3 --------
 # Skär en wegwerf-branch från AKTUELL HEAD (som garanterat har skriptet — vi kör
 # ju det just nu). Att växla till master funkar inte: skriptet är spårat på

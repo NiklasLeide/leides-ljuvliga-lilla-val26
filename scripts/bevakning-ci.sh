@@ -58,8 +58,10 @@ fi
 read_delta() { node -e "console.log(require('./'+process.env.BEVAKNING_DIR+'/delta.json').$1)"; }
 delta_n="$(read_delta 'delta.length')"
 first_run="$(read_delta 'first_run')"
-cov="$(node -e "const d=require('./'+process.env.BEVAKNING_DIR+'/delta.json').coverage;console.log(d.riksdagen+'/'+d.sites+'/'+d.rss)")"
 errs="$(read_delta 'errors.length')"
+# Täckning redovisas i BÅDA enheter så "15" (frågor) och "202" (dokument) aldrig
+# ser motstridiga ut: N frågor pollade -> M unika dokument seedade i baslinjen.
+cov="$(node -e "const d=require('./'+process.env.BEVAKNING_DIR+'/delta.json');console.log(d.coverage.riksdagen+' riksdagen-frågor -> '+d.baseline.riksdagen_items+' dokument, '+d.coverage.sites+' partisajter, '+d.coverage.rss+' rss-flöden')")"
 
 # TOM delta (inkl. första baslinjekörningen) => tyst, bara logg, exit 0.
 if [[ "$delta_n" -eq 0 ]]; then

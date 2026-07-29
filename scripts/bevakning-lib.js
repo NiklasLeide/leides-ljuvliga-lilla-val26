@@ -144,25 +144,56 @@ function parseRss(xml, outlet) {
 }
 
 // ---------------------------------------------------------------- riksdagen
-// Träffar data.riksdagen.se/dokumentlista utformat=json. Returnerar dokument-id +
-// titel + typ + datum. Ny id (mot state.seen_ids) = träff.
-function riksdagenQuery(cfg) {
-  const params = new URLSearchParams({
-    sok: cfg.sok || '', doktyp: cfg.doktyp || '', utformat: 'json',
-    sort: 'datum', sortriktning: 'desc', a: 's', p: '1',
-  });
-  const url = `https://data.riksdagen.se/dokumentlista/?${params.toString()}`;
-  const r = fetchText(url, `riksdagen-${cfg.id}.json`);
-  if (!r.ok) return { ok: false, err: r.err, docs: [] };
-  let j;
-  try { j = JSON.parse(r.body); } catch (e) { return { ok: false, err: 'bad json', docs: [] }; }
-  const raw = (j.dokumentlista && j.dokumentlista.dokument) || [];
-  const docs = (Array.isArray(raw) ? raw : [raw]).map((d) => ({
-    id: d.id || d.dok_id, titel: (d.titel || '').trim(), typ: d.doktyp || cfg.doktyp,
-    datum: d.datum || d.publicerad || '', url: d.dokument_url_html
+// Träffar data.riksdagen.se/dokumentlista utformat=json.
+//
+// "Får aldrig missa något": dokumentlistan sorteras datum desc och returnerar
+// bara 20 dokument per sida. Utan datumfönster täcker sida 1 alltså bara de 20
+// senaste av ibland tusentals träffar — dyker >20 nya dokument upp i en frågas
+// scope mellan två veckokörningar hamnar överskottet på sida 2+ och missas.
+// Fix: (1) begränsa varje fråga till ett DATUMFÖNSTER (from = idag − LOOKBACK)
+// så träffmängden blir liten och fullständigt hämtbar, och (2) PAGINERA hela
+// fönstret (sz=100, följ @nasta_sida upp till ett tak). LOOKBACK=60 dygn är
+// vida större än veckokadensen — även ~8 missade körningar i rad tappar inget.
+// Residual: dokument bakdaterade >LOOKBACK dygn faller utanför fönstret.
+const RIKSDAGEN_LOOKBACK_DAYS = 60;
+const RIKSDAGEN_PAGE_SIZE = 100;
+const RIKSDAGEN_MAX_PAGES = 20;   // hårt tak: 2000 dok/fråga, skydd mot runaway
+
+function mapDoc(d, fallbackTyp) {
+  const id = d.id || d.dok_id;
+  return {
+    id, titel: (d.titel || '').trim(), typ: d.doktyp || fallbackTyp,
+    datum: d.datum || d.publicerad || '',
+    url: d.dokument_url_html
       ? (d.dokument_url_html.startsWith('http') ? d.dokument_url_html : 'https:' + d.dokument_url_html)
-      : `https://www.riksdagen.se/sv/dokument-och-lagar/dokument/_/${d.id || d.dok_id}/`,
-  })).filter((d) => d.id);
+      : `https://www.riksdagen.se/sv/dokument-och-lagar/dokument/_/${id}/`,
+  };
+}
+
+function riksdagenQuery(cfg) {
+  const from = new Date(Date.now() - RIKSDAGEN_LOOKBACK_DAYS * 86400000).toISOString().slice(0, 10);
+  const docs = [];
+  const seenPageIds = new Set();   // skydd mot att stubb/API loopar samma sida
+  for (let page = 1; page <= RIKSDAGEN_MAX_PAGES; page++) {
+    const params = new URLSearchParams({
+      sok: cfg.sok || '', doktyp: cfg.doktyp || '', utformat: 'json',
+      sort: 'datum', sortriktning: 'desc', a: 's', from, sz: String(RIKSDAGEN_PAGE_SIZE), p: String(page),
+    });
+    const url = `https://data.riksdagen.se/dokumentlista/?${params.toString()}`;
+    // Fixturnyckel oförändrad (sida 1) för testerna; sida 2+ live-only.
+    const r = fetchText(url, page === 1 ? `riksdagen-${cfg.id}.json` : `riksdagen-${cfg.id}-p${page}.json`);
+    if (!r.ok) return { ok: false, err: r.err, docs };
+    let j;
+    try { j = JSON.parse(r.body); } catch (e) { return { ok: false, err: 'bad json', docs }; }
+    const dl = j.dokumentlista || {};
+    const raw = dl.dokument || [];
+    const pageDocs = (Array.isArray(raw) ? raw : [raw]).map((d) => mapDoc(d, cfg.doktyp)).filter((d) => d.id);
+    let added = 0;
+    for (const d of pageDocs) { if (!seenPageIds.has(d.id)) { seenPageIds.add(d.id); docs.push(d); added++; } }
+    // Sluta när API:et inte anger nästa sida, sidan var tom, eller inget nytt
+    // tillkom (stub returnerar samma fixtur för alla sidor => added=0 => stopp).
+    if (!dl['@nasta_sida'] || pageDocs.length === 0 || added === 0) break;
+  }
   return { ok: true, err: '', docs };
 }
 
@@ -257,9 +288,11 @@ switch (cmd) {
   case 'get-state': { const s = loadState(); const v = args[0].split('.').reduce((o, k) => (o == null ? o : o[k]), s); console.log(v == null ? '' : (typeof v === 'object' ? JSON.stringify(v) : String(v))); break; }
   case 'detect': {
     const out = detect();
+    // Redovisa riksdagen i BÅDA enheter: frågor pollade -> dokument seedade.
+    // (Annars ser "15 frågor" och "202 dokument" ut som en motstridighet.)
     console.log(`Lager 1 klart. first_run=${out.first_run} delta=${out.delta.length} ` +
-      `täckning(riksdagen/sajter/rss)=${out.coverage.riksdagen}/${out.coverage.sites}/${out.coverage.rss} ` +
-      `fel=${out.errors.length}`);
+      `täckning: ${out.coverage.riksdagen} riksdagen-frågor -> ${out.baseline.riksdagen_items} dokument, ` +
+      `${out.coverage.sites} sajter, ${out.coverage.rss} rss  fel=${out.errors.length}`);
     if (out.errors.length) out.errors.forEach((e) => console.log('  fel: ' + e));
     break;
   }
