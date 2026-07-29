@@ -1,0 +1,69 @@
+name: bevakning-layer1
+
+# Lager 1 av bevakningsloopen (G5): deterministisk detektering, NOLL tokens.
+# Körs på GitHubs infrastruktur (oberoende av Niklas dev-maskin — schtasks var
+# lokalt och kördes inte om maskinen sov). Ingen modell, ingen API-nyckel:
+# Lager 2/3 (Haiku/Sonnet) körs medvetet lokalt (separat Max-plan-billing) tills
+# Niklas beslutar annat. Att flytta dem hit senare = lägg till en secret +ett
+# jobb som kör bevakning-loop.sh med BEVAKNING_SKIP_DETECT=1 — ingen omskrivning.
+
+on:
+  schedule:
+    # Söndag 04:07 UTC. GitHub-cron är ALLTID UTC. Några minuter över hel timme
+    # för att undvika den mest belastade schemaslotten (körningar kan annars
+    # köa/försenas). Sverige: 06:07 CEST (sommar) / 05:07 CET (vinter).
+    - cron: '7 4 * * 0'
+  workflow_dispatch: {}   # manuell körning på begäran (Actions-fliken / gh)
+
+permissions:
+  contents: write   # committa tillbaka Lager 1-state (bevakning-state.json)
+  issues: write     # fila delta-/fel-issue (Niklas notifiering)
+
+# Serialisera: en manuell dispatch och veckocronen får aldrig överlappa och
+# tävla om state-committen. Avbryt inte en pågående körning — låt den slutföras.
+concurrency:
+  group: bevakning-layer1
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        # persist-credentials (default) behövs för att kunna pusha state tillbaka.
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Lager 1 — detektering + notifiering (noll tokens)
+        env:
+          GH_TOKEN: ${{ github.token }}          # gh issue create använder denna
+          BEVAKNING_STATE_FILE: bevakning-state.json   # committad, persisterar mellan körningar
+          BEVAKNING_DIR: .bevakning-ci                 # efemär arbetskatalog (delta.json)
+        run: bash scripts/bevakning-ci.sh
+
+      - name: Ladda upp deltat som artefakt (för lokal Lager 2/3)
+        if: ${{ hashFiles('.bevakning-ci/delta.json') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: bevakning-delta
+          path: .bevakning-ci/delta.json
+          retention-days: 30
+
+      - name: Persistera Lager 1-state (committa om ändrad)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bevakning-state.json
+          if git diff --staged --quiet; then
+            echo "state oförändrad — inget att committa"
+          else
+            git commit -m "bevakning: uppdatera Lager 1-state [skip ci]"
+            # Rebasa in ev. samtidiga ändringar innan push (concurrency-gruppen
+            # gör detta sällsynt, men var robust mot en manuell commit).
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push
+          fi
